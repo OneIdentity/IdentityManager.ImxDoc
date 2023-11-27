@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "Cadence-Icon";
+  src: url("./Cadence-Icon-3.1.64.eot?#iefix") format("embedded-opentype"),
+    url("./Cadence-Icon-3.1.64.woff2") format("woff2"),
+    url("./Cadence-Icon-3.1.64.ttf") format("ttf"),
+    url("./Cadence-Icon-3.1.64.woff") format("woff");
+}
+
+body {
+  background-color: #0a96d1;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+a:link,
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+p {
+  margin: auto;
+  font-family: Source Sans Pro,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+h1 {
+  font-family: Source Sans Pro,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+.logo {
+  font-family: Cadence-Icon;
+  font-size: 400px;
+  margin: -140px auto;
+}
+
+.logo::before {
+  content: "\e11b";
+}
