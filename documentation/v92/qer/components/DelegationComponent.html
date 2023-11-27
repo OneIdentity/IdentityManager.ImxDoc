@@ -1,0 +1,3847 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>IMX Web - QER Library</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+        <link rel="stylesheet" href="../styles/material.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">IMX Web - QER Library</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Components</li>
+  <li class="breadcrumb-item"
+  >
+  DelegationComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" class="nav-link"
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li class="nav-item">
+            <a href="#templateData" class="nav-link"
+                role="tab" id="templateData-tab" data-bs-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li class="nav-item">
+            <a href="#styleData" class="nav-link"
+                role="tab" id="styleData-tab" data-bs-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li class="nav-item">
+            <a href="#tree" class="nav-link"
+                role="tab" id="tree-tab" data-bs-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/lib/delegation/delegation.component.ts</code>
+</p>
+
+
+    <p class="comment">
+        <h3>Description</h3>
+    </p>
+    <p class="comment">
+        <p>Leads the user through a delegation process
+The user can delegate items for themself or one subordinate</p>
+
+    </p>
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code>OnInit</code>
+                <code>OnDestroy</code>
+    </p>
+
+
+<section data-compodoc="block-metadata">
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">providers</td>
+                <td class="col-md-9">
+                            <code>{
+    provide: STEPPER_GLOBAL_OPTIONS, useValue: { displayDefaultIndicatorType: false },
+}</code>
+                </td>
+            </tr>
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./delegation.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./delegation.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#busyService" >busyService</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#cdrList" >cdrList</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#cdrPersonRecipient" >cdrPersonRecipient</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#cdrPersonSender" >cdrPersonSender</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#cdrTimeSpan" >cdrTimeSpan</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#completed" >completed</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#countReports" >countReports</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#delegateableItems" >delegateableItems</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#delegationForm" >delegationForm</a>
+                            </li>
+                            <li>
+                                    <span class="modifier"></span>
+                                    <span class="modifier">Public</span>
+                                <a href="#delegationObjects" >delegationObjects</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#delegationTypeForm" >delegationTypeForm</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#globalDelegation" >globalDelegation</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#initialized" >initialized</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#isGlobalDelegation" >isGlobalDelegation</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#isLoading" >isLoading</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#isManager" >isManager</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#navigationState" >navigationState</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#newDelegation" >newDelegation</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#paginatorConfig" >paginatorConfig</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#projectConfig" >projectConfig</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#recipientFormGroup" >recipientFormGroup</a>
+                            </li>
+                            <li>
+                                    <span class="modifier"></span>
+                                    <span class="modifier">Public</span>
+                                <a href="#roleAndMembershipList" >roleAndMembershipList</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#roleClasses" >roleClasses</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#rolesForm" >rolesForm</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#searchControl" >searchControl</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#searchString" >searchString</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#selections" >selections</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#senderFormGroup" >senderFormGroup</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#state" >state</a>
+                            </li>
+                            <li>
+                                    <span class="modifier"></span>
+                                    <span class="modifier">Public</span>
+                                <a href="#stepper" >stepper</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#subscriptions" >subscriptions</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#uidPerson" >uidPerson</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#withSubordinates" >withSubordinates</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#addControl" >addControl</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#addTimeCdr" >addTimeCdr</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#buildValidationFunction" >buildValidationFunction</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Static</span>
+                                <a href="#dateIsAscending" >dateIsAscending</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#initEditablePropertiesForm" >initEditablePropertiesForm</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#initGlobal" >initGlobal</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#initGlobalDelegation" >initGlobalDelegation</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#initRecipientForm" >initRecipientForm</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#initRolesForm" >initRolesForm</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#initSearchControl" >initSearchControl</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#initSenderForm" >initSenderForm</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#isShowCdr" >isShowCdr</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#isValidGlobalDelegation" >isValidGlobalDelegation</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#navigateDelegateable" >navigateDelegateable</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#ngOnDestroy" >ngOnDestroy</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#resetDelegation" >resetDelegation</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#resetForms" >resetForms</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#saveDelegation" >saveDelegation</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#saveDelegationItems" >saveDelegationItems</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#saveGlobalItems" >saveGlobalItems</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#selectedStepChanged" >selectedStepChanged</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Accessors</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                    <a href="#uidDelegator" >uidDelegator</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(projectConfigSvc: <a href="../injectables/ProjectConfigurationService.html" target="_self">ProjectConfigurationService</a>, delegationService: <a href="../injectables/DelegationService.html" target="_self">DelegationService</a>, entityService: EntityService, logger: ClassloggerService, userModelService: <a href="../injectables/UserModelService.html" target="_self">UserModelService</a>, permissions: <a href="../injectables/QerPermissionsService.html" target="_self">QerPermissionsService</a>, elementalBusy: EuiLoadingService, changeDetector: ChangeDetectorRef, authenticationservice: AuthenticationService)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="120" class="link-to-prism">src/lib/delegation/delegation.component.ts:120</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>projectConfigSvc</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ProjectConfigurationService.html" target="_self" >ProjectConfigurationService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>delegationService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/DelegationService.html" target="_self" >DelegationService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>entityService</td>
+                                                  
+                                                        <td>
+                                                                    <code>EntityService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>logger</td>
+                                                  
+                                                        <td>
+                                                                    <code>ClassloggerService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>userModelService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UserModelService.html" target="_self" >UserModelService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>permissions</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/QerPermissionsService.html" target="_self" >QerPermissionsService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>elementalBusy</td>
+                                                  
+                                                        <td>
+                                                                    <code>EuiLoadingService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>changeDetector</td>
+                                                  
+                                                        <td>
+                                                                    <code>ChangeDetectorRef</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>authenticationservice</td>
+                                                  
+                                                        <td>
+                                                                    <code>AuthenticationService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addControl"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>addControl</b></span>
+                        <a href="#addControl"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>addControl(group: UntypedFormGroup, name: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, control: AbstractControl)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="168"
+                            class="link-to-prism">src/lib/delegation/delegation.component.ts:168</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Adds a control to the given group</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>group</td>
+                                    <td>
+                                            <code>UntypedFormGroup</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>name of the form group</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>name</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>name of the control to register</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>control</td>
+                                    <td>
+                                            <code>AbstractControl</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>the control, that should be registered</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addTimeCdr"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>addTimeCdr</b></span>
+                        <a href="#addTimeCdr"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>addTimeCdr()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="452"
+                            class="link-to-prism">src/lib/delegation/delegation.component.ts:452</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Builds and adds the &#39;Valid from / until&#39; CDR</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="buildValidationFunction"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>buildValidationFunction</b></span>
+                        <a href="#buildValidationFunction"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>buildValidationFunction()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="480"
+                            class="link-to-prism">src/lib/delegation/delegation.component.ts:480</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Builds the validator function for step &#39;Select the role memberships/responsibilities you want to delegate&#39;
+If there are no items seleced, it marks the control as invalid</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>ValidatorFn</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="dateIsAscending"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span class="modifier">Static</span>
+                        <span ><b>dateIsAscending</b></span>
+                        <a href="#dateIsAscending"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>dateIsAscending()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="497"
+                            class="link-to-prism">src/lib/delegation/delegation.component.ts:497</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Checks, if valid until is later than valid from, or one of its values is not set</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>ValidatorFn</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initEditablePropertiesForm"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>initEditablePropertiesForm</b></span>
+                        <a href="#initEditablePropertiesForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>initEditablePropertiesForm()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="435"
+                            class="link-to-prism">src/lib/delegation/delegation.component.ts:435</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Inits the &#39;Specify additional options&#39; form</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initGlobal"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>initGlobal</b></span>
+                        <a href="#initGlobal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>initGlobal(uidPerson: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="324"
+                            class="link-to-prism">src/lib/delegation/delegation.component.ts:324</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Initializes the global delegations</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>uidPerson</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>the person, whose delegation objects should be fetched</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initGlobalDelegation"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>initGlobalDelegation</b></span>
+                        <a href="#initGlobalDelegation"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>initGlobalDelegation()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="312"
+                            class="link-to-prism">src/lib/delegation/delegation.component.ts:312</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Initializes a global delegation</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initRecipientForm"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>initRecipientForm</b></span>
+                        <a href="#initRecipientForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>initRecipientForm()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="427"
+                            class="link-to-prism">src/lib/delegation/delegation.component.ts:427</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Inits the &#39;Select the identity to which you want to delegate&#39; form</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initRolesForm"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>initRolesForm</b></span>
+                        <a href="#initRolesForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>initRolesForm()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="412"
+                            class="link-to-prism">src/lib/delegation/delegation.component.ts:412</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Inits the &#39;Select the role memberships/responsibilities you want to delegate&#39; form</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initSearchControl"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>initSearchControl</b></span>
+                        <a href="#initSearchControl"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>initSearchControl()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="463"
+                            class="link-to-prism">src/lib/delegation/delegation.component.ts:463</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>inits the search control, that is used on the &#39;Select the role memberships/responsibilities you want to delegate&#39; step</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initSenderForm"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>initSenderForm</b></span>
+                        <a href="#initSenderForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>initSenderForm()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="419"
+                            class="link-to-prism">src/lib/delegation/delegation.component.ts:419</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Inits the &#39;Select the identity which responsibilities you like to delegate&#39; form</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isShowCdr"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>isShowCdr</b></span>
+                        <a href="#isShowCdr"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>isShowCdr(cdr: BaseCdr)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="290"
+                            class="link-to-prism">src/lib/delegation/delegation.component.ts:290</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Determines, if a specific CDR is shown</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>cdr</td>
+                                    <td>
+                                            <code>BaseCdr</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>the cdr to check</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>true, if the delegation is not global and the columnname is IsDelegable</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isValidGlobalDelegation"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>isValidGlobalDelegation</b></span>
+                        <a href="#isValidGlobalDelegation"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>isValidGlobalDelegation()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="298"
+                            class="link-to-prism">src/lib/delegation/delegation.component.ts:298</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Checks, if at least one global delegation is selected</p>
+</div>
+
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>true, if something is selected, else false</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="navigateDelegateable"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>navigateDelegateable</b></span>
+                        <a href="#navigateDelegateable"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>navigateDelegateable()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="383"
+                            class="link-to-prism">src/lib/delegation/delegation.component.ts:383</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Navigates through individual delegation items</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>ngOnDestroy</b></span>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="142"
+                            class="link-to-prism">src/lib/delegation/delegation.component.ts:142</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="146"
+                            class="link-to-prism">src/lib/delegation/delegation.component.ts:146</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="resetDelegation"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>resetDelegation</b></span>
+                        <a href="#resetDelegation"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>resetDelegation()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="214"
+                            class="link-to-prism">src/lib/delegation/delegation.component.ts:214</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Resets all form controls and data, so the user can make another delegation</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="resetForms"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>resetForms</b></span>
+                        <a href="#resetForms"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>resetForms()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="344"
+                            class="link-to-prism">src/lib/delegation/delegation.component.ts:344</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Resets all FormGroups</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="saveDelegation"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>saveDelegation</b></span>
+                        <a href="#saveDelegation"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>saveDelegation()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="195"
+                            class="link-to-prism">src/lib/delegation/delegation.component.ts:195</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Saves the delegation</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="saveDelegationItems"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>saveDelegationItems</b></span>
+                        <a href="#saveDelegationItems"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>saveDelegationItems()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="356"
+                            class="link-to-prism">src/lib/delegation/delegation.component.ts:356</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Saves individual delegation items</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="saveGlobalItems"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>saveGlobalItems</b></span>
+                        <a href="#saveGlobalItems"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>saveGlobalItems()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="370"
+                            class="link-to-prism">src/lib/delegation/delegation.component.ts:370</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Saves global delegation items</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectedStepChanged"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>selectedStepChanged</b></span>
+                        <a href="#selectedStepChanged"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>selectedStepChanged(event: StepperSelectionEvent)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="176"
+                            class="link-to-prism">src/lib/delegation/delegation.component.ts:176</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Is triggered, if the step changed</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+                                    <td>
+                                            <code>StepperSelectionEvent</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>the <a href="StepperSelectionEvent">StepperSelectionEvent</a>, that was triggered</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section data-compodoc="block-properties">
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="busyService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>busyService</b></span>
+                        <a href="#busyService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new BusyService()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="100" class="link-to-prism">src/lib/delegation/delegation.component.ts:100</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="cdrList"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>cdrList</b></span>
+                        <a href="#cdrList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Column.html" target="_self" >ColumnDependentReference[]</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="87" class="link-to-prism">src/lib/delegation/delegation.component.ts:87</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="cdrPersonRecipient"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>cdrPersonRecipient</b></span>
+                        <a href="#cdrPersonRecipient"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Column.html" target="_self" >ColumnDependentReference</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="85" class="link-to-prism">src/lib/delegation/delegation.component.ts:85</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="cdrPersonSender"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>cdrPersonSender</b></span>
+                        <a href="#cdrPersonSender"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Column.html" target="_self" >ColumnDependentReference</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="94" class="link-to-prism">src/lib/delegation/delegation.component.ts:94</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="cdrTimeSpan"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>cdrTimeSpan</b></span>
+                        <a href="#cdrTimeSpan"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Column.html" target="_self" >ColumnDependentReference[]</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="86" class="link-to-prism">src/lib/delegation/delegation.component.ts:86</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="completed"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>completed</b></span>
+                        <a href="#completed"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="89" class="link-to-prism">src/lib/delegation/delegation.component.ts:89</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="countReports"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>countReports</b></span>
+                        <a href="#countReports"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="111" class="link-to-prism">src/lib/delegation/delegation.component.ts:111</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="delegateableItems"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>delegateableItems</b></span>
+                        <a href="#delegateableItems"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>PortalDelegable[]</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="67" class="link-to-prism">src/lib/delegation/delegation.component.ts:67</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="delegationForm"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>delegationForm</b></span>
+                        <a href="#delegationForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new UntypedFormGroup({}, DelegationComponent.dateIsAscending())</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="97" class="link-to-prism">src/lib/delegation/delegation.component.ts:97</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="delegationObjects"></a>
+                    <span class="name">
+                            <span class="modifier"></span>
+                            <span class="modifier">Public</span>
+                        <span ><b>delegationObjects</b></span>
+                        <a href="#delegationObjects"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>MatStep</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ViewChild(&#x27;delegationObjects&#x27;)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="105" class="link-to-prism">src/lib/delegation/delegation.component.ts:105</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="delegationTypeForm"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>delegationTypeForm</b></span>
+                        <a href="#delegationTypeForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new UntypedFormGroup({ items: new UntypedFormControl([]) })</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="109" class="link-to-prism">src/lib/delegation/delegation.component.ts:109</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="globalDelegation"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>globalDelegation</b></span>
+                        <a href="#globalDelegation"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>GlobalDelegationInput</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="82" class="link-to-prism">src/lib/delegation/delegation.component.ts:82</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initialized"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>initialized</b></span>
+                        <a href="#initialized"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="102" class="link-to-prism">src/lib/delegation/delegation.component.ts:102</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isGlobalDelegation"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>isGlobalDelegation</b></span>
+                        <a href="#isGlobalDelegation"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="80" class="link-to-prism">src/lib/delegation/delegation.component.ts:80</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isLoading"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>isLoading</b></span>
+                        <a href="#isLoading"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="101" class="link-to-prism">src/lib/delegation/delegation.component.ts:101</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isManager"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>isManager</b></span>
+                        <a href="#isManager"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="93" class="link-to-prism">src/lib/delegation/delegation.component.ts:93</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="navigationState"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>navigationState</b></span>
+                        <a href="#navigationState"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>CollectionLoadParameters</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{ PageSize: 20 }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="115" class="link-to-prism">src/lib/delegation/delegation.component.ts:115</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="newDelegation"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>newDelegation</b></span>
+                        <a href="#newDelegation"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>PortalDelegations</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="83" class="link-to-prism">src/lib/delegation/delegation.component.ts:83</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="paginatorConfig"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>paginatorConfig</b></span>
+                        <a href="#paginatorConfig"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{
+    index: 0,
+    size: 20,
+    sizeOptions: [20, 50, 200],
+    length: 0,
+  }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="69" class="link-to-prism">src/lib/delegation/delegation.component.ts:69</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="projectConfig"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>projectConfig</b></span>
+                        <a href="#projectConfig"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>QerProjectConfig</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="116" class="link-to-prism">src/lib/delegation/delegation.component.ts:116</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="recipientFormGroup"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>recipientFormGroup</b></span>
+                        <a href="#recipientFormGroup"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new UntypedFormGroup({})</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="96" class="link-to-prism">src/lib/delegation/delegation.component.ts:96</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="roleAndMembershipList"></a>
+                    <span class="name">
+                            <span class="modifier"></span>
+                            <span class="modifier">Public</span>
+                        <span ><b>roleAndMembershipList</b></span>
+                        <a href="#roleAndMembershipList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>MatSelectionList</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ViewChild(MatSelectionList)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="104" class="link-to-prism">src/lib/delegation/delegation.component.ts:104</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="roleClasses"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>roleClasses</b></span>
+                        <a href="#roleClasses"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>PortalDelegationsGlobalRoleclasses[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="112" class="link-to-prism">src/lib/delegation/delegation.component.ts:112</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="rolesForm"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>rolesForm</b></span>
+                        <a href="#rolesForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new UntypedFormGroup({ items: new UntypedFormControl([]) }, this.buildValidationFunction())</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="108" class="link-to-prism">src/lib/delegation/delegation.component.ts:108</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="searchControl"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>searchControl</b></span>
+                        <a href="#searchControl"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new UntypedFormControl()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="77" class="link-to-prism">src/lib/delegation/delegation.component.ts:77</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="searchString"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>searchString</b></span>
+                        <a href="#searchString"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="78" class="link-to-prism">src/lib/delegation/delegation.component.ts:78</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selections"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>selections</b></span>
+                        <a href="#selections"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>PortalDelegable[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="76" class="link-to-prism">src/lib/delegation/delegation.component.ts:76</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="senderFormGroup"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>senderFormGroup</b></span>
+                        <a href="#senderFormGroup"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new UntypedFormGroup({})</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="98" class="link-to-prism">src/lib/delegation/delegation.component.ts:98</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="state"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>state</b></span>
+                        <a href="#state"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="90" class="link-to-prism">src/lib/delegation/delegation.component.ts:90</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="stepper"></a>
+                    <span class="name">
+                            <span class="modifier"></span>
+                            <span class="modifier">Public</span>
+                        <span ><b>stepper</b></span>
+                        <a href="#stepper"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>MatStepper</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ViewChild(&#x27;stepper&#x27;)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="106" class="link-to-prism">src/lib/delegation/delegation.component.ts:106</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="subscriptions"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>subscriptions</b></span>
+                        <a href="#subscriptions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Subscription[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="114" class="link-to-prism">src/lib/delegation/delegation.component.ts:114</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="uidPerson"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>uidPerson</b></span>
+                        <a href="#uidPerson"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="68" class="link-to-prism">src/lib/delegation/delegation.component.ts:68</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="withSubordinates"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>withSubordinates</b></span>
+                        <a href="#withSubordinates"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="92" class="link-to-prism">src/lib/delegation/delegation.component.ts:92</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-accessors">
+    <h3 id="accessors">
+        Accessors
+    </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="uidDelegator"></a>
+                        <span class="name"><b>uidDelegator</b><a href="#uidDelegator"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>uidDelegator()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="118" class="link-to-prism">src/lib/delegation/delegation.component.ts:118</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+</section>
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { ChangeDetectorRef, Component, OnDestroy, OnInit, ViewChild } from &#x27;@angular/core&#x27;;
+import { AbstractControl, UntypedFormControl, UntypedFormGroup, ValidatorFn } from &#x27;@angular/forms&#x27;;
+import { StepperSelectionEvent, STEPPER_GLOBAL_OPTIONS } from &#x27;@angular/cdk/stepper&#x27;;
+import { EuiLoadingService } from &#x27;@elemental-ui/core&#x27;;
+import { MatSelectionList, MatSelectionListChange } from &#x27;@angular/material/list&#x27;;
+import { PageEvent } from &#x27;@angular/material/paginator&#x27;;
+import { Subscription } from &#x27;rxjs&#x27;;
+import { distinctUntilChanged, debounceTime } from &#x27;rxjs/operators&#x27;;
+import { MatStep, MatStepper } from &#x27;@angular/material/stepper&#x27;;
+
+import { ColumnDependentReference, BaseCdr, EntityService, AuthenticationService, ClassloggerService, BusyService } from &#x27;qbm&#x27;;
+import {
+  PortalDelegations,
+  PortalDelegable,
+  QerProjectConfig,
+  GlobalDelegationInput,
+  PortalDelegationsGlobalRoleclasses,
+} from &#x27;imx-api-qer&#x27;;
+import { ProjectConfigurationService } from &#x27;../project-configuration/project-configuration.service&#x27;;
+import { DelegationService } from &#x27;./delegation.service&#x27;;
+import { UserModelService } from &#x27;../user/user-model.service&#x27;;
+
+import { CollectionLoadParameters } from &#x27;imx-qbm-dbts&#x27;;
+import { QerPermissionsService } from &#x27;../admin/qer-permissions.service&#x27;;
+
+/**
+ * Leads the user through a delegation process
+ * The user can delegate items for themself or one subordinate
+ */
+@Component({
+  templateUrl: &#x27;./delegation.component.html&#x27;,
+  styleUrls: [&#x27;./delegation.component.scss&#x27;],
+  providers: [
+    {
+      provide: STEPPER_GLOBAL_OPTIONS,
+      useValue: { displayDefaultIndicatorType: false },
+    },
+  ],
+})
+export class DelegationComponent implements OnInit, OnDestroy {
+  public delegateableItems: PortalDelegable[];
+  public uidPerson: string;
+  public readonly paginatorConfig &#x3D; {
+    index: 0,
+    size: 20,
+    sizeOptions: [20, 50, 200],
+    length: 0,
+  };
+
+  public selections: PortalDelegable[] &#x3D; [];
+  public searchControl &#x3D; new UntypedFormControl();
+  public searchString &#x3D; &#x27;&#x27;;
+
+  public isGlobalDelegation &#x3D; true;
+
+  public globalDelegation: GlobalDelegationInput;
+  public newDelegation: PortalDelegations;
+
+  public cdrPersonRecipient: ColumnDependentReference;
+  public cdrTimeSpan: ColumnDependentReference[];
+  public cdrList: ColumnDependentReference[];
+
+  public completed &#x3D; false;
+  public state: string;
+
+  public withSubordinates &#x3D; false;
+  public isManager &#x3D; false;
+  public cdrPersonSender: ColumnDependentReference;
+
+  public readonly recipientFormGroup &#x3D; new UntypedFormGroup({});
+  public readonly delegationForm &#x3D; new UntypedFormGroup({}, DelegationComponent.dateIsAscending());
+  public readonly senderFormGroup &#x3D; new UntypedFormGroup({});
+
+  public busyService &#x3D; new BusyService();
+  public isLoading &#x3D; false;
+  public initialized &#x3D; false;
+
+  @ViewChild(MatSelectionList) public roleAndMembershipList: MatSelectionList;
+  @ViewChild(&#x27;delegationObjects&#x27;) public delegationObjects: MatStep;
+  @ViewChild(&#x27;stepper&#x27;) public stepper: MatStepper;
+
+  public readonly rolesForm &#x3D; new UntypedFormGroup({ items: new UntypedFormControl([]) }, this.buildValidationFunction());
+  public readonly delegationTypeForm &#x3D; new UntypedFormGroup({ items: new UntypedFormControl([]) });
+
+  public countReports: number;
+  public roleClasses: PortalDelegationsGlobalRoleclasses[] &#x3D; [];
+
+  private subscriptions: Subscription[] &#x3D; [];
+  private navigationState: CollectionLoadParameters &#x3D; { PageSize: 20 };
+  private projectConfig: QerProjectConfig;
+
+  private get uidDelegator(): string {
+    return this.withSubordinates ? this.newDelegation?.UID_PersonSender.value : this.uidPerson;
+  }
+
+  constructor(
+    private readonly projectConfigSvc: ProjectConfigurationService,
+    private readonly delegationService: DelegationService,
+    private readonly entityService: EntityService,
+    private readonly logger: ClassloggerService,
+    private readonly userModelService: UserModelService,
+    private readonly permissions: QerPermissionsService,
+    private readonly elementalBusy: EuiLoadingService,
+    private readonly changeDetector: ChangeDetectorRef,
+    authenticationservice: AuthenticationService
+  ) {
+    this.initGlobalDelegation();
+    this.initSearchControl();
+    this.subscriptions.push(authenticationservice.onSessionResponse.subscribe((session) &#x3D;&gt; (this.uidPerson &#x3D; session.UserUid)));
+    this.busyService.busyStateChanged.subscribe((value) &#x3D;&gt; {
+      this.isLoading &#x3D; value;
+      changeDetector.detectChanges();
+    });
+  }
+
+  public ngOnDestroy(): void {
+    this.subscriptions.forEach((subscription) &#x3D;&gt; subscription.unsubscribe());
+  }
+
+  public async ngOnInit(): Promise&lt;void&gt; {
+    const isBusy &#x3D; this.busyService.beginBusy();
+    try {
+      this.projectConfig &#x3D; await this.projectConfigSvc.getConfig();
+      this.newDelegation &#x3D; await this.delegationService.createDelegation();
+      this.isManager &#x3D; await this.permissions.isPersonManager();
+    } finally {
+      isBusy.endBusy();
+      this.initialized &#x3D; true;
+      this.changeDetector.detectChanges();
+    }
+    this.initSenderForm();
+    this.initRecipientForm();
+    this.initEditablePropertiesForm();
+  }
+
+  /**
+   * Adds a control to the given group
+   * @param group name of the form group
+   * @param name name of the control to register
+   * @param control the control, that should be registered
+   */
+  public addControl(group: UntypedFormGroup, name: string, control: AbstractControl): void {
+    setTimeout(() &#x3D;&gt; group.addControl(name, control));
+  }
+
+  /**
+   * Is triggered, if the step changed
+   * @param event the {@link StepperSelectionEvent}, that was triggered
+   */
+  public async selectedStepChanged(event: StepperSelectionEvent): Promise&lt;void&gt; {
+    if (this.completed || event.selectedStep !&#x3D;&#x3D; this.delegationObjects) {
+      return;
+    }
+
+    this.logger.debug(this.logger, &#x27;stepper navigated to role and responsibility selection&#x27;);
+    const isBusy &#x3D; this.busyService.beginBusy();
+
+    try {
+      await this.initGlobal(this.uidDelegator);
+      await this.navigateDelegateable();
+    } finally {
+      isBusy.endBusy();
+    }
+  }
+
+  /**
+   * Saves the delegation
+   */
+  public async saveDelegation(): Promise&lt;void&gt; {
+    let overlay &#x3D; this.elementalBusy.show();
+    this.changeDetector.detectChanges();
+    try {
+      if (this.isGlobalDelegation) {
+        await this.saveGlobalItems();
+      } else {
+        await this.saveDelegationItems();
+      }
+      this.completed &#x3D; true;
+      this.state &#x3D; &#x27;done&#x27;;
+    } finally {
+      this.elementalBusy.hide(overlay);
+    }
+  }
+
+  /**
+   * Resets all form controls and data, so the user can make another delegation
+   */
+  public async resetDelegation(): Promise&lt;void&gt; {
+    this.stepper.reset();
+    this.completed &#x3D; false;
+    this.state &#x3D; undefined;
+    this.delegationTypeForm.reset();
+    this.newDelegation &#x3D; await this.delegationService.createDelegation();
+    return this.resetForms();
+  }
+
+  /**
+   * @ignore only used template
+   * Is called, if the paginator in the &#x27;Select the role memberships/responsibilities you want to delegate&#x27; step changes its state
+   */
+  public async onPaginatorStateChanged(newState: PageEvent): Promise&lt;void&gt; {
+    this.navigationState &#x3D; {
+      PageSize: newState.pageSize,
+      StartIndex: newState.pageIndex * newState.pageSize,
+    };
+    this.paginatorConfig.index &#x3D; newState.pageIndex;
+    this.paginatorConfig.size &#x3D; newState.pageSize;
+    this.logger.trace(this, &#x27;navigates with navigation state&#x27;, this.navigationState);
+    this.logger.trace(this, &#x27;config for paginator is set to&#x27;, this.paginatorConfig);
+    this.navigateDelegateable();
+  }
+
+  /**
+   * @ignore only used template
+   * Is called, if the select all on page button is clicked in the &#x27;Select the role memberships/responsibilities you want to delegate&#x27; step
+   * Selects all elements on the current page
+   */
+  public onSelectall(): void {
+    const items &#x3D; this.roleAndMembershipList.options.filter(
+      (elem) &#x3D;&gt; this.selections.findIndex((sel) &#x3D;&gt; sel.ObjectKeyToDelegate.value &#x3D;&#x3D;&#x3D; elem.value.ObjectKeyToDelegate.value) &#x3D;&#x3D;&#x3D; -1
+    );
+
+    items.forEach((element) &#x3D;&gt; {
+      this.selections.push(element.value);
+    });
+    this.logger.trace(this, &#x27;currently selected items&#x27;, this.selections);
+    this.roleAndMembershipList.selectAll();
+  }
+
+  /**
+   * @ignore only used template
+   * Is called, if the deselect all button is clicked in the &#x27;Select the role memberships/responsibilities you want to delegate&#x27; step
+   * Deselects all elements
+   */
+  public onDeselectAll(): void {
+    this.roleAndMembershipList.deselectAll();
+    this.selections &#x3D; [];
+  }
+
+  /**
+   * @ignore only used template
+   * Is called, if a checkbox is clicked in the &#x27;Select the role memberships/responsibilities you want to delegate&#x27; step
+   * Adds / removes the element from the selection
+   */
+  public updateSelection(arg: MatSelectionListChange): void {
+    const item &#x3D; arg.options[0];
+    if (item.selected) {
+      this.logger.trace(this, &#x60;${item.value.GetEntity().GetDisplay()} is added as a selection&#x60;);
+      this.selections.push(item.value);
+    } else {
+      const index &#x3D; this.selections.findIndex((elem) &#x3D;&gt; elem.ObjectKeyToDelegate.value &#x3D;&#x3D;&#x3D; item.value.ObjectKeyToDelegate.value);
+      if (index &gt; -1) {
+        this.selections.splice(index, 1);
+      }
+      this.logger.trace(this, &#x60;${item.value.GetEntity().GetDisplay()} is removed as a selection&#x60;);
+    }
+  }
+
+  /**
+   * Determines, if a specific CDR is shown
+   * @param cdr the cdr to check
+   * @returns true, if the delegation is not global and the columnname is IsDelegable
+   */
+  public isShowCdr(cdr: BaseCdr): boolean {
+    return !this.isGlobalDelegation || cdr.column.ColumnName !&#x3D;&#x3D; &#x27;IsDelegable&#x27;;
+  }
+
+  /**
+   * Checks, if at least one global delegation is selected
+   * @returns true, if something is selected, else false
+   */
+  public isValidGlobalDelegation(): boolean {
+    return (
+      this.isGlobalDelegation &amp;&amp;
+      (this.globalDelegation?.UidOrgRoot?.length !&#x3D;&#x3D; 0 ||
+        this.globalDelegation.UseForAttestation ||
+        this.globalDelegation.UseForHeadPerson ||
+        this.globalDelegation.UseForShop ||
+        this.globalDelegation.UseForShopCompliance)
+    );
+  }
+
+  /**
+   * Initializes a global delegation
+   */
+  private initGlobalDelegation(): void {
+    this.globalDelegation &#x3D; {} as any;
+    this.globalDelegation.UseForShop &#x3D; true;
+    this.globalDelegation.UseForShopCompliance &#x3D; true;
+    this.globalDelegation.UseForAttestation &#x3D; true;
+    this.globalDelegation.UseForHeadPerson &#x3D; true;
+  }
+
+  /**
+   * Initializes the global delegations
+   * @param uidPerson the person, whose delegation objects should be fetched
+   */
+  private async initGlobal(uidPerson: string): Promise&lt;void&gt; {
+    const isBusy &#x3D; this.busyService.beginBusy();
+
+    try {
+      this.initGlobalDelegation();
+      //ToDo: direct reports für einen anderen User bestimmen
+      this.countReports &#x3D; (await this.userModelService.getDirectReports(this.withSubordinates ? uidPerson : undefined)).length;
+
+      const role &#x3D; (await this.delegationService.getRoleClasses(uidPerson)).filter((r) &#x3D;&gt; r.CountRolesOwned.value &gt; 0);
+      this.roleClasses &#x3D; role;
+      // pre-select all role classes
+      this.globalDelegation.UidOrgRoot &#x3D; role.map((r) &#x3D;&gt; r.GetEntity().GetKeys()[0]);
+    } finally {
+      isBusy.endBusy();
+    }
+  }
+
+  /**
+   * Resets all FormGroups
+   */
+  private async resetForms(): Promise&lt;void&gt; {
+    this.initGlobalDelegation();
+    this.initSenderForm();
+    this.initRecipientForm();
+
+    this.initEditablePropertiesForm();
+    this.initRolesForm();
+  }
+
+  /**
+   * Saves individual delegation items
+   */
+  private async saveDelegationItems(): Promise&lt;void&gt; {
+    // Update date from cdr
+    this.newDelegation.InsertValidFrom.value &#x3D; this.cdrTimeSpan[0].column.GetValue();
+    this.newDelegation.InsertValidUntil.value &#x3D; this.cdrTimeSpan[1].column.GetValue();
+
+    await this.delegationService.commitDelegations(
+      this.newDelegation,
+      this.selections.map((option) &#x3D;&gt; option.ObjectKeyToDelegate.value)
+    );
+  }
+
+  /**
+   * Saves global delegation items
+   */
+  private async saveGlobalItems(): Promise&lt;void&gt; {
+    this.globalDelegation.ValidFrom &#x3D; this.cdrTimeSpan[0].column.GetValue();
+    this.globalDelegation.UidPersonFrom &#x3D; this.newDelegation.UID_PersonSender.value;
+    this.globalDelegation.ValidUntil &#x3D; this.cdrTimeSpan[1].column.GetValue();
+    this.globalDelegation.UidPersonTo &#x3D; this.newDelegation.UID_PersonReceiver.value;
+    this.globalDelegation.KeepMeInformed &#x3D; this.newDelegation.KeepMeInformed.value;
+    this.globalDelegation.OrderReason &#x3D; this.newDelegation.OrderReason.value;
+    await this.delegationService.commitGlobalDelegation(this.globalDelegation);
+  }
+
+  /**
+   * Navigates through individual delegation items
+   */
+  private async navigateDelegateable(): Promise&lt;void&gt; {
+    const isBusy &#x3D; this.busyService.beginBusy();
+
+    try {
+      const delegations &#x3D; await this.delegationService.getDelegatableItems(
+        this.uidDelegator,
+        this.newDelegation.UID_PersonReceiver.value,
+        this.navigationState
+      );
+      this.paginatorConfig.length &#x3D; delegations.totalCount;
+      this.delegateableItems &#x3D; delegations.Data;
+      setTimeout(() &#x3D;&gt; {
+        this.logger.trace(this, &#x27;Try marking items as selected&#x27;);
+        if (this.roleAndMembershipList) {
+          const preselectedElements &#x3D; this.roleAndMembershipList.options.filter(
+            (elem) &#x3D;&gt; this.selections.findIndex((sel) &#x3D;&gt; sel.ObjectKeyToDelegate.value &#x3D;&#x3D;&#x3D; elem.value.ObjectKeyToDelegate.value) !&#x3D;&#x3D; -1
+          );
+          preselectedElements.forEach((elem) &#x3D;&gt; elem.toggle());
+          this.logger.trace(this, &#x27;items marked es selected&#x27;, preselectedElements);
+        }
+      });
+    } finally {
+      isBusy.endBusy();
+    }
+  }
+
+  /**
+   * Inits the &#x27;Select the role memberships/responsibilities you want to delegate&#x27; form
+   */
+  private initRolesForm(): void {
+    this.selections &#x3D; [];
+  }
+
+  /**
+   * Inits the &#x27;Select the identity which responsibilities you like to delegate&#x27; form
+   */
+  private initSenderForm(): void {
+    Object.keys(this.senderFormGroup.controls).forEach((name) &#x3D;&gt; this.recipientFormGroup.removeControl(name));
+    this.cdrPersonSender &#x3D; this.delegationService.buildSenderCdr(this.newDelegation);
+  }
+
+  /**
+   * Inits the &#x27;Select the identity to which you want to delegate&#x27; form
+   */
+  private initRecipientForm(): void {
+    Object.keys(this.recipientFormGroup.controls).forEach((name) &#x3D;&gt; this.recipientFormGroup.removeControl(name));
+    this.cdrPersonRecipient &#x3D; new BaseCdr(this.newDelegation.UID_PersonReceiver.Column);
+  }
+
+  /**
+   * Inits the &#x27;Specify additional options&#x27; form
+   */
+  private initEditablePropertiesForm(): void {
+    Object.keys(this.delegationForm.controls).forEach((name) &#x3D;&gt; this.delegationForm.removeControl(name));
+
+    const values &#x3D; [this.newDelegation.KeepMeInformed.Column, this.newDelegation.IsDelegable.Column, this.newDelegation.OrderReason.Column];
+
+    if (this.projectConfig.ITShopConfig.VI_ITShop_EnablePWOPriorityChange) {
+      values.push(this.newDelegation.PWOPriority.Column);
+    }
+
+    this.addTimeCdr();
+    this.cdrPersonRecipient &#x3D; new BaseCdr(this.newDelegation.UID_PersonReceiver.Column);
+    this.cdrList &#x3D; values.map((column) &#x3D;&gt; new BaseCdr(column));
+  }
+
+  /**
+   * Builds and adds the &#x27;Valid from / until&#x27; CDR
+   */
+  private addTimeCdr(): void {
+    const schema &#x3D; this.delegationService.getDelegationSchema();
+    this.cdrTimeSpan &#x3D; [schema.Columns.InsertValidFrom, schema.Columns.InsertValidUntil].map((property) &#x3D;&gt; {
+      property.IsReadOnly &#x3D; false;
+      return new BaseCdr(this.entityService.createLocalEntityColumn(property, undefined, { ValueConstraint: { MinValue: new Date() } }));
+    });
+  }
+
+  /**
+   * inits the search control, that is used on the &#x27;Select the role memberships/responsibilities you want to delegate&#x27; step
+   */
+  private initSearchControl(): void {
+    this.searchControl.setValue(&#x27;&#x27;);
+    this.subscriptions.push(
+      this.searchControl.valueChanges.pipe(distinctUntilChanged(), debounceTime(300)).subscribe(async (value) &#x3D;&gt; {
+        this.navigationState &#x3D; { ...this.navigationState, ...{ search: value, StartIndex: 0 } };
+        this.paginatorConfig.index &#x3D; 0;
+        await this.navigateDelegateable();
+      })
+    );
+  }
+
+  //------------------ Form validators --------------------------
+
+  /**
+   * Builds the validator function for step &#x27;Select the role memberships/responsibilities you want to delegate&#x27;
+   * If there are no items seleced, it marks the control as invalid
+   */
+  private buildValidationFunction(): ValidatorFn {
+    return (control: AbstractControl): { [key: string]: boolean } | null &#x3D;&gt; {
+      if (this.isGlobalDelegation) {
+        return this.isValidGlobalDelegation ? null : { invalid: true };
+      }
+      // at least one item set?
+      const group &#x3D; control as UntypedFormGroup;
+
+      return group &#x3D;&#x3D; null || group.get(&#x27;items&#x27;) &#x3D;&#x3D; null || group.get(&#x27;items&#x27;).value &#x3D;&#x3D; null || group.get(&#x27;items&#x27;).value.length &gt; 0
+        ? null
+        : { noRoleSelected: true };
+    };
+  }
+
+  /**
+   * Checks, if valid until is later than valid from, or one of its values is not set
+   */
+  private static dateIsAscending(): ValidatorFn {
+    return (control: AbstractControl): { [key: string]: boolean } | null &#x3D;&gt; {
+      const group &#x3D; control as UntypedFormGroup;
+
+      if (group &#x3D;&#x3D; null) {
+        return null;
+      }
+
+      const validFrom &#x3D; group.get(&#x27;InsertValidFrom&#x27;);
+      const validUntil &#x3D; group.get(&#x27;InsertValidUntil&#x27;);
+
+      return validFrom &#x3D;&#x3D; null ||
+        validFrom.value &#x3D;&#x3D; null ||
+        validUntil &#x3D;&#x3D; null ||
+        validUntil.value &#x3D;&#x3D; null ||
+        validUntil.value &gt;&#x3D; validFrom.value
+        ? null
+        : { validFromLargerThanUntil: true };
+    };
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;h1 class&#x3D;&quot;mat-headline&quot;&gt;
+  &lt;span&gt;{{ &#x27;#LDS#Heading Create Delegation&#x27; | translate }}&lt;/span&gt;
+  &lt;imx-help-contextual&gt;&lt;/imx-help-contextual&gt;
+&lt;/h1&gt;
+
+&lt;mat-card class&#x3D;&quot;imx-delegation-stepper&quot;&gt;
+  &lt;div&gt;
+    &lt;imx-busy-indicator *ngIf&#x3D;&quot;!initialized&quot;&gt;&lt;/imx-busy-indicator&gt;
+    &lt;ng-container *ngIf&#x3D;&quot;initialized &amp;&amp; isManager &amp;&amp; !completed&quot;&gt;
+      &lt;mat-radio-group class&#x3D;&quot;imx-type-selector&quot; [(ngModel)]&#x3D;&quot;withSubordinates&quot; data-imx-identifier&#x3D;&quot;withSubordinates&quot; (change)&#x3D;&quot;resetDelegation()&quot;&gt;
+        &lt;mat-radio-button [value]&#x3D;&quot;false&quot; data-imx-identifier&#x3D;&quot;withSubordinates-false&quot;&gt;
+          {{ &#x27;#LDS#Create delegation for me&#x27; | translate }}
+        &lt;/mat-radio-button&gt;
+        &lt;mat-radio-button [value]&#x3D;&quot;true&quot; data-imx-identifier&#x3D;&quot;withSubordinates-true&quot;&gt;
+          {{ &#x27;#LDS#Create delegation for another identity&#x27; | translate }}
+        &lt;/mat-radio-button&gt;
+      &lt;/mat-radio-group&gt;
+    &lt;/ng-container&gt;
+    &lt;mat-stepper [ngClass]&#x3D;&quot;{ hidden: completed }&quot; orientation&#x3D;&quot;vertical&quot; #stepper [linear]&#x3D;&quot;true&quot; (selectionChange)&#x3D;&quot;selectedStepChanged($event)&quot;&gt;
+      &lt;mat-step *ngIf&#x3D;&quot;withSubordinates&quot; data-imx-identifier&#x3D;&quot;imx-delegation-step-0&quot; [stepControl]&#x3D;&quot;senderFormGroup&quot;&gt;
+        &lt;ng-template matStepLabel&gt;
+          {{ &#x27;#LDS#Select the identity whose memberships and responsibilities you want to delegate&#x27; | translate }}
+        &lt;/ng-template&gt;
+        &lt;div class&#x3D;&quot;imx-stepper-content&quot;&gt;
+          &lt;imx-cdr-editor
+            data-imx-identifier&#x3D;&quot;imx-delegation-step-1-cdr-recipient&quot;
+            [cdr]&#x3D;&quot;cdrPersonSender&quot;
+            (controlCreated)&#x3D;&quot;addControl(senderFormGroup, cdrPersonSender.column.ColumnName, $event)&quot;
+          &gt;&lt;/imx-cdr-editor&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;imx-step-button&quot;&gt;
+          &lt;button data-imx-identifier&#x3D;&quot;imx-delegation-step-0-next&quot; mat-stroked-button color&#x3D;&quot;primary&quot; matStepperNext [disabled]&#x3D;&quot;senderFormGroup.invalid&quot;&gt;
+            {{ &#x27;#LDS#Next&#x27; | translate }}
+          &lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/mat-step&gt;
+      &lt;mat-step #recipientStep data-imx-identifier&#x3D;&quot;imx-delegation-step-1&quot; [editable]&#x3D;&quot;!completed&quot; [stepControl]&#x3D;&quot;recipientFormGroup&quot;&gt;
+        &lt;ng-template matStepLabel&gt;
+          {{ &#x27;#LDS#Select the identity to which you want to delegate&#x27; | translate }}
+        &lt;/ng-template&gt;
+        &lt;div class&#x3D;&quot;imx-stepper-content&quot;&gt;
+          &lt;imx-cdr-editor
+            data-imx-identifier&#x3D;&quot;imx-delegation-step-1-cdr-recipient&quot;
+            [cdr]&#x3D;&quot;cdrPersonRecipient&quot;
+            (controlCreated)&#x3D;&quot;addControl(recipientFormGroup, cdrPersonRecipient.column.ColumnName, $event)&quot;
+          &gt;
+          &lt;/imx-cdr-editor&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;imx-step-button&quot;&gt;
+          &lt;button data-imx-identifier&#x3D;&quot;imx-delegation-step-1-next&quot; mat-stroked-button color&#x3D;&quot;primary&quot; matStepperNext [disabled]&#x3D;&quot;recipientFormGroup.invalid&quot;&gt;
+            {{ &#x27;#LDS#Next&#x27; | translate }}
+          &lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/mat-step&gt;
+
+      &lt;mat-step data-imx-identifier&#x3D;&quot;imx-delegation-step-2&quot; [stepControl]&#x3D;&quot;delegationTypeForm&quot;&gt;
+        &lt;ng-template matStepLabel&gt;{{ &#x27;#LDS#Select the type of delegation&#x27; | translate }}&lt;/ng-template&gt;
+        &lt;div class&#x3D;&quot;imx-delegation-type&quot;&gt;
+          &lt;mat-radio-group [(ngModel)]&#x3D;&quot;isGlobalDelegation&quot;&gt;
+            &lt;mat-radio-button [value]&#x3D;&quot;true&quot;&gt;
+              &lt;span translate&gt;#LDS#Delegate all memberships and responsibilities&lt;/span&gt;
+            &lt;/mat-radio-button&gt;
+            &lt;mat-radio-button [value]&#x3D;&quot;false&quot;&gt;
+              &lt;span translate&gt;#LDS#Select individual memberships and responsibilities to delegate&lt;/span&gt;
+            &lt;/mat-radio-button&gt;
+          &lt;/mat-radio-group&gt;
+        &lt;/div&gt;
+
+        &lt;div class&#x3D;&quot;imx-step-button&quot;&gt;
+          &lt;button data-imx-identifier&#x3D;&quot;imx-delegation-step-2-back&quot; mat-stroked-button matStepperPrevious&gt;
+            {{ &#x27;#LDS#Back&#x27; | translate }}
+          &lt;/button&gt;
+          &lt;button data-imx-identifier&#x3D;&quot;imx-delegation-step-2-next&quot; mat-stroked-button color&#x3D;&quot;primary&quot; matStepperNext&gt;
+            {{ &#x27;#LDS#Next&#x27; | translate }}
+          &lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/mat-step&gt;
+
+      &lt;mat-step #delegationObjects data-imx-identifier&#x3D;&quot;imx-delegation-step-3&quot; [editable]&#x3D;&quot;!completed&quot; [stepControl]&#x3D;&quot;rolesForm&quot;&gt;
+        &lt;ng-template matStepLabel&gt;
+          {{ &#x27;#LDS#Select the role memberships/responsibilities you want to delegate&#x27; | translate }}
+        &lt;/ng-template&gt;
+        &lt;div class&#x3D;&quot;imx-roles-form&quot;&gt;
+          &lt;imx-busy-indicator *ngIf&#x3D;&quot;isLoading&quot;&gt;&lt;/imx-busy-indicator&gt;
+          &lt;ng-container *ngIf&#x3D;&quot;!isLoading&quot;&gt;
+            &lt;div class&#x3D;&quot;imx-global-elements&quot; *ngIf&#x3D;&quot;isGlobalDelegation&quot;&gt;
+              &lt;p&gt;
+                &lt;mat-checkbox [(ngModel)]&#x3D;&quot;globalDelegation.UseForShop&quot; data-imx-identifier&#x3D;&quot;globaldelegation-useforshop&quot;&gt;
+                  {{ &#x27;#LDS#Delegate request approval decisions&#x27; | translate }}
+                &lt;/mat-checkbox&gt;
+              &lt;/p&gt;
+              &lt;p&gt;
+                &lt;mat-checkbox [(ngModel)]&#x3D;&quot;globalDelegation.UseForShopCompliance&quot; data-imx-identifier&#x3D;&quot;globaldelegation-Useforshopcompliance&quot;&gt;
+                  {{ &#x27;#LDS#Delegate compliance violation approval decisions&#x27; | translate }}
+                &lt;/mat-checkbox&gt;
+              &lt;/p&gt;
+              &lt;p&gt;
+                &lt;mat-checkbox [(ngModel)]&#x3D;&quot;globalDelegation.UseForHeadPerson&quot; data-imx-identifier&#x3D;&quot;globaldelegation-useforheadperson&quot;&gt;
+                  &lt;ng-container *ngIf&#x3D;&quot;countReports &lt; 1&quot;&gt;
+                    {{ &#x27;#LDS#Delegate manager responsibilities&#x27; | translate }}
+                  &lt;/ng-container&gt;
+                  &lt;ng-container *ngIf&#x3D;&quot;countReports &#x3D;&#x3D; 1&quot;&gt;
+                    {{ &#x27;#LDS#Delegate manager responsibilities for one identity&#x27; | translate }}
+                  &lt;/ng-container&gt;
+                  &lt;ng-container *ngIf&#x3D;&quot;countReports &gt; 1&quot;&gt;
+                    {{ &#x27;#LDS#Delegate manager responsibilities for {0} identities&#x27; | translate | ldsReplace : countReports }}
+                  &lt;/ng-container&gt;
+                &lt;/mat-checkbox&gt;
+              &lt;/p&gt;
+              &lt;p&gt;
+                &lt;mat-checkbox [(ngModel)]&#x3D;&quot;globalDelegation.UseForAttestation&quot; data-imx-identifier&#x3D;&quot;globaldelegation-useforattestation&quot;&gt;
+                  {{ &#x27;#LDS#Delegate attestation approval decisions&#x27; | translate }}
+                &lt;/mat-checkbox&gt;
+              &lt;/p&gt;
+              &lt;ng-container *ngIf&#x3D;&quot;roleClasses.length &gt; 0&quot;&gt;
+                &lt;p class&#x3D;&quot;imx-class-title&quot;&gt;{{ &#x27;#LDS#Delegate responsibilities for roles of the following role classes&#x27; | translate }}:&lt;/p&gt;
+                &lt;p&gt;
+                  &lt;mat-selection-list [(ngModel)]&#x3D;&quot;globalDelegation.UidOrgRoot&quot;&gt;
+                    &lt;mat-list-option
+                      checkboxPosition&#x3D;&quot;before&quot;
+                      *ngFor&#x3D;&quot;let roleClass of roleClasses&quot;
+                      [value]&#x3D;&quot;roleClass.GetEntity().GetKeys()[0]&quot;
+                      [attr.data-imx-identifier]&#x3D;&quot;&#x27;multi-select-formcontrol-list&#x27; + roleClass.GetEntity().GetKeys[0]&quot;
+                    &gt;
+                      {{ roleClass.GetEntity().GetDisplay() }}
+                      &lt;span class&#x3D;&quot;nr-roles&quot;&gt;
+                        {{
+                          (roleClass.CountRolesOwned.value &gt; 1 ? &#x27;#LDS#Responsible for {0} roles&#x27; : &#x27;#LDS#Responsible for one role&#x27;)
+                            | translate
+                            | ldsReplace : roleClass.CountRolesOwned.value
+                        }}&lt;/span
+                      &gt;
+                    &lt;/mat-list-option&gt;
+                  &lt;/mat-selection-list&gt;
+                &lt;/p&gt;
+              &lt;/ng-container&gt;
+            &lt;/div&gt;
+
+            &lt;div class&#x3D;&quot;imx-delegatable-elements&quot; *ngIf&#x3D;&quot;!isGlobalDelegation&quot;&gt;
+              &lt;div class&#x3D;&quot;imx-delegatable-elements&quot;&gt;
+                &lt;div class&#x3D;&quot;imx-delegation-list&quot;&gt;
+                  &lt;ng-container *ngIf&#x3D;&quot;delegateableItems?.length &gt; 0; else noDelegatableItems&quot;&gt;
+                    &lt;eui-search
+                      class&#x3D;&quot;multi-select-formcontrol-eui-search&quot;
+                      data-imx-identifier&#x3D;&quot;delegation-eui-search&quot;
+                      [placeholder]&#x3D;&quot;&#x27;#LDS#Search&#x27; | translate&quot;
+                      [searchControl]&#x3D;&quot;searchControl&quot;
+                      size&#x3D;&quot;small&quot;
+                    &gt;
+                    &lt;/eui-search&gt;
+
+                    &lt;mat-selection-list (selectionChange)&#x3D;&quot;updateSelection($event)&quot;&gt;
+                      &lt;mat-list-option
+                        [checkboxPosition]&#x3D;&quot;&#x27;before&#x27;&quot;
+                        *ngFor&#x3D;&quot;let delegateable of delegateableItems&quot;
+                        [value]&#x3D;&quot;delegateable&quot;
+                        [attr.data-imx-identifier]&#x3D;&quot;&#x27;imx-delegation-step-2-role&#x27; + delegateable.GetEntity().GetKeys().join(&#x27;,&#x27;)&quot;
+                      &gt;
+                        &lt;div&gt;
+                          &lt;span&gt;{{ delegateable.TargetObjectKey.Column.GetDisplayValue() }}&lt;/span&gt;
+                          &lt;span *ngIf&#x3D;&quot;delegateable.TargetType.value !&#x3D; &#x27;Person&#x27;&quot;&gt; ({{ delegateable.TargetType.Column.GetDisplayValue() }})&lt;/span&gt;
+                        &lt;/div&gt;
+                        &lt;div class&#x3D;&quot;subtext&quot;&gt;({{ delegateable.Criteria.Column.GetDisplayValue() }})&lt;/div&gt;
+                      &lt;/mat-list-option&gt;
+                    &lt;/mat-selection-list&gt;
+
+                    &lt;div class&#x3D;&quot;imx-paginator-container&quot;&gt;
+                      &lt;mat-paginator
+                        [hidden]&#x3D;&quot;false&quot;
+                        [pageSize]&#x3D;&quot;paginatorConfig.size&quot;
+                        data-imx-identifier&#x3D;&quot;delegation-roles-paginator&quot;
+                        [pageSizeOptions]&#x3D;&quot;paginatorConfig.sizeOptions&quot;
+                        [showFirstLastButtons]&#x3D;&quot;false&quot;
+                        [length]&#x3D;&quot;paginatorConfig.length&quot;
+                        [pageIndex]&#x3D;&quot;paginatorConfig.index&quot;
+                        (page)&#x3D;&quot;onPaginatorStateChanged($event)&quot;
+                      &gt;
+                      &lt;/mat-paginator&gt;
+                    &lt;/div&gt;
+                  &lt;/ng-container&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/ng-container&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;imx-step-button&quot;&gt;
+          &lt;imx-selected-elements *ngIf&#x3D;&quot;!isGlobalDelegation&quot; [selectedElements]&#x3D;&quot;selections&quot;&gt;&lt;/imx-selected-elements&gt;
+
+          &lt;button
+            *ngIf&#x3D;&quot;!isGlobalDelegation &amp;&amp; delegateableItems?.length &gt; 0&quot;
+            mat-stroked-button
+            (click)&#x3D;&quot;onSelectall()&quot;
+            data-imx-identifier&#x3D;&quot;productselection-select-all&quot;
+            [disabled]&#x3D;&quot;isLoading&quot;
+          &gt;
+            {{ &#x27;#LDS#Select all on page&#x27; | translate }}
+          &lt;/button&gt;
+          &lt;button
+            *ngIf&#x3D;&quot;!isGlobalDelegation &amp;&amp; delegateableItems?.length &gt; 0&quot;
+            mat-stroked-button
+            (click)&#x3D;&quot;onDeselectAll()&quot;
+            data-imx-identifier&#x3D;&quot;productselection-deselect-all&quot;
+            [disabled]&#x3D;&quot;selections?.length &#x3D;&#x3D;&#x3D; 0 || isLoading&quot;
+          &gt;
+            {{ &#x27;#LDS#Deselect all&#x27; | translate }}
+          &lt;/button&gt;
+          &lt;button data-imx-identifier&#x3D;&quot;imx-delegation-step-3-back&quot; mat-stroked-button matStepperPrevious&gt;
+            {{ &#x27;#LDS#Back&#x27; | translate }}
+          &lt;/button&gt;
+          &lt;button
+            data-imx-identifier&#x3D;&quot;imx-delegation-step-3-next&quot;
+            mat-stroked-button
+            color&#x3D;&quot;primary&quot;
+            matStepperNext
+            [disabled]&#x3D;&quot;isGlobalDelegation ? !isValidGlobalDelegation() : !this.selections || this.selections?.length &#x3D;&#x3D;&#x3D; 0&quot;
+          &gt;
+            {{ &#x27;#LDS#Next&#x27; | translate }}
+          &lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/mat-step&gt;
+
+      &lt;mat-step data-imx-identifier&#x3D;&quot;imx-delegation-step-4&quot; [editable]&#x3D;&quot;!completed&quot; [completed]&#x3D;&quot;completed&quot; [state]&#x3D;&quot;state&quot; [stepControl]&#x3D;&quot;delegationForm&quot;&gt;
+        &lt;ng-template matStepLabel&gt;{{ &#x27;#LDS#Specify additional options&#x27; | translate }}&lt;/ng-template&gt;
+        &lt;form [formGroup]&#x3D;&quot;delegationForm&quot; *ngIf&#x3D;&quot;!completed&quot;&gt;
+          &lt;div class&#x3D;&quot;imx-additional-informations&quot;&gt;
+            &lt;imx-cdr-editor
+              [attr.data-imx-identifier]&#x3D;&quot;&#x27;imx-delegation-step-4&#x27; + cdr.column.ColumnName&quot;
+              *ngFor&#x3D;&quot;let cdr of cdrTimeSpan&quot;
+              [cdr]&#x3D;&quot;cdr&quot;
+              (controlCreated)&#x3D;&quot;addControl(delegationForm, cdr.column.ColumnName, $event)&quot;
+            &gt;
+            &lt;/imx-cdr-editor&gt;
+            &lt;mat-error class&#x3D;&quot;imx-small-error&quot; *ngIf&#x3D;&quot;delegationForm.errors?.validFromLargerThanUntil&quot;&gt;
+              {{ &#x27;#LDS#The specified validity period is invalid. The validity end date is before the validity start date. Please change the validity period.&#x27; | translate }}
+            &lt;/mat-error&gt;
+            &lt;ng-container *ngFor&#x3D;&quot;let cdr of cdrList&quot;&gt;
+              &lt;imx-cdr-editor
+                [attr.data-imx-identifier]&#x3D;&quot;&#x27;imx-delegation-step-4&#x27; + cdr.column.ColumName&quot;
+                *ngIf&#x3D;&quot;isShowCdr(cdr)&quot;
+                [cdr]&#x3D;&quot;cdr&quot;
+                (controlCreated)&#x3D;&quot;addControl(delegationForm, cdr.column.ColumnName, $event)&quot;
+              &gt;
+              &lt;/imx-cdr-editor&gt;
+            &lt;/ng-container&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;imx-step-button&quot;&gt;
+            &lt;button data-imx-identifier&#x3D;&quot;imx-delegation-step-4-back&quot; mat-stroked-button matStepperPrevious [disabled]&#x3D;&quot;isSaving&quot;&gt;
+              {{ &#x27;#LDS#Back&#x27; | translate }}
+            &lt;/button&gt;
+            &lt;button
+              data-imx-identifier&#x3D;&quot;imx-delegation-step-4-save&quot;
+              mat-raised-button
+              color&#x3D;&quot;primary&quot;
+              matStepperNext
+              (click)&#x3D;&quot;saveDelegation()&quot;
+              [disabled]&#x3D;&quot;delegationForm.invalid || isSaving&quot;
+            &gt;
+              {{ &#x27;#LDS#Save&#x27; | translate }}
+            &lt;/button&gt;
+            &lt;mat-spinner diameter&#x3D;&quot;30&quot; *ngIf&#x3D;&quot;isSaving&quot;&gt;&lt;/mat-spinner&gt;
+          &lt;/div&gt;
+        &lt;/form&gt;
+      &lt;/mat-step&gt;
+    &lt;/mat-stepper&gt;
+
+    &lt;eui-alert
+      data-imx-identifier&#x3D;&quot;imx-delegation-result-alert&quot;
+      class&#x3D;&quot;imx-delegation-success&quot;
+      *ngIf&#x3D;&quot;completed&quot;
+      type&#x3D;&quot;info&quot;
+      condensed&#x3D;&quot;true&quot;
+      [colored]&#x3D;&quot;true&quot;
+      [dismissable]&#x3D;&quot;false&quot;
+    &gt;
+      &lt;div class&#x3D;&quot;imx-alert-content&quot;&gt;
+        &lt;div class&#x3D;&quot;imx-message imx-message-ok&quot;&gt;
+          {{ &#x27;#LDS#The delegation has been successfully created. It may take some time for the changes to take effect.&#x27; | translate }}
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;imx-step-button-save&quot;&gt;
+          &lt;button data-imx-identifier&#x3D;&quot;imx-delegation-result-new-delegation&quot; mat-raised-button color&#x3D;&quot;primary&quot; (click)&#x3D;&quot;resetDelegation(); stepper.reset()&quot;&gt;
+            {{ &#x27;#LDS#Create another delegation&#x27; | translate }}
+          &lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/eui-alert&gt;
+  &lt;/div&gt;
+&lt;/mat-card&gt;
+
+&lt;ng-template #noDelegatableItems&gt;
+  &lt;div class&#x3D;&quot;imx-no-delegatable-items&quot;&gt;
+    &lt;eui-icon icon&#x3D;&quot;table&quot;&gt;&lt;/eui-icon&gt;
+    &lt;p&gt;{{ &#x27;#LDS#There are no role memberships or responsibilities you can delegate.&#x27; | translate }}&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/ng-template&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="styleData">
+                <p class="comment">
+                    <code>./delegation.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">@import &#x27;@elemental-ui/core/src/styles/_eui_palette.scss&#x27;;
+
+@mixin stepper-margin {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+
+  .imx-stepper-content {
+    @include stepper-margin();
+  }
+
+  .imx-step-button,
+  .imx-step-button-save {
+    display: flex;
+    &gt; *:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  //For hiding components during loading
+  .hidden {
+    display: none;
+  }
+
+  imx-busy-indicator {
+    align-self: center;
+    margin-top: 20px;
+  }
+
+  .imx-roles-form {
+    display: flex;
+    flex-direction: column;
+    height: 390px;
+    border-radius: 5px;
+    padding: 5px;
+    @include stepper-margin();
+  }
+
+  .imx-step-button-save {
+    align-self: flex-end;
+    margin-top: 16px;
+  }
+
+  .imx-type-selector {
+    @include stepper-margin();
+    &gt; .mat-radio-button {
+      margin-left: 25px;
+    }
+  }
+
+  .imx-delegatable-elements {
+    overflow: hidden;
+    margin-bottom: 10px;
+    max-height: 600px;
+    display: flex;
+    flex: 1 1 auto;
+  }
+
+  .imx-delegatable-elements mat-list-option .subtext {
+    font-size: 11px;
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+
+  .imx-delegatable-elements mat-list-option {
+    font-size: smaller;
+  }
+
+  .imx-delegation-stepper {
+    flex: 1 1 auto;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 3px;
+    overflow: hidden;
+
+    &gt; :first-child {
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 auto;
+      overflow: auto;
+    }
+  }
+
+  .imx-delegation-list {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+
+    &gt; :nth-child(2) {
+      flex: 1 1 auto;
+      overflow: auto;
+    }
+
+    .imx-paginator-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      &gt; :last-child {
+        flex: 1 1 auto;
+      }
+
+      ::ng-deep .mat-paginator {
+        box-shadow: none;
+      }
+    }
+
+    .multi-select-formcontrol-eui-search {
+      width: 100%;
+      display: flex;
+
+      .eui-search {
+        width: 100%;
+      }
+
+      ::ng-deep .eui-search.mat-form-field.mat-form-field-appearance-outline {
+        min-width: 280px;
+        flex: 1;
+        margin-bottom: 10px;
+      }
+    }
+
+    .imx-selected-entitlements {
+      margin: 0;
+      line-height: 36px;
+      font-size: 13.3px;
+      flex: auto;
+
+      ::ng-deep .imx-badge.eui-badge .eui-badge-content {
+        font-size: 13.3px;
+        line-height: 14px;
+      }
+    }
+
+    .imx-badge {
+      background-color: inherit;
+    }
+  }
+
+  .mat-vertical-content-container {
+    flex: 1 1 auto;
+  }
+
+  .imx-small-error {
+    font-size: small;
+    margin: -25px 0 20px 10px;
+  }
+
+  .imx-delegation-success {
+    margin: 20px;
+    flex: 1 1 auto;
+    width: max-content;
+  }
+
+  .imx-alert-content {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .imx-global-elements {
+    padding-left: 1em;
+    overflow-y: auto;
+  }
+
+  .nr-roles {
+    font-style: italic;
+  }
+
+  .imx-delegation-type {
+    @include stepper-margin();
+    &gt; * :not(last-child) {
+      margin-right: 15px;
+    }
+  }
+
+  .imx-class-title {
+    font-weight: 600;
+    margin: 30px 0 0 0;
+  }
+
+  .imx-no-delegatable-items {
+    display: flex;
+    margin: 20px 0;
+    flex: 1 1 auto;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    .eui-icon {
+      font-size: 100px;
+    }
+
+    p {
+      margin: 0;
+      font-size: 18px;
+    }
+  }
+
+  .imx-additional-informations {
+    @include stepper-margin();
+    overflow: auto;
+  }
+}
+
+// Theming
+.eui-light-theme {
+  :host {
+    .imx-no-delegatable-items {
+      .eui-icon {
+        color: $color-gray-10;
+      }
+
+      p {
+        color: $color-gray-50;
+      }
+    }
+
+    .imx-roles-form {
+      border: $color-gray-10 1px solid;
+    }
+
+    .imx-delegatable-elements mat-list-option .subtext {
+      color: $color-gray-40;
+    }
+  }
+}
+
+.eui-dark-theme {
+  :host {
+    .imx-delegatable-elements mat-list-option .subtext {
+      color: $color-gray-20;
+    }
+
+    .imx-no-delegatable-items {
+      .eui-icon {
+        color: $color-gray-20;
+      }
+
+      p {
+        color: $color-gray-10;
+      }
+    }
+  }
+}
+
+.eui-contrast-theme {
+  :host {
+    .imx-delegatable-elements mat-list-option .subtext {
+      color: $color-gray-0;
+    }
+
+    .imx-no-delegatable-items {
+      .eui-icon {
+        color: $color-gray-10;
+      }
+
+      p {
+        color: $color-gray-0;
+      }
+    }
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><h1 class="mat-headline">  <span>{{ \'#LDS#Heading Create Delegation\' | translate }}</span>  <imx-help-contextual></imx-help-contextual></h1><mat-card class="imx-delegation-stepper">  <div>    <imx-busy-indicator *ngIf="!initialized"></imx-busy-indicator>    <ng-container *ngIf="initialized && isManager && !completed">      <mat-radio-group class="imx-type-selector" [(ngModel)]="withSubordinates" data-imx-identifier="withSubordinates" (change)="resetDelegation()">        <mat-radio-button [value]="false" data-imx-identifier="withSubordinates-false">          {{ \'#LDS#Create delegation for me\' | translate }}        </mat-radio-button>        <mat-radio-button [value]="true" data-imx-identifier="withSubordinates-true">          {{ \'#LDS#Create delegation for another identity\' | translate }}        </mat-radio-button>      </mat-radio-group>    </ng-container>    <mat-stepper [ngClass]="{ hidden: completed }" orientation="vertical" #stepper [linear]="true" (selectionChange)="selectedStepChanged($event)">      <mat-step *ngIf="withSubordinates" data-imx-identifier="imx-delegation-step-0" [stepControl]="senderFormGroup">        <ng-template matStepLabel>          {{ \'#LDS#Select the identity whose memberships and responsibilities you want to delegate\' | translate }}        </ng-template>        <div class="imx-stepper-content">          <imx-cdr-editor            data-imx-identifier="imx-delegation-step-1-cdr-recipient"            [cdr]="cdrPersonSender"            (controlCreated)="addControl(senderFormGroup, cdrPersonSender.column.ColumnName, $event)"          ></imx-cdr-editor>        </div>        <div class="imx-step-button">          <button data-imx-identifier="imx-delegation-step-0-next" mat-stroked-button color="primary" matStepperNext [disabled]="senderFormGroup.invalid">            {{ \'#LDS#Next\' | translate }}          </button>        </div>      </mat-step>      <mat-step #recipientStep data-imx-identifier="imx-delegation-step-1" [editable]="!completed" [stepControl]="recipientFormGroup">        <ng-template matStepLabel>          {{ \'#LDS#Select the identity to which you want to delegate\' | translate }}        </ng-template>        <div class="imx-stepper-content">          <imx-cdr-editor            data-imx-identifier="imx-delegation-step-1-cdr-recipient"            [cdr]="cdrPersonRecipient"            (controlCreated)="addControl(recipientFormGroup, cdrPersonRecipient.column.ColumnName, $event)"          >          </imx-cdr-editor>        </div>        <div class="imx-step-button">          <button data-imx-identifier="imx-delegation-step-1-next" mat-stroked-button color="primary" matStepperNext [disabled]="recipientFormGroup.invalid">            {{ \'#LDS#Next\' | translate }}          </button>        </div>      </mat-step>      <mat-step data-imx-identifier="imx-delegation-step-2" [stepControl]="delegationTypeForm">        <ng-template matStepLabel>{{ \'#LDS#Select the type of delegation\' | translate }}</ng-template>        <div class="imx-delegation-type">          <mat-radio-group [(ngModel)]="isGlobalDelegation">            <mat-radio-button [value]="true">              <span translate>#LDS#Delegate all memberships and responsibilities</span>            </mat-radio-button>            <mat-radio-button [value]="false">              <span translate>#LDS#Select individual memberships and responsibilities to delegate</span>            </mat-radio-button>          </mat-radio-group>        </div>        <div class="imx-step-button">          <button data-imx-identifier="imx-delegation-step-2-back" mat-stroked-button matStepperPrevious>            {{ \'#LDS#Back\' | translate }}          </button>          <button data-imx-identifier="imx-delegation-step-2-next" mat-stroked-button color="primary" matStepperNext>            {{ \'#LDS#Next\' | translate }}          </button>        </div>      </mat-step>      <mat-step #delegationObjects data-imx-identifier="imx-delegation-step-3" [editable]="!completed" [stepControl]="rolesForm">        <ng-template matStepLabel>          {{ \'#LDS#Select the role memberships/responsibilities you want to delegate\' | translate }}        </ng-template>        <div class="imx-roles-form">          <imx-busy-indicator *ngIf="isLoading"></imx-busy-indicator>          <ng-container *ngIf="!isLoading">            <div class="imx-global-elements" *ngIf="isGlobalDelegation">              <p>                <mat-checkbox [(ngModel)]="globalDelegation.UseForShop" data-imx-identifier="globaldelegation-useforshop">                  {{ \'#LDS#Delegate request approval decisions\' | translate }}                </mat-checkbox>              </p>              <p>                <mat-checkbox [(ngModel)]="globalDelegation.UseForShopCompliance" data-imx-identifier="globaldelegation-Useforshopcompliance">                  {{ \'#LDS#Delegate compliance violation approval decisions\' | translate }}                </mat-checkbox>              </p>              <p>                <mat-checkbox [(ngModel)]="globalDelegation.UseForHeadPerson" data-imx-identifier="globaldelegation-useforheadperson">                  <ng-container *ngIf="countReports < 1">                    {{ \'#LDS#Delegate manager responsibilities\' | translate }}                  </ng-container>                  <ng-container *ngIf="countReports == 1">                    {{ \'#LDS#Delegate manager responsibilities for one identity\' | translate }}                  </ng-container>                  <ng-container *ngIf="countReports > 1">                    {{ \'#LDS#Delegate manager responsibilities for {0} identities\' | translate | ldsReplace : countReports }}                  </ng-container>                </mat-checkbox>              </p>              <p>                <mat-checkbox [(ngModel)]="globalDelegation.UseForAttestation" data-imx-identifier="globaldelegation-useforattestation">                  {{ \'#LDS#Delegate attestation approval decisions\' | translate }}                </mat-checkbox>              </p>              <ng-container *ngIf="roleClasses.length > 0">                <p class="imx-class-title">{{ \'#LDS#Delegate responsibilities for roles of the following role classes\' | translate }}:</p>                <p>                  <mat-selection-list [(ngModel)]="globalDelegation.UidOrgRoot">                    <mat-list-option                      checkboxPosition="before"                      *ngFor="let roleClass of roleClasses"                      [value]="roleClass.GetEntity().GetKeys()[0]"                      [attr.data-imx-identifier]="\'multi-select-formcontrol-list\' + roleClass.GetEntity().GetKeys[0]"                    >                      {{ roleClass.GetEntity().GetDisplay() }}                      <span class="nr-roles">                        {{                          (roleClass.CountRolesOwned.value > 1 ? \'#LDS#Responsible for {0} roles\' : \'#LDS#Responsible for one role\')                            | translate                            | ldsReplace : roleClass.CountRolesOwned.value                        }}</span                      >                    </mat-list-option>                  </mat-selection-list>                </p>              </ng-container>            </div>            <div class="imx-delegatable-elements" *ngIf="!isGlobalDelegation">              <div class="imx-delegatable-elements">                <div class="imx-delegation-list">                  <ng-container *ngIf="delegateableItems?.length > 0; else noDelegatableItems">                    <eui-search                      class="multi-select-formcontrol-eui-search"                      data-imx-identifier="delegation-eui-search"                      [placeholder]="\'#LDS#Search\' | translate"                      [searchControl]="searchControl"                      size="small"                    >                    </eui-search>                    <mat-selection-list (selectionChange)="updateSelection($event)">                      <mat-list-option                        [checkboxPosition]="\'before\'"                        *ngFor="let delegateable of delegateableItems"                        [value]="delegateable"                        [attr.data-imx-identifier]="\'imx-delegation-step-2-role\' + delegateable.GetEntity().GetKeys().join(\',\')"                      >                        <div>                          <span>{{ delegateable.TargetObjectKey.Column.GetDisplayValue() }}</span>                          <span *ngIf="delegateable.TargetType.value != \'Person\'"> ({{ delegateable.TargetType.Column.GetDisplayValue() }})</span>                        </div>                        <div class="subtext">({{ delegateable.Criteria.Column.GetDisplayValue() }})</div>                      </mat-list-option>                    </mat-selection-list>                    <div class="imx-paginator-container">                      <mat-paginator                        [hidden]="false"                        [pageSize]="paginatorConfig.size"                        data-imx-identifier="delegation-roles-paginator"                        [pageSizeOptions]="paginatorConfig.sizeOptions"                        [showFirstLastButtons]="false"                        [length]="paginatorConfig.length"                        [pageIndex]="paginatorConfig.index"                        (page)="onPaginatorStateChanged($event)"                      >                      </mat-paginator>                    </div>                  </ng-container>                </div>              </div>            </div>          </ng-container>        </div>        <div class="imx-step-button">          <imx-selected-elements *ngIf="!isGlobalDelegation" [selectedElements]="selections"></imx-selected-elements>          <button            *ngIf="!isGlobalDelegation && delegateableItems?.length > 0"            mat-stroked-button            (click)="onSelectall()"            data-imx-identifier="productselection-select-all"            [disabled]="isLoading"          >            {{ \'#LDS#Select all on page\' | translate }}          </button>          <button            *ngIf="!isGlobalDelegation && delegateableItems?.length > 0"            mat-stroked-button            (click)="onDeselectAll()"            data-imx-identifier="productselection-deselect-all"            [disabled]="selections?.length === 0 || isLoading"          >            {{ \'#LDS#Deselect all\' | translate }}          </button>          <button data-imx-identifier="imx-delegation-step-3-back" mat-stroked-button matStepperPrevious>            {{ \'#LDS#Back\' | translate }}          </button>          <button            data-imx-identifier="imx-delegation-step-3-next"            mat-stroked-button            color="primary"            matStepperNext            [disabled]="isGlobalDelegation ? !isValidGlobalDelegation() : !this.selections || this.selections?.length === 0"          >            {{ \'#LDS#Next\' | translate }}          </button>        </div>      </mat-step>      <mat-step data-imx-identifier="imx-delegation-step-4" [editable]="!completed" [completed]="completed" [state]="state" [stepControl]="delegationForm">        <ng-template matStepLabel>{{ \'#LDS#Specify additional options\' | translate }}</ng-template>        <form [formGroup]="delegationForm" *ngIf="!completed">          <div class="imx-additional-informations">            <imx-cdr-editor              [attr.data-imx-identifier]="\'imx-delegation-step-4\' + cdr.column.ColumnName"              *ngFor="let cdr of cdrTimeSpan"              [cdr]="cdr"              (controlCreated)="addControl(delegationForm, cdr.column.ColumnName, $event)"            >            </imx-cdr-editor>            <mat-error class="imx-small-error" *ngIf="delegationForm.errors?.validFromLargerThanUntil">              {{ \'#LDS#The specified validity period is invalid. The validity end date is before the validity start date. Please change the validity period.\' | translate }}            </mat-error>            <ng-container *ngFor="let cdr of cdrList">              <imx-cdr-editor                [attr.data-imx-identifier]="\'imx-delegation-step-4\' + cdr.column.ColumName"                *ngIf="isShowCdr(cdr)"                [cdr]="cdr"                (controlCreated)="addControl(delegationForm, cdr.column.ColumnName, $event)"              >              </imx-cdr-editor>            </ng-container>          </div>          <div class="imx-step-button">            <button data-imx-identifier="imx-delegation-step-4-back" mat-stroked-button matStepperPrevious [disabled]="isSaving">              {{ \'#LDS#Back\' | translate }}            </button>            <button              data-imx-identifier="imx-delegation-step-4-save"              mat-raised-button              color="primary"              matStepperNext              (click)="saveDelegation()"              [disabled]="delegationForm.invalid || isSaving"            >              {{ \'#LDS#Save\' | translate }}            </button>            <mat-spinner diameter="30" *ngIf="isSaving"></mat-spinner>          </div>        </form>      </mat-step>    </mat-stepper>    <eui-alert      data-imx-identifier="imx-delegation-result-alert"      class="imx-delegation-success"      *ngIf="completed"      type="info"      condensed="true"      [colored]="true"      [dismissable]="false"    >      <div class="imx-alert-content">        <div class="imx-message imx-message-ok">          {{ \'#LDS#The delegation has been successfully created. It may take some time for the changes to take effect.\' | translate }}        </div>        <div class="imx-step-button-save">          <button data-imx-identifier="imx-delegation-result-new-delegation" mat-raised-button color="primary" (click)="resetDelegation(); stepper.reset()">            {{ \'#LDS#Create another delegation\' | translate }}          </button>        </div>      </div>    </eui-alert>  </div></mat-card><ng-template #noDelegatableItems>  <div class="imx-no-delegatable-items">    <eui-icon icon="table"></eui-icon>    <p>{{ \'#LDS#There are no role memberships or responsibilities you can delegate.\' | translate }}</p>  </div></ng-template></div>'
+    var COMPONENTS = [{'name': 'AddressbookComponent', 'selector': 'imx-addressbook'},{'name': 'AddressbookDetailComponent', 'selector': 'imx-addressbook-detail'},{'name': 'AnswerQuestionsComponent', 'selector': ''},{'name': 'ApplicationDetailsComponent', 'selector': 'imx-application-details'},{'name': 'ApplicationDialogComponent', 'selector': 'imx-application-dialog'},{'name': 'ApprovalHistoryComponent', 'selector': 'imx-approval-history'},{'name': 'ApprovalLevelFormComponent', 'selector': 'imx-approval-level-form'},{'name': 'ApprovalsComponent', 'selector': 'imx-itshop-approvals'},{'name': 'ApprovalsSidesheetComponent', 'selector': 'imx-approvals-sidesheet'},{'name': 'ApprovalsTableComponent', 'selector': 'imx-approvals-table'},{'name': 'ApprovalStepFormComponent', 'selector': 'imx-approval-step-form'},{'name': 'ApprovalWorkflowEditComponent', 'selector': 'imx-approval-workflow-edit'},{'name': 'ApprovalWorkflowEditInfoComponent', 'selector': 'imx-approval-workflow-edit-info'},{'name': 'ApprovalWorkflowFormComponent', 'selector': 'imx-approval-workflow-form'},{'name': 'ApprovalWorkflowHomeComponent', 'selector': 'imx-approval-workflow-home'},{'name': 'ArchivedRequestsComponent', 'selector': ''},{'name': 'AssignmentsComponent', 'selector': 'imx-assignments'},{'name': 'BadgeTileComponent', 'selector': 'imx-badge-tile'},{'name': 'BaseViewerComponent', 'selector': ''},{'name': 'BlockDetailSidesheetComponent', 'selector': 'imx-block-detail-sidesheet'},{'name': 'BusinessOwnerAddOnTileComponent', 'selector': 'imx-businessowner-addon-tile'},{'name': 'BusinessOwnerChartSummaryComponent', 'selector': 'imx-businessowner-chartsummary'},{'name': 'BusinessOwnerOverviewTileComponent', 'selector': 'imx-businessowner-overview-tile'},{'name': 'CartItemDisplayComponent', 'selector': 'imx-cart-item-display'},{'name': 'CartItemEditComponent', 'selector': 'imx-cart-item-edit'},{'name': 'CartItemsComponent', 'selector': 'imx-cart-items'},{'name': 'CartItemValidationOverviewComponent', 'selector': 'imx-cart-item-validation-overview'},{'name': 'CategoryTreeComponent', 'selector': 'imx-category-tree'},{'name': 'ChartsSidesheetComponent', 'selector': 'imx-charts-sidesheet'},{'name': 'ChartTableComponent', 'selector': 'imx-chart-table'},{'name': 'ChartTileComponent', 'selector': 'imx-chart-tile'},{'name': 'CheckPasswordsComponent', 'selector': ''},{'name': 'CompareComponent', 'selector': ''},{'name': 'CompareItemComponent', 'selector': 'imx-role-compareitem'},{'name': 'ConfirmCartSubmitDialog', 'selector': 'imx-confirm-cart-submit'},{'name': 'ContainerDomComponent', 'selector': 'imx-container-dom'},{'name': 'CreateNewDeviceComponent', 'selector': 'imx-create-new-device'},{'name': 'CreateNewIdentityComponent', 'selector': 'imx-create-new-identity'},{'name': 'DataExplorerIdentitiesComponent', 'selector': 'imx-data-explorer-identities'},{'name': 'DataExplorerViewComponent', 'selector': ''},{'name': 'DecisionHistoryComponent', 'selector': 'imx-decision-history'},{'name': 'DecisionReasonComponent', 'selector': 'imx-decision-reason'},{'name': 'DefaultCartItemDisplayComponent', 'selector': ''},{'name': 'DefaultRequestDisplayComponent', 'selector': ''},{'name': 'DelegationComponent', 'selector': ''},{'name': 'DetailViewerComponent', 'selector': 'imx-detail-viewer'},{'name': 'DiscreteLegendComponent', 'selector': 'imx-discrete-legend'},{'name': 'DuplicateCheckComponent', 'selector': 'imx-duplicate-check'},{'name': 'DuplicatePatternItemsComponent', 'selector': 'imx-duplicate-pattern-items'},{'name': 'DuplicatesSidesheetComponent', 'selector': ''},{'name': 'DynamicExclusionDialogComponent', 'selector': 'imx-dynamic-exclusion-dialog'},{'name': 'DynamicRoleComponent', 'selector': 'imx-dynamic-group'},{'name': 'EdgeDomComponent', 'selector': 'imx-edge-dom'},{'name': 'EntitlementSelectorComponent', 'selector': 'imx-entitlement-selector'},{'name': 'ExcludedMembershipsComponent', 'selector': 'imx-excluded-memberships'},{'name': 'ExclusionCheckComponent', 'selector': 'imx-exclusion-check'},{'name': 'FavoritesTabComponent', 'selector': 'imx-favorites-tab'},{'name': 'HeatmapChartComponent', 'selector': 'imx-heatmap-chart'},{'name': 'HeatmapSidesheetComponent', 'selector': 'imx-heatmap-sidesheet'},{'name': 'HeatmapTileComponent', 'selector': 'imx-heatmap-tile'},{'name': 'HeatmapVisualComponent', 'selector': 'imx-heatmap-visual'},{'name': 'HistoryFilterComponent', 'selector': 'imx-history-filter'},{'name': 'IconTileComponent', 'selector': 'imx-icon-tile'},{'name': 'IdentityComponent', 'selector': 'imx-orgchart-identity'},{'name': 'IdentityRoleMembershipsComponent', 'selector': ''},{'name': 'IdentitySelectComponent', 'selector': 'imx-identity-select'},{'name': 'IdentitySidesheetComponent', 'selector': 'imx-identity-sidesheet'},{'name': 'InquiriesComponent', 'selector': 'imx-inquiries'},{'name': 'ItshopPatternAddProductsComponent', 'selector': 'imx-itshop-pattern-add-products'},{'name': 'ItshopPatternComponent', 'selector': 'imx-itshop-pattern'},{'name': 'ItshopPatternCreateSidesheetComponent', 'selector': 'imx-itshop-pattern-create-sidesheet'},{'name': 'ItshopPatternItemEditComponent', 'selector': 'imx-itshop-pattern-item-edit'},{'name': 'ItshopPatternSidesheetComponent', 'selector': 'imx-itshop-pattern-sidesheet'},{'name': 'MailSubscriptionsComponent', 'selector': 'imx-mail-subscriptions'},{'name': 'MemberSelectorComponent', 'selector': ''},{'name': 'MembershipsChooseIdentitiesComponent', 'selector': 'imx-memberships-choose-identities'},{'name': 'MyResponsibilitiesViewComponent', 'selector': 'imx-my-responsibilities-view'},{'name': 'NewRequestComponent', 'selector': 'imx-new-request'},{'name': 'NewRequestContentComponent', 'selector': 'imx-new-request-content'},{'name': 'NewRequestHeaderComponent', 'selector': 'imx-new-request-header'},{'name': 'NewRequestHeaderToolbarComponent', 'selector': 'imx-new-request-header-toolbar'},{'name': 'NewRequestPeerGroupComponent', 'selector': 'imx-new-request-peer-group'},{'name': 'NewRequestProductBundleComponent', 'selector': 'imx-new-request-product-bundle'},{'name': 'NewRequestProductComponent', 'selector': 'imx-new-request-product'},{'name': 'NewRequestRecipientsComponent', 'selector': 'imx-new-request-recipients'},{'name': 'NewRequestReferenceUserCardComponent', 'selector': 'imx-new-request-reference-user-card'},{'name': 'NewRequestReferenceUserComponent', 'selector': 'imx-new-request-reference-user'},{'name': 'NewRequestSelectedProductsComponent', 'selector': 'imx-new-request-selected-products'},{'name': 'NewRoleComponent', 'selector': 'imx-new-role'},{'name': 'NodeDomComponent', 'selector': 'imx-node-dom'},{'name': 'NonRequestableItemsComponent', 'selector': 'imx-non-requestable-items'},{'name': 'NotificationTileComponent', 'selector': 'imx-notification-tile'},{'name': 'NotRequestableMembershipsComponent', 'selector': 'imx-not-requestable-memberships'},{'name': 'ObjectHyperviewComponent', 'selector': 'imx-object-hyperview'},{'name': 'ObjectOverviewPersonComponent', 'selector': ''},{'name': 'OptionalItemsSidesheetComponent', 'selector': 'imx-optional-items-sidesheet'},{'name': 'OrderForAdditionalUsersComponent', 'selector': 'imx-order-for-additional-users'},{'name': 'OrgChartComponent', 'selector': 'imx-orgchart'},{'name': 'OwnerControlComponent', 'selector': 'imx-owner-control'},{'name': 'PasscodeLoginComponent', 'selector': ''},{'name': 'PasscodeViewerComponent', 'selector': 'imx-passcode-viewer'},{'name': 'PasswordDashboardComponent', 'selector': ''},{'name': 'PasswordQueryComponent', 'selector': 'imx-password-query'},{'name': 'PasswordQuestionsComponent', 'selector': 'imx-password-questions'},{'name': 'PasswordQuestionsSidesheetComponent', 'selector': 'imx-password-questions-sidesheet'},{'name': 'PasswordResetComponent', 'selector': 'imx-password-reset'},{'name': 'PatternDetailsSidesheetComponent', 'selector': 'imx-pattern-details-sidesheet'},{'name': 'PatternItemListComponent', 'selector': 'imx-pattern-item-list'},{'name': 'PeerGroupComponent', 'selector': 'imx-peer-group'},{'name': 'PeerGroupDiscardSelectedComponent', 'selector': 'imx-peer-group-discard-selected'},{'name': 'PointStatVisualComponent', 'selector': 'imx-point-stat-visual'},{'name': 'PrimaryMembershipsComponent', 'selector': 'imx-primary-memberships'},{'name': 'ProductBundleItemsComponent', 'selector': 'imx-product-bundle-items'},{'name': 'ProductBundleListComponent', 'selector': 'imx-product-bundle-list'},{'name': 'ProductDependencyCheckComponent', 'selector': 'imx-product-dependency-check'},{'name': 'ProductDetailsSidesheetComponent', 'selector': 'imx-product-details-sidesheet'},{'name': 'ProductDetailsSidesheetComponent', 'selector': 'imx-product-details-sidesheet'},{'name': 'ProductEntitlementsComponent', 'selector': 'imx-product-entitlements'},{'name': 'ProductEntitlementsComponent', 'selector': 'imx-product-entitlements'},{'name': 'ProductSelectionComponent', 'selector': 'imx-product-selection'},{'name': 'ProfileComponent', 'selector': ''},{'name': 'QaLoginComponent', 'selector': ''},{'name': 'QpmIntegrationComponent', 'selector': ''},{'name': 'QueryPersonComponent', 'selector': 'imx-itshop-queryperson'},{'name': 'ReasonSidesheetComponent', 'selector': 'imx-reason-sidesheet'},{'name': 'RecommendationSidesheetComponent', 'selector': 'imx-recommendation-sidesheet'},{'name': 'RelatedApplicationMenuItemComponent', 'selector': 'imx-related-application-menu-item'},{'name': 'RelatedApplicationsComponent', 'selector': 'imx-related-applications'},{'name': 'RelatedApplicationsSidesheetComponent', 'selector': 'imx-related-applications-sidesheet'},{'name': 'RemoveMembershipComponent', 'selector': ''},{'name': 'RequestActionComponent', 'selector': ''},{'name': 'RequestConfigMembersComponent', 'selector': 'imx-request-config-members'},{'name': 'RequestConfigSidesheetComponent', 'selector': 'imx-request-config-sidesheet'},{'name': 'RequestDetailComponent', 'selector': 'imx-request-detail'},{'name': 'RequestDisplayComponent', 'selector': 'imx-request-display'},{'name': 'RequestFilterComponent', 'selector': 'imx-request-filter'},{'name': 'RequestHistoryComponent', 'selector': ''},{'name': 'RequestHistoryFilterComponent', 'selector': 'imx-request-history-filter'},{'name': 'RequestInfoComponent', 'selector': 'imx-requestinfo'},{'name': 'RequestsComponent', 'selector': 'imx-requests'},{'name': 'RequestsEntitySelectorComponent', 'selector': 'imx-requests-selector'},{'name': 'RequestShelfEntitlementsComponent', 'selector': 'imx-request-shelf-entitlements'},{'name': 'RequestShelfSidesheetComponent', 'selector': 'imx-request-shelf-sidesheet'},{'name': 'RequestShelvesComponent', 'selector': 'imx-request-shelves'},{'name': 'RequestTableComponent', 'selector': 'imx-request-table'},{'name': 'ResourcesComponent', 'selector': ''},{'name': 'ResourceSidesheetComponent', 'selector': 'imx-resource-sidesheet'},{'name': 'RestoreComponent', 'selector': ''},{'name': 'RiskAnalysisComponent', 'selector': 'imx-riskindex-analysis'},{'name': 'RiskAnalysisSidesheetComponent', 'selector': ''},{'name': 'RiskConfigComponent', 'selector': 'imx-risk-config'},{'name': 'RiskConfigSidesheetComponent', 'selector': 'imx-risk-config-sidesheet'},{'name': 'RoleDetailComponent', 'selector': 'imx-role-detail'},{'name': 'RoleEntitlementsComponent', 'selector': 'imx-role-entitlements'},{'name': 'RoleMainDataComponent', 'selector': 'imx-role-main-data'},{'name': 'RoleMembershipsComponent', 'selector': 'imx-role-memberships'},{'name': 'RoleMembershipsComponent', 'selector': 'imx-role-memberships'},{'name': 'RoleRecommendationsComponent', 'selector': 'imx-role-recommendations'},{'name': 'RolesOverviewComponent', 'selector': 'imx-roles-overview'},{'name': 'RollbackComponent', 'selector': ''},{'name': 'SecondaryMembershipsComponent', 'selector': 'imx-secondary-memberships'},{'name': 'SecurityKeysComponent', 'selector': 'imx-security-keys'},{'name': 'SecurityKeysSidesheetComponent', 'selector': ''},{'name': 'ServiceCategoriesComponent', 'selector': 'imx-service-categories'},{'name': 'ServiceCategoryComponent', 'selector': 'imx-service-category'},{'name': 'ServiceCategoryListComponent', 'selector': 'imx-servicecategory-list'},{'name': 'ServiceItemDetailComponent', 'selector': 'imx-service-item-detail'},{'name': 'ServiceItemEditComponent', 'selector': 'imx-service-item-edit'},{'name': 'ServiceItemInfoComponent', 'selector': 'imx-service-item-info'},{'name': 'ServiceitemListComponent', 'selector': 'imx-serviceitem-list'},{'name': 'ServiceItemsEditComponent', 'selector': 'imx-service-items-edit'},{'name': 'ServiceItemsEditFormComponent', 'selector': 'imx-service-items-edit-form'},{'name': 'ServiceItemsEditSidesheetComponent', 'selector': 'imx-service-items-edit-sidesheet'},{'name': 'ServiceItemSelectComponent', 'selector': 'imx-service-item-select'},{'name': 'ServiceItemsSelectorComponent', 'selector': 'imx-service-items-selector'},{'name': 'ServiceItemTagsComponent', 'selector': 'imx-service-item-tags'},{'name': 'SettingsComponent', 'selector': 'imx-settings'},{'name': 'ShelfSelectionComponent', 'selector': 'imx-shelf-selection'},{'name': 'ShoppingCartComponent', 'selector': 'imx-shopping-cart'},{'name': 'ShoppingCartEmptyComponent', 'selector': 'imx-shopping-cart-empty'},{'name': 'ShoppingCartForLaterComponent', 'selector': ''},{'name': 'ShoppingCartSubmitWarningsDialog', 'selector': 'imx-shopping-cart-submit-result'},{'name': 'SourceDetectiveComponent', 'selector': 'imx-source-detective'},{'name': 'SourceDetectiveSidesheetComponent', 'selector': ''},{'name': 'SplitComponent', 'selector': ''},{'name': 'StartComponent', 'selector': 'imx-start'},{'name': 'StatisticsCardsComponent', 'selector': 'imx-statistics-cards'},{'name': 'StatisticsCardsVisualsComponent', 'selector': 'imx-statistics-cards-visuals'},{'name': 'StatisticsForObjectsComponent', 'selector': 'imx-statistics-for-objects'},{'name': 'StatisticsHomePageComponent', 'selector': 'imx-statistics-home-page'},{'name': 'StatisticsOrderingSidesheetComponent', 'selector': 'imx-statistics-ordering-sidesheet'},{'name': 'StatisticsOrderingSidesheetDialogComponent', 'selector': 'imx-statistics-ordering-sidesheet-dialog'},{'name': 'StatisticsTreeComponent', 'selector': 'imx-statistics-tree'},{'name': 'TeamResponsibilitiesComponent', 'selector': 'imx-team-responsibilities'},{'name': 'TeamResponsibilitySidesheetComponent', 'selector': 'imx-team-responsibility-sidesheet'},{'name': 'TeamResponsibilityTileComponent', 'selector': 'imx-team-responsibility-tile'},{'name': 'TermsOfUseAcceptComponent', 'selector': ''},{'name': 'TermsOfUseListComponent', 'selector': 'imx-terms-of-use-list'},{'name': 'TermsOfUseViewerComponent', 'selector': 'imx-terms-of-use-viewer'},{'name': 'TreemapChartComponent', 'selector': 'imx-treemap-chart'},{'name': 'UserProcessComponent', 'selector': 'imx-user-process'},{'name': 'ViewDevicesComponent', 'selector': 'imx-view-devices-home'},{'name': 'ViewDevicesSidesheetComponent', 'selector': 'imx-view-devices-sidesheet'},{'name': 'WorkflowActionComponent', 'selector': 'imx-workflow-action'}];
+    var DIRECTIVES = [{'name': 'ElementVisibilityDirective', 'selector': '[imxElementVisibility]'}];
+    var ACTUAL_COMPONENT = {'name': 'DelegationComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'DelegationComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

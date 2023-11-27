@@ -1,0 +1,1826 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>IMX Web - QER Library</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+        <link rel="stylesheet" href="../styles/material.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">IMX Web - QER Library</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Components</li>
+  <li class="breadcrumb-item"
+  >
+  DynamicRoleComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" class="nav-link"
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li class="nav-item">
+            <a href="#templateData" class="nav-link"
+                role="tab" id="templateData-tab" data-bs-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li class="nav-item">
+            <a href="#styleData" class="nav-link"
+                role="tab" id="styleData-tab" data-bs-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li class="nav-item">
+            <a href="#tree" class="nav-link"
+                role="tab" id="tree-tab" data-bs-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/lib/role-management/role-memberships/dynamic-role.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code>OnInit</code>
+    </p>
+
+
+<section data-compodoc="block-metadata">
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>imx-dynamic-group</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./role-sidesheet-tabs.scss,<br>./dynamic-role.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./dynamic-role.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#busy" >busy</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#canEdit" >canEdit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#cdrList" >cdrList</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#cdrsHaventChanged" >cdrsHaventChanged</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#dynamicGroup" >dynamicGroup</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#exprHasntChanged" >exprHasntChanged</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#formGroup" >formGroup</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#lastSavedCDRs" >lastSavedCDRs</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#lastSavedExpression" >lastSavedExpression</a>
+                            </li>
+                            <li>
+                                <a href="#LdsNoDynamicRole" >LdsNoDynamicRole</a>
+                            </li>
+                            <li>
+                                <a href="#LdsUnsupportedExpression" >LdsUnsupportedExpression</a>
+                            </li>
+                            <li>
+                                <a href="#LdsWizardInfo" >LdsWizardInfo</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#showHelperAlert" >showHelperAlert</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#sqlExpression" >sqlExpression</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#checkCDRs" >checkCDRs</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#checkChanges" >checkChanges</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#createDynamic" >createDynamic</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#deleteDynamic" >deleteDynamic</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#hasValuesSet" >hasValuesSet</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#isConditionInvalid" >isConditionInvalid</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#loadDynamicRole" >loadDynamicRole</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#resetState" >resetState</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#save" >save</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#uidDynamicGroup" >uidDynamicGroup</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Accessors</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                    <a href="#formArray" >formArray</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(formBuilder: UntypedFormBuilder, apiService: <a href="../injectables/QerApiService.html" target="_self">QerApiService</a>, roleService: <a href="../injectables/RoleService.html" target="_self">RoleService</a>, dataManagementService: <a href="../injectables/DataManagementService.html" target="_self">DataManagementService</a>, translator: TranslateService, cdref: ChangeDetectorRef, confirmSvc: ConfirmationService, busyService: EuiLoadingService)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/lib/role-management/role-memberships/dynamic-role.component.ts:44</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>formBuilder</td>
+                                                  
+                                                        <td>
+                                                                    <code>UntypedFormBuilder</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>apiService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/QerApiService.html" target="_self" >QerApiService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>roleService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/RoleService.html" target="_self" >RoleService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>dataManagementService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/DataManagementService.html" target="_self" >DataManagementService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>translator</td>
+                                                  
+                                                        <td>
+                                                                    <code>TranslateService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>cdref</td>
+                                                  
+                                                        <td>
+                                                                    <code>ChangeDetectorRef</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>confirmSvc</td>
+                                                  
+                                                        <td>
+                                                                    <code>ConfirmationService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>busyService</td>
+                                                  
+                                                        <td>
+                                                                    <code>EuiLoadingService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section data-compodoc="block-inputs">
+    <h3 id="inputs">Inputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="uidDynamicGroup"></a>
+                        <b>uidDynamicGroup</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">src/lib/role-management/role-memberships/dynamic-role.component.ts:58</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+    <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkCDRs"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>checkCDRs</b></span>
+                        <a href="#checkCDRs"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>checkCDRs()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="174"
+                            class="link-to-prism">src/lib/role-management/role-memberships/dynamic-role.component.ts:174</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkChanges"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>checkChanges</b></span>
+                        <a href="#checkChanges"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>checkChanges()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="165"
+                            class="link-to-prism">src/lib/role-management/role-memberships/dynamic-role.component.ts:165</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createDynamic"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>createDynamic</b></span>
+                        <a href="#createDynamic"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>createDynamic()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="123"
+                            class="link-to-prism">src/lib/role-management/role-memberships/dynamic-role.component.ts:123</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteDynamic"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>deleteDynamic</b></span>
+                        <a href="#deleteDynamic"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>deleteDynamic()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="134"
+                            class="link-to-prism">src/lib/role-management/role-memberships/dynamic-role.component.ts:134</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="hasValuesSet"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>hasValuesSet</b></span>
+                        <a href="#hasValuesSet"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>hasValuesSet(sqlExpression: SqlExpression, checkCurrent: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="227"
+                            class="link-to-prism">src/lib/role-management/role-memberships/dynamic-role.component.ts:227</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>sqlExpression</td>
+                                    <td>
+                                            <code>SqlExpression</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>checkCurrent</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>false</code>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isConditionInvalid"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>isConditionInvalid</b></span>
+                        <a href="#isConditionInvalid"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>isConditionInvalid()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="187"
+                            class="link-to-prism">src/lib/role-management/role-memberships/dynamic-role.component.ts:187</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loadDynamicRole"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>loadDynamicRole</b></span>
+                        <a href="#loadDynamicRole"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>loadDynamicRole()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="195"
+                            class="link-to-prism">src/lib/role-management/role-memberships/dynamic-role.component.ts:195</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="78"
+                            class="link-to-prism">src/lib/role-management/role-memberships/dynamic-role.component.ts:78</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="resetState"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>resetState</b></span>
+                        <a href="#resetState"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>resetState()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="87"
+                            class="link-to-prism">src/lib/role-management/role-memberships/dynamic-role.component.ts:87</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="save"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>save</b></span>
+                        <a href="#save"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>save()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="98"
+                            class="link-to-prism">src/lib/role-management/role-memberships/dynamic-role.component.ts:98</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section data-compodoc="block-properties">
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="busy"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>busy</b></span>
+                        <a href="#busy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="75" class="link-to-prism">src/lib/role-management/role-memberships/dynamic-role.component.ts:75</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="canEdit"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>canEdit</b></span>
+                        <a href="#canEdit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="76" class="link-to-prism">src/lib/role-management/role-memberships/dynamic-role.component.ts:76</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="cdrList"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>cdrList</b></span>
+                        <a href="#cdrList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Column.html" target="_self" >ColumnDependentReference[]</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="74" class="link-to-prism">src/lib/role-management/role-memberships/dynamic-role.component.ts:74</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="cdrsHaventChanged"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>cdrsHaventChanged</b></span>
+                        <a href="#cdrsHaventChanged"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="72" class="link-to-prism">src/lib/role-management/role-memberships/dynamic-role.component.ts:72</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="dynamicGroup"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>dynamicGroup</b></span>
+                        <a href="#dynamicGroup"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>PortalDynamicgroup</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="64" class="link-to-prism">src/lib/role-management/role-memberships/dynamic-role.component.ts:64</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="exprHasntChanged"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>exprHasntChanged</b></span>
+                        <a href="#exprHasntChanged"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="71" class="link-to-prism">src/lib/role-management/role-memberships/dynamic-role.component.ts:71</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="formGroup"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>formGroup</b></span>
+                        <a href="#formGroup"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>UntypedFormGroup</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="73" class="link-to-prism">src/lib/role-management/role-memberships/dynamic-role.component.ts:73</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="lastSavedCDRs"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>lastSavedCDRs</b></span>
+                        <a href="#lastSavedCDRs"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>any[]</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="68" class="link-to-prism">src/lib/role-management/role-memberships/dynamic-role.component.ts:68</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="lastSavedExpression"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>lastSavedExpression</b></span>
+                        <a href="#lastSavedExpression"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>SqlExpression</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="67" class="link-to-prism">src/lib/role-management/role-memberships/dynamic-role.component.ts:67</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="LdsNoDynamicRole"></a>
+                    <span class="name">
+                        <span ><b>LdsNoDynamicRole</b></span>
+                        <a href="#LdsNoDynamicRole"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;#LDS#Currently, no identities automatically become members through a dynamic role. You can create a dynamic role through which identities automatically become members.&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="238" class="link-to-prism">src/lib/role-management/role-memberships/dynamic-role.component.ts:238</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="LdsUnsupportedExpression"></a>
+                    <span class="name">
+                        <span ><b>LdsUnsupportedExpression</b></span>
+                        <a href="#LdsUnsupportedExpression"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;#LDS#You cannot edit these automatic memberships conditions in the Web Portal.&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="237" class="link-to-prism">src/lib/role-management/role-memberships/dynamic-role.component.ts:237</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="LdsWizardInfo"></a>
+                    <span class="name">
+                        <span ><b>LdsWizardInfo</b></span>
+                        <a href="#LdsWizardInfo"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;#LDS#Identities automatically become members through this dynamic role if they meet the following conditions.&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="240" class="link-to-prism">src/lib/role-management/role-memberships/dynamic-role.component.ts:240</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showHelperAlert"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>showHelperAlert</b></span>
+                        <a href="#showHelperAlert"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="70" class="link-to-prism">src/lib/role-management/role-memberships/dynamic-role.component.ts:70</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sqlExpression"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>sqlExpression</b></span>
+                        <a href="#sqlExpression"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>SqlWizardExpression</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="66" class="link-to-prism">src/lib/role-management/role-memberships/dynamic-role.component.ts:66</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-accessors">
+    <h3 id="accessors">
+        Accessors
+    </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="formArray"></a>
+                        <span class="name"><b>formArray</b><a href="#formArray"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>formArray()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="60" class="link-to-prism">src/lib/role-management/role-memberships/dynamic-role.component.ts:60</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+</section>
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { ChangeDetectorRef, Component, Input, OnInit } from &#x27;@angular/core&#x27;;
+import { EuiLoadingService } from &#x27;@elemental-ui/core&#x27;;
+import { TranslateService } from &#x27;@ngx-translate/core&#x27;;
+import { PortalDynamicgroup } from &#x27;imx-api-qer&#x27;;
+import { SqlWizardExpression, WriteExtTypedEntity, SqlExpression, isExpressionInvalid, LogOp } from &#x27;imx-qbm-dbts&#x27;;
+import { BaseCdr, BaseReadonlyCdr, ColumnDependentReference, ConfirmationService } from &#x27;qbm&#x27;;
+import { QerApiService } from &#x27;../../qer-api-client.service&#x27;;
+import { RoleService } from &#x27;../role.service&#x27;;
+import _ from &#x27;lodash&#x27;;
+import { UntypedFormArray, UntypedFormBuilder, UntypedFormGroup } from &#x27;@angular/forms&#x27;;
+import { DataManagementService } from &#x27;../data-management.service&#x27;;
+
+@Component({
+  templateUrl: &#x27;./dynamic-role.component.html&#x27;,
+  styleUrls: [&#x27;./role-sidesheet-tabs.scss&#x27;, &#x27;./dynamic-role.component.scss&#x27;],
+  selector: &#x27;imx-dynamic-group&#x27;,
+})
+export class DynamicRoleComponent implements OnInit {
+  constructor(
+    formBuilder: UntypedFormBuilder,
+    private readonly apiService: QerApiService,
+    private readonly roleService: RoleService,
+    private dataManagementService: DataManagementService,
+    private readonly translator: TranslateService,
+    private readonly cdref: ChangeDetectorRef,
+    private readonly confirmSvc: ConfirmationService,
+    private readonly busyService: EuiLoadingService
+  ) {
+    this.formGroup &#x3D; new UntypedFormGroup({ formArray: formBuilder.array([]) });
+  }
+
+  @Input() uidDynamicGroup: string;
+
+  get formArray(): UntypedFormArray {
+    return this.formGroup.get(&#x27;formArray&#x27;) as UntypedFormArray;
+  }
+
+  public dynamicGroup: PortalDynamicgroup;
+
+  public sqlExpression: SqlWizardExpression;
+  public lastSavedExpression: SqlExpression;
+  public lastSavedCDRs: any[];
+
+  public showHelperAlert &#x3D; true;
+  public exprHasntChanged &#x3D; true;
+  public cdrsHaventChanged &#x3D; true;
+  public readonly formGroup: UntypedFormGroup;
+  public cdrList: ColumnDependentReference[] &#x3D; [];
+  public busy &#x3D; true;
+  public canEdit: boolean;
+
+  public async ngOnInit(): Promise&lt;void&gt; {
+    this.canEdit &#x3D; this.roleService.canEdit;
+    if(!this.canEdit) {
+      this.LdsNoDynamicRole &#x3D; &#x27;#LDS#Currently, no identities automatically become members through a dynamic role.&#x27;
+    }
+    await this.loadDynamicRole();
+    this.resetState();
+  }
+
+  public resetState(): void {
+    this.lastSavedExpression &#x3D; _.cloneDeep(this.sqlExpression?.Expression);
+    this.lastSavedCDRs &#x3D; [];
+    this.cdrList.map((cdr) &#x3D;&gt; {
+      this.lastSavedCDRs.push(cdr.column.GetValue());
+    });
+    this.exprHasntChanged &#x3D; true;
+    this.cdrsHaventChanged &#x3D; true;
+    this.formGroup.markAsPristine();
+  }
+
+  public async save(): Promise&lt;void&gt; {
+    try {
+      this.busyService.show();
+      if (this.dynamicGroup) {
+        if (!this.sqlExpression.IsUnsupported) {
+          this.dynamicGroup.extendedData &#x3D; { Filters: [this.sqlExpression.Expression] };
+        }
+        await this.dynamicGroup.GetEntity().Commit(true);
+      } else {
+        const e &#x3D; &lt;WriteExtTypedEntity&lt;{ NewDynamicRole: SqlExpression }&gt;&gt;(
+          this.dataManagementService.entityInteractive
+        );
+        e.extendedData &#x3D; { NewDynamicRole: this.sqlExpression.Expression };
+        await e.GetEntity().Commit(true);
+        this.uidDynamicGroup &#x3D; e.GetEntity().GetColumn(&#x27;UID_DynamicGroup&#x27;).GetValue();
+        await this.loadDynamicRole();
+      }
+    } finally {
+      await this.dataManagementService.setInteractive();
+      this.resetState();
+      this.busyService.hide();
+      this.dataManagementService.autoMembershipDirty(false);
+    }
+  }
+
+  public async createDynamic(): Promise&lt;void&gt; {
+    this.sqlExpression &#x3D; {
+      Expression: {
+        Expressions: [],
+        LogOperator: LogOp.AND,
+      },
+    };
+    this.cdref.detectChanges();
+    this.dataManagementService.autoMembershipDirty(true);
+  }
+
+  public async deleteDynamic(): Promise&lt;void&gt; {
+    const title &#x3D; await this.translator.get(&#x27;#LDS#Heading Delete Dynamic Role&#x27;).toPromise();
+    // If there is no active dynamic role, no one will actually be removed
+    var warningKey &#x3D; this.uidDynamicGroup
+      ? &#x27;#LDS#All members assigned by the dynamic role will be removed. Are you sure you want to delete the dynamic role?&#x27;
+      : &#x27;#LDS#Are you sure you want to delete the dynamic role?&#x27;;
+    const message &#x3D; await this.translator.get(warningKey).toPromise();
+
+    const result &#x3D; await this.confirmSvc.confirm({
+      ShowYesNo: true,
+      Title: title,
+      Message: message,
+    });
+    if (!result) return;
+
+    try {
+      this.busyService.show();
+
+      if (this.uidDynamicGroup) {
+        await this.apiService.v2Client.portal_dynamicgroup_delete(this.uidDynamicGroup);
+        this.uidDynamicGroup &#x3D; null;
+      }
+      this.dynamicGroup &#x3D; null;
+      this.sqlExpression &#x3D; null;
+      this.dataManagementService.autoMembershipDirty(false);
+      await this.dataManagementService.setInteractive();
+    } finally {
+      this.busyService.hide();
+    }
+  }
+
+  public checkChanges(): void {
+    this.exprHasntChanged &#x3D; _.isEqual(this.sqlExpression?.Expression, this.lastSavedExpression);
+    if (!this.exprHasntChanged) {
+      this.dataManagementService.autoMembershipDirty(true);
+    } else if (this.cdrsHaventChanged &amp;&amp; this.exprHasntChanged) {
+      this.dataManagementService.autoMembershipDirty(false);
+    }
+  }
+
+  public checkCDRs(): void {
+    this.cdrsHaventChanged &#x3D; this.cdrList
+      .map((cdr, index) &#x3D;&gt; {
+        return cdr.column.GetValue() &#x3D;&#x3D;&#x3D; this.lastSavedCDRs[index];
+      })
+      .every((isTrue) &#x3D;&gt; isTrue);
+    if (!this.cdrsHaventChanged) {
+      this.dataManagementService.autoMembershipDirty(true);
+    } else if (this.cdrsHaventChanged &amp;&amp; this.exprHasntChanged) {
+      this.dataManagementService.autoMembershipDirty(false);
+    }
+  }
+
+  public isConditionInvalid(): boolean {
+    return (
+      this.sqlExpression?.Expression?.Expressions.length &#x3D;&#x3D;&#x3D; 0 ||
+      isExpressionInvalid(this.sqlExpression) ||
+      !this.hasValuesSet(this.sqlExpression.Expression)
+    );
+  }
+
+  private async loadDynamicRole(): Promise&lt;void&gt; {
+    try {
+      this.busy &#x3D; true;
+      if (this.uidDynamicGroup) {
+        const data &#x3D; await this.apiService.typedClient.PortalDynamicgroupInteractive.Get(this.uidDynamicGroup);
+
+        this.dynamicGroup &#x3D; data.Data[0];
+        this.sqlExpression &#x3D; data.extendedData.Expressions[0];
+        // Set &quot;&quot; to undefined so the cdr and data dirty states make sense
+        this.sqlExpression?.Expression?.Expressions?.map((exp) &#x3D;&gt; {
+          if (exp.Value &#x3D;&#x3D;&#x3D; &#x27;&#x27;) {
+            exp.Value &#x3D; undefined;
+          }
+        });
+        // Sometimes the logOp is not set. Initalize it here
+        if (!this.sqlExpression.IsUnsupported &amp;&amp; !this.sqlExpression?.Expression?.LogOperator) {
+          this.sqlExpression.Expression.LogOperator &#x3D; LogOp.AND;
+        }
+
+        this.cdrList &#x3D; this.canEdit ? [
+          new BaseCdr(this.dynamicGroup.UID_DialogSchedule.Column),
+          new BaseCdr(this.dynamicGroup.IsCalculateImmediately.Column),
+        ] : [
+          new BaseReadonlyCdr(this.dynamicGroup.UID_DialogSchedule.Column),
+          new BaseReadonlyCdr(this.dynamicGroup.IsCalculateImmediately.Column),
+        ];
+      }
+    } finally {
+      this.busy &#x3D; false;
+    }
+  }
+
+  private hasValuesSet(sqlExpression: SqlExpression, checkCurrent: boolean &#x3D; false): boolean {
+    const current &#x3D; !checkCurrent || (sqlExpression.Value !&#x3D; null &amp;&amp; Object.keys(sqlExpression.Value).length &gt; 0);
+
+    if (sqlExpression.Expressions?.length &gt; 0) {
+      return current &amp;&amp; sqlExpression.Expressions.every((elem) &#x3D;&gt; this.hasValuesSet(elem, true));
+    }
+
+    return current;
+  }
+
+  LdsUnsupportedExpression &#x3D; &#x27;#LDS#You cannot edit these automatic memberships conditions in the Web Portal.&#x27;;
+  LdsNoDynamicRole &#x3D;
+    &#x27;#LDS#Currently, no identities automatically become members through a dynamic role. You can create a dynamic role through which identities automatically become members.&#x27;;
+  LdsWizardInfo &#x3D; &#x27;#LDS#Identities automatically become members through this dynamic role if they meet the following conditions.&#x27;;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;imx-tab-content-body&quot;&gt;
+  &lt;mat-spinner *ngIf&#x3D;&quot;busy&quot;&gt;&lt;/mat-spinner&gt;
+  &lt;ng-container *ngIf&#x3D;&quot;!busy &amp;&amp; !sqlExpression&quot;&gt;
+    &lt;eui-alert condensed&#x3D;&quot;true&quot; [colored]&#x3D;&quot;true&quot; type&#x3D;&quot;info&quot;&gt;
+      &lt;div class&#x3D;&quot;margin&quot;&gt;{{ LdsNoDynamicRole | translate }}&lt;/div&gt;
+      &lt;button *ngIf&#x3D;&quot;canEdit&quot; data-imx-identifier&#x3D;&quot;button-dynamic-role-create&quot; mat-raised-button (click)&#x3D;&quot;createDynamic()&quot; color&#x3D;&quot;primary&quot;&gt;
+        {{ &#x27;#LDS#Create dynamic role&#x27; | translate }}
+      &lt;/button&gt;
+    &lt;/eui-alert&gt;
+  &lt;/ng-container&gt;
+  &lt;ng-container *ngIf&#x3D;&quot;sqlExpression&quot;&gt;
+    &lt;eui-alert class&#x3D;&quot;helper-alert&quot; *ngIf&#x3D;&quot;sqlExpression.IsUnsupported&quot; condensed&#x3D;&quot;true&quot; [colored]&#x3D;&quot;true&quot; type&#x3D;&quot;info&quot;&gt;
+      {{ LdsUnsupportedExpression | translate }}
+    &lt;/eui-alert&gt;
+
+    &lt;eui-alert
+      class&#x3D;&quot;helper-alert&quot;
+      condensed&#x3D;&quot;true&quot;
+      [colored]&#x3D;&quot;true&quot;
+      type&#x3D;&quot;info&quot;
+      *ngIf&#x3D;&quot;showHelperAlert &amp;&amp; !sqlExpression.IsUnsupported&quot;
+      [dismissable]&#x3D;&quot;true&quot;
+      (dismissed)&#x3D;&quot;showHelperAlert &#x3D; false&quot;
+    &gt;
+      {{ LdsWizardInfo | translate }}
+    &lt;/eui-alert&gt;
+
+    &lt;div class&#x3D;&quot;imx-main-content&quot;&gt;
+      &lt;mat-card&gt;
+        &lt;imx-sqlwizard [canEdit]&#x3D;&quot;canEdit&quot; *ngIf&#x3D;&quot;!sqlExpression.IsUnsupported&quot; tableName&#x3D;&quot;Person&quot; [expression]&#x3D;&quot;sqlExpression.Expression&quot; (change)&#x3D;&quot;checkChanges()&quot;&gt;
+        &lt;/imx-sqlwizard&gt;
+
+        &lt;ng-container *ngIf&#x3D;&quot;cdrList.length &gt; 0&quot;&gt;
+          &lt;imx-cdr-editor *ngFor&#x3D;&quot;let cdr of cdrList&quot; [cdr]&#x3D;&quot;cdr&quot; (controlCreated)&#x3D;&quot;formArray.push($event)&quot; (valueChange)&#x3D;&quot;checkCDRs()&quot;&gt;&lt;/imx-cdr-editor&gt;
+        &lt;/ng-container&gt;
+      &lt;/mat-card&gt;
+      &lt;div eui-sidesheet-actions *ngIf&#x3D;&quot;canEdit&quot;&gt;
+        &lt;button data-imx-identifier&#x3D;&quot;button-dynamic-role-delete&quot; mat-stroked-button (click)&#x3D;&quot;deleteDynamic()&quot; color&#x3D;&quot;warn&quot;&gt;
+          &lt;eui-icon icon&#x3D;&quot;delete&quot;&gt;&lt;/eui-icon&gt;
+          {{ &#x27;#LDS#Delete&#x27; | translate }}
+        &lt;/button&gt;
+        &lt;button
+          data-imx-identifier&#x3D;&quot;button-dynamic-role-save&quot;
+          mat-raised-button
+          (click)&#x3D;&quot;save()&quot;
+          [disabled]&#x3D;&quot;(exprHasntChanged &amp;&amp; cdrsHaventChanged) || formGroup.invalid || (!sqlExpression.IsUnsupported &amp;&amp; isConditionInvalid())&quot;
+          color&#x3D;&quot;primary&quot;
+        &gt;
+          {{ &#x27;#LDS#Save&#x27; | translate }}
+        &lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/ng-container&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="styleData">
+                <p class="comment">
+                    <code>./role-sidesheet-tabs.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">@import &quot;@elemental-ui/core/src/styles/_palette.scss&quot;;
+@import &quot;@elemental-ui/core/src/styles/_eui_palette.scss&quot;;
+
+.imx-tab-content-body {
+  flex: 1;
+  padding: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.eui-sidesheet-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+
+  &gt; * {
+    margin-right: 5px;
+  }
+}
+.imx-selected-items {
+  justify-self: flex-start;
+  margin: 0;
+  line-height: 36px;
+}
+.imx-menu-spacer {
+  flex-grow: 1;
+}
+
+.eui-dark-theme {
+  :host {
+    .eui-sidesheet-actions {
+      background-color: $color-gray-70;
+    }
+  }
+}
+
+.eui-contrast-theme {
+  :host {
+    .eui-sidesheet-actions {
+      background-color: $color-gray-90;
+    }
+  }
+}
+</code></pre>
+                <p class="comment">
+                    <code>./dynamic-role.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">:host {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  overflow: hidden;
+
+  .imx-tab-content-body {
+    padding: 0;
+    gap: 20px;
+  }
+}
+
+.helper-alert {
+  display: flex;
+  margin: 20px 20px 0 20px;
+}
+
+.margin {
+  margin-bottom: 1em;
+}
+
+imx-sqlwizard {
+  margin-bottom: 1em;
+  display: block;
+  flex: 1 1 auto;
+  overflow: auto;
+}
+
+.imx-main-content{
+  flex: 1 1 auto;
+  overflow:auto;
+  display: flex;
+  flex-direction: column;
+
+  .mat-card {
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px 20px 20px;
+  }
+
+  div {
+    button {
+      eui-icon {
+        font-size: 14px;
+        margin-right: 4px;
+      }
+    }
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="imx-tab-content-body">  <mat-spinner *ngIf="busy"></mat-spinner>  <ng-container *ngIf="!busy && !sqlExpression">    <eui-alert condensed="true" [colored]="true" type="info">      <div class="margin">{{ LdsNoDynamicRole | translate }}</div>      <button *ngIf="canEdit" data-imx-identifier="button-dynamic-role-create" mat-raised-button (click)="createDynamic()" color="primary">        {{ \'#LDS#Create dynamic role\' | translate }}      </button>    </eui-alert>  </ng-container>  <ng-container *ngIf="sqlExpression">    <eui-alert class="helper-alert" *ngIf="sqlExpression.IsUnsupported" condensed="true" [colored]="true" type="info">      {{ LdsUnsupportedExpression | translate }}    </eui-alert>    <eui-alert      class="helper-alert"      condensed="true"      [colored]="true"      type="info"      *ngIf="showHelperAlert && !sqlExpression.IsUnsupported"      [dismissable]="true"      (dismissed)="showHelperAlert = false"    >      {{ LdsWizardInfo | translate }}    </eui-alert>    <div class="imx-main-content">      <mat-card>        <imx-sqlwizard [canEdit]="canEdit" *ngIf="!sqlExpression.IsUnsupported" tableName="Person" [expression]="sqlExpression.Expression" (change)="checkChanges()">        </imx-sqlwizard>        <ng-container *ngIf="cdrList.length > 0">          <imx-cdr-editor *ngFor="let cdr of cdrList" [cdr]="cdr" (controlCreated)="formArray.push($event)" (valueChange)="checkCDRs()"></imx-cdr-editor>        </ng-container>      </mat-card>      <div eui-sidesheet-actions *ngIf="canEdit">        <button data-imx-identifier="button-dynamic-role-delete" mat-stroked-button (click)="deleteDynamic()" color="warn">          <eui-icon icon="delete"></eui-icon>          {{ \'#LDS#Delete\' | translate }}        </button>        <button          data-imx-identifier="button-dynamic-role-save"          mat-raised-button          (click)="save()"          [disabled]="(exprHasntChanged && cdrsHaventChanged) || formGroup.invalid || (!sqlExpression.IsUnsupported && isConditionInvalid())"          color="primary"        >          {{ \'#LDS#Save\' | translate }}        </button>      </div>    </div>  </ng-container></div></div>'
+    var COMPONENTS = [{'name': 'AddressbookComponent', 'selector': 'imx-addressbook'},{'name': 'AddressbookDetailComponent', 'selector': 'imx-addressbook-detail'},{'name': 'AnswerQuestionsComponent', 'selector': ''},{'name': 'ApplicationDetailsComponent', 'selector': 'imx-application-details'},{'name': 'ApplicationDialogComponent', 'selector': 'imx-application-dialog'},{'name': 'ApprovalHistoryComponent', 'selector': 'imx-approval-history'},{'name': 'ApprovalLevelFormComponent', 'selector': 'imx-approval-level-form'},{'name': 'ApprovalsComponent', 'selector': 'imx-itshop-approvals'},{'name': 'ApprovalsSidesheetComponent', 'selector': 'imx-approvals-sidesheet'},{'name': 'ApprovalsTableComponent', 'selector': 'imx-approvals-table'},{'name': 'ApprovalStepFormComponent', 'selector': 'imx-approval-step-form'},{'name': 'ApprovalWorkflowEditComponent', 'selector': 'imx-approval-workflow-edit'},{'name': 'ApprovalWorkflowEditInfoComponent', 'selector': 'imx-approval-workflow-edit-info'},{'name': 'ApprovalWorkflowFormComponent', 'selector': 'imx-approval-workflow-form'},{'name': 'ApprovalWorkflowHomeComponent', 'selector': 'imx-approval-workflow-home'},{'name': 'ArchivedRequestsComponent', 'selector': ''},{'name': 'AssignmentsComponent', 'selector': 'imx-assignments'},{'name': 'BadgeTileComponent', 'selector': 'imx-badge-tile'},{'name': 'BaseViewerComponent', 'selector': ''},{'name': 'BlockDetailSidesheetComponent', 'selector': 'imx-block-detail-sidesheet'},{'name': 'BusinessOwnerAddOnTileComponent', 'selector': 'imx-businessowner-addon-tile'},{'name': 'BusinessOwnerChartSummaryComponent', 'selector': 'imx-businessowner-chartsummary'},{'name': 'BusinessOwnerOverviewTileComponent', 'selector': 'imx-businessowner-overview-tile'},{'name': 'CartItemDisplayComponent', 'selector': 'imx-cart-item-display'},{'name': 'CartItemEditComponent', 'selector': 'imx-cart-item-edit'},{'name': 'CartItemsComponent', 'selector': 'imx-cart-items'},{'name': 'CartItemValidationOverviewComponent', 'selector': 'imx-cart-item-validation-overview'},{'name': 'CategoryTreeComponent', 'selector': 'imx-category-tree'},{'name': 'ChartsSidesheetComponent', 'selector': 'imx-charts-sidesheet'},{'name': 'ChartTableComponent', 'selector': 'imx-chart-table'},{'name': 'ChartTileComponent', 'selector': 'imx-chart-tile'},{'name': 'CheckPasswordsComponent', 'selector': ''},{'name': 'CompareComponent', 'selector': ''},{'name': 'CompareItemComponent', 'selector': 'imx-role-compareitem'},{'name': 'ConfirmCartSubmitDialog', 'selector': 'imx-confirm-cart-submit'},{'name': 'ContainerDomComponent', 'selector': 'imx-container-dom'},{'name': 'CreateNewDeviceComponent', 'selector': 'imx-create-new-device'},{'name': 'CreateNewIdentityComponent', 'selector': 'imx-create-new-identity'},{'name': 'DataExplorerIdentitiesComponent', 'selector': 'imx-data-explorer-identities'},{'name': 'DataExplorerViewComponent', 'selector': ''},{'name': 'DecisionHistoryComponent', 'selector': 'imx-decision-history'},{'name': 'DecisionReasonComponent', 'selector': 'imx-decision-reason'},{'name': 'DefaultCartItemDisplayComponent', 'selector': ''},{'name': 'DefaultRequestDisplayComponent', 'selector': ''},{'name': 'DelegationComponent', 'selector': ''},{'name': 'DetailViewerComponent', 'selector': 'imx-detail-viewer'},{'name': 'DiscreteLegendComponent', 'selector': 'imx-discrete-legend'},{'name': 'DuplicateCheckComponent', 'selector': 'imx-duplicate-check'},{'name': 'DuplicatePatternItemsComponent', 'selector': 'imx-duplicate-pattern-items'},{'name': 'DuplicatesSidesheetComponent', 'selector': ''},{'name': 'DynamicExclusionDialogComponent', 'selector': 'imx-dynamic-exclusion-dialog'},{'name': 'DynamicRoleComponent', 'selector': 'imx-dynamic-group'},{'name': 'EdgeDomComponent', 'selector': 'imx-edge-dom'},{'name': 'EntitlementSelectorComponent', 'selector': 'imx-entitlement-selector'},{'name': 'ExcludedMembershipsComponent', 'selector': 'imx-excluded-memberships'},{'name': 'ExclusionCheckComponent', 'selector': 'imx-exclusion-check'},{'name': 'FavoritesTabComponent', 'selector': 'imx-favorites-tab'},{'name': 'HeatmapChartComponent', 'selector': 'imx-heatmap-chart'},{'name': 'HeatmapSidesheetComponent', 'selector': 'imx-heatmap-sidesheet'},{'name': 'HeatmapTileComponent', 'selector': 'imx-heatmap-tile'},{'name': 'HeatmapVisualComponent', 'selector': 'imx-heatmap-visual'},{'name': 'HistoryFilterComponent', 'selector': 'imx-history-filter'},{'name': 'IconTileComponent', 'selector': 'imx-icon-tile'},{'name': 'IdentityComponent', 'selector': 'imx-orgchart-identity'},{'name': 'IdentityRoleMembershipsComponent', 'selector': ''},{'name': 'IdentitySelectComponent', 'selector': 'imx-identity-select'},{'name': 'IdentitySidesheetComponent', 'selector': 'imx-identity-sidesheet'},{'name': 'InquiriesComponent', 'selector': 'imx-inquiries'},{'name': 'ItshopPatternAddProductsComponent', 'selector': 'imx-itshop-pattern-add-products'},{'name': 'ItshopPatternComponent', 'selector': 'imx-itshop-pattern'},{'name': 'ItshopPatternCreateSidesheetComponent', 'selector': 'imx-itshop-pattern-create-sidesheet'},{'name': 'ItshopPatternItemEditComponent', 'selector': 'imx-itshop-pattern-item-edit'},{'name': 'ItshopPatternSidesheetComponent', 'selector': 'imx-itshop-pattern-sidesheet'},{'name': 'MailSubscriptionsComponent', 'selector': 'imx-mail-subscriptions'},{'name': 'MemberSelectorComponent', 'selector': ''},{'name': 'MembershipsChooseIdentitiesComponent', 'selector': 'imx-memberships-choose-identities'},{'name': 'MyResponsibilitiesViewComponent', 'selector': 'imx-my-responsibilities-view'},{'name': 'NewRequestComponent', 'selector': 'imx-new-request'},{'name': 'NewRequestContentComponent', 'selector': 'imx-new-request-content'},{'name': 'NewRequestHeaderComponent', 'selector': 'imx-new-request-header'},{'name': 'NewRequestHeaderToolbarComponent', 'selector': 'imx-new-request-header-toolbar'},{'name': 'NewRequestPeerGroupComponent', 'selector': 'imx-new-request-peer-group'},{'name': 'NewRequestProductBundleComponent', 'selector': 'imx-new-request-product-bundle'},{'name': 'NewRequestProductComponent', 'selector': 'imx-new-request-product'},{'name': 'NewRequestRecipientsComponent', 'selector': 'imx-new-request-recipients'},{'name': 'NewRequestReferenceUserCardComponent', 'selector': 'imx-new-request-reference-user-card'},{'name': 'NewRequestReferenceUserComponent', 'selector': 'imx-new-request-reference-user'},{'name': 'NewRequestSelectedProductsComponent', 'selector': 'imx-new-request-selected-products'},{'name': 'NewRoleComponent', 'selector': 'imx-new-role'},{'name': 'NodeDomComponent', 'selector': 'imx-node-dom'},{'name': 'NonRequestableItemsComponent', 'selector': 'imx-non-requestable-items'},{'name': 'NotificationTileComponent', 'selector': 'imx-notification-tile'},{'name': 'NotRequestableMembershipsComponent', 'selector': 'imx-not-requestable-memberships'},{'name': 'ObjectHyperviewComponent', 'selector': 'imx-object-hyperview'},{'name': 'ObjectOverviewPersonComponent', 'selector': ''},{'name': 'OptionalItemsSidesheetComponent', 'selector': 'imx-optional-items-sidesheet'},{'name': 'OrderForAdditionalUsersComponent', 'selector': 'imx-order-for-additional-users'},{'name': 'OrgChartComponent', 'selector': 'imx-orgchart'},{'name': 'OwnerControlComponent', 'selector': 'imx-owner-control'},{'name': 'PasscodeLoginComponent', 'selector': ''},{'name': 'PasscodeViewerComponent', 'selector': 'imx-passcode-viewer'},{'name': 'PasswordDashboardComponent', 'selector': ''},{'name': 'PasswordQueryComponent', 'selector': 'imx-password-query'},{'name': 'PasswordQuestionsComponent', 'selector': 'imx-password-questions'},{'name': 'PasswordQuestionsSidesheetComponent', 'selector': 'imx-password-questions-sidesheet'},{'name': 'PasswordResetComponent', 'selector': 'imx-password-reset'},{'name': 'PatternDetailsSidesheetComponent', 'selector': 'imx-pattern-details-sidesheet'},{'name': 'PatternItemListComponent', 'selector': 'imx-pattern-item-list'},{'name': 'PeerGroupComponent', 'selector': 'imx-peer-group'},{'name': 'PeerGroupDiscardSelectedComponent', 'selector': 'imx-peer-group-discard-selected'},{'name': 'PointStatVisualComponent', 'selector': 'imx-point-stat-visual'},{'name': 'PrimaryMembershipsComponent', 'selector': 'imx-primary-memberships'},{'name': 'ProductBundleItemsComponent', 'selector': 'imx-product-bundle-items'},{'name': 'ProductBundleListComponent', 'selector': 'imx-product-bundle-list'},{'name': 'ProductDependencyCheckComponent', 'selector': 'imx-product-dependency-check'},{'name': 'ProductDetailsSidesheetComponent', 'selector': 'imx-product-details-sidesheet'},{'name': 'ProductDetailsSidesheetComponent', 'selector': 'imx-product-details-sidesheet'},{'name': 'ProductEntitlementsComponent', 'selector': 'imx-product-entitlements'},{'name': 'ProductEntitlementsComponent', 'selector': 'imx-product-entitlements'},{'name': 'ProductSelectionComponent', 'selector': 'imx-product-selection'},{'name': 'ProfileComponent', 'selector': ''},{'name': 'QaLoginComponent', 'selector': ''},{'name': 'QpmIntegrationComponent', 'selector': ''},{'name': 'QueryPersonComponent', 'selector': 'imx-itshop-queryperson'},{'name': 'ReasonSidesheetComponent', 'selector': 'imx-reason-sidesheet'},{'name': 'RecommendationSidesheetComponent', 'selector': 'imx-recommendation-sidesheet'},{'name': 'RelatedApplicationMenuItemComponent', 'selector': 'imx-related-application-menu-item'},{'name': 'RelatedApplicationsComponent', 'selector': 'imx-related-applications'},{'name': 'RelatedApplicationsSidesheetComponent', 'selector': 'imx-related-applications-sidesheet'},{'name': 'RemoveMembershipComponent', 'selector': ''},{'name': 'RequestActionComponent', 'selector': ''},{'name': 'RequestConfigMembersComponent', 'selector': 'imx-request-config-members'},{'name': 'RequestConfigSidesheetComponent', 'selector': 'imx-request-config-sidesheet'},{'name': 'RequestDetailComponent', 'selector': 'imx-request-detail'},{'name': 'RequestDisplayComponent', 'selector': 'imx-request-display'},{'name': 'RequestFilterComponent', 'selector': 'imx-request-filter'},{'name': 'RequestHistoryComponent', 'selector': ''},{'name': 'RequestHistoryFilterComponent', 'selector': 'imx-request-history-filter'},{'name': 'RequestInfoComponent', 'selector': 'imx-requestinfo'},{'name': 'RequestsComponent', 'selector': 'imx-requests'},{'name': 'RequestsEntitySelectorComponent', 'selector': 'imx-requests-selector'},{'name': 'RequestShelfEntitlementsComponent', 'selector': 'imx-request-shelf-entitlements'},{'name': 'RequestShelfSidesheetComponent', 'selector': 'imx-request-shelf-sidesheet'},{'name': 'RequestShelvesComponent', 'selector': 'imx-request-shelves'},{'name': 'RequestTableComponent', 'selector': 'imx-request-table'},{'name': 'ResourcesComponent', 'selector': ''},{'name': 'ResourceSidesheetComponent', 'selector': 'imx-resource-sidesheet'},{'name': 'RestoreComponent', 'selector': ''},{'name': 'RiskAnalysisComponent', 'selector': 'imx-riskindex-analysis'},{'name': 'RiskAnalysisSidesheetComponent', 'selector': ''},{'name': 'RiskConfigComponent', 'selector': 'imx-risk-config'},{'name': 'RiskConfigSidesheetComponent', 'selector': 'imx-risk-config-sidesheet'},{'name': 'RoleDetailComponent', 'selector': 'imx-role-detail'},{'name': 'RoleEntitlementsComponent', 'selector': 'imx-role-entitlements'},{'name': 'RoleMainDataComponent', 'selector': 'imx-role-main-data'},{'name': 'RoleMembershipsComponent', 'selector': 'imx-role-memberships'},{'name': 'RoleMembershipsComponent', 'selector': 'imx-role-memberships'},{'name': 'RoleRecommendationsComponent', 'selector': 'imx-role-recommendations'},{'name': 'RolesOverviewComponent', 'selector': 'imx-roles-overview'},{'name': 'RollbackComponent', 'selector': ''},{'name': 'SecondaryMembershipsComponent', 'selector': 'imx-secondary-memberships'},{'name': 'SecurityKeysComponent', 'selector': 'imx-security-keys'},{'name': 'SecurityKeysSidesheetComponent', 'selector': ''},{'name': 'ServiceCategoriesComponent', 'selector': 'imx-service-categories'},{'name': 'ServiceCategoryComponent', 'selector': 'imx-service-category'},{'name': 'ServiceCategoryListComponent', 'selector': 'imx-servicecategory-list'},{'name': 'ServiceItemDetailComponent', 'selector': 'imx-service-item-detail'},{'name': 'ServiceItemEditComponent', 'selector': 'imx-service-item-edit'},{'name': 'ServiceItemInfoComponent', 'selector': 'imx-service-item-info'},{'name': 'ServiceitemListComponent', 'selector': 'imx-serviceitem-list'},{'name': 'ServiceItemsEditComponent', 'selector': 'imx-service-items-edit'},{'name': 'ServiceItemsEditFormComponent', 'selector': 'imx-service-items-edit-form'},{'name': 'ServiceItemsEditSidesheetComponent', 'selector': 'imx-service-items-edit-sidesheet'},{'name': 'ServiceItemSelectComponent', 'selector': 'imx-service-item-select'},{'name': 'ServiceItemsSelectorComponent', 'selector': 'imx-service-items-selector'},{'name': 'ServiceItemTagsComponent', 'selector': 'imx-service-item-tags'},{'name': 'SettingsComponent', 'selector': 'imx-settings'},{'name': 'ShelfSelectionComponent', 'selector': 'imx-shelf-selection'},{'name': 'ShoppingCartComponent', 'selector': 'imx-shopping-cart'},{'name': 'ShoppingCartEmptyComponent', 'selector': 'imx-shopping-cart-empty'},{'name': 'ShoppingCartForLaterComponent', 'selector': ''},{'name': 'ShoppingCartSubmitWarningsDialog', 'selector': 'imx-shopping-cart-submit-result'},{'name': 'SourceDetectiveComponent', 'selector': 'imx-source-detective'},{'name': 'SourceDetectiveSidesheetComponent', 'selector': ''},{'name': 'SplitComponent', 'selector': ''},{'name': 'StartComponent', 'selector': 'imx-start'},{'name': 'StatisticsCardsComponent', 'selector': 'imx-statistics-cards'},{'name': 'StatisticsCardsVisualsComponent', 'selector': 'imx-statistics-cards-visuals'},{'name': 'StatisticsForObjectsComponent', 'selector': 'imx-statistics-for-objects'},{'name': 'StatisticsHomePageComponent', 'selector': 'imx-statistics-home-page'},{'name': 'StatisticsOrderingSidesheetComponent', 'selector': 'imx-statistics-ordering-sidesheet'},{'name': 'StatisticsOrderingSidesheetDialogComponent', 'selector': 'imx-statistics-ordering-sidesheet-dialog'},{'name': 'StatisticsTreeComponent', 'selector': 'imx-statistics-tree'},{'name': 'TeamResponsibilitiesComponent', 'selector': 'imx-team-responsibilities'},{'name': 'TeamResponsibilitySidesheetComponent', 'selector': 'imx-team-responsibility-sidesheet'},{'name': 'TeamResponsibilityTileComponent', 'selector': 'imx-team-responsibility-tile'},{'name': 'TermsOfUseAcceptComponent', 'selector': ''},{'name': 'TermsOfUseListComponent', 'selector': 'imx-terms-of-use-list'},{'name': 'TermsOfUseViewerComponent', 'selector': 'imx-terms-of-use-viewer'},{'name': 'TreemapChartComponent', 'selector': 'imx-treemap-chart'},{'name': 'UserProcessComponent', 'selector': 'imx-user-process'},{'name': 'ViewDevicesComponent', 'selector': 'imx-view-devices-home'},{'name': 'ViewDevicesSidesheetComponent', 'selector': 'imx-view-devices-sidesheet'},{'name': 'WorkflowActionComponent', 'selector': 'imx-workflow-action'}];
+    var DIRECTIVES = [{'name': 'ElementVisibilityDirective', 'selector': '[imxElementVisibility]'}];
+    var ACTUAL_COMPONENT = {'name': 'DynamicRoleComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'DynamicRoleComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

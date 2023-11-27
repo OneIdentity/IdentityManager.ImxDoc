@@ -1,0 +1,1629 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>IMX Web - QER Library</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+        <link rel="stylesheet" href="../styles/material.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">IMX Web - QER Library</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Injectables</li>
+  <li class="breadcrumb-item" >FormDataService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" 
+                class="nav-link"
+                class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" 
+                class="nav-link"
+                
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/lib/approval-workflows/form-data.service.ts</code>
+        </p>
+
+
+
+
+
+            <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#initialState" >initialState</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#applyConstraints" >applyConstraints</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#cancelChanges" >cancelChanges</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#cancelChangesGrouped" >cancelChangesGrouped</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#createCdr" >createCdr</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#createCdrList" >createCdrList</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#createCdrListGrouped" >createCdrListGrouped</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getInitialState" >getInitialState</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getInitialStateGrouped" >getInitialStateGrouped</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#resetState" >resetState</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#resetStateGrouped" >resetStateGrouped</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#saveChanges" >saveChanges</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#setup" >setup</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#setupGrouped" >setupGrouped</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(approvalWorkflowDataService: <a href="../injectables/ApprovalWorkflowDataService.html" target="_self">ApprovalWorkflowDataService</a>, confirmation: ConfirmationService, cdrService: CdrFactoryService)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/lib/approval-workflows/form-data.service.ts:45</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>approvalWorkflowDataService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ApprovalWorkflowDataService.html" target="_self" >ApprovalWorkflowDataService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>confirmation</td>
+                                                  
+                                                        <td>
+                                                                    <code>ConfirmationService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>cdrService</td>
+                                                  
+                                                        <td>
+                                                                    <code>CdrFactoryService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="applyConstraints"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>applyConstraints</b></span>
+                        <a href="#applyConstraints"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>applyConstraints(cdrList: <a href="../classes/Column.html" target="_self">ColumnDependentReference[]</a>, columns: string[], constraints: <a href="../interfaces/ColumnConstraints.html" target="_self">ColumnConstraints</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="194"
+                            class="link-to-prism">src/lib/approval-workflows/form-data.service.ts:194</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>cdrList</td>
+                                    <td>
+                                                <code><a href="../classes/Column.html" target="_self" >ColumnDependentReference[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>columns</td>
+                                    <td>
+                                            <code>string[]</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>constraints</td>
+                                    <td>
+                                                <code><a href="../interfaces/ColumnConstraints.html" target="_self" >ColumnConstraints</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="cancelChanges"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>cancelChanges</b></span>
+                        <a href="#cancelChanges"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>cancelChanges(formGroup: FormGroup, sidesheetRef: EuiSidesheetRef, requestData: RequestLevelData | RequestWorkflowData)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="66"
+                            class="link-to-prism">src/lib/approval-workflows/form-data.service.ts:66</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>formGroup</td>
+                                    <td>
+                                            <code>FormGroup</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>sidesheetRef</td>
+                                    <td>
+                                            <code>EuiSidesheetRef</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>requestData</td>
+                                    <td>
+                                            <code>RequestLevelData | RequestWorkflowData</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="cancelChangesGrouped"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>cancelChangesGrouped</b></span>
+                        <a href="#cancelChangesGrouped"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>cancelChangesGrouped(formGroup: FormGroup, sidesheetRef: EuiSidesheetRef, requestData: <a href="../interfaces/RequestStepData.html" target="_self">RequestStepData</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="81"
+                            class="link-to-prism">src/lib/approval-workflows/form-data.service.ts:81</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>formGroup</td>
+                                    <td>
+                                            <code>FormGroup</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>sidesheetRef</td>
+                                    <td>
+                                            <code>EuiSidesheetRef</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>requestData</td>
+                                    <td>
+                                                <code><a href="../interfaces/RequestStepData.html" target="_self" >RequestStepData</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createCdr"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>createCdr</b></span>
+                        <a href="#createCdr"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>createCdr(requestData: RequestLevelData | RequestStepData, columnName: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, columnConstraints?: <a href="../interfaces/ColumnConstraints.html" target="_self">ColumnConstraints</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="154"
+                            class="link-to-prism">src/lib/approval-workflows/form-data.service.ts:154</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>requestData</td>
+                                    <td>
+                                            <code>RequestLevelData | RequestStepData</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>columnName</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>columnConstraints</td>
+                                    <td>
+                                                <code><a href="../interfaces/ColumnConstraints.html" target="_self" >ColumnConstraints</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/Column.html" target="_self" >ColumnDependentReference</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createCdrList"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>createCdrList</b></span>
+                        <a href="#createCdrList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>createCdrList(requestData: RequestLevelData | RequestWorkflowData, columnConstraints?: <a href="../interfaces/ColumnConstraints.html" target="_self">ColumnConstraints</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="168"
+                            class="link-to-prism">src/lib/approval-workflows/form-data.service.ts:168</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>requestData</td>
+                                    <td>
+                                            <code>RequestLevelData | RequestWorkflowData</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>columnConstraints</td>
+                                    <td>
+                                                <code><a href="../interfaces/ColumnConstraints.html" target="_self" >ColumnConstraints</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/Column.html" target="_self" >ColumnDependentReference[]</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createCdrListGrouped"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>createCdrListGrouped</b></span>
+                        <a href="#createCdrListGrouped"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>createCdrListGrouped(requestData: <a href="../interfaces/RequestStepData.html" target="_self">RequestStepData</a>, columnConstraints?: <a href="../interfaces/ColumnConstraints.html" target="_self">ColumnConstraints</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="181"
+                            class="link-to-prism">src/lib/approval-workflows/form-data.service.ts:181</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>requestData</td>
+                                    <td>
+                                                <code><a href="../interfaces/RequestStepData.html" target="_self" >RequestStepData</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>columnConstraints</td>
+                                    <td>
+                                                <code><a href="../interfaces/ColumnConstraints.html" target="_self" >ColumnConstraints</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/CDRGroups.html" target="_self" >CDRGroups</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getInitialState"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>getInitialState</b></span>
+                        <a href="#getInitialState"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getInitialState(requestData: RequestLevelData | RequestWorkflowData)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="96"
+                            class="link-to-prism">src/lib/approval-workflows/form-data.service.ts:96</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>requestData</td>
+                                    <td>
+                                            <code>RequestLevelData | RequestWorkflowData</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getInitialStateGrouped"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>getInitialStateGrouped</b></span>
+                        <a href="#getInitialStateGrouped"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getInitialStateGrouped(requestData: <a href="../interfaces/RequestStepData.html" target="_self">RequestStepData</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="104"
+                            class="link-to-prism">src/lib/approval-workflows/form-data.service.ts:104</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>requestData</td>
+                                    <td>
+                                                <code><a href="../interfaces/RequestStepData.html" target="_self" >RequestStepData</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="resetState"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>resetState</b></span>
+                        <a href="#resetState"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>resetState(requestData: RequestLevelData | RequestWorkflowData)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="114"
+                            class="link-to-prism">src/lib/approval-workflows/form-data.service.ts:114</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>requestData</td>
+                                    <td>
+                                            <code>RequestLevelData | RequestWorkflowData</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="resetStateGrouped"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>resetStateGrouped</b></span>
+                        <a href="#resetStateGrouped"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>resetStateGrouped(requestData: <a href="../interfaces/RequestStepData.html" target="_self">RequestStepData</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="123"
+                            class="link-to-prism">src/lib/approval-workflows/form-data.service.ts:123</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>requestData</td>
+                                    <td>
+                                                <code><a href="../interfaces/RequestStepData.html" target="_self" >RequestStepData</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="saveChanges"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>saveChanges</b></span>
+                        <a href="#saveChanges"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>saveChanges(formGroup: FormGroup, sidesheetRef: EuiSidesheetRef)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="53"
+                            class="link-to-prism">src/lib/approval-workflows/form-data.service.ts:53</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>formGroup</td>
+                                    <td>
+                                            <code>FormGroup</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>sidesheetRef</td>
+                                    <td>
+                                            <code>EuiSidesheetRef</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setup"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>setup</b></span>
+                        <a href="#setup"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>setup(requestData: RequestLevelData | RequestWorkflowData, columnConstraints?: <a href="../interfaces/ColumnConstraints.html" target="_self">ColumnConstraints</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="134"
+                            class="link-to-prism">src/lib/approval-workflows/form-data.service.ts:134</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>requestData</td>
+                                    <td>
+                                            <code>RequestLevelData | RequestWorkflowData</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>columnConstraints</td>
+                                    <td>
+                                                <code><a href="../interfaces/ColumnConstraints.html" target="_self" >ColumnConstraints</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/Column.html" target="_self" >ColumnDependentReference[]</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setupGrouped"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>setupGrouped</b></span>
+                        <a href="#setupGrouped"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>setupGrouped(requestData: <a href="../interfaces/RequestStepData.html" target="_self">RequestStepData</a>, columnConstraints?: <a href="../interfaces/ColumnConstraints.html" target="_self">ColumnConstraints</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="144"
+                            class="link-to-prism">src/lib/approval-workflows/form-data.service.ts:144</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>requestData</td>
+                                    <td>
+                                                <code><a href="../interfaces/RequestStepData.html" target="_self" >RequestStepData</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>columnConstraints</td>
+                                    <td>
+                                                <code><a href="../interfaces/ColumnConstraints.html" target="_self" >ColumnConstraints</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/CDRGroups.html" target="_self" >CDRGroups</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section data-compodoc="block-properties">
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initialState"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>initialState</b></span>
+                        <a href="#initialState"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>literal type</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/lib/approval-workflows/form-data.service.ts:43</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
+import { FormGroup } from &#x27;@angular/forms&#x27;;
+import { EuiSidesheetRef } from &#x27;@elemental-ui/core&#x27;;
+import { DataState } from &#x27;imx-qbm-dbts&#x27;;
+import { CdrFactoryService, ColumnDependentReference, ConfirmationService } from &#x27;qbm&#x27;;
+import { ApprovalWorkflowDataService } from &#x27;./approval-workflow-data.service&#x27;;
+import { CDRGroups, ColumnConstraints, RequestLevelData, RequestStepData, RequestWorkflowData } from &#x27;./approval-workflow.interface&#x27;;
+
+export enum ApprovalSidesheetResponse {
+  save,
+}
+
+@Injectable({
+  providedIn: &#x27;root&#x27;,
+})
+export class FormDataService {
+  private initialState: {
+    [key: string]: any;
+  };
+
+  constructor(
+    private approvalWorkflowDataService: ApprovalWorkflowDataService,
+    private readonly confirmation: ConfirmationService,
+    private cdrService: CdrFactoryService,
+  ) {}
+
+  public async saveChanges(formGroup: FormGroup, sidesheetRef: EuiSidesheetRef): Promise&lt;void&gt; {
+    if (formGroup.valid) {
+      this.approvalWorkflowDataService.handleOpenLoader();
+      try {
+        // Save data and mark form as pristine for future edits
+        formGroup.markAsPristine();
+        sidesheetRef.close(&#x27;save&#x27;);
+      } finally {
+        this.approvalWorkflowDataService.handleCloseLoader();
+      }
+    }
+  }
+
+  public async cancelChanges(
+    formGroup: FormGroup,
+    sidesheetRef: EuiSidesheetRef,
+    requestData: RequestLevelData | RequestWorkflowData
+  ): Promise&lt;void&gt; {
+    if (formGroup.pristine) {
+      // No need to change any entities
+      sidesheetRef.close();
+    } else if (await this.confirmation.confirmLeaveWithUnsavedChanges()) {
+      // Need to reload a new entity to work with
+      this.resetState(requestData);
+      sidesheetRef.close();
+    }
+  }
+
+  public async cancelChangesGrouped(
+    formGroup: FormGroup,
+    sidesheetRef: EuiSidesheetRef,
+    requestData: RequestStepData
+    ): Promise&lt;void&gt; {
+      if (formGroup.pristine) {
+        // No need to change any entities
+        sidesheetRef.close();
+      } else if (await this.confirmation.confirmLeaveWithUnsavedChanges()) {
+        // Need to reload a new entity to work with
+        this.resetStateGrouped(requestData);
+        sidesheetRef.close();
+      }
+    }
+
+  public getInitialState(requestData: RequestLevelData | RequestWorkflowData): void {
+    this.initialState &#x3D; {};
+    const entity &#x3D; requestData.Object.GetEntity();
+    for (const column of requestData.Data) {
+      this.initialState[column] &#x3D; entity.GetColumn(column).GetValue();
+    }
+  }
+
+  public getInitialStateGrouped(requestData: RequestStepData): void {
+    this.initialState &#x3D; {};
+    const entity &#x3D; requestData.Object.GetEntity();
+    for (const tab of Object.keys(requestData.Data)) {
+      for (const column of requestData.Data[tab]) {
+        this.initialState[column] &#x3D; entity.GetColumn(column).GetValue();
+      }
+    }
+  }
+
+  public async resetState(requestData: RequestLevelData | RequestWorkflowData): Promise&lt;void&gt; {
+    for (const columnName of requestData.Data) {
+      const columnData &#x3D; requestData.Object.GetEntity().GetColumn(columnName);
+      if (columnData.GetDataState() &#x3D;&#x3D;&#x3D; DataState.Changed) {
+        await columnData.PutValue(this.initialState[columnName]);
+      }
+    }
+  }
+
+  public async resetStateGrouped(requestData: RequestStepData): Promise&lt;void&gt; {
+    for (const tab of Object.keys(requestData.Data)) {
+      for (const columnName of requestData.Data[tab]) {
+        const columnData &#x3D; requestData.Object.GetEntity().GetColumn(columnName);
+        if (columnData.GetDataState() &#x3D;&#x3D;&#x3D; DataState.Changed) {
+          await columnData.PutValue(this.initialState[columnName]);
+        }
+      }
+    }
+  }
+
+  public setup(requestData: RequestLevelData | RequestWorkflowData, columnConstraints?: ColumnConstraints): ColumnDependentReference[] {
+    this.approvalWorkflowDataService.handleOpenLoader();
+    try {
+      this.getInitialState(requestData);
+      return this.createCdrList(requestData, columnConstraints);
+    } finally {
+      this.approvalWorkflowDataService.handleCloseLoader();
+    }
+  }
+
+  public setupGrouped(requestData: RequestStepData, columnConstraints?: ColumnConstraints): CDRGroups {
+    this.approvalWorkflowDataService.handleOpenLoader();
+    try {
+      this.getInitialStateGrouped(requestData);
+      return this.createCdrListGrouped(requestData, columnConstraints);
+    } finally {
+      this.approvalWorkflowDataService.handleCloseLoader();
+    }
+  }
+
+  public createCdr(
+    requestData: RequestLevelData | RequestStepData,
+    columnName: string,
+    columnConstraints?: ColumnConstraints
+  ): ColumnDependentReference {
+    const entity &#x3D; requestData.Object.GetEntity();
+    const cdr &#x3D; this.cdrService.buildCdr(entity, columnName);
+    // Apply constraints
+    if (columnConstraints) {
+      this.applyConstraints([cdr], [columnName], columnConstraints);
+    }
+    return cdr
+  }
+
+  public createCdrList(
+    requestData: RequestLevelData | RequestWorkflowData,
+    columnConstraints?: ColumnConstraints
+  ): ColumnDependentReference[] {
+    const entity &#x3D; requestData.Object.GetEntity();
+    const cdrList &#x3D; this.cdrService.buildCdrFromColumnList(entity, requestData.Data);
+    // Apply constraints
+    if (columnConstraints) {
+      this.applyConstraints(cdrList, requestData.Data, columnConstraints);
+    }
+    return cdrList
+  }
+
+  public createCdrListGrouped(requestData: RequestStepData, columnConstraints?: ColumnConstraints): CDRGroups {
+    const cdrGroups: CDRGroups &#x3D; {};
+    const entity &#x3D; requestData.Object.GetEntity();
+    for (const group of Object.keys(requestData.Data)) {
+      const cdrList &#x3D; this.cdrService.buildCdrFromColumnList(entity, requestData.Data[group]);
+      if (columnConstraints) {
+        this.applyConstraints(cdrList, requestData.Data[group], columnConstraints)
+      }
+      cdrGroups[group] &#x3D; cdrList;
+    }
+    return cdrGroups;
+  }
+
+  public applyConstraints(cdrList: ColumnDependentReference[], columns: string[], constraints: ColumnConstraints): void {
+    columns.forEach((columnName: string, index: number) &#x3D;&gt; {
+      if (!constraints[columnName]) {
+        return;
+      }
+      if (constraints[columnName].minLength) {
+        cdrList[index].minLength &#x3D; constraints[columnName].minLength;
+      }
+      if (constraints[columnName].valueConstraint) {
+        cdrList[index].valueConstraint &#x3D; constraints[columnName].valueConstraint;
+      }
+    });
+  }
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'FormDataService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

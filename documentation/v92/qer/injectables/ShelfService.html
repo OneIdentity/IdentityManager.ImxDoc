@@ -1,0 +1,1680 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>IMX Web - QER Library</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+        <link rel="stylesheet" href="../styles/material.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">IMX Web - QER Library</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Injectables</li>
+  <li class="breadcrumb-item" >ShelfService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" 
+                class="nav-link"
+                class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" 
+                class="nav-link"
+                
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/lib/itshop/shelf.service.ts</code>
+        </p>
+
+
+
+
+
+            <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#buildShelfSelection" >buildShelfSelection</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#findUniqueProductsInShops" >findUniqueProductsInShops</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#getPersonsForProduct" >getPersonsForProduct</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#getPossibleShelfs" >getPossibleShelfs</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#getShelfObjects" >getShelfObjects</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#hasMultipleShelfs" >hasMultipleShelfs</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#presetUnique" >presetUnique</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#setElementsWithSideSheet" >setElementsWithSideSheet</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#setShops" >setShops</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#showNotRequestableProducts" >showNotRequestableProducts</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#tryGetItShop" >tryGetItShop</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#uniqueProducts" >uniqueProducts</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#uniqueShelfs" >uniqueShelfs</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(sideSheet: EuiSidesheetService, qerClient: <a href="../injectables/QerApiService.html" target="_self">QerApiService</a>, logger: ClassloggerService, dialogService: MatDialog, translate: TranslateService, busyService: EuiLoadingService)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/lib/itshop/shelf.service.ts:44</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>sideSheet</td>
+                                                  
+                                                        <td>
+                                                                    <code>EuiSidesheetService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>qerClient</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/QerApiService.html" target="_self" >QerApiService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>logger</td>
+                                                  
+                                                        <td>
+                                                                    <code>ClassloggerService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>dialogService</td>
+                                                  
+                                                        <td>
+                                                                    <code>MatDialog</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>translate</td>
+                                                  
+                                                        <td>
+                                                                    <code>TranslateService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>busyService</td>
+                                                  
+                                                        <td>
+                                                                    <code>EuiLoadingService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="buildShelfSelection"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>buildShelfSelection</b></span>
+                        <a href="#buildShelfSelection"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>buildShelfSelection(requested: <a href="../interfaces/RequestableProduct.html" target="_self">RequestableProductForPerson[]</a>, productsWithShops: <a href="../interfaces/RequestableProduct.html" target="_self">RequestableProductForPerson[]</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="184"
+                            class="link-to-prism">src/lib/itshop/shelf.service.ts:184</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>requested</td>
+                                    <td>
+                                                <code><a href="../interfaces/RequestableProduct.html" target="_self" >RequestableProductForPerson[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>productsWithShops</td>
+                                    <td>
+                                                <code><a href="../interfaces/RequestableProduct.html" target="_self" >RequestableProductForPerson[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/ShelfSelectionObject.html" target="_self" >ShelfSelectionObject[]</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="findUniqueProductsInShops"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>findUniqueProductsInShops</b></span>
+                        <a href="#findUniqueProductsInShops"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>findUniqueProductsInShops(serviceItemsForPersons: ServiceItemForPerson[])</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="247"
+                            class="link-to-prism">src/lib/itshop/shelf.service.ts:247</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>serviceItemsForPersons</td>
+                                    <td>
+                                            <code>ServiceItemForPerson[]</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/RequestableProduct.html" target="_self" >Promise&lt;RequestableProductForPerson[]&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getPersonsForProduct"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>getPersonsForProduct</b></span>
+                        <a href="#getPersonsForProduct"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getPersonsForProduct(requested: <a href="../interfaces/RequestableProduct.html" target="_self">RequestableProductForPerson[]</a>, productsWithShops: <a href="../interfaces/RequestableProduct.html" target="_self">RequestableProductForPerson[]</a>, uid: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="202"
+                            class="link-to-prism">src/lib/itshop/shelf.service.ts:202</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>requested</td>
+                                    <td>
+                                                <code><a href="../interfaces/RequestableProduct.html" target="_self" >RequestableProductForPerson[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>productsWithShops</td>
+                                    <td>
+                                                <code><a href="../interfaces/RequestableProduct.html" target="_self" >RequestableProductForPerson[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>uid</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/PersonForProduct.html" target="_self" >PersonForProduct[]</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getPossibleShelfs"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>getPossibleShelfs</b></span>
+                        <a href="#getPossibleShelfs"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getPossibleShelfs(productsWithShops: <a href="../interfaces/RequestableProduct.html" target="_self">RequestableProductForPerson[]</a>, uid: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="218"
+                            class="link-to-prism">src/lib/itshop/shelf.service.ts:218</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>productsWithShops</td>
+                                    <td>
+                                                <code><a href="../interfaces/RequestableProduct.html" target="_self" >RequestableProductForPerson[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>uid</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/ShelfObject.html" target="_self" >ShelfObject[]</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getShelfObjects"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>getShelfObjects</b></span>
+                        <a href="#getShelfObjects"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getShelfObjects(productsWithShops: <a href="../interfaces/RequestableProduct.html" target="_self">RequestableProductForPerson[]</a>, uidAcc: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, uidPerson: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="237"
+                            class="link-to-prism">src/lib/itshop/shelf.service.ts:237</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>productsWithShops</td>
+                                    <td>
+                                                <code><a href="../interfaces/RequestableProduct.html" target="_self" >RequestableProductForPerson[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>uidAcc</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>uidPerson</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/ShelfObject.html" target="_self" >ShelfObject[]</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="hasMultipleShelfs"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>hasMultipleShelfs</b></span>
+                        <a href="#hasMultipleShelfs"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>hasMultipleShelfs(shelfSelectionObject: <a href="../interfaces/ShelfSelectionObject.html" target="_self">ShelfSelectionObject</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="180"
+                            class="link-to-prism">src/lib/itshop/shelf.service.ts:180</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>shelfSelectionObject</td>
+                                    <td>
+                                                <code><a href="../interfaces/ShelfSelectionObject.html" target="_self" >ShelfSelectionObject</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="presetUnique"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>presetUnique</b></span>
+                        <a href="#presetUnique"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>presetUnique(requested: <a href="../interfaces/RequestableProduct.html" target="_self">RequestableProductForPerson[]</a>, productsWithShops: <a href="../interfaces/RequestableProduct.html" target="_self">RequestableProductForPerson[]</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="167"
+                            class="link-to-prism">src/lib/itshop/shelf.service.ts:167</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>requested</td>
+                                    <td>
+                                                <code><a href="../interfaces/RequestableProduct.html" target="_self" >RequestableProductForPerson[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>productsWithShops</td>
+                                    <td>
+                                                <code><a href="../interfaces/RequestableProduct.html" target="_self" >RequestableProductForPerson[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setElementsWithSideSheet"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>setElementsWithSideSheet</b></span>
+                        <a href="#setElementsWithSideSheet"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>setElementsWithSideSheet(requested: <a href="../interfaces/RequestableProduct.html" target="_self">RequestableProductForPerson[]</a>, ssos: <a href="../interfaces/ShelfSelectionObject.html" target="_self">ShelfSelectionObject[]</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="127"
+                            class="link-to-prism">src/lib/itshop/shelf.service.ts:127</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>requested</td>
+                                    <td>
+                                                <code><a href="../interfaces/RequestableProduct.html" target="_self" >RequestableProductForPerson[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>ssos</td>
+                                    <td>
+                                                <code><a href="../interfaces/ShelfSelectionObject.html" target="_self" >ShelfSelectionObject[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;boolean&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setShops"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>setShops</b></span>
+                        <a href="#setShops"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>setShops(requestableServiceItemsForPersons: <a href="../interfaces/RequestableProduct.html" target="_self">RequestableProductForPerson[]</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="54"
+                            class="link-to-prism">src/lib/itshop/shelf.service.ts:54</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>requestableServiceItemsForPersons</td>
+                                    <td>
+                                                <code><a href="../interfaces/RequestableProduct.html" target="_self" >RequestableProductForPerson[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;boolean&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showNotRequestableProducts"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>showNotRequestableProducts</b></span>
+                        <a href="#showNotRequestableProducts"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>showNotRequestableProducts(ssos: <a href="../interfaces/ShelfSelectionObject.html" target="_self">ShelfSelectionObject[]</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="98"
+                            class="link-to-prism">src/lib/itshop/shelf.service.ts:98</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>ssos</td>
+                                    <td>
+                                                <code><a href="../interfaces/ShelfSelectionObject.html" target="_self" >ShelfSelectionObject[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="tryGetItShop"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>tryGetItShop</b></span>
+                        <a href="#tryGetItShop"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>tryGetItShop(productsWithShops: <a href="../interfaces/RequestableProduct.html" target="_self">RequestableProductForPerson[]</a>, uidAcc: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, uidPerson: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="232"
+                            class="link-to-prism">src/lib/itshop/shelf.service.ts:232</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>productsWithShops</td>
+                                    <td>
+                                                <code><a href="../interfaces/RequestableProduct.html" target="_self" >RequestableProductForPerson[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>uidAcc</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>uidPerson</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="uniqueProducts"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>uniqueProducts</b></span>
+                        <a href="#uniqueProducts"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>uniqueProducts(value: literal type, index: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, self: literal type[])</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="228"
+                            class="link-to-prism">src/lib/itshop/shelf.service.ts:228</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>value</td>
+                                    <td>
+                                            <code>literal type</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>index</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>self</td>
+                                    <td>
+                                            <code>literal type[]</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="uniqueShelfs"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>uniqueShelfs</b></span>
+                        <a href="#uniqueShelfs"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>uniqueShelfs(shelf: <a href="../interfaces/ShelfObject.html" target="_self">ShelfObject</a>, index: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, self: <a href="../interfaces/ShelfObject.html" target="_self">ShelfObject[]</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="243"
+                            class="link-to-prism">src/lib/itshop/shelf.service.ts:243</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>shelf</td>
+                                    <td>
+                                                <code><a href="../interfaces/ShelfObject.html" target="_self" >ShelfObject</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>index</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>self</td>
+                                    <td>
+                                                <code><a href="../interfaces/ShelfObject.html" target="_self" >ShelfObject[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
+import { MatDialog } from &#x27;@angular/material/dialog&#x27;;
+import { TranslateService } from &#x27;@ngx-translate/core&#x27;;
+import { EuiLoadingService, EuiSidesheetService } from &#x27;@elemental-ui/core&#x27;;
+import { OverlayRef } from &#x27;@angular/cdk/overlay&#x27;;
+
+import { ClassloggerService, MessageDialogComponent } from &#x27;qbm&#x27;;
+import { RequestableProductForPerson, ServiceItemForPerson } from &#x27;imx-api-qer&#x27;;
+import { ShelfSelectionComponent } from &#x27;./shelf-selection.component&#x27;;
+import { QerApiService } from &#x27;../qer-api-client.service&#x27;;
+import { NonRequestableItemsComponent } from &#x27;./non-requestable-items/non-requestable-items.component&#x27;;
+import { PersonForProduct, ShelfObject, ShelfSelectionObject } from &#x27;./shelf-selection-sidesheet.model&#x27;;
+import _ from &#x27;lodash&#x27;;
+
+@Injectable({
+  providedIn: &#x27;root&#x27;,
+})
+export class ShelfService {
+  constructor(
+    private readonly sideSheet: EuiSidesheetService,
+    private readonly qerClient: QerApiService,
+    private readonly logger: ClassloggerService,
+    private readonly dialogService: MatDialog,
+    private readonly translate: TranslateService,
+    private readonly busyService: EuiLoadingService
+  ) {}
+
+  public async setShops(requestableServiceItemsForPersons: RequestableProductForPerson[]): Promise&lt;boolean&gt; {
+    const requestableServiceItemsForPersonsInShops &#x3D; await this.findUniqueProductsInShops(requestableServiceItemsForPersons);
+
+    this.logger.debug(this, &#x27;items from server&#x27;, requestableServiceItemsForPersonsInShops);
+
+    if (requestableServiceItemsForPersonsInShops.length &#x3D;&#x3D;&#x3D; 0) {
+      const dialogRef &#x3D; this.dialogService.open(MessageDialogComponent, {
+        data: {
+          ShowOk: true,
+          Title: await this.translate.get(&#x27;#LDS#Heading Products Cannot Be Requested&#x27;).toPromise(),
+          Message: await this.translate.get(&#x27;#LDS#None of the selected products can be requested for the selected identities.&#x27;).toPromise(),
+        },
+        panelClass: &#x27;imx-messageDialog&#x27;,
+      });
+      await dialogRef.beforeClosed().toPromise();
+      return false;
+    }
+    // preset unique elements
+    this.presetUnique(requestableServiceItemsForPersons, requestableServiceItemsForPersonsInShops);
+
+    if (requestableServiceItemsForPersons.every((elem) &#x3D;&gt; elem.UidITShopOrg !&#x3D; null)) {
+      return true;
+    } else {
+      const data &#x3D; this.buildShelfSelection(requestableServiceItemsForPersons, requestableServiceItemsForPersonsInShops);
+
+      await this.showNotRequestableProducts(data);
+
+      const requested &#x3D; requestableServiceItemsForPersons.filter((elem) &#x3D;&gt;
+        data.some(
+          (shelf) &#x3D;&gt;
+            elem.UidAccProduct &#x3D;&#x3D;&#x3D; shelf.uidAccproduct &amp;&amp;
+            shelf.personsForProduct.find((person) &#x3D;&gt; person.uidPerson &#x3D;&#x3D;&#x3D; elem.UidPerson)?.shelfsObjects.length &gt; 0
+        )
+      );
+
+      if (!(await this.setElementsWithSideSheet(requested, data))) {
+        return false;
+      }
+    }
+    this.logger.trace(this, requestableServiceItemsForPersons);
+
+    return true;
+  }
+
+  private async showNotRequestableProducts(ssos: ShelfSelectionObject[]): Promise&lt;void&gt; {
+    const nonRequestableProductsForPersons: RequestableProductForPerson[] &#x3D; [];
+
+    if (ssos.length &#x3D;&#x3D;&#x3D; 0) {
+    } else {
+      ssos.forEach((sso) &#x3D;&gt;
+        sso.personsForProduct.forEach((person) &#x3D;&gt; {
+          if (person.shelfsObjects.length &#x3D;&#x3D;&#x3D; 0) {
+            nonRequestableProductsForPersons.push({
+              UidITShopOrg: &#x27;&#x27;,
+              Display: sso.displayAccProduct,
+              DisplayRecipient: person.displayPerson,
+            });
+          }
+        })
+      );
+    }
+
+    if (nonRequestableProductsForPersons.length &gt; 0) {
+      const dialogRef &#x3D; this.dialogService.open(NonRequestableItemsComponent, {
+        data: {
+          nonRequestableProductsForPersons,
+        },
+      });
+
+      await dialogRef.beforeClosed().toPromise();
+    }
+  }
+
+  private async setElementsWithSideSheet(requested: RequestableProductForPerson[], ssos: ShelfSelectionObject[]): Promise&lt;boolean&gt; {
+    if (ssos.every((sso) &#x3D;&gt; sso.personsForProduct.every((person) &#x3D;&gt; person.shelfsObjects.length &lt; 2))) {
+      return true;
+    }
+
+    // TODO TASK 321664: This is only a temporary fix to choose to all items with the same uid, regardless of if they are optional or not.
+    ssos.forEach((item) &#x3D;&gt; {
+      item.personsForProduct &#x3D; _.uniqWith(item.personsForProduct, _.isEqual);
+    });
+
+    // show side sheet for multishelf objects
+    const sidesheetRef &#x3D; this.sideSheet.open(ShelfSelectionComponent, {
+      title: await this.translate.get(&#x27;#LDS#Heading Select Shelf&#x27;).toPromise(),
+      padding: &#x27;0px&#x27;,
+      width: &#x27;max(500px, 50%)&#x27;,
+      testId: &#x27;shelf-selection-sidesheet&#x27;,
+      data: ssos,
+    });
+    const sidesheetResult: ShelfSelectionObject[] &#x3D; await sidesheetRef.afterClosed().toPromise();
+    if (!sidesheetResult) {
+      return false;
+    }
+    sidesheetResult.forEach((requestedProduct) &#x3D;&gt;
+      requestedProduct.personsForProduct.forEach((person) &#x3D;&gt; {
+        // TODO TASK 321664: This is only a temporary fix to choose to all items with the same uid, regardless of if they are optional or not.
+        const items &#x3D; requested.filter(
+          (elem) &#x3D;&gt;
+            elem.UidAccProduct &#x3D;&#x3D;&#x3D; requestedProduct.uidAccproduct &amp;&amp; elem.UidPerson &#x3D;&#x3D;&#x3D; person.uidPerson &amp;&amp; person.shelfsObjects.length &gt; 0
+        );
+        items.forEach((item) &#x3D;&gt; {
+          item.UidITShopOrg &#x3D; person.uidItShopOrg;
+        });
+        // const item &#x3D; requested.find(elem &#x3D;&gt;
+        //   elem.UidAccProduct &#x3D;&#x3D;&#x3D; requestedProduct.uidAccproduct &amp;&amp; elem.UidPerson &#x3D;&#x3D;&#x3D; person.uidPerson);
+        // item.UidITShopOrg &#x3D; person.uidItShopOrg;
+      })
+    );
+    return true;
+  }
+
+  private presetUnique(requested: RequestableProductForPerson[], productsWithShops: RequestableProductForPerson[]): void {
+    // Here we set any unique products with a unique shelf, unique is defined as only one UID for AccProduct, Person
+    for (const serviceItemForPerson of requested.filter((elem) &#x3D;&gt; elem.UidITShopOrg &#x3D;&#x3D; null || elem.UidITShopOrg &#x3D;&#x3D;&#x3D; &#x27;&#x27;)) {
+      const possibleRequestableServiceItems &#x3D; productsWithShops.filter(
+        (item) &#x3D;&gt; item.UidAccProduct &#x3D;&#x3D;&#x3D; serviceItemForPerson.UidAccProduct &amp;&amp; item.UidPerson &#x3D;&#x3D;&#x3D; serviceItemForPerson.UidPerson
+      );
+      if (possibleRequestableServiceItems.length &#x3D;&#x3D;&#x3D; 1) {
+        serviceItemForPerson.UidITShopOrg &#x3D; possibleRequestableServiceItems[0].UidITShopOrg;
+        this.logger.debug(this, &#x27;service item associated with shelf&#x27;, serviceItemForPerson);
+      }
+    }
+  }
+
+  private hasMultipleShelfs(shelfSelectionObject: ShelfSelectionObject): boolean {
+    return shelfSelectionObject.personsForProduct.some((person) &#x3D;&gt; person.shelfsObjects.length !&#x3D;&#x3D; 1);
+  }
+
+  private buildShelfSelection(
+    requested: RequestableProductForPerson[],
+    productsWithShops: RequestableProductForPerson[]
+  ): ShelfSelectionObject[] {
+    // Build the shelf selection object to then ask the user to set values on
+    return requested
+      .map((elem) &#x3D;&gt; ({ display: elem.Display, uid: elem.UidAccProduct }))
+      .filter(this.uniqueProducts)
+      .map((elem) &#x3D;&gt; ({
+        uidAccproduct: elem.uid,
+        displayAccProduct: elem.display,
+        personsForProduct: this.getPersonsForProduct(requested, productsWithShops, elem.uid),
+        possibleShelfObjects: this.getPossibleShelfs(productsWithShops, elem.uid),
+      }))
+      .filter((elem) &#x3D;&gt; this.hasMultipleShelfs(elem))
+      .sort((a, b) &#x3D;&gt; a.displayAccProduct.localeCompare(b.displayAccProduct));
+  }
+
+  private getPersonsForProduct(
+    requested: RequestableProductForPerson[],
+    productsWithShops: RequestableProductForPerson[],
+    uid: string
+  ): PersonForProduct[] {
+    const elements &#x3D; requested.filter((elem) &#x3D;&gt; elem.UidAccProduct &#x3D;&#x3D;&#x3D; uid);
+    return elements
+      .map((elem) &#x3D;&gt; ({
+        uidPerson: elem.UidPerson,
+        uidItShopOrg: this.tryGetItShop(productsWithShops, uid, elem.UidPerson),
+        displayPerson: elem.DisplayRecipient,
+        shelfsObjects: this.getShelfObjects(productsWithShops, uid, elem.UidPerson),
+      }))
+      .sort((a, b) &#x3D;&gt; a.displayPerson.localeCompare(b.displayPerson));
+  }
+
+  private getPossibleShelfs(productsWithShops: RequestableProductForPerson[], uid: string): ShelfObject[] {
+    const elements &#x3D; productsWithShops.filter((elem) &#x3D;&gt; elem.UidAccProduct &#x3D;&#x3D;&#x3D; uid);
+    return elements
+      .map((elem) &#x3D;&gt; ({
+        uidItShopOrg: elem.UidITShopOrg,
+        displayShelf: elem.Display,
+      }))
+      .filter(this.uniqueShelfs);
+  }
+
+  private uniqueProducts(value: { display: string; uid: string }, index: number, self: { display: string; uid: string }[]): boolean {
+    return self.findIndex((elem) &#x3D;&gt; value.uid &#x3D;&#x3D;&#x3D; elem.uid) &#x3D;&#x3D;&#x3D; index;
+  }
+
+  private tryGetItShop(productsWithShops: RequestableProductForPerson[], uidAcc: string, uidPerson: string): string {
+    const shelf &#x3D; productsWithShops.filter((elem) &#x3D;&gt; elem.UidAccProduct &#x3D;&#x3D;&#x3D; uidAcc &amp;&amp; elem.UidPerson &#x3D;&#x3D;&#x3D; uidPerson);
+    return shelf.length &#x3D;&#x3D;&#x3D; 1 ? shelf[0].UidITShopOrg : &#x27;&#x27;;
+  }
+
+  private getShelfObjects(productsWithShops: RequestableProductForPerson[], uidAcc: string, uidPerson: string): ShelfObject[] {
+    return productsWithShops
+      .filter((elem) &#x3D;&gt; elem.UidAccProduct &#x3D;&#x3D;&#x3D; uidAcc &amp;&amp; elem.UidPerson &#x3D;&#x3D;&#x3D; uidPerson)
+      .map((elem) &#x3D;&gt; ({ displayShelf: elem.Display, uidItShopOrg: elem.UidITShopOrg }));
+  }
+
+  private uniqueShelfs(shelf: ShelfObject, index: number, self: ShelfObject[]): boolean {
+    return self.findIndex((elem) &#x3D;&gt; shelf.uidItShopOrg &#x3D;&#x3D;&#x3D; elem.uidItShopOrg) &#x3D;&#x3D;&#x3D; index;
+  }
+
+  private async findUniqueProductsInShops(serviceItemsForPersons: ServiceItemForPerson[]): Promise&lt;RequestableProductForPerson[]&gt; {
+    // Get all unique products within the itshop
+    let products: RequestableProductForPerson[];
+    let overlay: OverlayRef;
+    setTimeout(() &#x3D;&gt; (overlay &#x3D; this.busyService.show()));
+    try {
+      products &#x3D; await this.qerClient.client.portal_itshop_findproducts_post(serviceItemsForPersons);
+      products &#x3D; _.uniqWith(products, _.isEqual);
+    } finally {
+      setTimeout(() &#x3D;&gt; this.busyService.hide(overlay));
+    }
+    return products;
+  }
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'ShelfService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
