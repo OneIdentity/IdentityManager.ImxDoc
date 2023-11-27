@@ -1,0 +1,3158 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>IMX Web - QER Library</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+        <link rel="stylesheet" href="../styles/material.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">IMX Web - QER Library</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Components</li>
+  <li class="breadcrumb-item"
+  >
+  CartItemsComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" class="nav-link"
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li class="nav-item">
+            <a href="#templateData" class="nav-link"
+                role="tab" id="templateData-tab" data-bs-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li class="nav-item">
+            <a href="#styleData" class="nav-link"
+                role="tab" id="styleData-tab" data-bs-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li class="nav-item">
+            <a href="#tree" class="nav-link"
+                role="tab" id="tree-tab" data-bs-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/lib/shopping-cart/cart-items/cart-items.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code>OnInit</code>
+                <code>OnChanges</code>
+    </p>
+
+
+<section data-compodoc="block-metadata">
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>imx-cart-items</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./cart-items.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./cart-items.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#CartItemCheckStatus" >CartItemCheckStatus</a>
+                            </li>
+                            <li>
+                                    <span class="modifier"></span>
+                                    <span class="modifier">Private</span>
+                                <a href="#cartItemsTable" >cartItemsTable</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#DisplayColumns" >DisplayColumns</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#displayedColumns" >displayedColumns</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#dstSettings" >dstSettings</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#entitySchema" >entitySchema</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#itemStatus" >itemStatus</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#removeButtonLabel" >removeButtonLabel</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#selectedItems" >selectedItems</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#createBaseCartItem" >createBaseCartItem</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#editCartItem" >editCartItem</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#editSelectedItems" >editSelectedItems</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getCheckStatusIcon" >getCheckStatusIcon</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#getNextSelectedAncestor" >getNextSelectedAncestor</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#getSubtitleDisplay" >getSubtitleDisplay</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#HasSelectedItems" >HasSelectedItems</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#haveSelectedItems" >haveSelectedItems</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#itemCanBeCloned" >itemCanBeCloned</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#itemCanBeMoved" >itemCanBeMoved</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#itemsCanBeDeleted" >itemsCanBeDeleted</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#itemsCanBeEdited" >itemsCanBeEdited</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#itemsCanBeMoved" >itemsCanBeMoved</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#itemSelectable" >itemSelectable</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#moveSelectedToCart" >moveSelectedToCart</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#moveSelectedToLater" >moveSelectedToLater</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#ngOnChanges" >ngOnChanges</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#onSelectionChanged" >onSelectionChanged</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#removeHighlightedItem" >removeHighlightedItem</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#removeRequests" >removeRequests</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#removeSelectedItems" >removeSelectedItems</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#saveCartItems" >saveCartItems</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#setValidationOverviewButtonColor" >setValidationOverviewButtonColor</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#showValidationOverview" >showValidationOverview</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#forLater" >forLater</a>
+                            </li>
+                            <li>
+                                <a href="#shoppingCart" >shoppingCart</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Outputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#dataChange" >dataChange</a>
+                            </li>
+                            <li>
+                                <a href="#selectionChange" >selectionChange</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(confirmationService: ConfirmationService, busyService: EuiLoadingService, cartItemsService: <a href="../injectables/CartItemsService.html" target="_self">CartItemsService</a>, logger: ClassloggerService, router: Router, snackBarService: SnackBarService, translateService: TranslateService, sidesheetService: EuiSidesheetService, cartItemClone: <a href="../injectables/CartItemCloneService.html" target="_self">CartItemCloneService</a>, ldsReplace: LdsReplacePipe)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="85" class="link-to-prism">src/lib/shopping-cart/cart-items/cart-items.component.ts:85</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>confirmationService</td>
+                                                  
+                                                        <td>
+                                                                    <code>ConfirmationService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>busyService</td>
+                                                  
+                                                        <td>
+                                                                    <code>EuiLoadingService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>cartItemsService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CartItemsService.html" target="_self" >CartItemsService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>logger</td>
+                                                  
+                                                        <td>
+                                                                    <code>ClassloggerService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                    <code>Router</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>snackBarService</td>
+                                                  
+                                                        <td>
+                                                                    <code>SnackBarService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>translateService</td>
+                                                  
+                                                        <td>
+                                                                    <code>TranslateService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>sidesheetService</td>
+                                                  
+                                                        <td>
+                                                                    <code>EuiSidesheetService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>cartItemClone</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CartItemCloneService.html" target="_self" >CartItemCloneService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>ldsReplace</td>
+                                                  
+                                                        <td>
+                                                                    <code>LdsReplacePipe</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section data-compodoc="block-inputs">
+    <h3 id="inputs">Inputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="forLater"></a>
+                        <b>forLater</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="77" class="link-to-prism">src/lib/shopping-cart/cart-items/cart-items.component.ts:77</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="shoppingCart"></a>
+                        <b>shoppingCart</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/ShoppingCart.html" target="_self" >ShoppingCart</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="75" class="link-to-prism">src/lib/shopping-cart/cart-items/cart-items.component.ts:75</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+    <section data-compodoc="block-outputs">
+    <h3 id="outputs">Outputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="dataChange"></a>
+                        <b>dataChange</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>EventEmitter&lt;boolean&gt;</code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="79" class="link-to-prism">src/lib/shopping-cart/cart-items/cart-items.component.ts:79</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="selectionChange"></a>
+                        <b>selectionChange</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>EventEmitter&lt;PortalCartitem[]&gt;</code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="81" class="link-to-prism">src/lib/shopping-cart/cart-items/cart-items.component.ts:81</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+    <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createBaseCartItem"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>createBaseCartItem</b></span>
+                        <a href="#createBaseCartItem"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>createBaseCartItem(cartItems: <a href="../interfaces/ExtendedEntityWrapper.html" target="_self">ExtendedEntityWrapper&lt;PortalCartitem&gt;[]</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="447"
+                            class="link-to-prism">src/lib/shopping-cart/cart-items/cart-items.component.ts:447</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>cartItems</td>
+                                    <td>
+                                                <code><a href="../interfaces/ExtendedEntityWrapper.html" target="_self" >ExtendedEntityWrapper&lt;PortalCartitem&gt;[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/ExtendedEntityWrapper.html" target="_self" >Promise&lt;ExtendedEntityWrapper&lt;PortalCartitem&gt;&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="editCartItem"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>editCartItem</b></span>
+                        <a href="#editCartItem"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>editCartItem(portalCartitem: PortalCartitem)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="140"
+                            class="link-to-prism">src/lib/shopping-cart/cart-items/cart-items.component.ts:140</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>portalCartitem</td>
+                                    <td>
+                                            <code>PortalCartitem</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="editSelectedItems"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>editSelectedItems</b></span>
+                        <a href="#editSelectedItems"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>editSelectedItems()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="244"
+                            class="link-to-prism">src/lib/shopping-cart/cart-items/cart-items.component.ts:244</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getCheckStatusIcon"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>getCheckStatusIcon</b></span>
+                        <a href="#getCheckStatusIcon"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getCheckStatusIcon(cartItem: PortalCartitem)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="312"
+                            class="link-to-prism">src/lib/shopping-cart/cart-items/cart-items.component.ts:312</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>cartItem</td>
+                                    <td>
+                                            <code>PortalCartitem</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getNextSelectedAncestor"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>getNextSelectedAncestor</b></span>
+                        <a href="#getNextSelectedAncestor"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getNextSelectedAncestor(cartItem: PortalCartitem)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="387"
+                            class="link-to-prism">src/lib/shopping-cart/cart-items/cart-items.component.ts:387</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>cartItem</td>
+                                    <td>
+                                            <code>PortalCartitem</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>PortalCartitem</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getSubtitleDisplay"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>getSubtitleDisplay</b></span>
+                        <a href="#getSubtitleDisplay"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getSubtitleDisplay(cartItem: PortalCartitem)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="351"
+                            class="link-to-prism">src/lib/shopping-cart/cart-items/cart-items.component.ts:351</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>cartItem</td>
+                                    <td>
+                                            <code>PortalCartitem</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;string&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="HasSelectedItems"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>HasSelectedItems</b></span>
+                        <a href="#HasSelectedItems"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>HasSelectedItems()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="281"
+                            class="link-to-prism">src/lib/shopping-cart/cart-items/cart-items.component.ts:281</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="haveSelectedItems"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>haveSelectedItems</b></span>
+                        <a href="#haveSelectedItems"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>haveSelectedItems()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="294"
+                            class="link-to-prism">src/lib/shopping-cart/cart-items/cart-items.component.ts:294</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="itemCanBeCloned"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>itemCanBeCloned</b></span>
+                        <a href="#itemCanBeCloned"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>itemCanBeCloned(cartitem: PortalCartitem)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="357"
+                            class="link-to-prism">src/lib/shopping-cart/cart-items/cart-items.component.ts:357</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>cartitem</td>
+                                    <td>
+                                            <code>PortalCartitem</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="itemCanBeMoved"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>itemCanBeMoved</b></span>
+                        <a href="#itemCanBeMoved"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>itemCanBeMoved(cartItem: PortalCartitem, allowOptional: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>, traversed: string[])</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="365"
+                            class="link-to-prism">src/lib/shopping-cart/cart-items/cart-items.component.ts:365</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>cartItem</td>
+                                    <td>
+                                            <code>PortalCartitem</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>allowOptional</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>false</code>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>traversed</td>
+                                    <td>
+                                            <code>string[]</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>[]</code>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="itemsCanBeDeleted"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>itemsCanBeDeleted</b></span>
+                        <a href="#itemsCanBeDeleted"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>itemsCanBeDeleted()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="304"
+                            class="link-to-prism">src/lib/shopping-cart/cart-items/cart-items.component.ts:304</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="itemsCanBeEdited"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>itemsCanBeEdited</b></span>
+                        <a href="#itemsCanBeEdited"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>itemsCanBeEdited()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="308"
+                            class="link-to-prism">src/lib/shopping-cart/cart-items/cart-items.component.ts:308</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="itemsCanBeMoved"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>itemsCanBeMoved</b></span>
+                        <a href="#itemsCanBeMoved"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>itemsCanBeMoved(allowOptional: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="299"
+                            class="link-to-prism">src/lib/shopping-cart/cart-items/cart-items.component.ts:299</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>allowOptional</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>false</code>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="itemSelectable"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>itemSelectable</b></span>
+                        <a href="#itemSelectable"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>itemSelectable(event: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="285"
+                            class="link-to-prism">src/lib/shopping-cart/cart-items/cart-items.component.ts:285</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="moveSelectedToCart"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>moveSelectedToCart</b></span>
+                        <a href="#moveSelectedToCart"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>moveSelectedToCart()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="209"
+                            class="link-to-prism">src/lib/shopping-cart/cart-items/cart-items.component.ts:209</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="moveSelectedToLater"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>moveSelectedToLater</b></span>
+                        <a href="#moveSelectedToLater"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>moveSelectedToLater()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="221"
+                            class="link-to-prism">src/lib/shopping-cart/cart-items/cart-items.component.ts:221</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnChanges"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>ngOnChanges</b></span>
+                        <a href="#ngOnChanges"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>ngOnChanges(changes: SimpleChanges)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="122"
+                            class="link-to-prism">src/lib/shopping-cart/cart-items/cart-items.component.ts:122</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>changes</td>
+                                    <td>
+                                            <code>SimpleChanges</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="113"
+                            class="link-to-prism">src/lib/shopping-cart/cart-items/cart-items.component.ts:113</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onSelectionChanged"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>onSelectionChanged</b></span>
+                        <a href="#onSelectionChanged"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>onSelectionChanged(items: PortalCartitem[])</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="203"
+                            class="link-to-prism">src/lib/shopping-cart/cart-items/cart-items.component.ts:203</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>items</td>
+                                    <td>
+                                            <code>PortalCartitem[]</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="removeHighlightedItem"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>removeHighlightedItem</b></span>
+                        <a href="#removeHighlightedItem"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>removeHighlightedItem(cartItem: PortalCartitem)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="236"
+                            class="link-to-prism">src/lib/shopping-cart/cart-items/cart-items.component.ts:236</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>cartItem</td>
+                                    <td>
+                                            <code>PortalCartitem</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="removeRequests"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>removeRequests</b></span>
+                        <a href="#removeRequests"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>removeRequests(cartItems: PortalCartitem[], singleSelect: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="401"
+                            class="link-to-prism">src/lib/shopping-cart/cart-items/cart-items.component.ts:401</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>cartItems</td>
+                                    <td>
+                                            <code>PortalCartitem[]</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>singleSelect</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="removeSelectedItems"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>removeSelectedItems</b></span>
+                        <a href="#removeSelectedItems"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>removeSelectedItems()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="240"
+                            class="link-to-prism">src/lib/shopping-cart/cart-items/cart-items.component.ts:240</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="saveCartItems"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>saveCartItems</b></span>
+                        <a href="#saveCartItems"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>saveCartItems(baseCartItem: <a href="../interfaces/ExtendedEntityWrapper.html" target="_self">ExtendedEntityWrapper&lt;PortalCartitem&gt;</a>, cartItems: <a href="../interfaces/ExtendedEntityWrapper.html" target="_self">ExtendedEntityWrapper&lt;PortalCartitem&gt;[]</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="464"
+                            class="link-to-prism">src/lib/shopping-cart/cart-items/cart-items.component.ts:464</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>baseCartItem</td>
+                                    <td>
+                                                <code><a href="../interfaces/ExtendedEntityWrapper.html" target="_self" >ExtendedEntityWrapper&lt;PortalCartitem&gt;</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>cartItems</td>
+                                    <td>
+                                                <code><a href="../interfaces/ExtendedEntityWrapper.html" target="_self" >ExtendedEntityWrapper&lt;PortalCartitem&gt;[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setValidationOverviewButtonColor"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>setValidationOverviewButtonColor</b></span>
+                        <a href="#setValidationOverviewButtonColor"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>setValidationOverviewButtonColor(cartItem: PortalCartitem)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="343"
+                            class="link-to-prism">src/lib/shopping-cart/cart-items/cart-items.component.ts:343</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>cartItem</td>
+                                    <td>
+                                            <code>PortalCartitem</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showValidationOverview"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>showValidationOverview</b></span>
+                        <a href="#showValidationOverview"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>showValidationOverview(cartItem: PortalCartitem)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="325"
+                            class="link-to-prism">src/lib/shopping-cart/cart-items/cart-items.component.ts:325</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>cartItem</td>
+                                    <td>
+                                            <code>PortalCartitem</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section data-compodoc="block-properties">
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="CartItemCheckStatus"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>CartItemCheckStatus</b></span>
+                        <a href="#CartItemCheckStatus"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>CartItemCheckStatus</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="60" class="link-to-prism">src/lib/shopping-cart/cart-items/cart-items.component.ts:60</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="cartItemsTable"></a>
+                    <span class="name">
+                            <span class="modifier"></span>
+                            <span class="modifier">Private</span>
+                        <span ><b>cartItemsTable</b></span>
+                        <a href="#cartItemsTable"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>DataTableComponent&lt;TypedEntity&gt;</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ViewChild(DataTableComponent)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="83" class="link-to-prism">src/lib/shopping-cart/cart-items/cart-items.component.ts:83</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="DisplayColumns"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>DisplayColumns</b></span>
+                        <a href="#DisplayColumns"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>DisplayColumns</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="64" class="link-to-prism">src/lib/shopping-cart/cart-items/cart-items.component.ts:64</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="displayedColumns"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>displayedColumns</b></span>
+                        <a href="#displayedColumns"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Column.html" target="_self" >ClientPropertyForTableColumns[]</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="65" class="link-to-prism">src/lib/shopping-cart/cart-items/cart-items.component.ts:65</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="dstSettings"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>dstSettings</b></span>
+                        <a href="#dstSettings"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>DataSourceToolbarSettings</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="61" class="link-to-prism">src/lib/shopping-cart/cart-items/cart-items.component.ts:61</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="entitySchema"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>entitySchema</b></span>
+                        <a href="#entitySchema"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>EntitySchema</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="63" class="link-to-prism">src/lib/shopping-cart/cart-items/cart-items.component.ts:63</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="itemStatus"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>itemStatus</b></span>
+                        <a href="#itemStatus"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{
+    enabled: (cartItem: PortalCartitem): boolean &#x3D;&gt; {
+      return cartItem.UID_ShoppingCartItemParent.value &#x3D;&#x3D; null ||
+        cartItem.UID_ShoppingCartItemParent.value.length &#x3D;&#x3D;&#x3D; 0 ||
+        cartItem.IsOptionalChild.value;
+    }
+  }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="67" class="link-to-prism">src/lib/shopping-cart/cart-items/cart-items.component.ts:67</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="removeButtonLabel"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>removeButtonLabel</b></span>
+                        <a href="#removeButtonLabel"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="62" class="link-to-prism">src/lib/shopping-cart/cart-items/cart-items.component.ts:62</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectedItems"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>selectedItems</b></span>
+                        <a href="#selectedItems"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>PortalCartitem[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="85" class="link-to-prism">src/lib/shopping-cart/cart-items/cart-items.component.ts:85</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { OverlayRef } from &#x27;@angular/cdk/overlay&#x27;;
+import { Component, Input, EventEmitter, Output, OnChanges, SimpleChanges, OnInit, ViewChild } from &#x27;@angular/core&#x27;;
+import { EuiLoadingService, EuiSidesheetService } from &#x27;@elemental-ui/core&#x27;;
+import { TranslateService } from &#x27;@ngx-translate/core&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
+
+import { PortalCartitem } from &#x27;imx-api-qer&#x27;;
+import {
+  DataSourceToolbarSettings,
+  SnackBarService,
+  ClassloggerService,
+  DataTableComponent,
+  ConfirmationService,
+  ClientPropertyForTableColumns,
+  LdsReplacePipe
+} from &#x27;qbm&#x27;;
+import { DisplayColumns, EntitySchema, TypedEntity, ValType, ValueStruct } from &#x27;imx-qbm-dbts&#x27;;
+import { CartItemEditComponent } from &#x27;../cart-item-edit/cart-item-edit.component&#x27;;
+import { CartItemsService } from &#x27;../cart-items.service&#x27;;
+import { ShoppingCart } from &#x27;../shopping-cart&#x27;;
+import { CartItemCheckStatus } from &#x27;./cart-item-check-status.enum&#x27;;
+import { CartItemValidationOverviewComponent } from &#x27;../cart-item-validation-overview/cart-item-validation-overview.component&#x27;;
+import { CartItemCloneService } from &#x27;../cart-item-edit/cart-item-clone.service&#x27;;
+import { ExtendedEntityWrapper } from &#x27;../../parameter-data/extended-entity-wrapper.interface&#x27;;
+import { Subject } from &#x27;rxjs&#x27;;
+import { CartItemEditParameter } from &#x27;../cart-item-edit/cart-item-edit-parameter.interface&#x27;;
+
+@Component({
+  templateUrl: &#x27;./cart-items.component.html&#x27;,
+  styleUrls: [&#x27;./cart-items.component.scss&#x27;],
+  selector: &#x27;imx-cart-items&#x27;
+})
+export class CartItemsComponent implements OnInit, OnChanges {
+  public CartItemCheckStatus &#x3D; CartItemCheckStatus;
+  public dstSettings: DataSourceToolbarSettings;
+  public removeButtonLabel &#x3D; &#x27;&#x27;;
+  public readonly entitySchema: EntitySchema;
+  public DisplayColumns &#x3D; DisplayColumns;
+  public displayedColumns: ClientPropertyForTableColumns[];
+
+  public readonly itemStatus &#x3D; {
+    enabled: (cartItem: PortalCartitem): boolean &#x3D;&gt; {
+      return cartItem.UID_ShoppingCartItemParent.value &#x3D;&#x3D; null ||
+        cartItem.UID_ShoppingCartItemParent.value.length &#x3D;&#x3D;&#x3D; 0 ||
+        cartItem.IsOptionalChild.value;
+    }
+  };
+
+  @Input() public shoppingCart: ShoppingCart;
+
+  @Input() public forLater &#x3D; false;
+
+  @Output() public dataChange: EventEmitter&lt;boolean&gt; &#x3D; new EventEmitter();
+
+  @Output() public selectionChange: EventEmitter&lt;PortalCartitem[]&gt; &#x3D; new EventEmitter();
+
+  @ViewChild(DataTableComponent) private cartItemsTable: DataTableComponent&lt;TypedEntity&gt;;
+
+  private selectedItems: PortalCartitem[] &#x3D; [];
+
+  constructor(
+    private readonly confirmationService: ConfirmationService,
+    private readonly busyService: EuiLoadingService,
+    private readonly cartItemsService: CartItemsService,
+    private readonly logger: ClassloggerService,
+    private readonly router: Router,
+    private readonly snackBarService: SnackBarService,
+    private readonly translateService: TranslateService,
+    private readonly sidesheetService: EuiSidesheetService,
+    private readonly cartItemClone: CartItemCloneService,
+    private readonly ldsReplace: LdsReplacePipe,
+  ) {
+    this.entitySchema &#x3D; cartItemsService.PortalCartitemSchema;
+    this.displayedColumns &#x3D; [
+      this.entitySchema.Columns[DisplayColumns.DISPLAY_PROPERTYNAME],
+      this.entitySchema.Columns[DisplayColumns.DISPLAY_LONG_PROPERTYNAME],
+      {
+        ColumnName: &#x27;removeItemButton&#x27;,
+        Type: ValType.String,
+        afterAdditionals: true,
+        untranslatedDisplay: &#x27;#LDS#Remove&#x27;
+      }
+
+    ];
+  }
+
+  public async ngOnInit(): Promise&lt;void&gt; {
+    if (!this.forLater) {
+      this.displayedColumns.splice(2, 0, this.entitySchema.Columns.CheckResult);
+      this.removeButtonLabel &#x3D; await this.translateService.get(&#x27;#LDS#Remove from cart&#x27;).toPromise();
+    } else {
+      this.removeButtonLabel &#x3D; await this.translateService.get(&#x27;#LDS#Remove from list&#x27;).toPromise();
+    }
+  }
+
+  public ngOnChanges(changes: SimpleChanges): void {
+    if (changes.shoppingCart) {
+      if (this.shoppingCart) {
+        this.dstSettings &#x3D; {
+          dataSource: {
+            totalCount: this.shoppingCart.totalCount,
+            Data: this.shoppingCart.getItemsSorted()
+          },
+          entitySchema: this.entitySchema,
+          navigationState: {},
+          displayedColumns: this.displayedColumns
+        };
+      } else {
+        this.dstSettings &#x3D; undefined;
+      }
+    }
+  }
+
+  public async editCartItem(portalCartitem: PortalCartitem): Promise&lt;void&gt; {
+    this.busyService.show();
+    const observable &#x3D; new Subject&lt;any&gt;();
+    const entityWrapper &#x3D; await this.cartItemsService.getInteractiveCartitem(
+      portalCartitem.GetEntity().GetKeys().join(&#x27;&#x27;),
+      () &#x3D;&gt; {
+        observable.next();
+      }
+    );
+    this.busyService.hide();
+    const cartItem &#x3D; entityWrapper.typedEntity;
+    let reloadItems &#x3D; false;
+
+    const itemEditParameter: CartItemEditParameter &#x3D; {
+      entityWrapper,
+      multiple: false,
+      updated: observable,
+      cloneItem: this.itemCanBeCloned(cartItem) ?
+        async () &#x3D;&gt; {
+          reloadItems &#x3D; true;
+          this.logger.trace(this, &#x27;shopping cart must be reloaded&#x27;);
+          this.cartItemClone.cloneItemForPersons({
+            personOrderedFkRelations: cartItem.UID_PersonOrdered.GetMetadata().GetFkRelations(),
+            accProduct: {
+              DataValue: cartItem.UID_AccProduct.value,
+              DisplayValue: cartItem.UID_AccProduct.Column.GetDisplayValue()
+            },
+            uidITShopOrg: cartItem.UID_ITShopOrg.value,
+            display: cartItem.GetEntity().GetDisplay()
+          });
+        }
+        : undefined
+    };
+    
+    const sidesheetRef &#x3D; this.sidesheetService.open(CartItemEditComponent,
+      {
+        title: await this.translateService.get(&#x27;#LDS#Heading Edit Product&#x27;).toPromise(),
+        subTitle: await this.getSubtitleDisplay(portalCartitem),
+        disableClose: true,
+        width: &#x27;700px&#x27;,
+        testId: &#x27;cart-item-edit-sidesheet&#x27;,
+        data: itemEditParameter
+      });
+
+
+    sidesheetRef.afterClosed().subscribe(async doSave &#x3D;&gt; {
+      if (doSave) {
+        setTimeout(() &#x3D;&gt; this.busyService.show());
+        try {
+          await this.cartItemsService.save(entityWrapper);
+          this.logger.debug(this, &#x27;data is cart item saved.&#x27;);
+        } finally {
+          setTimeout(() &#x3D;&gt; this.busyService.hide());
+          this.dataChange.emit(false);
+        }
+      } else {
+        if (reloadItems) {
+          this.dataChange.emit(false);
+        }
+      }
+    });
+  }
+
+  public onSelectionChanged(items: PortalCartitem[]): void {
+    this.logger.trace(this, &#x27;selection changed&#x27;, items);
+    this.selectedItems &#x3D; items;
+    this.selectionChange.emit(items);
+  }
+
+  public async moveSelectedToCart(): Promise&lt;void&gt; {
+    setTimeout(() &#x3D;&gt; this.busyService.show());
+    try {
+      await this.cartItemsService.moveToCart(this.selectedItems);
+
+      this.snackBarService.open({ key: &#x27;#LDS#The selected products have been moved to your shopping cart.&#x27; });
+    } finally {
+      setTimeout(() &#x3D;&gt; this.busyService.hide());
+      this.router.navigate([&#x27;/shoppingcart/&#x27;]);
+    }
+  }
+
+  public async moveSelectedToLater(): Promise&lt;void&gt; {
+    setTimeout(() &#x3D;&gt; this.busyService.show());
+    try {
+      await this.cartItemsService.moveToLater(this.selectedItems);
+
+      this.snackBarService.open({ key: &#x27;#LDS#The selected products have been moved to your Saved for Later list.&#x27; });
+    } finally {
+      setTimeout(() &#x3D;&gt; this.busyService.hide());
+      this.dataChange.emit(true);
+      if (this.cartItemsTable) {
+        this.cartItemsTable.clearSelection();
+      }
+    }
+  }
+
+  public async removeHighlightedItem(cartItem: PortalCartitem): Promise&lt;void&gt; {
+    this.removeRequests([cartItem], true);
+  }
+
+  public async removeSelectedItems(): Promise&lt;void&gt; {
+    this.removeRequests(this.selectedItems, false);
+  }
+
+  public async editSelectedItems(): Promise&lt;void&gt;{
+    this.busyService.show()
+    let entityWrappers: ExtendedEntityWrapper&lt;PortalCartitem&gt;[] &#x3D; [];
+    for await (const selectedItem of this.selectedItems){
+      entityWrappers.push(await this.cartItemsService.getInteractiveCartitem(
+        selectedItem.GetEntity().GetKeys().join(&#x27;&#x27;)
+      ))
+    }
+    const baseCartItem &#x3D; await this.createBaseCartItem(entityWrappers);
+    this.busyService.hide();
+
+    const sidesheetRef &#x3D; this.sidesheetService.open(CartItemEditComponent,
+      {
+        title: this.ldsReplace.transform(await this.translateService.get(&#x27;#LDS#Heading Edit Common Request Properties ({0})&#x27;).toPromise(), this.selectedItems.length),
+        width: &#x27;700px&#x27;,
+        disableClose: true,
+        testId: &#x27;cart-item-edit-sidesheet&#x27;,
+        data: {
+          entityWrapper: baseCartItem,
+          multiple: true
+        }
+      });
+
+    sidesheetRef.afterClosed().subscribe(async doSave &#x3D;&gt; {
+      if (doSave) {
+        this.busyService.show();
+        try {
+          await this.saveCartItems(baseCartItem, entityWrappers);
+          this.logger.debug(this, &#x27;data is cart item saved.&#x27;);
+        } finally {
+          setTimeout(() &#x3D;&gt; this.busyService.hide());
+          this.dataChange.emit(false);
+        }
+      }
+    });
+  }
+
+  public HasSelectedItems(): boolean {
+    return this.selectedItems !&#x3D; null &amp;&amp; this.selectedItems.length &gt; 0;
+  }
+
+  public itemSelectable(event: any): void {
+    const cartItem: PortalCartitem &#x3D; event.item;
+    event.selectableRows.push(
+      cartItem.UID_ShoppingCartItemParent.value &#x3D;&#x3D; null ||
+      cartItem.UID_ShoppingCartItemParent.value.length &#x3D;&#x3D;&#x3D; 0 ||
+      cartItem.IsOptionalChild.value
+    );
+  }
+
+  public haveSelectedItems(): boolean {
+    return this.selectedItems !&#x3D; null &amp;&amp;
+      this.selectedItems.length &gt; 0;
+  }
+
+  public itemsCanBeMoved(allowOptional: boolean &#x3D; false): boolean {
+    return this.haveSelectedItems() &amp;&amp;
+      this.selectedItems.every(item &#x3D;&gt; this.itemCanBeMoved(item, allowOptional));
+  }
+
+  public itemsCanBeDeleted(): boolean {
+    return this.itemsCanBeMoved(true);
+  }
+
+  public itemsCanBeEdited(): boolean{
+    return this.HasSelectedItems() &amp;&amp; this.selectedItems.every(item &#x3D;&gt; !item.IsNoCopyParametersPerson.value);
+  }
+
+  public getCheckStatusIcon(cartItem: PortalCartitem): string {
+    switch (cartItem.CheckResult.value) {
+      case CartItemCheckStatus.ok:
+        return &#x27;check&#x27;;
+      case CartItemCheckStatus.notChecked:
+        return &#x27;question&#x27;;
+      case CartItemCheckStatus.warning:
+        return &#x27;warning&#x27;;
+      case CartItemCheckStatus.error:
+        return &#x27;error&#x27;;
+    }
+  }
+
+  public async showValidationOverview(cartItem: PortalCartitem): Promise&lt;void&gt; {
+    if (cartItem.CheckResult.value &#x3D;&#x3D;&#x3D; CartItemCheckStatus.notChecked) {
+      return;
+    }
+    this.sidesheetService.open(CartItemValidationOverviewComponent,
+      {
+        title: await this.translateService.get(&#x27;#LDS#Heading View Validation Results&#x27;).toPromise(),
+        subTitle: await this.getSubtitleDisplay(cartItem),
+        width: &#x27;750px&#x27;,
+        testId: &#x27;cart-item-validation-results-sidesheet&#x27;,
+        data: {
+          checkResult: this.shoppingCart.getCartItemCheckResult(cartItem),
+          personOrderedDisplay: cartItem.UID_PersonOrdered.Column.GetDisplayValue(),
+          cartItemDisplay: cartItem.GetEntity().GetDisplay()
+        }
+      });
+  }
+
+  public setValidationOverviewButtonColor(cartItem: PortalCartitem): string {
+    switch (cartItem.CheckResult.value) {
+      case CartItemCheckStatus.error: return &#x27;warn&#x27;;
+      case CartItemCheckStatus.warning: return &#x27;accent&#x27;;
+      default: return &#x27;&#x27;;
+    }
+  }
+
+  private async getSubtitleDisplay(cartItem: PortalCartitem): Promise&lt;string&gt; {
+    return this.translateService.get(
+      &#x60;${cartItem.GetEntity().GetDisplay()} - ${cartItem.UID_PersonOrdered.Column.GetDisplayValue()}&#x60;
+    ).toPromise();
+  }
+
+  private itemCanBeCloned(cartitem: PortalCartitem): boolean {
+    return !this.forLater &amp;&amp;
+      cartitem.CanCopy.value &amp;&amp;
+      (cartitem.UID_ShoppingCartItemParent.value &#x3D;&#x3D; null || cartitem.UID_ShoppingCartItemParent.value.length &#x3D;&#x3D;&#x3D; 0) &amp;&amp;
+      (cartitem.Assignment.value &#x3D;&#x3D; null || cartitem.Assignment.value.length &#x3D;&#x3D;&#x3D; 0) &amp;&amp;
+      (cartitem.UID_PersonWantsOrg.value &#x3D;&#x3D; null || cartitem.UID_PersonWantsOrg.value.length &#x3D;&#x3D;&#x3D; 0);
+  }
+
+  private itemCanBeMoved(cartItem: PortalCartitem, allowOptional: boolean &#x3D; false, traversed: string[] &#x3D; []): boolean {
+    const uid &#x3D; cartItem.GetEntity().GetKeys()[0];
+
+    if (uid &#x3D;&#x3D; null) {
+      return false;
+    }
+
+    if (traversed.find(itemUid &#x3D;&gt; itemUid &#x3D;&#x3D;&#x3D; uid)) {
+      return false;
+    }
+
+    traversed.push(uid);
+
+    const parent &#x3D; this.shoppingCart.getItem(cartItem.UID_ShoppingCartItemParent.value);
+
+    if (parent !&#x3D; null &amp;&amp; !(allowOptional &amp;&amp; cartItem.IsOptionalChild.value)) {
+      return this.itemCanBeMoved(parent, allowOptional, traversed);
+    }
+
+    return this.selectedItems.find(item &#x3D;&gt; item.GetEntity().GetKeys()[0] &#x3D;&#x3D;&#x3D; uid) !&#x3D; null;
+  }
+
+  private getNextSelectedAncestor(cartItem: PortalCartitem): PortalCartitem {
+    const parent &#x3D; this.shoppingCart.getItem(cartItem.UID_ShoppingCartItemParent.value);
+
+    if (parent &#x3D;&#x3D; null) {
+      return null;
+    }
+
+    if (this.selectedItems.find(item &#x3D;&gt; item.GetEntity().GetKeys()[0] &#x3D;&#x3D;&#x3D; parent.GetEntity().GetKeys()[0])) {
+      return parent;
+    }
+
+    return this.getNextSelectedAncestor(parent);
+  }
+
+  private async removeRequests(cartItems: PortalCartitem[], singleSelect: boolean): Promise&lt;void&gt; {
+
+    const dialogTitleShoppingCart &#x3D; singleSelect ?
+      &#x27;#LDS#Heading Remove Product From Cart&#x27; :
+      &#x27;#LDS#Heading Remove Selected Products From Cart&#x27;;
+
+    const dialogTitleWatchList &#x3D; singleSelect ?
+      &#x27;#LDS#Heading Remove Product From Saved For Later List&#x27; :
+      &#x27;#LDS#Heading Remove Selected Products From Saved For Later List&#x27;;
+
+    const askForConfirmationShoppingCart &#x3D; singleSelect ?
+      &#x27;#LDS#Are you sure you want to remove the product from your shopping cart?&#x27; :
+      &#x27;#LDS#Are you sure you want to remove the selected products from your shopping cart?&#x27;;
+
+    const askForConfirmationWatchList &#x3D; singleSelect ?
+      &#x27;#LDS#Are you sure you want to remove the product from your Saved for Later list?&#x27; :
+      &#x27;#LDS#Are you sure you want to remove the selected products from your Saved for Later list?&#x27;;
+
+    const snackBarMessageShoppingCart &#x3D; singleSelect ?
+      &#x27;#LDS#The product has been successfully removed from your shopping cart.&#x27; :
+      &#x27;#LDS#The selected products have been successfully removed from your shopping cart.&#x27;;
+
+    const snackBarMessageWatchList &#x3D; singleSelect ?
+      &#x27;#LDS#The product has been successfully removed from your Saved for Later list.&#x27; :
+      &#x27;#LDS#The selected products have been successfully removed from your Saved for Later list.&#x27;;
+
+    if (await this.confirmationService.confirm({
+      Title: this.forLater ? dialogTitleWatchList : dialogTitleShoppingCart,
+      Message: this.forLater ? askForConfirmationWatchList : askForConfirmationShoppingCart,
+      identifier: this.forLater ? &#x27;cartitems-watchlist-delete&#x27; : &#x27;cartitems-shoppingcart-delete&#x27;
+    })) {
+      let overlayRef: OverlayRef;
+      setTimeout(() &#x3D;&gt; overlayRef &#x3D; this.busyService.show());
+      try {
+        await this.cartItemsService.removeItems(cartItems.filter(item &#x3D;&gt; this.getNextSelectedAncestor(item) &#x3D;&#x3D; null));
+        this.logger.debug(this, &#x27;selected items are removed from list&#x27;);
+        this.snackBarService.open({ key: this.forLater ? snackBarMessageWatchList : snackBarMessageShoppingCart }, &#x27;#LDS#Close&#x27;);
+      } finally {
+        setTimeout(() &#x3D;&gt; this.busyService.hide(overlayRef));
+        this.dataChange.emit(true);
+
+        this.cartItemsTable?.clearSelection();
+      }
+    }
+  }
+
+  private async createBaseCartItem(cartItems: ExtendedEntityWrapper&lt;PortalCartitem&gt;[]): Promise&lt;ExtendedEntityWrapper&lt;PortalCartitem&gt;&gt;{
+    const baseCartItem &#x3D; await this.cartItemsService.getInteractiveCartitem();
+    if(cartItems.filter(cartItem &#x3D;&gt; !!cartItem.typedEntity.ValidFrom.value &amp;&amp; cartItem.typedEntity.ValidFrom.value &#x3D;&#x3D;&#x3D; cartItems[0].typedEntity.ValidFrom.value).length &#x3D;&#x3D;&#x3D; cartItems.length){
+      await baseCartItem.typedEntity.ValidFrom.Column.PutValue(new Date(cartItems[0].typedEntity.ValidFrom.value));
+    }
+    if(cartItems.filter(cartItem &#x3D;&gt; !!cartItem.typedEntity.ValidUntil.value &amp;&amp; cartItem.typedEntity.ValidUntil.value &#x3D;&#x3D;&#x3D; cartItems[0].typedEntity.ValidUntil.value).length &#x3D;&#x3D;&#x3D; cartItems.length){
+      await baseCartItem.typedEntity.ValidUntil.Column.PutValue(new Date(cartItems[0].typedEntity.ValidUntil.value));
+    }
+    if(cartItems.filter(cartItem &#x3D;&gt; cartItem.typedEntity.OrderReason.value &#x3D;&#x3D;&#x3D; cartItems[0].typedEntity.OrderReason.value).length &#x3D;&#x3D;&#x3D; cartItems.length){
+      await baseCartItem.typedEntity.OrderReason.Column.PutValue(cartItems[0].typedEntity.OrderReason.value);
+    }
+    if(cartItems.filter(cartItem &#x3D;&gt; cartItem.typedEntity.UID_QERJustificationOrder.value &#x3D;&#x3D;&#x3D; cartItems[0].typedEntity.UID_QERJustificationOrder.value).length &#x3D;&#x3D;&#x3D; cartItems.length){
+      await baseCartItem.typedEntity.UID_QERJustificationOrder.Column.PutValue(cartItems[0].typedEntity.UID_QERJustificationOrder.value);
+    }
+    return baseCartItem;
+  }
+
+  private async saveCartItems(baseCartItem: ExtendedEntityWrapper&lt;PortalCartitem&gt;, cartItems: ExtendedEntityWrapper&lt;PortalCartitem&gt;[]): Promise&lt;void&gt;{
+
+    const newValidFrom &#x3D; baseCartItem.typedEntity.ValidFrom.Column.GetValue();
+    const newValidUntil &#x3D; baseCartItem.typedEntity.ValidUntil.Column.GetValue();
+    const newOrderReason &#x3D; baseCartItem.typedEntity.OrderReason.Column.GetValue();
+    const newJustificationOrder &#x3D; baseCartItem.typedEntity.UID_QERJustificationOrder.Column.GetValue();
+    for await (const cartItem of cartItems) {
+      if(!!newValidFrom){
+        await cartItem.typedEntity.ValidFrom.Column.PutValue(new Date(newValidFrom));
+      }
+      if(!!newValidUntil){
+        await cartItem.typedEntity.ValidUntil.Column.PutValue(new Date(newValidUntil));
+      }
+      if(!!newOrderReason){
+        await cartItem.typedEntity.OrderReason.Column.PutValue(newOrderReason);
+      }
+      if(!!newJustificationOrder){
+        await cartItem.typedEntity.UID_QERJustificationOrder.Column.PutValue(newJustificationOrder);
+      }
+    };
+    await this.cartItemsService.saveItems(cartItems);
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;imx-data-source-toolbar #dst
+  [settings]&#x3D;&quot;dstSettings&quot; [itemStatus]&#x3D;&quot;itemStatus&quot;
+  data-imx-identifier&#x3D;&quot;cart-items-dst&quot; hidden&gt;
+&lt;/imx-data-source-toolbar&gt;
+&lt;div class&#x3D;&quot;imx-table-container&quot;&gt;
+    &lt;imx-data-table [dst]&#x3D;&quot;dst&quot; [detailViewVisible]&#x3D;&quot;false&quot; [selectable]&#x3D;&quot;true&quot; mode&#x3D;&quot;manual&quot;
+        (selectionChanged)&#x3D;&quot;onSelectionChanged($event)&quot; data-imx-identifier&#x3D;&quot;cart-items-data-table&quot;&gt;
+        &lt;imx-data-table-column [entityColumn]&#x3D;&quot;entitySchema?.Columns[DisplayColumns.DISPLAY_PROPERTYNAME]&quot;
+            columnLabel&#x3D;&quot;{{&#x27;#LDS#Product&#x27; | translate}}&quot; data-imx-identifier&#x3D;&quot;cart-items-data-table-column-default&quot;&gt;
+            &lt;ng-template let-cartItem&gt;
+                &lt;div class&#x3D;&quot;imx-display-column&quot;&gt;
+                    &lt;div class&#x3D;&quot;imx-placeholder&quot; *ngIf&#x3D;&quot;cartItem.UID_ShoppingCartItemParent.value&quot;&gt;&lt;/div&gt;
+                    &lt;div&gt;
+                        &lt;imx-cart-item-display [cartItem]&#x3D;&quot;cartItem&quot;&gt;&lt;/imx-cart-item-display&gt;
+
+                        &lt;div class&#x3D;&quot;imx-subtext&quot; *ngIf&#x3D;&quot;cartItem.RequestType.value &#x3D;&#x3D;&#x3D; &#x27;Prolongate&#x27;&quot;&gt;
+                            {{&#x27;#LDS#Renewal&#x27; | translate}}
+                        &lt;/div&gt;
+                        &lt;div class&#x3D;&quot;imx-subtext&quot;
+                            *ngIf&#x3D;&quot;[&#x27;Unsubscribe&#x27;, &#x27;UnsubscribeWithDate&#x27;].includes(cartItem.RequestType.value)&quot;&gt;
+                            {{&#x27;#LDS#Request cancelation&#x27; | translate}}
+                        &lt;/div&gt;
+
+                        &lt;div class&#x3D;&quot;imx-subtext&quot; *ngIf&#x3D;&quot;cartItem.UID_ShoppingCartItemParent.value&quot;&gt;
+                            {{ (cartItem.IsOptionalChild.value ?
+                                &#x27;#LDS#Optional product&#x27; :
+                                &#x27;#LDS#Mandatory product&#x27;) | translate
+                            }}
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+            &lt;/ng-template&gt;
+        &lt;/imx-data-table-column&gt;
+        &lt;imx-data-table-column *ngIf&#x3D;&quot;!forLater&quot; [entityColumn]&#x3D;&quot;entitySchema?.Columns.CheckResult&quot; [align]&#x3D;&quot;&#x27;center&#x27;&quot; [width]&#x3D;&quot;&#x27;150px&#x27;&quot;&gt;
+          &lt;ng-template let-cartItem&gt;
+            &lt;button mat-stroked-button *ngIf&#x3D;&quot;cartItem.CheckResult.value !&#x3D;&#x3D; CartItemCheckStatus.notChecked&quot;
+              class&#x3D;&quot;imx-validation-button&quot;
+              (click)&#x3D;&quot;showValidationOverview(cartItem)&quot;
+              [color]&#x3D;&quot;setValidationOverviewButtonColor(cartItem)&quot;
+              data-imx-identifier&#x3D;&quot;cartitem-button-checkResult&quot;&gt;
+              &lt;div [attr.data-imx-identifier]&#x3D;&quot;&#x27;cartitem-button-checkResult-&#x27; + CartItemCheckStatus[cartItem.CheckResult.value]&quot;&gt;{{cartItem.CheckResult.Column.GetDisplayValue()}}&lt;/div&gt;
+            &lt;/button&gt;
+            &lt;div *ngIf&#x3D;&quot;cartItem.CheckResult.value &#x3D;&#x3D;&#x3D; CartItemCheckStatus.notChecked&quot;
+              [attr.data-imx-identifier]&#x3D;&quot;&#x27;cartitem-button-checkResult-&#x27; + CartItemCheckStatus[cartItem.CheckResult.value]&quot;&gt;{{cartItem.CheckResult.Column.GetDisplayValue()}}&lt;/div&gt;
+          &lt;/ng-template&gt;
+        &lt;/imx-data-table-column&gt;
+        &lt;imx-data-table-column [entityColumn]&#x3D;&quot;entitySchema?.Columns[DisplayColumns.DISPLAY_LONG_PROPERTYNAME]&quot;
+            columnLabel&#x3D;&quot;{{&#x27;#LDS#Actions&#x27; | translate}}&quot; [align]&#x3D;&quot;&#x27;center&#x27;&quot;&gt;
+            &lt;ng-template let-cartItem&gt;
+                &lt;button mat-stroked-button
+                  [attr.data-imx-identifier]&#x3D;&quot;&#x27;cartitem-button-edit-&#x27; + cartItem.UID_AccProduct.Column.GetDisplayValue()&quot;
+                  (click)&#x3D;&quot;editCartItem(cartItem)&quot;&gt;
+                  {{&#x27;#LDS#Edit&#x27; | translate }}&lt;/button&gt;
+            &lt;/ng-template&gt;
+        &lt;/imx-data-table-column&gt;
+        &lt;imx-data-table-generic-column columnName&#x3D;&quot;removeItemButton&quot; [columnLabel]&#x3D;&quot;&#x27;&#x27;&quot;&gt;
+          &lt;ng-template let-cartItem&gt;
+            &lt;button mat-stroked-button
+              color&#x3D;&quot;warn&quot;
+              *ngIf&#x3D;&quot;cartItem.UID_ShoppingCartItemParent.value &#x3D;&#x3D; null || cartItem.UID_ShoppingCartItemParent.value &#x3D;&#x3D;&#x3D; &#x27;&#x27; || cartItem.IsOptionalChild.value&quot;
+              class&#x3D;&quot;imx-remove-button&quot;
+              [attr.data-imx-identifier]&#x3D;&quot;&#x27;cartitem-button-remove-&#x27; + cartItem.UID_AccProduct.Column.GetDisplayValue()&quot;
+              (click)&#x3D;&quot;removeHighlightedItem(cartItem)&quot;&gt;
+              &lt;eui-icon icon&#x3D;&quot;delete&quot;&gt;&lt;/eui-icon&gt;
+              {{ removeButtonLabel }}&lt;/button&gt;
+          &lt;/ng-template&gt;
+        &lt;/imx-data-table-generic-column&gt;
+    &lt;/imx-data-table&gt;
+&lt;/div&gt;
+
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="styleData">
+                <p class="comment">
+                    <code>./cart-items.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">@import &#x27;@elemental-ui/core/src/styles/_palette.scss&#x27;;
+
+:host {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    flex-grow: 1;
+  }
+
+.imx-subtext {
+    font-size: smaller;
+    color: $black-b;
+}
+
+.imx-placeholder {
+  width:20px;
+}
+
+.imx-display-column{
+  display: flex;
+  :last-child {
+    flex-grow: 1;
+  }
+}
+
+.imx-table-container {
+  flex-grow: 1;
+  overflow: auto;
+}
+
+.imx-validation-button {
+  width: 100px;
+}
+
+.imx-remove-button {
+  eui-icon {
+    font-size: 14px;
+    margin-right: 4px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  ::ng-deep .mat-column-removeItemButton {
+    display: none;
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><imx-data-source-toolbar #dst  [settings]="dstSettings" [itemStatus]="itemStatus"  data-imx-identifier="cart-items-dst" hidden></imx-data-source-toolbar><div class="imx-table-container">    <imx-data-table [dst]="dst" [detailViewVisible]="false" [selectable]="true" mode="manual"        (selectionChanged)="onSelectionChanged($event)" data-imx-identifier="cart-items-data-table">        <imx-data-table-column [entityColumn]="entitySchema?.Columns[DisplayColumns.DISPLAY_PROPERTYNAME]"            columnLabel="{{\'#LDS#Product\' | translate}}" data-imx-identifier="cart-items-data-table-column-default">            <ng-template let-cartItem>                <div class="imx-display-column">                    <div class="imx-placeholder" *ngIf="cartItem.UID_ShoppingCartItemParent.value"></div>                    <div>                        <imx-cart-item-display [cartItem]="cartItem"></imx-cart-item-display>                        <div class="imx-subtext" *ngIf="cartItem.RequestType.value === \'Prolongate\'">                            {{\'#LDS#Renewal\' | translate}}                        </div>                        <div class="imx-subtext"                            *ngIf="[\'Unsubscribe\', \'UnsubscribeWithDate\'].includes(cartItem.RequestType.value)">                            {{\'#LDS#Request cancelation\' | translate}}                        </div>                        <div class="imx-subtext" *ngIf="cartItem.UID_ShoppingCartItemParent.value">                            {{ (cartItem.IsOptionalChild.value ?                                \'#LDS#Optional product\' :                                \'#LDS#Mandatory product\') | translate                            }}                        </div>                    </div>                </div>            </ng-template>        </imx-data-table-column>        <imx-data-table-column *ngIf="!forLater" [entityColumn]="entitySchema?.Columns.CheckResult" [align]="\'center\'" [width]="\'150px\'">          <ng-template let-cartItem>            <button mat-stroked-button *ngIf="cartItem.CheckResult.value !== CartItemCheckStatus.notChecked"              class="imx-validation-button"              (click)="showValidationOverview(cartItem)"              [color]="setValidationOverviewButtonColor(cartItem)"              data-imx-identifier="cartitem-button-checkResult">              <div [attr.data-imx-identifier]="\'cartitem-button-checkResult-\' + CartItemCheckStatus[cartItem.CheckResult.value]">{{cartItem.CheckResult.Column.GetDisplayValue()}}</div>            </button>            <div *ngIf="cartItem.CheckResult.value === CartItemCheckStatus.notChecked"              [attr.data-imx-identifier]="\'cartitem-button-checkResult-\' + CartItemCheckStatus[cartItem.CheckResult.value]">{{cartItem.CheckResult.Column.GetDisplayValue()}}</div>          </ng-template>        </imx-data-table-column>        <imx-data-table-column [entityColumn]="entitySchema?.Columns[DisplayColumns.DISPLAY_LONG_PROPERTYNAME]"            columnLabel="{{\'#LDS#Actions\' | translate}}" [align]="\'center\'">            <ng-template let-cartItem>                <button mat-stroked-button                  [attr.data-imx-identifier]="\'cartitem-button-edit-\' + cartItem.UID_AccProduct.Column.GetDisplayValue()"                  (click)="editCartItem(cartItem)">                  {{\'#LDS#Edit\' | translate }}</button>            </ng-template>        </imx-data-table-column>        <imx-data-table-generic-column columnName="removeItemButton" [columnLabel]="\'\'">          <ng-template let-cartItem>            <button mat-stroked-button              color="warn"              *ngIf="cartItem.UID_ShoppingCartItemParent.value == null || cartItem.UID_ShoppingCartItemParent.value === \'\' || cartItem.IsOptionalChild.value"              class="imx-remove-button"              [attr.data-imx-identifier]="\'cartitem-button-remove-\' + cartItem.UID_AccProduct.Column.GetDisplayValue()"              (click)="removeHighlightedItem(cartItem)">              <eui-icon icon="delete"></eui-icon>              {{ removeButtonLabel }}</button>          </ng-template>        </imx-data-table-generic-column>    </imx-data-table></div></div>'
+    var COMPONENTS = [{'name': 'AddressbookComponent', 'selector': 'imx-addressbook'},{'name': 'AddressbookDetailComponent', 'selector': 'imx-addressbook-detail'},{'name': 'AnswerQuestionsComponent', 'selector': ''},{'name': 'ApplicationDetailsComponent', 'selector': 'imx-application-details'},{'name': 'ApplicationDialogComponent', 'selector': 'imx-application-dialog'},{'name': 'ApprovalHistoryComponent', 'selector': 'imx-approval-history'},{'name': 'ApprovalLevelFormComponent', 'selector': 'imx-approval-level-form'},{'name': 'ApprovalsComponent', 'selector': 'imx-itshop-approvals'},{'name': 'ApprovalsSidesheetComponent', 'selector': 'imx-approvals-sidesheet'},{'name': 'ApprovalsTableComponent', 'selector': 'imx-approvals-table'},{'name': 'ApprovalStepFormComponent', 'selector': 'imx-approval-step-form'},{'name': 'ApprovalWorkflowEditComponent', 'selector': 'imx-approval-workflow-edit'},{'name': 'ApprovalWorkflowEditInfoComponent', 'selector': 'imx-approval-workflow-edit-info'},{'name': 'ApprovalWorkflowFormComponent', 'selector': 'imx-approval-workflow-form'},{'name': 'ApprovalWorkflowHomeComponent', 'selector': 'imx-approval-workflow-home'},{'name': 'ArchivedRequestsComponent', 'selector': ''},{'name': 'AssignmentsComponent', 'selector': 'imx-assignments'},{'name': 'BadgeTileComponent', 'selector': 'imx-badge-tile'},{'name': 'BaseViewerComponent', 'selector': ''},{'name': 'BlockDetailSidesheetComponent', 'selector': 'imx-block-detail-sidesheet'},{'name': 'BusinessOwnerAddOnTileComponent', 'selector': 'imx-businessowner-addon-tile'},{'name': 'BusinessOwnerChartSummaryComponent', 'selector': 'imx-businessowner-chartsummary'},{'name': 'BusinessOwnerOverviewTileComponent', 'selector': 'imx-businessowner-overview-tile'},{'name': 'CartItemDisplayComponent', 'selector': 'imx-cart-item-display'},{'name': 'CartItemEditComponent', 'selector': 'imx-cart-item-edit'},{'name': 'CartItemsComponent', 'selector': 'imx-cart-items'},{'name': 'CartItemValidationOverviewComponent', 'selector': 'imx-cart-item-validation-overview'},{'name': 'CategoryTreeComponent', 'selector': 'imx-category-tree'},{'name': 'ChartsSidesheetComponent', 'selector': 'imx-charts-sidesheet'},{'name': 'ChartTableComponent', 'selector': 'imx-chart-table'},{'name': 'ChartTileComponent', 'selector': 'imx-chart-tile'},{'name': 'CheckPasswordsComponent', 'selector': ''},{'name': 'CompareComponent', 'selector': ''},{'name': 'CompareItemComponent', 'selector': 'imx-role-compareitem'},{'name': 'ConfirmCartSubmitDialog', 'selector': 'imx-confirm-cart-submit'},{'name': 'ContainerDomComponent', 'selector': 'imx-container-dom'},{'name': 'CreateNewDeviceComponent', 'selector': 'imx-create-new-device'},{'name': 'CreateNewIdentityComponent', 'selector': 'imx-create-new-identity'},{'name': 'DataExplorerIdentitiesComponent', 'selector': 'imx-data-explorer-identities'},{'name': 'DataExplorerViewComponent', 'selector': ''},{'name': 'DecisionHistoryComponent', 'selector': 'imx-decision-history'},{'name': 'DecisionReasonComponent', 'selector': 'imx-decision-reason'},{'name': 'DefaultCartItemDisplayComponent', 'selector': ''},{'name': 'DefaultRequestDisplayComponent', 'selector': ''},{'name': 'DelegationComponent', 'selector': ''},{'name': 'DetailViewerComponent', 'selector': 'imx-detail-viewer'},{'name': 'DiscreteLegendComponent', 'selector': 'imx-discrete-legend'},{'name': 'DuplicateCheckComponent', 'selector': 'imx-duplicate-check'},{'name': 'DuplicatePatternItemsComponent', 'selector': 'imx-duplicate-pattern-items'},{'name': 'DuplicatesSidesheetComponent', 'selector': ''},{'name': 'DynamicExclusionDialogComponent', 'selector': 'imx-dynamic-exclusion-dialog'},{'name': 'DynamicRoleComponent', 'selector': 'imx-dynamic-group'},{'name': 'EdgeDomComponent', 'selector': 'imx-edge-dom'},{'name': 'EntitlementSelectorComponent', 'selector': 'imx-entitlement-selector'},{'name': 'ExcludedMembershipsComponent', 'selector': 'imx-excluded-memberships'},{'name': 'ExclusionCheckComponent', 'selector': 'imx-exclusion-check'},{'name': 'FavoritesTabComponent', 'selector': 'imx-favorites-tab'},{'name': 'HeatmapChartComponent', 'selector': 'imx-heatmap-chart'},{'name': 'HeatmapSidesheetComponent', 'selector': 'imx-heatmap-sidesheet'},{'name': 'HeatmapTileComponent', 'selector': 'imx-heatmap-tile'},{'name': 'HeatmapVisualComponent', 'selector': 'imx-heatmap-visual'},{'name': 'HistoryFilterComponent', 'selector': 'imx-history-filter'},{'name': 'IconTileComponent', 'selector': 'imx-icon-tile'},{'name': 'IdentityComponent', 'selector': 'imx-orgchart-identity'},{'name': 'IdentityRoleMembershipsComponent', 'selector': ''},{'name': 'IdentitySelectComponent', 'selector': 'imx-identity-select'},{'name': 'IdentitySidesheetComponent', 'selector': 'imx-identity-sidesheet'},{'name': 'InquiriesComponent', 'selector': 'imx-inquiries'},{'name': 'ItshopPatternAddProductsComponent', 'selector': 'imx-itshop-pattern-add-products'},{'name': 'ItshopPatternComponent', 'selector': 'imx-itshop-pattern'},{'name': 'ItshopPatternCreateSidesheetComponent', 'selector': 'imx-itshop-pattern-create-sidesheet'},{'name': 'ItshopPatternItemEditComponent', 'selector': 'imx-itshop-pattern-item-edit'},{'name': 'ItshopPatternSidesheetComponent', 'selector': 'imx-itshop-pattern-sidesheet'},{'name': 'MailSubscriptionsComponent', 'selector': 'imx-mail-subscriptions'},{'name': 'MemberSelectorComponent', 'selector': ''},{'name': 'MembershipsChooseIdentitiesComponent', 'selector': 'imx-memberships-choose-identities'},{'name': 'MyResponsibilitiesViewComponent', 'selector': 'imx-my-responsibilities-view'},{'name': 'NewRequestComponent', 'selector': 'imx-new-request'},{'name': 'NewRequestContentComponent', 'selector': 'imx-new-request-content'},{'name': 'NewRequestHeaderComponent', 'selector': 'imx-new-request-header'},{'name': 'NewRequestHeaderToolbarComponent', 'selector': 'imx-new-request-header-toolbar'},{'name': 'NewRequestPeerGroupComponent', 'selector': 'imx-new-request-peer-group'},{'name': 'NewRequestProductBundleComponent', 'selector': 'imx-new-request-product-bundle'},{'name': 'NewRequestProductComponent', 'selector': 'imx-new-request-product'},{'name': 'NewRequestRecipientsComponent', 'selector': 'imx-new-request-recipients'},{'name': 'NewRequestReferenceUserCardComponent', 'selector': 'imx-new-request-reference-user-card'},{'name': 'NewRequestReferenceUserComponent', 'selector': 'imx-new-request-reference-user'},{'name': 'NewRequestSelectedProductsComponent', 'selector': 'imx-new-request-selected-products'},{'name': 'NewRoleComponent', 'selector': 'imx-new-role'},{'name': 'NodeDomComponent', 'selector': 'imx-node-dom'},{'name': 'NonRequestableItemsComponent', 'selector': 'imx-non-requestable-items'},{'name': 'NotificationTileComponent', 'selector': 'imx-notification-tile'},{'name': 'NotRequestableMembershipsComponent', 'selector': 'imx-not-requestable-memberships'},{'name': 'ObjectHyperviewComponent', 'selector': 'imx-object-hyperview'},{'name': 'ObjectOverviewPersonComponent', 'selector': ''},{'name': 'OptionalItemsSidesheetComponent', 'selector': 'imx-optional-items-sidesheet'},{'name': 'OrderForAdditionalUsersComponent', 'selector': 'imx-order-for-additional-users'},{'name': 'OrgChartComponent', 'selector': 'imx-orgchart'},{'name': 'OwnerControlComponent', 'selector': 'imx-owner-control'},{'name': 'PasscodeLoginComponent', 'selector': ''},{'name': 'PasscodeViewerComponent', 'selector': 'imx-passcode-viewer'},{'name': 'PasswordDashboardComponent', 'selector': ''},{'name': 'PasswordQueryComponent', 'selector': 'imx-password-query'},{'name': 'PasswordQuestionsComponent', 'selector': 'imx-password-questions'},{'name': 'PasswordQuestionsSidesheetComponent', 'selector': 'imx-password-questions-sidesheet'},{'name': 'PasswordResetComponent', 'selector': 'imx-password-reset'},{'name': 'PatternDetailsSidesheetComponent', 'selector': 'imx-pattern-details-sidesheet'},{'name': 'PatternItemListComponent', 'selector': 'imx-pattern-item-list'},{'name': 'PeerGroupComponent', 'selector': 'imx-peer-group'},{'name': 'PeerGroupDiscardSelectedComponent', 'selector': 'imx-peer-group-discard-selected'},{'name': 'PointStatVisualComponent', 'selector': 'imx-point-stat-visual'},{'name': 'PrimaryMembershipsComponent', 'selector': 'imx-primary-memberships'},{'name': 'ProductBundleItemsComponent', 'selector': 'imx-product-bundle-items'},{'name': 'ProductBundleListComponent', 'selector': 'imx-product-bundle-list'},{'name': 'ProductDependencyCheckComponent', 'selector': 'imx-product-dependency-check'},{'name': 'ProductDetailsSidesheetComponent', 'selector': 'imx-product-details-sidesheet'},{'name': 'ProductDetailsSidesheetComponent', 'selector': 'imx-product-details-sidesheet'},{'name': 'ProductEntitlementsComponent', 'selector': 'imx-product-entitlements'},{'name': 'ProductEntitlementsComponent', 'selector': 'imx-product-entitlements'},{'name': 'ProductSelectionComponent', 'selector': 'imx-product-selection'},{'name': 'ProfileComponent', 'selector': ''},{'name': 'QaLoginComponent', 'selector': ''},{'name': 'QpmIntegrationComponent', 'selector': ''},{'name': 'QueryPersonComponent', 'selector': 'imx-itshop-queryperson'},{'name': 'ReasonSidesheetComponent', 'selector': 'imx-reason-sidesheet'},{'name': 'RecommendationSidesheetComponent', 'selector': 'imx-recommendation-sidesheet'},{'name': 'RelatedApplicationMenuItemComponent', 'selector': 'imx-related-application-menu-item'},{'name': 'RelatedApplicationsComponent', 'selector': 'imx-related-applications'},{'name': 'RelatedApplicationsSidesheetComponent', 'selector': 'imx-related-applications-sidesheet'},{'name': 'RemoveMembershipComponent', 'selector': ''},{'name': 'RequestActionComponent', 'selector': ''},{'name': 'RequestConfigMembersComponent', 'selector': 'imx-request-config-members'},{'name': 'RequestConfigSidesheetComponent', 'selector': 'imx-request-config-sidesheet'},{'name': 'RequestDetailComponent', 'selector': 'imx-request-detail'},{'name': 'RequestDisplayComponent', 'selector': 'imx-request-display'},{'name': 'RequestFilterComponent', 'selector': 'imx-request-filter'},{'name': 'RequestHistoryComponent', 'selector': ''},{'name': 'RequestHistoryFilterComponent', 'selector': 'imx-request-history-filter'},{'name': 'RequestInfoComponent', 'selector': 'imx-requestinfo'},{'name': 'RequestsComponent', 'selector': 'imx-requests'},{'name': 'RequestsEntitySelectorComponent', 'selector': 'imx-requests-selector'},{'name': 'RequestShelfEntitlementsComponent', 'selector': 'imx-request-shelf-entitlements'},{'name': 'RequestShelfSidesheetComponent', 'selector': 'imx-request-shelf-sidesheet'},{'name': 'RequestShelvesComponent', 'selector': 'imx-request-shelves'},{'name': 'RequestTableComponent', 'selector': 'imx-request-table'},{'name': 'ResourcesComponent', 'selector': ''},{'name': 'ResourceSidesheetComponent', 'selector': 'imx-resource-sidesheet'},{'name': 'RestoreComponent', 'selector': ''},{'name': 'RiskAnalysisComponent', 'selector': 'imx-riskindex-analysis'},{'name': 'RiskAnalysisSidesheetComponent', 'selector': ''},{'name': 'RiskConfigComponent', 'selector': 'imx-risk-config'},{'name': 'RiskConfigSidesheetComponent', 'selector': 'imx-risk-config-sidesheet'},{'name': 'RoleDetailComponent', 'selector': 'imx-role-detail'},{'name': 'RoleEntitlementsComponent', 'selector': 'imx-role-entitlements'},{'name': 'RoleMainDataComponent', 'selector': 'imx-role-main-data'},{'name': 'RoleMembershipsComponent', 'selector': 'imx-role-memberships'},{'name': 'RoleMembershipsComponent', 'selector': 'imx-role-memberships'},{'name': 'RoleRecommendationsComponent', 'selector': 'imx-role-recommendations'},{'name': 'RolesOverviewComponent', 'selector': 'imx-roles-overview'},{'name': 'RollbackComponent', 'selector': ''},{'name': 'SecondaryMembershipsComponent', 'selector': 'imx-secondary-memberships'},{'name': 'SecurityKeysComponent', 'selector': 'imx-security-keys'},{'name': 'SecurityKeysSidesheetComponent', 'selector': ''},{'name': 'ServiceCategoriesComponent', 'selector': 'imx-service-categories'},{'name': 'ServiceCategoryComponent', 'selector': 'imx-service-category'},{'name': 'ServiceCategoryListComponent', 'selector': 'imx-servicecategory-list'},{'name': 'ServiceItemDetailComponent', 'selector': 'imx-service-item-detail'},{'name': 'ServiceItemEditComponent', 'selector': 'imx-service-item-edit'},{'name': 'ServiceItemInfoComponent', 'selector': 'imx-service-item-info'},{'name': 'ServiceitemListComponent', 'selector': 'imx-serviceitem-list'},{'name': 'ServiceItemsEditComponent', 'selector': 'imx-service-items-edit'},{'name': 'ServiceItemsEditFormComponent', 'selector': 'imx-service-items-edit-form'},{'name': 'ServiceItemsEditSidesheetComponent', 'selector': 'imx-service-items-edit-sidesheet'},{'name': 'ServiceItemSelectComponent', 'selector': 'imx-service-item-select'},{'name': 'ServiceItemsSelectorComponent', 'selector': 'imx-service-items-selector'},{'name': 'ServiceItemTagsComponent', 'selector': 'imx-service-item-tags'},{'name': 'SettingsComponent', 'selector': 'imx-settings'},{'name': 'ShelfSelectionComponent', 'selector': 'imx-shelf-selection'},{'name': 'ShoppingCartComponent', 'selector': 'imx-shopping-cart'},{'name': 'ShoppingCartEmptyComponent', 'selector': 'imx-shopping-cart-empty'},{'name': 'ShoppingCartForLaterComponent', 'selector': ''},{'name': 'ShoppingCartSubmitWarningsDialog', 'selector': 'imx-shopping-cart-submit-result'},{'name': 'SourceDetectiveComponent', 'selector': 'imx-source-detective'},{'name': 'SourceDetectiveSidesheetComponent', 'selector': ''},{'name': 'SplitComponent', 'selector': ''},{'name': 'StartComponent', 'selector': 'imx-start'},{'name': 'StatisticsCardsComponent', 'selector': 'imx-statistics-cards'},{'name': 'StatisticsCardsVisualsComponent', 'selector': 'imx-statistics-cards-visuals'},{'name': 'StatisticsForObjectsComponent', 'selector': 'imx-statistics-for-objects'},{'name': 'StatisticsHomePageComponent', 'selector': 'imx-statistics-home-page'},{'name': 'StatisticsOrderingSidesheetComponent', 'selector': 'imx-statistics-ordering-sidesheet'},{'name': 'StatisticsOrderingSidesheetDialogComponent', 'selector': 'imx-statistics-ordering-sidesheet-dialog'},{'name': 'StatisticsTreeComponent', 'selector': 'imx-statistics-tree'},{'name': 'TeamResponsibilitiesComponent', 'selector': 'imx-team-responsibilities'},{'name': 'TeamResponsibilitySidesheetComponent', 'selector': 'imx-team-responsibility-sidesheet'},{'name': 'TeamResponsibilityTileComponent', 'selector': 'imx-team-responsibility-tile'},{'name': 'TermsOfUseAcceptComponent', 'selector': ''},{'name': 'TermsOfUseListComponent', 'selector': 'imx-terms-of-use-list'},{'name': 'TermsOfUseViewerComponent', 'selector': 'imx-terms-of-use-viewer'},{'name': 'TreemapChartComponent', 'selector': 'imx-treemap-chart'},{'name': 'UserProcessComponent', 'selector': 'imx-user-process'},{'name': 'ViewDevicesComponent', 'selector': 'imx-view-devices-home'},{'name': 'ViewDevicesSidesheetComponent', 'selector': 'imx-view-devices-sidesheet'},{'name': 'WorkflowActionComponent', 'selector': 'imx-workflow-action'}];
+    var DIRECTIVES = [{'name': 'ElementVisibilityDirective', 'selector': '[imxElementVisibility]'}];
+    var ACTUAL_COMPONENT = {'name': 'CartItemsComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'CartItemsComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

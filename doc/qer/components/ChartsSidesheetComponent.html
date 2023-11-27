@@ -1,0 +1,1627 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>IMX Web - QER Library</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+        <link rel="stylesheet" href="../styles/material.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">IMX Web - QER Library</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Components</li>
+  <li class="breadcrumb-item"
+  >
+  ChartsSidesheetComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" class="nav-link"
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li class="nav-item">
+            <a href="#templateData" class="nav-link"
+                role="tab" id="templateData-tab" data-bs-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li class="nav-item">
+            <a href="#styleData" class="nav-link"
+                role="tab" id="styleData-tab" data-bs-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li class="nav-item">
+            <a href="#tree" class="nav-link"
+                role="tab" id="tree-tab" data-bs-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/lib/statistics/charts/charts-sidesheet/charts-sidesheet.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code>OnInit</code>
+                <code>OnDestroy</code>
+    </p>
+
+
+<section data-compodoc="block-metadata">
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>imx-charts-sidesheet</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./charts-sidesheet.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./charts-sidesheet.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#cdrList" >cdrList</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#chart" >chart</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#chartOptions" >chartOptions</a>
+                            </li>
+                            <li>
+                                    <span class="modifier"></span>
+                                    <span class="modifier">Public</span>
+                                <a href="#chartWrapper" >chartWrapper</a>
+                            </li>
+                            <li>
+                                    <span class="modifier"></span>
+                                    <span class="modifier">Public</span>
+                                <a href="#data" >data</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#dstSettings" >dstSettings</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#isLoading" >isLoading</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#referrer" >referrer</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#subscriptions$" >subscriptions$</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#ngOnDestroy" >ngOnDestroy</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#saveChart" >saveChart</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#toggleFavorites" >toggleFavorites</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#toggleOrg" >toggleOrg</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Accessors</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                    <a href="#isPoint" >isPoint</a>
+                                </li>
+                                <li>
+                                    <a href="#canToggle" >canToggle</a>
+                                </li>
+                                <li>
+                                    <a href="#isZoomable" >isZoomable</a>
+                                </li>
+                                <li>
+                                    <a href="#showChart" >showChart</a>
+                                </li>
+                                <li>
+                                    <a href="#pointClass" >pointClass</a>
+                                </li>
+                                <li>
+                                    <a href="#pointIcon" >pointIcon</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(data: literal type, cdrService: CdrFactoryService, sidesheetRef: EuiSidesheetRef)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="55" class="link-to-prism">src/lib/statistics/charts/charts-sidesheet/charts-sidesheet.component.ts:55</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>data</td>
+                                                  
+                                                        <td>
+                                                                    <code>literal type</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>cdrService</td>
+                                                  
+                                                        <td>
+                                                                    <code>CdrFactoryService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>sidesheetRef</td>
+                                                  
+                                                        <td>
+                                                                    <code>EuiSidesheetRef</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>ngOnDestroy</b></span>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="145"
+                            class="link-to-prism">src/lib/statistics/charts/charts-sidesheet/charts-sidesheet.component.ts:145</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="86"
+                            class="link-to-prism">src/lib/statistics/charts/charts-sidesheet/charts-sidesheet.component.ts:86</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="saveChart"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>saveChart</b></span>
+                        <a href="#saveChart"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>saveChart(chart: Chart)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="149"
+                            class="link-to-prism">src/lib/statistics/charts/charts-sidesheet/charts-sidesheet.component.ts:149</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>chart</td>
+                                    <td>
+                                            <code>Chart</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="toggleFavorites"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>toggleFavorites</b></span>
+                        <a href="#toggleFavorites"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>toggleFavorites()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="153"
+                            class="link-to-prism">src/lib/statistics/charts/charts-sidesheet/charts-sidesheet.component.ts:153</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="toggleOrg"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>toggleOrg</b></span>
+                        <a href="#toggleOrg"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>toggleOrg()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="157"
+                            class="link-to-prism">src/lib/statistics/charts/charts-sidesheet/charts-sidesheet.component.ts:157</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section data-compodoc="block-properties">
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="cdrList"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>cdrList</b></span>
+                        <a href="#cdrList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Column.html" target="_self" >ColumnDependentReference[]</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/lib/statistics/charts/charts-sidesheet/charts-sidesheet.component.ts:50</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="chart"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>chart</b></span>
+                        <a href="#chart"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Chart</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/lib/statistics/charts/charts-sidesheet/charts-sidesheet.component.ts:48</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="chartOptions"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>chartOptions</b></span>
+                        <a href="#chartOptions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>ChartOptions</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/lib/statistics/charts/charts-sidesheet/charts-sidesheet.component.ts:49</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="chartWrapper"></a>
+                    <span class="name">
+                            <span class="modifier"></span>
+                            <span class="modifier">Public</span>
+                        <span ><b>chartWrapper</b></span>
+                        <a href="#chartWrapper"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>ElementRef&lt;HTMLElement&gt;</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ViewChild(&#x27;chartWrapper&#x27;, {read: ElementRef})<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/lib/statistics/charts/charts-sidesheet/charts-sidesheet.component.ts:46</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="data"></a>
+                    <span class="name">
+                            <span class="modifier"></span>
+                            <span class="modifier">Public</span>
+                        <span ><b>data</b></span>
+                        <a href="#data"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>literal type</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @Inject(EUI_SIDESHEET_DATA)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="59" class="link-to-prism">src/lib/statistics/charts/charts-sidesheet/charts-sidesheet.component.ts:59</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="dstSettings"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>dstSettings</b></span>
+                        <a href="#dstSettings"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>DataSourceToolbarSettings</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="53" class="link-to-prism">src/lib/statistics/charts/charts-sidesheet/charts-sidesheet.component.ts:53</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isLoading"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>isLoading</b></span>
+                        <a href="#isLoading"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">src/lib/statistics/charts/charts-sidesheet/charts-sidesheet.component.ts:47</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="referrer"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>referrer</b></span>
+                        <a href="#referrer"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/ChartInfoTyped.html" target="_self" >ChartInfoTyped</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="51" class="link-to-prism">src/lib/statistics/charts/charts-sidesheet/charts-sidesheet.component.ts:51</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="subscriptions$"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>subscriptions$</b></span>
+                        <a href="#subscriptions$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Subscription[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="55" class="link-to-prism">src/lib/statistics/charts/charts-sidesheet/charts-sidesheet.component.ts:55</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-accessors">
+    <h3 id="accessors">
+        Accessors
+    </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isPoint"></a>
+                        <span class="name"><b>isPoint</b><a href="#isPoint"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>isPoint()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="78" class="link-to-prism">src/lib/statistics/charts/charts-sidesheet/charts-sidesheet.component.ts:78</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="canToggle"></a>
+                        <span class="name"><b>canToggle</b><a href="#canToggle"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>canToggle()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="82" class="link-to-prism">src/lib/statistics/charts/charts-sidesheet/charts-sidesheet.component.ts:82</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isZoomable"></a>
+                        <span class="name"><b>isZoomable</b><a href="#isZoomable"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>isZoomable()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="129" class="link-to-prism">src/lib/statistics/charts/charts-sidesheet/charts-sidesheet.component.ts:129</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="showChart"></a>
+                        <span class="name"><b>showChart</b><a href="#showChart"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>showChart()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="133" class="link-to-prism">src/lib/statistics/charts/charts-sidesheet/charts-sidesheet.component.ts:133</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="pointClass"></a>
+                        <span class="name"><b>pointClass</b><a href="#pointClass"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>pointClass()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="137" class="link-to-prism">src/lib/statistics/charts/charts-sidesheet/charts-sidesheet.component.ts:137</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="pointIcon"></a>
+                        <span class="name"><b>pointIcon</b><a href="#pointIcon"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>pointIcon()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="141" class="link-to-prism">src/lib/statistics/charts/charts-sidesheet/charts-sidesheet.component.ts:141</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+</section>
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, ElementRef, Inject, OnDestroy, OnInit, ViewChild } from &#x27;@angular/core&#x27;;
+import { EuiSidesheetRef, EUI_SIDESHEET_DATA } from &#x27;@elemental-ui/core&#x27;;
+import { Chart, ChartOptions } from &#x27;billboard.js&#x27;;
+import { ChartDto, ChartInfoDto } from &#x27;imx-api-qer&#x27;;
+import { TypedEntityCollectionData } from &#x27;imx-qbm-dbts&#x27;;
+import { CdrFactoryService, ColumnDependentReference, DataSourceToolbarSettings } from &#x27;qbm&#x27;;
+import { fromEvent, Subscription } from &#x27;rxjs&#x27;;
+import { PointStatTyped } from &#x27;../chart-tile/point-stat-visual/point-stat-typed&#x27;;
+import { StatisticsSidesheetResponse } from &#x27;../../statistics-home-page/statistics-cards-visuals/statistics-cards-visuals.component&#x27;;
+import { ChartDataTyped } from &#x27;../chart-data-typed&#x27;;
+import { isBoolean } from &#x27;lodash&#x27;;
+import { ChartInfoTyped } from &#x27;../../statistics-home-page/chart-info-typed&#x27;;
+
+@Component({
+  selector: &#x27;imx-charts-sidesheet&#x27;,
+  templateUrl: &#x27;./charts-sidesheet.component.html&#x27;,
+  styleUrls: [&#x27;./charts-sidesheet.component.scss&#x27;],
+})
+export class ChartsSidesheetComponent implements OnInit, OnDestroy {
+  @ViewChild(&#x27;chartWrapper&#x27;, { read: ElementRef }) public chartWrapper: ElementRef&lt;HTMLElement&gt;;
+  public isLoading &#x3D; true;
+  public chart: Chart;
+  public chartOptions: ChartOptions;
+  public cdrList: ColumnDependentReference[];
+  public readonly referrer: ChartInfoTyped;
+
+  public dstSettings: DataSourceToolbarSettings;
+
+  private subscriptions$: Subscription[] &#x3D; [];
+
+  constructor(
+    @Inject(EUI_SIDESHEET_DATA)
+    public data: {
+      chartInfo: ChartInfoTyped;
+      chartData: ChartDto;
+      tableData: TypedEntityCollectionData&lt;ChartDataTyped&gt;;
+      hasUniqueObjectDisplay: boolean;
+      chartOptions: ChartOptions;
+      icon: string;
+      dataHasNonZero: boolean;
+      pointStatStatus?: PointStatTyped;
+      isFavorite?: boolean;
+      isOrg?: boolean;
+      isUserAdmin?: boolean;
+    },
+    private cdrService: CdrFactoryService,
+    private sidesheetRef: EuiSidesheetRef
+  ) {
+    this.referrer &#x3D; data.chartInfo;
+  }
+
+  public get isPoint(): boolean {
+    return !!this.data?.pointStatStatus;
+  }
+
+  public get canToggle(): boolean {
+    return isBoolean(this.data?.isFavorite) &amp;&amp; isBoolean(this.data?.isOrg);
+  }
+
+  public ngOnInit(): void {
+    if (this.canToggle) {
+      this.subscriptions$.push(
+        this.sidesheetRef.closeClicked().subscribe(() &#x3D;&gt; {
+          const response: StatisticsSidesheetResponse &#x3D; {
+            isFavorite: this.data?.isFavorite,
+            isOrg: this.data?.isOrg,
+          };
+          this.sidesheetRef.close(response);
+        })
+      );
+    }
+
+    if (this.data?.pointStatStatus) {
+      this.cdrList &#x3D; this.cdrService.buildCdrFromColumnList(this.data.pointStatStatus.GetEntity(), [&#x27;Trend&#x27;, &#x27;Value&#x27;, &#x27;Description&#x27;], true);
+    }
+
+    if (this.sidesheetRef?.componentInstance) {
+      this.subscriptions$.push(
+        this.sidesheetRef.componentInstance.onOpen().subscribe(() &#x3D;&gt; {
+          if (this.chart) {
+            this.chart.resize({
+              height: this.chartWrapper.nativeElement.offsetHeight,
+              width: this.chartWrapper.nativeElement.offsetWidth,
+            });
+            this.isLoading &#x3D; false;
+          }
+        })
+      );
+    }
+
+    this.subscriptions$.push(
+      fromEvent(window, &#x27;resize&#x27;).subscribe(() &#x3D;&gt; {
+        if (this.chart) {
+          this.chart.resize({
+            height: this.chartWrapper.nativeElement.offsetHeight,
+            width: this.chartWrapper.nativeElement.offsetWidth,
+          });
+        }
+      })
+    );
+  }
+
+  public get isZoomable(): boolean {
+    return this.data.chartOptions?.zoom?.enabled;
+  }
+
+  public get showChart(): boolean {
+    return this.isPoint ? this.data.chartData.HistoryLength &gt; 0 : this.data.dataHasNonZero;
+  }
+
+  public get pointClass(): string {
+    return this.isPoint ? this.data.pointStatStatus.StatusClass.value : &#x27;&#x27;;
+  }
+
+  public get pointIcon(): string {
+    return this.isPoint ? this.data.pointStatStatus.StatusIconString.value : &#x27;&#x27;;
+  }
+
+  public ngOnDestroy(): void {
+    this.subscriptions$.forEach((sub) &#x3D;&gt; sub.unsubscribe());
+  }
+
+  public saveChart(chart: Chart): void {
+    this.chart &#x3D; chart;
+  }
+
+  public toggleFavorites(): void {
+    this.data.isFavorite &#x3D; !this.data.isFavorite;
+  }
+
+  public toggleOrg(): void {
+    this.data.isOrg &#x3D; !this.data.isOrg;
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;mat-tab-group dynamicHeight&gt;
+  &lt;mat-tab [label]&#x3D;&quot;&#x27;#LDS#Heading Chart Details&#x27; | translate&quot;&gt;
+    &lt;div eui-sidesheet-content class&#x3D;&quot;tab-wrapper&quot;&gt;
+      &lt;mat-card *ngIf&#x3D;&quot;isPoint&quot; class&#x3D;&quot;point-status-container&quot;&gt;
+        &lt;div class&#x3D;&quot;status-icon&quot; [ngClass]&#x3D;&quot;pointClass&quot;&gt;
+          &lt;eui-icon class&#x3D;&quot;colored-icon&quot; size&#x3D;&quot;xl&quot; [icon]&#x3D;&quot;pointIcon&quot;&gt;&lt;/eui-icon&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;status-wrapper&quot;&gt;
+          &lt;div class&#x3D;&quot;status-item&quot; *ngFor&#x3D;&quot;let cdr of cdrList&quot;&gt;
+            &lt;imx-cdr-editor [cdr]&#x3D;&quot;cdr&quot;&gt;&lt;/imx-cdr-editor&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/mat-card&gt;
+      &lt;mat-card class&#x3D;&quot;chart-container&quot;&gt;
+        &lt;h2 *ngIf&#x3D;&quot;isPoint&quot; class&#x3D;&quot;chart-title&quot;&gt;{{ &#x27;#LDS#Heading Chart History&#x27; | translate }}&lt;/h2&gt;
+        &lt;div #chartWrapper *ngIf&#x3D;&quot;showChart&quot; class&#x3D;&quot;chart-wrapper&quot; [ngClass]&#x3D;&quot;{ &#x27;chart-zoomable&#x27;: isZoomable }&quot;&gt;
+          &lt;eui-billboard [options]&#x3D;&quot;data.chartOptions&quot; (chart)&#x3D;&quot;saveChart($event)&quot; [ngStyle]&#x3D;&quot;{ opacity: isLoading ? &#x27;0&#x27; : &#x27;1&#x27; }&quot;&gt;&lt;/eui-billboard&gt;
+        &lt;/div&gt;
+        &lt;div *ngIf&#x3D;&quot;!showChart&quot; class&#x3D;&quot;imx-no-data&quot;&gt;
+          &lt;div class&#x3D;&quot;imx-no-data-top&quot;&gt;
+            &lt;eui-icon icon&#x3D;&quot;content-alert&quot;&gt;&lt;/eui-icon&gt;
+            &lt;div class&#x3D;&quot;imx-no-data-text&quot;&gt;
+              &lt;h2&gt;{{ &#x27;#LDS#Heading Data Cannot be Visualized&#x27; | translate }}&lt;/h2&gt;
+              &lt;span&gt;{{ &#x27;#LDS#There is currently no data to show.&#x27; | translate }}&lt;/span&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/mat-card&gt;
+    &lt;/div&gt;
+  &lt;/mat-tab&gt;
+  &lt;mat-tab [label]&#x3D;&quot;&#x27;#LDS#Heading More Information&#x27; | translate&quot;&gt;
+    &lt;div eui-sidesheet-content&gt;
+      &lt;imx-chart-table class&#x3D;&quot;tab-wrapper&quot; [tableData]&#x3D;&quot;data.tableData&quot; [hasUniqueObjectDisplay]&#x3D;&quot;data.hasUniqueObjectDisplay&quot;&gt;&lt;/imx-chart-table&gt;
+    &lt;/div&gt;
+  &lt;/mat-tab&gt;
+&lt;/mat-tab-group&gt;
+&lt;div class&#x3D;&quot;below-tabs&quot; *ngIf&#x3D;&quot;canToggle&quot;&gt;
+  &lt;imx-ext id&#x3D;&quot;statisticButton&quot; [referrer]&#x3D;&quot;data?.chartInfo&quot;&gt;&lt;/imx-ext&gt;
+  &lt;div *ngIf&#x3D;&quot;data?.isUserAdmin&quot; class&#x3D;&quot;toggle-button-wrapper&quot;&gt;
+    &lt;button mat-raised-button *ngIf&#x3D;&quot;data.isOrg&quot; (click)&#x3D;&quot;toggleOrg()&quot;&gt;
+      &lt;!-- TODO: Add translations --&gt;
+      &lt;span&gt;???Remove from shared statistics???&lt;/span&gt;
+      &lt;eui-icon class&#x3D;&quot;colored-org-icon&quot; icon&#x3D;&quot;network&quot;&gt;&lt;/eui-icon&gt;
+    &lt;/button&gt;
+    &lt;button mat-raised-button *ngIf&#x3D;&quot;!data.isOrg&quot; (click)&#x3D;&quot;toggleOrg()&quot;&gt;
+      &lt;!-- TODO: Add translations --&gt;
+      &lt;span class&#x3D;&quot;colored-org-text&quot;&gt;???Add to shared statistics???&lt;/span&gt;
+      &lt;eui-icon icon&#x3D;&quot;network&quot;&gt;&lt;/eui-icon&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;toggle-button-wrapper&quot;&gt;
+    &lt;button mat-raised-button *ngIf&#x3D;&quot;data.isFavorite&quot; (click)&#x3D;&quot;toggleFavorites()&quot;&gt;
+      &lt;span&gt;{{ &#x27;#LDS#Remove from favorites&#x27; | translate }}&lt;/span&gt;
+      &lt;eui-icon class&#x3D;&quot;colored-favorite-icon&quot; icon&#x3D;&quot;star&quot;&gt;&lt;/eui-icon&gt;
+    &lt;/button&gt;
+    &lt;button mat-raised-button *ngIf&#x3D;&quot;!data.isFavorite&quot; (click)&#x3D;&quot;toggleFavorites()&quot;&gt;
+      &lt;span class&#x3D;&quot;colored-favorite-text&quot;&gt;{{ &#x27;#LDS#Add to favorites&#x27; | translate }}&lt;/span&gt;
+      &lt;eui-icon icon&#x3D;&quot;openstar&quot;&gt;&lt;/eui-icon&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="styleData">
+                <p class="comment">
+                    <code>./charts-sidesheet.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">@import &#x27;@elemental-ui/core/src/styles/_eui_palette.scss&#x27;;
+@import &#x27;../../stat-mixins.scss&#x27;;
+
+:host {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 100%;
+
+  ::ng-deep .mat-tab-group {
+    height: 100%;
+    flex: 1 1 auto;
+    overflow: auto;
+
+    ::ng-deep .mat-tab-body-wrapper {
+      height: 100%;
+    }
+
+    ::ng-deep .mat-tab-body-active {
+      position: unset;
+    }
+  }
+
+  .tab-wrapper {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .point-status-container {
+    display: flex;
+    margin-bottom: 20px;
+    @include EUI-Elevation-1;
+  }
+
+  .status-wrapper {
+    display: flex;
+    align-items: flex-start;
+
+    .status-item {
+      padding: 0 16px;
+    }
+
+    &gt; :last-child {
+      padding-right: 0;
+    }
+  }
+
+  .chart-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    @include EUI-Elevation-1;
+  }
+
+  .chart-title {
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+
+  .chart-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+  }
+
+  .chart-zoomable {
+    cursor: crosshair;
+  }
+
+  .imx-no-data {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    .imx-no-data-top {
+      display: flex;
+      align-items: center;
+
+      eui-icon {
+        font-size: min(70px, max(10vw, 48px));
+        margin-right: 20px;
+      }
+
+      .imx-no-data-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        h2 {
+          font-size: min(50px, max(5vw, 20px));
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  .below-tabs {
+    display: flex;
+    padding: 0 20px 20px;
+    justify-content: space-between;
+    
+    button {
+      display: flex;
+      @include EUI-Elevation-1;
+      @include Ease-Transition;
+      eui-icon {
+        margin-left: 24px;
+      }
+    }
+  }
+}
+
+// Theming
+:host {
+  @include Stat-Colors;
+  @include Point-Stat-Colors;
+
+  ::ng-deep .mat-tab-labels {
+    background-color: $color-gray-0;
+  }
+
+  .status-title {
+    color: $color-gray-40;
+  }
+
+  .point-status-container,
+  .chart-container {
+    border: 1px solid $color-gray-10;
+  }
+
+  .status-wrapper &gt; :not(:last-child) {
+    border-right: 1px solid $color-gray-10;
+  }
+
+  .imx-no-data-top {
+    h2,
+    eui-icon {
+      color: $color-gray-20;
+    }
+    span {
+      color: $color-gray-60;
+    }
+  }
+
+  ::ng-deep .bb-zoom-reset {
+    background-color: $color-gray-0;
+    border-color: $color-gray-20;
+    @include EUI-Elevation-1;
+
+    &amp;:hover {
+      background-color: $color-orange-20;
+      @include Ease-Transition;
+    }
+  }
+
+  .toggle-button-wrapper {
+    button {
+      border: 1px solid $color-gray-20;
+    }
+
+    &gt; :hover {
+      background-color: $color-orange-20;
+    }
+  }
+
+  .colored-org-icon,
+  .colored-org-text {
+    color: $color-blue-60;
+  }
+
+  .colored-favorite-icon,
+  .colored-favorite-text {
+    color: $color-orange-60;
+  }
+}
+
+.eui-dark-theme {
+  :host {
+    @include Stat-Colors(eui-dark-theme);
+    @include Point-Stat-Colors(eui-dark-theme);
+
+    ::ng-deep .mat-tab-labels {
+      background-color: $color-gray-70;
+    }
+
+    .point-status-container,
+    .chart-container {
+      border: 1px solid $color-gray-50;
+    }
+
+    .status-title {
+      color: $color-gray-30;
+    }
+
+    .status-wrapper &gt; :not(:last-child) {
+      border-right: 1px solid $color-gray-60;
+    }
+
+    ::ng-deep .bb-zoom-reset {
+      background-color: $color-gray-70;
+      border-color: $color-gray-60;
+
+      &amp;:hover {
+        @include Ease-Transition;
+        background-color: $color-orange-80;
+      }
+    }
+
+    .imx-no-data-top {
+      h2,
+      eui-icon {
+        color: $color-gray-20;
+      }
+      span {
+        color: $color-gray-10;
+      }
+    }
+
+    .toggle-button-wrapper {
+      button {
+        border: 1px solid $color-gray-60;
+      }
+
+      &gt; :hover {
+        background-color: $color-orange-80;
+      }
+    }
+
+    .colored-org-icon,
+    .colored-org-text {
+      color: $color-blue-40;
+    }
+
+    .colored-favorite-icon,
+    .colored-favorite-text {
+      color: $color-orange-40;
+    }
+  }
+}
+
+.eui-contrast-theme {
+  :host {
+   
+    ::ng-deep .mat-tab-labels {
+      background-color: $color-gray-80;
+    }
+    @include Stat-Colors(eui-dark-theme);
+    @include Point-Stat-Colors(eui-dark-theme);
+
+    .point-status-container,
+    .chart-container {
+      border: 1px solid $color-gray-70;
+    }
+
+    .status-title {
+      color: $color-gray-30;
+    }
+
+    .status-wrapper &gt; :not(:last-child) {
+      border-right: 1px solid $color-gray-80;
+    }
+
+    ::ng-deep .bb-zoom-reset {
+      background-color: $color-gray-90;
+      border-color: $color-gray-80;
+
+      &amp;:hover {
+        @include Ease-Transition;
+        background-color: $color-orange-90;
+      }
+    }
+
+    ::ng-deep .bb-axis line,
+    ::ng-deep .bb-axis .domain {
+      stroke: $color-gray-0;
+    }
+
+    ::ng-deep .bb-axis text,
+    ::ng-deep .bb-legend text {
+      fill: $color-gray-0;
+    }
+
+    ::ng-deep .bb-tooltip-container,
+    ::ng-deep .bb-tooltip th {
+      color: $color-gray-100;
+    }
+
+    ::ng-deep .bb-color-pattern {
+      background-image: url(&#x27;#{$color-blue-40};#{$color-red-40};#{$color-green-40};#{$color-yellow-40};#{$color-purple-40};#{$color-pink-40};#{$color-gray-60};&#x27;);
+    }
+
+    .imx-no-data-top {
+      h2,
+      eui-icon {
+        color: $color-gray-20;
+      }
+      span {
+        color: $color-gray-10;
+      }
+    }
+
+    .toggle-button-wrapper {
+      button {
+        border: 1px solid $color-gray-80;
+      }
+
+      &gt; :hover {
+        background-color: $color-orange-80;
+      }
+    }
+
+    .colored-org-icon,
+    .colored-org-text {
+      color: $color-blue-40;
+    }
+
+    .colored-favorite-icon,
+    .colored-favorite-text {
+      color: $color-orange-40;
+    }
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><mat-tab-group dynamicHeight>  <mat-tab [label]="\'#LDS#Heading Chart Details\' | translate">    <div eui-sidesheet-content class="tab-wrapper">      <mat-card *ngIf="isPoint" class="point-status-container">        <div class="status-icon" [ngClass]="pointClass">          <eui-icon class="colored-icon" size="xl" [icon]="pointIcon"></eui-icon>        </div>        <div class="status-wrapper">          <div class="status-item" *ngFor="let cdr of cdrList">            <imx-cdr-editor [cdr]="cdr"></imx-cdr-editor>          </div>        </div>      </mat-card>      <mat-card class="chart-container">        <h2 *ngIf="isPoint" class="chart-title">{{ \'#LDS#Heading Chart History\' | translate }}</h2>        <div #chartWrapper *ngIf="showChart" class="chart-wrapper" [ngClass]="{ \'chart-zoomable\': isZoomable }">          <eui-billboard [options]="data.chartOptions" (chart)="saveChart($event)" [ngStyle]="{ opacity: isLoading ? \'0\' : \'1\' }"></eui-billboard>        </div>        <div *ngIf="!showChart" class="imx-no-data">          <div class="imx-no-data-top">            <eui-icon icon="content-alert"></eui-icon>            <div class="imx-no-data-text">              <h2>{{ \'#LDS#Heading Data Cannot be Visualized\' | translate }}</h2>              <span>{{ \'#LDS#There is currently no data to show.\' | translate }}</span>            </div>          </div>        </div>      </mat-card>    </div>  </mat-tab>  <mat-tab [label]="\'#LDS#Heading More Information\' | translate">    <div eui-sidesheet-content>      <imx-chart-table class="tab-wrapper" [tableData]="data.tableData" [hasUniqueObjectDisplay]="data.hasUniqueObjectDisplay"></imx-chart-table>    </div>  </mat-tab></mat-tab-group><div class="below-tabs" *ngIf="canToggle">  <imx-ext id="statisticButton" [referrer]="data?.chartInfo"></imx-ext>  <div *ngIf="data?.isUserAdmin" class="toggle-button-wrapper">    <button mat-raised-button *ngIf="data.isOrg" (click)="toggleOrg()">      <!-- TODO: Add translations -->      <span>???Remove from shared statistics???</span>      <eui-icon class="colored-org-icon" icon="network"></eui-icon>    </button>    <button mat-raised-button *ngIf="!data.isOrg" (click)="toggleOrg()">      <!-- TODO: Add translations -->      <span class="colored-org-text">???Add to shared statistics???</span>      <eui-icon icon="network"></eui-icon>    </button>  </div>  <div class="toggle-button-wrapper">    <button mat-raised-button *ngIf="data.isFavorite" (click)="toggleFavorites()">      <span>{{ \'#LDS#Remove from favorites\' | translate }}</span>      <eui-icon class="colored-favorite-icon" icon="star"></eui-icon>    </button>    <button mat-raised-button *ngIf="!data.isFavorite" (click)="toggleFavorites()">      <span class="colored-favorite-text">{{ \'#LDS#Add to favorites\' | translate }}</span>      <eui-icon icon="openstar"></eui-icon>    </button>  </div></div></div>'
+    var COMPONENTS = [{'name': 'AddressbookComponent', 'selector': 'imx-addressbook'},{'name': 'AddressbookDetailComponent', 'selector': 'imx-addressbook-detail'},{'name': 'AnswerQuestionsComponent', 'selector': ''},{'name': 'ApplicationDetailsComponent', 'selector': 'imx-application-details'},{'name': 'ApplicationDialogComponent', 'selector': 'imx-application-dialog'},{'name': 'ApprovalHistoryComponent', 'selector': 'imx-approval-history'},{'name': 'ApprovalLevelFormComponent', 'selector': 'imx-approval-level-form'},{'name': 'ApprovalsComponent', 'selector': 'imx-itshop-approvals'},{'name': 'ApprovalsSidesheetComponent', 'selector': 'imx-approvals-sidesheet'},{'name': 'ApprovalsTableComponent', 'selector': 'imx-approvals-table'},{'name': 'ApprovalStepFormComponent', 'selector': 'imx-approval-step-form'},{'name': 'ApprovalWorkflowEditComponent', 'selector': 'imx-approval-workflow-edit'},{'name': 'ApprovalWorkflowEditInfoComponent', 'selector': 'imx-approval-workflow-edit-info'},{'name': 'ApprovalWorkflowFormComponent', 'selector': 'imx-approval-workflow-form'},{'name': 'ApprovalWorkflowHomeComponent', 'selector': 'imx-approval-workflow-home'},{'name': 'ArchivedRequestsComponent', 'selector': ''},{'name': 'AssignmentsComponent', 'selector': 'imx-assignments'},{'name': 'BadgeTileComponent', 'selector': 'imx-badge-tile'},{'name': 'BaseViewerComponent', 'selector': ''},{'name': 'BlockDetailSidesheetComponent', 'selector': 'imx-block-detail-sidesheet'},{'name': 'BusinessOwnerAddOnTileComponent', 'selector': 'imx-businessowner-addon-tile'},{'name': 'BusinessOwnerChartSummaryComponent', 'selector': 'imx-businessowner-chartsummary'},{'name': 'BusinessOwnerOverviewTileComponent', 'selector': 'imx-businessowner-overview-tile'},{'name': 'CartItemDisplayComponent', 'selector': 'imx-cart-item-display'},{'name': 'CartItemEditComponent', 'selector': 'imx-cart-item-edit'},{'name': 'CartItemsComponent', 'selector': 'imx-cart-items'},{'name': 'CartItemValidationOverviewComponent', 'selector': 'imx-cart-item-validation-overview'},{'name': 'CategoryTreeComponent', 'selector': 'imx-category-tree'},{'name': 'ChartsSidesheetComponent', 'selector': 'imx-charts-sidesheet'},{'name': 'ChartTableComponent', 'selector': 'imx-chart-table'},{'name': 'ChartTileComponent', 'selector': 'imx-chart-tile'},{'name': 'CheckPasswordsComponent', 'selector': ''},{'name': 'CompareComponent', 'selector': ''},{'name': 'CompareItemComponent', 'selector': 'imx-role-compareitem'},{'name': 'ConfirmCartSubmitDialog', 'selector': 'imx-confirm-cart-submit'},{'name': 'ContainerDomComponent', 'selector': 'imx-container-dom'},{'name': 'CreateNewDeviceComponent', 'selector': 'imx-create-new-device'},{'name': 'CreateNewIdentityComponent', 'selector': 'imx-create-new-identity'},{'name': 'DataExplorerIdentitiesComponent', 'selector': 'imx-data-explorer-identities'},{'name': 'DataExplorerViewComponent', 'selector': ''},{'name': 'DecisionHistoryComponent', 'selector': 'imx-decision-history'},{'name': 'DecisionReasonComponent', 'selector': 'imx-decision-reason'},{'name': 'DefaultCartItemDisplayComponent', 'selector': ''},{'name': 'DefaultRequestDisplayComponent', 'selector': ''},{'name': 'DelegationComponent', 'selector': ''},{'name': 'DetailViewerComponent', 'selector': 'imx-detail-viewer'},{'name': 'DiscreteLegendComponent', 'selector': 'imx-discrete-legend'},{'name': 'DuplicateCheckComponent', 'selector': 'imx-duplicate-check'},{'name': 'DuplicatePatternItemsComponent', 'selector': 'imx-duplicate-pattern-items'},{'name': 'DuplicatesSidesheetComponent', 'selector': ''},{'name': 'DynamicExclusionDialogComponent', 'selector': 'imx-dynamic-exclusion-dialog'},{'name': 'DynamicRoleComponent', 'selector': 'imx-dynamic-group'},{'name': 'EdgeDomComponent', 'selector': 'imx-edge-dom'},{'name': 'EntitlementSelectorComponent', 'selector': 'imx-entitlement-selector'},{'name': 'ExcludedMembershipsComponent', 'selector': 'imx-excluded-memberships'},{'name': 'ExclusionCheckComponent', 'selector': 'imx-exclusion-check'},{'name': 'FavoritesTabComponent', 'selector': 'imx-favorites-tab'},{'name': 'HeatmapChartComponent', 'selector': 'imx-heatmap-chart'},{'name': 'HeatmapSidesheetComponent', 'selector': 'imx-heatmap-sidesheet'},{'name': 'HeatmapTileComponent', 'selector': 'imx-heatmap-tile'},{'name': 'HeatmapVisualComponent', 'selector': 'imx-heatmap-visual'},{'name': 'HistoryFilterComponent', 'selector': 'imx-history-filter'},{'name': 'IconTileComponent', 'selector': 'imx-icon-tile'},{'name': 'IdentityComponent', 'selector': 'imx-orgchart-identity'},{'name': 'IdentityRoleMembershipsComponent', 'selector': ''},{'name': 'IdentitySelectComponent', 'selector': 'imx-identity-select'},{'name': 'IdentitySidesheetComponent', 'selector': 'imx-identity-sidesheet'},{'name': 'InquiriesComponent', 'selector': 'imx-inquiries'},{'name': 'ItshopPatternAddProductsComponent', 'selector': 'imx-itshop-pattern-add-products'},{'name': 'ItshopPatternComponent', 'selector': 'imx-itshop-pattern'},{'name': 'ItshopPatternCreateSidesheetComponent', 'selector': 'imx-itshop-pattern-create-sidesheet'},{'name': 'ItshopPatternItemEditComponent', 'selector': 'imx-itshop-pattern-item-edit'},{'name': 'ItshopPatternSidesheetComponent', 'selector': 'imx-itshop-pattern-sidesheet'},{'name': 'MailSubscriptionsComponent', 'selector': 'imx-mail-subscriptions'},{'name': 'MemberSelectorComponent', 'selector': ''},{'name': 'MembershipsChooseIdentitiesComponent', 'selector': 'imx-memberships-choose-identities'},{'name': 'MyResponsibilitiesViewComponent', 'selector': 'imx-my-responsibilities-view'},{'name': 'NewRequestComponent', 'selector': 'imx-new-request'},{'name': 'NewRequestContentComponent', 'selector': 'imx-new-request-content'},{'name': 'NewRequestHeaderComponent', 'selector': 'imx-new-request-header'},{'name': 'NewRequestHeaderToolbarComponent', 'selector': 'imx-new-request-header-toolbar'},{'name': 'NewRequestPeerGroupComponent', 'selector': 'imx-new-request-peer-group'},{'name': 'NewRequestProductBundleComponent', 'selector': 'imx-new-request-product-bundle'},{'name': 'NewRequestProductComponent', 'selector': 'imx-new-request-product'},{'name': 'NewRequestRecipientsComponent', 'selector': 'imx-new-request-recipients'},{'name': 'NewRequestReferenceUserCardComponent', 'selector': 'imx-new-request-reference-user-card'},{'name': 'NewRequestReferenceUserComponent', 'selector': 'imx-new-request-reference-user'},{'name': 'NewRequestSelectedProductsComponent', 'selector': 'imx-new-request-selected-products'},{'name': 'NewRoleComponent', 'selector': 'imx-new-role'},{'name': 'NodeDomComponent', 'selector': 'imx-node-dom'},{'name': 'NonRequestableItemsComponent', 'selector': 'imx-non-requestable-items'},{'name': 'NotificationTileComponent', 'selector': 'imx-notification-tile'},{'name': 'NotRequestableMembershipsComponent', 'selector': 'imx-not-requestable-memberships'},{'name': 'ObjectHyperviewComponent', 'selector': 'imx-object-hyperview'},{'name': 'ObjectOverviewPersonComponent', 'selector': ''},{'name': 'OptionalItemsSidesheetComponent', 'selector': 'imx-optional-items-sidesheet'},{'name': 'OrderForAdditionalUsersComponent', 'selector': 'imx-order-for-additional-users'},{'name': 'OrgChartComponent', 'selector': 'imx-orgchart'},{'name': 'OwnerControlComponent', 'selector': 'imx-owner-control'},{'name': 'PasscodeLoginComponent', 'selector': ''},{'name': 'PasscodeViewerComponent', 'selector': 'imx-passcode-viewer'},{'name': 'PasswordDashboardComponent', 'selector': ''},{'name': 'PasswordQueryComponent', 'selector': 'imx-password-query'},{'name': 'PasswordQuestionsComponent', 'selector': 'imx-password-questions'},{'name': 'PasswordQuestionsSidesheetComponent', 'selector': 'imx-password-questions-sidesheet'},{'name': 'PasswordResetComponent', 'selector': 'imx-password-reset'},{'name': 'PatternDetailsSidesheetComponent', 'selector': 'imx-pattern-details-sidesheet'},{'name': 'PatternItemListComponent', 'selector': 'imx-pattern-item-list'},{'name': 'PeerGroupComponent', 'selector': 'imx-peer-group'},{'name': 'PeerGroupDiscardSelectedComponent', 'selector': 'imx-peer-group-discard-selected'},{'name': 'PointStatVisualComponent', 'selector': 'imx-point-stat-visual'},{'name': 'PrimaryMembershipsComponent', 'selector': 'imx-primary-memberships'},{'name': 'ProductBundleItemsComponent', 'selector': 'imx-product-bundle-items'},{'name': 'ProductBundleListComponent', 'selector': 'imx-product-bundle-list'},{'name': 'ProductDependencyCheckComponent', 'selector': 'imx-product-dependency-check'},{'name': 'ProductDetailsSidesheetComponent', 'selector': 'imx-product-details-sidesheet'},{'name': 'ProductDetailsSidesheetComponent', 'selector': 'imx-product-details-sidesheet'},{'name': 'ProductEntitlementsComponent', 'selector': 'imx-product-entitlements'},{'name': 'ProductEntitlementsComponent', 'selector': 'imx-product-entitlements'},{'name': 'ProductSelectionComponent', 'selector': 'imx-product-selection'},{'name': 'ProfileComponent', 'selector': ''},{'name': 'QaLoginComponent', 'selector': ''},{'name': 'QpmIntegrationComponent', 'selector': ''},{'name': 'QueryPersonComponent', 'selector': 'imx-itshop-queryperson'},{'name': 'ReasonSidesheetComponent', 'selector': 'imx-reason-sidesheet'},{'name': 'RecommendationSidesheetComponent', 'selector': 'imx-recommendation-sidesheet'},{'name': 'RelatedApplicationMenuItemComponent', 'selector': 'imx-related-application-menu-item'},{'name': 'RelatedApplicationsComponent', 'selector': 'imx-related-applications'},{'name': 'RelatedApplicationsSidesheetComponent', 'selector': 'imx-related-applications-sidesheet'},{'name': 'RemoveMembershipComponent', 'selector': ''},{'name': 'RequestActionComponent', 'selector': ''},{'name': 'RequestConfigMembersComponent', 'selector': 'imx-request-config-members'},{'name': 'RequestConfigSidesheetComponent', 'selector': 'imx-request-config-sidesheet'},{'name': 'RequestDetailComponent', 'selector': 'imx-request-detail'},{'name': 'RequestDisplayComponent', 'selector': 'imx-request-display'},{'name': 'RequestFilterComponent', 'selector': 'imx-request-filter'},{'name': 'RequestHistoryComponent', 'selector': ''},{'name': 'RequestHistoryFilterComponent', 'selector': 'imx-request-history-filter'},{'name': 'RequestInfoComponent', 'selector': 'imx-requestinfo'},{'name': 'RequestsComponent', 'selector': 'imx-requests'},{'name': 'RequestsEntitySelectorComponent', 'selector': 'imx-requests-selector'},{'name': 'RequestShelfEntitlementsComponent', 'selector': 'imx-request-shelf-entitlements'},{'name': 'RequestShelfSidesheetComponent', 'selector': 'imx-request-shelf-sidesheet'},{'name': 'RequestShelvesComponent', 'selector': 'imx-request-shelves'},{'name': 'RequestTableComponent', 'selector': 'imx-request-table'},{'name': 'ResourcesComponent', 'selector': ''},{'name': 'ResourceSidesheetComponent', 'selector': 'imx-resource-sidesheet'},{'name': 'RestoreComponent', 'selector': ''},{'name': 'RiskAnalysisComponent', 'selector': 'imx-riskindex-analysis'},{'name': 'RiskAnalysisSidesheetComponent', 'selector': ''},{'name': 'RiskConfigComponent', 'selector': 'imx-risk-config'},{'name': 'RiskConfigSidesheetComponent', 'selector': 'imx-risk-config-sidesheet'},{'name': 'RoleDetailComponent', 'selector': 'imx-role-detail'},{'name': 'RoleEntitlementsComponent', 'selector': 'imx-role-entitlements'},{'name': 'RoleMainDataComponent', 'selector': 'imx-role-main-data'},{'name': 'RoleMembershipsComponent', 'selector': 'imx-role-memberships'},{'name': 'RoleMembershipsComponent', 'selector': 'imx-role-memberships'},{'name': 'RoleRecommendationsComponent', 'selector': 'imx-role-recommendations'},{'name': 'RolesOverviewComponent', 'selector': 'imx-roles-overview'},{'name': 'RollbackComponent', 'selector': ''},{'name': 'SecondaryMembershipsComponent', 'selector': 'imx-secondary-memberships'},{'name': 'SecurityKeysComponent', 'selector': 'imx-security-keys'},{'name': 'SecurityKeysSidesheetComponent', 'selector': ''},{'name': 'ServiceCategoriesComponent', 'selector': 'imx-service-categories'},{'name': 'ServiceCategoryComponent', 'selector': 'imx-service-category'},{'name': 'ServiceCategoryListComponent', 'selector': 'imx-servicecategory-list'},{'name': 'ServiceItemDetailComponent', 'selector': 'imx-service-item-detail'},{'name': 'ServiceItemEditComponent', 'selector': 'imx-service-item-edit'},{'name': 'ServiceItemInfoComponent', 'selector': 'imx-service-item-info'},{'name': 'ServiceitemListComponent', 'selector': 'imx-serviceitem-list'},{'name': 'ServiceItemsEditComponent', 'selector': 'imx-service-items-edit'},{'name': 'ServiceItemsEditFormComponent', 'selector': 'imx-service-items-edit-form'},{'name': 'ServiceItemsEditSidesheetComponent', 'selector': 'imx-service-items-edit-sidesheet'},{'name': 'ServiceItemSelectComponent', 'selector': 'imx-service-item-select'},{'name': 'ServiceItemsSelectorComponent', 'selector': 'imx-service-items-selector'},{'name': 'ServiceItemTagsComponent', 'selector': 'imx-service-item-tags'},{'name': 'SettingsComponent', 'selector': 'imx-settings'},{'name': 'ShelfSelectionComponent', 'selector': 'imx-shelf-selection'},{'name': 'ShoppingCartComponent', 'selector': 'imx-shopping-cart'},{'name': 'ShoppingCartEmptyComponent', 'selector': 'imx-shopping-cart-empty'},{'name': 'ShoppingCartForLaterComponent', 'selector': ''},{'name': 'ShoppingCartSubmitWarningsDialog', 'selector': 'imx-shopping-cart-submit-result'},{'name': 'SourceDetectiveComponent', 'selector': 'imx-source-detective'},{'name': 'SourceDetectiveSidesheetComponent', 'selector': ''},{'name': 'SplitComponent', 'selector': ''},{'name': 'StartComponent', 'selector': 'imx-start'},{'name': 'StatisticsCardsComponent', 'selector': 'imx-statistics-cards'},{'name': 'StatisticsCardsVisualsComponent', 'selector': 'imx-statistics-cards-visuals'},{'name': 'StatisticsForObjectsComponent', 'selector': 'imx-statistics-for-objects'},{'name': 'StatisticsHomePageComponent', 'selector': 'imx-statistics-home-page'},{'name': 'StatisticsOrderingSidesheetComponent', 'selector': 'imx-statistics-ordering-sidesheet'},{'name': 'StatisticsOrderingSidesheetDialogComponent', 'selector': 'imx-statistics-ordering-sidesheet-dialog'},{'name': 'StatisticsTreeComponent', 'selector': 'imx-statistics-tree'},{'name': 'TeamResponsibilitiesComponent', 'selector': 'imx-team-responsibilities'},{'name': 'TeamResponsibilitySidesheetComponent', 'selector': 'imx-team-responsibility-sidesheet'},{'name': 'TeamResponsibilityTileComponent', 'selector': 'imx-team-responsibility-tile'},{'name': 'TermsOfUseAcceptComponent', 'selector': ''},{'name': 'TermsOfUseListComponent', 'selector': 'imx-terms-of-use-list'},{'name': 'TermsOfUseViewerComponent', 'selector': 'imx-terms-of-use-viewer'},{'name': 'TreemapChartComponent', 'selector': 'imx-treemap-chart'},{'name': 'UserProcessComponent', 'selector': 'imx-user-process'},{'name': 'ViewDevicesComponent', 'selector': 'imx-view-devices-home'},{'name': 'ViewDevicesSidesheetComponent', 'selector': 'imx-view-devices-sidesheet'},{'name': 'WorkflowActionComponent', 'selector': 'imx-workflow-action'}];
+    var DIRECTIVES = [{'name': 'ElementVisibilityDirective', 'selector': '[imxElementVisibility]'}];
+    var ACTUAL_COMPONENT = {'name': 'ChartsSidesheetComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'ChartsSidesheetComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
