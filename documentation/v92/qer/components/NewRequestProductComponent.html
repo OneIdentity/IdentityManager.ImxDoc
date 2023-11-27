@@ -1,0 +1,2469 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>IMX Web - QER Library</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+        <link rel="stylesheet" href="../styles/material.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">IMX Web - QER Library</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Components</li>
+  <li class="breadcrumb-item"
+  >
+  NewRequestProductComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" class="nav-link"
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li class="nav-item">
+            <a href="#templateData" class="nav-link"
+                role="tab" id="templateData-tab" data-bs-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li class="nav-item">
+            <a href="#styleData" class="nav-link"
+                role="tab" id="styleData-tab" data-bs-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li class="nav-item">
+            <a href="#tree" class="nav-link"
+                role="tab" id="tree-tab" data-bs-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/lib/new-request/new-request-product/new-request-product.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code>OnInit</code>
+                <code>OnDestroy</code>
+    </p>
+
+
+<section data-compodoc="block-metadata">
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>imx-new-request-product</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./new-request-product.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./new-request-product.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#accProductGroup" >accProductGroup</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#apiControls" >apiControls</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#busy" >busy</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#categoryApi" >categoryApi</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#categorySideNavExpanded" >categorySideNavExpanded</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#categoryTreeControl" >categoryTreeControl</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#DisplayColumns" >DisplayColumns</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#displayedProductColumns" >displayedProductColumns</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#dst" >dst</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#dstSettings" >dstSettings</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#dynamicDataSource" >dynamicDataSource</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#hasChild" >hasChild</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#includeChildCategories" >includeChildCategories</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#isLoading" >isLoading</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#noDataText" >noDataText</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#orchestration" >orchestration</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#productApi" >productApi</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#productNavigationState" >productNavigationState</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#recipients" >recipients</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#searchApi" >searchApi</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#SelectedProductSource" >SelectedProductSource</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#selectionService" >selectionService</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#serviceCategoriesTotalCount" >serviceCategoriesTotalCount</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#subscriptions" >subscriptions</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#categoryObserveExpanded" >categoryObserveExpanded</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#categorySelectedNode" >categorySelectedNode</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#getCollectionLoadParameter" >getCollectionLoadParameter</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#getProductData" >getProductData</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#ngOnDestroy" >ngOnDestroy</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#onRowSelected" >onRowSelected</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#onSelectionChanged" >onSelectionChanged</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#updateDisplayedColumns" >updateDisplayedColumns</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(categoryApi: <a href="../injectables/NewRequestCategoryApiService.html" target="_self">NewRequestCategoryApiService</a>, productApi: <a href="../injectables/NewRequestProductApiService.html" target="_self">NewRequestProductApiService</a>, selectionService: <a href="../injectables/NewRequestSelectionService.html" target="_self">NewRequestSelectionService</a>, orchestration: <a href="../injectables/NewRequestOrchestrationService.html" target="_self">NewRequestOrchestrationService</a>, logger: ClassloggerService, productDetailsService: <a href="../injectables/ProductDetailsService.html" target="_self">ProductDetailsService</a>, cd: ChangeDetectorRef, busyService: BusyService)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="209" class="link-to-prism">src/lib/new-request/new-request-product/new-request-product.component.ts:209</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>categoryApi</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/NewRequestCategoryApiService.html" target="_self" >NewRequestCategoryApiService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>productApi</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/NewRequestProductApiService.html" target="_self" >NewRequestProductApiService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>selectionService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/NewRequestSelectionService.html" target="_self" >NewRequestSelectionService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>orchestration</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/NewRequestOrchestrationService.html" target="_self" >NewRequestOrchestrationService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>logger</td>
+                                                  
+                                                        <td>
+                                                                    <code>ClassloggerService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>productDetailsService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ProductDetailsService.html" target="_self" >ProductDetailsService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>cd</td>
+                                                  
+                                                        <td>
+                                                                    <code>ChangeDetectorRef</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>busyService</td>
+                                                  
+                                                        <td>
+                                                                    <code>BusyService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="categoryObserveExpanded"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>categoryObserveExpanded</b></span>
+                        <a href="#categoryObserveExpanded"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>categoryObserveExpanded(expanded: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="299"
+                            class="link-to-prism">src/lib/new-request/new-request-product/new-request-product.component.ts:299</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>expanded</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="categorySelectedNode"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>categorySelectedNode</b></span>
+                        <a href="#categorySelectedNode"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>categorySelectedNode(node: <a href="../interfaces/NewRequestCategoryNode.html" target="_self">NewRequestCategoryNode</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="303"
+                            class="link-to-prism">src/lib/new-request/new-request-product/new-request-product.component.ts:303</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>node</td>
+                                    <td>
+                                                <code><a href="../interfaces/NewRequestCategoryNode.html" target="_self" >NewRequestCategoryNode</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getCollectionLoadParameter"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>getCollectionLoadParameter</b></span>
+                        <a href="#getCollectionLoadParameter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getCollectionLoadParameter()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="366"
+                            class="link-to-prism">src/lib/new-request/new-request-product/new-request-product.component.ts:366</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/ServiceItemParameters.html" target="_self" >CollectionLoadParameters | ServiceItemParameters</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getProductData"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>getProductData</b></span>
+                        <a href="#getProductData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getProductData(loadPreselection: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="340"
+                            class="link-to-prism">src/lib/new-request/new-request-product/new-request-product.component.ts:340</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>loadPreselection</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>false</code>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>ngOnDestroy</b></span>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="295"
+                            class="link-to-prism">src/lib/new-request/new-request-product/new-request-product.component.ts:295</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="283"
+                            class="link-to-prism">src/lib/new-request/new-request-product/new-request-product.component.ts:283</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onRowSelected"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>onRowSelected</b></span>
+                        <a href="#onRowSelected"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>onRowSelected(item: PortalShopServiceitems)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="329"
+                            class="link-to-prism">src/lib/new-request/new-request-product/new-request-product.component.ts:329</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>item</td>
+                                    <td>
+                                            <code>PortalShopServiceitems</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onSelectionChanged"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>onSelectionChanged</b></span>
+                        <a href="#onSelectionChanged"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>onSelectionChanged(items: PortalShopServiceitems[])</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="325"
+                            class="link-to-prism">src/lib/new-request/new-request-product/new-request-product.component.ts:325</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>items</td>
+                                    <td>
+                                            <code>PortalShopServiceitems[]</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateDisplayedColumns"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>updateDisplayedColumns</b></span>
+                        <a href="#updateDisplayedColumns"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>updateDisplayedColumns(displayedColumns: IClientProperty[])</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="333"
+                            class="link-to-prism">src/lib/new-request/new-request-product/new-request-product.component.ts:333</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>displayedColumns</td>
+                                    <td>
+                                            <code>IClientProperty[]</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section data-compodoc="block-properties">
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="accProductGroup"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>accProductGroup</b></span>
+                        <a href="#accProductGroup"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="63" class="link-to-prism">src/lib/new-request/new-request-product/new-request-product.component.ts:63</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="apiControls"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>apiControls</b></span>
+                        <a href="#apiControls"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/NewRequestCategoryNode.html" target="_self" >DynamicDataApiControls&lt;NewRequestCategoryNode&gt;</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{
+    setup: async () &#x3D;&gt; {
+      // We only expect a single root node
+      const userParams &#x3D; {
+        UID_Person: this.orchestration.recipients ? MultiValue.FromString(this.orchestration.recipients.value).GetValues().join(&#x27;,&#x27;) : undefined,
+        ParentKey: &#x27;&#x27;,
+      };
+      const servicecategories &#x3D; await this.categoryApi.get(userParams);
+      this.serviceCategoriesTotalCount &#x3D; servicecategories?.totalCount;
+      const dstSettings: DataSourceToolbarSettings &#x3D; {
+        dataSource: servicecategories,
+        entitySchema: this.categoryApi.schema,
+        navigationState: {
+          StartIndex: 0,
+        },
+      };
+      this.orchestration.dstSettingsAllProducts &#x3D; this.dstSettings;
+
+      const children &#x3D; servicecategories.Data.map((datum) &#x3D;&gt; {
+        const node: NewRequestCategoryNode &#x3D; {
+          entity: datum,
+          isSelected: false,
+          level: 1,
+        };
+        return node;
+      });
+      const totalCount &#x3D; this.serviceCategoriesTotalCount;
+      this.orchestration.disableSearch &#x3D; totalCount &lt; 1;
+      const rootNode: NewRequestCategoryNode &#x3D; {
+        level: 0,
+        isSelected: true,
+        children: children,
+      };
+      const dstSettingsDynamicDatasource &#x3D; totalCount &gt; 0 ? dstSettings : undefined;
+      return { rootNode, dstSettings: dstSettingsDynamicDatasource, totalCount };
+    },
+    getChildren: async (leaf, onlyCheck?: boolean) &#x3D;&gt; {
+      if (leaf.children &amp;&amp; leaf.children.length &gt; 0) {
+        // No need to get children, we already have them
+        return leaf.children;
+      }
+      if (onlyCheck) {
+        // Stop here if we only want to see if a child exists, but not load
+        return [];
+      }
+      leaf.isLoading &#x3D; true;
+      const userParams &#x3D; {
+        UID_Person: this.orchestration.recipients ? MultiValue.FromString(this.orchestration.recipients.value).GetValues().join(&#x27;,&#x27;) : undefined,
+      };
+      if (!leaf.entity) {
+        return [];
+      }
+      const data &#x3D; await this.categoryApi.get({ ParentKey: leaf.entity.UID_AccProductGroup.Column.GetValue(), ...userParams });
+      leaf.isLoading &#x3D; false;
+      leaf.children &#x3D; data.Data.map((datum) &#x3D;&gt; {
+        return {
+          entity: datum,
+          parent: leaf,
+          isSelected: false,
+          level: leaf.level + 1,
+        } as NewRequestCategoryNode;
+      });
+      return leaf.children;
+    },
+    loadMore: async (root) &#x3D;&gt; {
+      // Get children count from root
+      const userParams &#x3D; {
+        UID_Person: this.orchestration.recipients ? MultiValue.FromString(this.orchestration.recipients.value).GetValues().join(&#x27;,&#x27;) : undefined,
+        ParentKey: &#x27;&#x27;,
+      };
+      const data &#x3D; await this.categoryApi.get({ StartIndex: root.children.length, ...userParams });
+      const children &#x3D; data.Data.map((datum) &#x3D;&gt; {
+        return {
+          entity: datum,
+          parent: root,
+          isSelected: false,
+          level: root.level + 1,
+        } as NewRequestCategoryNode;
+      });
+      root.children.push(...children);
+      return children;
+    },
+    search: async (params: CollectionLoadParameters) &#x3D;&gt; {
+      const userParams &#x3D; {
+        UID_Person: this.orchestration.recipients ? MultiValue.FromString(this.orchestration.recipients.value).GetValues().join(&#x27;,&#x27;) : undefined,
+      };
+      const response &#x3D; await this.categoryApi.get({ ParentKey: &#x27;&#x27;, ...params, ...userParams });
+      const searchNodes &#x3D; response.Data.map((datum) &#x3D;&gt; {
+        const node: NewRequestCategoryNode &#x3D; {
+          entity: datum,
+          isSelected: false,
+          level: 1,
+        };
+        return node;
+      });
+      const rootNode: NewRequestCategoryNode &#x3D; {
+        isSelected: true,
+        level: 0,
+        children: searchNodes
+      }
+      return { searchNodes, totalCount: response.totalCount, rootNode};
+    },
+    changeSelection: (data: NewRequestCategoryNode[], selectedNode: NewRequestCategoryNode) &#x3D;&gt; {
+      // Reset all other selections and set this one if its keys match
+      const key &#x3D; selectedNode?.entity ? selectedNode.entity.GetEntity().GetKeys()[0] : &#x27;&#x27;;
+      data.forEach((node) &#x3D;&gt; {
+        // Here we check if the node has an entity, if it does, compare to the key. If it doesn&#x27;t, check if the key is also empty
+        node.isSelected &#x3D; node?.entity ? node.entity.GetEntity().GetKeys()[0] &#x3D;&#x3D;&#x3D; key : key &#x3D;&#x3D;&#x3D; &#x27;&#x27;;
+      });
+      return data;
+    },
+  }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="83" class="link-to-prism">src/lib/new-request/new-request-product/new-request-product.component.ts:83</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="busy"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>busy</b></span>
+                        <a href="#busy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Busy</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="61" class="link-to-prism">src/lib/new-request/new-request-product/new-request-product.component.ts:61</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="categoryApi"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>categoryApi</b></span>
+                        <a href="#categoryApi"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/NewRequestCategoryApiService.html" target="_self" >NewRequestCategoryApiService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="213" class="link-to-prism">src/lib/new-request/new-request-product/new-request-product.component.ts:213</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="categorySideNavExpanded"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>categorySideNavExpanded</b></span>
+                        <a href="#categorySideNavExpanded"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="69" class="link-to-prism">src/lib/new-request/new-request-product/new-request-product.component.ts:69</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="categoryTreeControl"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>categoryTreeControl</b></span>
+                        <a href="#categoryTreeControl"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new FlatTreeControl&lt;NewRequestCategoryNode&gt;(
+    (leaf) &#x3D;&gt; leaf.level,
+    (leaf) &#x3D;&gt; leaf.entity.HasChildren.Column.GetValue()
+  )</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="79" class="link-to-prism">src/lib/new-request/new-request-product/new-request-product.component.ts:79</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="DisplayColumns"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>DisplayColumns</b></span>
+                        <a href="#DisplayColumns"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>DisplayColumns</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="74" class="link-to-prism">src/lib/new-request/new-request-product/new-request-product.component.ts:74</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="displayedProductColumns"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>displayedProductColumns</b></span>
+                        <a href="#displayedProductColumns"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>IClientProperty[]</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="75" class="link-to-prism">src/lib/new-request/new-request-product/new-request-product.component.ts:75</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="dst"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>dst</b></span>
+                        <a href="#dst"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>DataSourceToolbarComponent</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="70" class="link-to-prism">src/lib/new-request/new-request-product/new-request-product.component.ts:70</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="dstSettings"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>dstSettings</b></span>
+                        <a href="#dstSettings"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>DataSourceToolbarSettings</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="71" class="link-to-prism">src/lib/new-request/new-request-product/new-request-product.component.ts:71</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="dynamicDataSource"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>dynamicDataSource</b></span>
+                        <a href="#dynamicDataSource"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new DynamicDataSource&lt;NewRequestCategoryNode&gt;(this.categoryTreeControl, this.apiControls)</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="196" class="link-to-prism">src/lib/new-request/new-request-product/new-request-product.component.ts:196</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="hasChild"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>hasChild</b></span>
+                        <a href="#hasChild"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>() &#x3D;&gt; {...}</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="200" class="link-to-prism">src/lib/new-request/new-request-product/new-request-product.component.ts:200</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="includeChildCategories"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>includeChildCategories</b></span>
+                        <a href="#includeChildCategories"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="64" class="link-to-prism">src/lib/new-request/new-request-product/new-request-product.component.ts:64</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isLoading"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>isLoading</b></span>
+                        <a href="#isLoading"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>() &#x3D;&gt; {...}</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="198" class="link-to-prism">src/lib/new-request/new-request-product/new-request-product.component.ts:198</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="noDataText"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>noDataText</b></span>
+                        <a href="#noDataText"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;#LDS#No data&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="73" class="link-to-prism">src/lib/new-request/new-request-product/new-request-product.component.ts:73</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="orchestration"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>orchestration</b></span>
+                        <a href="#orchestration"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/NewRequestOrchestrationService.html" target="_self" >NewRequestOrchestrationService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="216" class="link-to-prism">src/lib/new-request/new-request-product/new-request-product.component.ts:216</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="productApi"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>productApi</b></span>
+                        <a href="#productApi"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/NewRequestProductApiService.html" target="_self" >NewRequestProductApiService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="214" class="link-to-prism">src/lib/new-request/new-request-product/new-request-product.component.ts:214</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="productNavigationState"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>productNavigationState</b></span>
+                        <a href="#productNavigationState"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/ServiceItemParameters.html" target="_self" >CollectionLoadParameters | ServiceItemParameters</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="72" class="link-to-prism">src/lib/new-request/new-request-product/new-request-product.component.ts:72</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="recipients"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>recipients</b></span>
+                        <a href="#recipients"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>IWriteValue&lt;string&gt;</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="76" class="link-to-prism">src/lib/new-request/new-request-product/new-request-product.component.ts:76</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="searchApi"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>searchApi</b></span>
+                        <a href="#searchApi"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>() &#x3D;&gt; {...}</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="203" class="link-to-prism">src/lib/new-request/new-request-product/new-request-product.component.ts:203</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="SelectedProductSource"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>SelectedProductSource</b></span>
+                        <a href="#SelectedProductSource"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>SelectedProductSource</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="68" class="link-to-prism">src/lib/new-request/new-request-product/new-request-product.component.ts:68</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectionService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>selectionService</b></span>
+                        <a href="#selectionService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/NewRequestSelectionService.html" target="_self" >NewRequestSelectionService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="215" class="link-to-prism">src/lib/new-request/new-request-product/new-request-product.component.ts:215</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="serviceCategoriesTotalCount"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>serviceCategoriesTotalCount</b></span>
+                        <a href="#serviceCategoriesTotalCount"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>-1</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="77" class="link-to-prism">src/lib/new-request/new-request-product/new-request-product.component.ts:77</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="subscriptions"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>subscriptions</b></span>
+                        <a href="#subscriptions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Subscription[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="62" class="link-to-prism">src/lib/new-request/new-request-product/new-request-product.component.ts:62</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { FlatTreeControl } from &#x27;@angular/cdk/tree&#x27;;
+import { ChangeDetectorRef, Component, OnDestroy, OnInit } from &#x27;@angular/core&#x27;;
+import { PortalServicecategories, PortalShopServiceitems } from &#x27;imx-api-qer&#x27;;
+import { CollectionLoadParameters, DisplayColumns, IClientProperty, IWriteValue, MultiValue } from &#x27;imx-qbm-dbts&#x27;;
+import { Busy, BusyService, DynamicDataSource, DynamicDataApiControls, DataSourceToolbarSettings, DataSourceToolbarComponent, ClassloggerService } from &#x27;qbm&#x27;;
+import { Subscription } from &#x27;rxjs/internal/Subscription&#x27;;
+import { NewRequestOrchestrationService } from &#x27;../new-request-orchestration.service&#x27;;
+import { NewRequestCategoryApiService } from &#x27;./new-request-category-api.service&#x27;;
+import { NewRequestProductApiService } from &#x27;./new-request-product-api.service&#x27;;
+import { ServiceItemParameters } from &#x27;./service-item-parameters&#x27;;
+import { from } from &#x27;rxjs&#x27;;
+import {
+  SelectedProductSource,
+} from &#x27;../new-request-selected-products/selected-product-item.interface&#x27;;
+import { ProductDetailsService } from &#x27;./product-details-sidesheet/product-details.service&#x27;;
+import { NewRequestSelectionService } from &#x27;../new-request-selection.service&#x27;;
+import { CurrentProductSource } from &#x27;../current-product-source&#x27;;
+
+export interface NewRequestCategoryNode {
+  isSelected?: boolean;
+  entity?: PortalServicecategories;
+  parent?: NewRequestCategoryNode;
+  children?: NewRequestCategoryNode[];
+  isLoading?: boolean;
+  level?: number;
+}
+
+@Component({
+  selector: &#x27;imx-new-request-product&#x27;,
+  templateUrl: &#x27;./new-request-product.component.html&#x27;,
+  styleUrls: [&#x27;./new-request-product.component.scss&#x27;],
+})
+export class NewRequestProductComponent implements OnInit, OnDestroy {
+  // #region Private
+  private busy: Busy;
+  private subscriptions: Subscription[] &#x3D; [];
+  private accProductGroup: string;
+  private includeChildCategories &#x3D; false;
+  // #endregion
+
+  // #region Public
+  public SelectedProductSource &#x3D; SelectedProductSource;
+  public categorySideNavExpanded &#x3D; true;
+  public dst: DataSourceToolbarComponent;
+  public dstSettings: DataSourceToolbarSettings;
+  public productNavigationState: CollectionLoadParameters | ServiceItemParameters;
+  public noDataText &#x3D; &#x27;#LDS#No data&#x27;;
+  public DisplayColumns &#x3D; DisplayColumns;
+  public displayedProductColumns: IClientProperty[];
+  public recipients: IWriteValue&lt;string&gt;;
+  public serviceCategoriesTotalCount &#x3D; -1;
+
+  public categoryTreeControl &#x3D; new FlatTreeControl&lt;NewRequestCategoryNode&gt;(
+    (leaf) &#x3D;&gt; leaf.level,
+    (leaf) &#x3D;&gt; leaf.entity.HasChildren.Column.GetValue()
+  );
+  public apiControls: DynamicDataApiControls&lt;NewRequestCategoryNode&gt; &#x3D; {
+    setup: async () &#x3D;&gt; {
+      // We only expect a single root node
+      const userParams &#x3D; {
+        UID_Person: this.orchestration.recipients ? MultiValue.FromString(this.orchestration.recipients.value).GetValues().join(&#x27;,&#x27;) : undefined,
+        ParentKey: &#x27;&#x27;,
+      };
+      const servicecategories &#x3D; await this.categoryApi.get(userParams);
+      this.serviceCategoriesTotalCount &#x3D; servicecategories?.totalCount;
+      const dstSettings: DataSourceToolbarSettings &#x3D; {
+        dataSource: servicecategories,
+        entitySchema: this.categoryApi.schema,
+        navigationState: {
+          StartIndex: 0,
+        },
+      };
+      this.orchestration.dstSettingsAllProducts &#x3D; this.dstSettings;
+
+      const children &#x3D; servicecategories.Data.map((datum) &#x3D;&gt; {
+        const node: NewRequestCategoryNode &#x3D; {
+          entity: datum,
+          isSelected: false,
+          level: 1,
+        };
+        return node;
+      });
+      const totalCount &#x3D; this.serviceCategoriesTotalCount;
+      this.orchestration.disableSearch &#x3D; totalCount &lt; 1;
+      const rootNode: NewRequestCategoryNode &#x3D; {
+        level: 0,
+        isSelected: true,
+        children: children,
+      };
+      const dstSettingsDynamicDatasource &#x3D; totalCount &gt; 0 ? dstSettings : undefined;
+      return { rootNode, dstSettings: dstSettingsDynamicDatasource, totalCount };
+    },
+    getChildren: async (leaf, onlyCheck?: boolean) &#x3D;&gt; {
+      if (leaf.children &amp;&amp; leaf.children.length &gt; 0) {
+        // No need to get children, we already have them
+        return leaf.children;
+      }
+      if (onlyCheck) {
+        // Stop here if we only want to see if a child exists, but not load
+        return [];
+      }
+      leaf.isLoading &#x3D; true;
+      const userParams &#x3D; {
+        UID_Person: this.orchestration.recipients ? MultiValue.FromString(this.orchestration.recipients.value).GetValues().join(&#x27;,&#x27;) : undefined,
+      };
+      if (!leaf.entity) {
+        return [];
+      }
+      const data &#x3D; await this.categoryApi.get({ ParentKey: leaf.entity.UID_AccProductGroup.Column.GetValue(), ...userParams });
+      leaf.isLoading &#x3D; false;
+      leaf.children &#x3D; data.Data.map((datum) &#x3D;&gt; {
+        return {
+          entity: datum,
+          parent: leaf,
+          isSelected: false,
+          level: leaf.level + 1,
+        } as NewRequestCategoryNode;
+      });
+      return leaf.children;
+    },
+    loadMore: async (root) &#x3D;&gt; {
+      // Get children count from root
+      const userParams &#x3D; {
+        UID_Person: this.orchestration.recipients ? MultiValue.FromString(this.orchestration.recipients.value).GetValues().join(&#x27;,&#x27;) : undefined,
+        ParentKey: &#x27;&#x27;,
+      };
+      const data &#x3D; await this.categoryApi.get({ StartIndex: root.children.length, ...userParams });
+      const children &#x3D; data.Data.map((datum) &#x3D;&gt; {
+        return {
+          entity: datum,
+          parent: root,
+          isSelected: false,
+          level: root.level + 1,
+        } as NewRequestCategoryNode;
+      });
+      root.children.push(...children);
+      return children;
+    },
+    search: async (params: CollectionLoadParameters) &#x3D;&gt; {
+      const userParams &#x3D; {
+        UID_Person: this.orchestration.recipients ? MultiValue.FromString(this.orchestration.recipients.value).GetValues().join(&#x27;,&#x27;) : undefined,
+      };
+      const response &#x3D; await this.categoryApi.get({ ParentKey: &#x27;&#x27;, ...params, ...userParams });
+      const searchNodes &#x3D; response.Data.map((datum) &#x3D;&gt; {
+        const node: NewRequestCategoryNode &#x3D; {
+          entity: datum,
+          isSelected: false,
+          level: 1,
+        };
+        return node;
+      });
+      const rootNode: NewRequestCategoryNode &#x3D; {
+        isSelected: true,
+        level: 0,
+        children: searchNodes
+      }
+      return { searchNodes, totalCount: response.totalCount, rootNode};
+    },
+    changeSelection: (data: NewRequestCategoryNode[], selectedNode: NewRequestCategoryNode) &#x3D;&gt; {
+      // Reset all other selections and set this one if its keys match
+      const key &#x3D; selectedNode?.entity ? selectedNode.entity.GetEntity().GetKeys()[0] : &#x27;&#x27;;
+      data.forEach((node) &#x3D;&gt; {
+        // Here we check if the node has an entity, if it does, compare to the key. If it doesn&#x27;t, check if the key is also empty
+        node.isSelected &#x3D; node?.entity ? node.entity.GetEntity().GetKeys()[0] &#x3D;&#x3D;&#x3D; key : key &#x3D;&#x3D;&#x3D; &#x27;&#x27;;
+      });
+      return data;
+    },
+  };
+
+  public dynamicDataSource &#x3D; new DynamicDataSource&lt;NewRequestCategoryNode&gt;(this.categoryTreeControl, this.apiControls);
+
+  public isLoading &#x3D; (node: NewRequestCategoryNode) &#x3D;&gt; node.isLoading;
+  // Here we can allow for the root to not be collapsable, but this breaks other functions like the &#x27;collapse all&#x27; button
+  public hasChild &#x3D; (_: number, node: NewRequestCategoryNode) &#x3D;&gt;
+    (node.children &amp;&amp; node.children.length &gt; 0) || node.entity?.HasChildren.Column.GetValue();
+
+  public searchApi &#x3D; () &#x3D;&gt; {
+    this.logger.trace(this, &#x27;Search API: NewRequestProductComponent&#x27;);
+    this.busy &#x3D; this.busyService.beginBusy();
+    this.orchestration.abortCall();
+    const parameters &#x3D; this.getCollectionLoadParameter();
+    return from(this.productApi.get(parameters));
+  };
+  // #endregion
+
+  constructor(
+    public readonly categoryApi: NewRequestCategoryApiService,
+    public readonly productApi: NewRequestProductApiService,
+    public readonly selectionService: NewRequestSelectionService,
+    public readonly orchestration: NewRequestOrchestrationService,
+    private readonly logger: ClassloggerService,
+    private readonly productDetailsService: ProductDetailsService,
+    private readonly cd: ChangeDetectorRef,
+    private readonly busyService: BusyService
+  ) {
+    this.orchestration.selectedView &#x3D; SelectedProductSource.AllProducts;
+    this.orchestration.searchApi$.next(this.searchApi);
+
+    this.displayedProductColumns &#x3D; [
+      this.productApi.entitySchema.Columns[DisplayColumns.DISPLAY_PROPERTYNAME],
+      this.productApi.entitySchema.Columns.ServiceCategoryFullPath,
+      this.productApi.entitySchema.Columns.Description,
+      this.productApi.entitySchema.Columns.OrderableStatus,
+    ];
+
+    //#region Subscriptions
+    this.subscriptions.push(this.orchestration.currentProductSource$.subscribe((source: CurrentProductSource) &#x3D;&gt; {
+      if (source?.view &#x3D;&#x3D;&#x3D; SelectedProductSource.AllProducts) {
+        this.dst &#x3D; source.dst;
+        this.dst.busyService &#x3D; this.busyService;
+        this.dst.clearSearch();
+        this.orchestration.dstSettingsAllProducts &#x3D; this.dstSettings;
+
+        this.subscriptions.push(
+          this.dst.searchResults$.subscribe((data) &#x3D;&gt; {
+            if (data) {
+              this.dstSettings &#x3D; {
+                dataSource: data,
+                displayedColumns: this.displayedProductColumns,
+                entitySchema: this.productApi.entitySchema,
+                navigationState: this.productNavigationState,
+              };
+              this.orchestration.dstSettingsAllProducts &#x3D; this.dstSettings;
+            }
+            this.busy.endBusy(true);
+          })
+        );
+      }
+    }));
+
+    this.subscriptions.push(
+      this.orchestration.navigationState$.subscribe(async (navigation: CollectionLoadParameters | ServiceItemParameters) &#x3D;&gt; {
+        this.productNavigationState &#x3D; navigation;
+        this.updateDisplayedColumns(this.displayedProductColumns);
+        await this.getProductData(true);
+      })
+    );
+
+    this.subscriptions.push(
+      this.orchestration.includeChildCategories$.subscribe(async (includeChilds: boolean) &#x3D;&gt; {
+        if (this.includeChildCategories !&#x3D; includeChilds) {
+          this.includeChildCategories &#x3D; includeChilds;
+          await this.getProductData();
+        }
+      })
+    );
+
+    this.subscriptions.push(this.selectionService.selectedProducts$.subscribe(() &#x3D;&gt; {
+      this.orchestration.preselectBySource(SelectedProductSource.AllProducts, this.dst);
+    }));
+
+    this.subscriptions.push(this.selectionService.selectedProductsCleared$.subscribe(() &#x3D;&gt; this.dst?.clearSelection()));
+
+    //#endregion
+  }
+
+  public async ngOnInit(): Promise&lt;void&gt; {
+    this.productNavigationState &#x3D; { StartIndex: 0 };
+    this.orchestration.selectedCategory &#x3D; null;
+    this.updateDisplayedColumns(this.displayedProductColumns);
+    this.subscriptions.push(this.orchestration.recipients$.subscribe(async (recipients: IWriteValue&lt;string&gt;) &#x3D;&gt; {
+      this.recipients &#x3D; recipients;
+      // if the recipients changes, update the service categories
+      await this.dynamicDataSource.setup(true);
+    }));
+
+  }
+
+  public ngOnDestroy(): void {
+    this.subscriptions.forEach((subscription: Subscription) &#x3D;&gt; subscription.unsubscribe());
+  }
+
+  public categoryObserveExpanded(expanded: boolean): void {
+    this.categorySideNavExpanded &#x3D; !expanded;
+  }
+
+  public categorySelectedNode(node: NewRequestCategoryNode): void {
+    this.productNavigationState.StartIndex &#x3D; 0;
+
+    if (node.entity) {
+      // This is a category
+      let category &#x3D; node?.entity?.GetEntity();
+      this.orchestration.selectedCategory &#x3D; node?.entity;
+      // this.orchestration.includeChildCategories &#x3D; this.includeChildCategories;
+      this.accProductGroup &#x3D; category.GetKeys()[0];
+      this.getProductData();
+    } else {
+      // This is the root node and it has no entity
+      this.orchestration.selectedCategory &#x3D; null;
+      this.includeChildCategories &#x3D; false;
+      // this.orchestration.includeChildCategories &#x3D; this.includeChildCategories;
+      this.accProductGroup &#x3D; null;
+      this.getProductData();
+    }
+
+    this.orchestration.includeChildCategories &#x3D; this.includeChildCategories;
+  }
+
+  public onSelectionChanged(items: PortalShopServiceitems[]): void {
+    this.selectionService.addProducts(items, SelectedProductSource.AllProducts);
+  }
+
+  public async onRowSelected(item: PortalShopServiceitems): Promise&lt;void&gt; {
+    this.productDetailsService.showProductDetails(item, this.recipients);
+  }
+
+  private updateDisplayedColumns(displayedColumns: IClientProperty[]): void {
+    if (this.dstSettings) {
+      this.dstSettings.displayedColumns &#x3D; displayedColumns;
+      this.orchestration.dstSettingsAllProducts &#x3D; this.dstSettings;
+    }
+  }
+
+  private async getProductData(loadPreselection: boolean &#x3D; false): Promise&lt;void&gt; {
+    const busy &#x3D; this.busyService.beginBusy();
+    try {
+      const parameters &#x3D; this.getCollectionLoadParameter();
+      let data &#x3D; await this.productApi.get(parameters);
+
+      if (data) {
+        this.dstSettings &#x3D; {
+          dataSource: data,
+          displayedColumns: this.displayedProductColumns,
+          entitySchema: this.productApi.entitySchema,
+          navigationState: this.productNavigationState,
+        };
+        this.orchestration.dstSettingsAllProducts &#x3D; this.dstSettings;
+
+        if (loadPreselection) {
+          this.orchestration.preselectBySource(SelectedProductSource.AllProducts, this.dst);
+        }
+
+        this.cd.detectChanges();
+      }
+    } finally {
+      busy.endBusy();
+    }
+  }
+
+  private getCollectionLoadParameter(): CollectionLoadParameters | ServiceItemParameters {
+    let parameters: CollectionLoadParameters | ServiceItemParameters &#x3D; {
+      ...this.productNavigationState,
+      UID_Person: this.orchestration.recipients ? MultiValue.FromString(this.orchestration.recipients.value).GetValues().join(&#x27;,&#x27;) : undefined,
+    };
+
+    if (this.accProductGroup) {
+      parameters.UID_AccProductGroup &#x3D; this.accProductGroup;
+    }
+
+    if (this.accProductGroup &amp;&amp; this.includeChildCategories) {
+      parameters.IncludeChildCategories &#x3D; this.includeChildCategories;
+    }
+    return parameters;
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;ng-container *ngIf&#x3D;&quot;serviceCategoriesTotalCount &gt; 0 || serviceCategoriesTotalCount &#x3D;&#x3D;&#x3D; -1; else noAccessToServiceCategory&quot;&gt;
+  &lt;imx-sidenav-tree
+    [dynamicDataSource]&#x3D;&quot;dynamicDataSource&quot;
+    [treeControl]&#x3D;&quot;categoryTreeControl&quot;
+    [hasChild]&#x3D;&quot;hasChild&quot;
+    [isLoading]&#x3D;&quot;isLoading&quot;
+    [headerText]&#x3D;&quot;&#x27;#LDS#Heading Service Categories&#x27; | translate&quot;
+    [nodeContent]&#x3D;&quot;categoryNodeContent&quot;
+    [expandWidth]&#x3D;&quot;&#x27;600px&#x27;&quot;
+    [sideNavExpanded]&#x3D;&quot;categorySideNavExpanded&quot;
+    [manageExpandedExternally]&#x3D;&quot;true&quot;
+    (sideNavExpandedChange)&#x3D;&quot;categoryObserveExpanded($event)&quot;
+    (selectedNode)&#x3D;&quot;categorySelectedNode($event)&quot;
+  &gt;&lt;/imx-sidenav-tree&gt;
+&lt;/ng-container&gt;
+&lt;ng-template #categoryNodeContent let-node let-selected&#x3D;&quot;selected&quot;&gt;
+  &lt;div class&#x3D;&quot;imx-tree-root&quot; [ngClass]&#x3D;&quot;{&#x27;imx-tree-root--selected&#x27;: selected}&quot;&gt;
+    &lt;img class&#x3D;&quot;image-category&quot; *ngIf&#x3D;&quot;node?.entity?.ImageRef?.value?.length &gt; 0; else noImage&quot; [src]&#x3D;&quot;productDetailsService.getProductImage(node.entity)&quot; /&gt;
+    &lt;ng-template #noImage&gt;
+      &lt;eui-icon icon&#x3D;&quot;folder&quot; class&#x3D;&quot;colored-icon&quot;&gt;&lt;/eui-icon&gt;
+    &lt;/ng-template&gt;
+    &amp;nbsp;&amp;nbsp;
+    &lt;span *ngIf&#x3D;&quot;node.entity&quot;&gt;
+      {{ node.entity.GetEntity().GetDisplay() }}
+    &lt;/span&gt;
+    &lt;span *ngIf&#x3D;&quot;!node.entity&quot;&gt;
+      {{&#x27;#LDS#Root category (all products)&#x27; | translate}}
+    &lt;/span&gt;
+  &lt;/div&gt;
+&lt;/ng-template&gt;
+&lt;mat-card class&#x3D;&quot;imx-card-container&quot; *ngIf&#x3D;&quot;serviceCategoriesTotalCount &gt; 0&quot; [ngClass]&#x3D;&quot;{&#x27;imx-card-container-wide&#x27;: !categorySideNavExpanded}&quot;&gt;
+  &lt;imx-data-table
+    *ngIf&#x3D;&quot;dst&quot;
+    [dst]&#x3D;&quot;dst&quot;
+    [detailViewVisible]&#x3D;&quot;false&quot;
+    [selectable]&#x3D;&quot;true&quot;
+    [noDataText]&#x3D;&quot;noDataText&quot;
+    mode&#x3D;&quot;manual&quot;
+    fallbackIcon&#x3D;&quot;DefaultTypeNameImage&quot;
+    (selectionChanged)&#x3D;&quot;onSelectionChanged($event)&quot;
+    (highlightedEntityChanged)&#x3D;&quot;onRowSelected($event)&quot;
+    [showSelectedItemsMenu]&#x3D;&quot;false&quot;
+  &gt;
+    &lt;imx-data-table-column [entityColumn]&#x3D;&quot;productApi.entitySchema?.Columns[DisplayColumns.DISPLAY_PROPERTYNAME]&quot; columnLabel&#x3D;&quot;{{ &#x27;#LDS#Product&#x27; | translate }}&quot;&gt;
+      &lt;ng-template let-prod&gt;
+        &lt;div class&#x3D;&quot;imx-request-col-image&quot;&gt;
+          &lt;img *ngIf&#x3D;&quot;productDetailsService.getProductImage(prod); else noImage&quot; [src]&#x3D;&quot;productDetailsService.getProductImage(prod)&quot; /&gt;
+          &lt;ng-template #noImage&gt;
+            &lt;eui-icon icon&#x3D;&quot;application&quot; class&#x3D;&quot;larger-icon colored-icon&quot;&gt;&lt;/eui-icon&gt;
+          &lt;/ng-template&gt;
+          &amp;nbsp;&amp;nbsp;
+          &lt;span class&#x3D;&quot;imx-request-col-display&quot;  [matTooltip]&#x3D;&quot;prod.GetEntity()?.GetDisplay()&quot;&gt;{{ prod.GetEntity()?.GetDisplay() }} &lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/ng-template&gt;
+    &lt;/imx-data-table-column&gt;
+    &lt;imx-data-table-column [entityColumn]&#x3D;&quot;productApi.entitySchema?.Columns[&#x27;ServiceCategoryFullPath&#x27;]&quot;&gt;
+      &lt;ng-template let-prod&gt;
+        &lt;div class&#x3D;&quot;imx-request-col-text&quot; [matTooltip]&#x3D;&quot;prod.ServiceCategoryFullPath?.Column.GetDisplayValue()&quot;&gt;
+          {{ prod.ServiceCategoryFullPath?.Column.GetDisplayValue() }}
+        &lt;/div&gt;
+      &lt;/ng-template&gt;
+    &lt;/imx-data-table-column&gt;
+    &lt;imx-data-table-column [entityColumn]&#x3D;&quot;productApi.entitySchema?.Columns[&#x27;Description&#x27;]&quot;&gt;
+      &lt;ng-template let-prod&gt;
+        &lt;div class&#x3D;&quot;imx-request-col-text imx-request-col-text-long&quot; [matTooltip]&#x3D;&quot;prod.GetEntity().GetColumn(&#x27;Description&#x27;).GetDisplayValue()&quot;&gt;
+          {{ prod.GetEntity().GetColumn(&#x27;Description&#x27;).GetDisplayValue() }}
+        &lt;/div&gt;
+      &lt;/ng-template&gt;
+    &lt;/imx-data-table-column&gt;
+    &lt;imx-data-table-column [entityColumn]&#x3D;&quot;productApi.entitySchema?.Columns[&#x27;OrderableStatus&#x27;]&quot; columnLabel&#x3D;&quot;{{ &#x27;#LDS#Status&#x27; | translate }}&quot; align&#x3D;&quot;center&quot;&gt;
+      &lt;ng-template let-prod&gt;
+        &lt;div *ngIf&#x3D;&quot;productDetailsService.valueContains(prod.OrderableStatus?.value, [&#x27;PERSONHASOBJECT&#x27;, &#x27;PERSONHASASSIGNMENTORDER&#x27;, &#x27;ASSIGNED&#x27;])&quot; class&#x3D;&quot;imx-request-col-status&quot;&gt;
+          &lt;eui-icon icon&#x3D;&quot;approvals&quot; [matTooltip]&#x3D;&quot;&#x27;#LDS#This product has already been assigned to {0}.&#x27; | translate | ldsReplace: recipients.Column.GetDisplayValue()&quot;&gt;&lt;/eui-icon&gt;
+        &lt;/div&gt;
+        &lt;div *ngIf&#x3D;&quot;productDetailsService.valueContains(prod.OrderableStatus?.value, &#x27;ORDER&#x27;)&quot; class&#x3D;&quot;imx-request-col-status&quot;&gt;
+          &lt;eui-icon icon&#x3D;&quot;request&quot; [matTooltip]&#x3D;&quot;&#x27;#LDS#This product has already been requested.&#x27; | translate&quot;&gt;&lt;/eui-icon&gt;
+        &lt;/div&gt;
+        &lt;div *ngIf&#x3D;&quot;productDetailsService.valueContains(prod.OrderableStatus?.value, &#x27;NOTORDERABLE&#x27;)&quot; class&#x3D;&quot;imx-request-col-status&quot;&gt;
+          &lt;eui-icon icon&#x3D;&quot;error&quot; [matTooltip]&#x3D;&quot;&#x27;#LDS#This product cannot currently be requested.&#x27; | translate&quot;&gt;&lt;/eui-icon&gt;
+        &lt;/div&gt;
+        &lt;div *ngIf&#x3D;&quot;productDetailsService.valueContains(prod.OrderableStatus?.value, &#x27;CART&#x27;)&quot; class&#x3D;&quot;imx-request-col-status&quot;&gt;
+          &lt;eui-icon icon&#x3D;&quot;cart&quot; [matTooltip]&#x3D;&quot;&#x27;#LDS#This product is already in your shopping cart.&#x27; | translate&quot;&gt;&lt;/eui-icon&gt;
+        &lt;/div&gt;
+      &lt;/ng-template&gt;
+    &lt;/imx-data-table-column&gt;
+  &lt;/imx-data-table&gt;
+  &lt;imx-data-source-paginator *ngIf&#x3D;&quot;dst&quot; [dst]&#x3D;&quot;dst&quot;&gt;&lt;/imx-data-source-paginator&gt;
+&lt;/mat-card&gt;
+
+&lt;!-- Template if the new request page is not accessible for the current recipient --&gt;
+&lt;ng-template #noAccessToServiceCategory&gt;
+  &lt;div class&#x3D;&quot;imx-no-accessible-servicecategories&quot;&gt;
+    &lt;eui-icon icon&#x3D;&quot;table&quot;&gt;&lt;/eui-icon&gt;
+    &lt;p&gt;{{ &#x27;#LDS#The currently selected recipient has no access to any service category.&#x27; | translate }}&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/ng-template&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="styleData">
+                <p class="comment">
+                    <code>./new-request-product.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">@import &#x27;@elemental-ui/core/src/styles/_eui_palette.scss&#x27;;
+@import &#x27;../new-request-global.scss&#x27;;
+
+@include Layout-Styles;
+@include Table-Styles;
+
+:host {
+  .imx-tree-root {
+    display: flex;
+    align-items: center;
+  }
+
+  .imx-no-accessible-servicecategories {
+    display: flex;
+    margin: 20px 0;
+    flex: 1 1 auto;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    .eui-icon {
+      font-size: 100px;
+    }
+
+    p {
+      margin: 0;
+      font-size: 18px;
+    }
+  }
+  .imx-card-container{
+    imx-data-table{
+      .imx-request-col-text, .imx-request-col-display{
+        display:block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        line-height: inherit;
+      }
+      .imx-request-col-text{
+        max-width: 300px;
+      }
+      .imx-request-col-text-long{
+        max-width: 400px;
+      }
+      .imx-request-col-display{
+        max-width: 350px;
+      }
+    }
+  }
+  .imx-card-container-wide{
+    imx-data-table{
+      .imx-request-col-text, .imx-request-col-display{
+        max-width: 400px;
+      }
+      .imx-request-col-text-long{
+        max-width: 800px;
+      }
+    }
+  }
+}
+
+// Theming
+:host {
+  .imx-tree-root--selected &gt; .colored-icon {
+    color: $color-orange-60;
+  }
+
+  .imx-no-accessible-servicecategories {
+    .eui-icon {
+      color: $color-gray-10;
+    }
+
+    p {
+      color: $color-gray-50;
+    }
+  }
+}
+
+
+.eui-dark-theme {
+  :host {
+    .imx-tree-root--selected &gt; .colored-icon {
+      color: $color-orange-40;
+    }
+
+    .imx-no-accessible-servicecategories {
+      .eui-icon {
+        color: $color-gray-20;
+      }
+
+      p {
+        color: $color-gray-10;
+      }
+    }
+  }
+}
+
+.eui-contrast-theme {
+  :host {
+    .imx-tree-root--selected &gt; .colored-icon {
+      color: $color-orange-40;
+    }
+
+    .imx-no-accessible-servicecategories {
+      .eui-icon {
+        color: $color-gray-10;
+      }
+
+      p {
+        color: $color-gray-0;
+      }
+    }
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><ng-container *ngIf="serviceCategoriesTotalCount > 0 || serviceCategoriesTotalCount === -1; else noAccessToServiceCategory">  <imx-sidenav-tree    [dynamicDataSource]="dynamicDataSource"    [treeControl]="categoryTreeControl"    [hasChild]="hasChild"    [isLoading]="isLoading"    [headerText]="\'#LDS#Heading Service Categories\' | translate"    [nodeContent]="categoryNodeContent"    [expandWidth]="\'600px\'"    [sideNavExpanded]="categorySideNavExpanded"    [manageExpandedExternally]="true"    (sideNavExpandedChange)="categoryObserveExpanded($event)"    (selectedNode)="categorySelectedNode($event)"  ></imx-sidenav-tree></ng-container><ng-template #categoryNodeContent let-node let-selected="selected">  <div class="imx-tree-root" [ngClass]="{\'imx-tree-root--selected\': selected}">    <img class="image-category" *ngIf="node?.entity?.ImageRef?.value?.length > 0; else noImage" [src]="productDetailsService.getProductImage(node.entity)" />    <ng-template #noImage>      <eui-icon icon="folder" class="colored-icon"></eui-icon>    </ng-template>    &nbsp;&nbsp;    <span *ngIf="node.entity">      {{ node.entity.GetEntity().GetDisplay() }}    </span>    <span *ngIf="!node.entity">      {{\'#LDS#Root category (all products)\' | translate}}    </span>  </div></ng-template><mat-card class="imx-card-container" *ngIf="serviceCategoriesTotalCount > 0" [ngClass]="{\'imx-card-container-wide\': !categorySideNavExpanded}">  <imx-data-table    *ngIf="dst"    [dst]="dst"    [detailViewVisible]="false"    [selectable]="true"    [noDataText]="noDataText"    mode="manual"    fallbackIcon="DefaultTypeNameImage"    (selectionChanged)="onSelectionChanged($event)"    (highlightedEntityChanged)="onRowSelected($event)"    [showSelectedItemsMenu]="false"  >    <imx-data-table-column [entityColumn]="productApi.entitySchema?.Columns[DisplayColumns.DISPLAY_PROPERTYNAME]" columnLabel="{{ \'#LDS#Product\' | translate }}">      <ng-template let-prod>        <div class="imx-request-col-image">          <img *ngIf="productDetailsService.getProductImage(prod); else noImage" [src]="productDetailsService.getProductImage(prod)" />          <ng-template #noImage>            <eui-icon icon="application" class="larger-icon colored-icon"></eui-icon>          </ng-template>          &nbsp;&nbsp;          <span class="imx-request-col-display"  [matTooltip]="prod.GetEntity()?.GetDisplay()">{{ prod.GetEntity()?.GetDisplay() }} </span>        </div>      </ng-template>    </imx-data-table-column>    <imx-data-table-column [entityColumn]="productApi.entitySchema?.Columns[\'ServiceCategoryFullPath\']">      <ng-template let-prod>        <div class="imx-request-col-text" [matTooltip]="prod.ServiceCategoryFullPath?.Column.GetDisplayValue()">          {{ prod.ServiceCategoryFullPath?.Column.GetDisplayValue() }}        </div>      </ng-template>    </imx-data-table-column>    <imx-data-table-column [entityColumn]="productApi.entitySchema?.Columns[\'Description\']">      <ng-template let-prod>        <div class="imx-request-col-text imx-request-col-text-long" [matTooltip]="prod.GetEntity().GetColumn(\'Description\').GetDisplayValue()">          {{ prod.GetEntity().GetColumn(\'Description\').GetDisplayValue() }}        </div>      </ng-template>    </imx-data-table-column>    <imx-data-table-column [entityColumn]="productApi.entitySchema?.Columns[\'OrderableStatus\']" columnLabel="{{ \'#LDS#Status\' | translate }}" align="center">      <ng-template let-prod>        <div *ngIf="productDetailsService.valueContains(prod.OrderableStatus?.value, [\'PERSONHASOBJECT\', \'PERSONHASASSIGNMENTORDER\', \'ASSIGNED\'])" class="imx-request-col-status">          <eui-icon icon="approvals" [matTooltip]="\'#LDS#This product has already been assigned to {0}.\' | translate | ldsReplace: recipients.Column.GetDisplayValue()"></eui-icon>        </div>        <div *ngIf="productDetailsService.valueContains(prod.OrderableStatus?.value, \'ORDER\')" class="imx-request-col-status">          <eui-icon icon="request" [matTooltip]="\'#LDS#This product has already been requested.\' | translate"></eui-icon>        </div>        <div *ngIf="productDetailsService.valueContains(prod.OrderableStatus?.value, \'NOTORDERABLE\')" class="imx-request-col-status">          <eui-icon icon="error" [matTooltip]="\'#LDS#This product cannot currently be requested.\' | translate"></eui-icon>        </div>        <div *ngIf="productDetailsService.valueContains(prod.OrderableStatus?.value, \'CART\')" class="imx-request-col-status">          <eui-icon icon="cart" [matTooltip]="\'#LDS#This product is already in your shopping cart.\' | translate"></eui-icon>        </div>      </ng-template>    </imx-data-table-column>  </imx-data-table>  <imx-data-source-paginator *ngIf="dst" [dst]="dst"></imx-data-source-paginator></mat-card><!-- Template if the new request page is not accessible for the current recipient --><ng-template #noAccessToServiceCategory>  <div class="imx-no-accessible-servicecategories">    <eui-icon icon="table"></eui-icon>    <p>{{ \'#LDS#The currently selected recipient has no access to any service category.\' | translate }}</p>  </div></ng-template></div>'
+    var COMPONENTS = [{'name': 'AddressbookComponent', 'selector': 'imx-addressbook'},{'name': 'AddressbookDetailComponent', 'selector': 'imx-addressbook-detail'},{'name': 'AnswerQuestionsComponent', 'selector': ''},{'name': 'ApplicationDetailsComponent', 'selector': 'imx-application-details'},{'name': 'ApplicationDialogComponent', 'selector': 'imx-application-dialog'},{'name': 'ApprovalHistoryComponent', 'selector': 'imx-approval-history'},{'name': 'ApprovalLevelFormComponent', 'selector': 'imx-approval-level-form'},{'name': 'ApprovalsComponent', 'selector': 'imx-itshop-approvals'},{'name': 'ApprovalsSidesheetComponent', 'selector': 'imx-approvals-sidesheet'},{'name': 'ApprovalsTableComponent', 'selector': 'imx-approvals-table'},{'name': 'ApprovalStepFormComponent', 'selector': 'imx-approval-step-form'},{'name': 'ApprovalWorkflowEditComponent', 'selector': 'imx-approval-workflow-edit'},{'name': 'ApprovalWorkflowEditInfoComponent', 'selector': 'imx-approval-workflow-edit-info'},{'name': 'ApprovalWorkflowFormComponent', 'selector': 'imx-approval-workflow-form'},{'name': 'ApprovalWorkflowHomeComponent', 'selector': 'imx-approval-workflow-home'},{'name': 'ArchivedRequestsComponent', 'selector': ''},{'name': 'AssignmentsComponent', 'selector': 'imx-assignments'},{'name': 'BadgeTileComponent', 'selector': 'imx-badge-tile'},{'name': 'BaseViewerComponent', 'selector': ''},{'name': 'BlockDetailSidesheetComponent', 'selector': 'imx-block-detail-sidesheet'},{'name': 'BusinessOwnerAddOnTileComponent', 'selector': 'imx-businessowner-addon-tile'},{'name': 'BusinessOwnerChartSummaryComponent', 'selector': 'imx-businessowner-chartsummary'},{'name': 'BusinessOwnerOverviewTileComponent', 'selector': 'imx-businessowner-overview-tile'},{'name': 'CartItemDisplayComponent', 'selector': 'imx-cart-item-display'},{'name': 'CartItemEditComponent', 'selector': 'imx-cart-item-edit'},{'name': 'CartItemsComponent', 'selector': 'imx-cart-items'},{'name': 'CartItemValidationOverviewComponent', 'selector': 'imx-cart-item-validation-overview'},{'name': 'CategoryTreeComponent', 'selector': 'imx-category-tree'},{'name': 'ChartsSidesheetComponent', 'selector': 'imx-charts-sidesheet'},{'name': 'ChartTableComponent', 'selector': 'imx-chart-table'},{'name': 'ChartTileComponent', 'selector': 'imx-chart-tile'},{'name': 'CheckPasswordsComponent', 'selector': ''},{'name': 'CompareComponent', 'selector': ''},{'name': 'CompareItemComponent', 'selector': 'imx-role-compareitem'},{'name': 'ConfirmCartSubmitDialog', 'selector': 'imx-confirm-cart-submit'},{'name': 'ContainerDomComponent', 'selector': 'imx-container-dom'},{'name': 'CreateNewDeviceComponent', 'selector': 'imx-create-new-device'},{'name': 'CreateNewIdentityComponent', 'selector': 'imx-create-new-identity'},{'name': 'DataExplorerIdentitiesComponent', 'selector': 'imx-data-explorer-identities'},{'name': 'DataExplorerViewComponent', 'selector': ''},{'name': 'DecisionHistoryComponent', 'selector': 'imx-decision-history'},{'name': 'DecisionReasonComponent', 'selector': 'imx-decision-reason'},{'name': 'DefaultCartItemDisplayComponent', 'selector': ''},{'name': 'DefaultRequestDisplayComponent', 'selector': ''},{'name': 'DelegationComponent', 'selector': ''},{'name': 'DetailViewerComponent', 'selector': 'imx-detail-viewer'},{'name': 'DiscreteLegendComponent', 'selector': 'imx-discrete-legend'},{'name': 'DuplicateCheckComponent', 'selector': 'imx-duplicate-check'},{'name': 'DuplicatePatternItemsComponent', 'selector': 'imx-duplicate-pattern-items'},{'name': 'DuplicatesSidesheetComponent', 'selector': ''},{'name': 'DynamicExclusionDialogComponent', 'selector': 'imx-dynamic-exclusion-dialog'},{'name': 'DynamicRoleComponent', 'selector': 'imx-dynamic-group'},{'name': 'EdgeDomComponent', 'selector': 'imx-edge-dom'},{'name': 'EntitlementSelectorComponent', 'selector': 'imx-entitlement-selector'},{'name': 'ExcludedMembershipsComponent', 'selector': 'imx-excluded-memberships'},{'name': 'ExclusionCheckComponent', 'selector': 'imx-exclusion-check'},{'name': 'FavoritesTabComponent', 'selector': 'imx-favorites-tab'},{'name': 'HeatmapChartComponent', 'selector': 'imx-heatmap-chart'},{'name': 'HeatmapSidesheetComponent', 'selector': 'imx-heatmap-sidesheet'},{'name': 'HeatmapTileComponent', 'selector': 'imx-heatmap-tile'},{'name': 'HeatmapVisualComponent', 'selector': 'imx-heatmap-visual'},{'name': 'HistoryFilterComponent', 'selector': 'imx-history-filter'},{'name': 'IconTileComponent', 'selector': 'imx-icon-tile'},{'name': 'IdentityComponent', 'selector': 'imx-orgchart-identity'},{'name': 'IdentityRoleMembershipsComponent', 'selector': ''},{'name': 'IdentitySelectComponent', 'selector': 'imx-identity-select'},{'name': 'IdentitySidesheetComponent', 'selector': 'imx-identity-sidesheet'},{'name': 'InquiriesComponent', 'selector': 'imx-inquiries'},{'name': 'ItshopPatternAddProductsComponent', 'selector': 'imx-itshop-pattern-add-products'},{'name': 'ItshopPatternComponent', 'selector': 'imx-itshop-pattern'},{'name': 'ItshopPatternCreateSidesheetComponent', 'selector': 'imx-itshop-pattern-create-sidesheet'},{'name': 'ItshopPatternItemEditComponent', 'selector': 'imx-itshop-pattern-item-edit'},{'name': 'ItshopPatternSidesheetComponent', 'selector': 'imx-itshop-pattern-sidesheet'},{'name': 'MailSubscriptionsComponent', 'selector': 'imx-mail-subscriptions'},{'name': 'MemberSelectorComponent', 'selector': ''},{'name': 'MembershipsChooseIdentitiesComponent', 'selector': 'imx-memberships-choose-identities'},{'name': 'MyResponsibilitiesViewComponent', 'selector': 'imx-my-responsibilities-view'},{'name': 'NewRequestComponent', 'selector': 'imx-new-request'},{'name': 'NewRequestContentComponent', 'selector': 'imx-new-request-content'},{'name': 'NewRequestHeaderComponent', 'selector': 'imx-new-request-header'},{'name': 'NewRequestHeaderToolbarComponent', 'selector': 'imx-new-request-header-toolbar'},{'name': 'NewRequestPeerGroupComponent', 'selector': 'imx-new-request-peer-group'},{'name': 'NewRequestProductBundleComponent', 'selector': 'imx-new-request-product-bundle'},{'name': 'NewRequestProductComponent', 'selector': 'imx-new-request-product'},{'name': 'NewRequestRecipientsComponent', 'selector': 'imx-new-request-recipients'},{'name': 'NewRequestReferenceUserCardComponent', 'selector': 'imx-new-request-reference-user-card'},{'name': 'NewRequestReferenceUserComponent', 'selector': 'imx-new-request-reference-user'},{'name': 'NewRequestSelectedProductsComponent', 'selector': 'imx-new-request-selected-products'},{'name': 'NewRoleComponent', 'selector': 'imx-new-role'},{'name': 'NodeDomComponent', 'selector': 'imx-node-dom'},{'name': 'NonRequestableItemsComponent', 'selector': 'imx-non-requestable-items'},{'name': 'NotificationTileComponent', 'selector': 'imx-notification-tile'},{'name': 'NotRequestableMembershipsComponent', 'selector': 'imx-not-requestable-memberships'},{'name': 'ObjectHyperviewComponent', 'selector': 'imx-object-hyperview'},{'name': 'ObjectOverviewPersonComponent', 'selector': ''},{'name': 'OptionalItemsSidesheetComponent', 'selector': 'imx-optional-items-sidesheet'},{'name': 'OrderForAdditionalUsersComponent', 'selector': 'imx-order-for-additional-users'},{'name': 'OrgChartComponent', 'selector': 'imx-orgchart'},{'name': 'OwnerControlComponent', 'selector': 'imx-owner-control'},{'name': 'PasscodeLoginComponent', 'selector': ''},{'name': 'PasscodeViewerComponent', 'selector': 'imx-passcode-viewer'},{'name': 'PasswordDashboardComponent', 'selector': ''},{'name': 'PasswordQueryComponent', 'selector': 'imx-password-query'},{'name': 'PasswordQuestionsComponent', 'selector': 'imx-password-questions'},{'name': 'PasswordQuestionsSidesheetComponent', 'selector': 'imx-password-questions-sidesheet'},{'name': 'PasswordResetComponent', 'selector': 'imx-password-reset'},{'name': 'PatternDetailsSidesheetComponent', 'selector': 'imx-pattern-details-sidesheet'},{'name': 'PatternItemListComponent', 'selector': 'imx-pattern-item-list'},{'name': 'PeerGroupComponent', 'selector': 'imx-peer-group'},{'name': 'PeerGroupDiscardSelectedComponent', 'selector': 'imx-peer-group-discard-selected'},{'name': 'PointStatVisualComponent', 'selector': 'imx-point-stat-visual'},{'name': 'PrimaryMembershipsComponent', 'selector': 'imx-primary-memberships'},{'name': 'ProductBundleItemsComponent', 'selector': 'imx-product-bundle-items'},{'name': 'ProductBundleListComponent', 'selector': 'imx-product-bundle-list'},{'name': 'ProductDependencyCheckComponent', 'selector': 'imx-product-dependency-check'},{'name': 'ProductDetailsSidesheetComponent', 'selector': 'imx-product-details-sidesheet'},{'name': 'ProductDetailsSidesheetComponent', 'selector': 'imx-product-details-sidesheet'},{'name': 'ProductEntitlementsComponent', 'selector': 'imx-product-entitlements'},{'name': 'ProductEntitlementsComponent', 'selector': 'imx-product-entitlements'},{'name': 'ProductSelectionComponent', 'selector': 'imx-product-selection'},{'name': 'ProfileComponent', 'selector': ''},{'name': 'QaLoginComponent', 'selector': ''},{'name': 'QpmIntegrationComponent', 'selector': ''},{'name': 'QueryPersonComponent', 'selector': 'imx-itshop-queryperson'},{'name': 'ReasonSidesheetComponent', 'selector': 'imx-reason-sidesheet'},{'name': 'RecommendationSidesheetComponent', 'selector': 'imx-recommendation-sidesheet'},{'name': 'RelatedApplicationMenuItemComponent', 'selector': 'imx-related-application-menu-item'},{'name': 'RelatedApplicationsComponent', 'selector': 'imx-related-applications'},{'name': 'RelatedApplicationsSidesheetComponent', 'selector': 'imx-related-applications-sidesheet'},{'name': 'RemoveMembershipComponent', 'selector': ''},{'name': 'RequestActionComponent', 'selector': ''},{'name': 'RequestConfigMembersComponent', 'selector': 'imx-request-config-members'},{'name': 'RequestConfigSidesheetComponent', 'selector': 'imx-request-config-sidesheet'},{'name': 'RequestDetailComponent', 'selector': 'imx-request-detail'},{'name': 'RequestDisplayComponent', 'selector': 'imx-request-display'},{'name': 'RequestFilterComponent', 'selector': 'imx-request-filter'},{'name': 'RequestHistoryComponent', 'selector': ''},{'name': 'RequestHistoryFilterComponent', 'selector': 'imx-request-history-filter'},{'name': 'RequestInfoComponent', 'selector': 'imx-requestinfo'},{'name': 'RequestsComponent', 'selector': 'imx-requests'},{'name': 'RequestsEntitySelectorComponent', 'selector': 'imx-requests-selector'},{'name': 'RequestShelfEntitlementsComponent', 'selector': 'imx-request-shelf-entitlements'},{'name': 'RequestShelfSidesheetComponent', 'selector': 'imx-request-shelf-sidesheet'},{'name': 'RequestShelvesComponent', 'selector': 'imx-request-shelves'},{'name': 'RequestTableComponent', 'selector': 'imx-request-table'},{'name': 'ResourcesComponent', 'selector': ''},{'name': 'ResourceSidesheetComponent', 'selector': 'imx-resource-sidesheet'},{'name': 'RestoreComponent', 'selector': ''},{'name': 'RiskAnalysisComponent', 'selector': 'imx-riskindex-analysis'},{'name': 'RiskAnalysisSidesheetComponent', 'selector': ''},{'name': 'RiskConfigComponent', 'selector': 'imx-risk-config'},{'name': 'RiskConfigSidesheetComponent', 'selector': 'imx-risk-config-sidesheet'},{'name': 'RoleDetailComponent', 'selector': 'imx-role-detail'},{'name': 'RoleEntitlementsComponent', 'selector': 'imx-role-entitlements'},{'name': 'RoleMainDataComponent', 'selector': 'imx-role-main-data'},{'name': 'RoleMembershipsComponent', 'selector': 'imx-role-memberships'},{'name': 'RoleMembershipsComponent', 'selector': 'imx-role-memberships'},{'name': 'RoleRecommendationsComponent', 'selector': 'imx-role-recommendations'},{'name': 'RolesOverviewComponent', 'selector': 'imx-roles-overview'},{'name': 'RollbackComponent', 'selector': ''},{'name': 'SecondaryMembershipsComponent', 'selector': 'imx-secondary-memberships'},{'name': 'SecurityKeysComponent', 'selector': 'imx-security-keys'},{'name': 'SecurityKeysSidesheetComponent', 'selector': ''},{'name': 'ServiceCategoriesComponent', 'selector': 'imx-service-categories'},{'name': 'ServiceCategoryComponent', 'selector': 'imx-service-category'},{'name': 'ServiceCategoryListComponent', 'selector': 'imx-servicecategory-list'},{'name': 'ServiceItemDetailComponent', 'selector': 'imx-service-item-detail'},{'name': 'ServiceItemEditComponent', 'selector': 'imx-service-item-edit'},{'name': 'ServiceItemInfoComponent', 'selector': 'imx-service-item-info'},{'name': 'ServiceitemListComponent', 'selector': 'imx-serviceitem-list'},{'name': 'ServiceItemsEditComponent', 'selector': 'imx-service-items-edit'},{'name': 'ServiceItemsEditFormComponent', 'selector': 'imx-service-items-edit-form'},{'name': 'ServiceItemsEditSidesheetComponent', 'selector': 'imx-service-items-edit-sidesheet'},{'name': 'ServiceItemSelectComponent', 'selector': 'imx-service-item-select'},{'name': 'ServiceItemsSelectorComponent', 'selector': 'imx-service-items-selector'},{'name': 'ServiceItemTagsComponent', 'selector': 'imx-service-item-tags'},{'name': 'SettingsComponent', 'selector': 'imx-settings'},{'name': 'ShelfSelectionComponent', 'selector': 'imx-shelf-selection'},{'name': 'ShoppingCartComponent', 'selector': 'imx-shopping-cart'},{'name': 'ShoppingCartEmptyComponent', 'selector': 'imx-shopping-cart-empty'},{'name': 'ShoppingCartForLaterComponent', 'selector': ''},{'name': 'ShoppingCartSubmitWarningsDialog', 'selector': 'imx-shopping-cart-submit-result'},{'name': 'SourceDetectiveComponent', 'selector': 'imx-source-detective'},{'name': 'SourceDetectiveSidesheetComponent', 'selector': ''},{'name': 'SplitComponent', 'selector': ''},{'name': 'StartComponent', 'selector': 'imx-start'},{'name': 'StatisticsCardsComponent', 'selector': 'imx-statistics-cards'},{'name': 'StatisticsCardsVisualsComponent', 'selector': 'imx-statistics-cards-visuals'},{'name': 'StatisticsForObjectsComponent', 'selector': 'imx-statistics-for-objects'},{'name': 'StatisticsHomePageComponent', 'selector': 'imx-statistics-home-page'},{'name': 'StatisticsOrderingSidesheetComponent', 'selector': 'imx-statistics-ordering-sidesheet'},{'name': 'StatisticsOrderingSidesheetDialogComponent', 'selector': 'imx-statistics-ordering-sidesheet-dialog'},{'name': 'StatisticsTreeComponent', 'selector': 'imx-statistics-tree'},{'name': 'TeamResponsibilitiesComponent', 'selector': 'imx-team-responsibilities'},{'name': 'TeamResponsibilitySidesheetComponent', 'selector': 'imx-team-responsibility-sidesheet'},{'name': 'TeamResponsibilityTileComponent', 'selector': 'imx-team-responsibility-tile'},{'name': 'TermsOfUseAcceptComponent', 'selector': ''},{'name': 'TermsOfUseListComponent', 'selector': 'imx-terms-of-use-list'},{'name': 'TermsOfUseViewerComponent', 'selector': 'imx-terms-of-use-viewer'},{'name': 'TreemapChartComponent', 'selector': 'imx-treemap-chart'},{'name': 'UserProcessComponent', 'selector': 'imx-user-process'},{'name': 'ViewDevicesComponent', 'selector': 'imx-view-devices-home'},{'name': 'ViewDevicesSidesheetComponent', 'selector': 'imx-view-devices-sidesheet'},{'name': 'WorkflowActionComponent', 'selector': 'imx-workflow-action'}];
+    var DIRECTIVES = [{'name': 'ElementVisibilityDirective', 'selector': '[imxElementVisibility]'}];
+    var ACTUAL_COMPONENT = {'name': 'NewRequestProductComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'NewRequestProductComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

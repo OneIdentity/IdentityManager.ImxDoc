@@ -1,0 +1,2026 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>IMX Web - QER Library</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+        <link rel="stylesheet" href="../styles/material.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">IMX Web - QER Library</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Components</li>
+  <li class="breadcrumb-item"
+  >
+  RollbackComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" class="nav-link"
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li class="nav-item">
+            <a href="#templateData" class="nav-link"
+                role="tab" id="templateData-tab" data-bs-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li class="nav-item">
+            <a href="#styleData" class="nav-link"
+                role="tab" id="styleData-tab" data-bs-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li class="nav-item">
+            <a href="#tree" class="nav-link"
+                role="tab" id="tree-tab" data-bs-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/lib/role-management/rollback/rollback.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code>OnInit</code>
+    </p>
+
+
+<section data-compodoc="block-metadata">
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./rollback.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./rollback.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#actions" >actions</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#busy" >busy</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#calculateActions" >calculateActions</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#calculateCompareItems" >calculateCompareItems</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#comparisonForm" >comparisonForm</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#comparisonItems" >comparisonItems</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#completed" >completed</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#dateCdr" >dateCdr</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#dateForm" >dateForm</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#displayedColumns" >displayedColumns</a>
+                            </li>
+                            <li>
+                                    <span class="modifier"></span>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#dst" >dst</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#dstSettings" >dstSettings</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#entitySchema" >entitySchema</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#ldsActionList" >ldsActionList</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#ldsChangesQueued" >ldsChangesQueued</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#ldsNoChanges" >ldsNoChanges</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#ldsSelectItems" >ldsSelectItems</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#rollbackbuilder" >rollbackbuilder</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#selected" >selected</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#uidActions" >uidActions</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#addControl" >addControl</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#enhanceWithTypeDisplay" >enhanceWithTypeDisplay</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#execute" >execute</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#loadActions" >loadActions</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#loadCompareItems" >loadCompareItems</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#resetControls" >resetControls</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#selectedStepChanged" >selectedStepChanged</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#selectionChanged" >selectionChanged</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#workaroundValidator" >workaroundValidator</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(sidesheetRef: EuiSidesheetRef, snackbar: SnackBarService, busyService: EuiLoadingService, metadata: MetadataService, rollbackService: <a href="../injectables/RollebackService.html" target="_self">RollebackService</a>, data: literal type, cdref: ChangeDetectorRef)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="72" class="link-to-prism">src/lib/role-management/rollback/rollback.component.ts:72</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>sidesheetRef</td>
+                                                  
+                                                        <td>
+                                                                    <code>EuiSidesheetRef</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>snackbar</td>
+                                                  
+                                                        <td>
+                                                                    <code>SnackBarService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>busyService</td>
+                                                  
+                                                        <td>
+                                                                    <code>EuiLoadingService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>metadata</td>
+                                                  
+                                                        <td>
+                                                                    <code>MetadataService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>rollbackService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/RollebackService.html" target="_self" >RollebackService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>data</td>
+                                                  
+                                                        <td>
+                                                                    <code>literal type</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>cdref</td>
+                                                  
+                                                        <td>
+                                                                    <code>ChangeDetectorRef</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addControl"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>addControl</b></span>
+                        <a href="#addControl"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>addControl(name: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, control: AbstractControl)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="112"
+                            class="link-to-prism">src/lib/role-management/rollback/rollback.component.ts:112</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>name</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>control</td>
+                                    <td>
+                                            <code>AbstractControl</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="enhanceWithTypeDisplay"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>enhanceWithTypeDisplay</b></span>
+                        <a href="#enhanceWithTypeDisplay"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>enhanceWithTypeDisplay(obj: <a href="../undefineds/ComparisonItem.html" target="_self">ComparisonItem[]</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="201"
+                            class="link-to-prism">src/lib/role-management/rollback/rollback.component.ts:201</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>obj</td>
+                                    <td>
+                                                <code><a href="../miscellaneous/typealiases.html#ComparisonItem" target="_self" >ComparisonItem[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="execute"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>execute</b></span>
+                        <a href="#execute"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>execute()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="167"
+                            class="link-to-prism">src/lib/role-management/rollback/rollback.component.ts:167</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loadActions"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>loadActions</b></span>
+                        <a href="#loadActions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>loadActions()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="208"
+                            class="link-to-prism">src/lib/role-management/rollback/rollback.component.ts:208</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loadCompareItems"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>loadCompareItems</b></span>
+                        <a href="#loadCompareItems"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>loadCompareItems()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="123"
+                            class="link-to-prism">src/lib/role-management/rollback/rollback.component.ts:123</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="96"
+                            class="link-to-prism">src/lib/role-management/rollback/rollback.component.ts:96</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="resetControls"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>resetControls</b></span>
+                        <a href="#resetControls"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>resetControls()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="100"
+                            class="link-to-prism">src/lib/role-management/rollback/rollback.component.ts:100</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectedStepChanged"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>selectedStepChanged</b></span>
+                        <a href="#selectedStepChanged"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>selectedStepChanged(event: StepperSelectionEvent)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="153"
+                            class="link-to-prism">src/lib/role-management/rollback/rollback.component.ts:153</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+                                    <td>
+                                            <code>StepperSelectionEvent</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectionChanged"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>selectionChanged</b></span>
+                        <a href="#selectionChanged"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>selectionChanged(selection: <a href="../classes/RollbackItem.html" target="_self">RollbackItem[]</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="117"
+                            class="link-to-prism">src/lib/role-management/rollback/rollback.component.ts:117</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>selection</td>
+                                    <td>
+                                                <code><a href="../classes/RollbackItem.html" target="_self" >RollbackItem[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="workaroundValidator"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>workaroundValidator</b></span>
+                        <a href="#workaroundValidator"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>workaroundValidator()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="191"
+                            class="link-to-prism">src/lib/role-management/rollback/rollback.component.ts:191</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>ValidatorFn</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section data-compodoc="block-properties">
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="actions"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>actions</b></span>
+                        <a href="#actions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>UiActionData[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/lib/role-management/rollback/rollback.component.ts:46</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="busy"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>busy</b></span>
+                        <a href="#busy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/lib/role-management/rollback/rollback.component.ts:44</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="calculateActions"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>calculateActions</b></span>
+                        <a href="#calculateActions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="71" class="link-to-prism">src/lib/role-management/rollback/rollback.component.ts:71</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="calculateCompareItems"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>calculateCompareItems</b></span>
+                        <a href="#calculateCompareItems"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="70" class="link-to-prism">src/lib/role-management/rollback/rollback.component.ts:70</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="comparisonForm"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>comparisonForm</b></span>
+                        <a href="#comparisonForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new UntypedFormGroup({
+    helperInput: new UntypedFormControl(undefined, Validators.required),
+  })</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="55" class="link-to-prism">src/lib/role-management/rollback/rollback.component.ts:55</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="comparisonItems"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>comparisonItems</b></span>
+                        <a href="#comparisonItems"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../miscellaneous/typealiases.html#ComparisonItem" target="_self" >ComparisonItem[]</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/lib/role-management/rollback/rollback.component.ts:48</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="completed"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>completed</b></span>
+                        <a href="#completed"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/lib/role-management/rollback/rollback.component.ts:45</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="dateCdr"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>dateCdr</b></span>
+                        <a href="#dateCdr"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Column.html" target="_self" >ColumnDependentReference</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="53" class="link-to-prism">src/lib/role-management/rollback/rollback.component.ts:53</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="dateForm"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>dateForm</b></span>
+                        <a href="#dateForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new UntypedFormGroup({}, this.workaroundValidator())</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">src/lib/role-management/rollback/rollback.component.ts:54</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="displayedColumns"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>displayedColumns</b></span>
+                        <a href="#displayedColumns"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>IClientProperty[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/lib/role-management/rollback/rollback.component.ts:50</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="dst"></a>
+                    <span class="name">
+                            <span class="modifier"></span>
+                            <span class="modifier">Private</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>dst</b></span>
+                        <a href="#dst"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>DataSourceToolbarComponent</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ViewChild(DataSourceToolbarComponent)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="72" class="link-to-prism">src/lib/role-management/rollback/rollback.component.ts:72</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="dstSettings"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>dstSettings</b></span>
+                        <a href="#dstSettings"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>DataSourceToolbarSettings</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="51" class="link-to-prism">src/lib/role-management/rollback/rollback.component.ts:51</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="entitySchema"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>entitySchema</b></span>
+                        <a href="#entitySchema"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>RollbackItem.GetEntitySchema()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="60" class="link-to-prism">src/lib/role-management/rollback/rollback.component.ts:60</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ldsActionList"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>ldsActionList</b></span>
+                        <a href="#ldsActionList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;#LDS#The following actions will be performed to reset the object to the previous state.&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="64" class="link-to-prism">src/lib/role-management/rollback/rollback.component.ts:64</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ldsChangesQueued"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>ldsChangesQueued</b></span>
+                        <a href="#ldsChangesQueued"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;#LDS#The object has been successfully reset. It may take some time for the changes to take effect.&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">src/lib/role-management/rollback/rollback.component.ts:52</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ldsNoChanges"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>ldsNoChanges</b></span>
+                        <a href="#ldsNoChanges"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;#LDS#There were no changes during the selected period.&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="62" class="link-to-prism">src/lib/role-management/rollback/rollback.component.ts:62</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ldsSelectItems"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>ldsSelectItems</b></span>
+                        <a href="#ldsSelectItems"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;#LDS#The following properties have changed in the selected period. Select the properties you want to reset to the previous state.&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="66" class="link-to-prism">src/lib/role-management/rollback/rollback.component.ts:66</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="rollbackbuilder"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>rollbackbuilder</b></span>
+                        <a href="#rollbackbuilder"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new RollbackItemBuilder()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="69" class="link-to-prism">src/lib/role-management/rollback/rollback.component.ts:69</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selected"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>selected</b></span>
+                        <a href="#selected"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/RollbackItem.html" target="_self" >RollbackItem[]</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">src/lib/role-management/rollback/rollback.component.ts:58</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="uidActions"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>uidActions</b></span>
+                        <a href="#uidActions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>string[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">src/lib/role-management/rollback/rollback.component.ts:47</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, Inject, ChangeDetectorRef, ViewChild } from &#x27;@angular/core&#x27;;
+import { EuiLoadingService, EuiSidesheetRef, EUI_SIDESHEET_DATA } from &#x27;@elemental-ui/core&#x27;;
+import { ColumnDependentReference, DataSourceToolbarComponent, DataSourceToolbarSettings, MetadataService, SnackBarService } from &#x27;qbm&#x27;;
+import { StepperSelectionEvent } from &#x27;@angular/cdk/stepper&#x27;;
+import { QerApiService } from &#x27;../../qer-api-client.service&#x27;;
+import { UiActionData } from &#x27;imx-api-qer&#x27;;
+import { RollebackService } from &#x27;./rollback.service&#x27;;
+import { AbstractControl, UntypedFormControl, UntypedFormGroup, ValidatorFn, Validators } from &#x27;@angular/forms&#x27;;
+import { ComparisonItem, RollbackItem } from &#x27;./rollback-item&#x27;;
+import { RollbackItemBuilder } from &#x27;./rollback-item-builder&#x27;;
+import { IClientProperty } from &#x27;imx-qbm-dbts&#x27;;
+
+@Component({
+  templateUrl: &#x27;./rollback.component.html&#x27;,
+  styleUrls: [&#x27;./rollback.component.scss&#x27;],
+})
+export class RollbackComponent implements OnInit {
+  public busy &#x3D; false;
+  public completed &#x3D; false;
+  public actions: UiActionData[] &#x3D; [];
+  public uidActions: string[] &#x3D; [];
+  public comparisonItems: ComparisonItem[] &#x3D; [];
+
+  public displayedColumns: IClientProperty[] &#x3D; [];
+  public dstSettings: DataSourceToolbarSettings;
+  public ldsChangesQueued &#x3D; &#x27;#LDS#The object has been successfully reset. It may take some time for the changes to take effect.&#x27;;
+  public dateCdr: ColumnDependentReference;
+  public dateForm &#x3D; new UntypedFormGroup({}, this.workaroundValidator());
+  public comparisonForm &#x3D; new UntypedFormGroup({
+    helperInput: new UntypedFormControl(undefined, Validators.required),
+  });
+  public selected: RollbackItem[] &#x3D; [];
+
+  public entitySchema &#x3D; RollbackItem.GetEntitySchema();
+
+  public ldsNoChanges &#x3D; &#x27;#LDS#There were no changes during the selected period.&#x27;;
+
+  public ldsActionList &#x3D; &#x27;#LDS#The following actions will be performed to reset the object to the previous state.&#x27;;
+
+  public ldsSelectItems &#x3D;
+    &#x27;#LDS#The following properties have changed in the selected period. Select the properties you want to reset to the previous state.&#x27;;
+
+  private rollbackbuilder &#x3D; new RollbackItemBuilder();
+  private calculateCompareItems &#x3D; true;
+  private calculateActions &#x3D; true;
+  @ViewChild(DataSourceToolbarComponent) private readonly dst: DataSourceToolbarComponent;
+
+
+  constructor(
+    private readonly sidesheetRef: EuiSidesheetRef,
+    private readonly snackbar: SnackBarService,
+    private readonly busyService: EuiLoadingService,
+    private readonly metadata: MetadataService,
+    private readonly rollbackService: RollebackService,
+    @Inject(EUI_SIDESHEET_DATA)
+    private readonly data: {
+      tableName: string;
+      uid: string;
+    },
+    private readonly cdref: ChangeDetectorRef
+  ) {
+    this.dateCdr &#x3D; this.rollbackService.createCdrDate();
+    this.displayedColumns &#x3D; [
+      this.entitySchema.Columns.Property,
+      this.entitySchema.Columns.HistoryValueDisplay,
+      this.entitySchema.Columns.CurrentValueDisplay,
+    ];
+  }
+
+  public ngOnInit(): void {
+    this.cdref.detectChanges();
+  }
+
+  public resetControls(): void {
+    this.calculateActions &#x3D; true;
+    this.calculateCompareItems &#x3D; true;
+    this.comparisonForm.get(&#x27;helperInput&#x27;).setValue(undefined);
+    this.comparisonItems &#x3D; [];
+    this.selected &#x3D; [];
+    this.dst?.clearSelection();
+    this.dstSettings &#x3D; undefined;
+    this.actions &#x3D; [];
+    this.uidActions &#x3D; [];
+  }
+
+  public addControl(name: string, control: AbstractControl): void {
+    this.dateForm.addControl(name, control);
+    this.cdref.detectChanges();
+  }
+
+  public selectionChanged(selection: RollbackItem[]): void {
+    this.selected &#x3D; selection;
+    this.calculateActions &#x3D; true;
+    this.comparisonForm.get(&#x27;helperInput&#x27;).setValue(this.selected.length &gt; 0 ? &#x27;filled&#x27; : undefined);
+  }
+
+  public async loadCompareItems(): Promise&lt;void&gt; {
+    if (!this.calculateCompareItems) {
+      return;
+    }
+    const overlay &#x3D; this.busyService.show();
+    this.comparisonItems &#x3D; [];
+    try {
+      this.comparisonItems &#x3D; (
+        await this.rollbackService.getHistoryComparison(this.data.tableName, this.data.uid, {
+          CompareDate: this.dateCdr.column.GetValue(),
+        })
+      )
+        // only take the items that have changed
+        .filter((item) &#x3D;&gt; item.HasChanged);
+
+      await this.enhanceWithTypeDisplay(this.comparisonItems);
+
+      const dataSource &#x3D; this.rollbackbuilder.build(this.rollbackbuilder.buildEntityCollectionData(this.comparisonItems));
+      this.dstSettings &#x3D; {
+        dataSource,
+        entitySchema: RollbackItem.GetEntitySchema(),
+        navigationState: {},
+        displayedColumns: this.displayedColumns,
+      };
+    } finally {
+      this.busyService.hide(overlay);
+      this.calculateCompareItems &#x3D; false;
+    }
+  }
+
+  public async selectedStepChanged(event: StepperSelectionEvent): Promise&lt;void&gt; {
+    if (this.completed) {
+      return;
+    }
+
+    if (event.selectedIndex &#x3D;&#x3D;&#x3D; 1) {
+      await this.loadCompareItems();
+    }
+
+    if (event.selectedIndex &#x3D;&#x3D;&#x3D; 2 &amp;&amp; event.previouslySelectedIndex &#x3D;&#x3D;&#x3D; 1) {
+      await this.loadActions();
+    }
+  }
+
+  public async execute(): Promise&lt;void&gt; {
+    const overlay &#x3D; this.busyService.show();
+    try {
+      await this.rollbackService.rollback(
+        this.data.tableName,
+        this.data.uid,
+        {
+          ActionId: this.uidActions,
+        },
+        {
+          CompareDate: this.dateCdr.column.GetValue(),
+          CompareId: this.selected.map((s) &#x3D;&gt; s.Id.value).reduce((a, b) &#x3D;&gt; a + &#x27;,&#x27; + b),
+        }
+      );
+      this.completed &#x3D; true;
+
+      this.sidesheetRef.close(true);
+      this.snackbar.open({ key: this.ldsChangesQueued });
+    } finally {
+      this.busyService.hide(overlay);
+    }
+  }
+
+  // A little workaround, because the data-cdr is not validating properly
+  private workaroundValidator(): ValidatorFn {
+    return (control: AbstractControl): { error: string } | null &#x3D;&gt; {
+      if (control &#x3D;&#x3D; null) {
+        return null;
+      }
+
+      return control.get(&#x27;ComparisonDate&#x27;)?.value ? null : { error: &#x27;required&#x27; };
+    };
+  }
+
+  private async enhanceWithTypeDisplay(obj: ComparisonItem[]): Promise&lt;void&gt; {
+    await this.metadata.updateNonExisting(obj.map((i) &#x3D;&gt; i.TableName));
+    obj.forEach((element) &#x3D;&gt; {
+      element.TypeDisplay &#x3D; this.metadata.tables[element.TableName].DisplaySingular;
+    });
+  }
+
+  private async loadActions(): Promise&lt;void&gt; {
+    if (!this.calculateActions) {
+      return;
+    }
+    // load actions
+    this.actions &#x3D; [];
+    this.uidActions &#x3D; [];
+    const overlay &#x3D; this.busyService.show();
+    try {
+      this.actions &#x3D; await this.rollbackService.getRollbackActions(this.data.tableName, this.data.uid, {
+        CompareDate: this.dateCdr.column.GetValue(),
+        CompareId: this.selected.map((s) &#x3D;&gt; s.Id.value).reduce((a, b) &#x3D;&gt; a + &#x27;,&#x27; + b),
+      });
+      this.uidActions &#x3D; this.actions.filter((a) &#x3D;&gt; a.CanExecute).map((a) &#x3D;&gt; a.Id);
+    } finally {
+      this.calculateActions &#x3D; false;
+      this.busyService.hide(overlay);
+    }
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div eui-sidesheet-content&gt;
+  &lt;mat-card class&#x3D;&quot;imx-stepper-card&quot;&gt;
+    &lt;mat-stepper orientation&#x3D;&quot;vertical&quot; [linear]&#x3D;&quot;true&quot; (selectionChange)&#x3D;&quot;selectedStepChanged($event)&quot;&gt;
+      &lt;mat-step [stepControl]&#x3D;&quot;dateForm&quot; label&#x3D;&quot;{{ &#x27;#LDS#Comparison date&#x27; | translate }}&quot;&gt;
+        &lt;eui-alert class&#x3D;&quot;imx-top-alert&quot; [condensed]&#x3D;&quot;true&quot; [colored]&#x3D;&quot;true&quot; type&#x3D;&quot;info&quot;&gt;
+          {{ &#x27;#LDS#Select a date to view the changes since that date.&#x27; | translate }}
+        &lt;/eui-alert&gt;
+        &lt;form [formGroup]&#x3D;&quot;dateForm&quot;&gt;
+          &lt;imx-cdr-editor [cdr]&#x3D;&quot;dateCdr&quot; (valueChange)&#x3D;&quot;resetControls()&quot; (controlCreated)&#x3D;&quot;addControl(dateCdr.column.ColumnName, $event)&quot;&gt;&lt;/imx-cdr-editor&gt;
+        &lt;/form&gt;
+        &lt;div class&#x3D;&quot;imx-step-button&quot; *ngIf&#x3D;&quot;dateCdr&quot;&gt;
+          &lt;button mat-stroked-button color&#x3D;&quot;primary&quot; data-imx-identifier&#x3D;&quot;compare-step-1-next&quot; matStepperNext [disabled]&#x3D;&quot;dateForm.invalid&quot;&gt;
+            {{ &#x27;#LDS#Next&#x27; | translate }}
+          &lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/mat-step&gt;
+      &lt;mat-step [stepControl]&#x3D;&quot;comparisonForm&quot; label&#x3D;&quot;{{ &#x27;#LDS#View comparison result&#x27; | translate }}&quot;&gt;
+        &lt;eui-alert class&#x3D;&quot;imx-top-alert&quot; [condensed]&#x3D;&quot;true&quot; [colored]&#x3D;&quot;true&quot; type&#x3D;&quot;info&quot; *ngIf&#x3D;&quot;comparisonItems.length &gt; 0&quot;&gt; {{ ldsSelectItems | translate }}&lt;/eui-alert&gt;
+        &lt;form [formGroup]&#x3D;&quot;comparisonForm&quot;&gt;
+          &lt;input hidden formControlName&#x3D;&quot;helperInput&quot; /&gt;
+          &lt;imx-data-source-toolbar #dst data-imx-identifier&#x3D;&quot;compare-data-source-toolbar&quot; [settings]&#x3D;&quot;dstSettings&quot; [options]&#x3D;&quot;&quot;&gt; &lt;/imx-data-source-toolbar&gt;
+          &lt;div class&#x3D;&quot;imx-step-data-table&quot;&gt;
+            &lt;imx-data-table
+              [showSelectedItemsMenu]&#x3D;&quot;false&quot;
+              data-imx-identifier&#x3D;&quot;compare-data-table&quot;
+              [dst]&#x3D;&quot;dst&quot;
+              detailViewVisible&#x3D;&quot;false&quot;
+              mode&#x3D;&quot;manual&quot;
+              [selectable]&#x3D;&quot;true&quot;
+              (selectionChanged)&#x3D;&quot;selectionChanged($event)&quot;
+              [noDataText]&#x3D;&quot;ldsNoChanges&quot;
+            &gt;
+              &lt;imx-data-table-column *ngIf&#x3D;&quot;entitySchema&quot; [columnLabel]&#x3D;&quot;&#x27;#LDS#Affected object&#x27; | translate&quot; [entityColumn]&#x3D;&quot;entitySchema.Columns.Property&quot;&gt;
+                &lt;ng-template let-entl&gt;
+                  &lt;div&gt;{{ entl.Property.value }}&lt;/div&gt;
+                  &lt;div class&#x3D;&quot;subtext&quot;&gt;{{ entl.TypeDisplay.value }}&lt;/div&gt;
+                &lt;/ng-template&gt;
+              &lt;/imx-data-table-column&gt;
+              &lt;imx-data-table-column
+                *ngIf&#x3D;&quot;entitySchema&quot;
+                [columnLabel]&#x3D;&quot;&#x27;#LDS#Previous state&#x27; | translate&quot;
+                [entityColumn]&#x3D;&quot;entitySchema.Columns.HistoryValueDisplay&quot;
+              &gt;&lt;/imx-data-table-column&gt;
+              &lt;imx-data-table-column
+                *ngIf&#x3D;&quot;entitySchema&quot;
+                [columnLabel]&#x3D;&quot;&#x27;#LDS#Current state&#x27; | translate&quot;
+                [entityColumn]&#x3D;&quot;entitySchema.Columns.CurrentValueDisplay&quot;
+              &gt;&lt;/imx-data-table-column&gt;
+            &lt;/imx-data-table&gt;
+          &lt;/div&gt;
+        &lt;/form&gt;
+
+        &lt;div class&#x3D;&quot;imx-step-button&quot;&gt;
+          &lt;button mat-stroked-button data-imx-identifier&#x3D;&quot;rollback-step-1-back&quot; matStepperPrevious&gt;{{ &#x27;#LDS#Back&#x27; | translate }}&lt;/button&gt;
+          &lt;button mat-stroked-button data-imx-identifier&#x3D;&quot;rollback-step-1-next&quot; color&#x3D;&quot;primary&quot; matStepperNext [disabled]&#x3D;&quot;comparisonForm.invalid&quot;&gt;
+            {{ &#x27;#LDS#Next&#x27; | translate }}
+          &lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/mat-step&gt;
+
+      &lt;mat-step label&#x3D;&quot;{{ &#x27;#LDS#Verify actions&#x27; | translate }}&quot;&gt;
+        &lt;ng-container&gt;
+          &lt;eui-alert class&#x3D;&quot;imx-top-alert&quot; [condensed]&#x3D;&quot;true&quot; [colored]&#x3D;&quot;true&quot; type&#x3D;&quot;info&quot;&gt; {{ ldsActionList | translate }}&lt;/eui-alert&gt;
+
+          &lt;mat-selection-list [(ngModel)]&#x3D;&quot;uidActions&quot;&gt;
+            &lt;mat-list-option
+              checkboxPosition&#x3D;&quot;before&quot;
+              *ngFor&#x3D;&quot;let action of actions&quot;
+              [value]&#x3D;&quot;action.Id&quot;
+              [disabled]&#x3D;&quot;!action.CanExecute&quot;
+              [attr.data-imx-identifier]&#x3D;&quot;&#x27;multi-select-action-&#x27; + action.Id&quot;
+            &gt;
+              &lt;div&gt;{{ action.ObjectDisplay }}&lt;/div&gt;
+              &lt;div class&#x3D;&quot;subtext&quot;&gt;{{ action.Display }}&lt;/div&gt;
+            &lt;/mat-list-option&gt;
+          &lt;/mat-selection-list&gt;
+
+          &lt;div class&#x3D;&quot;imx-step-button&quot;&gt;
+            &lt;button mat-stroked-button data-imx-identifier&#x3D;&quot;rollback-step-2-back&quot; matStepperPrevious&gt;{{ &#x27;#LDS#Back&#x27; | translate }}&lt;/button&gt;
+            &lt;button mat-stroked-button data-imx-identifier&#x3D;&quot;rollback-step-2-next&quot; (click)&#x3D;&quot;execute()&quot; color&#x3D;&quot;primary&quot; matStepperNext&gt;{{ &#x27;#LDS#Next&#x27; | translate }}&lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/ng-container&gt;
+      &lt;/mat-step&gt;
+    &lt;/mat-stepper&gt;
+  &lt;/mat-card&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="styleData">
+                <p class="comment">
+                    <code>./rollback.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">@import &quot;@elemental-ui/core/src/styles/_palette.scss&quot;;
+@import &#x27;@elemental-ui/core/src/styles/_eui_palette.scss&#x27;;
+eui-alert {
+  margin-bottom: 1em;
+  display: block;
+}
+
+.item {
+  flex-grow: 1;
+  padding-top: 1em;
+}
+
+.subtext {
+  font-size: small;
+  font-style: italic;
+  color: $black_9;
+  margin-bottom: 10px;
+}
+
+.imx-step-button,
+.imx-step-button-save {
+  margin-top: 10px;
+  &gt; *:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.imx-step-data-table {
+  display: flex;
+  flex-direction: column;
+  max-height: 500px;
+  margin-bottom: 45px;
+}
+
+.imx-stepper-card{
+  height: 100%;
+}
+
+.imx-top-alert {
+  display: block;
+  margin: 1em 0;
+}
+
+.eui-dark-theme{
+  :host{
+    background-color: $color-gray-70;
+    .mat-input-element, ::ng-deep .eui-alert .eui-alert-header{
+      color: $color-blue-40;
+    }
+  }
+}
+
+.eui-contrast-theme{
+  :host{
+    background-color: $color-gray-90;
+    .mat-input-element, ::ng-deep .eui-alert .eui-alert-header{
+      color: $color-blue-40;
+    }
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div eui-sidesheet-content>  <mat-card class="imx-stepper-card">    <mat-stepper orientation="vertical" [linear]="true" (selectionChange)="selectedStepChanged($event)">      <mat-step [stepControl]="dateForm" label="{{ \'#LDS#Comparison date\' | translate }}">        <eui-alert class="imx-top-alert" [condensed]="true" [colored]="true" type="info">          {{ \'#LDS#Select a date to view the changes since that date.\' | translate }}        </eui-alert>        <form [formGroup]="dateForm">          <imx-cdr-editor [cdr]="dateCdr" (valueChange)="resetControls()" (controlCreated)="addControl(dateCdr.column.ColumnName, $event)"></imx-cdr-editor>        </form>        <div class="imx-step-button" *ngIf="dateCdr">          <button mat-stroked-button color="primary" data-imx-identifier="compare-step-1-next" matStepperNext [disabled]="dateForm.invalid">            {{ \'#LDS#Next\' | translate }}          </button>        </div>      </mat-step>      <mat-step [stepControl]="comparisonForm" label="{{ \'#LDS#View comparison result\' | translate }}">        <eui-alert class="imx-top-alert" [condensed]="true" [colored]="true" type="info" *ngIf="comparisonItems.length > 0"> {{ ldsSelectItems | translate }}</eui-alert>        <form [formGroup]="comparisonForm">          <input hidden formControlName="helperInput" />          <imx-data-source-toolbar #dst data-imx-identifier="compare-data-source-toolbar" [settings]="dstSettings" [options]=""> </imx-data-source-toolbar>          <div class="imx-step-data-table">            <imx-data-table              [showSelectedItemsMenu]="false"              data-imx-identifier="compare-data-table"              [dst]="dst"              detailViewVisible="false"              mode="manual"              [selectable]="true"              (selectionChanged)="selectionChanged($event)"              [noDataText]="ldsNoChanges"            >              <imx-data-table-column *ngIf="entitySchema" [columnLabel]="\'#LDS#Affected object\' | translate" [entityColumn]="entitySchema.Columns.Property">                <ng-template let-entl>                  <div>{{ entl.Property.value }}</div>                  <div class="subtext">{{ entl.TypeDisplay.value }}</div>                </ng-template>              </imx-data-table-column>              <imx-data-table-column                *ngIf="entitySchema"                [columnLabel]="\'#LDS#Previous state\' | translate"                [entityColumn]="entitySchema.Columns.HistoryValueDisplay"              ></imx-data-table-column>              <imx-data-table-column                *ngIf="entitySchema"                [columnLabel]="\'#LDS#Current state\' | translate"                [entityColumn]="entitySchema.Columns.CurrentValueDisplay"              ></imx-data-table-column>            </imx-data-table>          </div>        </form>        <div class="imx-step-button">          <button mat-stroked-button data-imx-identifier="rollback-step-1-back" matStepperPrevious>{{ \'#LDS#Back\' | translate }}</button>          <button mat-stroked-button data-imx-identifier="rollback-step-1-next" color="primary" matStepperNext [disabled]="comparisonForm.invalid">            {{ \'#LDS#Next\' | translate }}          </button>        </div>      </mat-step>      <mat-step label="{{ \'#LDS#Verify actions\' | translate }}">        <ng-container>          <eui-alert class="imx-top-alert" [condensed]="true" [colored]="true" type="info"> {{ ldsActionList | translate }}</eui-alert>          <mat-selection-list [(ngModel)]="uidActions">            <mat-list-option              checkboxPosition="before"              *ngFor="let action of actions"              [value]="action.Id"              [disabled]="!action.CanExecute"              [attr.data-imx-identifier]="\'multi-select-action-\' + action.Id"            >              <div>{{ action.ObjectDisplay }}</div>              <div class="subtext">{{ action.Display }}</div>            </mat-list-option>          </mat-selection-list>          <div class="imx-step-button">            <button mat-stroked-button data-imx-identifier="rollback-step-2-back" matStepperPrevious>{{ \'#LDS#Back\' | translate }}</button>            <button mat-stroked-button data-imx-identifier="rollback-step-2-next" (click)="execute()" color="primary" matStepperNext>{{ \'#LDS#Next\' | translate }}</button>          </div>        </ng-container>      </mat-step>    </mat-stepper>  </mat-card></div></div>'
+    var COMPONENTS = [{'name': 'AddressbookComponent', 'selector': 'imx-addressbook'},{'name': 'AddressbookDetailComponent', 'selector': 'imx-addressbook-detail'},{'name': 'AnswerQuestionsComponent', 'selector': ''},{'name': 'ApplicationDetailsComponent', 'selector': 'imx-application-details'},{'name': 'ApplicationDialogComponent', 'selector': 'imx-application-dialog'},{'name': 'ApprovalHistoryComponent', 'selector': 'imx-approval-history'},{'name': 'ApprovalLevelFormComponent', 'selector': 'imx-approval-level-form'},{'name': 'ApprovalsComponent', 'selector': 'imx-itshop-approvals'},{'name': 'ApprovalsSidesheetComponent', 'selector': 'imx-approvals-sidesheet'},{'name': 'ApprovalsTableComponent', 'selector': 'imx-approvals-table'},{'name': 'ApprovalStepFormComponent', 'selector': 'imx-approval-step-form'},{'name': 'ApprovalWorkflowEditComponent', 'selector': 'imx-approval-workflow-edit'},{'name': 'ApprovalWorkflowEditInfoComponent', 'selector': 'imx-approval-workflow-edit-info'},{'name': 'ApprovalWorkflowFormComponent', 'selector': 'imx-approval-workflow-form'},{'name': 'ApprovalWorkflowHomeComponent', 'selector': 'imx-approval-workflow-home'},{'name': 'ArchivedRequestsComponent', 'selector': ''},{'name': 'AssignmentsComponent', 'selector': 'imx-assignments'},{'name': 'BadgeTileComponent', 'selector': 'imx-badge-tile'},{'name': 'BaseViewerComponent', 'selector': ''},{'name': 'BlockDetailSidesheetComponent', 'selector': 'imx-block-detail-sidesheet'},{'name': 'BusinessOwnerAddOnTileComponent', 'selector': 'imx-businessowner-addon-tile'},{'name': 'BusinessOwnerChartSummaryComponent', 'selector': 'imx-businessowner-chartsummary'},{'name': 'BusinessOwnerOverviewTileComponent', 'selector': 'imx-businessowner-overview-tile'},{'name': 'CartItemDisplayComponent', 'selector': 'imx-cart-item-display'},{'name': 'CartItemEditComponent', 'selector': 'imx-cart-item-edit'},{'name': 'CartItemsComponent', 'selector': 'imx-cart-items'},{'name': 'CartItemValidationOverviewComponent', 'selector': 'imx-cart-item-validation-overview'},{'name': 'CategoryTreeComponent', 'selector': 'imx-category-tree'},{'name': 'ChartsSidesheetComponent', 'selector': 'imx-charts-sidesheet'},{'name': 'ChartTableComponent', 'selector': 'imx-chart-table'},{'name': 'ChartTileComponent', 'selector': 'imx-chart-tile'},{'name': 'CheckPasswordsComponent', 'selector': ''},{'name': 'CompareComponent', 'selector': ''},{'name': 'CompareItemComponent', 'selector': 'imx-role-compareitem'},{'name': 'ConfirmCartSubmitDialog', 'selector': 'imx-confirm-cart-submit'},{'name': 'ContainerDomComponent', 'selector': 'imx-container-dom'},{'name': 'CreateNewDeviceComponent', 'selector': 'imx-create-new-device'},{'name': 'CreateNewIdentityComponent', 'selector': 'imx-create-new-identity'},{'name': 'DataExplorerIdentitiesComponent', 'selector': 'imx-data-explorer-identities'},{'name': 'DataExplorerViewComponent', 'selector': ''},{'name': 'DecisionHistoryComponent', 'selector': 'imx-decision-history'},{'name': 'DecisionReasonComponent', 'selector': 'imx-decision-reason'},{'name': 'DefaultCartItemDisplayComponent', 'selector': ''},{'name': 'DefaultRequestDisplayComponent', 'selector': ''},{'name': 'DelegationComponent', 'selector': ''},{'name': 'DetailViewerComponent', 'selector': 'imx-detail-viewer'},{'name': 'DiscreteLegendComponent', 'selector': 'imx-discrete-legend'},{'name': 'DuplicateCheckComponent', 'selector': 'imx-duplicate-check'},{'name': 'DuplicatePatternItemsComponent', 'selector': 'imx-duplicate-pattern-items'},{'name': 'DuplicatesSidesheetComponent', 'selector': ''},{'name': 'DynamicExclusionDialogComponent', 'selector': 'imx-dynamic-exclusion-dialog'},{'name': 'DynamicRoleComponent', 'selector': 'imx-dynamic-group'},{'name': 'EdgeDomComponent', 'selector': 'imx-edge-dom'},{'name': 'EntitlementSelectorComponent', 'selector': 'imx-entitlement-selector'},{'name': 'ExcludedMembershipsComponent', 'selector': 'imx-excluded-memberships'},{'name': 'ExclusionCheckComponent', 'selector': 'imx-exclusion-check'},{'name': 'FavoritesTabComponent', 'selector': 'imx-favorites-tab'},{'name': 'HeatmapChartComponent', 'selector': 'imx-heatmap-chart'},{'name': 'HeatmapSidesheetComponent', 'selector': 'imx-heatmap-sidesheet'},{'name': 'HeatmapTileComponent', 'selector': 'imx-heatmap-tile'},{'name': 'HeatmapVisualComponent', 'selector': 'imx-heatmap-visual'},{'name': 'HistoryFilterComponent', 'selector': 'imx-history-filter'},{'name': 'IconTileComponent', 'selector': 'imx-icon-tile'},{'name': 'IdentityComponent', 'selector': 'imx-orgchart-identity'},{'name': 'IdentityRoleMembershipsComponent', 'selector': ''},{'name': 'IdentitySelectComponent', 'selector': 'imx-identity-select'},{'name': 'IdentitySidesheetComponent', 'selector': 'imx-identity-sidesheet'},{'name': 'InquiriesComponent', 'selector': 'imx-inquiries'},{'name': 'ItshopPatternAddProductsComponent', 'selector': 'imx-itshop-pattern-add-products'},{'name': 'ItshopPatternComponent', 'selector': 'imx-itshop-pattern'},{'name': 'ItshopPatternCreateSidesheetComponent', 'selector': 'imx-itshop-pattern-create-sidesheet'},{'name': 'ItshopPatternItemEditComponent', 'selector': 'imx-itshop-pattern-item-edit'},{'name': 'ItshopPatternSidesheetComponent', 'selector': 'imx-itshop-pattern-sidesheet'},{'name': 'MailSubscriptionsComponent', 'selector': 'imx-mail-subscriptions'},{'name': 'MemberSelectorComponent', 'selector': ''},{'name': 'MembershipsChooseIdentitiesComponent', 'selector': 'imx-memberships-choose-identities'},{'name': 'MyResponsibilitiesViewComponent', 'selector': 'imx-my-responsibilities-view'},{'name': 'NewRequestComponent', 'selector': 'imx-new-request'},{'name': 'NewRequestContentComponent', 'selector': 'imx-new-request-content'},{'name': 'NewRequestHeaderComponent', 'selector': 'imx-new-request-header'},{'name': 'NewRequestHeaderToolbarComponent', 'selector': 'imx-new-request-header-toolbar'},{'name': 'NewRequestPeerGroupComponent', 'selector': 'imx-new-request-peer-group'},{'name': 'NewRequestProductBundleComponent', 'selector': 'imx-new-request-product-bundle'},{'name': 'NewRequestProductComponent', 'selector': 'imx-new-request-product'},{'name': 'NewRequestRecipientsComponent', 'selector': 'imx-new-request-recipients'},{'name': 'NewRequestReferenceUserCardComponent', 'selector': 'imx-new-request-reference-user-card'},{'name': 'NewRequestReferenceUserComponent', 'selector': 'imx-new-request-reference-user'},{'name': 'NewRequestSelectedProductsComponent', 'selector': 'imx-new-request-selected-products'},{'name': 'NewRoleComponent', 'selector': 'imx-new-role'},{'name': 'NodeDomComponent', 'selector': 'imx-node-dom'},{'name': 'NonRequestableItemsComponent', 'selector': 'imx-non-requestable-items'},{'name': 'NotificationTileComponent', 'selector': 'imx-notification-tile'},{'name': 'NotRequestableMembershipsComponent', 'selector': 'imx-not-requestable-memberships'},{'name': 'ObjectHyperviewComponent', 'selector': 'imx-object-hyperview'},{'name': 'ObjectOverviewPersonComponent', 'selector': ''},{'name': 'OptionalItemsSidesheetComponent', 'selector': 'imx-optional-items-sidesheet'},{'name': 'OrderForAdditionalUsersComponent', 'selector': 'imx-order-for-additional-users'},{'name': 'OrgChartComponent', 'selector': 'imx-orgchart'},{'name': 'OwnerControlComponent', 'selector': 'imx-owner-control'},{'name': 'PasscodeLoginComponent', 'selector': ''},{'name': 'PasscodeViewerComponent', 'selector': 'imx-passcode-viewer'},{'name': 'PasswordDashboardComponent', 'selector': ''},{'name': 'PasswordQueryComponent', 'selector': 'imx-password-query'},{'name': 'PasswordQuestionsComponent', 'selector': 'imx-password-questions'},{'name': 'PasswordQuestionsSidesheetComponent', 'selector': 'imx-password-questions-sidesheet'},{'name': 'PasswordResetComponent', 'selector': 'imx-password-reset'},{'name': 'PatternDetailsSidesheetComponent', 'selector': 'imx-pattern-details-sidesheet'},{'name': 'PatternItemListComponent', 'selector': 'imx-pattern-item-list'},{'name': 'PeerGroupComponent', 'selector': 'imx-peer-group'},{'name': 'PeerGroupDiscardSelectedComponent', 'selector': 'imx-peer-group-discard-selected'},{'name': 'PointStatVisualComponent', 'selector': 'imx-point-stat-visual'},{'name': 'PrimaryMembershipsComponent', 'selector': 'imx-primary-memberships'},{'name': 'ProductBundleItemsComponent', 'selector': 'imx-product-bundle-items'},{'name': 'ProductBundleListComponent', 'selector': 'imx-product-bundle-list'},{'name': 'ProductDependencyCheckComponent', 'selector': 'imx-product-dependency-check'},{'name': 'ProductDetailsSidesheetComponent', 'selector': 'imx-product-details-sidesheet'},{'name': 'ProductDetailsSidesheetComponent', 'selector': 'imx-product-details-sidesheet'},{'name': 'ProductEntitlementsComponent', 'selector': 'imx-product-entitlements'},{'name': 'ProductEntitlementsComponent', 'selector': 'imx-product-entitlements'},{'name': 'ProductSelectionComponent', 'selector': 'imx-product-selection'},{'name': 'ProfileComponent', 'selector': ''},{'name': 'QaLoginComponent', 'selector': ''},{'name': 'QpmIntegrationComponent', 'selector': ''},{'name': 'QueryPersonComponent', 'selector': 'imx-itshop-queryperson'},{'name': 'ReasonSidesheetComponent', 'selector': 'imx-reason-sidesheet'},{'name': 'RecommendationSidesheetComponent', 'selector': 'imx-recommendation-sidesheet'},{'name': 'RelatedApplicationMenuItemComponent', 'selector': 'imx-related-application-menu-item'},{'name': 'RelatedApplicationsComponent', 'selector': 'imx-related-applications'},{'name': 'RelatedApplicationsSidesheetComponent', 'selector': 'imx-related-applications-sidesheet'},{'name': 'RemoveMembershipComponent', 'selector': ''},{'name': 'RequestActionComponent', 'selector': ''},{'name': 'RequestConfigMembersComponent', 'selector': 'imx-request-config-members'},{'name': 'RequestConfigSidesheetComponent', 'selector': 'imx-request-config-sidesheet'},{'name': 'RequestDetailComponent', 'selector': 'imx-request-detail'},{'name': 'RequestDisplayComponent', 'selector': 'imx-request-display'},{'name': 'RequestFilterComponent', 'selector': 'imx-request-filter'},{'name': 'RequestHistoryComponent', 'selector': ''},{'name': 'RequestHistoryFilterComponent', 'selector': 'imx-request-history-filter'},{'name': 'RequestInfoComponent', 'selector': 'imx-requestinfo'},{'name': 'RequestsComponent', 'selector': 'imx-requests'},{'name': 'RequestsEntitySelectorComponent', 'selector': 'imx-requests-selector'},{'name': 'RequestShelfEntitlementsComponent', 'selector': 'imx-request-shelf-entitlements'},{'name': 'RequestShelfSidesheetComponent', 'selector': 'imx-request-shelf-sidesheet'},{'name': 'RequestShelvesComponent', 'selector': 'imx-request-shelves'},{'name': 'RequestTableComponent', 'selector': 'imx-request-table'},{'name': 'ResourcesComponent', 'selector': ''},{'name': 'ResourceSidesheetComponent', 'selector': 'imx-resource-sidesheet'},{'name': 'RestoreComponent', 'selector': ''},{'name': 'RiskAnalysisComponent', 'selector': 'imx-riskindex-analysis'},{'name': 'RiskAnalysisSidesheetComponent', 'selector': ''},{'name': 'RiskConfigComponent', 'selector': 'imx-risk-config'},{'name': 'RiskConfigSidesheetComponent', 'selector': 'imx-risk-config-sidesheet'},{'name': 'RoleDetailComponent', 'selector': 'imx-role-detail'},{'name': 'RoleEntitlementsComponent', 'selector': 'imx-role-entitlements'},{'name': 'RoleMainDataComponent', 'selector': 'imx-role-main-data'},{'name': 'RoleMembershipsComponent', 'selector': 'imx-role-memberships'},{'name': 'RoleMembershipsComponent', 'selector': 'imx-role-memberships'},{'name': 'RoleRecommendationsComponent', 'selector': 'imx-role-recommendations'},{'name': 'RolesOverviewComponent', 'selector': 'imx-roles-overview'},{'name': 'RollbackComponent', 'selector': ''},{'name': 'SecondaryMembershipsComponent', 'selector': 'imx-secondary-memberships'},{'name': 'SecurityKeysComponent', 'selector': 'imx-security-keys'},{'name': 'SecurityKeysSidesheetComponent', 'selector': ''},{'name': 'ServiceCategoriesComponent', 'selector': 'imx-service-categories'},{'name': 'ServiceCategoryComponent', 'selector': 'imx-service-category'},{'name': 'ServiceCategoryListComponent', 'selector': 'imx-servicecategory-list'},{'name': 'ServiceItemDetailComponent', 'selector': 'imx-service-item-detail'},{'name': 'ServiceItemEditComponent', 'selector': 'imx-service-item-edit'},{'name': 'ServiceItemInfoComponent', 'selector': 'imx-service-item-info'},{'name': 'ServiceitemListComponent', 'selector': 'imx-serviceitem-list'},{'name': 'ServiceItemsEditComponent', 'selector': 'imx-service-items-edit'},{'name': 'ServiceItemsEditFormComponent', 'selector': 'imx-service-items-edit-form'},{'name': 'ServiceItemsEditSidesheetComponent', 'selector': 'imx-service-items-edit-sidesheet'},{'name': 'ServiceItemSelectComponent', 'selector': 'imx-service-item-select'},{'name': 'ServiceItemsSelectorComponent', 'selector': 'imx-service-items-selector'},{'name': 'ServiceItemTagsComponent', 'selector': 'imx-service-item-tags'},{'name': 'SettingsComponent', 'selector': 'imx-settings'},{'name': 'ShelfSelectionComponent', 'selector': 'imx-shelf-selection'},{'name': 'ShoppingCartComponent', 'selector': 'imx-shopping-cart'},{'name': 'ShoppingCartEmptyComponent', 'selector': 'imx-shopping-cart-empty'},{'name': 'ShoppingCartForLaterComponent', 'selector': ''},{'name': 'ShoppingCartSubmitWarningsDialog', 'selector': 'imx-shopping-cart-submit-result'},{'name': 'SourceDetectiveComponent', 'selector': 'imx-source-detective'},{'name': 'SourceDetectiveSidesheetComponent', 'selector': ''},{'name': 'SplitComponent', 'selector': ''},{'name': 'StartComponent', 'selector': 'imx-start'},{'name': 'StatisticsCardsComponent', 'selector': 'imx-statistics-cards'},{'name': 'StatisticsCardsVisualsComponent', 'selector': 'imx-statistics-cards-visuals'},{'name': 'StatisticsForObjectsComponent', 'selector': 'imx-statistics-for-objects'},{'name': 'StatisticsHomePageComponent', 'selector': 'imx-statistics-home-page'},{'name': 'StatisticsOrderingSidesheetComponent', 'selector': 'imx-statistics-ordering-sidesheet'},{'name': 'StatisticsOrderingSidesheetDialogComponent', 'selector': 'imx-statistics-ordering-sidesheet-dialog'},{'name': 'StatisticsTreeComponent', 'selector': 'imx-statistics-tree'},{'name': 'TeamResponsibilitiesComponent', 'selector': 'imx-team-responsibilities'},{'name': 'TeamResponsibilitySidesheetComponent', 'selector': 'imx-team-responsibility-sidesheet'},{'name': 'TeamResponsibilityTileComponent', 'selector': 'imx-team-responsibility-tile'},{'name': 'TermsOfUseAcceptComponent', 'selector': ''},{'name': 'TermsOfUseListComponent', 'selector': 'imx-terms-of-use-list'},{'name': 'TermsOfUseViewerComponent', 'selector': 'imx-terms-of-use-viewer'},{'name': 'TreemapChartComponent', 'selector': 'imx-treemap-chart'},{'name': 'UserProcessComponent', 'selector': 'imx-user-process'},{'name': 'ViewDevicesComponent', 'selector': 'imx-view-devices-home'},{'name': 'ViewDevicesSidesheetComponent', 'selector': 'imx-view-devices-sidesheet'},{'name': 'WorkflowActionComponent', 'selector': 'imx-workflow-action'}];
+    var DIRECTIVES = [{'name': 'ElementVisibilityDirective', 'selector': '[imxElementVisibility]'}];
+    var ACTUAL_COMPONENT = {'name': 'RollbackComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'RollbackComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

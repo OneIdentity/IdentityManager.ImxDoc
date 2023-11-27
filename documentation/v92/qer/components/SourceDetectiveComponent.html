@@ -1,0 +1,2117 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>IMX Web - QER Library</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+        <link rel="stylesheet" href="../styles/material.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">IMX Web - QER Library</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Components</li>
+  <li class="breadcrumb-item"
+  >
+  SourceDetectiveComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" class="nav-link"
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li class="nav-item">
+            <a href="#templateData" class="nav-link"
+                role="tab" id="templateData-tab" data-bs-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li class="nav-item">
+            <a href="#styleData" class="nav-link"
+                role="tab" id="styleData-tab" data-bs-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li class="nav-item">
+            <a href="#tree" class="nav-link"
+                role="tab" id="tree-tab" data-bs-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/lib/sourcedetective/sourcedetective.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code>OnInit</code>
+                <code>OnChanges</code>
+                <code>OnDestroy</code>
+    </p>
+
+
+<section data-compodoc="block-metadata">
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>imx-source-detective</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./sourcedetective.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./sourcedetective.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#busy" >busy</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#currentUserId" >currentUserId</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#dataReady" >dataReady</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#dataSource" >dataSource</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#hasChild" >hasChild</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#itShopConfig" >itShopConfig</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#ldsReplace" >ldsReplace</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#SourceDetectiveType" >SourceDetectiveType</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#subscriptions" >subscriptions</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#treeControl" >treeControl</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#treeFlattener" >treeFlattener</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#Enrich" >Enrich</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#GetDescription" >GetDescription</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#getObjectTypeDisplay" >getObjectTypeDisplay</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#getParametrizedText" >getParametrizedText</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#grabText" >grabText</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#isByDynamicGroup" >isByDynamicGroup</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#isDirectAssignment" >isDirectAssignment</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#ngOnChanges" >ngOnChanges</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#ngOnDestroy" >ngOnDestroy</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#openRequestDetail" >openRequestDetail</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#reload" >reload</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#TableName" >TableName</a>
+                            </li>
+                            <li>
+                                <a href="#Type" >Type</a>
+                            </li>
+                            <li>
+                                <a href="#UID" >UID</a>
+                            </li>
+                            <li>
+                                <a href="#UID_Person" >UID_Person</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(apiClient: <a href="../injectables/QerApiService.html" target="_self">QerApiService</a>, metadata: MetadataService, loader: EuiLoadingService, ldsReplace: LdsReplacePipe, translationProvider: ImxTranslationProviderService, translator: TranslateService, sidesheet: EuiSidesheetService, projectConfig: <a href="../injectables/ProjectConfigurationService.html" target="_self">ProjectConfigurationService</a>, itshopRequestService: <a href="../injectables/ItshopRequestService.html" target="_self">ItshopRequestService</a>, authentication: AuthenticationService)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="80" class="link-to-prism">src/lib/sourcedetective/sourcedetective.component.ts:80</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>apiClient</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/QerApiService.html" target="_self" >QerApiService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>metadata</td>
+                                                  
+                                                        <td>
+                                                                    <code>MetadataService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>loader</td>
+                                                  
+                                                        <td>
+                                                                    <code>EuiLoadingService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>ldsReplace</td>
+                                                  
+                                                        <td>
+                                                                    <code>LdsReplacePipe</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>translationProvider</td>
+                                                  
+                                                        <td>
+                                                                    <code>ImxTranslationProviderService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>translator</td>
+                                                  
+                                                        <td>
+                                                                    <code>TranslateService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>sidesheet</td>
+                                                  
+                                                        <td>
+                                                                    <code>EuiSidesheetService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>projectConfig</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ProjectConfigurationService.html" target="_self" >ProjectConfigurationService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>itshopRequestService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ItshopRequestService.html" target="_self" >ItshopRequestService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>authentication</td>
+                                                  
+                                                        <td>
+                                                                    <code>AuthenticationService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section data-compodoc="block-inputs">
+    <h3 id="inputs">Inputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="TableName"></a>
+                        <b>TableName</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="72" class="link-to-prism">src/lib/sourcedetective/sourcedetective.component.ts:72</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="Type"></a>
+                        <b>Type</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../miscellaneous/enumerations.html#SourceDetectiveType" target="_self" >SourceDetectiveType</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="74" class="link-to-prism">src/lib/sourcedetective/sourcedetective.component.ts:74</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="UID"></a>
+                        <b>UID</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="73" class="link-to-prism">src/lib/sourcedetective/sourcedetective.component.ts:73</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="UID_Person"></a>
+                        <b>UID_Person</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="71" class="link-to-prism">src/lib/sourcedetective/sourcedetective.component.ts:71</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+    <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="Enrich"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>Enrich</b></span>
+                        <a href="#Enrich"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>Enrich(nodes: SourceNode[], level: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="202"
+                            class="link-to-prism">src/lib/sourcedetective/sourcedetective.component.ts:202</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>nodes</td>
+                                    <td>
+                                            <code>SourceNode[]</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>level</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>0</code>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../miscellaneous/typealiases.html#SourceNodeEnriched" target="_self" >Promise&lt;SourceNodeEnriched[]&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="GetDescription"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>GetDescription</b></span>
+                        <a href="#GetDescription"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>GetDescription(node: SourceNode)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="225"
+                            class="link-to-prism">src/lib/sourcedetective/sourcedetective.component.ts:225</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>node</td>
+                                    <td>
+                                            <code>SourceNode</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;string&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getObjectTypeDisplay"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>getObjectTypeDisplay</b></span>
+                        <a href="#getObjectTypeDisplay"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getObjectTypeDisplay(node: SourceNode)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="180"
+                            class="link-to-prism">src/lib/sourcedetective/sourcedetective.component.ts:180</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>node</td>
+                                    <td>
+                                            <code>SourceNode</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;string&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getParametrizedText"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>getParametrizedText</b></span>
+                        <a href="#getParametrizedText"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getParametrizedText(node: SourceNode)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="217"
+                            class="link-to-prism">src/lib/sourcedetective/sourcedetective.component.ts:217</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>node</td>
+                                    <td>
+                                            <code>SourceNode</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;ParameterizedText&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="grabText"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>grabText</b></span>
+                        <a href="#grabText"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>grabText(node: <a href="../undefineds/SourceNodeEnriched.html" target="_self">SourceNodeEnriched</a>, textTokens: TextToken[])</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="166"
+                            class="link-to-prism">src/lib/sourcedetective/sourcedetective.component.ts:166</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>node</td>
+                                    <td>
+                                                <code><a href="../miscellaneous/typealiases.html#SourceNodeEnriched" target="_self" >SourceNodeEnriched</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>textTokens</td>
+                                    <td>
+                                            <code>TextToken[]</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isByDynamicGroup"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>isByDynamicGroup</b></span>
+                        <a href="#isByDynamicGroup"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>isByDynamicGroup(node: SourceNode)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="176"
+                            class="link-to-prism">src/lib/sourcedetective/sourcedetective.component.ts:176</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>node</td>
+                                    <td>
+                                            <code>SourceNode</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isDirectAssignment"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>isDirectAssignment</b></span>
+                        <a href="#isDirectAssignment"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>isDirectAssignment(node: SourceNode)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="171"
+                            class="link-to-prism">src/lib/sourcedetective/sourcedetective.component.ts:171</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>node</td>
+                                    <td>
+                                            <code>SourceNode</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnChanges"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>ngOnChanges</b></span>
+                        <a href="#ngOnChanges"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>ngOnChanges(changes: SimpleChanges)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="109"
+                            class="link-to-prism">src/lib/sourcedetective/sourcedetective.component.ts:109</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>changes</td>
+                                    <td>
+                                            <code>SimpleChanges</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>ngOnDestroy</b></span>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="115"
+                            class="link-to-prism">src/lib/sourcedetective/sourcedetective.component.ts:115</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="99"
+                            class="link-to-prism">src/lib/sourcedetective/sourcedetective.component.ts:99</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openRequestDetail"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>openRequestDetail</b></span>
+                        <a href="#openRequestDetail"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>openRequestDetail(node: <a href="../undefineds/SourceNodeEnriched.html" target="_self">SourceNodeEnriched</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="119"
+                            class="link-to-prism">src/lib/sourcedetective/sourcedetective.component.ts:119</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>node</td>
+                                    <td>
+                                                <code><a href="../miscellaneous/typealiases.html#SourceNodeEnriched" target="_self" >SourceNodeEnriched</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="reload"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>reload</b></span>
+                        <a href="#reload"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>reload()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="187"
+                            class="link-to-prism">src/lib/sourcedetective/sourcedetective.component.ts:187</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section data-compodoc="block-properties">
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="busy"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>busy</b></span>
+                        <a href="#busy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="69" class="link-to-prism">src/lib/sourcedetective/sourcedetective.component.ts:69</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="currentUserId"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>currentUserId</b></span>
+                        <a href="#currentUserId"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="78" class="link-to-prism">src/lib/sourcedetective/sourcedetective.component.ts:78</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="dataReady"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>dataReady</b></span>
+                        <a href="#dataReady"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="68" class="link-to-prism">src/lib/sourcedetective/sourcedetective.component.ts:68</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="dataSource"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>dataSource</b></span>
+                        <a href="#dataSource"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new MatTreeFlatDataSource(this.treeControl, this.treeFlattener)</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="66" class="link-to-prism">src/lib/sourcedetective/sourcedetective.component.ts:66</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="hasChild"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>hasChild</b></span>
+                        <a href="#hasChild"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>() &#x3D;&gt; {...}</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="97" class="link-to-prism">src/lib/sourcedetective/sourcedetective.component.ts:97</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="itShopConfig"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>itShopConfig</b></span>
+                        <a href="#itShopConfig"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>ITShopConfig</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="77" class="link-to-prism">src/lib/sourcedetective/sourcedetective.component.ts:77</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ldsReplace"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>ldsReplace</b></span>
+                        <a href="#ldsReplace"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>LdsReplacePipe</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="86" class="link-to-prism">src/lib/sourcedetective/sourcedetective.component.ts:86</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="SourceDetectiveType"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>SourceDetectiveType</b></span>
+                        <a href="#SourceDetectiveType"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>SourceDetectiveType</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="76" class="link-to-prism">src/lib/sourcedetective/sourcedetective.component.ts:76</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="subscriptions"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>subscriptions</b></span>
+                        <a href="#subscriptions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Subscription[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="80" class="link-to-prism">src/lib/sourcedetective/sourcedetective.component.ts:80</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="treeControl"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>treeControl</b></span>
+                        <a href="#treeControl"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new FlatTreeControl&lt;SourceNodeEnriched&gt;(
+        node &#x3D;&gt; node.Level, node &#x3D;&gt; this.hasChild(node))</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="60" class="link-to-prism">src/lib/sourcedetective/sourcedetective.component.ts:60</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="treeFlattener"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>treeFlattener</b></span>
+                        <a href="#treeFlattener"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new MatTreeFlattener&lt;SourceNodeEnriched, SourceNodeEnriched&gt;(x &#x3D;&gt; x,
+        node &#x3D;&gt; node.Level, node &#x3D;&gt; this.hasChild(node), node &#x3D;&gt; node.Children)</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="63" class="link-to-prism">src/lib/sourcedetective/sourcedetective.component.ts:63</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, Input, OnChanges, SimpleChanges, OnDestroy } from &#x27;@angular/core&#x27;;
+import { MatTreeFlatDataSource, MatTreeFlattener } from &#x27;@angular/material/tree&#x27;;
+import { FlatTreeControl } from &#x27;@angular/cdk/tree&#x27;;
+import { ImxTranslationProviderService, MetadataService, LdsReplacePipe, AuthenticationService, ParameterizedText, TextToken } from &#x27;qbm&#x27;;
+import { ITShopConfig, SourceNode } from &#x27;imx-api-qer&#x27;;
+import { DbObjectKey } from &#x27;imx-qbm-dbts&#x27;;
+import { QerApiService } from &#x27;../qer-api-client.service&#x27;;
+import { EuiLoadingService, EuiSidesheetService } from &#x27;@elemental-ui/core&#x27;;
+import { RequestDetailComponent } from &#x27;../request-history/request-detail/request-detail.component&#x27;;
+import { TranslateService } from &#x27;@ngx-translate/core&#x27;;
+import { ProjectConfigurationService } from &#x27;../project-configuration/project-configuration.service&#x27;;
+import { Subscription } from &#x27;rxjs&#x27;;
+import { RequestDetailParameter } from &#x27;../request-history/request-detail/request-detail-parameter.interface&#x27;;
+import { ItshopRequest } from &#x27;../request-history/itshop-request&#x27;;
+import { ItshopRequestData } from &#x27;../itshop/request-info/itshop-request-data&#x27;;
+import { ItshopRequestService } from &#x27;../itshop/itshop-request.service&#x27;;
+import { SourceDetectiveType } from &#x27;./sourcedetective-type.enum&#x27;;
+
+type SourceNodeEnriched &#x3D; SourceNode &amp; {
+    Description: ParameterizedText;
+    TextTokens?: TextToken[];
+    ObjectTypeDisplay: string;
+    Children: SourceNodeEnriched[];
+    Level: number;
+};
+
+@Component({
+    templateUrl: &#x27;./sourcedetective.component.html&#x27;,
+    styleUrls: [&#x27;./sourcedetective.component.scss&#x27;],
+    selector: &#x27;imx-source-detective&#x27;
+})
+export class SourceDetectiveComponent implements OnInit, OnChanges, OnDestroy {
+
+    public treeControl &#x3D; new FlatTreeControl&lt;SourceNodeEnriched&gt;(
+        node &#x3D;&gt; node.Level, node &#x3D;&gt; this.hasChild(node));
+
+    public treeFlattener &#x3D; new MatTreeFlattener&lt;SourceNodeEnriched, SourceNodeEnriched&gt;(x &#x3D;&gt; x,
+        node &#x3D;&gt; node.Level, node &#x3D;&gt; this.hasChild(node), node &#x3D;&gt; node.Children);
+
+    public dataSource &#x3D; new MatTreeFlatDataSource(this.treeControl, this.treeFlattener);
+
+    public dataReady: boolean;
+    public busy &#x3D; false;
+
+    @Input() public UID_Person: string;
+    @Input() public TableName: string;
+    @Input() public UID: string;
+    @Input() public Type: SourceDetectiveType;
+
+    public SourceDetectiveType &#x3D; SourceDetectiveType;
+    private itShopConfig: ITShopConfig;
+    private currentUserId: string;
+
+    private readonly subscriptions: Subscription[] &#x3D; [];
+
+    constructor(
+        private readonly apiClient: QerApiService,
+        private readonly metadata: MetadataService,
+        private readonly loader: EuiLoadingService,
+        public readonly ldsReplace: LdsReplacePipe,
+        private readonly translationProvider: ImxTranslationProviderService,
+        private readonly translator: TranslateService,
+        private readonly sidesheet: EuiSidesheetService,
+        private readonly projectConfig: ProjectConfigurationService,
+        private readonly itshopRequestService: ItshopRequestService,
+        authentication: AuthenticationService
+    ) {
+        this.subscriptions.push(authentication.onSessionResponse.subscribe(state &#x3D;&gt; this.currentUserId &#x3D; state.UserUid));
+    }
+
+    public hasChild &#x3D; (node: SourceNodeEnriched) &#x3D;&gt; !!node.Children &amp;&amp; node.Children.length &gt; 0;
+
+    public async ngOnInit(): Promise&lt;void&gt; {
+        this.busy &#x3D; true;
+        try {
+            this.itShopConfig &#x3D; (await this.projectConfig.getConfig()).ITShopConfig;
+        } finally {
+            this.busy &#x3D; false;
+        }
+        this.reload();
+    }
+
+    public ngOnChanges(changes: SimpleChanges): void {
+        if (changes.UID || changes.TableName || changes.UID_Person) {
+            this.reload();
+        }
+    }
+
+    public ngOnDestroy(): void {
+        this.subscriptions.forEach(s &#x3D;&gt; s.unsubscribe());
+    }
+
+    public async openRequestDetail(node: SourceNodeEnriched): Promise&lt;void&gt; {
+        const uidPwo &#x3D; DbObjectKey.FromXml(node.ObjectKey).Keys[0];
+
+        let data: RequestDetailParameter;
+        const overlay &#x3D; this.loader.show();
+        try {
+            const collection &#x3D; await this.apiClient.typedClient.PortalItshopRequests.Get({
+                uidpwo: uidPwo
+            });
+            if (collection.Data.length &lt; 0) {
+                throw new Error(await this.translator.get(&quot;#LDS#The request could not be found. You may not have permission to view this request.&quot;).toPromise())
+            }
+            const pwoEntity &#x3D; collection.Data[0];
+
+            const requestData &#x3D; new ItshopRequestData({ ...collection.extendedData, index: 0 });
+            const parameterColumns &#x3D; this.itshopRequestService.createParameterColumns(
+                pwoEntity.GetEntity(),
+                requestData.parameters
+            );
+            const request &#x3D; new ItshopRequest(pwoEntity.GetEntity(), requestData.pwoData, parameterColumns, this.currentUserId);
+
+            data &#x3D; {
+                isReadOnly: true,
+                personWantsOrg: request,
+                itShopConfig: this.itShopConfig,
+                userUid: this.currentUserId
+            };
+        } finally {
+            this.loader.hide(overlay);
+        }
+
+        if (data) {
+          // We need to find the node with the object display that matches the assignment Display
+          const parameterizedText &#x3D; data.personWantsOrg.GetEntity().GetColumn(&#x27;Assignment&#x27;).GetDisplayValue();
+          const parentNode &#x3D; this.dataSource.data.find(item &#x3D;&gt; item.Description.value &#x3D;&#x3D;&#x3D; parameterizedText);
+
+            this.sidesheet.open(RequestDetailComponent, {
+                title: await this.translator.get(&#x27;#LDS#Heading View Request Details&#x27;).toPromise(),
+                subTitle: parentNode &amp;&amp; parentNode.TextTokens ? parentNode.TextTokens.map(token &#x3D;&gt; token.value).join(&#x27;&#x27;) : undefined,
+                testId: &#x27;sourcedetective-request-details-sidesheet&#x27;,
+                padding: &#x27;0px&#x27;,
+                width: &#x27;max(700px, 40%)&#x27;,
+                data
+            });
+        }
+    }
+
+    public grabText(node: SourceNodeEnriched, textTokens: TextToken[]): void {
+      // Set the parameter-filled text tokens back into the node
+      node.TextTokens &#x3D; textTokens;
+    }
+
+    private isDirectAssignment(node: SourceNode): boolean {
+        // nodes that cannot be analyzed further
+        return !node.ObjectKey;
+    }
+
+    private isByDynamicGroup(node: SourceNode): boolean {
+        return node.ObjectType &#x3D;&#x3D;&#x3D; &#x27;DynamicGroup&#x27;;
+    }
+
+    private async getObjectTypeDisplay(node: SourceNode): Promise&lt;string&gt; {
+        if (!node.ObjectType) { return &#x27;&#x27;; }
+        await this.metadata.update([node.ObjectType]);
+
+        return this.metadata.tables[node.ObjectType].DisplaySingular;
+    }
+
+    private async reload(): Promise&lt;void&gt; {
+        if (this.UID &amp;&amp; this.TableName &amp;&amp; this.UID_Person) {
+            this.dataReady &#x3D; false;
+            this.busy &#x3D; true;
+
+            try {
+                const data &#x3D; await this.apiClient.client.portal_detective_get(this.UID_Person, this.TableName, this.UID);
+                this.dataSource.data &#x3D; await this.Enrich(data);
+            } finally {
+                this.busy &#x3D; false;
+                this.dataReady &#x3D; true;
+            }
+        }
+    }
+
+    private async Enrich(nodes: SourceNode[], level: number &#x3D; 0): Promise&lt;SourceNodeEnriched[]&gt; {
+        const result: SourceNodeEnriched[] &#x3D; [];
+        for (const node of nodes) {
+            const children &#x3D; node.Children ? await this.Enrich(node.Children, level + 1) : [];
+            result.push({
+                ...node,
+                Level: level,
+                Description: await this.getParametrizedText(node),
+                ObjectTypeDisplay: await this.getObjectTypeDisplay(node),
+                Children: children
+            });
+        }
+        return result;
+    }
+
+    private async getParametrizedText(node: SourceNode): Promise&lt;ParameterizedText&gt; {
+        return {
+            value: await this.GetDescription(node),
+            marker: { start: &#x27;&quot;%&#x27;, end: &#x27;%&quot;&#x27; },
+            getParameterValue: (columnName: string) &#x3D;&gt; node.ObjectDisplayParameters[columnName]
+        };
+    }
+
+    private async GetDescription(node: SourceNode): Promise&lt;string&gt; {
+        const tableName &#x3D; node.ObjectKey ? DbObjectKey.FromXml(node.ObjectKey).TableName : null;
+        if (this.isDirectAssignment(node)) {
+            if (&#x27;Person&#x27; &#x3D;&#x3D;&#x3D; tableName) {
+                return this.translationProvider.Translate(&#x27;#LDS#The identity is directly assigned to this object.&#x27;).toPromise();
+            }
+            return this.translationProvider.Translate(&#x27;#LDS#The entitlement is directly assigned to this object.&#x27;).toPromise();
+        }
+        else if (this.isByDynamicGroup(node)) {
+            return this.translationProvider.Translate(&#x27;#LDS#The identity is a member of the dynamic role.&#x27;).toPromise();
+        }
+        else if ([&#x27;Org&#x27;, &#x27;Locality&#x27;, &#x27;ProfitCenter&#x27;, &#x27;Department&#x27;, &#x27;AERole&#x27;].includes(tableName)) {
+            return this.translationProvider.Translate({
+                key: &#x27;#LDS#Primary assignment: {0} {1}&#x27;,
+                parameters: [await this.getObjectTypeDisplay(node), node.ObjectDisplay]
+            }).toPromise();
+        }
+        else if (&#x27;Person&#x27; &#x3D;&#x3D;&#x3D; tableName) {
+            return this.translationProvider.Translate(&#x27;#LDS#The identity is a primary member of this role.&#x27;).toPromise();
+        }
+        else if (&#x27;PersonWantsOrg&#x27; &#x3D;&#x3D;&#x3D; tableName) {
+            return this.translationProvider.Translate(&#x27;#LDS#The assignment was made by a request.&#x27;).toPromise();
+        }
+        return node.ObjectDisplay;
+    }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;imx-busy-indicator *ngIf&#x3D;&quot;busy&quot;&gt;&lt;/imx-busy-indicator&gt;
+
+&lt;ng-container *ngIf&#x3D;&quot;dataReady&quot;&gt;
+  &lt;eui-alert *ngIf&#x3D;&quot;dataSource.data.length &gt; 0&quot; class&#x3D;&quot;helper-alert&quot; type&#x3D;&quot;info&quot; condensed&#x3D;&quot;true&quot; [colored]&#x3D;&quot;true&quot;&gt;
+    &lt;span *ngIf&#x3D;&quot;dataSource.data.length &gt; 1&quot;&gt;
+      {{
+        (Type &#x3D;&#x3D; SourceDetectiveType.MembershipOfRole ? &#x27;#LDS#There are {0} origins for the role membership.&#x27; : &#x27;#LDS#There are {0} origins for the assignment.&#x27;)
+          | translate
+          | ldsReplace : dataSource.data.length
+      }}
+    &lt;/span&gt;
+    &lt;span translate *ngIf&#x3D;&quot;dataSource.data.length &#x3D;&#x3D; 1&quot;&gt;#LDS#Here you can see how the assignment originated.&lt;/span&gt;
+  &lt;/eui-alert&gt;
+
+  &lt;mat-card class&#x3D;&quot;imx-source-card&quot;&gt;
+    &lt;mat-tree [dataSource]&#x3D;&quot;dataSource&quot; [treeControl]&#x3D;&quot;treeControl&quot; *ngIf&#x3D;&quot;dataSource.data.length &gt; 0; else noData&quot;&gt;
+      &lt;mat-tree-node class&#x3D;&quot;imx-source-treenode&quot; *matTreeNodeDef&#x3D;&quot;let node&quot; matTreeNodePadding&gt;
+        &lt;button *ngIf&#x3D;&quot;!hasChild(node)&quot; mat-icon-button disabled&gt;&lt;/button&gt;
+        &lt;button *ngIf&#x3D;&quot;hasChild(node)&quot; mat-icon-button matTreeNodeToggle [attr.aria-label]&#x3D;&quot;&#x27;toggle &#x27; + node.name&quot;&gt;
+          &lt;mat-icon class&#x3D;&quot;mat-icon-rtl-mirror&quot;&gt;
+            {{ treeControl.isExpanded(node) ? &#x27;expand_more&#x27; : &#x27;chevron_right&#x27; }}
+          &lt;/mat-icon&gt;
+        &lt;/button&gt;
+
+        &lt;imx-parameterized-text [parameterizedText]&#x3D;&quot;node.Description&quot; (textReady)&#x3D;&quot;grabText(node, $event)&quot;&gt;&lt;/imx-parameterized-text&gt;
+
+        &lt;ng-container *ngIf&#x3D;&quot;node.IsPrimaryAssignment &amp;&amp; node.LastPrimaryAssignmentChange&quot;
+          &gt;,
+          {{ &#x27;#LDS#Last modified by {0} on {1}&#x27; | translate | ldsReplace : node.LastPrimaryAssignmentChange.UserUpdated : node.LastPrimaryAssignmentChange.DateUpdated }}
+        &lt;/ng-container&gt;
+
+        &lt;div *ngIf&#x3D;&quot;node.ObjectType &#x3D;&#x3D; &#x27;PersonWantsOrg&#x27;&quot;&gt;
+          &lt;eui-icon
+            euiClickable&#x3D;&quot;primary&quot;
+            data-imx-identifier&#x3D;&quot;imx-source-detective-request&quot;
+            (click)&#x3D;&quot;openRequestDetail(node)&quot;
+            [matTooltip]&#x3D;&quot;&#x27;#LDS#View request information&#x27; | translate&quot;
+            icon&#x3D;&quot;info&quot;
+            size&#x3D;&quot;24px&quot;
+            aria-hidden&#x3D;&quot;false&quot;
+            attr.aria-label&#x3D;&quot;&#x27;#LDS#View request information&#x27; | translate&quot;
+          &gt;&lt;/eui-icon&gt;
+        &lt;/div&gt;
+      &lt;/mat-tree-node&gt;
+    &lt;/mat-tree&gt;
+  &lt;/mat-card&gt;
+&lt;/ng-container&gt;
+
+&lt;ng-template #noData&gt;
+  &lt;div class&#x3D;&quot;imx-no-data-div&quot;&gt;
+    &lt;eui-icon size&#x3D;&quot;xl&quot; icon&#x3D;&quot;content-alert&quot;&gt;&lt;/eui-icon&gt;
+    &lt;p translate&gt;#LDS#There is no information available for this assignment.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/ng-template&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="styleData">
+                <p class="comment">
+                    <code>./sourcedetective.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">@import &quot;@elemental-ui/core/src/styles/_eui_palette.scss&quot;;
+
+:host {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  overflow: hidden;
+
+  .showmessage {
+    margin-left: 1em;
+  }
+
+  .helper-alert ::ng-deep &gt; div {
+    margin-bottom: 20px;
+  }
+
+  .imx-source-card {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    overflow: auto;
+    margin: 3px;
+  }
+
+  .imx-no-data-div {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+
+    .eui-icon {
+      font-size: 100px;
+    }
+
+    p {
+      margin: 0;
+      font-size: 18px;
+    }
+  }
+}
+
+:host {
+  .imx-no-data-div {
+    .eui-icon {
+      color: $color-gray-10;
+    }
+
+    p {
+      color: $color-gray-50;
+    }
+  }
+}
+
+.eui-dark-theme {
+  :host {
+    .imx-no-data-div {
+      .eui-icon {
+        color: $color-gray-20;
+      }
+
+      p {
+        color: $color-gray-10;
+      }
+    }
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><imx-busy-indicator *ngIf="busy"></imx-busy-indicator><ng-container *ngIf="dataReady">  <eui-alert *ngIf="dataSource.data.length > 0" class="helper-alert" type="info" condensed="true" [colored]="true">    <span *ngIf="dataSource.data.length > 1">      {{        (Type == SourceDetectiveType.MembershipOfRole ? \'#LDS#There are {0} origins for the role membership.\' : \'#LDS#There are {0} origins for the assignment.\')          | translate          | ldsReplace : dataSource.data.length      }}    </span>    <span translate *ngIf="dataSource.data.length == 1">#LDS#Here you can see how the assignment originated.</span>  </eui-alert>  <mat-card class="imx-source-card">    <mat-tree [dataSource]="dataSource" [treeControl]="treeControl" *ngIf="dataSource.data.length > 0; else noData">      <mat-tree-node class="imx-source-treenode" *matTreeNodeDef="let node" matTreeNodePadding>        <button *ngIf="!hasChild(node)" mat-icon-button disabled></button>        <button *ngIf="hasChild(node)" mat-icon-button matTreeNodeToggle [attr.aria-label]="\'toggle \' + node.name">          <mat-icon class="mat-icon-rtl-mirror">            {{ treeControl.isExpanded(node) ? \'expand_more\' : \'chevron_right\' }}          </mat-icon>        </button>        <imx-parameterized-text [parameterizedText]="node.Description" (textReady)="grabText(node, $event)"></imx-parameterized-text>        <ng-container *ngIf="node.IsPrimaryAssignment && node.LastPrimaryAssignmentChange"          >,          {{ \'#LDS#Last modified by {0} on {1}\' | translate | ldsReplace : node.LastPrimaryAssignmentChange.UserUpdated : node.LastPrimaryAssignmentChange.DateUpdated }}        </ng-container>        <div *ngIf="node.ObjectType == \'PersonWantsOrg\'">          <eui-icon            euiClickable="primary"            data-imx-identifier="imx-source-detective-request"            (click)="openRequestDetail(node)"            [matTooltip]="\'#LDS#View request information\' | translate"            icon="info"            size="24px"            aria-hidden="false"            attr.aria-label="\'#LDS#View request information\' | translate"          ></eui-icon>        </div>      </mat-tree-node>    </mat-tree>  </mat-card></ng-container><ng-template #noData>  <div class="imx-no-data-div">    <eui-icon size="xl" icon="content-alert"></eui-icon>    <p translate>#LDS#There is no information available for this assignment.</p>  </div></ng-template></div>'
+    var COMPONENTS = [{'name': 'AddressbookComponent', 'selector': 'imx-addressbook'},{'name': 'AddressbookDetailComponent', 'selector': 'imx-addressbook-detail'},{'name': 'AnswerQuestionsComponent', 'selector': ''},{'name': 'ApplicationDetailsComponent', 'selector': 'imx-application-details'},{'name': 'ApplicationDialogComponent', 'selector': 'imx-application-dialog'},{'name': 'ApprovalHistoryComponent', 'selector': 'imx-approval-history'},{'name': 'ApprovalLevelFormComponent', 'selector': 'imx-approval-level-form'},{'name': 'ApprovalsComponent', 'selector': 'imx-itshop-approvals'},{'name': 'ApprovalsSidesheetComponent', 'selector': 'imx-approvals-sidesheet'},{'name': 'ApprovalsTableComponent', 'selector': 'imx-approvals-table'},{'name': 'ApprovalStepFormComponent', 'selector': 'imx-approval-step-form'},{'name': 'ApprovalWorkflowEditComponent', 'selector': 'imx-approval-workflow-edit'},{'name': 'ApprovalWorkflowEditInfoComponent', 'selector': 'imx-approval-workflow-edit-info'},{'name': 'ApprovalWorkflowFormComponent', 'selector': 'imx-approval-workflow-form'},{'name': 'ApprovalWorkflowHomeComponent', 'selector': 'imx-approval-workflow-home'},{'name': 'ArchivedRequestsComponent', 'selector': ''},{'name': 'AssignmentsComponent', 'selector': 'imx-assignments'},{'name': 'BadgeTileComponent', 'selector': 'imx-badge-tile'},{'name': 'BaseViewerComponent', 'selector': ''},{'name': 'BlockDetailSidesheetComponent', 'selector': 'imx-block-detail-sidesheet'},{'name': 'BusinessOwnerAddOnTileComponent', 'selector': 'imx-businessowner-addon-tile'},{'name': 'BusinessOwnerChartSummaryComponent', 'selector': 'imx-businessowner-chartsummary'},{'name': 'BusinessOwnerOverviewTileComponent', 'selector': 'imx-businessowner-overview-tile'},{'name': 'CartItemDisplayComponent', 'selector': 'imx-cart-item-display'},{'name': 'CartItemEditComponent', 'selector': 'imx-cart-item-edit'},{'name': 'CartItemsComponent', 'selector': 'imx-cart-items'},{'name': 'CartItemValidationOverviewComponent', 'selector': 'imx-cart-item-validation-overview'},{'name': 'CategoryTreeComponent', 'selector': 'imx-category-tree'},{'name': 'ChartsSidesheetComponent', 'selector': 'imx-charts-sidesheet'},{'name': 'ChartTableComponent', 'selector': 'imx-chart-table'},{'name': 'ChartTileComponent', 'selector': 'imx-chart-tile'},{'name': 'CheckPasswordsComponent', 'selector': ''},{'name': 'CompareComponent', 'selector': ''},{'name': 'CompareItemComponent', 'selector': 'imx-role-compareitem'},{'name': 'ConfirmCartSubmitDialog', 'selector': 'imx-confirm-cart-submit'},{'name': 'ContainerDomComponent', 'selector': 'imx-container-dom'},{'name': 'CreateNewDeviceComponent', 'selector': 'imx-create-new-device'},{'name': 'CreateNewIdentityComponent', 'selector': 'imx-create-new-identity'},{'name': 'DataExplorerIdentitiesComponent', 'selector': 'imx-data-explorer-identities'},{'name': 'DataExplorerViewComponent', 'selector': ''},{'name': 'DecisionHistoryComponent', 'selector': 'imx-decision-history'},{'name': 'DecisionReasonComponent', 'selector': 'imx-decision-reason'},{'name': 'DefaultCartItemDisplayComponent', 'selector': ''},{'name': 'DefaultRequestDisplayComponent', 'selector': ''},{'name': 'DelegationComponent', 'selector': ''},{'name': 'DetailViewerComponent', 'selector': 'imx-detail-viewer'},{'name': 'DiscreteLegendComponent', 'selector': 'imx-discrete-legend'},{'name': 'DuplicateCheckComponent', 'selector': 'imx-duplicate-check'},{'name': 'DuplicatePatternItemsComponent', 'selector': 'imx-duplicate-pattern-items'},{'name': 'DuplicatesSidesheetComponent', 'selector': ''},{'name': 'DynamicExclusionDialogComponent', 'selector': 'imx-dynamic-exclusion-dialog'},{'name': 'DynamicRoleComponent', 'selector': 'imx-dynamic-group'},{'name': 'EdgeDomComponent', 'selector': 'imx-edge-dom'},{'name': 'EntitlementSelectorComponent', 'selector': 'imx-entitlement-selector'},{'name': 'ExcludedMembershipsComponent', 'selector': 'imx-excluded-memberships'},{'name': 'ExclusionCheckComponent', 'selector': 'imx-exclusion-check'},{'name': 'FavoritesTabComponent', 'selector': 'imx-favorites-tab'},{'name': 'HeatmapChartComponent', 'selector': 'imx-heatmap-chart'},{'name': 'HeatmapSidesheetComponent', 'selector': 'imx-heatmap-sidesheet'},{'name': 'HeatmapTileComponent', 'selector': 'imx-heatmap-tile'},{'name': 'HeatmapVisualComponent', 'selector': 'imx-heatmap-visual'},{'name': 'HistoryFilterComponent', 'selector': 'imx-history-filter'},{'name': 'IconTileComponent', 'selector': 'imx-icon-tile'},{'name': 'IdentityComponent', 'selector': 'imx-orgchart-identity'},{'name': 'IdentityRoleMembershipsComponent', 'selector': ''},{'name': 'IdentitySelectComponent', 'selector': 'imx-identity-select'},{'name': 'IdentitySidesheetComponent', 'selector': 'imx-identity-sidesheet'},{'name': 'InquiriesComponent', 'selector': 'imx-inquiries'},{'name': 'ItshopPatternAddProductsComponent', 'selector': 'imx-itshop-pattern-add-products'},{'name': 'ItshopPatternComponent', 'selector': 'imx-itshop-pattern'},{'name': 'ItshopPatternCreateSidesheetComponent', 'selector': 'imx-itshop-pattern-create-sidesheet'},{'name': 'ItshopPatternItemEditComponent', 'selector': 'imx-itshop-pattern-item-edit'},{'name': 'ItshopPatternSidesheetComponent', 'selector': 'imx-itshop-pattern-sidesheet'},{'name': 'MailSubscriptionsComponent', 'selector': 'imx-mail-subscriptions'},{'name': 'MemberSelectorComponent', 'selector': ''},{'name': 'MembershipsChooseIdentitiesComponent', 'selector': 'imx-memberships-choose-identities'},{'name': 'MyResponsibilitiesViewComponent', 'selector': 'imx-my-responsibilities-view'},{'name': 'NewRequestComponent', 'selector': 'imx-new-request'},{'name': 'NewRequestContentComponent', 'selector': 'imx-new-request-content'},{'name': 'NewRequestHeaderComponent', 'selector': 'imx-new-request-header'},{'name': 'NewRequestHeaderToolbarComponent', 'selector': 'imx-new-request-header-toolbar'},{'name': 'NewRequestPeerGroupComponent', 'selector': 'imx-new-request-peer-group'},{'name': 'NewRequestProductBundleComponent', 'selector': 'imx-new-request-product-bundle'},{'name': 'NewRequestProductComponent', 'selector': 'imx-new-request-product'},{'name': 'NewRequestRecipientsComponent', 'selector': 'imx-new-request-recipients'},{'name': 'NewRequestReferenceUserCardComponent', 'selector': 'imx-new-request-reference-user-card'},{'name': 'NewRequestReferenceUserComponent', 'selector': 'imx-new-request-reference-user'},{'name': 'NewRequestSelectedProductsComponent', 'selector': 'imx-new-request-selected-products'},{'name': 'NewRoleComponent', 'selector': 'imx-new-role'},{'name': 'NodeDomComponent', 'selector': 'imx-node-dom'},{'name': 'NonRequestableItemsComponent', 'selector': 'imx-non-requestable-items'},{'name': 'NotificationTileComponent', 'selector': 'imx-notification-tile'},{'name': 'NotRequestableMembershipsComponent', 'selector': 'imx-not-requestable-memberships'},{'name': 'ObjectHyperviewComponent', 'selector': 'imx-object-hyperview'},{'name': 'ObjectOverviewPersonComponent', 'selector': ''},{'name': 'OptionalItemsSidesheetComponent', 'selector': 'imx-optional-items-sidesheet'},{'name': 'OrderForAdditionalUsersComponent', 'selector': 'imx-order-for-additional-users'},{'name': 'OrgChartComponent', 'selector': 'imx-orgchart'},{'name': 'OwnerControlComponent', 'selector': 'imx-owner-control'},{'name': 'PasscodeLoginComponent', 'selector': ''},{'name': 'PasscodeViewerComponent', 'selector': 'imx-passcode-viewer'},{'name': 'PasswordDashboardComponent', 'selector': ''},{'name': 'PasswordQueryComponent', 'selector': 'imx-password-query'},{'name': 'PasswordQuestionsComponent', 'selector': 'imx-password-questions'},{'name': 'PasswordQuestionsSidesheetComponent', 'selector': 'imx-password-questions-sidesheet'},{'name': 'PasswordResetComponent', 'selector': 'imx-password-reset'},{'name': 'PatternDetailsSidesheetComponent', 'selector': 'imx-pattern-details-sidesheet'},{'name': 'PatternItemListComponent', 'selector': 'imx-pattern-item-list'},{'name': 'PeerGroupComponent', 'selector': 'imx-peer-group'},{'name': 'PeerGroupDiscardSelectedComponent', 'selector': 'imx-peer-group-discard-selected'},{'name': 'PointStatVisualComponent', 'selector': 'imx-point-stat-visual'},{'name': 'PrimaryMembershipsComponent', 'selector': 'imx-primary-memberships'},{'name': 'ProductBundleItemsComponent', 'selector': 'imx-product-bundle-items'},{'name': 'ProductBundleListComponent', 'selector': 'imx-product-bundle-list'},{'name': 'ProductDependencyCheckComponent', 'selector': 'imx-product-dependency-check'},{'name': 'ProductDetailsSidesheetComponent', 'selector': 'imx-product-details-sidesheet'},{'name': 'ProductDetailsSidesheetComponent', 'selector': 'imx-product-details-sidesheet'},{'name': 'ProductEntitlementsComponent', 'selector': 'imx-product-entitlements'},{'name': 'ProductEntitlementsComponent', 'selector': 'imx-product-entitlements'},{'name': 'ProductSelectionComponent', 'selector': 'imx-product-selection'},{'name': 'ProfileComponent', 'selector': ''},{'name': 'QaLoginComponent', 'selector': ''},{'name': 'QpmIntegrationComponent', 'selector': ''},{'name': 'QueryPersonComponent', 'selector': 'imx-itshop-queryperson'},{'name': 'ReasonSidesheetComponent', 'selector': 'imx-reason-sidesheet'},{'name': 'RecommendationSidesheetComponent', 'selector': 'imx-recommendation-sidesheet'},{'name': 'RelatedApplicationMenuItemComponent', 'selector': 'imx-related-application-menu-item'},{'name': 'RelatedApplicationsComponent', 'selector': 'imx-related-applications'},{'name': 'RelatedApplicationsSidesheetComponent', 'selector': 'imx-related-applications-sidesheet'},{'name': 'RemoveMembershipComponent', 'selector': ''},{'name': 'RequestActionComponent', 'selector': ''},{'name': 'RequestConfigMembersComponent', 'selector': 'imx-request-config-members'},{'name': 'RequestConfigSidesheetComponent', 'selector': 'imx-request-config-sidesheet'},{'name': 'RequestDetailComponent', 'selector': 'imx-request-detail'},{'name': 'RequestDisplayComponent', 'selector': 'imx-request-display'},{'name': 'RequestFilterComponent', 'selector': 'imx-request-filter'},{'name': 'RequestHistoryComponent', 'selector': ''},{'name': 'RequestHistoryFilterComponent', 'selector': 'imx-request-history-filter'},{'name': 'RequestInfoComponent', 'selector': 'imx-requestinfo'},{'name': 'RequestsComponent', 'selector': 'imx-requests'},{'name': 'RequestsEntitySelectorComponent', 'selector': 'imx-requests-selector'},{'name': 'RequestShelfEntitlementsComponent', 'selector': 'imx-request-shelf-entitlements'},{'name': 'RequestShelfSidesheetComponent', 'selector': 'imx-request-shelf-sidesheet'},{'name': 'RequestShelvesComponent', 'selector': 'imx-request-shelves'},{'name': 'RequestTableComponent', 'selector': 'imx-request-table'},{'name': 'ResourcesComponent', 'selector': ''},{'name': 'ResourceSidesheetComponent', 'selector': 'imx-resource-sidesheet'},{'name': 'RestoreComponent', 'selector': ''},{'name': 'RiskAnalysisComponent', 'selector': 'imx-riskindex-analysis'},{'name': 'RiskAnalysisSidesheetComponent', 'selector': ''},{'name': 'RiskConfigComponent', 'selector': 'imx-risk-config'},{'name': 'RiskConfigSidesheetComponent', 'selector': 'imx-risk-config-sidesheet'},{'name': 'RoleDetailComponent', 'selector': 'imx-role-detail'},{'name': 'RoleEntitlementsComponent', 'selector': 'imx-role-entitlements'},{'name': 'RoleMainDataComponent', 'selector': 'imx-role-main-data'},{'name': 'RoleMembershipsComponent', 'selector': 'imx-role-memberships'},{'name': 'RoleMembershipsComponent', 'selector': 'imx-role-memberships'},{'name': 'RoleRecommendationsComponent', 'selector': 'imx-role-recommendations'},{'name': 'RolesOverviewComponent', 'selector': 'imx-roles-overview'},{'name': 'RollbackComponent', 'selector': ''},{'name': 'SecondaryMembershipsComponent', 'selector': 'imx-secondary-memberships'},{'name': 'SecurityKeysComponent', 'selector': 'imx-security-keys'},{'name': 'SecurityKeysSidesheetComponent', 'selector': ''},{'name': 'ServiceCategoriesComponent', 'selector': 'imx-service-categories'},{'name': 'ServiceCategoryComponent', 'selector': 'imx-service-category'},{'name': 'ServiceCategoryListComponent', 'selector': 'imx-servicecategory-list'},{'name': 'ServiceItemDetailComponent', 'selector': 'imx-service-item-detail'},{'name': 'ServiceItemEditComponent', 'selector': 'imx-service-item-edit'},{'name': 'ServiceItemInfoComponent', 'selector': 'imx-service-item-info'},{'name': 'ServiceitemListComponent', 'selector': 'imx-serviceitem-list'},{'name': 'ServiceItemsEditComponent', 'selector': 'imx-service-items-edit'},{'name': 'ServiceItemsEditFormComponent', 'selector': 'imx-service-items-edit-form'},{'name': 'ServiceItemsEditSidesheetComponent', 'selector': 'imx-service-items-edit-sidesheet'},{'name': 'ServiceItemSelectComponent', 'selector': 'imx-service-item-select'},{'name': 'ServiceItemsSelectorComponent', 'selector': 'imx-service-items-selector'},{'name': 'ServiceItemTagsComponent', 'selector': 'imx-service-item-tags'},{'name': 'SettingsComponent', 'selector': 'imx-settings'},{'name': 'ShelfSelectionComponent', 'selector': 'imx-shelf-selection'},{'name': 'ShoppingCartComponent', 'selector': 'imx-shopping-cart'},{'name': 'ShoppingCartEmptyComponent', 'selector': 'imx-shopping-cart-empty'},{'name': 'ShoppingCartForLaterComponent', 'selector': ''},{'name': 'ShoppingCartSubmitWarningsDialog', 'selector': 'imx-shopping-cart-submit-result'},{'name': 'SourceDetectiveComponent', 'selector': 'imx-source-detective'},{'name': 'SourceDetectiveSidesheetComponent', 'selector': ''},{'name': 'SplitComponent', 'selector': ''},{'name': 'StartComponent', 'selector': 'imx-start'},{'name': 'StatisticsCardsComponent', 'selector': 'imx-statistics-cards'},{'name': 'StatisticsCardsVisualsComponent', 'selector': 'imx-statistics-cards-visuals'},{'name': 'StatisticsForObjectsComponent', 'selector': 'imx-statistics-for-objects'},{'name': 'StatisticsHomePageComponent', 'selector': 'imx-statistics-home-page'},{'name': 'StatisticsOrderingSidesheetComponent', 'selector': 'imx-statistics-ordering-sidesheet'},{'name': 'StatisticsOrderingSidesheetDialogComponent', 'selector': 'imx-statistics-ordering-sidesheet-dialog'},{'name': 'StatisticsTreeComponent', 'selector': 'imx-statistics-tree'},{'name': 'TeamResponsibilitiesComponent', 'selector': 'imx-team-responsibilities'},{'name': 'TeamResponsibilitySidesheetComponent', 'selector': 'imx-team-responsibility-sidesheet'},{'name': 'TeamResponsibilityTileComponent', 'selector': 'imx-team-responsibility-tile'},{'name': 'TermsOfUseAcceptComponent', 'selector': ''},{'name': 'TermsOfUseListComponent', 'selector': 'imx-terms-of-use-list'},{'name': 'TermsOfUseViewerComponent', 'selector': 'imx-terms-of-use-viewer'},{'name': 'TreemapChartComponent', 'selector': 'imx-treemap-chart'},{'name': 'UserProcessComponent', 'selector': 'imx-user-process'},{'name': 'ViewDevicesComponent', 'selector': 'imx-view-devices-home'},{'name': 'ViewDevicesSidesheetComponent', 'selector': 'imx-view-devices-sidesheet'},{'name': 'WorkflowActionComponent', 'selector': 'imx-workflow-action'}];
+    var DIRECTIVES = [{'name': 'ElementVisibilityDirective', 'selector': '[imxElementVisibility]'}];
+    var ACTUAL_COMPONENT = {'name': 'SourceDetectiveComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'SourceDetectiveComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

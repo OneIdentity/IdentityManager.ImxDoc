@@ -1,0 +1,4430 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>IMX Web - QER Library</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+        <link rel="stylesheet" href="../styles/material.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">IMX Web - QER Library</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Injectables</li>
+  <li class="breadcrumb-item" >RoleService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" 
+                class="nav-link"
+                class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" 
+                class="nav-link"
+                
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/lib/role-management/role.service.ts</code>
+        </p>
+
+
+
+
+
+            <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#AERoleTag" >AERoleTag</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#canEdit" >canEdit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Protected</span>
+                                <a href="#config" >config</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#DepartmentTag" >DepartmentTag</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#entity" >entity</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#isAdmin" >isAdmin</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#LocalityTag" >LocalityTag</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#ownershipInfo" >ownershipInfo</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#ProfitCenterTag" >ProfitCenterTag</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#session" >session</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#targetMap" >targetMap</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#targets" >targets</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#translator" >translator</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#canCompare" >canCompare</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#canCreate" >canCreate</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#canHaveDynamicMemberships" >canHaveDynamicMemberships</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#canHaveEntitlements" >canHaveEntitlements</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#canHaveMemberships" >canHaveMemberships</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#canHavePrimaryMemberships" >canHavePrimaryMemberships</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#canHaveStatistics" >canHaveStatistics</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#createEntitlementAssignmentEntity" >createEntitlementAssignmentEntity</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#exists" >exists</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#get" >get</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#getCandidates" >getCandidates</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#getCandidatesDataModel" >getCandidatesDataModel</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#getComparisonConfig" >getComparisonConfig</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#getDataModel" >getDataModel</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#getEditableFields" >getEditableFields</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#getEntities" >getEntities</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#getEntitiesForTree" >getEntitiesForTree</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getEntitlementFkName" >getEntitlementFkName</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#getEntitlements" >getEntitlements</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#getEntitlementTypes" >getEntitlementTypes</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getExportMethod" >getExportMethod</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#getInteractive" >getInteractive</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#getInteractiveInternal" >getInteractiveInternal</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#getInteractiveNew" >getInteractiveNew</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getMembershipEntitySchema" >getMembershipEntitySchema</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#getMemberships" >getMemberships</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#getPrimaryMemberships" >getPrimaryMemberships</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getPrimaryMembershipSchema" >getPrimaryMembershipSchema</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#getRecommendations" >getRecommendations</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getRoleEntitySchema" >getRoleEntitySchema</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getRoleTranslateKeys" >getRoleTranslateKeys</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getRoleTypeInfo" >getRoleTypeInfo</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getSplitTargets" >getSplitTargets</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getType" >getType</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getUidPerson" >getUidPerson</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getUidRole" >getUidRole</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#hasHierarchy" >hasHierarchy</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#removeEntitlements" >removeEntitlements</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#removeMembership" >removeMembership</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#setSidesheetData" >setSidesheetData</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#unsubscribe" >unsubscribe</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(api: <a href="../injectables/QerApiService.html" target="_self">QerApiService</a>, session: imx_SessionService, translator: ImxTranslationProviderService, dynamicMethodSvc: DynamicMethodService, project: <a href="../injectables/ProjectConfigurationService.html" target="_self">ProjectConfigurationService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="89" class="link-to-prism">src/lib/role-management/role.service.ts:89</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>api</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/QerApiService.html" target="_self" >QerApiService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>session</td>
+                                                  
+                                                        <td>
+                                                                    <code>imx_SessionService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>translator</td>
+                                                  
+                                                        <td>
+                                                                    <code>ImxTranslationProviderService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>dynamicMethodSvc</td>
+                                                  
+                                                        <td>
+                                                                    <code>DynamicMethodService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>project</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ProjectConfigurationService.html" target="_self" >ProjectConfigurationService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="canCompare"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>canCompare</b></span>
+                        <a href="#canCompare"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>canCompare()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="492"
+                            class="link-to-prism">src/lib/role-management/role.service.ts:492</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;boolean&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="canCreate"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>canCreate</b></span>
+                        <a href="#canCreate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>canCreate(tableName: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, isAdmin: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="475"
+                            class="link-to-prism">src/lib/role-management/role.service.ts:475</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>tableName</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>isAdmin</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="canHaveDynamicMemberships"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>canHaveDynamicMemberships</b></span>
+                        <a href="#canHaveDynamicMemberships"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>canHaveDynamicMemberships(tableName: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="530"
+                            class="link-to-prism">src/lib/role-management/role.service.ts:530</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>tableName</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="canHaveEntitlements"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>canHaveEntitlements</b></span>
+                        <a href="#canHaveEntitlements"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>canHaveEntitlements()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="607"
+                            class="link-to-prism">src/lib/role-management/role.service.ts:607</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="canHaveMemberships"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>canHaveMemberships</b></span>
+                        <a href="#canHaveMemberships"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>canHaveMemberships()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="591"
+                            class="link-to-prism">src/lib/role-management/role.service.ts:591</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="canHavePrimaryMemberships"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>canHavePrimaryMemberships</b></span>
+                        <a href="#canHavePrimaryMemberships"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>canHavePrimaryMemberships(tableName: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="526"
+                            class="link-to-prism">src/lib/role-management/role.service.ts:526</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>tableName</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="canHaveStatistics"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>canHaveStatistics</b></span>
+                        <a href="#canHaveStatistics"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>canHaveStatistics()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="599"
+                            class="link-to-prism">src/lib/role-management/role.service.ts:599</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createEntitlementAssignmentEntity"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>createEntitlementAssignmentEntity</b></span>
+                        <a href="#createEntitlementAssignmentEntity"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>createEntitlementAssignmentEntity(role: IEntity, entlType: RoleAssignmentData)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="630"
+                            class="link-to-prism">src/lib/role-management/role.service.ts:630</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>role</td>
+                                    <td>
+                                            <code>IEntity</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>entlType</td>
+                                    <td>
+                                            <code>RoleAssignmentData</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>IEntity</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="exists"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>exists</b></span>
+                        <a href="#exists"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>exists(tableName: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="383"
+                            class="link-to-prism">src/lib/role-management/role.service.ts:383</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>tableName</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="get"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>get</b></span>
+                        <a href="#get"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>get(tableName: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, isAdmin: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>, navigationState?: CollectionLoadParameters)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="387"
+                            class="link-to-prism">src/lib/role-management/role.service.ts:387</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>tableName</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>isAdmin</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>false</code>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>navigationState</td>
+                                    <td>
+                                            <code>CollectionLoadParameters</code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;TypedEntityCollectionData&lt;TypedEntity&gt;&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getCandidates"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>getCandidates</b></span>
+                        <a href="#getCandidates"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getCandidates(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, navigationState?)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="542"
+                            class="link-to-prism">src/lib/role-management/role.service.ts:542</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>navigationState</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;ExtendedTypedEntityCollection&lt;TypedEntity, &gt;&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getCandidatesDataModel"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>getCandidatesDataModel</b></span>
+                        <a href="#getCandidatesDataModel"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getCandidatesDataModel(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="549"
+                            class="link-to-prism">src/lib/role-management/role.service.ts:549</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;DataModel&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getComparisonConfig"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>getComparisonConfig</b></span>
+                        <a href="#getComparisonConfig"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getComparisonConfig()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="479"
+                            class="link-to-prism">src/lib/role-management/role.service.ts:479</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;FkCandidateRouteDto[]&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getDataModel"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>getDataModel</b></span>
+                        <a href="#getDataModel"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getDataModel(tableName: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, isAdmin: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="470"
+                            class="link-to-prism">src/lib/role-management/role.service.ts:470</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>tableName</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>isAdmin</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;DataModel&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getEditableFields"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>getEditableFields</b></span>
+                        <a href="#getEditableFields"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getEditableFields(objectType: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, entity: IEntity, primary: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="496"
+                            class="link-to-prism">src/lib/role-management/role.service.ts:496</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>objectType</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>entity</td>
+                                    <td>
+                                            <code>IEntity</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>primary</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>false</code>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;string[]&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getEntities"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>getEntities</b></span>
+                        <a href="#getEntities"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getEntities(tableName: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, navigationState: CollectionLoadParameters)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="638"
+                            class="link-to-prism">src/lib/role-management/role.service.ts:638</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>tableName</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>navigationState</td>
+                                    <td>
+                                            <code>CollectionLoadParameters</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;TypedEntityCollectionData&lt;TypedEntity&gt;&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getEntitiesForTree"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>getEntitiesForTree</b></span>
+                        <a href="#getEntitiesForTree"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getEntitiesForTree(tableName: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, navigationState: CollectionLoadParameters)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="417"
+                            class="link-to-prism">src/lib/role-management/role.service.ts:417</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>tableName</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>navigationState</td>
+                                    <td>
+                                            <code>CollectionLoadParameters</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;EntityCollectionData&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getEntitlementFkName"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>getEntitlementFkName</b></span>
+                        <a href="#getEntitlementFkName"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getEntitlementFkName()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="634"
+                            class="link-to-prism">src/lib/role-management/role.service.ts:634</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getEntitlements"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>getEntitlements</b></span>
+                        <a href="#getEntitlements"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getEntitlements(args: literal type)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="615"
+                            class="link-to-prism">src/lib/role-management/role.service.ts:615</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>args</td>
+                                    <td>
+                                            <code>literal type</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;ExtendedTypedEntityCollection&lt;TypedEntity, &gt;&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getEntitlementTypes"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>getEntitlementTypes</b></span>
+                        <a href="#getEntitlementTypes"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getEntitlementTypes(role: IEntity)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="626"
+                            class="link-to-prism">src/lib/role-management/role.service.ts:626</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>role</td>
+                                    <td>
+                                            <code>IEntity</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;RoleAssignmentData[]&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getExportMethod"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>getExportMethod</b></span>
+                        <a href="#getExportMethod"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getExportMethod(tableName: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, isAdmin: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>, navigationState: CollectionLoadParameters)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="398"
+                            class="link-to-prism">src/lib/role-management/role.service.ts:398</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>tableName</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>isAdmin</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>navigationState</td>
+                                    <td>
+                                            <code>CollectionLoadParameters</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>DataSourceToolbarExportMethod</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getInteractive"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>getInteractive</b></span>
+                        <a href="#getInteractive"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getInteractive(tableName: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, isAdmin: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="433"
+                            class="link-to-prism">src/lib/role-management/role.service.ts:433</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>tableName</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>isAdmin</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>false</code>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;TypedEntity&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getInteractiveInternal"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>getInteractiveInternal</b></span>
+                        <a href="#getInteractiveInternal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getInteractiveInternal()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="421"
+                            class="link-to-prism">src/lib/role-management/role.service.ts:421</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;TypedEntity&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getInteractiveNew"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>getInteractiveNew</b></span>
+                        <a href="#getInteractiveNew"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getInteractiveNew(tableName: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="443"
+                            class="link-to-prism">src/lib/role-management/role.service.ts:443</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>tableName</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;WriteExtTypedEntity&lt;RoleExtendedDataWrite&gt;&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getMembershipEntitySchema"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>getMembershipEntitySchema</b></span>
+                        <a href="#getMembershipEntitySchema"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getMembershipEntitySchema(key: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="465"
+                            class="link-to-prism">src/lib/role-management/role.service.ts:465</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>key</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>EntitySchema</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getMemberships"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>getMemberships</b></span>
+                        <a href="#getMemberships"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getMemberships(args: literal type)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="505"
+                            class="link-to-prism">src/lib/role-management/role.service.ts:505</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>args</td>
+                                    <td>
+                                            <code>literal type</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;ExtendedTypedEntityCollection&lt;TypedEntity, &gt;&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getPrimaryMemberships"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>getPrimaryMemberships</b></span>
+                        <a href="#getPrimaryMemberships"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getPrimaryMemberships(args: literal type)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="515"
+                            class="link-to-prism">src/lib/role-management/role.service.ts:515</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>args</td>
+                                    <td>
+                                            <code>literal type</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;ExtendedTypedEntityCollection&lt;TypedEntity, &gt;&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getPrimaryMembershipSchema"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>getPrimaryMembershipSchema</b></span>
+                        <a href="#getPrimaryMembershipSchema"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getPrimaryMembershipSchema()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="534"
+                            class="link-to-prism">src/lib/role-management/role.service.ts:534</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>EntitySchema</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getRecommendations"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>getRecommendations</b></span>
+                        <a href="#getRecommendations"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getRecommendations(roletype: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, uidRole: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="402"
+                            class="link-to-prism">src/lib/role-management/role.service.ts:402</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>roletype</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>uidRole</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;RoleRecommendationResult&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getRoleEntitySchema"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>getRoleEntitySchema</b></span>
+                        <a href="#getRoleEntitySchema"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getRoleEntitySchema(tableName: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, interactive: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>, isAdmin: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="453"
+                            class="link-to-prism">src/lib/role-management/role.service.ts:453</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>tableName</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>interactive</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>false</code>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>isAdmin</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>false</code>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>EntitySchema</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getRoleTranslateKeys"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>getRoleTranslateKeys</b></span>
+                        <a href="#getRoleTranslateKeys"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getRoleTranslateKeys(tableName: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="649"
+                            class="link-to-prism">src/lib/role-management/role.service.ts:649</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>tableName</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/RoleTranslateKeys.html" target="_self" >RoleTranslateKeys</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getRoleTypeInfo"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>getRoleTypeInfo</b></span>
+                        <a href="#getRoleTypeInfo"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getRoleTypeInfo()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="374"
+                            class="link-to-prism">src/lib/role-management/role.service.ts:374</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/RoleObjectInfo.html" target="_self" >RoleObjectInfo</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getSplitTargets"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>getSplitTargets</b></span>
+                        <a href="#getSplitTargets"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getSplitTargets()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="645"
+                            class="link-to-prism">src/lib/role-management/role.service.ts:645</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>string[]</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getType"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>getType</b></span>
+                        <a href="#getType"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getType(tableName: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, admin: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="413"
+                            class="link-to-prism">src/lib/role-management/role.service.ts:413</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>tableName</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>admin</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>false</code>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getUidPerson"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>getUidPerson</b></span>
+                        <a href="#getUidPerson"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getUidPerson(item: TypedEntity)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="553"
+                            class="link-to-prism">src/lib/role-management/role.service.ts:553</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>item</td>
+                                    <td>
+                                            <code>TypedEntity</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getUidRole"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>getUidRole</b></span>
+                        <a href="#getUidRole"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getUidRole(item: TypedEntity)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="561"
+                            class="link-to-prism">src/lib/role-management/role.service.ts:561</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>item</td>
+                                    <td>
+                                            <code>TypedEntity</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="hasHierarchy"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>hasHierarchy</b></span>
+                        <a href="#hasHierarchy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>hasHierarchy(tablename: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, isAdmin: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="378"
+                            class="link-to-prism">src/lib/role-management/role.service.ts:378</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>tablename</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>isAdmin</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="removeEntitlements"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>removeEntitlements</b></span>
+                        <a href="#removeEntitlements"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>removeEntitlements(roleId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, entity: IEntity)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="583"
+                            class="link-to-prism">src/lib/role-management/role.service.ts:583</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>roleId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>entity</td>
+                                    <td>
+                                            <code>IEntity</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="removeMembership"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>removeMembership</b></span>
+                        <a href="#removeMembership"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>removeMembership(item: TypedEntity, role: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="569"
+                            class="link-to-prism">src/lib/role-management/role.service.ts:569</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>item</td>
+                                    <td>
+                                            <code>TypedEntity</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>role</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setSidesheetData"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>setSidesheetData</b></span>
+                        <a href="#setSidesheetData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>setSidesheetData(args: literal type)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="406"
+                            class="link-to-prism">src/lib/role-management/role.service.ts:406</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>args</td>
+                                    <td>
+                                            <code>literal type</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="unsubscribe"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>unsubscribe</b></span>
+                        <a href="#unsubscribe"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>unsubscribe(item: TypedEntity)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="587"
+                            class="link-to-prism">src/lib/role-management/role.service.ts:587</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>item</td>
+                                    <td>
+                                            <code>TypedEntity</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section data-compodoc="block-properties">
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="AERoleTag"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>AERoleTag</b></span>
+                        <a href="#AERoleTag"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>RoleManagementAERoleTag</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="86" class="link-to-prism">src/lib/role-management/role.service.ts:86</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="canEdit"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>canEdit</b></span>
+                        <a href="#canEdit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="80" class="link-to-prism">src/lib/role-management/role.service.ts:80</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="config"></a>
+                    <span class="name">
+                            <span class="modifier">Protected</span>
+                        <span ><b>config</b></span>
+                        <a href="#config"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="87" class="link-to-prism">src/lib/role-management/role.service.ts:87</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="DepartmentTag"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>DepartmentTag</b></span>
+                        <a href="#DepartmentTag"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>RoleManagementDepartmentTag</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="85" class="link-to-prism">src/lib/role-management/role.service.ts:85</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="entity"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>entity</b></span>
+                        <a href="#entity"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>IEntity</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="77" class="link-to-prism">src/lib/role-management/role.service.ts:77</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isAdmin"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>isAdmin</b></span>
+                        <a href="#isAdmin"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="79" class="link-to-prism">src/lib/role-management/role.service.ts:79</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="LocalityTag"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>LocalityTag</b></span>
+                        <a href="#LocalityTag"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>RoleManagementLocalityTag</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="83" class="link-to-prism">src/lib/role-management/role.service.ts:83</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ownershipInfo"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>ownershipInfo</b></span>
+                        <a href="#ownershipInfo"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>OwnershipInformation</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="78" class="link-to-prism">src/lib/role-management/role.service.ts:78</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ProfitCenterTag"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>ProfitCenterTag</b></span>
+                        <a href="#ProfitCenterTag"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>RoleManagementProfitCenterTag</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="84" class="link-to-prism">src/lib/role-management/role.service.ts:84</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="session"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>session</b></span>
+                        <a href="#session"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>imx_SessionService</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="93" class="link-to-prism">src/lib/role-management/role.service.ts:93</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="targetMap"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>targetMap</b></span>
+                        <a href="#targetMap"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/RoleObjectInfo.html" target="_self" >Map&lt;string | RoleObjectInfo&gt;</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new Map()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="82" class="link-to-prism">src/lib/role-management/role.service.ts:82</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="targets"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>targets</b></span>
+                        <a href="#targets"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[this.LocalityTag, this.ProfitCenterTag, this.DepartmentTag, this.AERoleTag]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="89" class="link-to-prism">src/lib/role-management/role.service.ts:89</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="translator"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>translator</b></span>
+                        <a href="#translator"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>ImxTranslationProviderService</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="94" class="link-to-prism">src/lib/role-management/role.service.ts:94</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
+import {
+  OwnershipInformation,
+  PortalAdminRoleDepartment,
+  PortalAdminRoleLocality,
+  PortalAdminRoleProfitcenter,
+  PortalRespAerole,
+  PortalRespDepartment,
+  PortalRespLocality,
+  PortalRespProfitcenter,
+  ProjectConfig,
+  QerProjectConfig,
+  RoleAssignmentData,
+  RoleExtendedDataWrite,
+  RoleRecommendationResult,
+  V2ApiClientMethodFactory,
+} from &#x27;imx-api-qer&#x27;;
+import {
+  CollectionLoadParameters,
+  DataModel,
+  EntityCollectionData,
+  EntitySchema,
+  ExtendedTypedEntityCollection,
+  FkCandidateRouteDto,
+  IEntity,
+  MethodDefinition,
+  MethodDescriptor,
+  TypedEntity,
+  TypedEntityBuilder,
+  TypedEntityCollectionData,
+  WriteExtTypedEntity,
+  XOrigin,
+} from &#x27;imx-qbm-dbts&#x27;;
+import { AERoleMembership, DepartmentMembership, LocalityMembership, ProfitCenterMembership } from &#x27;./role-memberships/membership-handlers&#x27;;
+import { ProjectConfigurationService } from &#x27;../project-configuration/project-configuration.service&#x27;;
+import { QerApiService } from &#x27;../qer-api-client.service&#x27;;
+import { RoleObjectInfo, RoleTranslateKeys } from &#x27;./role-object-info&#x27;;
+import { DataSourceToolbarExportMethod, DynamicMethodService, ImxTranslationProviderService, imx_SessionService } from &#x27;qbm&#x27;;
+import { BaseTreeEntitlement } from &#x27;./role-entitlements/entitlement-handlers&#x27;;
+import { BaseTreeRoleRestoreHandler } from &#x27;./restore/restore-handler&#x27;;
+
+export const RoleManagementLocalityTag &#x3D; &#x27;Locality&#x27;;
+export const RoleManagementProfitCenterTag &#x3D; &#x27;ProfitCenter&#x27;;
+export const RoleManagementDepartmentTag &#x3D; &#x27;Department&#x27;;
+export const RoleManagementAERoleTag &#x3D; &#x27;AERole&#x27;;
+@Injectable({
+  providedIn: &#x27;root&#x27;,
+})
+export class RoleService {
+  // Sidesheet state vars
+  public entity: IEntity;
+  public ownershipInfo: OwnershipInformation;
+  public isAdmin: boolean;
+  public canEdit: boolean;
+
+  public readonly targetMap: Map&lt;string, RoleObjectInfo&gt; &#x3D; new Map();
+  private readonly LocalityTag &#x3D; RoleManagementLocalityTag;
+  private readonly ProfitCenterTag &#x3D; RoleManagementProfitCenterTag;
+  private readonly DepartmentTag &#x3D; RoleManagementDepartmentTag;
+  private readonly AERoleTag &#x3D; RoleManagementAERoleTag;
+  protected config: QerProjectConfig &amp; ProjectConfig;
+
+  private readonly targets &#x3D; [this.LocalityTag, this.ProfitCenterTag, this.DepartmentTag, this.AERoleTag];
+
+  constructor(
+    protected readonly api: QerApiService,
+    public readonly session: imx_SessionService,
+    public readonly translator: ImxTranslationProviderService,
+    dynamicMethodSvc: DynamicMethodService,
+    protected readonly project: ProjectConfigurationService
+  ) {
+    this.targets.forEach((target) &#x3D;&gt; {
+      this.targetMap.set(target, { table: target, canBeSplitTarget: false, canBeSplitSource: false, canHaveStatistics: false });
+    });
+
+    // Type of Role Objects
+    this.targetMap.get(this.LocalityTag).respType &#x3D; PortalRespLocality;
+    this.targetMap.get(this.ProfitCenterTag).respType &#x3D; PortalRespProfitcenter;
+    this.targetMap.get(this.DepartmentTag).respType &#x3D; PortalRespDepartment;
+    this.targetMap.get(this.AERoleTag).respType &#x3D; PortalRespAerole;
+    this.targetMap.get(this.LocalityTag).adminType &#x3D; PortalAdminRoleLocality;
+    this.targetMap.get(this.ProfitCenterTag).adminType &#x3D; PortalAdminRoleProfitcenter;
+    this.targetMap.get(this.DepartmentTag).adminType &#x3D; PortalAdminRoleDepartment;
+
+    // Role Objects for Resp
+    this.targetMap.get(this.LocalityTag).resp &#x3D; this.api.typedClient.PortalRespLocality;
+    this.targetMap.get(this.ProfitCenterTag).resp &#x3D; this.api.typedClient.PortalRespProfitcenter;
+    this.targetMap.get(this.DepartmentTag).resp &#x3D; this.api.typedClient.PortalRespDepartment;
+    this.targetMap.get(this.AERoleTag).resp &#x3D; this.api.typedClient.PortalRespAerole;
+
+    this.targetMap.get(this.LocalityTag).restore &#x3D; new BaseTreeRoleRestoreHandler(
+      () &#x3D;&gt; this.api.client.portal_roles_Locality_restore_get(),
+      () &#x3D;&gt; this.api.client.portal_resp_Locality_restore_get(),
+      (uid) &#x3D;&gt; this.api.client.portal_roles_Locality_restore_byid_get(uid),
+      (uid) &#x3D;&gt; this.api.client.portal_resp_Locality_restore_byid_get(uid),
+      (uidRole, actions) &#x3D;&gt; this.api.client.portal_roles_Locality_restore_byid_post(uidRole, actions),
+      (uidRole, actions) &#x3D;&gt; this.api.client.portal_resp_Locality_restore_byid_post(uidRole, actions)
+    );
+
+    this.targetMap.get(this.ProfitCenterTag).restore &#x3D; new BaseTreeRoleRestoreHandler(
+      () &#x3D;&gt; this.api.client.portal_roles_ProfitCenter_restore_get(),
+      () &#x3D;&gt; this.api.client.portal_resp_ProfitCenter_restore_get(),
+      (uid) &#x3D;&gt; this.api.client.portal_roles_ProfitCenter_restore_byid_get(uid),
+      (uid) &#x3D;&gt; this.api.client.portal_resp_ProfitCenter_restore_byid_get(uid),
+      (uidRole, actions) &#x3D;&gt; this.api.client.portal_roles_ProfitCenter_restore_byid_post(uidRole, actions),
+      (uidRole, actions) &#x3D;&gt; this.api.client.portal_resp_ProfitCenter_restore_byid_post(uidRole, actions)
+    );
+
+    this.targetMap.get(this.DepartmentTag).restore &#x3D; new BaseTreeRoleRestoreHandler(
+      () &#x3D;&gt; this.api.client.portal_roles_Department_restore_get(),
+      () &#x3D;&gt; this.api.client.portal_resp_Department_restore_get(),
+      (uid) &#x3D;&gt; this.api.client.portal_roles_Department_restore_byid_get(uid),
+      (uid) &#x3D;&gt; this.api.client.portal_resp_Department_restore_byid_get(uid),
+      (uidRole, actions) &#x3D;&gt; this.api.client.portal_roles_Department_restore_byid_post(uidRole, actions),
+      (uidRole, actions) &#x3D;&gt; this.api.client.portal_resp_Department_restore_byid_post(uidRole, actions)
+    );
+
+    this.targetMap.get(this.LocalityTag).canBeSplitTarget &#x3D; true;
+    this.targetMap.get(this.ProfitCenterTag).canBeSplitTarget &#x3D; true;
+    this.targetMap.get(this.DepartmentTag).canBeSplitTarget &#x3D; true;
+
+    this.targetMap.get(this.LocalityTag).canBeSplitSource &#x3D; true;
+    this.targetMap.get(this.ProfitCenterTag).canBeSplitSource &#x3D; true;
+    this.targetMap.get(this.DepartmentTag).canBeSplitSource &#x3D; true;
+
+    this.targetMap.get(this.DepartmentTag).canHaveStatistics &#x3D; true;
+
+    // Role Objects for Admin (useable by tree)
+    this.targetMap.get(this.LocalityTag).admin &#x3D; {
+      get: async (parameter: any) &#x3D;&gt; this.api.client.portal_admin_role_locality_get(parameter),
+    };
+    this.targetMap.get(this.ProfitCenterTag).admin &#x3D; {
+      get: async (parameter: any) &#x3D;&gt; this.api.client.portal_admin_role_profitcenter_get(parameter),
+    };
+    this.targetMap.get(this.DepartmentTag).admin &#x3D; {
+      get: async (parameter: any) &#x3D;&gt; this.api.client.portal_admin_role_department_get(parameter),
+    };
+
+    // Entity Schema for Admin
+    this.targetMap.get(this.LocalityTag).adminSchema &#x3D; this.api.typedClient.PortalAdminRoleLocality.GetSchema();
+    this.targetMap.get(this.ProfitCenterTag).adminSchema &#x3D; this.api.typedClient.PortalAdminRoleProfitcenter.GetSchema();
+    this.targetMap.get(this.DepartmentTag).adminSchema &#x3D; this.api.typedClient.PortalAdminRoleDepartment.GetSchema();
+
+    // wrapper class for interactive methods
+    // tslint:disable-next-line: max-classes-per-file
+    class ApiWrapper {
+      constructor(
+        private getApi: {
+          GetSchema(): EntitySchema;
+          Get(): Promise&lt;ExtendedTypedEntityCollection&lt;WriteExtTypedEntity&lt;RoleExtendedDataWrite&gt;, unknown&gt;&gt;;
+        },
+        private getByIdApi: {
+          Get_byid(id: string): Promise&lt;ExtendedTypedEntityCollection&lt;WriteExtTypedEntity&lt;RoleExtendedDataWrite&gt;, unknown&gt;&gt;;
+        }
+      ) {}
+
+      public Get(): Promise&lt;ExtendedTypedEntityCollection&lt;WriteExtTypedEntity&lt;RoleExtendedDataWrite&gt;, unknown&gt;&gt; {
+        return this.getApi.Get();
+      }
+
+      public GetSchema(): EntitySchema {
+        return this.getApi.GetSchema();
+      }
+
+      public Get_byid(id: string): Promise&lt;ExtendedTypedEntityCollection&lt;WriteExtTypedEntity&lt;RoleExtendedDataWrite&gt;, unknown&gt;&gt; {
+        return this.getByIdApi.Get_byid(id);
+      }
+    }
+
+    // Interactive Role Objects for Resp
+    this.targetMap.get(this.LocalityTag).interactiveResp &#x3D; new ApiWrapper(
+      this.api.typedClient.PortalRespLocalityInteractive,
+      this.api.typedClient.PortalRespLocalityInteractive
+    );
+
+    this.targetMap.get(this.ProfitCenterTag).interactiveResp &#x3D; new ApiWrapper(
+      this.api.typedClient.PortalRespProfitcenterInteractive,
+      this.api.typedClient.PortalRespProfitcenterInteractive
+    );
+
+    this.targetMap.get(this.DepartmentTag).interactiveResp &#x3D; new ApiWrapper(
+      this.api.typedClient.PortalRespDepartmentInteractive,
+      this.api.typedClient.PortalRespDepartmentInteractive
+    );
+
+    this.targetMap.get(this.AERoleTag).interactiveResp &#x3D; new ApiWrapper(
+      this.api.typedClient.PortalRespAeroleInteractive,
+      this.api.typedClient.PortalRespAeroleInteractive
+    );
+
+    // Interactive Role Objects for Admin
+    this.targetMap.get(this.LocalityTag).interactiveAdmin &#x3D; new ApiWrapper(
+      this.api.typedClient.PortalAdminRoleLocalityInteractive,
+      this.api.typedClient.PortalAdminRoleLocalityInteractive
+    );
+
+    this.targetMap.get(this.ProfitCenterTag).interactiveAdmin &#x3D; new ApiWrapper(
+      this.api.typedClient.PortalAdminRoleProfitcenterInteractive,
+      this.api.typedClient.PortalAdminRoleProfitcenterInteractive
+    );
+
+    this.targetMap.get(this.DepartmentTag).interactiveAdmin &#x3D; new ApiWrapper(
+      this.api.typedClient.PortalAdminRoleDepartmentInteractive,
+      this.api.typedClient.PortalAdminRoleDepartmentInteractive
+    );
+
+    // Role Membership Objects
+    this.targetMap.get(this.LocalityTag).membership &#x3D; new LocalityMembership(this.api, session, this.translator);
+    this.targetMap.get(this.ProfitCenterTag).membership &#x3D; new ProfitCenterMembership(this.api, this.session, this.translator);
+    this.targetMap.get(this.DepartmentTag).membership &#x3D; new DepartmentMembership(this.api, this.session, this.translator);
+    this.targetMap.get(this.AERoleTag).membership &#x3D; new AERoleMembership(this.api, this.session, this.translator);
+
+    // CreationAllowed
+    this.targetMap.get(this.LocalityTag).respCanCreate &#x3D; true;
+    this.targetMap.get(this.ProfitCenterTag).respCanCreate &#x3D; true;
+    this.targetMap.get(this.DepartmentTag).respCanCreate &#x3D; true;
+    this.targetMap.get(this.AERoleTag).respCanCreate &#x3D; true;
+
+    this.targetMap.get(this.LocalityTag).adminCanCreate &#x3D; true;
+    this.targetMap.get(this.ProfitCenterTag).adminCanCreate &#x3D; true;
+    this.targetMap.get(this.DepartmentTag).adminCanCreate &#x3D; true;
+    this.targetMap.get(this.AERoleTag).adminCanCreate &#x3D; true;
+
+    this.targetMap.get(this.LocalityTag).translateKeys &#x3D; {
+      create: &#x27;#LDS#Create location&#x27;,
+      createHeading: &#x27;#LDS#Heading Create Location&#x27;,
+      editHeading: &#x27;#LDS#Heading Edit Location&#x27;,
+      createSnackbar: &#x27;#LDS#The location has been successfully created.&#x27;,
+      createChild: &#x27;#LDS#Create child location&#x27;,
+    };
+    this.targetMap.get(this.ProfitCenterTag).translateKeys &#x3D; {
+      create: &#x27;#LDS#Create cost center&#x27;,
+      createHeading: &#x27;#LDS#Heading Create Cost Center&#x27;,
+      editHeading: &#x27;#LDS#Heading Edit Cost Center&#x27;,
+      createSnackbar: &#x27;#LDS#The cost center has been successfully created.&#x27;,
+      createChild: &#x27;#LDS#Create child cost center&#x27;,
+    };
+    this.targetMap.get(this.DepartmentTag).translateKeys &#x3D; {
+      create: &#x27;#LDS#Create department&#x27;,
+      createHeading: &#x27;#LDS#Heading Create Department&#x27;,
+      editHeading: &#x27;#LDS#Heading Edit Department&#x27;,
+      createSnackbar: &#x27;#LDS#The department has been successfully created.&#x27;,
+      createChild: &#x27;#LDS#Create child department&#x27;,
+    };
+    this.targetMap.get(this.AERoleTag).translateKeys &#x3D; {
+      create: &#x27;#LDS#Create application role&#x27;,
+      createHeading: &#x27;#LDS#Heading Create Application Role&#x27;,
+      editHeading: &#x27;#LDS#Heading Edit Application Role&#x27;,
+      createSnackbar: &#x27;#LDS#The application role has been successfully created.&#x27;,
+    };
+
+    this.targetMap.get(this.LocalityTag).adminHasHierarchy &#x3D; true;
+    this.targetMap.get(this.ProfitCenterTag).adminHasHierarchy &#x3D; true;
+    this.targetMap.get(this.DepartmentTag).adminHasHierarchy &#x3D; true;
+    this.targetMap.get(this.AERoleTag).adminHasHierarchy &#x3D; true;
+
+    this.targetMap.get(this.LocalityTag).canUseRecommendations &#x3D; true;
+    this.targetMap.get(this.ProfitCenterTag).canUseRecommendations &#x3D; true;
+    this.targetMap.get(this.DepartmentTag).canUseRecommendations &#x3D; true;
+    this.targetMap.get(this.AERoleTag).canUseRecommendations &#x3D; true;
+
+    // Role Entitlement Objects
+    this.targetMap.get(this.LocalityTag).entitlements &#x3D; new BaseTreeEntitlement(
+      this.api,
+      this.session,
+      dynamicMethodSvc,
+      this.translator,
+      &#x27;Locality&#x27;,
+      (e) &#x3D;&gt; &#x27;QER-V-Locality&#x27;
+    );
+    this.targetMap.get(this.ProfitCenterTag).entitlements &#x3D; new BaseTreeEntitlement(
+      this.api,
+      this.session,
+      dynamicMethodSvc,
+      this.translator,
+      &#x27;ProfitCenter&#x27;,
+      (e) &#x3D;&gt; &#x27;QER-V-ProfitCenter&#x27;
+    );
+    this.targetMap.get(this.DepartmentTag).entitlements &#x3D; new BaseTreeEntitlement(
+      this.api,
+      this.session,
+      dynamicMethodSvc,
+      this.translator,
+      &#x27;Department&#x27;,
+      (e) &#x3D;&gt; &#x27;QER-V-Department&#x27;
+    );
+
+    // Add export methods to Dept, Loc, Bus for resp since
+    const factory &#x3D; new V2ApiClientMethodFactory();
+
+    this.targetMap.get(this.DepartmentTag).exportMethod &#x3D; (navigationState: CollectionLoadParameters) &#x3D;&gt; {
+      return {
+        getMethod: (withProperties: string, PageSize?: number) &#x3D;&gt; {
+          let method: MethodDescriptor&lt;EntityCollectionData&gt;;
+          if (PageSize) {
+            method &#x3D; factory.portal_resp_department_get({ ...navigationState, withProperties, PageSize, StartIndex: 0 });
+          } else {
+            method &#x3D; factory.portal_resp_department_get({ ...navigationState, withProperties });
+          }
+          return new MethodDefinition(method);
+        },
+      };
+    };
+
+    this.targetMap.get(this.ProfitCenterTag).exportMethod &#x3D; (navigationState: CollectionLoadParameters) &#x3D;&gt; {
+      return {
+        getMethod: (withProperties: string, PageSize?: number) &#x3D;&gt; {
+          let method: MethodDescriptor&lt;EntityCollectionData&gt;;
+          if (PageSize) {
+            method &#x3D; factory.portal_resp_profitcenter_get({ ...navigationState, withProperties, PageSize, StartIndex: 0 });
+          } else {
+            method &#x3D; factory.portal_resp_profitcenter_get({ ...navigationState, withProperties });
+          }
+          return new MethodDefinition(method);
+        },
+      };
+    };
+
+    this.targetMap.get(this.LocalityTag).exportMethod &#x3D; (navigationState: CollectionLoadParameters) &#x3D;&gt; {
+      return {
+        getMethod: (withProperties: string, PageSize?: number) &#x3D;&gt; {
+          let method: MethodDescriptor&lt;EntityCollectionData&gt;;
+          if (PageSize) {
+            method &#x3D; factory.portal_resp_locality_get({ ...navigationState, withProperties, PageSize, StartIndex: 0 });
+          } else {
+            method &#x3D; factory.portal_resp_locality_get({ ...navigationState, withProperties });
+          }
+          return new MethodDefinition(method);
+        },
+      };
+    };
+
+    this.targetMap.get(this.AERoleTag).exportMethod &#x3D; (navigationState: CollectionLoadParameters) &#x3D;&gt; {
+      return {
+        getMethod: (withProperties: string, PageSize?: number) &#x3D;&gt; {
+          let method: MethodDescriptor&lt;EntityCollectionData&gt;;
+          if (PageSize) {
+            method &#x3D; factory.portal_resp_aerole_get({ ...navigationState, withProperties, PageSize, StartIndex: 0 });
+          } else {
+            method &#x3D; factory.portal_resp_aerole_get({ ...navigationState, withProperties });
+          }
+          return new MethodDefinition(method);
+        },
+      };
+    };
+  }
+
+  public getRoleTypeInfo(): RoleObjectInfo {
+    return this.targetMap.get(this.ownershipInfo.TableName);
+  }
+
+  public hasHierarchy(tablename: string, isAdmin: boolean): boolean {
+    const table &#x3D; this.targetMap.get(tablename);
+    return (isAdmin ? table?.adminHasHierarchy : table?.respHasHierarchiy) &#x3D;&#x3D;&#x3D; true;
+  }
+
+  public exists(tableName: string): boolean {
+    return this.targetMap.has(tableName);
+  }
+
+  public async get(
+    tableName: string,
+    isAdmin: boolean &#x3D; false,
+    navigationState?: CollectionLoadParameters
+  ): Promise&lt;TypedEntityCollectionData&lt;TypedEntity&gt;&gt; {
+    if (this.exists(tableName)) {
+      return isAdmin ? await this.getEntities(tableName, navigationState) : await this.targetMap.get(tableName).resp.Get(navigationState);
+    }
+    return null;
+  }
+
+  public getExportMethod(tableName: string, isAdmin: boolean, navigationState: CollectionLoadParameters): DataSourceToolbarExportMethod {
+    return this.targetMap.get(tableName).exportMethod(navigationState, isAdmin);
+  }
+
+  public async getRecommendations(roletype: string, uidRole: string): Promise&lt;RoleRecommendationResult&gt; {
+    return this.api.client.portal_roles_recommendations_get(roletype, uidRole);
+  }
+
+  public setSidesheetData(args: { ownershipInfo: OwnershipInformation; entity: IEntity; isAdmin: boolean; canEdit: boolean }): void {
+    this.ownershipInfo &#x3D; args.ownershipInfo;
+    this.isAdmin &#x3D; args.isAdmin;
+    this.entity &#x3D; args.entity;
+    this.canEdit &#x3D; args.canEdit;
+  }
+
+  public getType(tableName: string, admin: boolean &#x3D; false): any {
+    return admin ? this.targetMap.get(tableName).adminType : this.targetMap.get(tableName).respType;
+  }
+
+  public async getEntitiesForTree(tableName: string, navigationState: CollectionLoadParameters): Promise&lt;EntityCollectionData&gt; {
+    return this.targetMap.get(tableName).admin?.get(navigationState);
+  }
+
+  public async getInteractiveInternal(): Promise&lt;TypedEntity&gt; {
+    // This function is used to use the target map along with all state variables to get an interactive entity
+    if (this.exists(this.ownershipInfo.TableName)) {
+      const id &#x3D; this.entity.GetKeys().join(&#x27;,&#x27;);
+      return this.isAdmin
+        ? (await this.targetMap.get(this.ownershipInfo.TableName).interactiveAdmin.Get_byid(id)).Data[0]
+        : (await this.targetMap.get(this.ownershipInfo.TableName).interactiveResp.Get_byid(id)).Data[0];
+    } else {
+      return null;
+    }
+  }
+
+  public async getInteractive(tableName: string, id: string, isAdmin: boolean &#x3D; false): Promise&lt;TypedEntity&gt; {
+    if (this.exists(tableName)) {
+      return isAdmin
+        ? (await this.targetMap.get(tableName).interactiveAdmin.Get_byid(id)).Data[0]
+        : (await this.targetMap.get(tableName).interactiveResp.Get_byid(id)).Data[0];
+    }
+
+    return null;
+  }
+
+  public async getInteractiveNew(tableName: string): Promise&lt;WriteExtTypedEntity&lt;RoleExtendedDataWrite&gt;&gt; {
+    if (this.exists(tableName)) {
+      return this.isAdmin
+        ? (await this.targetMap.get(tableName).interactiveAdmin.Get()).Data[0]
+        : (await this.targetMap.get(tableName).interactiveResp.Get()).Data[0];
+    }
+
+    return null;
+  }
+
+  public getRoleEntitySchema(tableName: string, interactive: boolean &#x3D; false, isAdmin: boolean &#x3D; false): EntitySchema {
+    if (!this.exists(tableName)) {
+      return null;
+    }
+
+    if (!interactive) {
+      return isAdmin ? this.targetMap.get(tableName).admin.GetSchema() : this.targetMap.get(tableName).resp.GetSchema();
+    }
+
+    return isAdmin ? this.targetMap.get(tableName).interactiveAdmin.GetSchema() : this.targetMap.get(tableName).interactiveResp.GetSchema();
+  }
+
+  public getMembershipEntitySchema(key: string): EntitySchema {
+    const membership &#x3D; this.targetMap.get(this.ownershipInfo.TableName).membership;
+    return membership.getSchema(key);
+  }
+
+  public async getDataModel(tableName: string, isAdmin: boolean): Promise&lt;DataModel&gt; {
+    const dataModel &#x3D; this.targetMap.get(tableName)?.dataModel;
+    return dataModel?.getModel(undefined, isAdmin);
+  }
+
+  public canCreate(tableName: string, isAdmin: boolean): boolean {
+    return isAdmin ? this.targetMap.get(tableName)?.adminCanCreate : this.targetMap.get(tableName).respCanCreate;
+  }
+
+  public async getComparisonConfig(): Promise&lt;FkCandidateRouteDto[]&gt; {
+    if (this.config &#x3D;&#x3D; null) {
+      this.config &#x3D; await this.project.getConfig();
+    }
+
+    // Configure role comparison
+    // TODO 304148: this should not be hard-coded
+    const url &#x3D; &#x27;roles/{roletype}/{uidrole}/compare/{compareroletype}/{uidcomparerole}&#x27;;
+    const candidates &#x3D; this.config.CandidateConfig[url].filter((d) &#x3D;&gt; d.ParameterName &#x3D;&#x3D; &#x27;uidcomparerole&#x27;).map((d) &#x3D;&gt; d.Candidates);
+    return candidates;
+  }
+
+  // Determine if any tables match, if so then we can compare
+  public async canCompare(): Promise&lt;boolean&gt; {
+    return (await this.getComparisonConfig()).filter((x) &#x3D;&gt; x.FkParentTableName &#x3D;&#x3D;&#x3D; this.ownershipInfo.TableName).length &gt; 0;
+  }
+
+  public async getEditableFields(objectType: string, entity: IEntity, primary: boolean &#x3D; false): Promise&lt;string[]&gt; {
+    if (this.config &#x3D;&#x3D; null) {
+      this.config &#x3D; await this.project.getConfig();
+    }
+
+    const list &#x3D; primary ? this.config.OwnershipConfig.PrimaryFields : this.config.OwnershipConfig.EditableFields;
+    return list[objectType].filter((name) &#x3D;&gt; entity.GetSchema().Columns[name]);
+  }
+
+  public async getMemberships(args: {
+    id: string;
+    navigationState?: CollectionLoadParameters;
+  }): Promise&lt;ExtendedTypedEntityCollection&lt;TypedEntity, unknown&gt;&gt; {
+    if (!this.exists(this.ownershipInfo.TableName)) {
+      return null;
+    }
+    return await this.targetMap.get(this.ownershipInfo.TableName).membership.get(args.id, args.navigationState);
+  }
+
+  public async getPrimaryMemberships(args: {
+    id: string;
+    navigationState?: CollectionLoadParameters;
+  }): Promise&lt;ExtendedTypedEntityCollection&lt;TypedEntity, unknown&gt;&gt; {
+    if (!this.exists(this.ownershipInfo.TableName)) {
+      return null;
+    }
+
+    return await this.targetMap.get(this.ownershipInfo.TableName).membership.getPrimaryMembers(args.id, args?.navigationState);
+  }
+
+  public canHavePrimaryMemberships(tableName: string): boolean {
+    return this.targetMap.get(tableName).membership.hasPrimaryMemberships();
+  }
+
+  public canHaveDynamicMemberships(tableName: string): boolean {
+    return this.targetMap.get(tableName).membership.supportsDynamicMemberships;
+  }
+
+  public getPrimaryMembershipSchema(): EntitySchema {
+    if (!this.exists(this.ownershipInfo.TableName)) {
+      return null;
+    }
+
+    return this.targetMap.get(this.ownershipInfo.TableName).membership.getPrimaryMembersSchema();
+  }
+
+  public async getCandidates(
+    id: string,
+    navigationState?: CollectionLoadParameters &amp; { xorigin?: XOrigin }
+  ): Promise&lt;ExtendedTypedEntityCollection&lt;TypedEntity, unknown&gt;&gt; {
+    return await this.targetMap.get(this.ownershipInfo.TableName).membership.getCandidates(id, navigationState);
+  }
+
+  public async getCandidatesDataModel(id: string): Promise&lt;DataModel&gt; {
+    return this.targetMap.get(this.ownershipInfo.TableName).membership.getCandidatesDataModel(id);
+  }
+
+  public getUidPerson(item: TypedEntity): string {
+    if (!this.exists(this.ownershipInfo.TableName)) {
+      return null;
+    }
+
+    return this.targetMap.get(this.ownershipInfo.TableName).membership.GetUidPerson(item.GetEntity());
+  }
+
+  public getUidRole(item: TypedEntity): string {
+    if (!this.exists(this.ownershipInfo.TableName)) {
+      return null;
+    }
+
+    return this.targetMap.get(this.ownershipInfo.TableName).membership.GetUidRole(item.GetEntity());
+  }
+
+  public async removeMembership(item: TypedEntity, role: string): Promise&lt;void&gt; {
+    if (!this.exists(this.ownershipInfo.TableName)) {
+      return null;
+    }
+
+    const membership &#x3D; this.targetMap.get(this.ownershipInfo.TableName).membership;
+    // the UID_Person is 1 of 2 primary keys of the membership - the one that is not equal to the UID of the role
+    const uidPerson &#x3D; item
+      .GetEntity()
+      .GetKeys()
+      .filter((k) &#x3D;&gt; k !&#x3D;&#x3D; role)[0];
+    await membership.delete(role, uidPerson);
+  }
+
+  public async removeEntitlements(roleId: string, entity: IEntity): Promise&lt;void&gt; {
+    this.targetMap.get(this.ownershipInfo.TableName).entitlements.delete(roleId, entity);
+  }
+
+  public async unsubscribe(item: TypedEntity): Promise&lt;void&gt; {
+    await this.api.client.portal_itshop_unsubscribe_post({ UidPwo: [item.GetEntity().GetColumn(&#x27;UID_PersonWantsOrg&#x27;).GetValue()] });
+  }
+
+  public canHaveMemberships(): boolean {
+    if (!this.exists(this.ownershipInfo.TableName)) {
+      return false;
+    }
+
+    return this.targetMap.get(this.ownershipInfo.TableName).membership ? true : false;
+  }
+
+  public canHaveStatistics(): boolean {
+    if (!this.exists(this.ownershipInfo.TableName)) {
+      return false;
+    }
+
+    return this.targetMap.get(this.ownershipInfo.TableName).canHaveStatistics;
+  }
+
+  public canHaveEntitlements(): boolean {
+    if (!this.exists(this.ownershipInfo.TableName)) {
+      return false;
+    }
+
+    return this.targetMap.get(this.ownershipInfo.TableName).entitlements ? true : false;
+  }
+
+  public async getEntitlements(args: {
+    id: string;
+    navigationState?: CollectionLoadParameters;
+    objectKey?: string;
+  }): Promise&lt;ExtendedTypedEntityCollection&lt;TypedEntity, unknown&gt;&gt; {
+    if (!this.exists(this.ownershipInfo.TableName)) {
+      return null;
+    }
+    return await this.targetMap.get(this.ownershipInfo.TableName).entitlements.getCollection(args.id, args.navigationState, args.objectKey);
+  }
+
+  public async getEntitlementTypes(role: IEntity): Promise&lt;RoleAssignmentData[]&gt; {
+    return await this.targetMap.get(this.ownershipInfo.TableName).entitlements.getEntitlementTypes(role);
+  }
+
+  public createEntitlementAssignmentEntity(role: IEntity, entlType: RoleAssignmentData): IEntity {
+    return this.targetMap.get(role.TypeName).entitlements.createEntitlementAssignmentEntity(role, entlType);
+  }
+
+  public getEntitlementFkName(): string {
+    return this.targetMap.get(this.ownershipInfo.TableName).entitlements.getEntitlementFkName();
+  }
+
+  private async getEntities(tableName: string, navigationState: CollectionLoadParameters): Promise&lt;TypedEntityCollectionData&lt;TypedEntity&gt;&gt; {
+    const builder &#x3D; new TypedEntityBuilder(this.targetMap.get(tableName).adminType);
+    const data &#x3D; await this.targetMap.get(tableName).admin.get(navigationState);
+
+    return builder.buildReadWriteEntities(data, this.targetMap.get(tableName).adminSchema);
+  }
+
+  public getSplitTargets(): string[] {
+    return [...this.targetMap].filter((m) &#x3D;&gt; m[1].canBeSplitTarget).map((m) &#x3D;&gt; m[0]);
+  }
+
+  public getRoleTranslateKeys(tableName: string): RoleTranslateKeys {
+    return this.targetMap.get(tableName).translateKeys;
+  }
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'RoleService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

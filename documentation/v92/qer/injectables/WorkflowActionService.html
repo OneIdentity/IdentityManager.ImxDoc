@@ -1,0 +1,2799 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>IMX Web - QER Library</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+        <link rel="stylesheet" href="../styles/material.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">IMX Web - QER Library</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Injectables</li>
+  <li class="breadcrumb-item" >WorkflowActionService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" 
+                class="nav-link"
+                class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" 
+                class="nav-link"
+                
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/lib/itshopapprove/workflow-action/workflow-action.service.ts</code>
+        </p>
+
+
+
+
+
+            <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#applied" >applied</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#addAdditionalApprovers" >addAdditionalApprovers</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#answerQuestion" >answerQuestion</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#approve" >approve</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#askForHelp" >askForHelp</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#checkMFA" >checkMFA</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#checkTermsOfUse" >checkTermsOfUse</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#createCdrPerson" >createCdrPerson</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#createCdrQuestioneer" >createCdrQuestioneer</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#createCdrReason" >createCdrReason</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#createCdrText" >createCdrText</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#delegateDecisions" >delegateDecisions</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#deny" >deny</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#denyDecisions" >denyDecisions</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#directDecisions" >directDecisions</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#editAction" >editAction</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#escalateDecisions" >escalateDecisions</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getPwoData" >getPwoData</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#getStepupId" >getStepupId</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#recallInquiry" >recallInquiry</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#resetReservation" >resetReservation</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#revokeDelegations" >revokeDelegations</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#withDrawApprover" >withDrawApprover</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(apiService: <a href="../injectables/QerApiService.html" target="_self">QerApiService</a>, sideSheet: EuiSidesheetService, translate: TranslateService, entityService: EntityService, busyService: EuiLoadingService, snackBar: SnackBarService, logger: ClassloggerService, person: <a href="../injectables/PersonService.html" target="_self">PersonService</a>, projectConfig: <a href="../injectables/ProjectConfigurationService.html" target="_self">ProjectConfigurationService</a>, approvalsService: <a href="../injectables/ApprovalsService.html" target="_self">ApprovalsService</a>, justificationService: <a href="../injectables/JustificationService.html" target="_self">JustificationService</a>, extService: ExtService)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="51" class="link-to-prism">src/lib/itshopapprove/workflow-action/workflow-action.service.ts:51</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>apiService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/QerApiService.html" target="_self" >QerApiService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>sideSheet</td>
+                                                  
+                                                        <td>
+                                                                    <code>EuiSidesheetService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>translate</td>
+                                                  
+                                                        <td>
+                                                                    <code>TranslateService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>entityService</td>
+                                                  
+                                                        <td>
+                                                                    <code>EntityService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>busyService</td>
+                                                  
+                                                        <td>
+                                                                    <code>EuiLoadingService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>snackBar</td>
+                                                  
+                                                        <td>
+                                                                    <code>SnackBarService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>logger</td>
+                                                  
+                                                        <td>
+                                                                    <code>ClassloggerService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>person</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/PersonService.html" target="_self" >PersonService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>projectConfig</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ProjectConfigurationService.html" target="_self" >ProjectConfigurationService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>approvalsService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ApprovalsService.html" target="_self" >ApprovalsService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>justificationService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/JustificationService.html" target="_self" >JustificationService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>extService</td>
+                                                  
+                                                        <td>
+                                                                    <code>ExtService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addAdditionalApprovers"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>addAdditionalApprovers</b></span>
+                        <a href="#addAdditionalApprovers"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>addAdditionalApprovers(requests: <a href="../classes/Approval.html" target="_self">Approval[]</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="111"
+                            class="link-to-prism">src/lib/itshopapprove/workflow-action/workflow-action.service.ts:111</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>requests</td>
+                                    <td>
+                                                <code><a href="../classes/Approval.html" target="_self" >Approval[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="answerQuestion"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>answerQuestion</b></span>
+                        <a href="#answerQuestion"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>answerQuestion(request: <a href="../classes/Approval.html" target="_self">Approval</a>, userUid: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="475"
+                            class="link-to-prism">src/lib/itshopapprove/workflow-action/workflow-action.service.ts:475</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>request</td>
+                                    <td>
+                                                <code><a href="../classes/Approval.html" target="_self" >Approval</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>userUid</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="approve"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>approve</b></span>
+                        <a href="#approve"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>approve(requests: <a href="../classes/Approval.html" target="_self">Approval[]</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="257"
+                            class="link-to-prism">src/lib/itshopapprove/workflow-action/workflow-action.service.ts:257</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>requests</td>
+                                    <td>
+                                                <code><a href="../classes/Approval.html" target="_self" >Approval[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="askForHelp"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>askForHelp</b></span>
+                        <a href="#askForHelp"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>askForHelp(requests: <a href="../classes/Approval.html" target="_self">Approval[]</a>, uidPerson: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="454"
+                            class="link-to-prism">src/lib/itshopapprove/workflow-action/workflow-action.service.ts:454</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>requests</td>
+                                    <td>
+                                                <code><a href="../classes/Approval.html" target="_self" >Approval[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>uidPerson</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkMFA"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>checkMFA</b></span>
+                        <a href="#checkMFA"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>checkMFA(uidPwo: string[])</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="223"
+                            class="link-to-prism">src/lib/itshopapprove/workflow-action/workflow-action.service.ts:223</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>uidPwo</td>
+                                    <td>
+                                            <code>string[]</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;boolean&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkTermsOfUse"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>checkTermsOfUse</b></span>
+                        <a href="#checkTermsOfUse"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>checkTermsOfUse(requests: <a href="../classes/Approval.html" target="_self">Approval[]</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="641"
+                            class="link-to-prism">src/lib/itshopapprove/workflow-action/workflow-action.service.ts:641</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>requests</td>
+                                    <td>
+                                                <code><a href="../classes/Approval.html" target="_self" >Approval[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;literal type&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createCdrPerson"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>createCdrPerson</b></span>
+                        <a href="#createCdrPerson"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>createCdrPerson(display: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="595"
+                            class="link-to-prism">src/lib/itshopapprove/workflow-action/workflow-action.service.ts:595</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>display</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>BaseCdr</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createCdrQuestioneer"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>createCdrQuestioneer</b></span>
+                        <a href="#createCdrQuestioneer"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>createCdrQuestioneer(uidPerson: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="616"
+                            class="link-to-prism">src/lib/itshopapprove/workflow-action/workflow-action.service.ts:616</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>uidPerson</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>BaseCdr</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createCdrReason"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>createCdrReason</b></span>
+                        <a href="#createCdrReason"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>createCdrReason(display?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, reasonType: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="584"
+                            class="link-to-prism">src/lib/itshopapprove/workflow-action/workflow-action.service.ts:584</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>display</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>reasonType</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>0</code>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>BaseCdr</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createCdrText"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>createCdrText</b></span>
+                        <a href="#createCdrText"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>createCdrText()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="573"
+                            class="link-to-prism">src/lib/itshopapprove/workflow-action/workflow-action.service.ts:573</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>BaseCdr</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="delegateDecisions"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>delegateDecisions</b></span>
+                        <a href="#delegateDecisions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>delegateDecisions(requests: <a href="../classes/Approval.html" target="_self">Approval[]</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="150"
+                            class="link-to-prism">src/lib/itshopapprove/workflow-action/workflow-action.service.ts:150</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>requests</td>
+                                    <td>
+                                                <code><a href="../classes/Approval.html" target="_self" >Approval[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deny"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>deny</b></span>
+                        <a href="#deny"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>deny(requests: <a href="../classes/Approval.html" target="_self">Approval[]</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="366"
+                            class="link-to-prism">src/lib/itshopapprove/workflow-action/workflow-action.service.ts:366</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>requests</td>
+                                    <td>
+                                                <code><a href="../classes/Approval.html" target="_self" >Approval[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="denyDecisions"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>denyDecisions</b></span>
+                        <a href="#denyDecisions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>denyDecisions(requests: <a href="../classes/Approval.html" target="_self">Approval[]</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="188"
+                            class="link-to-prism">src/lib/itshopapprove/workflow-action/workflow-action.service.ts:188</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>requests</td>
+                                    <td>
+                                                <code><a href="../classes/Approval.html" target="_self" >Approval[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="directDecisions"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>directDecisions</b></span>
+                        <a href="#directDecisions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>directDecisions(requests: <a href="../classes/Approval.html" target="_self">Approval[]</a>, userUid: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="68"
+                            class="link-to-prism">src/lib/itshopapprove/workflow-action/workflow-action.service.ts:68</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>requests</td>
+                                    <td>
+                                                <code><a href="../classes/Approval.html" target="_self" >Approval[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>userUid</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="editAction"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>editAction</b></span>
+                        <a href="#editAction"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>editAction(config: <a href="../interfaces/WorkflowActionEditWrapper.html" target="_self">WorkflowActionEditWrapper</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="526"
+                            class="link-to-prism">src/lib/itshopapprove/workflow-action/workflow-action.service.ts:526</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>config</td>
+                                    <td>
+                                                <code><a href="../interfaces/WorkflowActionEditWrapper.html" target="_self" >WorkflowActionEditWrapper</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="escalateDecisions"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>escalateDecisions</b></span>
+                        <a href="#escalateDecisions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>escalateDecisions(requests: <a href="../classes/Approval.html" target="_self">Approval[]</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="207"
+                            class="link-to-prism">src/lib/itshopapprove/workflow-action/workflow-action.service.ts:207</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>requests</td>
+                                    <td>
+                                                <code><a href="../classes/Approval.html" target="_self" >Approval[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getPwoData"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>getPwoData</b></span>
+                        <a href="#getPwoData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getPwoData(pwo: <a href="../classes/Approval.html" target="_self">Approval</a>, userUid: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="517"
+                            class="link-to-prism">src/lib/itshopapprove/workflow-action/workflow-action.service.ts:517</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>pwo</td>
+                                    <td>
+                                                <code><a href="../classes/Approval.html" target="_self" >Approval</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>userUid</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>EntityData</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getStepupId"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>getStepupId</b></span>
+                        <a href="#getStepupId"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getStepupId(uidPwo: string[])</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="253"
+                            class="link-to-prism">src/lib/itshopapprove/workflow-action/workflow-action.service.ts:253</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>uidPwo</td>
+                                    <td>
+                                            <code>string[]</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;string&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="recallInquiry"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>recallInquiry</b></span>
+                        <a href="#recallInquiry"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>recallInquiry(requests: <a href="../classes/Approval.html" target="_self">Approval[]</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="422"
+                            class="link-to-prism">src/lib/itshopapprove/workflow-action/workflow-action.service.ts:422</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>requests</td>
+                                    <td>
+                                                <code><a href="../classes/Approval.html" target="_self" >Approval[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="resetReservation"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>resetReservation</b></span>
+                        <a href="#resetReservation"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>resetReservation(requests: <a href="../classes/Approval.html" target="_self">Approval[]</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="438"
+                            class="link-to-prism">src/lib/itshopapprove/workflow-action/workflow-action.service.ts:438</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>requests</td>
+                                    <td>
+                                                <code><a href="../classes/Approval.html" target="_self" >Approval[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="revokeDelegations"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>revokeDelegations</b></span>
+                        <a href="#revokeDelegations"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>revokeDelegations(requests: <a href="../classes/Approval.html" target="_self">Approval[]</a>, withdrawAddApprover: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="172"
+                            class="link-to-prism">src/lib/itshopapprove/workflow-action/workflow-action.service.ts:172</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>requests</td>
+                                    <td>
+                                                <code><a href="../classes/Approval.html" target="_self" >Approval[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>withdrawAddApprover</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>true</code>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="withDrawApprover"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>withDrawApprover</b></span>
+                        <a href="#withDrawApprover"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>withDrawApprover(requests: <a href="../classes/Approval.html" target="_self">Approval[]</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="133"
+                            class="link-to-prism">src/lib/itshopapprove/workflow-action/workflow-action.service.ts:133</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>requests</td>
+                                    <td>
+                                                <code><a href="../classes/Approval.html" target="_self" >Approval[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section data-compodoc="block-properties">
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="applied"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>applied</b></span>
+                        <a href="#applied"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new Subject()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="51" class="link-to-prism">src/lib/itshopapprove/workflow-action/workflow-action.service.ts:51</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable, Type } from &#x27;@angular/core&#x27;;
+import { OverlayRef } from &#x27;@angular/cdk/overlay&#x27;;
+import { EuiLoadingService, EuiSidesheetService } from &#x27;@elemental-ui/core&#x27;;
+import { TranslateService } from &#x27;@ngx-translate/core&#x27;;
+import { Subject } from &#x27;rxjs&#x27;;
+
+import { CompareOperator, FilterType, EntityData, ValType } from &#x27;imx-qbm-dbts&#x27;;
+import { BaseCdr, BaseReadonlyCdr, ClassloggerService, EntityService, ExtService, SnackBarService } from &#x27;qbm&#x27;;
+import { WorkflowActionComponent } from &#x27;./workflow-action.component&#x27;;
+import { ProjectConfigurationService } from &#x27;../../project-configuration/project-configuration.service&#x27;;
+import { PersonService } from &#x27;../../person/person.service&#x27;;
+import { Approval } from &#x27;../approval&#x27;;
+import { ApprovalsService } from &#x27;../approvals.service&#x27;;
+import { QerApiService } from &#x27;../../qer-api-client.service&#x27;;
+import { JustificationService } from &#x27;../../justification/justification.service&#x27;;
+import { JustificationType } from &#x27;../../justification/justification-type.enum&#x27;;
+import { WorkflowActionEditWrapper } from &#x27;./workflow-action-edit-wrapper.interface&#x27;;
+import { WorkflowActionParameters } from &#x27;./workflow-action-parameters.interface&#x27;;
+import { TermsOfUseAcceptComponent } from &#x27;../../terms-of-use/terms-of-use-accept.component&#x27;;
+
+@Injectable({
+  providedIn: &#x27;root&#x27;,
+})
+export class WorkflowActionService {
+  public readonly applied &#x3D; new Subject();
+
+  constructor(
+    private readonly apiService: QerApiService,
+    private readonly sideSheet: EuiSidesheetService,
+    private readonly translate: TranslateService,
+    private readonly entityService: EntityService,
+    private readonly busyService: EuiLoadingService,
+    private readonly snackBar: SnackBarService,
+    private readonly logger: ClassloggerService,
+    private readonly person: PersonService,
+    private readonly projectConfig: ProjectConfigurationService,
+    private readonly approvalsService: ApprovalsService,
+    private readonly justificationService: JustificationService,
+    private readonly extService: ExtService
+  ) {}
+
+  public async directDecisions(requests: Approval[], userUid: string): Promise&lt;void&gt; {
+    const actionParameters &#x3D; {
+      reason: this.createCdrReason(),
+    };
+
+    const schema &#x3D; this.apiService.typedClient.PortalWorkflow.GetSchema();
+    const workflow &#x3D; {
+      title: &#x27;#LDS#Approval level&#x27;,
+      placeholder: &#x27;#LDS#Select approval level&#x27;,
+      entitySchema: schema,
+      display: { primary: schema.Columns.LevelDisplay },
+      data: {},
+    };
+
+    for (const request of requests) {
+      const workFlowDataCollection &#x3D; await this.apiService.typedClient.PortalWorkflow.Get(request.key, {
+        PageSize: 1000 /* TODO: why 1000? */,
+      });
+
+      if (workFlowDataCollection &amp;&amp; workFlowDataCollection.Data) {
+        const levelNumbers &#x3D; request.getLevelNumbers(userUid);
+        workflow.data[request.key] &#x3D; workFlowDataCollection.Data.filter((item) &#x3D;&gt; levelNumbers.includes(item.LevelNumber.value)).map(
+          (item) &#x3D;&gt; item.GetEntity()
+        );
+      }
+    }
+
+    return this.editAction({
+      title: &#x27;#LDS#Heading Reroute Approval&#x27;,
+      message: &#x27;#LDS#{0} approvals have been successfully rerouted.&#x27;,
+      data: {
+        requests,
+        actionParameters,
+        workflow,
+      },
+      apply: (request: Approval) &#x3D;&gt;
+        this.approvalsService.directDecision(request, {
+          Offset: request.decisionOffset,
+          Reason: actionParameters.reason.column.GetValue(),
+        }),
+    });
+  }
+
+  public async addAdditionalApprovers(requests: Approval[]): Promise&lt;void&gt; {
+    const actionParameters &#x3D; {
+      uidPerson: this.createCdrPerson(&#x27;#LDS#Additional approver&#x27;),
+      reason: this.createCdrReason(),
+    };
+
+    return this.editAction({
+      title: &#x27;#LDS#Heading Add Additional Approver&#x27;,
+      message: &#x27;#LDS#&quot;{1}&quot; has been successfully added as additional approver for {0} requests.&#x27;,
+      data: {
+        description: &#x27;#LDS#Specify an additional approver&#x27;,
+        actionParameters,
+        requests,
+      },
+      apply: (request: Approval) &#x3D;&gt;
+        this.approvalsService.addApprover(request, {
+          Reason: actionParameters.reason.column.GetValue(),
+          UidPerson: actionParameters.uidPerson.column.GetValue(),
+        }),
+    });
+  }
+
+  public async withDrawApprover(requests: Approval[]): Promise&lt;void&gt; {
+    const actionParameters &#x3D; {
+      reason: this.createCdrReason(),
+    };
+
+    return this.editAction({
+      title: &#x27;#LDS#Heading Withdraw Additional Approver&#x27;,
+      message: &#x27;#LDS#The additional approvers of {0} requests have been successfully withdrawn.&#x27;,
+      data: {
+        actionParameters,
+        requests,
+      },
+      apply: (request: Approval) &#x3D;&gt;
+        this.approvalsService.withdrawAdditionalApprover(request, { Reason: actionParameters.reason.column.GetValue() }),
+    });
+  }
+
+  public async delegateDecisions(requests: Approval[]): Promise&lt;void&gt; {
+    const actionParameters &#x3D; {
+      uidPerson: this.createCdrPerson(&#x27;#LDS#Delegate to&#x27;),
+      reason: this.createCdrReason(),
+    };
+
+    return this.editAction({
+      title: &#x27;#LDS#Heading Delegate Approval&#x27;,
+      message: &#x27;#LDS#{0} approvals have been successfully delegated to &quot;{1}&quot;.&#x27;,
+      data: {
+        description: &#x27;#LDS#Specify an identity who should decide instead&#x27;,
+        actionParameters,
+        requests,
+      },
+      apply: (request: Approval) &#x3D;&gt;
+        this.approvalsService.delegateDecision(request, {
+          Reason: actionParameters.reason.column.GetValue(),
+          UidPerson: actionParameters.uidPerson.column.GetValue(),
+        }),
+    });
+  }
+
+  public async revokeDelegations(requests: Approval[], withdrawAddApprover: boolean &#x3D; true): Promise&lt;void&gt; {
+    const actionParameters &#x3D; {
+      reason: this.createCdrReason(),
+    };
+
+    return this.editAction({
+      title: withdrawAddApprover ? &#x27;#LDS#Heading Withdraw Additional Approver&#x27; : &#x27;#LDS#Heading Withdraw Delegation&#x27;,
+      message: &#x27;#LDS#The additional approvers of {0} requests have been successfully withdrawn.&#x27;,
+      data: {
+        actionParameters,
+        requests,
+      },
+      apply: (request: Approval) &#x3D;&gt; this.approvalsService.revokeDelegation(request, { Reason: actionParameters.reason.column.GetValue() }),
+    });
+  }
+
+  public async denyDecisions(requests: Approval[]): Promise&lt;void&gt; {
+    const actionParameters &#x3D; {
+      reason: this.createCdrReason(),
+    };
+
+    return this.editAction({
+      title: &#x27;#LDS#Heading Reject Approval&#x27;,
+      message: &#x27;#LDS#{0} approvals have been successfully rejected.&#x27;,
+      data: {
+        actionParameters,
+        requests,
+      },
+      apply: (request: Approval) &#x3D;&gt;
+        this.approvalsService.denyDecision(request, {
+          Reason: actionParameters.reason.column.GetValue(),
+        }),
+    });
+  }
+
+  public async escalateDecisions(requests: Approval[]): Promise&lt;void&gt; {
+    const actionParameters &#x3D; {
+      reason: this.createCdrReason(),
+    };
+
+    return this.editAction({
+      title: &#x27;#LDS#Heading Escalate Approval&#x27;,
+      message: &#x27;#LDS#{0} approvals have been successfully escalated.&#x27;,
+      data: {
+        actionParameters,
+        requests,
+      },
+      apply: (request: Approval) &#x3D;&gt; this.approvalsService.escalateDecision(request, actionParameters.reason.column.GetValue()),
+    });
+  }
+
+  public async checkMFA(uidPwo: string[]): Promise&lt;boolean&gt; {
+    this.busyService.show();
+    let workflowActionId: string;
+    let mfaComponent: Type&lt;any&gt;;
+    let response: boolean;
+    try {
+      workflowActionId &#x3D; await this.getStepupId(uidPwo);
+      mfaComponent &#x3D; (await this.extService.getFittingComponent(&#x27;mfaComponent&#x27;)).instance;
+    } catch (err) {
+      throw Error(&#x27;The OLG module is not configured correctly&#x27;);
+    } finally {
+      this.busyService.hide();
+      if (mfaComponent) {
+        response &#x3D; await this.sideSheet
+          .open(mfaComponent, {
+            title: await this.translate.get(&#x27;#LDS#Heading Authenticate Using OneLogin&#x27;).toPromise(),
+            padding: &#x27;0px&#x27;,
+            testId: &#x27;imx-request-approval-mfa&#x27;,
+            width: &#x27;max(700px, 60%)&#x27;,
+            data: {
+              workflowActionId,
+            },
+          })
+          .afterClosed()
+          .toPromise();
+      }
+    }
+    return response;
+  }
+
+  public async getStepupId(uidPwo: string[]): Promise&lt;string&gt; {
+    return this.apiService.v2Client.portal_itshop_approve_requests_stepup_post({ UidPwo: uidPwo });
+  }
+
+  public async approve(requests: Approval[]): Promise&lt;void&gt; {
+
+    const term &#x3D; (await this.checkTermsOfUse(requests));
+    if (!term.isChecked) {
+      this.snackBar.open({ key: &#x27;#LDS#You have canceled the action.&#x27; });
+      return;
+    }
+
+    const itShopConfig &#x3D; (await this.projectConfig.getConfig()).ITShopConfig;
+
+    const schema &#x3D; this.apiService.typedClient.PortalItshopApproveRequests.GetSchema();
+    const mfaRequests &#x3D; requests.filter((req) &#x3D;&gt; req.IsApproveRequiresMfa?.value);
+    if (itShopConfig.StepUpAuthenticationProvider !&#x3D;&#x3D; &#x27;NoAuth&#x27; &amp;&amp; mfaRequests.length &gt; 0) {
+      // Check for MFA, don&#x27;t continue unless true
+      const isMFA &#x3D; term.isAuthenticated || await this.checkMFA(mfaRequests.map((request) &#x3D;&gt; request.key));
+      if (!isMFA) {
+        return;
+      }
+    }
+
+    let justification: BaseCdr;
+
+    let busyIndicator: OverlayRef;
+    setTimeout(() &#x3D;&gt; (busyIndicator &#x3D; this.busyService.show()));
+
+    const maxApproveReasonType &#x3D; Math.max(...requests.map((elem) &#x3D;&gt; elem.ApproveReasonType.value));
+
+    try {
+      justification &#x3D; await this.justificationService.createCdr(JustificationType.approve);
+    } finally {
+      setTimeout(() &#x3D;&gt; this.busyService.hide(busyIndicator));
+    }
+
+    const actionParameters: WorkflowActionParameters &#x3D; {
+      maxReasonType: maxApproveReasonType,
+      justification,
+      reason: this.createCdrReason(justification ? &#x27;#LDS#Additional comments about your decision&#x27; : undefined),
+    };
+
+    const showValidDate: { [key: string]: any } &#x3D; {};
+
+    const minDateFrom &#x3D; new Date();
+
+    if (itShopConfig.VI_ITShop_ApproverCanSetValidFrom &amp;&amp; requests.some((item) &#x3D;&gt; item.canSetValidFrom())) {
+      showValidDate.validFrom &#x3D; { key: &#x27;validFrom&#x27;, placeholder: &#x27;#LDS#immediately&#x27; };
+
+      const validFromColumn &#x3D; this.entityService.createLocalEntityColumn(schema.Columns.ValidFrom, undefined, {
+        ValueConstraint: { MinValue: minDateFrom },
+      });
+
+      actionParameters[showValidDate.validFrom.key] &#x3D; new BaseCdr(validFromColumn);
+    }
+
+    if (itShopConfig.VI_ITShop_ApproverCanSetValidUntil &amp;&amp; requests.some((item) &#x3D;&gt; item.canSetValidUntil(itShopConfig))) {
+      showValidDate.validUntil &#x3D; { key: &#x27;validUntil&#x27;, placeholder: &#x27;#LDS#unlimited&#x27; };
+
+      const minDateUntil &#x3D; new Date();
+      minDateUntil.setDate(minDateFrom.getDate() + 1);
+
+      const validUntilColumn &#x3D; this.entityService.createLocalEntityColumn(schema.Columns.ValidUntil, undefined, {
+        ValueConstraint: { MinValue: minDateUntil },
+      });
+
+      actionParameters[showValidDate.validUntil.key] &#x3D; new BaseCdr(validUntilColumn);
+    }
+
+    const addTimeNowToDate &#x3D; (date) &#x3D;&gt; {
+      const dateTime &#x3D; new Date(date);
+      const now &#x3D; new Date();
+      dateTime.setHours(now.getHours(), now.getMinutes() + 1);
+      return dateTime;
+    };
+
+    return this.editAction({
+      title: &#x27;#LDS#Heading Approve Request&#x27;,
+      message: &#x27;#LDS#{0} requests have been successfully approved.&#x27;,
+      discardChangesOnAbort: true,
+      data: {
+        requests,
+        approve: true,
+        actionParameters,
+        showValidDate,
+        withGuidance: true,
+      },
+      apply: async (request: Approval) &#x3D;&gt; {
+        if (request.canSetValidFrom() &amp;&amp; actionParameters.validFrom) {
+          const from &#x3D; actionParameters.validFrom.column.GetValue();
+          if (from) {
+            request.ValidFrom.value &#x3D; addTimeNowToDate(from);
+          }
+        }
+
+        if (request.canSetValidUntil(itShopConfig) &amp;&amp; actionParameters.validUntil) {
+          const until &#x3D; actionParameters.validUntil.column.GetValue();
+          if (until) {
+            request.ValidUntil.value &#x3D; addTimeNowToDate(until);
+          }
+        }
+
+        await request.commit();
+        await this.approvalsService.makeDecision(request, {
+          Reason: actionParameters.reason.column.GetValue(),
+          UidJustification: actionParameters.justification?.column?.GetValue(),
+          Decision: true,
+        });
+      },
+    });
+  }
+
+  public async deny(requests: Approval[]): Promise&lt;void&gt; {
+    const itShopConfig &#x3D; (await this.projectConfig.getConfig()).ITShopConfig;
+
+    let justification: BaseCdr;
+
+    let busyIndicator: OverlayRef;
+    setTimeout(() &#x3D;&gt; (busyIndicator &#x3D; this.busyService.show()));
+
+    const maxDenyReasonType &#x3D; Math.max(...requests.map((elem) &#x3D;&gt; elem.DenyReasonType.value));
+    try {
+      justification &#x3D; await this.justificationService.createCdr(JustificationType.deny);
+    } finally {
+      setTimeout(() &#x3D;&gt; this.busyService.hide(busyIndicator));
+    }
+
+    const actionParameters: WorkflowActionParameters &#x3D; {
+      justification,
+      maxReasonType: maxDenyReasonType,
+      reason: this.createCdrReason(justification ? &#x27;#LDS#Additional comments about your decision&#x27; : undefined),
+    };
+
+    return this.editAction({
+      title: &#x27;#LDS#Heading Deny Request&#x27;,
+      message: &#x27;#LDS#{0} requests have been successfully denied.&#x27;,
+      discardChangesOnAbort: true,
+      data: {
+        requests,
+        actionParameters,
+        withGuidance: true,
+        customValidation: itShopConfig.VI_ITShop_ApproverReasonMandatoryOnDeny
+          ? {
+              validate: () &#x3D;&gt; {
+                const reasonValue &#x3D; actionParameters.reason.column.GetValue();
+                const justificationValue &#x3D; actionParameters.justification?.column?.GetValue();
+                return (reasonValue !&#x3D; null &amp;&amp; reasonValue.length &gt; 0) || (justificationValue !&#x3D; null &amp;&amp; justificationValue.length &gt; 0);
+              },
+              message: &#x27;#LDS#Please enter or select a reason for your decision.&#x27;,
+            }
+          : undefined,
+      },
+      apply: async (request: Approval) &#x3D;&gt; {
+        try {
+          await request.GetEntity().Commit(true);
+          await this.approvalsService.makeDecision(request, {
+            Reason: actionParameters.reason.column.GetValue(),
+            UidJustification: actionParameters.justification?.column?.GetValue(),
+            Decision: false,
+          });
+        } catch (error) {
+          await request.GetEntity().DiscardChanges();
+          throw error;
+        }
+      },
+    });
+  }
+
+  public async recallInquiry(requests: Approval[]): Promise&lt;void&gt; {
+    const actionParameters &#x3D; {
+      reason: this.createCdrReason(),
+    };
+
+    return this.editAction({
+      title: &#x27;#LDS#Heading Withdraw Inquiry&#x27;,
+      message: &#x27;#LDS#The inquiry has been successfully withdrawn.&#x27;,
+      data: {
+        actionParameters,
+        requests,
+      },
+      apply: (request: Approval) &#x3D;&gt; this.approvalsService.recallInquiry(request, { Reason: actionParameters.reason.column.GetValue() }),
+    });
+  }
+
+  public async resetReservation(requests: Approval[]): Promise&lt;void&gt; {
+    const actionParameters &#x3D; {
+      reason: this.createCdrReason(),
+    };
+
+    return this.editAction({
+      title: &#x27;#LDS#Heading Cancel Reservation&#x27;,
+      message: &#x27;#LDS#The reservation has been successfully canceled.&#x27;,
+      data: {
+        actionParameters,
+        requests,
+      },
+      apply: (request: Approval) &#x3D;&gt; this.approvalsService.resetReservation(request, { Reason: actionParameters.reason.column.GetValue() }),
+    });
+  }
+
+  public async askForHelp(requests: Approval[], uidPerson: string): Promise&lt;void&gt; {
+    const actionParameters &#x3D; {
+      reason: this.createCdrText(),
+      uidPerson: this.createCdrQuestioneer(uidPerson),
+    };
+
+    return this.editAction({
+      title: &#x27;#LDS#Heading Send Inquiry&#x27;,
+      message: &#x27;#LDS#The inquiry has been successfully sent.&#x27;,
+      data: {
+        actionParameters,
+        requests,
+      },
+      apply: (request: Approval) &#x3D;&gt;
+        this.approvalsService.askForHelp(request, {
+          UidPerson: actionParameters.uidPerson.column.GetValue(),
+          Text: actionParameters.reason.column.GetValue(),
+        }),
+    });
+  }
+
+  public async answerQuestion(request: Approval, userUid: string): Promise&lt;void&gt; {
+    const actionParameters &#x3D; {
+      reason: this.createCdrReason(&#x27;#LDS#Reply&#x27;, 2),
+    };
+
+    const pwo &#x3D; this.getPwoData(request, userUid);
+    const additionalInfo &#x3D; [
+      new BaseReadonlyCdr(
+        this.entityService.createLocalEntityColumn(
+          { Type: ValType.Date, ColumnName: &#x27;DateHead&#x27;, Display: &#x27;#LDS#Inquiry made on&#x27; },
+          undefined,
+          pwo.Columns.DateHead
+        )
+      ),
+      new BaseReadonlyCdr(
+        this.entityService.createLocalEntityColumn(
+          { Type: ValType.String, ColumnName: &#x27;ReasonHead&#x27;, Display: &#x27;#LDS#Inquiry&#x27; },
+          undefined,
+          pwo.Columns.ReasonHead
+        )
+      ),
+      new BaseReadonlyCdr(
+        this.entityService.createLocalEntityColumn(
+          { Type: ValType.String, ColumnName: &#x27;DisplayPersonHead&#x27;, Display: &#x27;#LDS#Inquiry made by&#x27; },
+          undefined,
+          pwo.Columns.DisplayPersonHead
+        )
+      ),
+    ];
+
+    return this.editAction({
+      title: &#x27;#LDS#Heading Reply to Inquiry&#x27;,
+      message: &#x27;#LDS#The reply to the inquiry has been successfully sent.&#x27;,
+      data: {
+        actionParameters,
+        additionalInfo,
+        requests: [request],
+      },
+      apply: (request: Approval) &#x3D;&gt; this.approvalsService.answerQuestion(request, actionParameters.reason.column.GetValue()),
+    });
+  }
+
+  public getPwoData(pwo: Approval, userUid: string): EntityData {
+    return pwo.pwoData.WorkflowHistory.Entities.find(
+      (entityData) &#x3D;&gt;
+        entityData.Columns.DecisionType.Value &#x3D;&#x3D;&#x3D; &#x27;Query&#x27; &amp;&amp;
+        entityData.Columns.UID_PersonRelated.Value &#x3D;&#x3D;&#x3D; userUid &amp;&amp;
+        entityData.Columns.DecisionLevel.Value &#x3D;&#x3D;&#x3D; pwo.DecisionLevel.value
+    );
+  }
+
+  private async editAction(config: WorkflowActionEditWrapper): Promise&lt;void&gt; {
+    const result &#x3D; await this.sideSheet
+      .open(WorkflowActionComponent, {
+        title: await this.translate.get(config.title).toPromise(),
+        subTitle: config.data.requests.length &#x3D;&#x3D;&#x3D; 1 ? config.data.requests[0].GetEntity().GetDisplay() : &#x27;&#x27;,
+        padding: &#x27;0&#x27;,
+        width: config.data.withGuidance &amp;&amp; config.data.requests.length &#x3D;&#x3D;&#x3D; 1 ? &#x27;max(700px, 70%)&#x27; : &#x27;600px&#x27;,
+        testId: &#x27;workflow-action&#x27;,
+        data: config.data,
+      })
+      .afterClosed()
+      .toPromise();
+
+    if (result) {
+      let busyIndicator: OverlayRef;
+      setTimeout(() &#x3D;&gt; (busyIndicator &#x3D; this.busyService.show()));
+
+      let success: boolean;
+      try {
+        for (const request of config.data.requests) {
+          await config.apply(request);
+        }
+        success &#x3D; true;
+      } finally {
+        setTimeout(() &#x3D;&gt; this.busyService.hide(busyIndicator));
+      }
+
+      if (success) {
+        this.snackBar.open({
+          key: config.message,
+          parameters: [
+            config.data.requests.length,
+            config.data.actionParameters.uidPerson ? config.data.actionParameters.uidPerson.column.GetDisplayValue() : &#x27;&#x27;,
+          ],
+        });
+        this.applied.next();
+      }
+    } else {
+      if (config.discardChangesOnAbort) {
+        for (const approval of config.data.requests) {
+          await approval.GetEntity().DiscardChanges();
+        }
+      }
+      this.snackBar.open({ key: &#x27;#LDS#You have canceled the action.&#x27; });
+    }
+  }
+
+  private createCdrText(): BaseCdr {
+    const column &#x3D; this.entityService.createLocalEntityColumn({
+      ColumnName: &#x27;Querytext&#x27;,
+      Type: ValType.Text,
+      IsMultiLine: true,
+      MinLen: 1,
+    });
+
+    return new BaseCdr(column, &#x27;#LDS#Inquiry&#x27;);
+  }
+
+  private createCdrReason(display?: string, reasonType: number &#x3D; 0): BaseCdr {
+    const column &#x3D; this.entityService.createLocalEntityColumn({
+      ColumnName: &#x27;ReasonHead&#x27;,
+      Type: ValType.Text,
+      IsMultiLine: true,
+      MinLen: reasonType &#x3D;&#x3D;&#x3D; 2 ? 1 : 0,
+    });
+
+    return new BaseCdr(column, display || &#x27;#LDS#Reason for your decision&#x27;);
+  }
+
+  private createCdrPerson(display: string): BaseCdr {
+    const fkRelation &#x3D; {
+      ChildColumnName: &#x27;UID_PersonRelated&#x27;,
+      ParentTableName: &#x27;Person&#x27;,
+      ParentColumnName: &#x27;UID_Person&#x27;,
+      IsMemberRelation: false,
+    };
+
+    const column &#x3D; this.entityService.createLocalEntityColumn(
+      {
+        ColumnName: fkRelation.ChildColumnName,
+        Type: ValType.String,
+        FkRelation: fkRelation,
+        MinLen: 1,
+      },
+      [this.person.createFkProviderItem(fkRelation)]
+    );
+
+    return new BaseCdr(column, display);
+  }
+
+  private createCdrQuestioneer(uidPerson: string): BaseCdr {
+    const fkRelation &#x3D; {
+      ChildColumnName: &#x27;UID_PersonRelated&#x27;,
+      ParentTableName: &#x27;Person&#x27;,
+      ParentColumnName: &#x27;UID_Person&#x27;,
+      IsMemberRelation: false,
+    };
+
+    const column &#x3D; this.entityService.createLocalEntityColumn(
+      {
+        ColumnName: fkRelation.ChildColumnName,
+        Type: ValType.String,
+        FkRelation: fkRelation,
+        MinLen: 1,
+      },
+      [
+        this.person.createFkProviderItem(fkRelation, [
+          { ColumnName: &#x27;UID_Person&#x27;, CompareOp: CompareOperator.NotEqual, Type: FilterType.Compare, Value1: uidPerson },
+        ]),
+      ]
+    );
+
+    return new BaseCdr(column, &#x27;#LDS#Recipient of the inquiry&#x27;);
+  }
+
+  private async checkTermsOfUse(requests: Approval[]): Promise&lt;{ isChecked: boolean; isAuthenticated: boolean }&gt; {
+    // get all cart items with terms of uses
+    const approvalItemsWithTermsOfUseToAccept &#x3D; requests.filter(
+      (item) &#x3D;&gt; item.UID_QERTermsOfUse?.value !&#x3D;&#x3D; null &amp;&amp; item.UID_QERTermsOfUse?.value !&#x3D;&#x3D; &#x27;&#x27;
+    );
+
+    if (approvalItemsWithTermsOfUseToAccept.length &gt; 0) {
+      this.logger.debug(
+        this,
+        &#x60;There are ${approvalItemsWithTermsOfUseToAccept.length} service items with terms of use the user have to accepted.&#x60;
+      );
+
+      const termsOfUseAccepted &#x3D; await this.sideSheet
+        .open(TermsOfUseAcceptComponent, {
+          title: await this.translate.get(&#x27;#LDS#Heading Accept Terms of Use&#x27;).toPromise(),
+          padding: &#x27;0px&#x27;,
+          width: &#x27;max(600px, 60%)&#x27;,
+          data: {
+            acceptCartItems: false,
+            approvalItems: approvalItemsWithTermsOfUseToAccept,
+          },
+          testId: &#x27;approvalitems-terms-of-use-accept-sidesheet&#x27;,
+        })
+        .afterClosed()
+        .toPromise();
+
+      return termsOfUseAccepted;
+    } else {
+      this.logger.debug(this, &#x27;there are no service items with terms of use the user have to accepted.&#x27;);
+      return { isChecked: true, isAuthenticated: false}
+    }
+  }
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'WorkflowActionService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
