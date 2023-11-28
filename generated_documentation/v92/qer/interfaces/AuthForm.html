@@ -1,0 +1,434 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>IMX Web - QER Library</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+        <link rel="stylesheet" href="../styles/material.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">IMX Web - QER Library</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content interface">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Interfaces</li>
+  <li class="breadcrumb-item"
+  >
+  AuthForm</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" 
+                class="nav-link"
+                class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" 
+                class="nav-link"
+                
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/lib/terms-of-use/terms-of-use-accept.component.ts</code>
+        </p>
+
+
+            <p class="comment">
+                <h3>Description</h3>
+            </p>
+            <p class="comment">
+                <p>Form information for the typed authetification form</p>
+
+            </p>
+
+
+        <section data-compodoc="block-index">
+            <h3 id="index">Index</h3>
+            <table class="table table-sm table-bordered index-table">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Properties</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                        <a href="#authenticator" 
+>
+                                            authenticator
+                                        </a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+
+            <section data-compodoc="block-properties">
+                <h3 id="inputs">Properties</h3>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <a name="authenticator"></a>
+                                        <span class="name "><b>authenticator</b>
+                                            <a href="#authenticator">
+                                                <span class="icon ion-ios-link"></span>
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>authenticator:     <code>FormArray&lt;FormControl&lt;boolean&gt;&gt;</code>
+</code>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>    <code>FormArray&lt;FormControl&lt;boolean&gt;&gt;</code>
+
+                                        </td>
+                                    </tr>
+
+
+
+
+
+                        </tbody>
+                    </table>
+            </section>
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { OverlayRef } from &#x27;@angular/cdk/overlay&#x27;;
+import { Component, OnInit, Inject, OnDestroy, ViewChild, ViewContainerRef, ChangeDetectorRef } from &#x27;@angular/core&#x27;;
+import { FormArray, FormControl, FormGroup, Validators } from &#x27;@angular/forms&#x27;;
+import { EuiLoadingService, EuiSidesheetRef, EUI_SIDESHEET_DATA } from &#x27;@elemental-ui/core&#x27;;
+import { Subscription } from &#x27;rxjs&#x27;;
+
+import { TypedEntity } from &#x27;imx-qbm-dbts&#x27;;
+import { PortalCartitem } from &#x27;imx-api-qer&#x27;;
+import { TermsOfUseService } from &#x27;./terms-of-use.service&#x27;;
+import { Approval } from &#x27;../itshopapprove/approval&#x27;;
+import { BusyService, ExtService } from &#x27;qbm&#x27;;
+import { AuthenticationFactors } from &#x27;../admin/authentication-factors.interface&#x27;;
+
+/**
+ * Form information for the typed authetification form
+ */
+interface AuthForm {
+  authenticator: FormArray&lt;FormControl&lt;boolean&gt;&gt;;
+}
+/**
+ * Form information for the typed terms of use form
+ */
+interface TosForm {
+  acceptTermsOfUseFormCtrl: FormControl&lt;boolean&gt;;
+}
+
+/**
+ * A component for viewing and accepting all {@link PortalTermsofuse|terms of use} related to a
+ * given list of {@link PortalCartitem|PortalCartitems} or {@link PortalItshopApproveRequests|PortalItshopApproveRequests}.
+ * Depending on the server configuration, the user may have to authenticate himself with OneLogin.
+ */
+@Component({
+  templateUrl: &#x27;./terms-of-use-accept.component.html&#x27;,
+  styleUrls: [&#x27;./terms-of-use-accept.component.scss&#x27;],
+})
+export class TermsOfUseAcceptComponent implements OnInit, OnDestroy {
+  @ViewChild(&#x27;authFormControls&#x27;, { static: true, read: ViewContainerRef }) private authFormControls: ViewContainerRef;
+
+  /** Does accepting terms without any authentication */
+  public withoutAuthenticaton: boolean;
+
+  /** The  {@link FormGroup} for accepting the terms of use */
+  public termsOfUseFormGroup &#x3D; new FormGroup&lt;TosForm&gt;({
+    acceptTermsOfUseFormCtrl: new FormControl&lt;boolean&gt;(null, Validators.required),
+  });
+
+  /** The  {@link FormGroup} for the authentication */
+  public authenticationFormGroup &#x3D; new FormGroup&lt;AuthForm&gt;({
+    authenticator: new FormArray&lt;FormControl&lt;boolean&gt;&gt;([], (ctrl: FormArray) &#x3D;&gt; {
+      return ctrl.controls.some((elem) &#x3D;&gt; elem.value &#x3D;&#x3D;&#x3D; true) ? null : { error: true };
+    }),
+  });
+
+  /**
+   * Gets the items, that has to be accepted (cart items or approval)
+   */
+  public get items(): TypedEntity[] {
+    return this.data.acceptCartItems &amp;&amp; this.data.cartItems?.length &gt; 0 ? this.data.cartItems : this.data.approvalItems;
+  }
+
+  /** The workflow id used for mfa */
+  public workflowId: string;
+
+  /** Indicates whether the user has authenticators defined or not */
+  public hasAuthenticators: boolean &#x3D; false;
+
+  /** Indicates whether the control is loading or not */
+  public isLoading: boolean &#x3D; false;
+
+  /** busy service used in the authentication control and its sub controls */
+  public busyService: BusyService &#x3D; new BusyService();
+
+  public isAuthenticated: boolean;
+
+  public ldsAcceptCartItemsInfoText: string &#x3D;
+    &#x27;#LDS#One or more products in your shopping cart require you to accept the terms of use before you can proceed.&#x27;;
+  public ldsAcceptApprovalItemsInfoText: string &#x3D;
+    &#x27;#LDS#One or more requests require you to accept the terms of use before you can proceed.&#x27;;
+  public ldsItemsHeading: string;
+
+  private subscriptions: Subscription[] &#x3D; [];
+
+  constructor(
+    @Inject(EUI_SIDESHEET_DATA)
+    public readonly data: {
+      acceptCartItems: boolean;
+      cartItems: PortalCartitem[];
+      approvalItems: Approval[];
+    },
+    public readonly sidesheetRef: EuiSidesheetRef,
+    private readonly termsOfUseService: TermsOfUseService,
+    private readonly euiBusyService: EuiLoadingService,
+    private readonly extension: ExtService,
+    change: ChangeDetectorRef
+  ) {
+    this.subscriptions.push(
+      this.sidesheetRef.closeClicked().subscribe(async () &#x3D;&gt; {
+        this.sidesheetRef.close(false);
+      })
+    );
+    this.subscriptions.push(
+      this.busyService.busyStateChanged.subscribe((elem) &#x3D;&gt; {
+        this.isLoading &#x3D; elem;
+        change.detectChanges();
+      })
+    );
+  }
+
+  public async ngOnInit(): Promise&lt;void&gt; {
+    this.ldsItemsHeading &#x3D; this.data.acceptCartItems ? &#x27;#LDS#Related products&#x27; : &#x27;#LDS#Related requests&#x27;;
+    const busy &#x3D; this.busyService.beginBusy();
+
+    try {
+      const authProvider &#x3D; await this.termsOfUseService.getStepUpAuthenticationProvider();
+      this.withoutAuthenticaton &#x3D;
+        authProvider &#x3D;&#x3D;&#x3D; &#x27;NoAuth&#x27; || this.data.approvalItems?.every((elem) &#x3D;&gt; !!!elem.IsAcceptTermsRequiresMfa.value);
+
+      if (this.withoutAuthenticaton) {
+        return;
+      }
+      await this.initAuthentication(!this.data.acceptCartItems);
+    } finally {
+      busy.endBusy();
+    }
+  }
+
+  /**
+   * unsubscribes all events when the control is destroyed
+   */
+  public ngOnDestroy(): void {
+    this.subscriptions.forEach((elem) &#x3D;&gt; elem.unsubscribe());
+  }
+
+  /**
+   * Closes the sidesheet with an empty object
+   */
+  public cancel(): void {
+    this.sidesheetRef.close({});
+  }
+
+  /**
+   * Accept the terms of use without any authentication.
+   */
+  public async accept(): Promise&lt;void&gt; {
+    this.data.cartItems &amp;&amp; this.data.cartItems.length &gt; 0 ? await this.acceptCartItems() : await this.acceptApprovalItems();
+  }
+
+  /**
+   * Accept the terms of use of the current UIDs of approval items without any authentication.
+   */
+  private async acceptApprovalItems(): Promise&lt;void&gt; {
+    let overlayRef: OverlayRef;
+    setTimeout(() &#x3D;&gt; (overlayRef &#x3D; this.euiBusyService.show()));
+
+    try {
+      for (const item of this.data.approvalItems) {
+        await this.termsOfUseService.acceptApprovalItems(item.GetEntity().GetKeys()[0]);
+      }
+    } finally {
+      setTimeout(() &#x3D;&gt; this.euiBusyService.hide(overlayRef));
+    }
+
+    this.sidesheetRef.close({ isChecked: true, isAuthenticated: this.authenticationFormGroup.valid });
+  }
+
+  /**
+   * Accept the terms of use of the current UIDs of cart items without any authentication.
+   */
+  private async acceptCartItems(): Promise&lt;void&gt; {
+    let overlayRef: OverlayRef;
+    setTimeout(() &#x3D;&gt; (overlayRef &#x3D; this.euiBusyService.show()));
+
+    try {
+      for (const item of this.data.cartItems) {
+        await this.termsOfUseService.acceptCartItems(item.GetEntity().GetKeys()[0]);
+      }
+    } finally {
+      setTimeout(() &#x3D;&gt; this.euiBusyService.hide(overlayRef));
+    }
+
+    this.sidesheetRef.close({ isChecked: true, isAuthenticated: this.authenticationFormGroup.valid });
+  }
+
+  /**
+   * Inits the authentication controls, that are registered under the id &#x27;authenticator&#x27;
+   * @param isAppove shows if approval items or cart items are used
+   */
+  private async initAuthentication(isAppove: boolean) {
+    this.workflowId &#x3D; await this.termsOfUseService.getStepupId(
+      isAppove ? this.data.approvalItems.map((elem) &#x3D;&gt; elem.key) : this.data.cartItems.map((elem) &#x3D;&gt; elem.UID_PersonWantsOrg.value)
+    );
+
+    const test &#x3D; await this.extension.getFittingComponents(&#x27;authenticator&#x27;, async () &#x3D;&gt; true);
+    for (const iterator of test) {
+      // creates a form control for the given authenticator instance and sets its inputs
+      const componentRef &#x3D; this.authFormControls.createComponent(iterator.instance).instance as AuthenticationFactors;
+
+      componentRef.itemId &#x3D; this.workflowId;
+      componentRef.busyService &#x3D; this.busyService;
+      this.subscriptions.push(
+        componentRef.loaded.subscribe((elem) &#x3D;&gt; {
+          this.hasAuthenticators &#x3D; this.hasAuthenticators || elem;
+        })
+      );
+      // adds formControl to the authenticaton form array
+      this.subscriptions.push(componentRef.formControl.valueChanges.subscribe((value) &#x3D;&gt; (this.isAuthenticated &#x3D; value)));
+      this.authenticationFormGroup.controls.authenticator.push(componentRef.formControl);
+    }
+  }
+}
+</code></pre>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'interface';
+            var COMPODOC_CURRENT_PAGE_URL = 'AuthForm.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

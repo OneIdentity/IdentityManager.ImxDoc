@@ -1,0 +1,1612 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>IMX Web - QER Library</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+        <link rel="stylesheet" href="../styles/material.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">IMX Web - QER Library</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Injectables</li>
+  <li class="breadcrumb-item" >HeatmapSidesheetService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" 
+                class="nav-link"
+                class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" 
+                class="nav-link"
+                
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/lib/statistics/heatmaps/heatmap-sidesheet/heatmap-sidesheet.service.ts</code>
+        </p>
+
+
+
+
+
+            <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#colorValues" >colorValues</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#heatmapInfo" >heatmapInfo</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#heatmapProperties" >heatmapProperties</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#stateThresholds" >stateThresholds</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getAncestors" >getAncestors</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getBlocks" >getBlocks</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getHistoryBlocks" >getHistoryBlocks</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getHistoryColors" >getHistoryColors</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getHistoryProperties" >getHistoryProperties</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getHistoryTooltip" >getHistoryTooltip</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getProperties" >getProperties</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getStateProperties" >getStateProperties</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getTooltip" >getTooltip</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#openBlockDetails" >openBlockDetails</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#setConstants" >setConstants</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#setThresholds" >setThresholds</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(constantService: <a href="../injectables/StatisticsConstantsService.html" target="_self">StatisticsConstantsService</a>, sidesheetService: EuiSidesheetService, replacePipe: LdsReplacePipe)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/lib/statistics/heatmaps/heatmap-sidesheet/heatmap-sidesheet.service.ts:48</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>constantService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/StatisticsConstantsService.html" target="_self" >StatisticsConstantsService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>sidesheetService</td>
+                                                  
+                                                        <td>
+                                                                    <code>EuiSidesheetService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>replacePipe</td>
+                                                  
+                                                        <td>
+                                                                    <code>LdsReplacePipe</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getAncestors"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>getAncestors</b></span>
+                        <a href="#getAncestors"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getAncestors(item: HierarchyNode<HeatmapData>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="246"
+                            class="link-to-prism">src/lib/statistics/heatmaps/heatmap-sidesheet/heatmap-sidesheet.service.ts:246</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>item</td>
+                                    <td>
+                                            <code>HierarchyNode&lt;HeatmapData&gt;</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getBlocks"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>getBlocks</b></span>
+                        <a href="#getBlocks"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getBlocks(nodes: HierarchyNode<HeatmapData>[])</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="115"
+                            class="link-to-prism">src/lib/statistics/heatmaps/heatmap-sidesheet/heatmap-sidesheet.service.ts:115</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>nodes</td>
+                                    <td>
+                                            <code>HierarchyNode&lt;HeatmapData&gt;[]</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/HeatmapDataTyped.html" target="_self" >TypedEntityCollectionData&lt;HeatmapDataTyped&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getHistoryBlocks"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>getHistoryBlocks</b></span>
+                        <a href="#getHistoryBlocks"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getHistoryBlocks(nodes: <a href="../interfaces/HeatmapDataExtended.html" target="_self">HierarchyNode&lt;HeatmapDataExtended&gt;[]</a>, params: literal type)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="123"
+                            class="link-to-prism">src/lib/statistics/heatmaps/heatmap-sidesheet/heatmap-sidesheet.service.ts:123</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>nodes</td>
+                                    <td>
+                                                <code><a href="../interfaces/HeatmapDataExtended.html" target="_self" >HierarchyNode&lt;HeatmapDataExtended&gt;[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>params</td>
+                                    <td>
+                                            <code>literal type</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/HeatmapDataTyped.html" target="_self" >TypedEntityCollectionData&lt;HeatmapDataTyped&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getHistoryColors"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>getHistoryColors</b></span>
+                        <a href="#getHistoryColors"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getHistoryColors(history?: number[])</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="267"
+                            class="link-to-prism">src/lib/statistics/heatmaps/heatmap-sidesheet/heatmap-sidesheet.service.ts:267</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>history</td>
+                                    <td>
+                                            <code>number[]</code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>string[]</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getHistoryProperties"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>getHistoryProperties</b></span>
+                        <a href="#getHistoryProperties"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getHistoryProperties(item: <a href="../interfaces/HeatmapDataExtended.html" target="_self">HierarchyNode&lt;HeatmapDataExtended&gt;</a>, colorMap: ScaleLinear<string | string>, textMap: (value: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>) => void)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="177"
+                            class="link-to-prism">src/lib/statistics/heatmaps/heatmap-sidesheet/heatmap-sidesheet.service.ts:177</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>item</td>
+                                    <td>
+                                                <code><a href="../interfaces/HeatmapDataExtended.html" target="_self" >HierarchyNode&lt;HeatmapDataExtended&gt;</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>colorMap</td>
+                                    <td>
+                                            <code>ScaleLinear&lt;string | string&gt;</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>textMap</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/function" target="_blank" >function</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/AdditionalEntityProperties.html" target="_self" >AdditionalEntityProperties</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getHistoryTooltip"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>getHistoryTooltip</b></span>
+                        <a href="#getHistoryTooltip"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getHistoryTooltip(item: <a href="../interfaces/HeatmapDataExtended.html" target="_self">HeatmapDataExtended</a>, ancestors: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="274"
+                            class="link-to-prism">src/lib/statistics/heatmaps/heatmap-sidesheet/heatmap-sidesheet.service.ts:274</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>item</td>
+                                    <td>
+                                                <code><a href="../interfaces/HeatmapDataExtended.html" target="_self" >HeatmapDataExtended</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>ancestors</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getProperties"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>getProperties</b></span>
+                        <a href="#getProperties"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getProperties(item: HierarchyNode<HeatmapData>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="155"
+                            class="link-to-prism">src/lib/statistics/heatmaps/heatmap-sidesheet/heatmap-sidesheet.service.ts:155</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>item</td>
+                                    <td>
+                                            <code>HierarchyNode&lt;HeatmapData&gt;</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/AdditionalEntityProperties.html" target="_self" >AdditionalEntityProperties</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getStateProperties"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>getStateProperties</b></span>
+                        <a href="#getStateProperties"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getStateProperties(value: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="204"
+                            class="link-to-prism">src/lib/statistics/heatmaps/heatmap-sidesheet/heatmap-sidesheet.service.ts:204</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>value</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/StateProperties.html" target="_self" >StateProperties</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getTooltip"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>getTooltip</b></span>
+                        <a href="#getTooltip"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getTooltip(item: HeatmapData, ancestors: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="257"
+                            class="link-to-prism">src/lib/statistics/heatmaps/heatmap-sidesheet/heatmap-sidesheet.service.ts:257</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>item</td>
+                                    <td>
+                                            <code>HeatmapData</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>ancestors</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openBlockDetails"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>openBlockDetails</b></span>
+                        <a href="#openBlockDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>openBlockDetails(block: <a href="../interfaces/Block.html" target="_self">Block</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="287"
+                            class="link-to-prism">src/lib/statistics/heatmaps/heatmap-sidesheet/heatmap-sidesheet.service.ts:287</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>block</td>
+                                    <td>
+                                                <code><a href="../interfaces/Block.html" target="_self" >Block</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setConstants"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>setConstants</b></span>
+                        <a href="#setConstants"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>setConstants(constants: literal type)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="58"
+                            class="link-to-prism">src/lib/statistics/heatmaps/heatmap-sidesheet/heatmap-sidesheet.service.ts:58</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>constants</td>
+                                    <td>
+                                            <code>literal type</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setThresholds"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>setThresholds</b></span>
+                        <a href="#setThresholds"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>setThresholds()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="64"
+                            class="link-to-prism">src/lib/statistics/heatmaps/heatmap-sidesheet/heatmap-sidesheet.service.ts:64</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section data-compodoc="block-properties">
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="colorValues"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>colorValues</b></span>
+                        <a href="#colorValues"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/ColorValues.html" target="_self" >ColorValues</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/lib/statistics/heatmaps/heatmap-sidesheet/heatmap-sidesheet.service.ts:46</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="heatmapInfo"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>heatmapInfo</b></span>
+                        <a href="#heatmapInfo"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/HeatmapInfoTyped.html" target="_self" >HeatmapInfoTyped</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">src/lib/statistics/heatmaps/heatmap-sidesheet/heatmap-sidesheet.service.ts:47</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="heatmapProperties"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>heatmapProperties</b></span>
+                        <a href="#heatmapProperties"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>HeatmapDto</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/lib/statistics/heatmaps/heatmap-sidesheet/heatmap-sidesheet.service.ts:48</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="stateThresholds"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>stateThresholds</b></span>
+                        <a href="#stateThresholds"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/StateThresholds.html" target="_self" >StateThresholds</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{}</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/lib/statistics/heatmaps/heatmap-sidesheet/heatmap-sidesheet.service.ts:45</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
+import { EuiSidesheetService } from &#x27;@elemental-ui/core&#x27;;
+import { HierarchyNode } from &#x27;d3-hierarchy&#x27;;
+import { ScaleLinear, scaleLinear } from &#x27;d3-scale&#x27;;
+import { LdsReplacePipe } from &#x27;qbm&#x27;;
+import { HeatmapData, HeatmapDto } from &#x27;imx-api-qer&#x27;;
+import { TypedEntityCollectionData } from &#x27;imx-qbm-dbts&#x27;;
+import { Block, BlockState, ClassState, StateThresholds, AdditionalEntityProperties, ColorValues, StateProperties } from &#x27;../block-properties.interface&#x27;;
+import { BlockDetailSidesheetComponent } from &#x27;../block-detail-sidesheet/block-detail-sidesheet.component&#x27;;
+import { HeatmapDataExtended } from &#x27;../heatmap-data-extended&#x27;;
+import { HeatmapDataTyped } from &#x27;../heatmap-data-typed&#x27;;
+import { HeatmapInfoTyped } from &#x27;../../statistics-home-page/heatmap-info-typed&#x27;;
+import { StatisticsConstantsService } from &#x27;../../statistics-home-page/statistics-constants.service&#x27;;
+
+@Injectable({
+  providedIn: &#x27;root&#x27;,
+})
+export class HeatmapSidesheetService {
+  public stateThresholds: StateThresholds &#x3D; {};
+  public colorValues: ColorValues;
+  public heatmapInfo: HeatmapInfoTyped;
+  public heatmapProperties: HeatmapDto;
+
+  constructor(
+    private constantService: StatisticsConstantsService,
+    private sidesheetService: EuiSidesheetService,
+    private replacePipe: LdsReplacePipe
+  ) {
+    this.colorValues &#x3D; this.constantService.colorValues;
+  }
+
+  public setConstants(constants: { heatmapInfo: HeatmapInfoTyped; heatmap: HeatmapDto }): void {
+    this.heatmapInfo &#x3D; constants.heatmapInfo;
+    this.setThresholds();
+    this.heatmapProperties &#x3D; constants.heatmap;
+  }
+
+  public setThresholds(): void {
+    const heatmapInfoEntity &#x3D; this.heatmapInfo.GetEntity();
+    const errorThreshold &#x3D; heatmapInfoEntity.GetColumn(&#x27;ErrorThreshold&#x27;).GetValue();
+    const warnThreshold &#x3D; heatmapInfoEntity.GetColumn(&#x27;WarningThreshold&#x27;).GetValue();
+
+    this.stateThresholds.error &#x3D; {
+      value: errorThreshold,
+      properties: {
+        class: &#x27;block-error&#x27;,
+        state: &#x27;Error&#x27;,
+        stateDisplay: this.constantService.errorStatusText,
+        color: this.colorValues.Error,
+      }
+    };
+    this.stateThresholds.warn &#x3D; {
+      value: warnThreshold &#x3D;&#x3D;&#x3D; 0 ? errorThreshold/2 : warnThreshold,
+      properties: {
+        class: &#x27;block-warn&#x27;,
+        state: &#x27;Moderate&#x27;,
+        stateDisplay: this.constantService.warningStatusText,
+        color: this.colorValues.Warn,
+      }
+    };
+    this.stateThresholds.severeWarn &#x3D; {
+      value: (this.stateThresholds.error.value + this.stateThresholds.warn.value) / 2,
+      properties: {
+        class: &#x27;block-severe-warn&#x27;,
+        state: &#x27;Severe&#x27;,
+        stateDisplay: this.constantService.severeWarningStatusText,
+        color: this.colorValues.SevereWarn,
+      }
+    };
+    this.stateThresholds.lightWarn &#x3D; {
+      value: warnThreshold &#x3D;&#x3D;&#x3D; 0 ? 0 : this.stateThresholds.warn.value / 2,
+      properties: {
+        class: &#x27;block-light-warn&#x27;,
+        state: &#x27;Light&#x27;,
+        stateDisplay: this.constantService.lightWarningStatusText,
+        color: this.colorValues.LightWarn,
+      }
+    };
+    this.stateThresholds.ok &#x3D; {
+      properties: {
+        class: &#x27;block-ok&#x27;,
+        state: &#x27;Ok&#x27;,
+        stateDisplay: this.constantService.okStatusText,
+        color: this.colorValues.Ok,
+      }
+    };
+  }
+
+  public getBlocks(nodes: HierarchyNode&lt;HeatmapData&gt;[]): TypedEntityCollectionData&lt;HeatmapDataTyped&gt; {
+    const entities &#x3D; nodes.map((element, index) &#x3D;&gt; {
+      const properties &#x3D; this.getProperties(element);
+      return HeatmapDataTyped.buildEntityData(element, properties, &#x60;${index}&#x60;);
+    });
+    return HeatmapDataTyped.buildEntities(entities);
+  }
+
+  public getHistoryBlocks(
+    nodes: HierarchyNode&lt;HeatmapDataExtended&gt;[],
+    params: {
+      minValue: number;
+      maxValue: number;
+    }
+  ): TypedEntityCollectionData&lt;HeatmapDataTyped&gt; {
+    // Need to set a color map
+    let colorMap: ScaleLinear&lt;string, string&gt;;
+    let textMap: (value: number) &#x3D;&gt; string;
+    if (params.minValue &#x3D;&#x3D;&#x3D; 0 &amp;&amp; params.maxValue &gt; 0) {
+      // No LB
+      colorMap &#x3D; scaleLinear&lt;string&gt;().domain([0, params.maxValue]).range([this.colorValues.Warn, this.colorValues.Error]);
+      textMap &#x3D; (value: number) &#x3D;&gt; (value &lt; (2 * params.maxValue) / 3 ? this.colorValues.Dark : this.colorValues.Light);
+    } else if (params.minValue &lt; 0 &amp;&amp; params.maxValue &#x3D;&#x3D;&#x3D; 0) {
+      // No UB
+      colorMap &#x3D; scaleLinear&lt;string&gt;().domain([params.minValue, 0]).range([this.colorValues.Ok, this.colorValues.Warn]);
+      textMap &#x3D; (value: number) &#x3D;&gt; (value &gt; (2 * params.minValue) / 3 ? this.colorValues.Dark : this.colorValues.Light);
+    } else {
+      colorMap &#x3D; scaleLinear&lt;string&gt;()
+        .domain([params.minValue, 0, params.maxValue])
+        .range([this.colorValues.Ok, this.colorValues.Warn, this.colorValues.Error]);
+      textMap &#x3D; (value: number) &#x3D;&gt;
+        value &gt; (2 * params.minValue) / 3 &amp;&amp; value &lt; (2 * params.maxValue) / 3 ? this.colorValues.Dark : this.colorValues.Light;
+    }
+    const entities &#x3D; nodes.map((element, index) &#x3D;&gt; {
+      const properties &#x3D; this.getHistoryProperties(element, colorMap, textMap);
+      return HeatmapDataTyped.buildEntityData(element, properties, &#x60;${index}&#x60;);
+    });
+    return HeatmapDataTyped.buildEntities(entities);
+  }
+
+  public getProperties(item: HierarchyNode&lt;HeatmapData&gt;): AdditionalEntityProperties {
+    const data &#x3D; item.data;
+    const stateProperties &#x3D; this.getStateProperties(data.Value);
+    const ancestors &#x3D; this.getAncestors(item);
+    const tooltip &#x3D; this.getTooltip(data, ancestors);
+    const backgroundColor &#x3D; &#x27;&#x27;;
+    const color &#x3D; &#x27;&#x27;;
+    const historyValues &#x3D; data.History ?? [];
+    const historyColors &#x3D; this.getHistoryColors(historyValues);
+    return {
+      state: stateProperties.state,
+      stateDisplay: stateProperties.stateDisplay,
+      class: stateProperties.class,
+      backgroundColor,
+      color,
+      ancestors,
+      tooltip,
+      historyValues,
+      historyColors,
+    };
+  }
+
+  public getHistoryProperties(
+    item: HierarchyNode&lt;HeatmapDataExtended&gt;,
+    colorMap: ScaleLinear&lt;string, string&gt;,
+    textMap: (value: number) &#x3D;&gt; string
+  ): AdditionalEntityProperties {
+    const data &#x3D; item.data;
+    const stateProperties &#x3D; this.getStateProperties(data.Value);
+    const ancestors &#x3D; this.getAncestors(item);
+    const tooltip &#x3D; this.getHistoryTooltip(data, ancestors);
+    const backgroundColor &#x3D; colorMap(data.CurrentHistory);
+    const color &#x3D; textMap(data.CurrentHistory);
+    // It is possible that these values do not exist, so we set defaults for them as empty arrays
+    const historyValues &#x3D; data.History ?? [];
+    const historyColors &#x3D; data.History ? this.getHistoryColors(data.History) : [];
+    return {
+      state: stateProperties.state,
+      stateDisplay: stateProperties.stateDisplay,
+      class: stateProperties.class,
+      backgroundColor,
+      color,
+      ancestors,
+      tooltip,
+      historyValues,
+      historyColors,
+    };
+  }
+
+  public getStateProperties(value: number): StateProperties {
+    const negateThresholds: boolean &#x3D; this.heatmapInfo.GetEntity().GetColumn(&#x27;NegateThresholds&#x27;).GetValue();
+    if (negateThresholds) {
+      // We work topdown from error
+      switch (true) {
+        case value &lt;&#x3D; this.stateThresholds.error.value:
+          return this.stateThresholds.error.properties;
+
+        case value &lt;&#x3D; this.stateThresholds.severeWarn.value:
+          return this.stateThresholds.severeWarn.properties;
+
+        case value &lt;&#x3D; this.stateThresholds.warn.value:
+          return this.stateThresholds.warn.properties;
+
+        case value &lt;&#x3D; this.stateThresholds.lightWarn.value:
+            return this.stateThresholds.lightWarn.properties;
+        default:
+          return this.stateThresholds.ok.properties;
+      }
+    }
+    switch (true) {
+      // If we have error set to 0, any value over 0 should be in error
+      case this.stateThresholds.error?.value &#x3D;&#x3D;&#x3D; 0 &amp;&amp; value &gt; 0:
+        return this.stateThresholds.error.properties;
+
+      case this.stateThresholds.error.value &#x3D;&#x3D;&#x3D; 0 || value &#x3D;&#x3D;&#x3D; 0 || value &lt; this.stateThresholds.lightWarn.value:
+        return this.stateThresholds.ok.properties;
+
+      case value &lt; this.stateThresholds.warn.value:
+        return this.stateThresholds.lightWarn.properties;
+
+      case value &lt; this.stateThresholds.severeWarn.value:
+        return this.stateThresholds.warn.properties;
+
+      case value &lt; this.stateThresholds.error.value:
+        return this.stateThresholds.severeWarn.properties;
+
+      default:
+        return this.stateThresholds.error.properties;
+    }
+  }
+
+  public getAncestors(item: HierarchyNode&lt;HeatmapData&gt;): string {
+    const ancestors &#x3D; item
+      .ancestors()
+      .reverse()
+      .map((node) &#x3D;&gt; node.data.Name);
+    if (ancestors[0] &#x3D;&#x3D;&#x3D; &#x27;Top&#x27;) {
+      ancestors.shift(); // Remove &#x27;Top&#x27; level
+    }
+    return ancestors.join(&#x27;/&#x27;);
+  }
+
+  public getTooltip(item: HeatmapData, ancestors: string): string {
+    const tooltip &#x3D; this.heatmapProperties.Tooltip.slice();
+    if (tooltip.includes(&#x27;{2}&#x27;)) {
+      //  This is a ternary tooltip, expect {2 - Name}: {0 - Size} - {1 - Value} format
+      return this.replacePipe.transform(tooltip, item.ValueZ.toString(), item.Value.toString(), ancestors);
+    }
+    //  This is a binary tooltip, expect {1 - Name}: {0 - value} format
+    return this.replacePipe.transform(tooltip, item.Value.toString(), ancestors);
+  }
+
+  public getHistoryColors(history?: number[]): string[] {
+    return history?.map((value) &#x3D;&gt; {
+      const stateProperties &#x3D; this.getStateProperties(value);
+      return stateProperties.color;
+    });
+  }
+
+  public getHistoryTooltip(item: HeatmapDataExtended, ancestors: string): string {
+    const value &#x3D; item.CurrentHistory;
+    const change &#x3D; Math.abs(value).toLocaleString(undefined, {maximumFractionDigits: 2});
+    const incOrDec &#x3D; value &gt; 0 ? this.constantService.increasedText : this.constantService.decreasedText;
+    const tooltip &#x3D; this.heatmapProperties.TooltipChange.slice();
+    if (tooltip.includes(&#x27;{3}&#x27;)) {
+      // This is a quaternary tooltip, expect {2 - Name} {0 - Size}, {3 - Direction} by {1 - Change}
+      return this.replacePipe.transform(tooltip, item.ValueZ.toString(), change, ancestors, incOrDec);
+    }
+    // Otherwise this is a ternary tooltip, expect {1 - Name}, {2 - Direction} by {0 - Change}
+    return this.replacePipe.transform(tooltip, change, ancestors,incOrDec);
+  }
+
+  public async openBlockDetails(block: Block): Promise&lt;void&gt; {
+    await this.sidesheetService
+      .open(BlockDetailSidesheetComponent, {
+        title: block.name,
+        subTitle: this.heatmapInfo.GetEntity().GetDisplay(),
+        padding: &#x27;0px&#x27;,
+        width: &#x27;max(50%, 700px)&#x27;,
+        testId: &#x27;statistics-heatmap-block-details-sidesheet&#x27;,
+        data: {
+          block,
+          historyDates: this.heatmapProperties.HistoryDates,
+        },
+      })
+      .afterClosed()
+      .toPromise();
+  }
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'HeatmapSidesheetService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

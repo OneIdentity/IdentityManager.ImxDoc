@@ -1,0 +1,2116 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>IMX Web - QER Library</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+        <link rel="stylesheet" href="../styles/material.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">IMX Web - QER Library</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Components</li>
+  <li class="breadcrumb-item"
+  >
+  ItshopPatternComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" class="nav-link"
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li class="nav-item">
+            <a href="#templateData" class="nav-link"
+                role="tab" id="templateData-tab" data-bs-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li class="nav-item">
+            <a href="#styleData" class="nav-link"
+                role="tab" id="styleData-tab" data-bs-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li class="nav-item">
+            <a href="#tree" class="nav-link"
+                role="tab" id="tree-tab" data-bs-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/lib/itshop-pattern/itshop-pattern.component.ts</code>
+</p>
+
+
+    <p class="comment">
+        <h3>Description</h3>
+    </p>
+    <p class="comment">
+        <p>Component that shows a list of all product bundles (internal names are itshop pattern and request templates) of the current user
+or all itshop pattern of all other users, if the user is a shop admin.</p>
+
+    </p>
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code>OnInit</code>
+                <code>OnDestroy</code>
+    </p>
+
+
+<section data-compodoc="block-metadata">
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>imx-itshop-pattern</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./itshop-pattern.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./itshop-pattern.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#adminMode" >adminMode</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#currentUserUid" >currentUserUid</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#dstSettings" >dstSettings</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#dstWrapper" >dstWrapper</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#helpContextId" >helpContextId</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#selectedPatterns" >selectedPatterns</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#status" >status</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#subscriptions" >subscriptions</a>
+                            </li>
+                            <li>
+                                    <span class="modifier"></span>
+                                    <span class="modifier">Public</span>
+                                <a href="#table" >table</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#canBeEditedAndDeleted" >canBeEditedAndDeleted</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#createNewPattern" >createNewPattern</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#delete" >delete</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#getData" >getData</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#isMyPattern" >isMyPattern</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#ngOnDestroy" >ngOnDestroy</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#onHighlightedEntityChanged" >onHighlightedEntityChanged</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#onSelectionChanged" >onSelectionChanged</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#publish" >publish</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#selectedItemsCanBeDeleted" >selectedItemsCanBeDeleted</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#selectedItemsCanBePublished" >selectedItemsCanBePublished</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#selectedItemsCanBeUnpublished" >selectedItemsCanBeUnpublished</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#unpublish" >unpublish</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#viewDetails" >viewDetails</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(patternService: <a href="../injectables/ItshopPatternService.html" target="_self">ItshopPatternService</a>, patternCreateService: <a href="../injectables/ItshopPatternCreateService.html" target="_self">ItshopPatternCreateService</a>, qerPermissionService: <a href="../injectables/QerPermissionsService.html" target="_self">QerPermissionsService</a>, sidesheet: EuiSidesheetService, snackBar: SnackBarService, translate: TranslateService, logger: ClassloggerService, confirmationService: ConfirmationService, authentication: AuthenticationService)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="88" class="link-to-prism">src/lib/itshop-pattern/itshop-pattern.component.ts:88</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>patternService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ItshopPatternService.html" target="_self" >ItshopPatternService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>patternCreateService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ItshopPatternCreateService.html" target="_self" >ItshopPatternCreateService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>qerPermissionService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/QerPermissionsService.html" target="_self" >QerPermissionsService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>sidesheet</td>
+                                                  
+                                                        <td>
+                                                                    <code>EuiSidesheetService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>snackBar</td>
+                                                  
+                                                        <td>
+                                                                    <code>SnackBarService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>translate</td>
+                                                  
+                                                        <td>
+                                                                    <code>TranslateService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>logger</td>
+                                                  
+                                                        <td>
+                                                                    <code>ClassloggerService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>confirmationService</td>
+                                                  
+                                                        <td>
+                                                                    <code>ConfirmationService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>authentication</td>
+                                                  
+                                                        <td>
+                                                                    <code>AuthenticationService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="canBeEditedAndDeleted"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>canBeEditedAndDeleted</b></span>
+                        <a href="#canBeEditedAndDeleted"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>canBeEditedAndDeleted(pattern: PortalItshopPatternPrivate | PortalItshopPatternAdmin)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="145"
+                            class="link-to-prism">src/lib/itshop-pattern/itshop-pattern.component.ts:145</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>pattern</td>
+                                    <td>
+                                            <code>PortalItshopPatternPrivate | PortalItshopPatternAdmin</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createNewPattern"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>createNewPattern</b></span>
+                        <a href="#createNewPattern"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>createNewPattern()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="172"
+                            class="link-to-prism">src/lib/itshop-pattern/itshop-pattern.component.ts:172</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="delete"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>delete</b></span>
+                        <a href="#delete"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>delete(selectedPattern?: PortalItshopPatternPrivate | PortalItshopPatternAdmin)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="149"
+                            class="link-to-prism">src/lib/itshop-pattern/itshop-pattern.component.ts:149</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>selectedPattern</td>
+                                    <td>
+                                            <code>PortalItshopPatternPrivate | PortalItshopPatternAdmin</code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getData"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>getData</b></span>
+                        <a href="#getData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getData(parameter?: CollectionLoadParameters)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="178"
+                            class="link-to-prism">src/lib/itshop-pattern/itshop-pattern.component.ts:178</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>parameter</td>
+                                    <td>
+                                            <code>CollectionLoadParameters</code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isMyPattern"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>isMyPattern</b></span>
+                        <a href="#isMyPattern"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>isMyPattern(pattern: PortalItshopPatternPrivate | PortalItshopPatternAdmin)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="141"
+                            class="link-to-prism">src/lib/itshop-pattern/itshop-pattern.component.ts:141</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>pattern</td>
+                                    <td>
+                                            <code>PortalItshopPatternPrivate | PortalItshopPatternAdmin</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>ngOnDestroy</b></span>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="137"
+                            class="link-to-prism">src/lib/itshop-pattern/itshop-pattern.component.ts:137</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="108"
+                            class="link-to-prism">src/lib/itshop-pattern/itshop-pattern.component.ts:108</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onHighlightedEntityChanged"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>onHighlightedEntityChanged</b></span>
+                        <a href="#onHighlightedEntityChanged"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>onHighlightedEntityChanged(selectedPattern: PortalItshopPatternPrivate | PortalItshopPatternAdmin)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="214"
+                            class="link-to-prism">src/lib/itshop-pattern/itshop-pattern.component.ts:214</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>selectedPattern</td>
+                                    <td>
+                                            <code>PortalItshopPatternPrivate | PortalItshopPatternAdmin</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onSelectionChanged"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>onSelectionChanged</b></span>
+                        <a href="#onSelectionChanged"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>onSelectionChanged(items: PortalItshopPatternAdmin[])</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="209"
+                            class="link-to-prism">src/lib/itshop-pattern/itshop-pattern.component.ts:209</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>items</td>
+                                    <td>
+                                            <code>PortalItshopPatternAdmin[]</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="publish"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>publish</b></span>
+                        <a href="#publish"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>publish(selectedPatterns: PortalItshopPatternPrivate[] | PortalItshopPatternAdmin[])</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="160"
+                            class="link-to-prism">src/lib/itshop-pattern/itshop-pattern.component.ts:160</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>selectedPatterns</td>
+                                    <td>
+                                            <code>PortalItshopPatternPrivate[] | PortalItshopPatternAdmin[]</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectedItemsCanBeDeleted"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>selectedItemsCanBeDeleted</b></span>
+                        <a href="#selectedItemsCanBeDeleted"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>selectedItemsCanBeDeleted()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="203"
+                            class="link-to-prism">src/lib/itshop-pattern/itshop-pattern.component.ts:203</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectedItemsCanBePublished"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>selectedItemsCanBePublished</b></span>
+                        <a href="#selectedItemsCanBePublished"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>selectedItemsCanBePublished()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="191"
+                            class="link-to-prism">src/lib/itshop-pattern/itshop-pattern.component.ts:191</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectedItemsCanBeUnpublished"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>selectedItemsCanBeUnpublished</b></span>
+                        <a href="#selectedItemsCanBeUnpublished"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>selectedItemsCanBeUnpublished()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="197"
+                            class="link-to-prism">src/lib/itshop-pattern/itshop-pattern.component.ts:197</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="unpublish"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>unpublish</b></span>
+                        <a href="#unpublish"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>unpublish(selectedPatterns: PortalItshopPatternPrivate[] | PortalItshopPatternAdmin[])</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="166"
+                            class="link-to-prism">src/lib/itshop-pattern/itshop-pattern.component.ts:166</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>selectedPatterns</td>
+                                    <td>
+                                            <code>PortalItshopPatternPrivate[] | PortalItshopPatternAdmin[]</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="viewDetails"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>viewDetails</b></span>
+                        <a href="#viewDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>viewDetails(selectedPattern: PortalItshopPatternPrivate | PortalItshopPatternAdmin)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="218"
+                            class="link-to-prism">src/lib/itshop-pattern/itshop-pattern.component.ts:218</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>selectedPattern</td>
+                                    <td>
+                                            <code>PortalItshopPatternPrivate | PortalItshopPatternAdmin</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section data-compodoc="block-properties">
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="adminMode"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>adminMode</b></span>
+                        <a href="#adminMode"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="78" class="link-to-prism">src/lib/itshop-pattern/itshop-pattern.component.ts:78</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Indicates wether the component should be shown for shop admins or not.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="currentUserUid"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>currentUserUid</b></span>
+                        <a href="#currentUserUid"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="88" class="link-to-prism">src/lib/itshop-pattern/itshop-pattern.component.ts:88</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="dstSettings"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>dstSettings</b></span>
+                        <a href="#dstSettings"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>DataSourceToolbarSettings</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="68" class="link-to-prism">src/lib/itshop-pattern/itshop-pattern.component.ts:68</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="dstWrapper"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>dstWrapper</b></span>
+                        <a href="#dstWrapper"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>DataSourceWrapper&lt;PortalItshopPatternAdmin&gt;</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="66" class="link-to-prism">src/lib/itshop-pattern/itshop-pattern.component.ts:66</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>the wrapper component for the  <a href="DataSourceToolbar">dataSourceToolbar</a>.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="helpContextId"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>helpContextId</b></span>
+                        <a href="#helpContextId"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>HelpContextualValues</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="85" class="link-to-prism">src/lib/itshop-pattern/itshop-pattern.component.ts:85</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectedPatterns"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>selectedPatterns</b></span>
+                        <a href="#selectedPatterns"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>PortalItshopPatternAdmin[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="73" class="link-to-prism">src/lib/itshop-pattern/itshop-pattern.component.ts:73</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The list of all selected product bundles.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="status"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>status</b></span>
+                        <a href="#status"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{
+    enabled: (pattern: PortalItshopPatternAdmin): boolean &#x3D;&gt; this.canBeEditedAndDeleted(pattern)
+  }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="82" class="link-to-prism">src/lib/itshop-pattern/itshop-pattern.component.ts:82</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="subscriptions"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>subscriptions</b></span>
+                        <a href="#subscriptions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Subscription[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="87" class="link-to-prism">src/lib/itshop-pattern/itshop-pattern.component.ts:87</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="table"></a>
+                    <span class="name">
+                            <span class="modifier"></span>
+                            <span class="modifier">Public</span>
+                        <span ><b>table</b></span>
+                        <a href="#table"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>DataTableComponent&lt;TypedEntity&gt;</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ViewChild(DataTableComponent)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="80" class="link-to-prism">src/lib/itshop-pattern/itshop-pattern.component.ts:80</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnDestroy, OnInit, ViewChild } from &#x27;@angular/core&#x27;;
+import { EuiSidesheetService } from &#x27;@elemental-ui/core&#x27;;
+import { TranslateService } from &#x27;@ngx-translate/core&#x27;;
+import { Subscription } from &#x27;rxjs&#x27;;
+
+import { PortalItshopPatternAdmin, PortalItshopPatternPrivate } from &#x27;imx-api-qer&#x27;;
+import { CollectionLoadParameters, DisplayColumns, TypedEntity } from &#x27;imx-qbm-dbts&#x27;;
+
+import {
+  AuthenticationService,
+  ClassloggerService,
+  ConfirmationService,
+  DataSourceToolbarSettings,
+  DataSourceWrapper,
+  DataTableComponent,
+  HELP_CONTEXTUAL,
+  HelpContextualValues,
+  SnackBarService,
+} from &#x27;qbm&#x27;;
+import { QerPermissionsService } from &#x27;../admin/qer-permissions.service&#x27;;
+import { ItshopPatternSidesheetComponent } from &#x27;./itshop-pattern-sidesheet/itshop-pattern-sidesheet.component&#x27;;
+import { ItshopPatternService } from &#x27;./itshop-pattern.service&#x27;;
+import { ItshopPatternCreateService } from &#x27;./itshop-pattern-create-sidesheet/itshop-pattern-create.service&#x27;;
+import { ItShopPatternChangedType } from &#x27;./itshop-pattern-changed.enum&#x27;;
+
+/**
+ * Component that shows a list of all product bundles (internal names are itshop pattern and request templates) of the current user
+ * or all itshop pattern of all other users, if the user is a shop admin.
+ */
+@Component({
+  selector: &#x27;imx-itshop-pattern&#x27;,
+  templateUrl: &#x27;./itshop-pattern.component.html&#x27;,
+  styleUrls: [&#x27;./itshop-pattern.component.scss&#x27;]
+})
+export class ItshopPatternComponent implements OnInit, OnDestroy {
+
+  /**
+   * the wrapper component for the  {@link DataSourceToolbar|dataSourceToolbar}.
+   */  
+  public dstWrapper: DataSourceWrapper&lt;PortalItshopPatternAdmin&gt;;
+
+  public dstSettings: DataSourceToolbarSettings;
+
+  /**
+   * The list of all selected product bundles.
+   */
+  public selectedPatterns: PortalItshopPatternAdmin[] &#x3D; [];
+
+  /**
+   * Indicates wether the component should be shown for shop admins or not.
+   */
+  public adminMode: boolean;
+
+  @ViewChild(DataTableComponent) public table: DataTableComponent&lt;TypedEntity&gt;;
+
+  public readonly status &#x3D; {
+    enabled: (pattern: PortalItshopPatternAdmin): boolean &#x3D;&gt; this.canBeEditedAndDeleted(pattern)
+  };
+  public helpContextId: HelpContextualValues;
+
+  private readonly subscriptions: Subscription[] &#x3D; [];
+  private currentUserUid: string;
+
+  constructor(
+    private readonly patternService: ItshopPatternService,
+    private readonly patternCreateService: ItshopPatternCreateService,
+    private readonly qerPermissionService: QerPermissionsService,
+    private readonly sidesheet: EuiSidesheetService,
+    private readonly snackBar: SnackBarService,
+    private readonly translate: TranslateService,
+    private readonly logger: ClassloggerService,
+    private readonly confirmationService: ConfirmationService,
+    authentication: AuthenticationService
+  ) {
+    this.subscriptions.push(
+      authentication.onSessionResponse.subscribe((sessionState) &#x3D;&gt;
+        this.currentUserUid &#x3D; sessionState.UserUid
+      )
+    );
+  }
+
+  public async ngOnInit(): Promise&lt;void&gt; {
+    this.patternService.handleOpenLoader();
+    try {
+      this.adminMode &#x3D; await this.qerPermissionService.isShopAdmin();
+
+      this.helpContextId &#x3D; this.adminMode ? HELP_CONTEXTUAL.RequestTemplates: HELP_CONTEXTUAL.RequestTemplatesUser;
+
+      const entitySchema &#x3D; this.adminMode
+        ? this.patternService.itshopPatternAdminSchema
+        : this.patternService.itshopPatternPrivateSchema;
+      this.dstWrapper &#x3D; new DataSourceWrapper(
+        state &#x3D;&gt; this.adminMode
+          ? this.patternService.getPublicPatterns(state)
+          : this.patternService.getPrivatePatterns(state),
+        [
+          entitySchema.Columns[DisplayColumns.DISPLAY_PROPERTYNAME],
+          entitySchema.Columns.UID_Person,
+          entitySchema.Columns.IsPublicPattern,
+        ],
+        entitySchema,
+        undefined,
+        &#x27;itshop-pattern&#x27;
+      );
+    } finally {
+      this.patternService.handleCloseLoader();
+    }
+    await this.getData();
+  }
+
+  public ngOnDestroy(): void {
+    this.subscriptions.forEach(s &#x3D;&gt; s.unsubscribe());
+  }
+
+  public isMyPattern(pattern: PortalItshopPatternPrivate | PortalItshopPatternAdmin): boolean {
+    return this.currentUserUid &#x3D;&#x3D;&#x3D; pattern.UID_Person.value;
+  }
+
+  public canBeEditedAndDeleted(pattern: PortalItshopPatternPrivate | PortalItshopPatternAdmin): boolean {
+    return this.isMyPattern(pattern) || this.adminMode;
+  }
+
+  public async delete(selectedPattern?: PortalItshopPatternPrivate | PortalItshopPatternAdmin): Promise&lt;void&gt; {
+    if (await this.confirmationService.confirm({
+      Title: &#x27;#LDS#Heading Delete Product Bundles&#x27;,
+      Message: &#x27;#LDS#Are you sure you want to delete the selected product bundles?&#x27;
+    })) {
+      await this.patternService.delete(selectedPattern ? [selectedPattern] : this.selectedPatterns, this.adminMode);
+      this.getData();
+      this.table.clearSelection();
+    }
+  }
+
+  public async publish(selectedPatterns: PortalItshopPatternPrivate[] | PortalItshopPatternAdmin[]): Promise&lt;void&gt; {
+    await this.patternService.makePublic(selectedPatterns, true);
+    this.getData();
+    this.table.clearSelection();
+  }
+
+  public async unpublish(selectedPatterns: PortalItshopPatternPrivate[] | PortalItshopPatternAdmin[]): Promise&lt;void&gt; {
+    await this.patternService.makePublic(selectedPatterns, false);
+    this.getData();
+    this.table.clearSelection();
+  }
+
+  public async createNewPattern(): Promise&lt;void&gt; {
+    if (await this.patternCreateService.createNewPattern(true)) {
+      this.getData();
+    }
+  }
+
+  public async getData(parameter?: CollectionLoadParameters): Promise&lt;void&gt; {    
+    this.patternService.handleOpenLoader();
+    try {
+      const parameters &#x3D; {
+        ...parameter,
+        ...{ OrderBy: &#x27;Ident_ShoppingCartPattern asc&#x27; }
+      };
+      this.dstSettings &#x3D; await this.dstWrapper.getDstSettings(parameters);
+    } finally {      
+      this.patternService.handleCloseLoader();
+    }
+  }
+
+  public selectedItemsCanBePublished(): boolean {
+    return this.selectedPatterns !&#x3D; null
+      &amp;&amp; this.selectedPatterns.length &gt; 0
+      &amp;&amp; this.selectedPatterns.every(item &#x3D;&gt; this.isMyPattern(item) &amp;&amp; !item.IsPublicPattern.value);
+  }
+
+  public selectedItemsCanBeUnpublished(): boolean {
+    return this.selectedPatterns !&#x3D; null
+      &amp;&amp; this.selectedPatterns.length &gt; 0
+      &amp;&amp; this.selectedPatterns.every(item &#x3D;&gt; this.isMyPattern(item) &amp;&amp; item.IsPublicPattern.value);
+  }
+
+  public selectedItemsCanBeDeleted(): boolean {
+    return this.selectedPatterns !&#x3D; null
+      &amp;&amp; this.selectedPatterns.length &gt; 0
+      &amp;&amp; this.selectedPatterns.every(item &#x3D;&gt; this.canBeEditedAndDeleted(item));
+  }
+
+  public onSelectionChanged(items: PortalItshopPatternAdmin[]): void {
+    this.logger.trace(this, &#x27;selection changed&#x27;, items);
+    this.selectedPatterns &#x3D; items;
+  }
+
+  public async onHighlightedEntityChanged(selectedPattern: PortalItshopPatternPrivate | PortalItshopPatternAdmin): Promise&lt;void&gt; {
+    await this.viewDetails(selectedPattern);
+  }
+
+  private async viewDetails(selectedPattern: PortalItshopPatternPrivate | PortalItshopPatternAdmin): Promise&lt;void&gt; {
+    const isMyPattern &#x3D; this.isMyPattern(selectedPattern);
+    const canEditAndDelete &#x3D; this.canBeEditedAndDeleted(selectedPattern);
+    const pattern &#x3D; isMyPattern
+      ? await this.patternService.getPrivatePattern(selectedPattern.GetEntity().GetKeys()[0])
+      : selectedPattern;
+
+    const title &#x3D; await this.translate.get(canEditAndDelete
+      ? &#x27;#LDS#Heading Edit Product Bundle&#x27;
+      : &#x27;#LDS#Heading View Product Bundle Details&#x27;).toPromise();
+
+    const result &#x3D; await this.sidesheet.open(ItshopPatternSidesheetComponent, {
+      title,
+      subTitle: pattern.Ident_ShoppingCartPattern.value,
+      panelClass: &#x27;imx-sidesheet&#x27;,
+      disableClose: true,
+      padding: &#x27;0&#x27;,
+      width: &#x27;600px&#x27;,
+      testId: &#x27;pattern-details-sidesheet&#x27;,
+      data: {
+        pattern,
+        isMyPattern,
+        adminMode: this.adminMode,
+        canEditAndDelete
+      }
+    }).afterClosed().toPromise();
+
+    if (result &#x3D;&#x3D;&#x3D; ItShopPatternChangedType.Saved) {
+      const snackBarMessage &#x3D; &#x27;#LDS#The product bundle has been successfully saved.&#x27;;
+      this.snackBar.open({ key: snackBarMessage });
+      this.getData();
+    } else if (result) {
+      this.getData();
+    }
+
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;imx-pattern-page&quot;&gt;
+  &lt;div class&#x3D;&quot;heading-wrapper&quot;&gt;
+    &lt;h1 class&#x3D;&quot;mat-headline&quot;&gt;
+      &lt;span&gt;{{ &#x27;#LDS#Heading Product Bundles&#x27; | translate }}&lt;/span&gt;
+      &lt;imx-help-contextual [contextId]&#x3D;&quot;helpContextId&quot;&gt;&lt;/imx-help-contextual&gt;
+    &lt;/h1&gt;
+  &lt;/div&gt;
+  &lt;mat-card&gt;
+    &lt;div class&#x3D;&quot;imx-table-container&quot; *ngIf&#x3D;&quot;dstWrapper &amp;&amp; dstSettings&quot;&gt;
+      &lt;imx-data-source-toolbar
+        #dst
+        [options]&#x3D;&quot;[&#x27;search&#x27;, &#x27;settings&#x27;]&quot;
+        [settings]&#x3D;&quot;dstSettings&quot;
+        (search)&#x3D;&quot;getData({ search: $event })&quot;
+        (navigationStateChanged)&#x3D;&quot;getData($event)&quot;
+        data-imx-identifier&#x3D;&quot;itshop-pattern-dst&quot;
+        [itemStatus]&#x3D;&quot;status&quot;
+      &gt;
+      &lt;/imx-data-source-toolbar&gt;
+      &lt;imx-data-table
+        #dataTable
+        [dst]&#x3D;&quot;dst&quot;
+        class&#x3D;&quot;imx-patterns-table&quot;
+        [detailViewVisible]&#x3D;&quot;false&quot;
+        mode&#x3D;&quot;manual&quot;
+        [selectable]&#x3D;&quot;true&quot;
+        [showSelectedItemsMenu]&#x3D;&quot;false&quot;
+        (selectionChanged)&#x3D;&quot;onSelectionChanged($event)&quot;
+        (highlightedEntityChanged)&#x3D;&quot;onHighlightedEntityChanged($event)&quot;
+        data-imx-identifier&#x3D;&quot;itshop-pattern-datatable&quot;
+      &gt;
+        &lt;imx-data-table-column data-imx-identifier&#x3D;&quot;itshop-pattern-table-column-display&quot; [entityColumn]&#x3D;&quot;dstWrapper.propertyDisplay&quot;&gt;
+          &lt;ng-template let-item&gt;
+            &lt;div data-imx-identifier&#x3D;&quot;itshop-pattern-table-display&quot;&gt;{{ item.Ident_ShoppingCartPattern.Column.GetDisplayValue() }}&lt;/div&gt;
+            &lt;div subtitle data-imx-identifier&#x3D;&quot;itshop-pattern-table-description&quot;&gt;
+              {{ item.Description.Column.GetDisplayValue() }}
+            &lt;/div&gt;
+          &lt;/ng-template&gt;
+        &lt;/imx-data-table-column&gt;
+        &lt;imx-data-table-column data-imx-identifier&#x3D;&quot;itshop-pattern-table-column-UidPerson&quot; [entityColumn]&#x3D;&quot;dstSettings.entitySchema?.Columns.UID_Person&quot;&gt; &lt;/imx-data-table-column&gt;
+        &lt;imx-data-table-column data-imx-identifier&#x3D;&quot;itshop-pattern-table-column-isPublicPattern&quot; [entityColumn]&#x3D;&quot;dstSettings.entitySchema?.Columns.IsPublicPattern&quot;&gt;
+        &lt;/imx-data-table-column&gt;
+      &lt;/imx-data-table&gt;
+      &lt;imx-data-source-paginator data-imx-identifier&#x3D;&quot;itshop-pattern-paginator&quot; [dst]&#x3D;&quot;dst&quot;&gt; &lt;/imx-data-source-paginator&gt;
+    &lt;/div&gt;
+  &lt;/mat-card&gt;
+
+  &lt;div class&#x3D;&quot;imx-button-bar&quot;&gt;
+    &lt;imx-selected-elements [selectedElements]&#x3D;&quot;selectedPatterns&quot;&gt;&lt;/imx-selected-elements&gt;
+    &lt;div class&#x3D;&quot;imx-menu-spacer&quot;&gt;&lt;/div&gt;
+    &lt;button mat-stroked-button color&#x3D;&quot;warn&quot; data-imx-identifier&#x3D;&quot;itshop-pattern-button-delete&quot; [disabled]&#x3D;&quot;!selectedItemsCanBeDeleted()&quot; (click)&#x3D;&quot;delete()&quot;&gt;
+      &lt;eui-icon icon&#x3D;&quot;delete&quot;&gt;&lt;/eui-icon&gt;
+      {{ &#x27;#LDS#Delete&#x27; | translate }}
+    &lt;/button&gt;
+    &lt;button
+      mat-stroked-button
+      data-imx-identifier&#x3D;&quot;itshop-pattern-button-view-publish&quot;
+      *ngIf&#x3D;&quot;adminMode&quot;
+      [disabled]&#x3D;&quot;!selectedItemsCanBeUnpublished()&quot;
+      (click)&#x3D;&quot;unpublish(selectedPatterns)&quot;
+    &gt;
+      {{ &#x27;#LDS#Unshare&#x27; | translate }}
+    &lt;/button&gt;
+    &lt;button
+      mat-stroked-button
+      data-imx-identifier&#x3D;&quot;itshop-pattern-button-view-publish&quot;
+      *ngIf&#x3D;&quot;adminMode&quot;
+      [disabled]&#x3D;&quot;!selectedItemsCanBePublished()&quot;
+      (click)&#x3D;&quot;publish(selectedPatterns)&quot;
+    &gt;
+      {{ &#x27;#LDS#Share&#x27; | translate }}
+    &lt;/button&gt;
+    &lt;button mat-raised-button color&#x3D;&quot;primary&quot; data-imx-identifier&#x3D;&quot;itshop-pattern-button-create&quot; (click)&#x3D;&quot;createNewPattern()&quot;&gt;
+    &lt;eui-icon icon&#x3D;&quot;add&quot;&gt;&lt;/eui-icon&gt;
+      {{ &#x27;#LDS#Create product bundle&#x27; | translate }}
+    &lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="styleData">
+                <p class="comment">
+                    <code>./itshop-pattern.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">@import &#x27;../../../../../shared/scss/common-table.scss&#x27;;
+@mixin imx-flex-column-container {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin imx-flex-row-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.eui-sidesheet-content {
+  @include imx-flex-column-container();
+}
+
+.heading-wrapper {
+  @include imx-flex-row-container();
+  flex: 0 0 auto;
+
+  .helper-alert {
+    display: flex;
+    margin-bottom: 15px;
+  }
+}
+
+:host {
+  @include imx-flex-column-container();
+  overflow: hidden;
+  height: 100%;
+  max-width: 100%;
+}
+
+.imx-pattern-page {
+  background-color: inherit;
+ @include imx-flex-fill-control-hidden-overflow();
+
+  .mat-card {
+   @include imx-flex-fill-control-hidden-overflow();
+  }
+
+  div.imx-table-container {
+    @include imx-flex-column-container();
+    overflow: hidden;
+    height: inherit;
+
+    .imx-patterns-table {
+      flex-grow: 1;
+      overflow: auto;
+    }
+  }
+
+  .imx-button-bar {
+    @include imx-button-bar();
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .imx-pattern-page {
+    .heading-wrapper {
+      display: block;
+
+      .alert-wrapper {
+        margin: 0 0 20px 0;
+        width: 100%;
+      }
+    }
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="imx-pattern-page">  <div class="heading-wrapper">    <h1 class="mat-headline">      <span>{{ \'#LDS#Heading Product Bundles\' | translate }}</span>      <imx-help-contextual [contextId]="helpContextId"></imx-help-contextual>    </h1>  </div>  <mat-card>    <div class="imx-table-container" *ngIf="dstWrapper && dstSettings">      <imx-data-source-toolbar        #dst        [options]="[\'search\', \'settings\']"        [settings]="dstSettings"        (search)="getData({ search: $event })"        (navigationStateChanged)="getData($event)"        data-imx-identifier="itshop-pattern-dst"        [itemStatus]="status"      >      </imx-data-source-toolbar>      <imx-data-table        #dataTable        [dst]="dst"        class="imx-patterns-table"        [detailViewVisible]="false"        mode="manual"        [selectable]="true"        [showSelectedItemsMenu]="false"        (selectionChanged)="onSelectionChanged($event)"        (highlightedEntityChanged)="onHighlightedEntityChanged($event)"        data-imx-identifier="itshop-pattern-datatable"      >        <imx-data-table-column data-imx-identifier="itshop-pattern-table-column-display" [entityColumn]="dstWrapper.propertyDisplay">          <ng-template let-item>            <div data-imx-identifier="itshop-pattern-table-display">{{ item.Ident_ShoppingCartPattern.Column.GetDisplayValue() }}</div>            <div subtitle data-imx-identifier="itshop-pattern-table-description">              {{ item.Description.Column.GetDisplayValue() }}            </div>          </ng-template>        </imx-data-table-column>        <imx-data-table-column data-imx-identifier="itshop-pattern-table-column-UidPerson" [entityColumn]="dstSettings.entitySchema?.Columns.UID_Person"> </imx-data-table-column>        <imx-data-table-column data-imx-identifier="itshop-pattern-table-column-isPublicPattern" [entityColumn]="dstSettings.entitySchema?.Columns.IsPublicPattern">        </imx-data-table-column>      </imx-data-table>      <imx-data-source-paginator data-imx-identifier="itshop-pattern-paginator" [dst]="dst"> </imx-data-source-paginator>    </div>  </mat-card>  <div class="imx-button-bar">    <imx-selected-elements [selectedElements]="selectedPatterns"></imx-selected-elements>    <div class="imx-menu-spacer"></div>    <button mat-stroked-button color="warn" data-imx-identifier="itshop-pattern-button-delete" [disabled]="!selectedItemsCanBeDeleted()" (click)="delete()">      <eui-icon icon="delete"></eui-icon>      {{ \'#LDS#Delete\' | translate }}    </button>    <button      mat-stroked-button      data-imx-identifier="itshop-pattern-button-view-publish"      *ngIf="adminMode"      [disabled]="!selectedItemsCanBeUnpublished()"      (click)="unpublish(selectedPatterns)"    >      {{ \'#LDS#Unshare\' | translate }}    </button>    <button      mat-stroked-button      data-imx-identifier="itshop-pattern-button-view-publish"      *ngIf="adminMode"      [disabled]="!selectedItemsCanBePublished()"      (click)="publish(selectedPatterns)"    >      {{ \'#LDS#Share\' | translate }}    </button>    <button mat-raised-button color="primary" data-imx-identifier="itshop-pattern-button-create" (click)="createNewPattern()">    <eui-icon icon="add"></eui-icon>      {{ \'#LDS#Create product bundle\' | translate }}    </button>  </div></div></div>'
+    var COMPONENTS = [{'name': 'AddressbookComponent', 'selector': 'imx-addressbook'},{'name': 'AddressbookDetailComponent', 'selector': 'imx-addressbook-detail'},{'name': 'AnswerQuestionsComponent', 'selector': ''},{'name': 'ApplicationDetailsComponent', 'selector': 'imx-application-details'},{'name': 'ApplicationDialogComponent', 'selector': 'imx-application-dialog'},{'name': 'ApprovalHistoryComponent', 'selector': 'imx-approval-history'},{'name': 'ApprovalLevelFormComponent', 'selector': 'imx-approval-level-form'},{'name': 'ApprovalsComponent', 'selector': 'imx-itshop-approvals'},{'name': 'ApprovalsSidesheetComponent', 'selector': 'imx-approvals-sidesheet'},{'name': 'ApprovalsTableComponent', 'selector': 'imx-approvals-table'},{'name': 'ApprovalStepFormComponent', 'selector': 'imx-approval-step-form'},{'name': 'ApprovalWorkflowEditComponent', 'selector': 'imx-approval-workflow-edit'},{'name': 'ApprovalWorkflowEditInfoComponent', 'selector': 'imx-approval-workflow-edit-info'},{'name': 'ApprovalWorkflowFormComponent', 'selector': 'imx-approval-workflow-form'},{'name': 'ApprovalWorkflowHomeComponent', 'selector': 'imx-approval-workflow-home'},{'name': 'ArchivedRequestsComponent', 'selector': ''},{'name': 'AssignmentsComponent', 'selector': 'imx-assignments'},{'name': 'BadgeTileComponent', 'selector': 'imx-badge-tile'},{'name': 'BaseViewerComponent', 'selector': ''},{'name': 'BlockDetailSidesheetComponent', 'selector': 'imx-block-detail-sidesheet'},{'name': 'BusinessOwnerAddOnTileComponent', 'selector': 'imx-businessowner-addon-tile'},{'name': 'BusinessOwnerChartSummaryComponent', 'selector': 'imx-businessowner-chartsummary'},{'name': 'BusinessOwnerOverviewTileComponent', 'selector': 'imx-businessowner-overview-tile'},{'name': 'CartItemDisplayComponent', 'selector': 'imx-cart-item-display'},{'name': 'CartItemEditComponent', 'selector': 'imx-cart-item-edit'},{'name': 'CartItemsComponent', 'selector': 'imx-cart-items'},{'name': 'CartItemValidationOverviewComponent', 'selector': 'imx-cart-item-validation-overview'},{'name': 'CategoryTreeComponent', 'selector': 'imx-category-tree'},{'name': 'ChartsSidesheetComponent', 'selector': 'imx-charts-sidesheet'},{'name': 'ChartTableComponent', 'selector': 'imx-chart-table'},{'name': 'ChartTileComponent', 'selector': 'imx-chart-tile'},{'name': 'CheckPasswordsComponent', 'selector': ''},{'name': 'CompareComponent', 'selector': ''},{'name': 'CompareItemComponent', 'selector': 'imx-role-compareitem'},{'name': 'ConfirmCartSubmitDialog', 'selector': 'imx-confirm-cart-submit'},{'name': 'ContainerDomComponent', 'selector': 'imx-container-dom'},{'name': 'CreateNewDeviceComponent', 'selector': 'imx-create-new-device'},{'name': 'CreateNewIdentityComponent', 'selector': 'imx-create-new-identity'},{'name': 'DataExplorerIdentitiesComponent', 'selector': 'imx-data-explorer-identities'},{'name': 'DataExplorerViewComponent', 'selector': ''},{'name': 'DecisionHistoryComponent', 'selector': 'imx-decision-history'},{'name': 'DecisionReasonComponent', 'selector': 'imx-decision-reason'},{'name': 'DefaultCartItemDisplayComponent', 'selector': ''},{'name': 'DefaultRequestDisplayComponent', 'selector': ''},{'name': 'DelegationComponent', 'selector': ''},{'name': 'DetailViewerComponent', 'selector': 'imx-detail-viewer'},{'name': 'DiscreteLegendComponent', 'selector': 'imx-discrete-legend'},{'name': 'DuplicateCheckComponent', 'selector': 'imx-duplicate-check'},{'name': 'DuplicatePatternItemsComponent', 'selector': 'imx-duplicate-pattern-items'},{'name': 'DuplicatesSidesheetComponent', 'selector': ''},{'name': 'DynamicExclusionDialogComponent', 'selector': 'imx-dynamic-exclusion-dialog'},{'name': 'DynamicRoleComponent', 'selector': 'imx-dynamic-group'},{'name': 'EdgeDomComponent', 'selector': 'imx-edge-dom'},{'name': 'EntitlementSelectorComponent', 'selector': 'imx-entitlement-selector'},{'name': 'ExcludedMembershipsComponent', 'selector': 'imx-excluded-memberships'},{'name': 'ExclusionCheckComponent', 'selector': 'imx-exclusion-check'},{'name': 'FavoritesTabComponent', 'selector': 'imx-favorites-tab'},{'name': 'HeatmapChartComponent', 'selector': 'imx-heatmap-chart'},{'name': 'HeatmapSidesheetComponent', 'selector': 'imx-heatmap-sidesheet'},{'name': 'HeatmapTileComponent', 'selector': 'imx-heatmap-tile'},{'name': 'HeatmapVisualComponent', 'selector': 'imx-heatmap-visual'},{'name': 'HistoryFilterComponent', 'selector': 'imx-history-filter'},{'name': 'IconTileComponent', 'selector': 'imx-icon-tile'},{'name': 'IdentityComponent', 'selector': 'imx-orgchart-identity'},{'name': 'IdentityRoleMembershipsComponent', 'selector': ''},{'name': 'IdentitySelectComponent', 'selector': 'imx-identity-select'},{'name': 'IdentitySidesheetComponent', 'selector': 'imx-identity-sidesheet'},{'name': 'InquiriesComponent', 'selector': 'imx-inquiries'},{'name': 'ItshopPatternAddProductsComponent', 'selector': 'imx-itshop-pattern-add-products'},{'name': 'ItshopPatternComponent', 'selector': 'imx-itshop-pattern'},{'name': 'ItshopPatternCreateSidesheetComponent', 'selector': 'imx-itshop-pattern-create-sidesheet'},{'name': 'ItshopPatternItemEditComponent', 'selector': 'imx-itshop-pattern-item-edit'},{'name': 'ItshopPatternSidesheetComponent', 'selector': 'imx-itshop-pattern-sidesheet'},{'name': 'MailSubscriptionsComponent', 'selector': 'imx-mail-subscriptions'},{'name': 'MemberSelectorComponent', 'selector': ''},{'name': 'MembershipsChooseIdentitiesComponent', 'selector': 'imx-memberships-choose-identities'},{'name': 'MyResponsibilitiesViewComponent', 'selector': 'imx-my-responsibilities-view'},{'name': 'NewRequestComponent', 'selector': 'imx-new-request'},{'name': 'NewRequestContentComponent', 'selector': 'imx-new-request-content'},{'name': 'NewRequestHeaderComponent', 'selector': 'imx-new-request-header'},{'name': 'NewRequestHeaderToolbarComponent', 'selector': 'imx-new-request-header-toolbar'},{'name': 'NewRequestPeerGroupComponent', 'selector': 'imx-new-request-peer-group'},{'name': 'NewRequestProductBundleComponent', 'selector': 'imx-new-request-product-bundle'},{'name': 'NewRequestProductComponent', 'selector': 'imx-new-request-product'},{'name': 'NewRequestRecipientsComponent', 'selector': 'imx-new-request-recipients'},{'name': 'NewRequestReferenceUserCardComponent', 'selector': 'imx-new-request-reference-user-card'},{'name': 'NewRequestReferenceUserComponent', 'selector': 'imx-new-request-reference-user'},{'name': 'NewRequestSelectedProductsComponent', 'selector': 'imx-new-request-selected-products'},{'name': 'NewRoleComponent', 'selector': 'imx-new-role'},{'name': 'NodeDomComponent', 'selector': 'imx-node-dom'},{'name': 'NonRequestableItemsComponent', 'selector': 'imx-non-requestable-items'},{'name': 'NotificationTileComponent', 'selector': 'imx-notification-tile'},{'name': 'NotRequestableMembershipsComponent', 'selector': 'imx-not-requestable-memberships'},{'name': 'ObjectHyperviewComponent', 'selector': 'imx-object-hyperview'},{'name': 'ObjectOverviewPersonComponent', 'selector': ''},{'name': 'OptionalItemsSidesheetComponent', 'selector': 'imx-optional-items-sidesheet'},{'name': 'OrderForAdditionalUsersComponent', 'selector': 'imx-order-for-additional-users'},{'name': 'OrgChartComponent', 'selector': 'imx-orgchart'},{'name': 'OwnerControlComponent', 'selector': 'imx-owner-control'},{'name': 'PasscodeLoginComponent', 'selector': ''},{'name': 'PasscodeViewerComponent', 'selector': 'imx-passcode-viewer'},{'name': 'PasswordDashboardComponent', 'selector': ''},{'name': 'PasswordQueryComponent', 'selector': 'imx-password-query'},{'name': 'PasswordQuestionsComponent', 'selector': 'imx-password-questions'},{'name': 'PasswordQuestionsSidesheetComponent', 'selector': 'imx-password-questions-sidesheet'},{'name': 'PasswordResetComponent', 'selector': 'imx-password-reset'},{'name': 'PatternDetailsSidesheetComponent', 'selector': 'imx-pattern-details-sidesheet'},{'name': 'PatternItemListComponent', 'selector': 'imx-pattern-item-list'},{'name': 'PeerGroupComponent', 'selector': 'imx-peer-group'},{'name': 'PeerGroupDiscardSelectedComponent', 'selector': 'imx-peer-group-discard-selected'},{'name': 'PointStatVisualComponent', 'selector': 'imx-point-stat-visual'},{'name': 'PrimaryMembershipsComponent', 'selector': 'imx-primary-memberships'},{'name': 'ProductBundleItemsComponent', 'selector': 'imx-product-bundle-items'},{'name': 'ProductBundleListComponent', 'selector': 'imx-product-bundle-list'},{'name': 'ProductDependencyCheckComponent', 'selector': 'imx-product-dependency-check'},{'name': 'ProductDetailsSidesheetComponent', 'selector': 'imx-product-details-sidesheet'},{'name': 'ProductDetailsSidesheetComponent', 'selector': 'imx-product-details-sidesheet'},{'name': 'ProductEntitlementsComponent', 'selector': 'imx-product-entitlements'},{'name': 'ProductEntitlementsComponent', 'selector': 'imx-product-entitlements'},{'name': 'ProductSelectionComponent', 'selector': 'imx-product-selection'},{'name': 'ProfileComponent', 'selector': ''},{'name': 'QaLoginComponent', 'selector': ''},{'name': 'QpmIntegrationComponent', 'selector': ''},{'name': 'QueryPersonComponent', 'selector': 'imx-itshop-queryperson'},{'name': 'ReasonSidesheetComponent', 'selector': 'imx-reason-sidesheet'},{'name': 'RecommendationSidesheetComponent', 'selector': 'imx-recommendation-sidesheet'},{'name': 'RelatedApplicationMenuItemComponent', 'selector': 'imx-related-application-menu-item'},{'name': 'RelatedApplicationsComponent', 'selector': 'imx-related-applications'},{'name': 'RelatedApplicationsSidesheetComponent', 'selector': 'imx-related-applications-sidesheet'},{'name': 'RemoveMembershipComponent', 'selector': ''},{'name': 'RequestActionComponent', 'selector': ''},{'name': 'RequestConfigMembersComponent', 'selector': 'imx-request-config-members'},{'name': 'RequestConfigSidesheetComponent', 'selector': 'imx-request-config-sidesheet'},{'name': 'RequestDetailComponent', 'selector': 'imx-request-detail'},{'name': 'RequestDisplayComponent', 'selector': 'imx-request-display'},{'name': 'RequestFilterComponent', 'selector': 'imx-request-filter'},{'name': 'RequestHistoryComponent', 'selector': ''},{'name': 'RequestHistoryFilterComponent', 'selector': 'imx-request-history-filter'},{'name': 'RequestInfoComponent', 'selector': 'imx-requestinfo'},{'name': 'RequestsComponent', 'selector': 'imx-requests'},{'name': 'RequestsEntitySelectorComponent', 'selector': 'imx-requests-selector'},{'name': 'RequestShelfEntitlementsComponent', 'selector': 'imx-request-shelf-entitlements'},{'name': 'RequestShelfSidesheetComponent', 'selector': 'imx-request-shelf-sidesheet'},{'name': 'RequestShelvesComponent', 'selector': 'imx-request-shelves'},{'name': 'RequestTableComponent', 'selector': 'imx-request-table'},{'name': 'ResourcesComponent', 'selector': ''},{'name': 'ResourceSidesheetComponent', 'selector': 'imx-resource-sidesheet'},{'name': 'RestoreComponent', 'selector': ''},{'name': 'RiskAnalysisComponent', 'selector': 'imx-riskindex-analysis'},{'name': 'RiskAnalysisSidesheetComponent', 'selector': ''},{'name': 'RiskConfigComponent', 'selector': 'imx-risk-config'},{'name': 'RiskConfigSidesheetComponent', 'selector': 'imx-risk-config-sidesheet'},{'name': 'RoleDetailComponent', 'selector': 'imx-role-detail'},{'name': 'RoleEntitlementsComponent', 'selector': 'imx-role-entitlements'},{'name': 'RoleMainDataComponent', 'selector': 'imx-role-main-data'},{'name': 'RoleMembershipsComponent', 'selector': 'imx-role-memberships'},{'name': 'RoleMembershipsComponent', 'selector': 'imx-role-memberships'},{'name': 'RoleRecommendationsComponent', 'selector': 'imx-role-recommendations'},{'name': 'RolesOverviewComponent', 'selector': 'imx-roles-overview'},{'name': 'RollbackComponent', 'selector': ''},{'name': 'SecondaryMembershipsComponent', 'selector': 'imx-secondary-memberships'},{'name': 'SecurityKeysComponent', 'selector': 'imx-security-keys'},{'name': 'SecurityKeysSidesheetComponent', 'selector': ''},{'name': 'ServiceCategoriesComponent', 'selector': 'imx-service-categories'},{'name': 'ServiceCategoryComponent', 'selector': 'imx-service-category'},{'name': 'ServiceCategoryListComponent', 'selector': 'imx-servicecategory-list'},{'name': 'ServiceItemDetailComponent', 'selector': 'imx-service-item-detail'},{'name': 'ServiceItemEditComponent', 'selector': 'imx-service-item-edit'},{'name': 'ServiceItemInfoComponent', 'selector': 'imx-service-item-info'},{'name': 'ServiceitemListComponent', 'selector': 'imx-serviceitem-list'},{'name': 'ServiceItemsEditComponent', 'selector': 'imx-service-items-edit'},{'name': 'ServiceItemsEditFormComponent', 'selector': 'imx-service-items-edit-form'},{'name': 'ServiceItemsEditSidesheetComponent', 'selector': 'imx-service-items-edit-sidesheet'},{'name': 'ServiceItemSelectComponent', 'selector': 'imx-service-item-select'},{'name': 'ServiceItemsSelectorComponent', 'selector': 'imx-service-items-selector'},{'name': 'ServiceItemTagsComponent', 'selector': 'imx-service-item-tags'},{'name': 'SettingsComponent', 'selector': 'imx-settings'},{'name': 'ShelfSelectionComponent', 'selector': 'imx-shelf-selection'},{'name': 'ShoppingCartComponent', 'selector': 'imx-shopping-cart'},{'name': 'ShoppingCartEmptyComponent', 'selector': 'imx-shopping-cart-empty'},{'name': 'ShoppingCartForLaterComponent', 'selector': ''},{'name': 'ShoppingCartSubmitWarningsDialog', 'selector': 'imx-shopping-cart-submit-result'},{'name': 'SourceDetectiveComponent', 'selector': 'imx-source-detective'},{'name': 'SourceDetectiveSidesheetComponent', 'selector': ''},{'name': 'SplitComponent', 'selector': ''},{'name': 'StartComponent', 'selector': 'imx-start'},{'name': 'StatisticsCardsComponent', 'selector': 'imx-statistics-cards'},{'name': 'StatisticsCardsVisualsComponent', 'selector': 'imx-statistics-cards-visuals'},{'name': 'StatisticsForObjectsComponent', 'selector': 'imx-statistics-for-objects'},{'name': 'StatisticsHomePageComponent', 'selector': 'imx-statistics-home-page'},{'name': 'StatisticsOrderingSidesheetComponent', 'selector': 'imx-statistics-ordering-sidesheet'},{'name': 'StatisticsOrderingSidesheetDialogComponent', 'selector': 'imx-statistics-ordering-sidesheet-dialog'},{'name': 'StatisticsTreeComponent', 'selector': 'imx-statistics-tree'},{'name': 'TeamResponsibilitiesComponent', 'selector': 'imx-team-responsibilities'},{'name': 'TeamResponsibilitySidesheetComponent', 'selector': 'imx-team-responsibility-sidesheet'},{'name': 'TeamResponsibilityTileComponent', 'selector': 'imx-team-responsibility-tile'},{'name': 'TermsOfUseAcceptComponent', 'selector': ''},{'name': 'TermsOfUseListComponent', 'selector': 'imx-terms-of-use-list'},{'name': 'TermsOfUseViewerComponent', 'selector': 'imx-terms-of-use-viewer'},{'name': 'TreemapChartComponent', 'selector': 'imx-treemap-chart'},{'name': 'UserProcessComponent', 'selector': 'imx-user-process'},{'name': 'ViewDevicesComponent', 'selector': 'imx-view-devices-home'},{'name': 'ViewDevicesSidesheetComponent', 'selector': 'imx-view-devices-sidesheet'},{'name': 'WorkflowActionComponent', 'selector': 'imx-workflow-action'}];
+    var DIRECTIVES = [{'name': 'ElementVisibilityDirective', 'selector': '[imxElementVisibility]'}];
+    var ACTUAL_COMPONENT = {'name': 'ItshopPatternComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'ItshopPatternComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

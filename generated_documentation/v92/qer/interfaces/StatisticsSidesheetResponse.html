@@ -1,0 +1,570 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>IMX Web - QER Library</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+        <link rel="stylesheet" href="../styles/material.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">IMX Web - QER Library</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content interface">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Interfaces</li>
+  <li class="breadcrumb-item"
+  >
+  StatisticsSidesheetResponse</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" 
+                class="nav-link"
+                class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" 
+                class="nav-link"
+                
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/lib/statistics/statistics-home-page/statistics-cards-visuals/statistics-cards-visuals.component.ts</code>
+        </p>
+
+
+
+
+        <section data-compodoc="block-index">
+            <h3 id="index">Index</h3>
+            <table class="table table-sm table-bordered index-table">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Properties</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                        <a href="#isFavorite" 
+>
+                                            isFavorite
+                                        </a>
+                                </li>
+                                <li>
+                                        <a href="#isOrg" 
+>
+                                            isOrg
+                                        </a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+
+            <section data-compodoc="block-properties">
+                <h3 id="inputs">Properties</h3>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <a name="isFavorite"></a>
+                                        <span class="name "><b>isFavorite</b>
+                                            <a href="#isFavorite">
+                                                <span class="icon ion-ios-link"></span>
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>isFavorite:         <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+</code>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                                        </td>
+                                    </tr>
+
+
+
+
+
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <a name="isOrg"></a>
+                                        <span class="name "><b>isOrg</b>
+                                            <a href="#isOrg">
+                                                <span class="icon ion-ios-link"></span>
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>isOrg:         <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+</code>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                                        </td>
+                                    </tr>
+
+
+
+
+
+                        </tbody>
+                    </table>
+            </section>
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {
+  Component,
+  Input,
+  OnInit,
+  OnDestroy,
+  ViewChild,
+  ElementRef
+} from &#x27;@angular/core&#x27;;
+import { EuiLoadingService, EuiSidesheetService } from &#x27;@elemental-ui/core&#x27;;
+import { Subscription } from &#x27;rxjs&#x27;;
+import { bar, Chart, ChartOptions, donut, line } from &#x27;billboard.js&#x27;;
+
+import { ChartDto, HeatmapDto } from &#x27;imx-api-qer&#x27;;
+import { HeatmapSidesheetComponent } from &#x27;../../heatmaps/heatmap-sidesheet/heatmap-sidesheet.component&#x27;;
+import { ChartsSidesheetComponent } from &#x27;../../charts/charts-sidesheet/charts-sidesheet.component&#x27;;
+import { ChartInfoTyped } from &#x27;../chart-info-typed&#x27;;
+import { HeatmapInfoTyped } from &#x27;../heatmap-info-typed&#x27;;
+import { GenericStatisticEntity, GenericSummaryEntity, StatisticsDataService } from &#x27;../statistics-data.service&#x27;;
+import { StatisticsChartHandlerService } from &#x27;../../charts/statistics-chart-handler.service&#x27;;
+import { ChartTableService } from &#x27;../../charts/chart-table/chart-table-service.service&#x27;;
+import { TypedEntityCollectionData } from &#x27;imx-qbm-dbts&#x27;;
+import { ChartDataTyped } from &#x27;../../charts/chart-data-typed&#x27;;
+import { StatisticsApiService } from &#x27;../../statistics-api.service&#x27;;
+import { PointStatTyped } from &#x27;../../charts/chart-tile/point-stat-visual/point-stat-typed&#x27;;
+import { ChartDetails } from &#x27;../../charts/chart-tile/chart-details&#x27;;
+
+
+export interface DetailedChartInfo {
+  chartData: ChartDto;
+  tableData: TypedEntityCollectionData&lt;ChartDataTyped&gt;;
+  chartOptions: ChartOptions;
+}
+
+export interface StatisticsSidesheetResponse {
+  isFavorite: boolean;
+  isOrg: boolean;
+}
+
+@Component({
+  selector: &#x27;imx-statistics-cards-visuals&#x27;,
+  templateUrl: &#x27;./statistics-cards-visuals.component.html&#x27;,
+  styleUrls: [&#x27;./statistics-cards-visuals.component.scss&#x27;],
+})
+export class StatisticsCardsVisualsComponent implements OnInit, OnDestroy {
+  @ViewChild(&#x27;visual&#x27;, { read: ElementRef, static: true }) public visualWrapper: ElementRef&lt;HTMLElement&gt;;
+
+  @Input() public stat: GenericStatisticEntity;
+
+  public id: string;
+  public cacheId: string;
+  public summaryStat: GenericSummaryEntity;
+  public chartOptions: ChartOptions;
+  public chartDetails: ChartDetails;
+
+  // Booleans that control display
+  public changingFavorite &#x3D; false;
+  public changingOrg &#x3D; false;
+
+  // Constants for chart type, default is the point statistic
+  public pointStatStatus: PointStatTyped;
+
+  private subscriptons$: Subscription[] &#x3D; [];
+
+  constructor(
+    private statisticsApi: StatisticsApiService,
+    private dataService: StatisticsDataService,
+    private tableService: ChartTableService,
+    private chartHandler: StatisticsChartHandlerService,
+    private sidesheetService: EuiSidesheetService,
+    private loader: EuiLoadingService
+  ) {}
+
+  public get isFavorite(): boolean {
+    return this.stat.GetEntity().GetColumn(&#x27;IsFavorite&#x27;).GetValue();
+  }
+
+  public get isOrg(): boolean {
+    return this.stat.GetEntity().GetColumn(&#x27;IsOrg&#x27;).GetValue();
+  }
+
+  public get isUserAdmin(): boolean {
+    return this.dataService.isUserAdmin;
+  }
+
+  public get isLoading(): boolean {
+    return !this.summaryStat;
+  }
+
+  public get isDisabled(): boolean {
+    return this.isLoading || !this.hasData;
+  }
+
+  public get hasData(): boolean {
+    if (this.isHeatmap(this.stat)) {
+      return true;
+    }
+    if (this.isChart(this.stat)) {
+      const stat &#x3D; this.summaryStat as ChartDto;
+      // Check if we have data
+      return stat?.Data &amp;&amp; stat.Data.length &gt; 0;
+      }
+    }
+
+  public ngOnInit(): void {
+    // Attempt to get cached results, otherwise subscribe to get them
+    this.id &#x3D; this.dataService.getId(this.stat);
+    this.summaryStat &#x3D; this.dataService.getSummaryStat(this.id);
+
+    if (this.summaryStat) {
+      return;
+    }
+
+    this.subscriptons$.push(
+      this.dataService.summaryStats$[this.id].subscribe((summaryStat) &#x3D;&gt; {
+        this.summaryStat &#x3D; summaryStat;
+        this.dataService.cacheSummaryStat(this.id, summaryStat);
+      })
+    );
+  }
+
+  public ngOnDestroy(): void {
+    this.subscriptons$.forEach((sub) &#x3D;&gt; sub.unsubscribe());
+    delete this.dataService.cachedCharts[this.cacheId];
+  }
+
+
+  public isHeatmap(stat: GenericStatisticEntity): stat is HeatmapInfoTyped {
+    return stat instanceof HeatmapInfoTyped;
+  }
+
+  public isChart(stat: GenericStatisticEntity): stat is ChartInfoTyped {
+    return stat instanceof ChartInfoTyped;
+  }
+
+  public async handleFavorite(): Promise&lt;void&gt; {
+    this.changingFavorite &#x3D; true;
+    try {
+      // Tricky - since the change hasn&#x27;t changed in the data yet, we have to invert the logic.
+      // If favorite &#x3D;&gt; we are currently a favorite and we are clicking to remove
+      if (this.isFavorite) {
+        await this.dataService.removeFromFavorites([this.id]);
+      } else {
+        await this.dataService.addToFavorites([this.id]);
+      }
+    } finally {
+      this.changingFavorite &#x3D; false;
+    }
+  }
+
+  public async handleOrg(): Promise&lt;void&gt; {
+    this.changingOrg &#x3D; true;
+    try {
+      // Tricky - since the change hasn&#x27;t changed in the data yet, we have to invert the logic.
+      // If org &#x3D;&gt; we are currently a org stat and we are clicking to remove
+      if (this.isOrg) {
+        await this.dataService.removeFromOrg([this.id]);
+      } else {
+        await this.dataService.addToOrg([this.id]);
+      }
+    } finally {
+      this.changingOrg &#x3D; false;
+    }
+  }
+
+  public async handleToggle(statsToggle: StatisticsSidesheetResponse): Promise&lt;void&gt; {
+    const changeOrg &#x3D; statsToggle.isOrg !&#x3D;&#x3D; this.isOrg;
+    const changeFavorite &#x3D; statsToggle.isFavorite !&#x3D;&#x3D; this.isFavorite;
+    switch (true) {
+      case changeOrg &amp;&amp; changeFavorite:
+        // Do both at the same time
+        await Promise.all([this.handleFavorite(), this.handleOrg()]);
+        break;
+      case changeOrg:
+        await this.handleOrg();
+        break;
+      case changeFavorite:
+        await this.handleFavorite();
+        break;
+    }
+  }
+
+  public async openStatistic(): Promise&lt;void&gt; {
+    if (this.isDisabled) {
+      // Prevent any further click progression
+      return;
+    }
+    if (this.isHeatmap(this.stat)) {
+      await this.openHeatmap(this.stat);
+    }
+    if (this.isChart(this.stat)) {
+      await this.openChart(this.stat);
+    }
+  }
+
+  public async openHeatmap(heatmapInfo: HeatmapInfoTyped): Promise&lt;void&gt; {
+    this.loader.show();
+    let heatmap: HeatmapDto;
+    try {
+      heatmap &#x3D; await this.statisticsApi.getHeatmap(heatmapInfo.GetEntity().GetColumn(&#x27;Id&#x27;).GetValue());
+    } finally {
+      this.loader.hide();
+    }
+    const response: StatisticsSidesheetResponse | null &#x3D; await this.sidesheetService
+      .open(HeatmapSidesheetComponent, {
+        title: heatmapInfo.GetEntity().GetDisplay(),
+        subTitle: heatmapInfo.GetEntity().GetColumn(&#x27;Description&#x27;).GetValue(),
+        icon: &#x27;partition&#x27;,
+        padding: &#x27;0px&#x27;,
+        width: &#x27;90%&#x27;,
+        testId: &#x27;statistics-heatmap-sidesheet&#x27;,
+        data: {
+          heatmapInfo,
+          heatmap,
+          isFavorite: this.isFavorite,
+          isOrg: this.isOrg,
+          isUserAdmin: this.isUserAdmin,
+        },
+      })
+      .afterClosed()
+      .toPromise();
+    if (response) {
+      await this.handleToggle(response);
+    }
+  }
+
+  public async openChart(chartInfo: ChartInfoTyped): Promise&lt;void&gt; {
+    this.loader.show();
+    let detailedInfo: DetailedChartInfo;
+    try {
+      detailedInfo &#x3D; await this.getChartOptionsWithHistory(chartInfo);
+    } finally {
+      this.loader.hide();
+    }
+    const response: StatisticsSidesheetResponse | null &#x3D; await this.sidesheetService
+      .open(ChartsSidesheetComponent, {
+        title: chartInfo.GetEntity().GetDisplay(),
+        subTitle: !!this.chartDetails?.pointStatus ? &#x27;&#x27; : chartInfo.GetEntity().GetColumn(&#x27;Description&#x27;).GetValue(),
+        icon: this.chartDetails.icon,
+        padding: &#x27;0px&#x27;,
+        width: &#x27;60%&#x27;,
+        testId: &#x27;statistics-chart-sidesheet&#x27;,
+        data: {
+          chartInfo,
+          ...detailedInfo,
+          hasUniqueObjectDisplay: this.chartDetails.hasUniqueObjectDisplay,
+          dataHasNonZero: this.chartDetails.dataHasNonZero,
+          pointStatStatus: this.chartDetails?.pointStatus,
+          isFavorite: this.isFavorite,
+          isOrg: this.isOrg,
+          isUserAdmin: this.isUserAdmin,
+        },
+      })
+      .afterClosed()
+      .toPromise();
+    if (response) {
+      await this.handleToggle(response);
+    }
+  }
+
+  public async getChartOptionsWithHistory(chartInfo: ChartInfoTyped): Promise&lt;DetailedChartInfo&gt; {
+    const chartData &#x3D; await this.statisticsApi.getChart(chartInfo.GetEntity().GetColumn(&#x27;Id&#x27;).GetValue());
+    const tableData &#x3D; this.tableService.getDataSource(chartData.Data);
+    let chartOptions: ChartOptions;
+    switch (true) {
+      case !!this.chartDetails?.pointStatus:
+        chartOptions &#x3D; this.chartHandler.getLineData(chartData, {
+          dataLimit: 1,
+          nXTicks: 10,
+          enableZoom: true
+        });
+        break;
+      case this.chartDetails.type &#x3D;&#x3D;&#x3D; donut():
+        chartOptions &#x3D; this.chartHandler.getPieData(chartData, {
+          dataLimit: 10,
+        });
+        break;
+      case this.chartDetails.type &#x3D;&#x3D;&#x3D; bar():
+        chartOptions &#x3D; this.chartHandler.getBarData(chartData, {
+          dataLimit: 10,
+          hasUniqueObjectDisplay: this.chartDetails.hasUniqueObjectDisplay,
+        });
+        break;
+      case this.chartDetails.type &#x3D;&#x3D;&#x3D; line():
+        chartOptions &#x3D; this.chartHandler.getLineData(chartData, {
+          dataLimit: 10,
+          pointLimit: 20,
+          enableZoom: true
+        });
+        break;
+    }
+    return {
+      chartData,
+      tableData,
+      chartOptions,
+    };
+  }
+
+  public getDetails(chartDetails: ChartDetails): void {
+    this.chartDetails &#x3D; chartDetails;
+  }
+
+  public cacheChart(chart: Chart): void {
+    this.cacheId &#x3D; this.id.slice();
+    let suffix &#x3D; 0;
+    while (this.dataService.cachedCharts[this.cacheId]) {
+      // We don&#x27;t know how many possible name collisions we have, but its likely 2
+      suffix +&#x3D; 1;
+      this.cacheId &#x3D; this.id.slice() + suffix.toString();
+    }
+    this.dataService.cachedCharts[this.cacheId] &#x3D; {
+      chart,
+    };
+  }
+}
+</code></pre>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'interface';
+            var COMPODOC_CURRENT_PAGE_URL = 'StatisticsSidesheetResponse.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
