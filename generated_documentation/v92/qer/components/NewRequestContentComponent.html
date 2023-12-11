@@ -80,6 +80,7 @@
         <h3>Implements</h3>
     </p>
     <p class="comment">
+                <code>OnInit</code>
                 <code>OnDestroy</code>
     </p>
 
@@ -202,6 +203,11 @@
                             </li>
                             <li>
                                     <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
                                 <a href="#onCatSliderChanged" >onCatSliderChanged</a>
                             </li>
                             <li>
@@ -236,12 +242,12 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor(orchestration: <a href="../injectables/NewRequestOrchestrationService.html" target="_self">NewRequestOrchestrationService</a>, selectionService: <a href="../injectables/NewRequestSelectionService.html" target="_self">NewRequestSelectionService</a>, addToCartService: <a href="../injectables/NewRequestAddToCartService.html" target="_self">NewRequestAddToCartService</a>, ldsReplace: LdsReplacePipe, router: Router, sidesheetService: EuiSidesheetService, translate: TranslateService)</code>
+<code>constructor(orchestration: <a href="../injectables/NewRequestOrchestrationService.html" target="_self">NewRequestOrchestrationService</a>, selectionService: <a href="../injectables/NewRequestSelectionService.html" target="_self">NewRequestSelectionService</a>, addToCartService: <a href="../injectables/NewRequestAddToCartService.html" target="_self">NewRequestAddToCartService</a>, projectConfigService: <a href="../injectables/ProjectConfigurationService.html" target="_self">ProjectConfigurationService</a>, ldsReplace: LdsReplacePipe, router: Router, sidesheetService: EuiSidesheetService, translate: TranslateService)</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="62" class="link-to-prism">src/lib/new-request/new-request-content/new-request-content.component.ts:62</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="63" class="link-to-prism">src/lib/new-request/new-request-content/new-request-content.component.ts:63</a></div>
                             </td>
                         </tr>
 
@@ -287,6 +293,18 @@
                                                   
                                                         <td>
                                                                         <code><a href="../injectables/NewRequestAddToCartService.html" target="_self" >NewRequestAddToCartService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>projectConfigService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ProjectConfigurationService.html" target="_self" >ProjectConfigurationService</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -382,8 +400,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="165"
-                            class="link-to-prism">src/lib/new-request/new-request-content/new-request-content.component.ts:165</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="179"
+                            class="link-to-prism">src/lib/new-request/new-request-content/new-request-content.component.ts:179</a></div>
                 </td>
             </tr>
 
@@ -421,8 +439,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="127"
-                            class="link-to-prism">src/lib/new-request/new-request-content/new-request-content.component.ts:127</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="141"
+                            class="link-to-prism">src/lib/new-request/new-request-content/new-request-content.component.ts:141</a></div>
                 </td>
             </tr>
 
@@ -432,6 +450,46 @@
 
                     <div class="io-description">
                         <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="102"
+                            class="link-to-prism">src/lib/new-request/new-request-content/new-request-content.component.ts:102</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
 
                     </div>
                 </td>
@@ -460,8 +518,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="136"
-                            class="link-to-prism">src/lib/new-request/new-request-content/new-request-content.component.ts:136</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="150"
+                            class="link-to-prism">src/lib/new-request/new-request-content/new-request-content.component.ts:150</a></div>
                 </td>
             </tr>
 
@@ -531,8 +589,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="131"
-                            class="link-to-prism">src/lib/new-request/new-request-content/new-request-content.component.ts:131</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="145"
+                            class="link-to-prism">src/lib/new-request/new-request-content/new-request-content.component.ts:145</a></div>
                 </td>
             </tr>
 
@@ -603,8 +661,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="140"
-                            class="link-to-prism">src/lib/new-request/new-request-content/new-request-content.component.ts:140</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="154"
+                            class="link-to-prism">src/lib/new-request/new-request-content/new-request-content.component.ts:154</a></div>
                 </td>
             </tr>
 
@@ -643,8 +701,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="169"
-                            class="link-to-prism">src/lib/new-request/new-request-content/new-request-content.component.ts:169</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="183"
+                            class="link-to-prism">src/lib/new-request/new-request-content/new-request-content.component.ts:183</a></div>
                 </td>
             </tr>
 
@@ -686,7 +744,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="59" class="link-to-prism">src/lib/new-request/new-request-content/new-request-content.component.ts:59</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="60" class="link-to-prism">src/lib/new-request/new-request-content/new-request-content.component.ts:60</a></div>
                         </td>
                     </tr>
 
@@ -718,7 +776,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">src/lib/new-request/new-request-content/new-request-content.component.ts:58</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="59" class="link-to-prism">src/lib/new-request/new-request-content/new-request-content.component.ts:59</a></div>
                         </td>
                     </tr>
 
@@ -746,7 +804,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="65" class="link-to-prism">src/lib/new-request/new-request-content/new-request-content.component.ts:65</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="66" class="link-to-prism">src/lib/new-request/new-request-content/new-request-content.component.ts:66</a></div>
                         </td>
                     </tr>
 
@@ -772,7 +830,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="62" class="link-to-prism">src/lib/new-request/new-request-content/new-request-content.component.ts:62</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="63" class="link-to-prism">src/lib/new-request/new-request-content/new-request-content.component.ts:63</a></div>
                         </td>
                     </tr>
 
@@ -799,7 +857,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="61" class="link-to-prism">src/lib/new-request/new-request-content/new-request-content.component.ts:61</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="62" class="link-to-prism">src/lib/new-request/new-request-content/new-request-content.component.ts:62</a></div>
                         </td>
                     </tr>
 
@@ -826,7 +884,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">src/lib/new-request/new-request-content/new-request-content.component.ts:56</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="57" class="link-to-prism">src/lib/new-request/new-request-content/new-request-content.component.ts:57</a></div>
                         </td>
                     </tr>
 
@@ -854,7 +912,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="66" class="link-to-prism">src/lib/new-request/new-request-content/new-request-content.component.ts:66</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="67" class="link-to-prism">src/lib/new-request/new-request-content/new-request-content.component.ts:67</a></div>
                         </td>
                     </tr>
 
@@ -880,7 +938,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="60" class="link-to-prism">src/lib/new-request/new-request-content/new-request-content.component.ts:60</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="61" class="link-to-prism">src/lib/new-request/new-request-content/new-request-content.component.ts:61</a></div>
                         </td>
                     </tr>
 
@@ -912,7 +970,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="55" class="link-to-prism">src/lib/new-request/new-request-content/new-request-content.component.ts:55</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">src/lib/new-request/new-request-content/new-request-content.component.ts:56</a></div>
                         </td>
                     </tr>
 
@@ -925,7 +983,7 @@
 
 
     <div class="tab-pane fade  tab-source-code" id="source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnDestroy } from &#x27;@angular/core&#x27;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnDestroy, OnInit } from &#x27;@angular/core&#x27;;
 import { MatSlideToggle, MatSlideToggleChange } from &#x27;@angular/material/slide-toggle&#x27;;
 import { NavigationEnd, Router } from &#x27;@angular/router&#x27;;
 import { Subscription } from &#x27;rxjs/internal/Subscription&#x27;;
@@ -946,13 +1004,14 @@ import { NewRequestSelectedProductsComponent } from &#x27;../new-request-selecte
 import { SelectedProductItem } from &#x27;../new-request-selected-products/selected-product-item.interface&#x27;;
 import { NewRequestSelectionService } from &#x27;../new-request-selection.service&#x27;;
 import { NewRequestAddToCartService } from &#x27;../new-request-add-to-cart.service&#x27;;
+import { ProjectConfigurationService } from &#x27;../../project-configuration/project-configuration.service&#x27;;
 
 @Component({
   selector: &#x27;imx-new-request-content&#x27;,
   templateUrl: &#x27;./new-request-content.component.html&#x27;,
   styleUrls: [&#x27;./new-request-content.component.scss&#x27;],
 })
-export class NewRequestContentComponent implements OnDestroy {
+export class NewRequestContentComponent implements OnInit, OnDestroy {
   private subscriptions: Subscription[] &#x3D; [];
   private selectedTab: NewRequestTabModel;
 
@@ -965,49 +1024,23 @@ export class NewRequestContentComponent implements OnDestroy {
   constructor(
     public readonly orchestration: NewRequestOrchestrationService,
     public readonly selectionService: NewRequestSelectionService,
-    private readonly addToCartService: NewRequestAddToCartService,
+    private readonly addToCartService: NewRequestAddToCartService,    
+    private readonly projectConfigService: ProjectConfigurationService,
     private readonly ldsReplace: LdsReplacePipe,
     private readonly router: Router,
     private readonly sidesheetService: EuiSidesheetService,
     private readonly translate: TranslateService,
   ) {
-    this.navLinks.push({
-      id: 0,
-      title: &#x27;#LDS#Heading All Products&#x27;,
-      component: NewRequestProductComponent,
-      link: &#x27;allProducts&#x27;,
-      active: true,
-    });
-    this.navLinks.push({
-      id: 1,
-      title: &#x27;#LDS#Heading Recommended Products&#x27;,
-      component: NewRequestPeerGroupComponent,
-      link: &#x27;productsByPeerGroup&#x27;,
-      active: false,
-    });
-    this.navLinks.push({
-      id: 2,
-      title: &#x27;#LDS#Heading Products by Reference User&#x27;,
-      component: NewRequestReferenceUserComponent,
-      link: &#x27;productsByReferenceUser&#x27;,
-      active: false,
-    });
-    this.navLinks.push({
-      id: 3,
-      title: &#x27;#LDS#Heading Product Bundles&#x27;,
-      component: NewRequestProductBundleComponent,
-      link: &#x27;productBundles&#x27;,
-      active: false,
-    });
-
-    this.router.events.subscribe((event) &#x3D;&gt; {
-      if (event instanceof NavigationEnd) {
-        this.orchestration.selectedTab &#x3D; this.navLinks.find((tab) &#x3D;&gt; &#x60;/newrequest/${tab.link}&#x60; &#x3D;&#x3D;&#x3D; this.router.url);
-        this.orchestration.selectedTab?.component &#x3D;&#x3D;&#x3D; NewRequestProductComponent
-          ? (this.showCatSlider &#x3D; true)
-          : (this.showCatSlider &#x3D; false);
-      }
-    });
+    this.subscriptions.push(
+      this.router.events.subscribe((event) &#x3D;&gt; {
+        if (event instanceof NavigationEnd) {
+          this.orchestration.selectedTab &#x3D; this.navLinks.find((tab) &#x3D;&gt; &#x60;/newrequest/${tab.link}&#x60; &#x3D;&#x3D;&#x3D; this.router.url);
+          this.orchestration.selectedTab?.component &#x3D;&#x3D;&#x3D; NewRequestProductComponent
+            ? (this.showCatSlider &#x3D; true)
+            : (this.showCatSlider &#x3D; false);
+        }
+      })
+    );
 
     this.subscriptions.push(
       this.orchestration.selectedCategory$.subscribe(
@@ -1023,6 +1056,45 @@ export class NewRequestContentComponent implements OnDestroy {
         }
       })
     );
+  }
+
+  public async ngOnInit(): Promise&lt;void&gt; {
+    const projectConfig &#x3D; await this.projectConfigService.getConfig();
+    const canSelectFromTemplate &#x3D; projectConfig.ITShopConfig.VI_ITShop_ProductSelectionFromTemplate;
+    const canSelectByRefUser &#x3D; projectConfig.ITShopConfig.VI_ITShop_ProductSelectionByReferenceUser;
+
+    this.navLinks.push({
+      id: 0,
+      title: &#x27;#LDS#Heading All Products&#x27;,
+      component: NewRequestProductComponent,
+      link: &#x27;allProducts&#x27;,
+      active: true,
+    });
+    if (canSelectByRefUser) {
+      this.navLinks.push({
+        id: 1,
+        title: &#x27;#LDS#Heading Recommended Products&#x27;,
+        component: NewRequestPeerGroupComponent,
+        link: &#x27;productsByPeerGroup&#x27;,
+        active: false,
+      });
+      this.navLinks.push({
+        id: 2,
+        title: &#x27;#LDS#Heading Products by Reference User&#x27;,
+        component: NewRequestReferenceUserComponent,
+        link: &#x27;productsByReferenceUser&#x27;,
+        active: false,
+      });
+    }
+    if (canSelectFromTemplate) {
+      this.navLinks.push({
+        id: 3,
+        title: &#x27;#LDS#Heading Product Bundles&#x27;,
+        component: NewRequestProductBundleComponent,
+        link: &#x27;productBundles&#x27;,
+        active: false,
+      });
+    }    
   }
 
   public ngOnDestroy(): void {

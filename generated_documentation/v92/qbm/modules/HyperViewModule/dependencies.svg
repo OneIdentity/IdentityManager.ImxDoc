@@ -24,13 +24,13 @@
 <title>cluster_HyperViewModule</title>
 <polygon fill="none" stroke="black" stroke-dasharray="1,5" points="8,-70 8,-268 968,-268 968,-70 8,-70"/>
 </g>
-<g id="clust10" class="cluster">
-<title>cluster_HyperViewModule_exports</title>
-<polygon fill="none" stroke="black" points="392,-208 392,-260 556,-260 556,-208 392,-208"/>
-</g>
 <g id="clust2" class="cluster">
 <title>cluster_HyperViewModule_declarations</title>
 <polygon fill="none" stroke="black" points="16,-78 16,-130 960,-130 960,-78 16,-78"/>
+</g>
+<g id="clust10" class="cluster">
+<title>cluster_HyperViewModule_exports</title>
+<polygon fill="none" stroke="black" points="392,-208 392,-260 556,-260 556,-208 392,-208"/>
 </g>
 <!-- HyperviewComponent -->
 <g id="node1" class="node">

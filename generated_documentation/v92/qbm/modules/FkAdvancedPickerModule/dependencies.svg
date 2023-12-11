@@ -24,6 +24,10 @@
 <title>cluster_FkAdvancedPickerModule</title>
 <polygon fill="none" stroke="black" stroke-dasharray="1,5" points="8,-70 8,-268 1223,-268 1223,-70 8,-70"/>
 </g>
+<g id="clust7" class="cluster">
+<title>cluster_FkAdvancedPickerModule_exports</title>
+<polygon fill="none" stroke="black" points="399,-208 399,-260 951,-260 951,-208 399,-208"/>
+</g>
 <g id="clust6" class="cluster">
 <title>cluster_FkAdvancedPickerModule_imports</title>
 <polygon fill="none" stroke="black" points="564,-78 564,-130 1215,-130 1215,-78 564,-78"/>
@@ -31,10 +35,6 @@
 <g id="clust2" class="cluster">
 <title>cluster_FkAdvancedPickerModule_declarations</title>
 <polygon fill="none" stroke="black" points="16,-78 16,-130 556,-130 556,-78 16,-78"/>
-</g>
-<g id="clust7" class="cluster">
-<title>cluster_FkAdvancedPickerModule_exports</title>
-<polygon fill="none" stroke="black" points="399,-208 399,-260 951,-260 951,-208 399,-208"/>
 </g>
 <!-- FkAdvancedPickerComponent -->
 <g id="node1" class="node">

@@ -332,8 +332,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="88"
-                            class="link-to-prism">src/lib/timeline/timeline.component.ts:88</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="90"
+                            class="link-to-prism">src/lib/timeline/timeline.component.ts:90</a></div>
                 </td>
             </tr>
 
@@ -631,7 +631,9 @@ export class TimelineComponent implements OnInit, OnChanges {
 
       elem.Time &#x3D; moment(elem.ChangeTime).format(&quot;HH:mm:ss&quot;);
       if (this.eventsGroupedByDate.some((event) &#x3D;&gt; event.date &#x3D;&#x3D;&#x3D; date)) {
-        this.eventsGroupedByDate.find((event) &#x3D;&gt; event.date &#x3D;&#x3D;&#x3D; date).events.push(elem);
+        const dateEvents &#x3D; this.eventsGroupedByDate.find((event) &#x3D;&gt; event.date &#x3D;&#x3D;&#x3D; date).events;
+        dateEvents.push(elem);
+        dateEvents.sort((a, b) &#x3D;&gt; b.Time.localeCompare(a.Time));
       } else {
         this.eventsGroupedByDate.push({
           date: date,

@@ -69,6 +69,13 @@
         </p>
 
 
+            <p class="comment">
+                <h3>Description</h3>
+            </p>
+            <p class="comment">
+                <p>A service for providing an url validation</p>
+
+            </p>
 
 
 
@@ -137,10 +144,18 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/lib/cdr/edit-url/url-validator.service.ts:34</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/lib/cdr/edit-url/url-validator.service.ts:45</a></div>
                         </td>
                     </tr>
 
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Validates, if the given string uses the right pattern</p>
+<div><pre class="line-numbers"><code class="language-html">Valid urls
+&#39;https://localhost:8182&#39;
+&#39;http://www.google.com&#39;</code></pre></div></div>
+                </td>
+            </tr>
 
         </tbody>
     </table>
@@ -153,10 +168,21 @@
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
 import { ValidatorFn, Validators } from &#x27;@angular/forms&#x27;;
 
+/**
+ * A service for providing an url validation
+ */
 @Injectable({
   providedIn: &#x27;root&#x27;
 })
 export class UrlValidatorService {
+
+  /**
+   * Validates, if the given string uses the right pattern
+   * @example
+   * Valid urls
+   * &#x27;https://localhost:8182&#x27;
+   * &#x27;http://www.google.com&#x27;
+   */
   public readonly validators: ReadonlyArray&lt;ValidatorFn&gt; &#x3D; [
     Validators.pattern(new RegExp(&#x27;^(http|https)\:\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\/\S*)?&#x27;))
   ];

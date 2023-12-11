@@ -78,7 +78,9 @@
         <h3>Description</h3>
     </p>
     <p class="comment">
-        <p>A component for viewing / editing binary columns with image data</p>
+        <p>Provides a <a href="CdrEditor "> CDR editor</a> for editing / viewing image data columns.</p>
+<p>To change its value, it uses an <a href="ImageSelectComponent "> image select component</a>.
+When set to read only, it uses an <a href="ImageViewComponent "> image view component</a> to display the content.</p>
 
     </p>
 
@@ -163,11 +165,6 @@
                             <li>
                                     <span class="modifier">Private</span>
                                 <a href="#fileFormatError" >fileFormatError</a>
-                            </li>
-                            <li>
-                                    <span class="modifier"></span>
-                                    <span class="modifier">Public</span>
-                                <a href="#fileInput" >fileInput</a>
                             </li>
                             <li>
                                     <span class="modifier">Public</span>
@@ -267,7 +264,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="65" class="link-to-prism">src/lib/cdr/edit-image/edit-image.component.ts:65</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="90" class="link-to-prism">src/lib/cdr/edit-image/edit-image.component.ts:90</a></div>
                             </td>
                         </tr>
 
@@ -360,15 +357,16 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="86"
-                            class="link-to-prism">src/lib/cdr/edit-image/edit-image.component.ts:86</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="115"
+                            class="link-to-prism">src/lib/cdr/edit-image/edit-image.component.ts:115</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-description"><p>Binds a column dependent reference to the component</p>
+                    <div class="io-description"><p>Binds a column dependent reference to the component.
+Subscribes to subjects from the column dependent reference and its container.</p>
 </div>
 
                     <div class="io-description">
@@ -396,7 +394,7 @@
 
 
                                     <td>
-                                        <p>a column dependent reference</p>
+                                        <p>a column dependent reference.</p>
 
                                     </td>
                                 </tr>
@@ -438,14 +436,16 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="138"
-                            class="link-to-prism">src/lib/cdr/edit-image/edit-image.component.ts:138</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="174"
+                            class="link-to-prism">src/lib/cdr/edit-image/edit-image.component.ts:174</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>Emits a list of files to the <a href="FileSelectorService "> file selector service</a>.</p>
+</div>
 
                     <div class="io-description">
                         <b>Parameters :</b>
@@ -456,6 +456,7 @@
                                     <td>Name</td>
                                     <td>Type</td>
                                     <td>Optional</td>
+                                    <td>Description</td>
                                 </tr>
                             </thead>
                             <tbody>
@@ -470,6 +471,10 @@
                                     </td>
 
 
+                                    <td>
+                                        <p>A list of files to emit as *.png</p>
+
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -509,14 +514,16 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="78"
-                            class="link-to-prism">src/lib/cdr/edit-image/edit-image.component.ts:78</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="106"
+                            class="link-to-prism">src/lib/cdr/edit-image/edit-image.component.ts:106</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>Unsubscribes all events, after the &#39;OnDestroy&#39; hook is triggered.</p>
+</div>
 
                     <div class="io-description">
                         <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
@@ -549,15 +556,15 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="145"
-                            class="link-to-prism">src/lib/cdr/edit-image/edit-image.component.ts:145</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="181"
+                            class="link-to-prism">src/lib/cdr/edit-image/edit-image.component.ts:181</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-description"><p>removes the current image</p>
+                    <div class="io-description"><p>Removes the current image and writes the &#39;empty&#39; value to the column.</p>
 </div>
 
                     <div class="io-description">
@@ -590,14 +597,16 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="133"
-                            class="link-to-prism">src/lib/cdr/edit-image/edit-image.component.ts:133</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="165"
+                            class="link-to-prism">src/lib/cdr/edit-image/edit-image.component.ts:165</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>Resets the file format error</p>
+</div>
 
                     <div class="io-description">
                         <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
@@ -630,8 +639,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="169"
-                            class="link-to-prism">src/lib/cdr/edit-image/edit-image.component.ts:169</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="205"
+                            class="link-to-prism">src/lib/cdr/edit-image/edit-image.component.ts:205</a></div>
                 </td>
             </tr>
 
@@ -712,10 +721,16 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="57" class="link-to-prism">src/lib/cdr/edit-image/edit-image.component.ts:57</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="75" class="link-to-prism">src/lib/cdr/edit-image/edit-image.component.ts:75</a></div>
                         </td>
                     </tr>
 
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The container that wraps the column functionality.</p>
+</div>
+                </td>
+            </tr>
 
         </tbody>
     </table>
@@ -739,10 +754,16 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="55" class="link-to-prism">src/lib/cdr/edit-image/edit-image.component.ts:55</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="70" class="link-to-prism">src/lib/cdr/edit-image/edit-image.component.ts:70</a></div>
                         </td>
                     </tr>
 
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The form control associated with the editor.</p>
+</div>
+                </td>
+            </tr>
 
         </tbody>
     </table>
@@ -765,44 +786,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="62" class="link-to-prism">src/lib/cdr/edit-image/edit-image.component.ts:62</a></div>
-                        </td>
-                    </tr>
-
-
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="fileInput"></a>
-                    <span class="name">
-                            <span class="modifier"></span>
-                            <span class="modifier">Public</span>
-                        <span ><b>fileInput</b></span>
-                        <a href="#fileInput"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Type : </i>    <code>ElementRef</code>
-
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <b>Decorators : </b>
-                        <br />
-                        <code>
-                            @ViewChild(&#x27;file&#x27;)<br />
-                        </code>
-                    </td>
-                </tr>
-                    <tr>
-                        <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">src/lib/cdr/edit-image/edit-image.component.ts:47</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="87" class="link-to-prism">src/lib/cdr/edit-image/edit-image.component.ts:87</a></div>
                         </td>
                     </tr>
 
@@ -828,10 +812,16 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="60" class="link-to-prism">src/lib/cdr/edit-image/edit-image.component.ts:60</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="85" class="link-to-prism">src/lib/cdr/edit-image/edit-image.component.ts:85</a></div>
                         </td>
                     </tr>
 
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Indicatorthat the component is loading data from the server</p>
+</div>
+                </td>
+            </tr>
 
         </tbody>
     </table>
@@ -854,7 +844,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="65" class="link-to-prism">src/lib/cdr/edit-image/edit-image.component.ts:65</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="90" class="link-to-prism">src/lib/cdr/edit-image/edit-image.component.ts:90</a></div>
                         </td>
                     </tr>
 
@@ -887,7 +877,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="64" class="link-to-prism">src/lib/cdr/edit-image/edit-image.component.ts:64</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="89" class="link-to-prism">src/lib/cdr/edit-image/edit-image.component.ts:89</a></div>
                         </td>
                     </tr>
 
@@ -914,10 +904,16 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="53" class="link-to-prism">src/lib/cdr/edit-image/edit-image.component.ts:53</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="65" class="link-to-prism">src/lib/cdr/edit-image/edit-image.component.ts:65</a></div>
                         </td>
                     </tr>
 
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>A subject for triggering an update of the editor</p>
+</div>
+                </td>
+            </tr>
 
         </tbody>
     </table>
@@ -941,10 +937,16 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">src/lib/cdr/edit-image/edit-image.component.ts:58</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="80" class="link-to-prism">src/lib/cdr/edit-image/edit-image.component.ts:80</a></div>
                         </td>
                     </tr>
 
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Event that is emited, after a value has been changed.</p>
+</div>
+                </td>
+            </tr>
 
         </tbody>
     </table>
@@ -970,9 +972,20 @@
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/lib/cdr/edit-image/edit-image.component.ts:49</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">src/lib/cdr/edit-image/edit-image.component.ts:58</a></div>
                                 </td>
                             </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Gets a small hint, if the file format is not supported</p>
+</div>
+
+                                <div class="io-description">
+                                    <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                                </div>
+                        </td>
+                    </tr>
 
             </tbody>
         </table>
@@ -993,7 +1006,10 @@ import { Base64ImageService } from &#x27;../../images/base64-image.service&#x27;
 import { FileSelectorService } from &#x27;../../file-selector/file-selector.service&#x27;;
 
 /**
- * A component for viewing / editing binary columns with image data
+ * Provides a {@link CdrEditor | CDR editor} for editing / viewing image data columns.
+ * 
+ * To change its value, it uses an {@link ImageSelectComponent | image select component}.
+ * When set to read only, it uses an {@link ImageViewComponent | image view component} to display the content.
  */
 @Component({
   selector: &#x27;imx-edit-image&#x27;,
@@ -1001,19 +1017,41 @@ import { FileSelectorService } from &#x27;../../file-selector/file-selector.serv
   styleUrls: [&#x27;./edit-image.component.scss&#x27;],
 })
 export class EditImageComponent implements CdrEditor, OnDestroy {
+  /**
+   * @ignore only to access the file input from the template.
+   */
   @ViewChild(&#x27;file&#x27;) public fileInput: ElementRef;
 
+  /**
+   * Gets a small hint, if the file format is not supported
+   */
   public get fileFormatHint(): string {
     return this.fileFormatError ? &#x27;#LDS#Please select an image in PNG format.&#x27; : undefined;
   }
 
+  /**
+   * A subject for triggering an update of the editor
+   */
   public readonly updateRequested &#x3D; new Subject&lt;void&gt;();
 
+  /**
+   * The form control associated with the editor.
+   */
   public readonly control &#x3D; new UntypedFormControl(undefined);
 
+  /**
+   * The container that wraps the column functionality.
+   */
   public readonly columnContainer &#x3D; new EntityColumnContainer&lt;string&gt;();
+
+  /**
+   * Event that is emited, after a value has been changed.
+   */
   public readonly valueHasChanged &#x3D; new EventEmitter&lt;ValueHasChangedEventArg&gt;();
 
+  /**
+   * Indicatorthat the component is loading data from the server
+   */
   public isLoading &#x3D; false;
 
   private fileFormatError &#x3D; false;
@@ -1032,13 +1070,17 @@ export class EditImageComponent implements CdrEditor, OnDestroy {
     );
   }
 
+  /**
+   * Unsubscribes all events, after the &#x27;OnDestroy&#x27; hook is triggered.
+   */
   public ngOnDestroy(): void {
     this.subscriptions.forEach((s) &#x3D;&gt; s.unsubscribe());
   }
 
   /**
-   * Binds a column dependent reference to the component
-   * @param cdref a column dependent reference
+   * Binds a column dependent reference to the component.
+   * Subscribes to subjects from the column dependent reference and its container.
+   * @param cdref a column dependent reference.
    */
   public bind(cdref: ColumnDependentReference): void {
     if (cdref &amp;&amp; cdref.column) {
@@ -1087,17 +1129,24 @@ export class EditImageComponent implements CdrEditor, OnDestroy {
     }
   }
 
+  /**
+   * Resets the file format error
+   */
   public resetFileFormatErrorState(): void {
     this.fileFormatError &#x3D; false;
   }
 
+  /**
+   * Emits a list of files to the {@link FileSelectorService | file selector service}.
+   * @param files A list of files to emit as *.png
+   */
   // TODO: Check Upgrade
   public emitFiles(files: FileList): void {
     this.fileSelector.emitFiles(files, &#x27;image/png&#x27;);
   }
 
   /**
-   * removes the current image
+   * Removes the current image and writes the &#x27;empty&#x27; value to the column.
    */
   public async remove(): Promise&lt;void&gt; {
     this.fileInput.nativeElement.value &#x3D; &#x27;&#x27;;

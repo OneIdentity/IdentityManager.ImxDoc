@@ -76,6 +76,13 @@
         </p>
 
 
+            <p class="comment">
+                <h3>Description</h3>
+            </p>
+            <p class="comment">
+                <p>Represents an error state, that can be caused by a number value.</p>
+
+            </p>
 
 
         <section data-compodoc="block-index">
@@ -158,6 +165,12 @@
 
 
 
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-description"><p>Indicates, that the number is not a number at all</p>
+</div>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                     <table class="table table-sm table-bordered">
@@ -196,6 +209,12 @@
 
 
 
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-description"><p>Indicates, that the value is out of the upper bound</p>
+</div>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                     <table class="table table-sm table-bordered">
@@ -234,6 +253,12 @@
 
 
 
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-description"><p>Indicates, that the value is out of the lower bound</p>
+</div>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
             </section>
@@ -242,8 +267,19 @@
 
     <div class="tab-pane fade  tab-source-code" id="source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">export interface NumberError {
+  /**
+   * Indicates, that the number is not a number at all
+   */
   invalidInteger?: boolean;
+
+  /**
+   * Indicates, that the value is out of the lower bound
+   */
   rangeMin?: boolean;
+
+  /**
+   * Indicates, that the value is out of the upper bound
+   */
   rangeMax?: boolean;
 }
 </code></pre>

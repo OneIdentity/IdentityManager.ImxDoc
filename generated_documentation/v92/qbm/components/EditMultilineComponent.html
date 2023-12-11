@@ -78,7 +78,9 @@
         <h3>Description</h3>
     </p>
     <p class="comment">
-        <p>A component for viewing / editing multilined string columns</p>
+        <p>Provides a <a href="CdrEditor "> CDR editor</a> for editing / viewing multiline string columns</p>
+<p>To change the value, it uses a text area.
+When set to read only, it uses a <a href="ViewPropertyComponent "> view property component</a> to display the content.</p>
 
     </p>
 
@@ -160,16 +162,8 @@
                                 <a href="#columnContainer" >columnContainer</a>
                             </li>
                             <li>
-                                    <span class="modifier">Public</span>
-                                <a href="#isBusy" >isBusy</a>
-                            </li>
-                            <li>
                                     <span class="modifier">Private</span>
                                 <a href="#isWriting" >isWriting</a>
-                            </li>
-                            <li>
-                                    <span class="modifier">Public</span>
-                                <a href="#lastError" >lastError</a>
                             </li>
                             <li>
                                     <span class="modifier">Private</span>
@@ -265,7 +259,7 @@
             </tr>
             <tr>
                 <td class="col-md-4">
-                        <div class="io-line">Defined in         <code><a href="../components/EditorBase.html#source" target="_self" >EditorBase:75</a></code>
+                        <div class="io-line">Defined in         <code><a href="../components/EditorBase.html#source" target="_self" >EditorBase:113</a></code>
 </div>
                 </td>
             </tr>
@@ -273,7 +267,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-description"><p>Binds a column dependent reference to the component</p>
+                    <div class="io-description"><p>Binds a column dependent reference to the component, by setting the control value and subscribing to the events,
+the CDR or the ColumnContainer emits</p>
 </div>
 
                     <div class="io-description">
@@ -349,7 +344,7 @@
             </tr>
             <tr>
                 <td class="col-md-4">
-                        <div class="io-line">Defined in         <code><a href="../components/EditorBase.html#source" target="_self" >EditorBase:61</a></code>
+                        <div class="io-line">Defined in         <code><a href="../components/EditorBase.html#source" target="_self" >EditorBase:94</a></code>
 </div>
                 </td>
             </tr>
@@ -357,6 +352,8 @@
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>Unsubscribes all events, as soon as the component is destroyed.</p>
+</div>
 
                     <div class="io-description">
                         <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
@@ -394,7 +391,7 @@
             </tr>
             <tr>
                 <td class="col-md-4">
-                        <div class="io-line">Defined in         <code><a href="../components/EditorBase.html#source" target="_self" >EditorBase:130</a></code>
+                        <div class="io-line">Defined in         <code><a href="../components/EditorBase.html#source" target="_self" >EditorBase:171</a></code>
 </div>
                 </td>
             </tr>
@@ -402,6 +399,8 @@
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>Updates the value of the form control as well as its validators.</p>
+</div>
 
                     <div class="io-description">
                         <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
@@ -440,7 +439,7 @@
             </tr>
             <tr>
                 <td class="col-md-4">
-                        <div class="io-line">Defined in         <code><a href="../components/EditorBase.html#source" target="_self" >EditorBase:148</a></code>
+                        <div class="io-line">Defined in         <code><a href="../components/EditorBase.html#source" target="_self" >EditorBase:189</a></code>
 </div>
                 </td>
             </tr>
@@ -448,7 +447,7 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-description"><p>updates the value for the CDR</p>
+                    <div class="io-description"><p>Updates the value for the CDR and writes them back to the column.</p>
 </div>
 
                     <div class="io-description">
@@ -528,11 +527,17 @@
                         </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in         <code><a href="../components/EditorBase.html#source" target="_self" >EditorBase:41</a></code>
+                                <div class="io-line">Defined in         <code><a href="../components/EditorBase.html#source" target="_self" >EditorBase:47</a></code>
 </div>
                         </td>
                     </tr>
 
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The form control associated with the editor.</p>
+</div>
+                </td>
+            </tr>
 
         </tbody>
     </table>
@@ -562,44 +567,17 @@
                         </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in         <code><a href="../components/EditorBase.html#source" target="_self" >EditorBase:44</a></code>
+                                <div class="io-line">Defined in         <code><a href="../components/EditorBase.html#source" target="_self" >EditorBase:53</a></code>
 </div>
                         </td>
                     </tr>
 
-
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="isBusy"></a>
-                    <span class="name">
-                            <span class="modifier">Public</span>
-                        <span ><b>isBusy</b></span>
-                        <a href="#isBusy"><span class="icon ion-ios-link"></span></a>
-                    </span>
+                    <div class="io-description"><p>The <a href="EntityColumnContainer "> entity column container</a> that handles column &lt;-&gt; editor communication.</p>
+</div>
                 </td>
             </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Default value : </i><code>false</code>
-                    </td>
-                </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                <div class="io-line">Inherited from         <code><a href="../components/EditorBase.html" target="_self" >EditorBase</a></code>
-</div>
-                            </td>
-                        </tr>
-                    <tr>
-                        <td class="col-md-4">
-                                <div class="io-line">Defined in         <code><a href="../components/EditorBase.html#source" target="_self" >EditorBase:50</a></code>
-</div>
-                        </td>
-                    </tr>
-
 
         </tbody>
     </table>
@@ -628,41 +606,7 @@
                         </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in         <code><a href="../components/EditorBase.html#source" target="_self" >EditorBase:57</a></code>
-</div>
-                        </td>
-                    </tr>
-
-
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="lastError"></a>
-                    <span class="name">
-                            <span class="modifier">Public</span>
-                        <span ><b>lastError</b></span>
-                        <a href="#lastError"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Type : </i>        <code><a href="../classes/ServerError.html" target="_self" >ServerError</a></code>
-
-                    </td>
-                </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                <div class="io-line">Inherited from         <code><a href="../components/EditorBase.html" target="_self" >EditorBase</a></code>
-</div>
-                            </td>
-                        </tr>
-                    <tr>
-                        <td class="col-md-4">
-                                <div class="io-line">Defined in         <code><a href="../components/EditorBase.html#source" target="_self" >EditorBase:51</a></code>
+                                <div class="io-line">Defined in         <code><a href="../components/EditorBase.html#source" target="_self" >EditorBase:87</a></code>
 </div>
                         </td>
                     </tr>
@@ -702,7 +646,7 @@
                         </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in         <code><a href="../components/EditorBase.html#source" target="_self" >EditorBase:56</a></code>
+                                <div class="io-line">Defined in         <code><a href="../components/EditorBase.html#source" target="_self" >EditorBase:86</a></code>
 </div>
                         </td>
                     </tr>
@@ -736,11 +680,18 @@
                         </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in         <code><a href="../components/EditorBase.html#source" target="_self" >EditorBase:48</a></code>
+                                <div class="io-line">Defined in         <code><a href="../components/EditorBase.html#source" target="_self" >EditorBase:64</a></code>
 </div>
                         </td>
                     </tr>
 
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>A subject, that is used to signal changes in the column.
+Mainly used to signal that the editor needs to be updated.</p>
+</div>
+                </td>
+            </tr>
 
         </tbody>
     </table>
@@ -770,11 +721,17 @@
                         </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in         <code><a href="../components/EditorBase.html#source" target="_self" >EditorBase:46</a></code>
+                                <div class="io-line">Defined in         <code><a href="../components/EditorBase.html#source" target="_self" >EditorBase:58</a></code>
 </div>
                         </td>
                     </tr>
 
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Event, that is emitted, if the value of the component is changed.</p>
+</div>
+                </td>
+            </tr>
 
         </tbody>
     </table>
@@ -790,14 +747,20 @@ import { UntypedFormControl } from &#x27;@angular/forms&#x27;;
 import { EditorBase } from &#x27;../editor-base&#x27;;
 
 /**
- * A component for viewing / editing multilined string columns
+ * Provides a {@link CdrEditor | CDR editor} for editing / viewing multiline string columns
+ * 
+ * To change the value, it uses a text area.
+ * When set to read only, it uses a {@link ViewPropertyComponent | view property component} to display the content.
  */
 @Component({
   selector: &#x27;imx-edit-multiline&#x27;,
   templateUrl: &#x27;./edit-multiline.component.html&#x27;,
-  styleUrls: [&#x27;./edit-multiline.component.scss&#x27;]
+  styleUrls: [&#x27;./edit-multiline.component.scss&#x27;],
 })
 export class EditMultilineComponent extends EditorBase&lt;string&gt; {
+  /**
+   * The form control associated with the editor.
+   */
   public readonly control &#x3D; new UntypedFormControl(undefined, { updateOn: &#x27;blur&#x27; });
 }
 </code></pre>

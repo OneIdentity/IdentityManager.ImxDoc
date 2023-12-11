@@ -199,12 +199,12 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor(passcodeService: <a href="../injectables/PasscodeService.html" target="_self">PasscodeService</a>, busyService: EuiLoadingService, userService: <a href="../injectables/OpSupportUserService.html" target="_self">OpSupportUserService</a>, dbObjectService: OpsupportDbObjectService, qerPermissionsService: <a href="../injectables/QerPermissionsService.html" target="_self">QerPermissionsService</a>)</code>
+<code>constructor(session: imx_SessionService, passcodeService: <a href="../injectables/PasscodeService.html" target="_self">PasscodeService</a>, busyService: EuiLoadingService, dbObjectService: OpsupportDbObjectService)</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/lib/ops/objectOverviewPerson.component.ts:48</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/lib/ops/objectOverviewPerson.component.ts:46</a></div>
                             </td>
                         </tr>
 
@@ -221,6 +221,18 @@
                                             </tr>
                                         </thead>
                                         <tbody>
+                                                <tr>
+                                                        <td>session</td>
+                                                  
+                                                        <td>
+                                                                    <code>imx_SessionService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
                                                 <tr>
                                                         <td>passcodeService</td>
                                                   
@@ -246,34 +258,10 @@
                                                     
                                                 </tr>
                                                 <tr>
-                                                        <td>userService</td>
-                                                  
-                                                        <td>
-                                                                        <code><a href="../injectables/OpSupportUserService.html" target="_self" >OpSupportUserService</a></code>
-                                                        </td>
-                                                  
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
-                                                </tr>
-                                                <tr>
                                                         <td>dbObjectService</td>
                                                   
                                                         <td>
                                                                     <code>OpsupportDbObjectService</code>
-                                                        </td>
-                                                  
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
-                                                </tr>
-                                                <tr>
-                                                        <td>qerPermissionsService</td>
-                                                  
-                                                        <td>
-                                                                        <code><a href="../injectables/QerPermissionsService.html" target="_self" >QerPermissionsService</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -322,8 +310,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="67"
-                            class="link-to-prism">src/lib/ops/objectOverviewPerson.component.ts:67</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="64"
+                            class="link-to-prism">src/lib/ops/objectOverviewPerson.component.ts:64</a></div>
                 </td>
             </tr>
 
@@ -361,8 +349,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="58"
-                            class="link-to-prism">src/lib/ops/objectOverviewPerson.component.ts:58</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="55"
+                            class="link-to-prism">src/lib/ops/objectOverviewPerson.component.ts:55</a></div>
                 </td>
             </tr>
 
@@ -404,7 +392,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/lib/ops/objectOverviewPerson.component.ts:48</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/lib/ops/objectOverviewPerson.component.ts:46</a></div>
                         </td>
                     </tr>
 
@@ -431,7 +419,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/lib/ops/objectOverviewPerson.component.ts:46</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/lib/ops/objectOverviewPerson.component.ts:44</a></div>
                         </td>
                     </tr>
 
@@ -460,7 +448,7 @@
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="62" class="link-to-prism">src/lib/ops/objectOverviewPerson.component.ts:62</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="59" class="link-to-prism">src/lib/ops/objectOverviewPerson.component.ts:59</a></div>
                                 </td>
                             </tr>
 
@@ -474,11 +462,9 @@
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
 import { OverlayRef } from &#x27;@angular/cdk/overlay&#x27;;
 import { EuiLoadingService } from &#x27;@elemental-ui/core&#x27;;
-import { OpsupportDbObjectService } from &#x27;qbm&#x27;;
+import { imx_SessionService, OpsupportDbObjectService } from &#x27;qbm&#x27;;
 import { ObjectOverviewContainer } from &#x27;./objectOverviewContainer&#x27;;
 import { PasscodeService } from &#x27;./passcode.service&#x27;;
-import { OpSupportUserService } from &#x27;../ops/user.service&#x27;;
-import { QerPermissionsService } from &#x27;../admin/qer-permissions.service&#x27;;
 
 @Component({
   templateUrl: &#x27;./objectOverviewPerson.component.html&#x27;,
@@ -495,15 +481,14 @@ export class ObjectOverviewPersonComponent implements OnInit {
   public isPasswordResetAllowed: boolean;
 
   constructor(
+    private readonly session: imx_SessionService,
     private readonly passcodeService: PasscodeService,
     private readonly busyService: EuiLoadingService,
-    private readonly userService: OpSupportUserService,
-    private readonly dbObjectService: OpsupportDbObjectService,
-    private readonly qerPermissionsService: QerPermissionsService
+    private readonly dbObjectService: OpsupportDbObjectService
   ) { }
 
   async ngOnInit(): Promise&lt;void&gt; {
-    this.isPasswordResetAllowed &#x3D; await this.qerPermissionsService.isPasswordHelpdesk();
+    this.isPasswordResetAllowed &#x3D; (await this.session.Client.opsupport_usergroups_get()).some(role &#x3D;&gt; role.Name &#x3D;&#x3D;&#x3D; &#x27;QER_4_PasswordHelpdesk&#x27;);   
   }
 
   get uidPerson(): string {

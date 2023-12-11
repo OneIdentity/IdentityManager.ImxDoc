@@ -69,6 +69,13 @@
         </p>
 
 
+            <p class="comment">
+                <h3>Description</h3>
+            </p>
+            <p class="comment">
+                <p>A service for providing a number validation</p>
+
+            </p>
 
 
 
@@ -145,14 +152,20 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="38"
-                            class="link-to-prism">src/lib/cdr/edit-number/number-validator.service.ts:38</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="51"
+                            class="link-to-prism">src/lib/cdr/edit-number/number-validator.service.ts:51</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>Validates the value by checking two things:</p>
+<ol>
+<ul>The value is a valid number.</ul>
+<ul>The value is inside the range, given by a <a href="ValueConstraint">ValueConstraint</a></ul>
+</ol>
+</div>
 
                     <div class="io-description">
                         <b>Parameters :</b>
@@ -163,6 +176,7 @@
                                     <td>Name</td>
                                     <td>Type</td>
                                     <td>Optional</td>
+                                    <td>Description</td>
                                 </tr>
                             </thead>
                             <tbody>
@@ -177,6 +191,10 @@
                                     </td>
 
 
+                                    <td>
+                                        <p>The value that needs to be checked</p>
+
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>range</td>
@@ -189,6 +207,10 @@
                                     </td>
 
 
+                                    <td>
+                                        <p>The <a href="ValueConstraint">ValueConstraint</a>, that determines the bounds</p>
+
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -232,7 +254,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/lib/cdr/edit-number/number-validator.service.ts:36</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/lib/cdr/edit-number/number-validator.service.ts:39</a></div>
                         </td>
                     </tr>
 
@@ -250,12 +272,25 @@
 import { ValueConstraint } from &#x27;imx-qbm-dbts&#x27;;
 import { NumberError } from &#x27;./number-error.interface&#x27;;
 
+/**
+ * A service for providing a number validation
+ */
 @Injectable({
-  providedIn: &#x27;root&#x27;
+  providedIn: &#x27;root&#x27;,
 })
 export class NumberValidatorService {
   private readonly regexPatternInteger &#x3D; /^[-+]?\d+$/;
 
+  /**
+   * Validates the value by checking two things:
+   * &lt;ol&gt;
+   * &lt;ul&gt;The value is a valid number.&lt;/ul&gt;
+   * &lt;ul&gt;The value is inside the range, given by a {@link ValueConstraint}&lt;/ul&gt;
+   * &lt;/ol&gt;
+   * @param value The value that needs to be checked
+   * @param range  The {@link ValueConstraint}, that determines the bounds
+   * @returns
+   */
   public validate(value: any, range: ValueConstraint): NumberError | null {
     if (value &#x3D;&#x3D; null) {
       return null;
@@ -266,11 +301,11 @@ export class NumberValidatorService {
     }
 
     if (range) {
-      if (range.MinValue !&#x3D; null &amp;&amp; (value &lt; range.MinValue)) {
+      if (range.MinValue !&#x3D; null &amp;&amp; value &lt; range.MinValue) {
         return { rangeMin: true };
       }
 
-      if (range.MaxValue !&#x3D; null &amp;&amp; (value &gt; range.MaxValue)) {
+      if (range.MaxValue !&#x3D; null &amp;&amp; value &gt; range.MaxValue) {
         return { rangeMax: true };
       }
     }

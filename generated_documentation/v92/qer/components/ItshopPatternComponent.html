@@ -1657,7 +1657,7 @@ export class ItshopPatternComponent implements OnInit, OnDestroy {
 
   /**
    * the wrapper component for the  {@link DataSourceToolbar|dataSourceToolbar}.
-   */  
+   */
   public dstWrapper: DataSourceWrapper&lt;PortalItshopPatternAdmin&gt;;
 
   public dstSettings: DataSourceToolbarSettings;
@@ -1770,7 +1770,7 @@ export class ItshopPatternComponent implements OnInit, OnDestroy {
     }
   }
 
-  public async getData(parameter?: CollectionLoadParameters): Promise&lt;void&gt; {    
+  public async getData(parameter?: CollectionLoadParameters): Promise&lt;void&gt; {
     this.patternService.handleOpenLoader();
     try {
       const parameters &#x3D; {
@@ -1778,7 +1778,7 @@ export class ItshopPatternComponent implements OnInit, OnDestroy {
         ...{ OrderBy: &#x27;Ident_ShoppingCartPattern asc&#x27; }
       };
       this.dstSettings &#x3D; await this.dstWrapper.getDstSettings(parameters);
-    } finally {      
+    } finally {
       this.patternService.handleCloseLoader();
     }
   }
@@ -1813,9 +1813,7 @@ export class ItshopPatternComponent implements OnInit, OnDestroy {
   private async viewDetails(selectedPattern: PortalItshopPatternPrivate | PortalItshopPatternAdmin): Promise&lt;void&gt; {
     const isMyPattern &#x3D; this.isMyPattern(selectedPattern);
     const canEditAndDelete &#x3D; this.canBeEditedAndDeleted(selectedPattern);
-    const pattern &#x3D; isMyPattern
-      ? await this.patternService.getPrivatePattern(selectedPattern.GetEntity().GetKeys()[0])
-      : selectedPattern;
+    const pattern &#x3D; selectedPattern;
 
     const title &#x3D; await this.translate.get(canEditAndDelete
       ? &#x27;#LDS#Heading Edit Product Bundle&#x27;

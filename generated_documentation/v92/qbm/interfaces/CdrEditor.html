@@ -365,17 +365,17 @@ import { Subject } from &#x27;rxjs&#x27;;
 import { ColumnDependentReference } from &#x27;./column-dependent-reference.interface&#x27;;
 
 /**
- * Interface for the argument, that it emitted in the CDR editor
+ * Interface for the argument, that it emitted in the CDR editor.
  */
 export interface ValueHasChangedEventArg {
     /**
-     * The new value of the editor
+     * The new value of the editor.
      */
     value: any;
 
     /**
      * A flag to show whether the emitting of a follow up event should be forced
-     * (evaluated by  {@link CdrEditorComponent|CdrEditorComponent})
+     * (evaluated by  {@link CdrEditorComponent|CdrEditorComponent}).
      */
     forceEmit?: boolean;
 }

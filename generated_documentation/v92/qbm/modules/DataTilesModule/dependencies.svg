@@ -28,13 +28,13 @@
 <title>cluster_DataTilesModule_declarations</title>
 <polygon fill="none" stroke="black" points="179,-78 179,-130 479,-130 479,-78 179,-78"/>
 </g>
-<g id="clust5" class="cluster">
-<title>cluster_DataTilesModule_imports</title>
-<polygon fill="none" stroke="black" points="17,-78 17,-130 171,-130 171,-78 17,-78"/>
-</g>
 <g id="clust6" class="cluster">
 <title>cluster_DataTilesModule_exports</title>
 <polygon fill="none" stroke="black" points="177,-208 177,-260 333,-260 333,-208 177,-208"/>
+</g>
+<g id="clust5" class="cluster">
+<title>cluster_DataTilesModule_imports</title>
+<polygon fill="none" stroke="black" points="17,-78 17,-130 171,-130 171,-78 17,-78"/>
 </g>
 <!-- DataTileComponent -->
 <g id="node1" class="node">

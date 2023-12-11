@@ -24,127 +24,127 @@
 <title>cluster_RoleMembershipsModule</title>
 <polygon fill="none" stroke="black" stroke-dasharray="1,5" points="8,-70 8,-195 2012,-195 2012,-70 8,-70"/>
 </g>
-<g id="clust11" class="cluster">
-<title>cluster_RoleMembershipsModule_imports</title>
-<polygon fill="none" stroke="black" points="1836,-78 1836,-130 2004,-130 2004,-78 1836,-78"/>
-</g>
 <g id="clust2" class="cluster">
 <title>cluster_RoleMembershipsModule_declarations</title>
-<polygon fill="none" stroke="black" points="16,-78 16,-130 1828,-130 1828,-78 16,-78"/>
+<polygon fill="none" stroke="black" points="192,-78 192,-130 2004,-130 2004,-78 192,-78"/>
+</g>
+<g id="clust11" class="cluster">
+<title>cluster_RoleMembershipsModule_imports</title>
+<polygon fill="none" stroke="black" points="16,-78 16,-130 184,-130 184,-78 16,-78"/>
 </g>
 <!-- DynamicRoleComponent -->
 <g id="node1" class="node">
 <title>DynamicRoleComponent</title>
-<polygon fill="#ffffb3" stroke="black" points="1819.59,-122 1660.41,-122 1660.41,-86 1819.59,-86 1819.59,-122"/>
-<text text-anchor="middle" x="1740" y="-99.8" font-family="Times,serif" font-size="14.00">DynamicRoleComponent</text>
+<polygon fill="#ffffb3" stroke="black" points="1995.59,-122 1836.41,-122 1836.41,-86 1995.59,-86 1995.59,-122"/>
+<text text-anchor="middle" x="1916" y="-99.8" font-family="Times,serif" font-size="14.00">DynamicRoleComponent</text>
 </g>
 <!-- RoleMembershipsModule -->
 <g id="node9" class="node">
 <title>RoleMembershipsModule</title>
-<polygon fill="#8dd3c7" stroke="black" points="1102.2,-187 1099.2,-191 1078.2,-191 1075.2,-187 939.8,-187 939.8,-151 1102.2,-151 1102.2,-187"/>
-<text text-anchor="middle" x="1021" y="-164.8" font-family="Times,serif" font-size="14.00">RoleMembershipsModule</text>
+<polygon fill="#8dd3c7" stroke="black" points="1035.2,-187 1032.2,-191 1011.2,-191 1008.2,-187 872.8,-187 872.8,-151 1035.2,-151 1035.2,-187"/>
+<text text-anchor="middle" x="954" y="-164.8" font-family="Times,serif" font-size="14.00">RoleMembershipsModule</text>
 </g>
 <!-- DynamicRoleComponent&#45;&gt;RoleMembershipsModule -->
 <g id="edge1" class="edge">
 <title>DynamicRoleComponent&#45;&gt;RoleMembershipsModule</title>
-<path fill="none" stroke="black" d="M1740,-122.13C1740,-142.57 1740,-173 1740,-173 1740,-173 1112.43,-173 1112.43,-173"/>
-<polygon fill="black" stroke="black" points="1112.43,-169.5 1102.43,-173 1112.43,-176.5 1112.43,-169.5"/>
+<path fill="none" stroke="black" d="M1916,-122.01C1916,-144.49 1916,-180 1916,-180 1916,-180 1045.19,-180 1045.19,-180"/>
+<polygon fill="black" stroke="black" points="1045.19,-176.5 1035.19,-180 1045.19,-183.5 1045.19,-176.5"/>
 </g>
 <!-- ExcludedMembershipsComponent -->
 <g id="node2" class="node">
 <title>ExcludedMembershipsComponent</title>
-<polygon fill="#ffffb3" stroke="black" points="1642.41,-122 1431.59,-122 1431.59,-86 1642.41,-86 1642.41,-122"/>
-<text text-anchor="middle" x="1537" y="-99.8" font-family="Times,serif" font-size="14.00">ExcludedMembershipsComponent</text>
+<polygon fill="#ffffb3" stroke="black" points="1818.41,-122 1607.59,-122 1607.59,-86 1818.41,-86 1818.41,-122"/>
+<text text-anchor="middle" x="1713" y="-99.8" font-family="Times,serif" font-size="14.00">ExcludedMembershipsComponent</text>
 </g>
 <!-- ExcludedMembershipsComponent&#45;&gt;RoleMembershipsModule -->
 <g id="edge2" class="edge">
 <title>ExcludedMembershipsComponent&#45;&gt;RoleMembershipsModule</title>
-<path fill="none" stroke="black" d="M1537,-122.27C1537,-140.56 1537,-166 1537,-166 1537,-166 1112.19,-166 1112.19,-166"/>
-<polygon fill="black" stroke="black" points="1112.19,-162.5 1102.19,-166 1112.19,-169.5 1112.19,-162.5"/>
+<path fill="none" stroke="black" d="M1713,-122.13C1713,-142.57 1713,-173 1713,-173 1713,-173 1045.23,-173 1045.23,-173"/>
+<polygon fill="black" stroke="black" points="1045.23,-169.5 1035.23,-173 1045.23,-176.5 1045.23,-169.5"/>
 </g>
 <!-- MembershipsChooseIdentitiesComponent -->
 <g id="node3" class="node">
 <title>MembershipsChooseIdentitiesComponent</title>
-<polygon fill="#ffffb3" stroke="black" points="1413.63,-122 1162.37,-122 1162.37,-86 1413.63,-86 1413.63,-122"/>
-<text text-anchor="middle" x="1288" y="-99.8" font-family="Times,serif" font-size="14.00">MembershipsChooseIdentitiesComponent</text>
+<polygon fill="#ffffb3" stroke="black" points="1589.63,-122 1338.37,-122 1338.37,-86 1589.63,-86 1589.63,-122"/>
+<text text-anchor="middle" x="1464" y="-99.8" font-family="Times,serif" font-size="14.00">MembershipsChooseIdentitiesComponent</text>
 </g>
 <!-- MembershipsChooseIdentitiesComponent&#45;&gt;RoleMembershipsModule -->
 <g id="edge3" class="edge">
 <title>MembershipsChooseIdentitiesComponent&#45;&gt;RoleMembershipsModule</title>
-<path fill="none" stroke="black" d="M1288,-122.01C1288,-138.05 1288,-159 1288,-159 1288,-159 1112.2,-159 1112.2,-159"/>
-<polygon fill="black" stroke="black" points="1112.2,-155.5 1102.2,-159 1112.2,-162.5 1112.2,-155.5"/>
+<path fill="none" stroke="black" d="M1464,-122.27C1464,-140.56 1464,-166 1464,-166 1464,-166 1045.37,-166 1045.37,-166"/>
+<polygon fill="black" stroke="black" points="1045.37,-162.5 1035.37,-166 1045.37,-169.5 1045.37,-162.5"/>
 </g>
 <!-- NotRequestableMembershipsComponent -->
 <g id="node4" class="node">
 <title>NotRequestableMembershipsComponent</title>
-<polygon fill="#ffffb3" stroke="black" points="1144.46,-122 897.54,-122 897.54,-86 1144.46,-86 1144.46,-122"/>
-<text text-anchor="middle" x="1021" y="-99.8" font-family="Times,serif" font-size="14.00">NotRequestableMembershipsComponent</text>
+<polygon fill="#ffffb3" stroke="black" points="1320.46,-122 1073.54,-122 1073.54,-86 1320.46,-86 1320.46,-122"/>
+<text text-anchor="middle" x="1197" y="-99.8" font-family="Times,serif" font-size="14.00">NotRequestableMembershipsComponent</text>
 </g>
 <!-- NotRequestableMembershipsComponent&#45;&gt;RoleMembershipsModule -->
 <g id="edge4" class="edge">
 <title>NotRequestableMembershipsComponent&#45;&gt;RoleMembershipsModule</title>
-<path fill="none" stroke="black" d="M1021,-122.11C1021,-122.11 1021,-140.99 1021,-140.99"/>
-<polygon fill="black" stroke="black" points="1017.5,-140.99 1021,-150.99 1024.5,-140.99 1017.5,-140.99"/>
+<path fill="none" stroke="black" d="M1197,-122.01C1197,-138.05 1197,-159 1197,-159 1197,-159 1045.25,-159 1045.25,-159"/>
+<polygon fill="black" stroke="black" points="1045.25,-155.5 1035.25,-159 1045.25,-162.5 1045.25,-155.5"/>
 </g>
 <!-- PrimaryMembershipsComponent -->
 <g id="node5" class="node">
 <title>PrimaryMembershipsComponent</title>
-<polygon fill="#ffffb3" stroke="black" points="879.14,-122 676.86,-122 676.86,-86 879.14,-86 879.14,-122"/>
-<text text-anchor="middle" x="778" y="-99.8" font-family="Times,serif" font-size="14.00">PrimaryMembershipsComponent</text>
+<polygon fill="#ffffb3" stroke="black" points="1055.14,-122 852.86,-122 852.86,-86 1055.14,-86 1055.14,-122"/>
+<text text-anchor="middle" x="954" y="-99.8" font-family="Times,serif" font-size="14.00">PrimaryMembershipsComponent</text>
 </g>
 <!-- PrimaryMembershipsComponent&#45;&gt;RoleMembershipsModule -->
 <g id="edge5" class="edge">
 <title>PrimaryMembershipsComponent&#45;&gt;RoleMembershipsModule</title>
-<path fill="none" stroke="black" d="M778,-122.01C778,-138.05 778,-159 778,-159 778,-159 929.75,-159 929.75,-159"/>
-<polygon fill="black" stroke="black" points="929.75,-162.5 939.75,-159 929.75,-155.5 929.75,-162.5"/>
+<path fill="none" stroke="black" d="M954,-122.11C954,-122.11 954,-140.99 954,-140.99"/>
+<polygon fill="black" stroke="black" points="950.5,-140.99 954,-150.99 957.5,-140.99 950.5,-140.99"/>
 </g>
 <!-- RemoveMembershipComponent -->
 <g id="node6" class="node">
 <title>RemoveMembershipComponent</title>
-<polygon fill="#ffffb3" stroke="black" points="658.25,-122 459.75,-122 459.75,-86 658.25,-86 658.25,-122"/>
-<text text-anchor="middle" x="559" y="-99.8" font-family="Times,serif" font-size="14.00">RemoveMembershipComponent</text>
+<polygon fill="#ffffb3" stroke="black" points="834.25,-122 635.75,-122 635.75,-86 834.25,-86 834.25,-122"/>
+<text text-anchor="middle" x="735" y="-99.8" font-family="Times,serif" font-size="14.00">RemoveMembershipComponent</text>
 </g>
 <!-- RemoveMembershipComponent&#45;&gt;RoleMembershipsModule -->
 <g id="edge6" class="edge">
 <title>RemoveMembershipComponent&#45;&gt;RoleMembershipsModule</title>
-<path fill="none" stroke="black" d="M559,-122.27C559,-140.56 559,-166 559,-166 559,-166 929.73,-166 929.73,-166"/>
-<polygon fill="black" stroke="black" points="929.73,-169.5 939.73,-166 929.73,-162.5 929.73,-169.5"/>
+<path fill="none" stroke="black" d="M735,-122.01C735,-138.05 735,-159 735,-159 735,-159 862.76,-159 862.76,-159"/>
+<polygon fill="black" stroke="black" points="862.76,-162.5 872.76,-159 862.76,-155.5 862.76,-162.5"/>
 </g>
 <!-- RoleMembershipsComponent -->
 <g id="node7" class="node">
 <title>RoleMembershipsComponent</title>
-<polygon fill="#ffffb3" stroke="black" points="441.98,-122 258.02,-122 258.02,-86 441.98,-86 441.98,-122"/>
-<text text-anchor="middle" x="350" y="-99.8" font-family="Times,serif" font-size="14.00">RoleMembershipsComponent</text>
+<polygon fill="#ffffb3" stroke="black" points="617.98,-122 434.02,-122 434.02,-86 617.98,-86 617.98,-122"/>
+<text text-anchor="middle" x="526" y="-99.8" font-family="Times,serif" font-size="14.00">RoleMembershipsComponent</text>
 </g>
 <!-- RoleMembershipsComponent&#45;&gt;RoleMembershipsModule -->
 <g id="edge7" class="edge">
 <title>RoleMembershipsComponent&#45;&gt;RoleMembershipsModule</title>
-<path fill="none" stroke="black" d="M350,-122.13C350,-142.57 350,-173 350,-173 350,-173 929.73,-173 929.73,-173"/>
-<polygon fill="black" stroke="black" points="929.73,-176.5 939.73,-173 929.73,-169.5 929.73,-176.5"/>
+<path fill="none" stroke="black" d="M526,-122.27C526,-140.56 526,-166 526,-166 526,-166 862.74,-166 862.74,-166"/>
+<polygon fill="black" stroke="black" points="862.74,-169.5 872.74,-166 862.74,-162.5 862.74,-169.5"/>
 </g>
 <!-- SecondaryMembershipsComponent -->
 <g id="node8" class="node">
 <title>SecondaryMembershipsComponent</title>
-<polygon fill="#ffffb3" stroke="black" points="240.12,-122 23.88,-122 23.88,-86 240.12,-86 240.12,-122"/>
-<text text-anchor="middle" x="132" y="-99.8" font-family="Times,serif" font-size="14.00">SecondaryMembershipsComponent</text>
+<polygon fill="#ffffb3" stroke="black" points="416.12,-122 199.88,-122 199.88,-86 416.12,-86 416.12,-122"/>
+<text text-anchor="middle" x="308" y="-99.8" font-family="Times,serif" font-size="14.00">SecondaryMembershipsComponent</text>
 </g>
 <!-- SecondaryMembershipsComponent&#45;&gt;RoleMembershipsModule -->
 <g id="edge8" class="edge">
 <title>SecondaryMembershipsComponent&#45;&gt;RoleMembershipsModule</title>
-<path fill="none" stroke="black" d="M132,-122.01C132,-144.49 132,-180 132,-180 132,-180 929.75,-180 929.75,-180"/>
-<polygon fill="black" stroke="black" points="929.75,-183.5 939.75,-180 929.75,-176.5 929.75,-183.5"/>
+<path fill="none" stroke="black" d="M308,-122.13C308,-142.57 308,-173 308,-173 308,-173 862.84,-173 862.84,-173"/>
+<polygon fill="black" stroke="black" points="862.84,-176.5 872.84,-173 862.84,-169.5 862.84,-176.5"/>
 </g>
 <!-- SourceDetectiveModule -->
 <g id="node10" class="node">
 <title>SourceDetectiveModule</title>
-<polygon fill="#8dd3c7" stroke="black" points="1996.06,-122 1993.06,-126 1972.06,-126 1969.06,-122 1843.94,-122 1843.94,-86 1996.06,-86 1996.06,-122"/>
-<text text-anchor="middle" x="1920" y="-99.8" font-family="Times,serif" font-size="14.00">SourceDetectiveModule</text>
+<polygon fill="#8dd3c7" stroke="black" points="176.06,-122 173.06,-126 152.06,-126 149.06,-122 23.94,-122 23.94,-86 176.06,-86 176.06,-122"/>
+<text text-anchor="middle" x="100" y="-99.8" font-family="Times,serif" font-size="14.00">SourceDetectiveModule</text>
 </g>
 <!-- SourceDetectiveModule&#45;&gt;RoleMembershipsModule -->
 <g id="edge9" class="edge">
 <title>SourceDetectiveModule&#45;&gt;RoleMembershipsModule</title>
-<path fill="none" stroke="black" d="M1920,-122.01C1920,-144.49 1920,-180 1920,-180 1920,-180 1112.37,-180 1112.37,-180"/>
-<polygon fill="black" stroke="black" points="1112.37,-176.5 1102.37,-180 1112.37,-183.5 1112.37,-176.5"/>
+<path fill="none" stroke="black" d="M100,-122.01C100,-144.49 100,-180 100,-180 100,-180 862.89,-180 862.89,-180"/>
+<polygon fill="black" stroke="black" points="862.89,-183.5 872.89,-180 862.89,-176.5 862.89,-183.5"/>
 </g>
 </g>
 </svg>

@@ -78,7 +78,9 @@
         <h3>Description</h3>
     </p>
     <p class="comment">
-        <p>A component for viewing / editing date columns</p>
+        <p>Provides a <a href="CdrEditor "> CDR editor</a> for editing / viewing date value columns</p>
+<p>It uses a <a href="DateComponent "> date component</a> for editing the value.
+When set to read only, it uses a <a href="ViewPropertyComponent "> view property component</a> to display the content.</p>
 
     </p>
 
@@ -254,7 +256,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="66" class="link-to-prism">src/lib/cdr/edit-date/edit-date.component.ts:66</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="87" class="link-to-prism">src/lib/cdr/edit-date/edit-date.component.ts:87</a></div>
                             </td>
                         </tr>
 
@@ -335,15 +337,16 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="78"
-                            class="link-to-prism">src/lib/cdr/edit-date/edit-date.component.ts:78</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="103"
+                            class="link-to-prism">src/lib/cdr/edit-date/edit-date.component.ts:103</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-description"><p>Binds a column dependent reference to the component</p>
+                    <div class="io-description"><p>Binds a column dependent reference to the component.
+Subscribes to subjects from the column dependent reference and its container.</p>
 </div>
 
                     <div class="io-description">
@@ -413,14 +416,16 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="70"
-                            class="link-to-prism">src/lib/cdr/edit-date/edit-date.component.ts:70</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="94"
+                            class="link-to-prism">src/lib/cdr/edit-date/edit-date.component.ts:94</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>Unsubscribes all events, after the &#39;OnDestroy&#39; hook is triggered.</p>
+</div>
 
                     <div class="io-description">
                         <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
@@ -452,8 +457,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="135"
-                            class="link-to-prism">src/lib/cdr/edit-date/edit-date.component.ts:135</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="160"
+                            class="link-to-prism">src/lib/cdr/edit-date/edit-date.component.ts:160</a></div>
                 </td>
             </tr>
 
@@ -491,8 +496,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="140"
-                            class="link-to-prism">src/lib/cdr/edit-date/edit-date.component.ts:140</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="165"
+                            class="link-to-prism">src/lib/cdr/edit-date/edit-date.component.ts:165</a></div>
                 </td>
             </tr>
 
@@ -563,8 +568,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="150"
-                            class="link-to-prism">src/lib/cdr/edit-date/edit-date.component.ts:150</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="175"
+                            class="link-to-prism">src/lib/cdr/edit-date/edit-date.component.ts:175</a></div>
                 </td>
             </tr>
 
@@ -645,10 +650,16 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/lib/cdr/edit-date/edit-date.component.ts:50</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="59" class="link-to-prism">src/lib/cdr/edit-date/edit-date.component.ts:59</a></div>
                         </td>
                     </tr>
 
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The container that wraps the column functionality.</p>
+</div>
+                </td>
+            </tr>
 
         </tbody>
     </table>
@@ -672,10 +683,16 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/lib/cdr/edit-date/edit-date.component.ts:48</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">src/lib/cdr/edit-date/edit-date.component.ts:54</a></div>
                         </td>
                     </tr>
 
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The form control associated with the editor.</p>
+</div>
+                </td>
+            </tr>
 
         </tbody>
     </table>
@@ -698,10 +715,16 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">src/lib/cdr/edit-date/edit-date.component.ts:56</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="74" class="link-to-prism">src/lib/cdr/edit-date/edit-date.component.ts:74</a></div>
                         </td>
                     </tr>
 
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Indicatorthat the component is loading data from the server</p>
+</div>
+                </td>
+            </tr>
 
         </tbody>
     </table>
@@ -724,7 +747,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="59" class="link-to-prism">src/lib/cdr/edit-date/edit-date.component.ts:59</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="77" class="link-to-prism">src/lib/cdr/edit-date/edit-date.component.ts:77</a></div>
                         </td>
                     </tr>
 
@@ -757,7 +780,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">src/lib/cdr/edit-date/edit-date.component.ts:58</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="76" class="link-to-prism">src/lib/cdr/edit-date/edit-date.component.ts:76</a></div>
                         </td>
                     </tr>
 
@@ -784,10 +807,16 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">src/lib/cdr/edit-date/edit-date.component.ts:54</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="69" class="link-to-prism">src/lib/cdr/edit-date/edit-date.component.ts:69</a></div>
                         </td>
                     </tr>
 
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>A subject for triggering an update of the editor</p>
+</div>
+                </td>
+            </tr>
 
         </tbody>
     </table>
@@ -811,10 +840,16 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">src/lib/cdr/edit-date/edit-date.component.ts:52</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="64" class="link-to-prism">src/lib/cdr/edit-date/edit-date.component.ts:64</a></div>
                         </td>
                     </tr>
 
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Event that is emited, after a value has been changed.</p>
+</div>
+                </td>
+            </tr>
 
         </tbody>
     </table>
@@ -840,9 +875,20 @@
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="61" class="link-to-prism">src/lib/cdr/edit-date/edit-date.component.ts:61</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="82" class="link-to-prism">src/lib/cdr/edit-date/edit-date.component.ts:82</a></div>
                                 </td>
                             </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Determines, if a time control should be added.</p>
+</div>
+
+                                <div class="io-description">
+                                    <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                                </div>
+                        </td>
+                    </tr>
 
             </tbody>
         </table>
@@ -864,7 +910,10 @@ import { ClassloggerService } from &#x27;../../classlogger/classlogger.service&#
 import { DateFormat } from &#x27;imx-qbm-dbts&#x27;;
 
 /**
- * A component for viewing / editing date columns
+ * Provides a {@link CdrEditor | CDR editor} for editing / viewing date value columns
+ * 
+ * It uses a {@link DateComponent | date component} for editing the value.
+ * When set to read only, it uses a {@link ViewPropertyComponent | view property component} to display the content.
  */
 @Component({
   selector: &#x27;imx-edit-date&#x27;,
@@ -872,19 +921,37 @@ import { DateFormat } from &#x27;imx-qbm-dbts&#x27;;
   styleUrls: [&#x27;./edit-date.component.scss&#x27;],
 })
 export class EditDateComponent implements CdrEditor, OnDestroy {
+  /**
+   * The form control associated with the editor.
+   */
   public readonly control &#x3D; new UntypedFormControl(undefined, { updateOn: &#x27;blur&#x27; });
 
+  /**
+   * The container that wraps the column functionality.
+   */
   public readonly columnContainer &#x3D; new EntityColumnContainer&lt;Date&gt;();
 
+  /**
+   * Event that is emited, after a value has been changed.
+   */
   public readonly valueHasChanged &#x3D; new EventEmitter&lt;ValueHasChangedEventArg&gt;();
 
+  /**
+   * A subject for triggering an update of the editor
+   */
   public readonly updateRequested &#x3D; new Subject&lt;void&gt;();
 
+  /**
+   * Indicatorthat the component is loading data from the server
+   */
   public isBusy &#x3D; false;
 
   private readonly subscribers: Subscription[] &#x3D; [];
   private isWriting &#x3D; false;
 
+  /**
+   * Determines, if a time control should be added.
+   */
   public get withTime(): boolean {
     // try to get the date format detail from metadata; defaulting to DateTime.
     const dateFormat &#x3D; this.columnContainer.metaData?.GetDateFormat() ?? DateFormat.DateTime;
@@ -894,12 +961,16 @@ export class EditDateComponent implements CdrEditor, OnDestroy {
 
   public constructor(private readonly errorHandler: ErrorHandler, private logger: ClassloggerService) {}
 
+  /**
+   * Unsubscribes all events, after the &#x27;OnDestroy&#x27; hook is triggered.
+   */
   public ngOnDestroy(): void {
     this.subscribers.forEach((s) &#x3D;&gt; s.unsubscribe());
   }
 
   /**
-   * Binds a column dependent reference to the component
+   * Binds a column dependent reference to the component.
+   * Subscribes to subjects from the column dependent reference and its container.
    * @param cdref a column dependent reference
    */
   public bind(cdref: ColumnDependentReference): void {

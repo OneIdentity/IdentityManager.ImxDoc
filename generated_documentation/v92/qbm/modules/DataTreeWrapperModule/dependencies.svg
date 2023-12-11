@@ -28,13 +28,13 @@
 <title>cluster_DataTreeWrapperModule_imports</title>
 <polygon fill="none" stroke="black" points="222,-78 222,-130 537,-130 537,-78 222,-78"/>
 </g>
-<g id="clust5" class="cluster">
-<title>cluster_DataTreeWrapperModule_exports</title>
-<polygon fill="none" stroke="black" points="185,-208 185,-260 387,-260 387,-208 185,-208"/>
-</g>
 <g id="clust2" class="cluster">
 <title>cluster_DataTreeWrapperModule_declarations</title>
 <polygon fill="none" stroke="black" points="16,-78 16,-130 214,-130 214,-78 16,-78"/>
+</g>
+<g id="clust5" class="cluster">
+<title>cluster_DataTreeWrapperModule_exports</title>
+<polygon fill="none" stroke="black" points="185,-208 185,-260 387,-260 387,-208 185,-208"/>
 </g>
 <!-- DataTreeWrapperComponent -->
 <g id="node1" class="node">

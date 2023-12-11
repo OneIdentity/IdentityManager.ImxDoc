@@ -70,6 +70,14 @@
 </p>
 
 
+    <p class="comment">
+        <h3>Description</h3>
+    </p>
+    <p class="comment">
+        <p>Provides a side sheet, that displays a form with <a href="CdrEditor "> cdr editors</a>.</p>
+<p>Writeable properties can be edited.</p>
+
+    </p>
 
 
 
@@ -179,12 +187,14 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/lib/cdr/cdr-sidesheet/cdr-sidesheet.component.ts:37</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/lib/cdr/cdr-sidesheet/cdr-sidesheet.component.ts:46</a></div>
                             </td>
                         </tr>
 
                 <tr>
                     <td class="col-md-4">
+                            <div class="io-description"><p>Creates an instance of this component.</p>
+</div>
                             <div>
                                     <b>Parameters :</b>
                                     <table class="params">
@@ -193,6 +203,7 @@
                                                 <td>Name</td>
                                                     <td>Type</td>
                                                 <td>Optional</td>
+                                                    <td>Description</td>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -207,6 +218,10 @@
                                                             No
                                                     </td>
                                                     
+                                                        <td>
+                                                                <p>Information about the cdr and the caption of the &#39;close&#39; button.</p>
+
+                                                        </td>
                                                 </tr>
                                                 <tr>
                                                         <td>sidesheetRef</td>
@@ -219,6 +234,10 @@
                                                             No
                                                     </td>
                                                     
+                                                        <td>
+                                                                <p>a reference of the sidesheet.</p>
+
+                                                        </td>
                                                 </tr>
                                         </tbody>
                                     </table>
@@ -260,14 +279,16 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="43"
-                            class="link-to-prism">src/lib/cdr/cdr-sidesheet/cdr-sidesheet.component.ts:43</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="63"
+                            class="link-to-prism">src/lib/cdr/cdr-sidesheet/cdr-sidesheet.component.ts:63</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>Adds the form control of an editor to the form group.</p>
+</div>
 
                     <div class="io-description">
                         <b>Parameters :</b>
@@ -278,6 +299,7 @@
                                     <td>Name</td>
                                     <td>Type</td>
                                     <td>Optional</td>
+                                    <td>Description</td>
                                 </tr>
                             </thead>
                             <tbody>
@@ -292,6 +314,10 @@
                                     </td>
 
 
+                                    <td>
+                                        <p>The name of the control.</p>
+
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>control</td>
@@ -304,6 +330,10 @@
                                     </td>
 
 
+                                    <td>
+                                        <p>The form control that should be added.</p>
+
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -347,10 +377,16 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/lib/cdr/cdr-sidesheet/cdr-sidesheet.component.ts:37</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/lib/cdr/cdr-sidesheet/cdr-sidesheet.component.ts:46</a></div>
                         </td>
                     </tr>
 
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The form, that stores the editors.</p>
+</div>
+                </td>
+            </tr>
 
         </tbody>
     </table>
@@ -385,10 +421,15 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/lib/cdr/cdr-sidesheet/cdr-sidesheet.component.ts:39</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">src/lib/cdr/cdr-sidesheet/cdr-sidesheet.component.ts:54</a></div>
                         </td>
                     </tr>
 
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description">Information about the cdr and the caption of the 'close' button.</div>
+                </td>
+            </tr>
 
         </tbody>
     </table>
@@ -413,10 +454,15 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/lib/cdr/cdr-sidesheet/cdr-sidesheet.component.ts:40</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="55" class="link-to-prism">src/lib/cdr/cdr-sidesheet/cdr-sidesheet.component.ts:55</a></div>
                         </td>
                     </tr>
 
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description">a reference of the sidesheet.</div>
+                </td>
+            </tr>
 
         </tbody>
     </table>
@@ -432,16 +478,36 @@ import { EuiSidesheetRef, EUI_SIDESHEET_DATA } from &#x27;@elemental-ui/core&#x2
 
 import { CdrSidesheetConfig } from &#x27;./cdr-sidesheet-config&#x27;;
 
+/**
+ * Provides a side sheet, that displays a form with {@link CdrEditor | cdr editors}.
+ * 
+ * Writeable properties can be edited.
+ */
 @Component({
   templateUrl: &#x27;./cdr-sidesheet.component.html&#x27;
 })
 export class CdrSidesheetComponent {
+
+  /**
+   * The form, that stores the editors.
+   */
   public readonly cdrFormGroup &#x3D; new UntypedFormGroup({});
+
+  /**
+   * Creates an instance of this component.
+   * @param config Information about the cdr and the caption of the &#x27;close&#x27; button.
+   * @param sidesheetRef a reference of the sidesheet.
+   */
   constructor(
     @Inject(EUI_SIDESHEET_DATA) public readonly config: CdrSidesheetConfig,
     public readonly sidesheetRef: EuiSidesheetRef
   ) {}
 
+  /**
+   * Adds the form control of an editor to the form group.
+   * @param name The name of the control.
+   * @param control The form control that should be added.
+   */
   public addFormControl(name: string, control: UntypedFormControl): void {
     this.cdrFormGroup.addControl(name, control);
   }

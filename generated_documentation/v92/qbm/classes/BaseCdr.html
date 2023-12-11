@@ -77,8 +77,10 @@
                 <h3>Description</h3>
             </p>
             <p class="comment">
-                <p>Generic implementation of a ColumnDependentReference.</p>
-
+                <p>Generic implementation of a <a href="ColumnDependentReference "> column dependent reference</a>.</p>
+<div><pre class="line-numbers"><code class="language-html">const value = new BaseCdr(columnToUse, optionalDisplay, renderedReadonlyOrNot); // Build a CDR with an optional display and a give readOnly state
+const value = new BaseCdr(columnToUse, optionalDisplay);  // Build a CDR with an optional display
+const value = new BaseCdr(columnToUse, undefined, renderedReadonlyOrNot ); // Build a CDR with a give readOnly state</code></pre></div>
             </p>
 
 
@@ -175,7 +177,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/lib/cdr/base-cdr.ts:38</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">src/lib/cdr/base-cdr.ts:54</a></div>
                             </td>
                         </tr>
 
@@ -263,7 +265,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/lib/cdr/base-cdr.ts:40</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">src/lib/cdr/base-cdr.ts:56</a></div>
                         </td>
                     </tr>
 
@@ -292,7 +294,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/lib/cdr/base-cdr.ts:40</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">src/lib/cdr/base-cdr.ts:56</a></div>
                         </td>
                     </tr>
 
@@ -319,10 +321,16 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/lib/cdr/base-cdr.ts:36</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/lib/cdr/base-cdr.ts:44</a></div>
                         </td>
                     </tr>
 
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>A small hint, that is displayed on a hint icon</p>
+</div>
+                </td>
+            </tr>
 
         </tbody>
     </table>
@@ -348,7 +356,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/lib/cdr/base-cdr.ts:40</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">src/lib/cdr/base-cdr.ts:56</a></div>
                         </td>
                     </tr>
 
@@ -376,10 +384,16 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/lib/cdr/base-cdr.ts:37</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/lib/cdr/base-cdr.ts:49</a></div>
                         </td>
                     </tr>
 
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>A minimal size of the content, that differs from the minLength of the column.</p>
+</div>
+                </td>
+            </tr>
 
         </tbody>
     </table>
@@ -402,10 +416,16 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/lib/cdr/base-cdr.ts:38</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">src/lib/cdr/base-cdr.ts:54</a></div>
                         </td>
                     </tr>
 
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>A subject to listen for changes of the minLength</p>
+</div>
+                </td>
+            </tr>
 
         </tbody>
     </table>
@@ -438,17 +458,25 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="42"
-                            class="link-to-prism">src/lib/cdr/base-cdr.ts:42</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="62"
+                            class="link-to-prism">src/lib/cdr/base-cdr.ts:62</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>Checks, whether a CDR should be renderes as read only</p>
+</div>
 
+                    <div>
+                    </div>
                     <div class="io-description">
                         <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>True if the CDR needs to be show as &#39;read only&#39;, othewise false.</p>
 
                     </div>
                 </td>
@@ -477,14 +505,17 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="50"
-                            class="link-to-prism">src/lib/cdr/base-cdr.ts:50</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="74"
+                            class="link-to-prism">src/lib/cdr/base-cdr.ts:74</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>Can be used to update the minimal size, that controls the mandatory state of the  CDR.
+It calls the minLengthSubject, too.</p>
+</div>
 
                     <div class="io-description">
                         <b>Parameters :</b>
@@ -542,15 +573,35 @@ import { ColumnDependentReference } from &#x27;./column-dependent-reference.inte
 import { Subject } from &#x27;rxjs&#x27;;
 
 /**
- * Generic implementation of a ColumnDependentReference.
+ * Generic implementation of a {@link ColumnDependentReference | column dependent reference}.
+ * @examples
+ * const value &#x3D; new BaseCdr(columnToUse, optionalDisplay, renderedReadonlyOrNot); // Build a CDR with an optional display and a give readOnly state
+ * const value &#x3D; new BaseCdr(columnToUse, optionalDisplay);  // Build a CDR with an optional display
+ * const value &#x3D; new BaseCdr(columnToUse, undefined, renderedReadonlyOrNot ); // Build a CDR with a give readOnly state
  */
 export class BaseCdr implements ColumnDependentReference {
+
+  /**
+   * A small hint, that is displayed on a hint icon
+   */
   public hint: string;
+
+  /**
+   * A minimal size of the content, that differs from the minLength of the column.
+   */
   public minLength?: number;
+
+  /**
+   * A subject to listen for changes of the minLength
+   */
   public minlengthSubject &#x3D; new Subject&lt;number&gt;();
 
   constructor(public readonly column: IEntityColumn, public readonly display?: string, public readonly isReadOnlyColumn?: boolean) {}
 
+  /**
+   * Checks, whether a CDR should be renderes as read only
+   * @returns True if the CDR needs to be show as &#x27;read only&#x27;, othewise false.
+   */
   public isReadOnly(): boolean {
     if (this.isReadOnlyColumn !&#x3D;&#x3D; undefined) {
       return this.column &#x3D;&#x3D; null || this.isReadOnlyColumn || !this.column.GetMetadata().CanEdit();
@@ -559,6 +610,10 @@ export class BaseCdr implements ColumnDependentReference {
     }
   }
 
+  /**
+   * Can be used to update the minimal size, that controls the mandatory state of the  CDR.
+   * It calls the minLengthSubject, too.
+   * */
   public updateMinLength(value: number): void {
     this.minLength &#x3D; value;
     this.minlengthSubject.next(value);

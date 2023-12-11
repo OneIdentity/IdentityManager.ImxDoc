@@ -24,13 +24,13 @@
 <title>cluster_ServiceItemTagsModule</title>
 <polygon fill="none" stroke="black" stroke-dasharray="1,5" points="27,-70 27,-268 469,-268 469,-70 27,-70"/>
 </g>
-<g id="clust5" class="cluster">
-<title>cluster_ServiceItemTagsModule_exports</title>
-<polygon fill="none" stroke="black" points="142,-208 142,-260 338,-260 338,-208 142,-208"/>
-</g>
 <g id="clust7" class="cluster">
 <title>cluster_ServiceItemTagsModule_providers</title>
 <polygon fill="none" stroke="black" points="235,-78 235,-130 461,-130 461,-78 235,-78"/>
+</g>
+<g id="clust5" class="cluster">
+<title>cluster_ServiceItemTagsModule_exports</title>
+<polygon fill="none" stroke="black" points="142,-208 142,-260 338,-260 338,-208 142,-208"/>
 </g>
 <g id="clust2" class="cluster">
 <title>cluster_ServiceItemTagsModule_declarations</title>

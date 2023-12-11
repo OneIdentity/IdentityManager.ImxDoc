@@ -24,13 +24,13 @@
 <title>cluster_TempBillboardModule</title>
 <polygon fill="none" stroke="black" stroke-dasharray="1,5" points="38,-70 38,-268 458,-268 458,-70 38,-70"/>
 </g>
-<g id="clust2" class="cluster">
-<title>cluster_TempBillboardModule_declarations</title>
-<polygon fill="none" stroke="black" points="268,-78 268,-130 450,-130 450,-78 268,-78"/>
-</g>
 <g id="clust5" class="cluster">
 <title>cluster_TempBillboardModule_exports</title>
 <polygon fill="none" stroke="black" points="162,-208 162,-260 348,-260 348,-208 162,-208"/>
+</g>
+<g id="clust2" class="cluster">
+<title>cluster_TempBillboardModule_declarations</title>
+<polygon fill="none" stroke="black" points="268,-78 268,-130 450,-130 450,-78 268,-78"/>
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_TempBillboardModule_providers</title>

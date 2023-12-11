@@ -1,0 +1,151 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>IMX Web - QBM Library</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+        <link rel="stylesheet" href="../styles/material.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">IMX Web - QBM Library</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content additional-page">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h1>Other Reusable Components and Services</h1>
+<p>In this section you can find components, that can be reused in other libraries and applications. These components do not fit into the other sections, but might be important as well. They are sorted in alphabetical order and not on importance.</p>
+<p>PS: This list is not complete, but it contains the most important ones. </p>
+<h2>1. Bulk Editor</h2>
+<p>The <a href="../components/BulkPropertyEditorComponent.html"><code>BulkPropertyEditorComponent</code></a> is used to edit the same list properties for multiple objects. Each <a href="../components/BulkItemComponent.html"><code>BulkItemComponent</code></a> has it&#39;s own list of <a href="../components/CdrEditorComponent.html"><code>CdrEditorComponents</code></a></p>
+<h2>2. Busy Indicator</h2>
+<p>The <a href="../components/BusyIndicatorComponent.html">BusyIndicatorComponent</a> can be used to display a loading spinner and a predefined text. A good solution is to use it together with a <a href="../injectables/BusyService.html"><code>BusyService</code></a>, that indicates if something has started / ended loading.</p>
+<h2>3. Charts</h2>
+<p>In our web, charts are rendered using the <code>ElementalUiChartComponent</code>. There are some configurations defined by related classes </p>
+<ul>
+<li><a href="../classes/LineChartOptions.html"><code>LineChartOptions</code></a> that defines a line chart definition</li>
+<li><a href="../classes/SeriesInformation.html"><code>SeriesInformation</code></a>, that defines one series in a line chart</li>
+<li><a href="../classes/XAxisInformation.html"><code>XAxisInformation</code></a> and <a href="classes/YAxisInformation.html"><code>YAxisInformation</code></a>, that defines the information for the line axis</li>
+</ul>
+<p>There is also a <a href="../components/ChartTileComponent.html"><code>ChartTileComponent</code></a>, that can be used to render a chart as part of a tile.</p>
+<h2>4. Custom Theme</h2>
+<p>The <a href="../injectables/CustomThemeService.html"><code>CustomThemeService</code></a> can be used to load all defined themes. It is also used to add the themes to the <code>&lt;head&gt;</code> part of the page.</p>
+<h2>5. Dynamic Tabs</h2>
+<p>Some tabs in side sheets have to be added dynamically, because they are part of a dynamic module. The item is defined by a new <a href="../interfaces/TabItem.html"><code>TabItem</code></a> and can be added to a tab control using a <a href="../directives/DynamicTabDataProviderDirective.html"><code>DynamicTabDataProviderDirective</code></a>.</p>
+<h2>6. Extensions</h2>
+<p>Sometimes it is necessary, to add a component, that is not defined as part of a static module, but is part of a dynamic one. To display this component, a <a href="../components/ExtComponent.html"><code>ExtComponent</code></a> can be used. It is part of the <a href="../modules/ExtModule.html"><code>ExtModule</code></a>, together with the needed service and a directive.</p>
+<h2>7. File Selector</h2>
+<p>If the user should be able to upload files, there is a <a href="../injectables/FileSelectorService.html">FileSelectorService</a> for that.</p>
+<h2>8. Hyper View</h2>
+<p>A hyper view is a linked graph, that represents the structure of an object. The <a href="../components/HyperviewComponent.html"><code>HyperviewComponent</code></a> and its parts are all part of the <a href="../modules/HyperViewModule.html"><code>HyperviewModule</code></a>. There you can update the shapes and connectors of this graph.</p>
+<h2>9. Mast Head</h2>
+<p>In the masthead, information like the company logo, a help icon or the user menu can be displayed. It is defined inside the <a href="../components/MastHeadComponent.html"><code>MastHeadComponent</code></a>, that is part of the <a href="../modules/MastHeadModule.html">&#39;MastHeadModule&#39;</a>.</p>
+<p>The <a href="../components/MastHeadComponent.html"><code>MastHeadComponent</code></a> is also responsible for the menu line underneath it. The menu is rendered using an <code>ElementalUiTopNavigationComponent</code>. The menu items can be defined by using the <a href="../injectables/MenuService.html"><code>MenuService</code></a>.</p>
+<h2>10. Object History</h2>
+<p>The <a href="../components/ObjectHistoryComponent.html"><code>ObjectHistoryComponent</code></a> can be used to show the course of an object. It can be display as a table or by using a <a href="../components/TimelineComponent.html"><code>TimelineComponent</code></a>.</p>
+<h2>11. Side Navigation</h2>
+<p>The <a href="../components/SideNavigationViewComponent.html"><code>SideNavigationViewComponent</code></a> is used to display a vertical menu, that can be part of a page or an other component. It is collapsible for smaller screens.</p>
+<p>An other representation of a side navigation ist the <a href="../components/SidenavTreeComponent.html"><code>SidenavTreeComponent</code></a> which uses a tree view inside a collapsible panel.</p>
+<p> The <a href="../components/SideNavigationViewComponent.html"><code>SideNavigationViewComponent</code></a> is part of the  <a href="../modules/SideNavigationViewModule.html"><code>SideNavigationViewModule</code></a> while the <a href="../components/SidenavTreeComponent.html"><code>SidenavTreeComponent</code></a> is part of the <a href="../modules/SidenavTreeModule.html"><code>SidenavTreeModule</code></a>.</p>
+<h2>12. SQL Wizard</h2>
+<p>The <a href="../components/SqlWizardComponent.html"><code>SqlWizardComponent</code></a> can be used to narrowing down the result of a larger amount of entries. It generates a filter expression, that can be used as part of a normal API call. The SQL wizard is defined in the <a href="../modules/SqlWizardModule.html"><code>SqlWizardModule</code></a> together this the sub components, that are used to build the filter.</p>
+<p>To use a <a href="../components/SqlWizardComponent.html"><code>SqlWizardComponent</code></a> as part of the table filter in a custom project, the abstract class <a href="../classes/SqlWizardApiService.html"><code>SqlWizardApiService</code></a> has to be extended and added as a provider.</p>
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'additional-page';
+            var COMPODOC_CURRENT_PAGE_URL = 'other-reusable-components.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

@@ -24,159 +24,159 @@
 <title>cluster_SqlWizardModule</title>
 <polygon fill="none" stroke="black" stroke-dasharray="1,5" points="8,-70 8,-268 1815,-268 1815,-70 8,-70"/>
 </g>
-<g id="clust12" class="cluster">
-<title>cluster_SqlWizardModule_exports</title>
-<polygon fill="none" stroke="black" points="793,-208 793,-260 953,-260 953,-208 793,-208"/>
+<g id="clust11" class="cluster">
+<title>cluster_SqlWizardModule_imports</title>
+<polygon fill="none" stroke="black" points="1711,-78 1711,-130 1807,-130 1807,-78 1711,-78"/>
 </g>
 <g id="clust14" class="cluster">
 <title>cluster_SqlWizardModule_providers</title>
-<polygon fill="none" stroke="black" points="1629,-78 1629,-130 1807,-130 1807,-78 1629,-78"/>
+<polygon fill="none" stroke="black" points="1525,-78 1525,-130 1703,-130 1703,-78 1525,-78"/>
 </g>
 <g id="clust2" class="cluster">
 <title>cluster_SqlWizardModule_declarations</title>
-<polygon fill="none" stroke="black" points="120,-78 120,-130 1621,-130 1621,-78 120,-78"/>
+<polygon fill="none" stroke="black" points="16,-78 16,-130 1517,-130 1517,-78 16,-78"/>
 </g>
-<g id="clust11" class="cluster">
-<title>cluster_SqlWizardModule_imports</title>
-<polygon fill="none" stroke="black" points="16,-78 16,-130 112,-130 112,-78 16,-78"/>
+<g id="clust12" class="cluster">
+<title>cluster_SqlWizardModule_exports</title>
+<polygon fill="none" stroke="black" points="880,-208 880,-260 1040,-260 1040,-208 880,-208"/>
 </g>
 <!-- ColumnSelectionComponent -->
 <g id="node1" class="node">
 <title>ColumnSelectionComponent</title>
-<polygon fill="#ffffb3" stroke="black" points="1613.05,-122 1434.95,-122 1434.95,-86 1613.05,-86 1613.05,-122"/>
-<text text-anchor="middle" x="1524" y="-99.8" font-family="Times,serif" font-size="14.00">ColumnSelectionComponent</text>
+<polygon fill="#ffffb3" stroke="black" points="1509.05,-122 1330.95,-122 1330.95,-86 1509.05,-86 1509.05,-122"/>
+<text text-anchor="middle" x="1420" y="-99.8" font-family="Times,serif" font-size="14.00">ColumnSelectionComponent</text>
 </g>
 <!-- SqlWizardModule -->
 <g id="node9" class="node">
 <title>SqlWizardModule</title>
-<polygon fill="#8dd3c7" stroke="black" points="932.92,-187 929.92,-191 908.92,-191 905.92,-187 813.08,-187 813.08,-151 932.92,-151 932.92,-187"/>
-<text text-anchor="middle" x="873" y="-164.8" font-family="Times,serif" font-size="14.00">SqlWizardModule</text>
+<polygon fill="#8dd3c7" stroke="black" points="1019.92,-187 1016.92,-191 995.92,-191 992.92,-187 900.08,-187 900.08,-151 1019.92,-151 1019.92,-187"/>
+<text text-anchor="middle" x="960" y="-164.8" font-family="Times,serif" font-size="14.00">SqlWizardModule</text>
 </g>
 <!-- ColumnSelectionComponent&#45;&gt;SqlWizardModule -->
 <g id="edge1" class="edge">
 <title>ColumnSelectionComponent&#45;&gt;SqlWizardModule</title>
-<path fill="none" stroke="black" d="M1524,-122.13C1524,-142.57 1524,-173 1524,-173 1524,-173 942.79,-173 942.79,-173"/>
-<polygon fill="black" stroke="black" points="942.79,-169.5 932.79,-173 942.79,-176.5 942.79,-169.5"/>
+<path fill="none" stroke="black" d="M1420,-122.27C1420,-140.56 1420,-166 1420,-166 1420,-166 1030.14,-166 1030.14,-166"/>
+<polygon fill="black" stroke="black" points="1030.14,-162.5 1020.14,-166 1030.14,-169.5 1030.14,-162.5"/>
 </g>
 <!-- DatePickerComponent -->
 <g id="node2" class="node">
 <title>DatePickerComponent</title>
-<polygon fill="#ffffb3" stroke="black" points="1416.52,-122 1273.48,-122 1273.48,-86 1416.52,-86 1416.52,-122"/>
-<text text-anchor="middle" x="1345" y="-99.8" font-family="Times,serif" font-size="14.00">DatePickerComponent</text>
+<polygon fill="#ffffb3" stroke="black" points="1312.52,-122 1169.48,-122 1169.48,-86 1312.52,-86 1312.52,-122"/>
+<text text-anchor="middle" x="1241" y="-99.8" font-family="Times,serif" font-size="14.00">DatePickerComponent</text>
 </g>
 <!-- DatePickerComponent&#45;&gt;SqlWizardModule -->
 <g id="edge2" class="edge">
 <title>DatePickerComponent&#45;&gt;SqlWizardModule</title>
-<path fill="none" stroke="black" d="M1345,-122.27C1345,-140.56 1345,-166 1345,-166 1345,-166 942.78,-166 942.78,-166"/>
-<polygon fill="black" stroke="black" points="942.78,-162.5 932.78,-166 942.78,-169.5 942.78,-162.5"/>
+<path fill="none" stroke="black" d="M1241,-122.01C1241,-138.05 1241,-159 1241,-159 1241,-159 1029.94,-159 1029.94,-159"/>
+<polygon fill="black" stroke="black" points="1029.94,-155.5 1019.94,-159 1029.94,-162.5 1029.94,-155.5"/>
 </g>
 <!-- SimpleExpressionComponent -->
 <g id="node3" class="node">
 <title>SimpleExpressionComponent</title>
-<polygon fill="#ffffb3" stroke="black" points="1255.71,-122 1072.29,-122 1072.29,-86 1255.71,-86 1255.71,-122"/>
-<text text-anchor="middle" x="1164" y="-99.8" font-family="Times,serif" font-size="14.00">SimpleExpressionComponent</text>
+<polygon fill="#ffffb3" stroke="black" points="1151.71,-122 968.29,-122 968.29,-86 1151.71,-86 1151.71,-122"/>
+<text text-anchor="middle" x="1060" y="-99.8" font-family="Times,serif" font-size="14.00">SimpleExpressionComponent</text>
 </g>
 <!-- SimpleExpressionComponent&#45;&gt;SqlWizardModule -->
 <g id="edge3" class="edge">
 <title>SimpleExpressionComponent&#45;&gt;SqlWizardModule</title>
-<path fill="none" stroke="black" d="M1164,-122.01C1164,-138.05 1164,-159 1164,-159 1164,-159 942.94,-159 942.94,-159"/>
-<polygon fill="black" stroke="black" points="942.94,-155.5 932.94,-159 942.94,-162.5 942.94,-155.5"/>
+<path fill="none" stroke="black" d="M994.05,-122.11C994.05,-122.11 994.05,-140.99 994.05,-140.99"/>
+<polygon fill="black" stroke="black" points="990.55,-140.99 994.05,-150.99 997.55,-140.99 990.55,-140.99"/>
 </g>
 <!-- SingleExpressionComponent -->
 <g id="node4" class="node">
 <title>SingleExpressionComponent</title>
-<polygon fill="#ffffb3" stroke="black" points="1054.82,-122 875.18,-122 875.18,-86 1054.82,-86 1054.82,-122"/>
-<text text-anchor="middle" x="965" y="-99.8" font-family="Times,serif" font-size="14.00">SingleExpressionComponent</text>
+<polygon fill="#ffffb3" stroke="black" points="950.82,-122 771.18,-122 771.18,-86 950.82,-86 950.82,-122"/>
+<text text-anchor="middle" x="861" y="-99.8" font-family="Times,serif" font-size="14.00">SingleExpressionComponent</text>
 </g>
 <!-- SingleExpressionComponent&#45;&gt;SqlWizardModule -->
 <g id="edge4" class="edge">
 <title>SingleExpressionComponent&#45;&gt;SqlWizardModule</title>
-<path fill="none" stroke="black" d="M904.02,-122.11C904.02,-122.11 904.02,-140.99 904.02,-140.99"/>
-<polygon fill="black" stroke="black" points="900.52,-140.99 904.02,-150.99 907.52,-140.99 900.52,-140.99"/>
+<path fill="none" stroke="black" d="M925.48,-122.11C925.48,-122.11 925.48,-140.99 925.48,-140.99"/>
+<polygon fill="black" stroke="black" points="921.98,-140.99 925.48,-150.99 928.98,-140.99 921.98,-140.99"/>
 </g>
 <!-- SingleValueComponent -->
 <g id="node5" class="node">
 <title>SingleValueComponent</title>
-<polygon fill="#ffffb3" stroke="black" points="857.04,-122 706.96,-122 706.96,-86 857.04,-86 857.04,-122"/>
-<text text-anchor="middle" x="782" y="-99.8" font-family="Times,serif" font-size="14.00">SingleValueComponent</text>
+<polygon fill="#ffffb3" stroke="black" points="753.04,-122 602.96,-122 602.96,-86 753.04,-86 753.04,-122"/>
+<text text-anchor="middle" x="678" y="-99.8" font-family="Times,serif" font-size="14.00">SingleValueComponent</text>
 </g>
 <!-- SingleValueComponent&#45;&gt;SqlWizardModule -->
 <g id="edge5" class="edge">
 <title>SingleValueComponent&#45;&gt;SqlWizardModule</title>
-<path fill="none" stroke="black" d="M835.28,-122.11C835.28,-122.11 835.28,-140.99 835.28,-140.99"/>
-<polygon fill="black" stroke="black" points="831.78,-140.99 835.28,-150.99 838.78,-140.99 831.78,-140.99"/>
+<path fill="none" stroke="black" d="M678,-122.01C678,-138.05 678,-159 678,-159 678,-159 890.2,-159 890.2,-159"/>
+<polygon fill="black" stroke="black" points="890.2,-162.5 900.2,-159 890.2,-155.5 890.2,-162.5"/>
 </g>
 <!-- SqlWizardComponent -->
 <g id="node6" class="node">
 <title>SqlWizardComponent</title>
-<polygon fill="#ffffb3" stroke="black" points="688.7,-122 547.3,-122 547.3,-86 688.7,-86 688.7,-122"/>
-<text text-anchor="middle" x="618" y="-99.8" font-family="Times,serif" font-size="14.00">SqlWizardComponent</text>
+<polygon fill="#ffffb3" stroke="black" points="584.7,-122 443.3,-122 443.3,-86 584.7,-86 584.7,-122"/>
+<text text-anchor="middle" x="514" y="-99.8" font-family="Times,serif" font-size="14.00">SqlWizardComponent</text>
 </g>
 <!-- SqlWizardComponent&#45;&gt;SqlWizardModule -->
 <g id="edge6" class="edge">
 <title>SqlWizardComponent&#45;&gt;SqlWizardModule</title>
-<path fill="none" stroke="black" d="M618,-122.01C618,-138.05 618,-159 618,-159 618,-159 803.21,-159 803.21,-159"/>
-<polygon fill="black" stroke="black" points="803.21,-162.5 813.21,-159 803.21,-155.5 803.21,-162.5"/>
+<path fill="none" stroke="black" d="M514,-122.27C514,-140.56 514,-166 514,-166 514,-166 889.85,-166 889.85,-166"/>
+<polygon fill="black" stroke="black" points="889.85,-169.5 899.85,-166 889.85,-162.5 889.85,-169.5"/>
 </g>
 <!-- TableSelectionComponent -->
 <g id="node7" class="node">
 <title>TableSelectionComponent</title>
-<polygon fill="#ffffb3" stroke="black" points="529.8,-122 364.2,-122 364.2,-86 529.8,-86 529.8,-122"/>
-<text text-anchor="middle" x="447" y="-99.8" font-family="Times,serif" font-size="14.00">TableSelectionComponent</text>
+<polygon fill="#ffffb3" stroke="black" points="425.8,-122 260.2,-122 260.2,-86 425.8,-86 425.8,-122"/>
+<text text-anchor="middle" x="343" y="-99.8" font-family="Times,serif" font-size="14.00">TableSelectionComponent</text>
 </g>
 <!-- TableSelectionComponent&#45;&gt;SqlWizardModule -->
 <g id="edge7" class="edge">
 <title>TableSelectionComponent&#45;&gt;SqlWizardModule</title>
-<path fill="none" stroke="black" d="M447,-122.27C447,-140.56 447,-166 447,-166 447,-166 802.87,-166 802.87,-166"/>
-<polygon fill="black" stroke="black" points="802.87,-169.5 812.87,-166 802.87,-162.5 802.87,-169.5"/>
+<path fill="none" stroke="black" d="M343,-122.13C343,-142.57 343,-173 343,-173 343,-173 890.28,-173 890.28,-173"/>
+<polygon fill="black" stroke="black" points="890.28,-176.5 900.28,-173 890.28,-169.5 890.28,-176.5"/>
 </g>
 <!-- WhereClauseExpressionComponent -->
 <g id="node8" class="node">
 <title>WhereClauseExpressionComponent</title>
-<polygon fill="#ffffb3" stroke="black" points="346.45,-122 127.55,-122 127.55,-86 346.45,-86 346.45,-122"/>
-<text text-anchor="middle" x="237" y="-99.8" font-family="Times,serif" font-size="14.00">WhereClauseExpressionComponent</text>
+<polygon fill="#ffffb3" stroke="black" points="242.45,-122 23.55,-122 23.55,-86 242.45,-86 242.45,-122"/>
+<text text-anchor="middle" x="133" y="-99.8" font-family="Times,serif" font-size="14.00">WhereClauseExpressionComponent</text>
 </g>
 <!-- WhereClauseExpressionComponent&#45;&gt;SqlWizardModule -->
 <g id="edge8" class="edge">
 <title>WhereClauseExpressionComponent&#45;&gt;SqlWizardModule</title>
-<path fill="none" stroke="black" d="M237,-122.13C237,-142.57 237,-173 237,-173 237,-173 803.17,-173 803.17,-173"/>
-<polygon fill="black" stroke="black" points="803.17,-176.5 813.17,-173 803.17,-169.5 803.17,-176.5"/>
+<path fill="none" stroke="black" d="M133,-122.01C133,-144.49 133,-180 133,-180 133,-180 890.19,-180 890.19,-180"/>
+<polygon fill="black" stroke="black" points="890.19,-183.5 900.19,-180 890.19,-176.5 890.19,-183.5"/>
 </g>
 <!-- SqlWizardComponent  -->
 <g id="node11" class="node">
 <title>SqlWizardComponent </title>
-<polygon fill="#fb8072" stroke="black" points="945.2,-252 800.8,-252 800.8,-216 945.2,-216 945.2,-252"/>
-<text text-anchor="middle" x="873" y="-229.8" font-family="Times,serif" font-size="14.00">SqlWizardComponent </text>
+<polygon fill="#fb8072" stroke="black" points="1032.2,-252 887.8,-252 887.8,-216 1032.2,-216 1032.2,-252"/>
+<text text-anchor="middle" x="960" y="-229.8" font-family="Times,serif" font-size="14.00">SqlWizardComponent </text>
 </g>
 <!-- SqlWizardModule&#45;&gt;SqlWizardComponent  -->
 <g id="edge10" class="edge">
 <title>SqlWizardModule&#45;&gt;SqlWizardComponent </title>
-<path fill="none" stroke="black" stroke-dasharray="5,2" d="M873,-187.11C873,-187.11 873,-205.99 873,-205.99"/>
-<polygon fill="black" stroke="black" points="869.5,-205.99 873,-215.99 876.5,-205.99 869.5,-205.99"/>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M960,-187.11C960,-187.11 960,-205.99 960,-205.99"/>
+<polygon fill="black" stroke="black" points="956.5,-205.99 960,-215.99 963.5,-205.99 956.5,-205.99"/>
 </g>
 <!-- CdrModule -->
 <g id="node10" class="node">
 <title>CdrModule</title>
-<polygon fill="#8dd3c7" stroke="black" points="104.05,-122 101.05,-126 80.05,-126 77.05,-122 23.95,-122 23.95,-86 104.05,-86 104.05,-122"/>
-<text text-anchor="middle" x="64" y="-99.8" font-family="Times,serif" font-size="14.00">CdrModule</text>
+<polygon fill="#8dd3c7" stroke="black" points="1799.05,-122 1796.05,-126 1775.05,-126 1772.05,-122 1718.95,-122 1718.95,-86 1799.05,-86 1799.05,-122"/>
+<text text-anchor="middle" x="1759" y="-99.8" font-family="Times,serif" font-size="14.00">CdrModule</text>
 </g>
 <!-- CdrModule&#45;&gt;SqlWizardModule -->
 <g id="edge9" class="edge">
 <title>CdrModule&#45;&gt;SqlWizardModule</title>
-<path fill="none" stroke="black" d="M64,-122.01C64,-144.49 64,-180 64,-180 64,-180 803.18,-180 803.18,-180"/>
-<polygon fill="black" stroke="black" points="803.18,-183.5 813.18,-180 803.18,-176.5 803.18,-183.5"/>
+<path fill="none" stroke="black" d="M1759,-122.01C1759,-144.49 1759,-180 1759,-180 1759,-180 1029.73,-180 1029.73,-180"/>
+<polygon fill="black" stroke="black" points="1029.73,-176.5 1019.73,-180 1029.73,-183.5 1029.73,-176.5"/>
 </g>
 <!-- SqlWizardService -->
 <g id="node12" class="node">
 <title>SqlWizardService</title>
-<ellipse fill="#fdb462" stroke="black" cx="1718" cy="-104" rx="81.08" ry="18"/>
-<text text-anchor="middle" x="1718" y="-99.8" font-family="Times,serif" font-size="14.00">SqlWizardService</text>
+<ellipse fill="#fdb462" stroke="black" cx="1614" cy="-104" rx="81.08" ry="18"/>
+<text text-anchor="middle" x="1614" y="-99.8" font-family="Times,serif" font-size="14.00">SqlWizardService</text>
 </g>
 <!-- SqlWizardService&#45;&gt;SqlWizardModule -->
 <g id="edge11" class="edge">
 <title>SqlWizardService&#45;&gt;SqlWizardModule</title>
-<path fill="none" stroke="black" d="M1718,-122.01C1718,-144.49 1718,-180 1718,-180 1718,-180 942.76,-180 942.76,-180"/>
-<polygon fill="black" stroke="black" points="942.76,-176.5 932.76,-180 942.76,-183.5 942.76,-176.5"/>
+<path fill="none" stroke="black" d="M1614,-122.13C1614,-142.57 1614,-173 1614,-173 1614,-173 1029.77,-173 1029.77,-173"/>
+<polygon fill="black" stroke="black" points="1029.77,-169.5 1019.77,-173 1029.77,-176.5 1029.77,-169.5"/>
 </g>
 </g>
 </svg>

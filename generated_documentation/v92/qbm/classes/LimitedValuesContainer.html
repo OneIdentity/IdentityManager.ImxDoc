@@ -73,6 +73,13 @@
         </p>
 
 
+            <p class="comment">
+                <h3>Description</h3>
+            </p>
+            <p class="comment">
+                <p>A wrapper, that encapsules limited value property functions.</p>
+
+            </p>
 
 
 
@@ -143,7 +150,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/lib/cdr/limited-values-container.ts:32</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/lib/cdr/limited-values-container.ts:38</a></div>
                             </td>
                         </tr>
 
@@ -209,14 +216,16 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="55"
-                            class="link-to-prism">src/lib/cdr/limited-values-container.ts:55</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="69"
+                            class="link-to-prism">src/lib/cdr/limited-values-container.ts:69</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>Checks, if a value is part of the limited value list</p>
+</div>
 
                     <div class="io-description">
                         <b>Parameters :</b>
@@ -227,6 +236,7 @@
                                     <td>Name</td>
                                     <td>Type</td>
                                     <td>Optional</td>
+                                    <td>Description</td>
                                 </tr>
                             </thead>
                             <tbody>
@@ -241,6 +251,10 @@
                                     </td>
 
 
+                                    <td>
+                                        <p>The value to be checked.</p>
+
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -280,17 +294,25 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="51"
-                            class="link-to-prism">src/lib/cdr/limited-values-container.ts:51</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="60"
+                            class="link-to-prism">src/lib/cdr/limited-values-container.ts:60</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>Gets the value representing &#39;null&#39;.</p>
+</div>
 
+                    <div>
+                    </div>
                     <div class="io-description">
                         <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>the value that is used as &#39;null&#39;.</p>
 
                     </div>
                 </td>
@@ -319,15 +341,15 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="39"
-                            class="link-to-prism">src/lib/cdr/limited-values-container.ts:39</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="45"
+                            class="link-to-prism">src/lib/cdr/limited-values-container.ts:45</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-description"><p>Determines, whether the limited value collection allows a null option</p>
+                    <div class="io-description"><p>Determines, whether the limited value collection allows a null option.</p>
 </div>
 
                     <div class="io-description">
@@ -360,15 +382,15 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="46"
-                            class="link-to-prism">src/lib/cdr/limited-values-container.ts:46</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="52"
+                            class="link-to-prism">src/lib/cdr/limited-values-container.ts:52</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-description"><p>Determines, whether the value is part of the limited value range or not</p>
+                    <div class="io-description"><p>Determines, whether the value is part of the limited value range or not.</p>
 </div>
 
                     <div class="io-description">
@@ -437,9 +459,20 @@
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/lib/cdr/limited-values-container.ts:30</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/lib/cdr/limited-values-container.ts:36</a></div>
                                 </td>
                             </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>A read only list of a possible limited values.</p>
+</div>
+
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code>ReadonlyArray&lt;LimitedValueData&gt;</code>
+
+                                </div>
+                        </td>
+                    </tr>
 
             </tbody>
         </table>
@@ -450,35 +483,49 @@
     <div class="tab-pane fade  tab-source-code" id="source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { LimitedValueData, IValueMetadata, ValType } from &#x27;imx-qbm-dbts&#x27;;
 
+/**
+ * A wrapper, that encapsules limited value property functions.
+ */
 export class LimitedValuesContainer {
-    public get values(): ReadonlyArray&lt;LimitedValueData&gt; {
-        return this.metadata ? this.metadata.GetLimitedValues() : undefined;
-    }
+  /**
+   * A read only list of a possible limited values.
+   */
+  public get values(): ReadonlyArray&lt;LimitedValueData&gt; {
+    return this.metadata ? this.metadata.GetLimitedValues() : undefined;
+  }
 
-    constructor(private metadata: IValueMetadata) { }
+  constructor(private metadata: IValueMetadata) {}
 
-    /**
-     * Determines, whether the limited value collection allows a null option
-     */
-    public hasNullOption(): boolean {
-        return this.metadata.GetMinLength() &#x3D;&#x3D;&#x3D; 0 &amp;&amp; !this.contains(this.getNullValue());
-    }
+  /**
+   * Determines, whether the limited value collection allows a null option.
+   */
+  public hasNullOption(): boolean {
+    return this.metadata.GetMinLength() &#x3D;&#x3D;&#x3D; 0 &amp;&amp; !this.contains(this.getNullValue());
+  }
 
-    /**
-     * Determines, whether the value is part of the limited value range or not
-     */
-    public isNotInLimitedValueRange(value: string | number): boolean {
-        return !((value || &#x27;&#x27;) &#x3D;&#x3D;&#x3D; (this.getNullValue() || &#x27;&#x27;)) &amp;&amp; !this.contains(value);
-    }
+  /**
+   * Determines, whether the value is part of the limited value range or not.
+   */
+  public isNotInLimitedValueRange(value: string | number): boolean {
+    return !((value || &#x27;&#x27;) &#x3D;&#x3D;&#x3D; (this.getNullValue() || &#x27;&#x27;)) &amp;&amp; !this.contains(value);
+  }
 
-    // gets the value representing &quot;null&quot;
-    private getNullValue(): string {
-        return this.metadata.GetType() &#x3D;&#x3D;&#x3D; ValType.String ? null : &#x27;0&#x27;;
-    }
+  /**
+   * Gets the value representing &#x27;null&#x27;.
+   * @returns the value that is used as &#x27;null&#x27;.
+   */
+  private getNullValue(): string {
+    return this.metadata.GetType() &#x3D;&#x3D;&#x3D; ValType.String ? null : &#x27;0&#x27;;
+  }
 
-    private contains(value: string | number): boolean {
-        return this.values &amp;&amp; this.values.filter(v &#x3D;&gt; &#x60;${v.Value}&#x60; &#x3D;&#x3D;&#x3D; &#x60;${value}&#x60;).length &gt; 0;
-    }
+  /**
+   * Checks, if a value is part of the limited value list
+   * @param value The value to be checked.
+   * @returns 
+   */
+  private contains(value: string | number): boolean {
+    return this.values &amp;&amp; this.values.filter((v) &#x3D;&gt; &#x60;${v.Value}&#x60; &#x3D;&#x3D;&#x3D; &#x60;${value}&#x60;).length &gt; 0;
+  }
 }
 </code></pre>
     </div>

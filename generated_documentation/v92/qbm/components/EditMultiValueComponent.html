@@ -78,7 +78,9 @@
         <h3>Description</h3>
     </p>
     <p class="comment">
-        <p>A component for viewing / editing multi value columns</p>
+        <p>Provides a <a href="CdrEditor "> CDR editor</a> for editing / viewing multi valued columns</p>
+<p>To change its value, it uses a text area. Each line represents a part of the multi value.
+When set to read only, it uses a <a href="ViewPropertyComponent "> view property component</a> to display the content.</p>
 
     </p>
 
@@ -230,7 +232,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="53" class="link-to-prism">src/lib/cdr/edit-multi-value/edit-multi-value.component.ts:53</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="65" class="link-to-prism">src/lib/cdr/edit-multi-value/edit-multi-value.component.ts:65</a></div>
                             </td>
                         </tr>
 
@@ -311,15 +313,16 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="65"
-                            class="link-to-prism">src/lib/cdr/edit-multi-value/edit-multi-value.component.ts:65</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="81"
+                            class="link-to-prism">src/lib/cdr/edit-multi-value/edit-multi-value.component.ts:81</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-description"><p>Binds a column dependent reference to the component</p>
+                    <div class="io-description"><p>Binds a column dependent reference to the component.
+Subscribes to subjects from the column dependent reference and its container.</p>
 </div>
 
                     <div class="io-description">
@@ -389,8 +392,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="138"
-                            class="link-to-prism">src/lib/cdr/edit-multi-value/edit-multi-value.component.ts:138</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="154"
+                            class="link-to-prism">src/lib/cdr/edit-multi-value/edit-multi-value.component.ts:154</a></div>
                 </td>
             </tr>
 
@@ -460,14 +463,16 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="57"
-                            class="link-to-prism">src/lib/cdr/edit-multi-value/edit-multi-value.component.ts:57</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="72"
+                            class="link-to-prism">src/lib/cdr/edit-multi-value/edit-multi-value.component.ts:72</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>Unsubscribes all events, after the &#39;OnDestroy&#39; hook is triggered.</p>
+</div>
 
                     <div class="io-description">
                         <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
@@ -499,8 +504,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="133"
-                            class="link-to-prism">src/lib/cdr/edit-multi-value/edit-multi-value.component.ts:133</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="149"
+                            class="link-to-prism">src/lib/cdr/edit-multi-value/edit-multi-value.component.ts:149</a></div>
                 </td>
             </tr>
 
@@ -571,8 +576,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="109"
-                            class="link-to-prism">src/lib/cdr/edit-multi-value/edit-multi-value.component.ts:109</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="125"
+                            class="link-to-prism">src/lib/cdr/edit-multi-value/edit-multi-value.component.ts:125</a></div>
                 </td>
             </tr>
 
@@ -648,10 +653,16 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/lib/cdr/edit-multi-value/edit-multi-value.component.ts:48</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="57" class="link-to-prism">src/lib/cdr/edit-multi-value/edit-multi-value.component.ts:57</a></div>
                         </td>
                     </tr>
 
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The container that wraps the column functionality.</p>
+</div>
+                </td>
+            </tr>
 
         </tbody>
     </table>
@@ -675,10 +686,16 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/lib/cdr/edit-multi-value/edit-multi-value.component.ts:46</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">src/lib/cdr/edit-multi-value/edit-multi-value.component.ts:52</a></div>
                         </td>
                     </tr>
 
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The form control associated with the editor.</p>
+</div>
+                </td>
+            </tr>
 
         </tbody>
     </table>
@@ -701,7 +718,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="53" class="link-to-prism">src/lib/cdr/edit-multi-value/edit-multi-value.component.ts:53</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="65" class="link-to-prism">src/lib/cdr/edit-multi-value/edit-multi-value.component.ts:65</a></div>
                         </td>
                     </tr>
 
@@ -734,7 +751,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">src/lib/cdr/edit-multi-value/edit-multi-value.component.ts:52</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="64" class="link-to-prism">src/lib/cdr/edit-multi-value/edit-multi-value.component.ts:64</a></div>
                         </td>
                     </tr>
 
@@ -761,10 +778,16 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/lib/cdr/edit-multi-value/edit-multi-value.component.ts:50</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="62" class="link-to-prism">src/lib/cdr/edit-multi-value/edit-multi-value.component.ts:62</a></div>
                         </td>
                     </tr>
 
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Event that is emited, after a value has been changed.</p>
+</div>
+                </td>
+            </tr>
 
         </tbody>
     </table>
@@ -785,7 +808,10 @@ import { CdrEditor, ValueHasChangedEventArg } from &#x27;../cdr-editor.interface
 import { MultiValueService } from &#x27;../../multi-value/multi-value.service&#x27;;
 
 /**
- * A component for viewing / editing multi value columns
+ * Provides a {@link CdrEditor | CDR editor} for editing / viewing multi valued columns
+ * 
+ * To change its value, it uses a text area. Each line represents a part of the multi value.
+ * When set to read only, it uses a {@link ViewPropertyComponent | view property component} to display the content.
  */
 @Component({
   selector: &#x27;imx-edit-multi-value&#x27;,
@@ -793,10 +819,19 @@ import { MultiValueService } from &#x27;../../multi-value/multi-value.service&#x
   styleUrls: [&#x27;./edit-multi-value.component.scss&#x27;],
 })
 export class EditMultiValueComponent implements CdrEditor, OnDestroy {
+  /**
+   * The form control associated with the editor.
+   */
   public readonly control &#x3D; new UntypedFormControl(undefined, { updateOn: &#x27;blur&#x27; });
 
+  /**
+   * The container that wraps the column functionality.
+   */
   public readonly columnContainer &#x3D; new EntityColumnContainer&lt;string&gt;();
 
+  /**
+   * Event that is emited, after a value has been changed.
+   */
   public readonly valueHasChanged &#x3D; new EventEmitter&lt;ValueHasChangedEventArg&gt;();
 
   private readonly subscribers: Subscription[] &#x3D; [];
@@ -804,12 +839,16 @@ export class EditMultiValueComponent implements CdrEditor, OnDestroy {
 
   constructor(private readonly logger: ClassloggerService, private readonly multiValueProvider: MultiValueService) {}
 
+  /**
+   * Unsubscribes all events, after the &#x27;OnDestroy&#x27; hook is triggered.
+   */
   public ngOnDestroy(): void {
     this.subscribers.forEach((subscriber) &#x3D;&gt; subscriber.unsubscribe());
   }
 
   /**
-   * Binds a column dependent reference to the component
+   * Binds a column dependent reference to the component.
+   * Subscribes to subjects from the column dependent reference and its container.
    * @param cdref a column dependent reference
    */
   public bind(cdref: ColumnDependentReference): void {

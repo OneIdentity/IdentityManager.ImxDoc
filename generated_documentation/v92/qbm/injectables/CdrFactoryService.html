@@ -180,7 +180,7 @@
                                     </td>
 
                                     <td>
-                                        <p>the complete entity</p>
+                                        <p>The complete entity.</p>
 
                                     </td>
                                 </tr>
@@ -198,7 +198,7 @@
                                     </td>
 
                                     <td>
-                                        <p>the name of the column, that should be used by the CDR</p>
+                                        <p>The name of the column, that should be used by the CDR.</p>
 
                                     </td>
                                 </tr>
@@ -217,7 +217,7 @@
                                     </td>
 
                                     <td>
-                                        <p>if true, a read only CDR will be build otherwise a normal base CDR</p>
+                                        <p>If true, a read only CDR will be build otherwise a normal base CDR.</p>
 
                                     </td>
                                 </tr>
@@ -247,7 +247,7 @@
 
                     </div>
                     <div class="io-description">
-                        <p>the columm dependent reference or null, if the column is not defined in the entity</p>
+                        <p>The columm dependent reference or null, if the column is not defined in the entity.</p>
 
                     </div>
                 </td>
@@ -316,7 +316,7 @@ If the column does not exists, it is left out of the array.</p>
                                     </td>
 
                                     <td>
-                                        <p>the complete entity</p>
+                                        <p>The complete entity.</p>
 
                                     </td>
                                 </tr>
@@ -334,7 +334,7 @@ If the column does not exists, it is left out of the array.</p>
                                     </td>
 
                                     <td>
-                                        <p>the list of columns, a CDR is needed for</p>
+                                        <p>The list of columns, a CDR is needed for.</p>
 
                                     </td>
                                 </tr>
@@ -353,7 +353,7 @@ If the column does not exists, it is left out of the array.</p>
                                     </td>
 
                                     <td>
-                                        <p>if true, readonly CDR will be build otherwise normal base CDR</p>
+                                        <p>If true, readonly CDR will be build otherwise normal base CDR.</p>
 
                                     </td>
                                 </tr>
@@ -367,7 +367,7 @@ If the column does not exists, it is left out of the array.</p>
 
                     </div>
                     <div class="io-description">
-                        <p>a list of column depedent references</p>
+                        <p>A list of column depedent references.</p>
 
                     </div>
                 </td>
@@ -437,7 +437,7 @@ You are able to add a list of columnnames, that should be readonly</p>
                                     </td>
 
                                     <td>
-                                        <p>the complete entity</p>
+                                        <p>The complete entity.</p>
 
                                     </td>
                                 </tr>
@@ -455,7 +455,7 @@ You are able to add a list of columnnames, that should be readonly</p>
                                     </td>
 
                                     <td>
-                                        <p>the list of columns, a CDR is needed for</p>
+                                        <p>The list of columns, a CDR is needed for.</p>
 
                                     </td>
                                 </tr>
@@ -474,7 +474,7 @@ You are able to add a list of columnnames, that should be readonly</p>
                                     </td>
 
                                     <td>
-                                        <p>a list of column names, that needed readonly CDR</p>
+                                        <p>A list of column names, that needed readonly CDR.</p>
 
                                     </td>
                                 </tr>
@@ -488,7 +488,7 @@ You are able to add a list of columnnames, that should be readonly</p>
 
                     </div>
                     <div class="io-description">
-                        <p>a list of column depedent references</p>
+                        <p>A list of column depedent references.</p>
 
                     </div>
                 </td>
@@ -525,6 +525,8 @@ You are able to add a list of columnnames, that should be readonly</p>
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>Trys to get a specific entity column by a given column name.</p>
+</div>
 
                     <div class="io-description">
                         <b>Parameters :</b>
@@ -551,7 +553,7 @@ You are able to add a list of columnnames, that should be readonly</p>
 
 
                                     <td>
-                                        <p>the complete entity</p>
+                                        <p>The complete entity.</p>
 
                                     </td>
                                 </tr>
@@ -567,7 +569,7 @@ You are able to add a list of columnnames, that should be readonly</p>
 
 
                                     <td>
-                                        <p>the name of the column</p>
+                                        <p>The name of the column.</p>
 
                                     </td>
                                 </tr>
@@ -581,7 +583,7 @@ You are able to add a list of columnnames, that should be readonly</p>
 
                     </div>
                     <div class="io-description">
-                        <p>null, if the entity doesn&#39;t have a column with the given name otherwise the column is returned</p>
+                        <p>Null, if the entity doesn&#39;t have a column with the given name otherwise the column is returned.</p>
 
                     </div>
                 </td>
@@ -607,10 +609,10 @@ export class CdrFactoryService {
   /**
    * Builds an array of column dependent references, depending on the columns provided.
    * If the column does not exists, it is left out of the array.
-   * @param entity  the complete entity
-   * @param columnNames  the list of columns, a CDR is needed for
-   * @param readOnly if true, readonly CDR will be build otherwise normal base CDR
-   * @returns a list of column depedent references
+   * @param entity  The complete entity.
+   * @param columnNames  The list of columns, a CDR is needed for.
+   * @param readOnly If true, readonly CDR will be build otherwise normal base CDR.
+   * @returns A list of column depedent references.
    */
   public buildCdrFromColumnList(entity: IEntity, columnNames: string[], readOnly: boolean &#x3D; false): ColumnDependentReference[] {
     return columnNames.map((column) &#x3D;&gt; this.buildCdr(entity, column, readOnly)).filter((cdr) &#x3D;&gt; cdr !&#x3D; null);
@@ -620,10 +622,10 @@ export class CdrFactoryService {
    * Builds an array of column dependent references, depending on the columns provided.
    * If the column does not exists, it is left out of the array.
    * You are able to add a list of columnnames, that should be readonly
-   * @param entity  the complete entity
-   * @param columnNames  the list of columns, a CDR is needed for
-   * @param readOnlyColumns a list of column names, that needed readonly CDR
-   * @returns a list of column depedent references
+   * @param entity  The complete entity.
+   * @param columnNames  The list of columns, a CDR is needed for.
+   * @param readOnlyColumns A list of column names, that needed readonly CDR.
+   * @returns A list of column depedent references.
    */
   public buildCdrFromColumnListAdvanced(
     entity: IEntity,
@@ -635,10 +637,10 @@ export class CdrFactoryService {
 
   /**
    * Builds a single CDR for a specific column of the entity provided
-   * @param entity  the complete entity
-   * @param columnName  the name of the column, that should be used by the CDR
-   * @param readOnly if true, a read only CDR will be build otherwise a normal base CDR
-   * @returns the columm dependent reference or null, if the column is not defined in the entity
+   * @param entity  The complete entity.
+   * @param columnName  The name of the column, that should be used by the CDR.
+   * @param readOnly If true, a read only CDR will be build otherwise a normal base CDR.
+   * @returns The columm dependent reference or null, if the column is not defined in the entity.
    */
   public buildCdr(entity: IEntity, columnName: string, readOnly: boolean &#x3D; false, columnDisplay?: string ): ColumnDependentReference {
     const column &#x3D; CdrFactoryService.tryGetColumn(entity, columnName);
@@ -647,10 +649,10 @@ export class CdrFactoryService {
   }
 
   /**
-   *
-   * @param entity the complete entity
-   * @param columnName the name of the column
-   * @returns null, if the entity doesn&#x27;t have a column with the given name otherwise the column is returned
+   * Trys to get a specific entity column by a given column name. 
+   * @param entity The complete entity.
+   * @param columnName The name of the column.
+   * @returns Null, if the entity doesn&#x27;t have a column with the given name otherwise the column is returned.
    */
   public static tryGetColumn(entity: IEntity, columnName: string): IEntityColumn {
     try {

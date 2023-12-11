@@ -73,6 +73,17 @@
         </p>
 
 
+            <p class="comment">
+                <h3>Description</h3>
+            </p>
+            <p class="comment">
+                <p>A default provider for creating <a href="CdrEditor "> CDR editors</a>.
+It creates an editor for basic types such as string, decimal, double etc.
+as well as some more complex types like date, multi value or a risk index.</p>
+<p>Depending on the type, a different <a href="CdrEditor "> CDR editor</a> is used
+(e.g. bool typed column =&gt; <a href="../components/EditBooleanComponent.html">EditBooleanComponent</a>)</p>
+
+            </p>
 
 
             <p class="comment">
@@ -97,16 +108,8 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
-                                    <span class="modifier">Private</span>
-                                <a href="#createBound" >createBound</a>
-                            </li>
-                            <li>
                                     <span class="modifier">Public</span>
                                 <a href="#createEditor" >createEditor</a>
-                            </li>
-                            <li>
-                                    <span class="modifier">Private</span>
-                                <a href="#isLimitedValues" >isLimitedValues</a>
                             </li>
                         </ul>
                     </td>
@@ -131,7 +134,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/lib/cdr/default-cdr-editor-provider.ts:44</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">src/lib/cdr/default-cdr-editor-provider.ts:52</a></div>
                             </td>
                         </tr>
 
@@ -145,109 +148,6 @@
     <h3 id="methods">
         Methods
     </h3>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="createBound"></a>
-                    <span class="name">
-                        <span class="modifier">Private</span>
-                        <span ><b>createBound</b></span>
-                        <a href="#createBound"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-            <tr>
-                <td class="col-md-4">
-                    <span class="modifier-icon icon ion-ios-reset"></span>
-                    <code>createBound(editor: <a href="../undefineds/T.html" target="_self">Type&lt;T&gt;</a>, parent: ViewContainerRef, cdref: <a href="../interfaces/ColumnDependentReference.html" target="_self">ColumnDependentReference</a>)</code>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="101"
-                            class="link-to-prism">src/lib/cdr/default-cdr-editor-provider.ts:101</a></div>
-                </td>
-            </tr>
-
-            <tr>
-                <td class="col-md-4">
-                    <b>Type parameters :</b>
-                    <ul class="type-parameters">
-                        <li>T</li>
-                    </ul>
-                </td>
-            </tr>
-
-            <tr>
-                <td class="col-md-4">
-
-                    <div class="io-description">
-                        <b>Parameters :</b>
-                        
-                        <table class="params">
-                            <thead>
-                                <tr>
-                                    <td>Name</td>
-                                    <td>Type</td>
-                                    <td>Optional</td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>editor</td>
-                                    <td>
-                                                <code><a href="../miscellaneous/typealiases.html#T" target="_self" >Type&lt;T&gt;</a></code>
-                                    </td>
-
-                                    <td>
-                                        No
-                                    </td>
-
-
-                                </tr>
-                                <tr>
-                                    <td>parent</td>
-                                    <td>
-                                            <code>ViewContainerRef</code>
-                                    </td>
-
-                                    <td>
-                                        No
-                                    </td>
-
-
-                                </tr>
-                                <tr>
-                                    <td>cdref</td>
-                                    <td>
-                                                <code><a href="../interfaces/ColumnDependentReference.html" target="_self" >ColumnDependentReference</a></code>
-                                    </td>
-
-                                    <td>
-                                        No
-                                    </td>
-
-
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div>
-                    </div>
-                    <div class="io-description">
-                        <b>Returns : </b>        <code><a href="../interfaces/CdrEditor.html" target="_self" >ComponentRef&lt;CdrEditor&gt;</a></code>
-
-                    </div>
-                    <div class="io-description">
-                        
-                    </div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
     <table class="table table-sm table-bordered">
         <tbody>
             <tr>
@@ -270,14 +170,19 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="48"
-                            class="link-to-prism">src/lib/cdr/default-cdr-editor-provider.ts:48</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="64"
+                            class="link-to-prism">src/lib/cdr/default-cdr-editor-provider.ts:64</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>Creates an editor, depending on the given CDR and bind the column to the newly created component
+The actual instance of the editor is determined by the data type of the column and some additional informations.
+(e.g. bool typed column =&gt; <a href="../components/EditBooleanComponent.html">EditBooleanComponent</a>)
+(e.g. string typed column with IsMultiLIne =&gt; <a href="../components/EditMultilineComponent.html">EditMultilineComponent</a>)</p>
+</div>
 
                     <div class="io-description">
                         <b>Parameters :</b>
@@ -288,6 +193,7 @@
                                     <td>Name</td>
                                     <td>Type</td>
                                     <td>Optional</td>
+                                    <td>Description</td>
                                 </tr>
                             </thead>
                             <tbody>
@@ -302,6 +208,10 @@
                                     </td>
 
 
+                                    <td>
+                                        <p>The view container used for rendering the editor into.</p>
+
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>cdref</td>
@@ -314,6 +224,10 @@
                                     </td>
 
 
+                                    <td>
+                                        <p>A column dependent reference that contains the data for the editor.</p>
+
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -325,78 +239,8 @@
 
                     </div>
                     <div class="io-description">
-                        
-                    </div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="isLimitedValues"></a>
-                    <span class="name">
-                        <span class="modifier">Private</span>
-                        <span ><b>isLimitedValues</b></span>
-                        <a href="#isLimitedValues"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-            <tr>
-                <td class="col-md-4">
-                    <span class="modifier-icon icon ion-ios-reset"></span>
-                    <code>isLimitedValues(meta: IValueMetadata)</code>
-                </td>
-            </tr>
+                        <p>An instance of {@link CdrEditor}, that can be used or editing data.</p>
 
-
-            <tr>
-                <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="108"
-                            class="link-to-prism">src/lib/cdr/default-cdr-editor-provider.ts:108</a></div>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td class="col-md-4">
-
-                    <div class="io-description">
-                        <b>Parameters :</b>
-                        
-                        <table class="params">
-                            <thead>
-                                <tr>
-                                    <td>Name</td>
-                                    <td>Type</td>
-                                    <td>Optional</td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>meta</td>
-                                    <td>
-                                            <code>IValueMetadata</code>
-                                    </td>
-
-                                    <td>
-                                        No
-                                    </td>
-
-
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div>
-                    </div>
-                    <div class="io-description">
-                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
-
-                    </div>
-                    <div class="io-description">
-                        
                     </div>
                 </td>
             </tr>
@@ -429,75 +273,104 @@ import { EditRiskIndexComponent } from &#x27;./edit-risk-index/edit-risk-index.c
 import { DateRangeComponent } from &#x27;./date-range/date-range.component&#x27;;
 import { EditUrlComponent } from &#x27;./edit-url/edit-url.component&#x27;;
 
+/**
+ * A default provider for creating {@link CdrEditor | CDR editors}.
+ * It creates an editor for basic types such as string, decimal, double etc.
+ * as well as some more complex types like date, multi value or a risk index.
+ *
+ * Depending on the type, a different {@link CdrEditor | CDR editor} is used
+ * (e.g. bool typed column &#x3D;&gt; {@link EditBooleanComponent})
+ */
 export class DefaultCdrEditorProvider implements CdrEditorProvider {
+  constructor() {}
 
-    constructor() { }
+  /**
+   * Creates an editor, depending on the given CDR and bind the column to the newly created component
+   * The actual instance of the editor is determined by the data type of the column and some additional informations.
+   * (e.g. bool typed column &#x3D;&gt; {@link EditBooleanComponent})
+   * (e.g. string typed column with IsMultiLIne &#x3D;&gt; {@link EditMultilineComponent})
+   * @param parent The view container used for rendering the editor into.
+   * @param cdref  A column dependent reference that contains the data for the editor.
+   * @returns An instance of {@link CdrEditor}, that can be used or editing data.
+   */
+  public createEditor(parent: ViewContainerRef, cdref: ColumnDependentReference): ComponentRef&lt;CdrEditor&gt; {
+    const meta &#x3D; cdref.column.GetMetadata();
+    const multiLine &#x3D; meta.IsMultiLine();
+    const multiValue &#x3D; meta.IsMultiValue();
+    const range &#x3D; meta.IsRange();
+    const limitedValues &#x3D; this.isLimitedValues(meta);
+    const schemaKey &#x3D; meta.GetSchemaKey();
+    const isRiskIndexColumn &#x3D;
+      [&#x27;RiskIndex&#x27;, &#x27;RiskLevel&#x27;].includes(schemaKey.substring(schemaKey.lastIndexOf(&#x27;.&#x27;) + 1)) || schemaKey &#x3D;&#x3D; &#x27;QERRiskIndex.Weight&#x27;;
+    const type &#x3D; meta.GetType();
 
-    public createEditor(parent: ViewContainerRef, cdref: ColumnDependentReference): ComponentRef&lt;CdrEditor&gt; {
-        const meta &#x3D; cdref.column.GetMetadata();
-        const multiLine &#x3D; meta.IsMultiLine();
-        const multiValue &#x3D; meta.IsMultiValue();
-        const range &#x3D; meta.IsRange();
-        const limitedValues &#x3D; this.isLimitedValues(meta);
-        const schemaKey &#x3D; meta.GetSchemaKey();
-        const isRiskIndexColumn &#x3D; [&#x27;RiskIndex&#x27;, &#x27;RiskLevel&#x27;].includes(schemaKey.substring(schemaKey.lastIndexOf(&#x27;.&#x27;) + 1))
-            || schemaKey &#x3D;&#x3D; &#x27;QERRiskIndex.Weight&#x27;;
-        const type &#x3D; meta.GetType();
-
-        if (type &#x3D;&#x3D;&#x3D; ValType.Binary) {
-            return this.createBound(EditImageComponent, parent, cdref);
-        }
-
-        if (!multiLine &amp;&amp; !multiValue &amp;&amp; !range &amp;&amp; !limitedValues &amp;&amp; !isRiskIndexColumn) {
-            switch (type) {
-
-                case ValType.Bool: return this.createBound(EditBooleanComponent, parent, cdref);
-
-                case ValType.Byte:
-                case ValType.Decimal:
-                case ValType.Double:
-                case ValType.Int:
-                case ValType.Long:
-                case ValType.Short: return this.createBound(EditNumberComponent, parent, cdref);
-
-                case ValType.Date: return this.createBound(EditDateComponent, parent, cdref);
-            }
-        
-        } else if (limitedValues) {
-            return multiValue
-                ? this.createBound(EditMultiLimitedValueComponent, parent, cdref)
-                : this.createBound(EditLimitedValueComponent, parent, cdref);
-        } else if (multiValue) {
-            return this.createBound(EditMultiValueComponent, parent, cdref);
-        } else if (multiLine) {
-            return this.createBound(EditMultilineComponent, parent, cdref);
-        } else if (isRiskIndexColumn) {
-            return this.createBound(EditRiskIndexComponent, parent, cdref);
-        }
-
-        if (range &amp;&amp; type &#x3D;&#x3D;&#x3D; ValType.Date) {
-            return this.createBound(DateRangeComponent, parent, cdref);
-        }
-
-        if (meta.isUrl) {
-           return this.createBound(EditUrlComponent, parent, cdref);
-        }
-
-        return null;
+    if (type &#x3D;&#x3D;&#x3D; ValType.Binary) {
+      return this.createBound(EditImageComponent, parent, cdref);
     }
 
-    private createBound&lt;T extends CdrEditor&gt;(editor: Type&lt;T&gt;, parent: ViewContainerRef, cdref: ColumnDependentReference)
-        : ComponentRef&lt;CdrEditor&gt; {
-        const result &#x3D; parent.createComponent(editor);
-        result.instance.bind(cdref);
-        return result;
+    if (!multiLine &amp;&amp; !multiValue &amp;&amp; !range &amp;&amp; !limitedValues &amp;&amp; !isRiskIndexColumn) {
+      switch (type) {
+        case ValType.Bool:
+          return this.createBound(EditBooleanComponent, parent, cdref);
+
+        case ValType.Byte:
+        case ValType.Decimal:
+        case ValType.Double:
+        case ValType.Int:
+        case ValType.Long:
+        case ValType.Short:
+          return this.createBound(EditNumberComponent, parent, cdref);
+
+        case ValType.Date:
+          return this.createBound(EditDateComponent, parent, cdref);
+      }
+    } else if (limitedValues) {
+      return multiValue
+        ? this.createBound(EditMultiLimitedValueComponent, parent, cdref)
+        : this.createBound(EditLimitedValueComponent, parent, cdref);
+    } else if (multiValue) {
+      return this.createBound(EditMultiValueComponent, parent, cdref);
+    } else if (multiLine) {
+      return this.createBound(EditMultilineComponent, parent, cdref);
+    } else if (isRiskIndexColumn) {
+      return this.createBound(EditRiskIndexComponent, parent, cdref);
     }
 
-    private isLimitedValues(meta: IValueMetadata): boolean {
-        const limitedValues &#x3D; meta.GetLimitedValues();
-
-        return limitedValues !&#x3D; null &amp;&amp; limitedValues.length &gt; 0;
+    if (range &amp;&amp; type &#x3D;&#x3D;&#x3D; ValType.Date) {
+      return this.createBound(DateRangeComponent, parent, cdref);
     }
+
+    if (meta.isUrl) {
+      return this.createBound(EditUrlComponent, parent, cdref);
+    }
+
+    return null;
+  }
+
+  /**
+   * @ignore only used internally.
+   * Creates the component and bind its value.
+   */
+  private createBound&lt;T extends CdrEditor&gt;(
+    editor: Type&lt;T&gt;,
+    parent: ViewContainerRef,
+    cdref: ColumnDependentReference
+  ): ComponentRef&lt;CdrEditor&gt; {
+    const result &#x3D; parent.createComponent(editor);
+    result.instance.bind(cdref);
+    return result;
+  }
+
+  /**
+   * @ignore only ised internally
+   * Checks, if there are limited values defined for the column.
+   * @returns True, if there are limited values available, otherwise false.
+   */
+  private isLimitedValues(meta: IValueMetadata): boolean {
+    const limitedValues &#x3D; meta.GetLimitedValues();
+
+    return limitedValues !&#x3D; null &amp;&amp; limitedValues.length &gt; 0;
+  }
 }
 </code></pre>
     </div>

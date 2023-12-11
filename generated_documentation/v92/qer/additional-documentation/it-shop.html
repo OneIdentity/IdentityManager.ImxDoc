@@ -1,0 +1,149 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>IMX Web - QER Library</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+        <link rel="stylesheet" href="../styles/material.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">IMX Web - QER Library</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content additional-page">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h1>IT Shop</h1>
+<p>This contains all components, that are needed for a complete request workflow.</p>
+<h2>1. New Request</h2>
+<p>The starting point of the request life cycle is defined inside the <a href="../components/NewRequestComponent.html"><code>NewRequestComponent</code></a>. The content of this page has several tabs, each containing a special component.</p>
+<ol>
+<li><a href="../components/NewRequestProductComponent.html"><code>NewRequestProductComponent</code></a>: The main page, where the user is able to select products ordered by service categories.</li>
+<li><a href="../components/NewRequestPeerGroupComponent.html"><code>NewRequestPeerGroupComponent</code></a>: In this tab, the user can select products, that other peers of his has requested as well.</li>
+<li><a href="../components/NewRequestReferenceUserComponent.html"><code>NewRequestReferenceUserComponent</code></a>: In this tab, it is possible, to select products, an other specific identity has requested as well.</li>
+<li><a href="../components/NewRequestProductBundleComponent.html"><code>NewRequestProductBundleComponent</code></a>: Here it is possible, to request multiple products, that are part of a product bundle.</li>
+</ol>
+<p>Each component has a set of other sub components, that will not be described in this overview, though.</p>
+<h2>2. Parameter Editor</h2>
+<p>Some products, that can be requested, are equipped with request parameter. These are handled using the <a href="../injectables/ParameterDataService.html"><code>ParameterDataService</code></a>, which converts the data given by the server to editable parameter columns, that can be edited using the <a href="../components/CartItemEditComponent.html"><code>CartItemEditComponent</code></a>.</p>
+<h2>3. Shopping Cart</h2>
+<p>The entry point into the shopping cart is defined inside the <a href="../components/ShoppingCartComponent.html"><code>ShoppingCartComponent</code></a>. It contains a table, that lists the cart items, that are currently part of the shopping cart. The items can be edited, deleted and checked for validity. All sub components and services are part of the <a href="../modules/ShoppingCartModule.html"><code>ShoppingCartModule</code></a>.
+Items in the cart can be moved to an instance of <a href="../components/ShoppingCartForLaterComponent.html"><code>ShoppingCartForLaterComponent</code></a> and vice versa.</p>
+<h2>4. Pending Requests</h2>
+<p>The next step in the workflow is the approval of items. The entry point for this is the <a href="../components/ApprovalsComponent.html"><code>ApprovalsComponent</code></a>, which lists all the requests, the user can approve / deny.</p>
+<p>This also contains a sub component, in which inquiries for the user are listed. (see: <a href="../components/InquiriesComponent.html"><code>InquiriesComponent</code></a>).</p>
+<p>All the sub components are part of the <a href="../modules/ApprovalsModule.html"><code>ApprovalsModule</code></a>, which includes the components on the corresponding side sheet.</p>
+<h2>5. Request History</h2>
+<p>All request, that have been made in a decent amount of time are listed in the <a href="../components/RequestHistoryComponent.html"><code>RequestHistoryComponent</code></a>. There you can filter the entries, look at their details an do some actions as well. Those actions are part of the <a href="../injectables/RequestActionService.html"><code>RequestActionService</code></a> and would be described there.</p>
+<h2>6. Archived Requests</h2>
+<p>Requests, that are quite old, will be archived and can be viewed using the <a href="../components/ArchivedRequestsComponent.html"><code>ArchivedRequestsComponent</code></a>. Items in this list can only be viewed, with no further actions available.</p>
+<h2>7. Editors for Items</h2>
+<p>Using the IT shop, there are some editors for adding new service categories, service items and even the IT shop pattern.</p>
+<h3>7.1. IT Shop Pattern</h3>
+<p>IT shop pattern can be edited using the <a href="../components/ItshopPatternComponent.html"><code>ItshopPatternComponent</code></a>. It is defined inside the <a href="../modules/ItshopPatternModule.html"><code>ItshopPatternModule</code></a>, together with the sub components, that can be used in this context.</p>
+<h3>7.2. Service Categories</h3>
+<p>For editing service categories, the <a href="../modules/ServiceCategoriesModule.html"><code>ServiceCategoriesModule</code></a> is needed. It contains the <a href="../components/ServiceCategoriesComponent.html"><code>ServiceCategoriesComponent</code></a>, that displays an <a href="../../qbm/components/DataTreeWrapperComponent.html"><code>DataTreeWrapperComponent</code></a>, representing the service category structure of the IT shop. It is possible to add new categories, remove empty ones and edit their information.</p>
+<h3>7.3. Service Items</h3>
+<p>The service item functionality is part of the <a href="../modules/ServiceItemsEditModule.html"><code>ServiceItemsEditModule</code></a>. The entry point for this component is the <a href="../components/ServiceItemsEditComponent.html">&#39;ServiceItemsEditComponent&#39;</a>, that lists all the service items available. Clicking on an entry opens a <a href="../components/ServiceItemsEditSidesheetComponent.html"><code>ServiceItemsEditSidesheetComponent</code></a>, where the information on the service item can be edited.</p>
+<h3>7.4. Workflow Editor</h3>
+<p>All components, that are used by this editor are part of the <a href="../modules/ApprovalWorkFlowModule.html"><code>ApprovalWorkFlowModule</code></a>. The entry point for development is the <a href="../components/ApprovalWorkflowHomeComponent.html"><code>ApprovalWorkflowHomeComponent</code></a> which contains a list of the available workflows.</p>
+<p>The editing process is put inside the <a href="../components/ApprovalWorkflowEditComponent.html"><code>ApprovalWorkflowEditComponent</code></a>,</p>
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'additional-page';
+            var COMPODOC_CURRENT_PAGE_URL = 'it-shop.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

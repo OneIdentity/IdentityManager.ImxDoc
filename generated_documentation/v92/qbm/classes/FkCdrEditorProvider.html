@@ -73,6 +73,16 @@
         </p>
 
 
+            <p class="comment">
+                <h3>Description</h3>
+            </p>
+            <p class="comment">
+                <p>A special provider for foreign key columns.
+The provider determines, if the column has foreign key information attached.
+If that&#39;s the case, it creates an CdrEditor for a single or a multi foreign key.
+If no such information is given, it returns null</p>
+
+            </p>
 
 
             <p class="comment">
@@ -96,10 +106,6 @@
                 <tr>
                     <td class="col-md-4">
                         <ul class="index-list">
-                            <li>
-                                    <span class="modifier">Private</span>
-                                <a href="#createBound" >createBound</a>
-                            </li>
                             <li>
                                     <span class="modifier">Public</span>
                                 <a href="#createEditor" >createEditor</a>
@@ -131,7 +137,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/lib/cdr/fk-cdr-editor-provider.ts:35</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/lib/cdr/fk-cdr-editor-provider.ts:41</a></div>
                             </td>
                         </tr>
 
@@ -145,109 +151,6 @@
     <h3 id="methods">
         Methods
     </h3>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="createBound"></a>
-                    <span class="name">
-                        <span class="modifier">Private</span>
-                        <span ><b>createBound</b></span>
-                        <a href="#createBound"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-            <tr>
-                <td class="col-md-4">
-                    <span class="modifier-icon icon ion-ios-reset"></span>
-                    <code>createBound(type: <a href="../undefineds/T.html" target="_self">Type&lt;T&gt;</a>, parent: ViewContainerRef, cdref: <a href="../interfaces/ColumnDependentReference.html" target="_self">ColumnDependentReference</a>)</code>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="48"
-                            class="link-to-prism">src/lib/cdr/fk-cdr-editor-provider.ts:48</a></div>
-                </td>
-            </tr>
-
-            <tr>
-                <td class="col-md-4">
-                    <b>Type parameters :</b>
-                    <ul class="type-parameters">
-                        <li>T</li>
-                    </ul>
-                </td>
-            </tr>
-
-            <tr>
-                <td class="col-md-4">
-
-                    <div class="io-description">
-                        <b>Parameters :</b>
-                        
-                        <table class="params">
-                            <thead>
-                                <tr>
-                                    <td>Name</td>
-                                    <td>Type</td>
-                                    <td>Optional</td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>type</td>
-                                    <td>
-                                                <code><a href="../miscellaneous/typealiases.html#T" target="_self" >Type&lt;T&gt;</a></code>
-                                    </td>
-
-                                    <td>
-                                        No
-                                    </td>
-
-
-                                </tr>
-                                <tr>
-                                    <td>parent</td>
-                                    <td>
-                                            <code>ViewContainerRef</code>
-                                    </td>
-
-                                    <td>
-                                        No
-                                    </td>
-
-
-                                </tr>
-                                <tr>
-                                    <td>cdref</td>
-                                    <td>
-                                                <code><a href="../interfaces/ColumnDependentReference.html" target="_self" >ColumnDependentReference</a></code>
-                                    </td>
-
-                                    <td>
-                                        No
-                                    </td>
-
-
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div>
-                    </div>
-                    <div class="io-description">
-                        <b>Returns : </b>        <code><a href="../interfaces/CdrEditor.html" target="_self" >ComponentRef&lt;CdrEditor&gt;</a></code>
-
-                    </div>
-                    <div class="io-description">
-                        
-                    </div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
     <table class="table table-sm table-bordered">
         <tbody>
             <tr>
@@ -270,14 +173,16 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="38"
-                            class="link-to-prism">src/lib/cdr/fk-cdr-editor-provider.ts:38</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="50"
+                            class="link-to-prism">src/lib/cdr/fk-cdr-editor-provider.ts:50</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>Creates a CDR editor for single and multi foreign key columns and binds it to the column</p>
+</div>
 
                     <div class="io-description">
                         <b>Parameters :</b>
@@ -288,6 +193,7 @@
                                     <td>Name</td>
                                     <td>Type</td>
                                     <td>Optional</td>
+                                    <td>Description</td>
                                 </tr>
                             </thead>
                             <tbody>
@@ -302,6 +208,10 @@
                                     </td>
 
 
+                                    <td>
+                                        <p>The view container used for rendering the editor into.</p>
+
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>cdref</td>
@@ -314,6 +224,10 @@
                                     </td>
 
 
+                                    <td>
+                                        <p>A column dependent reference that contains the data for the editor.</p>
+
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -325,7 +239,8 @@
 
                     </div>
                     <div class="io-description">
-                        
+                        <p>An instance of {@link CdrEditor}, that can be used or editing data, or null, if no foreign key information is given.</p>
+
                     </div>
                 </td>
             </tr>
@@ -353,14 +268,16 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="58"
-                            class="link-to-prism">src/lib/cdr/fk-cdr-editor-provider.ts:58</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="79"
+                            class="link-to-prism">src/lib/cdr/fk-cdr-editor-provider.ts:79</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>Determines, if there are fk relations present or not.</p>
+</div>
 
                     <div class="io-description">
                         <b>Parameters :</b>
@@ -371,6 +288,7 @@
                                     <td>Name</td>
                                     <td>Type</td>
                                     <td>Optional</td>
+                                    <td>Description</td>
                                 </tr>
                             </thead>
                             <tbody>
@@ -385,6 +303,10 @@
                                     </td>
 
 
+                                    <td>
+                                        <p>The column dependent reference, that needs to be checked</p>
+
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -420,9 +342,21 @@ import { CdrEditor } from &#x27;./cdr-editor.interface&#x27;;
 import { EditFkComponent } from &#x27;./edit-fk/edit-fk.component&#x27;;
 import { EditFkMultiComponent } from &#x27;./edit-fk/edit-fk-multi.component&#x27;;
 
+/**
+ * A special provider for foreign key columns.
+ * The provider determines, if the column has foreign key information attached.
+ * If that&#x27;s the case, it creates an CdrEditor for a single or a multi foreign key.
+ * If no such information is given, it returns null
+ *  */
 export class FkCdrEditorProvider implements CdrEditorProvider {
   constructor() {}
 
+  /**
+   * Creates a CDR editor for single and multi foreign key columns and binds it to the column
+   * @param parent The view container used for rendering the editor into.
+   * @param cdref  A column dependent reference that contains the data for the editor.
+   * @returns An instance of {@link CdrEditor}, that can be used or editing data, or null, if no foreign key information is given.
+   */
   public createEditor(parent: ViewContainerRef, cdref: ColumnDependentReference): ComponentRef&lt;CdrEditor&gt; {
     if (this.hasFkRelations(cdref)) {
       return cdref.column.GetMetadata().IsMultiValue()
@@ -433,8 +367,12 @@ export class FkCdrEditorProvider implements CdrEditorProvider {
     return null;
   }
 
+  /**
+   * @ignore only used internally.
+   * Creates the component and bind its value.
+   */
   private createBound&lt;T extends CdrEditor&gt;(
-    type:  Type&lt;T&gt;,
+    type: Type&lt;T&gt;,
     parent: ViewContainerRef,
     cdref: ColumnDependentReference
   ): ComponentRef&lt;CdrEditor&gt; {
@@ -443,6 +381,11 @@ export class FkCdrEditorProvider implements CdrEditorProvider {
     return result;
   }
 
+  /**
+   * Determines, if there are fk relations present or not.
+   * @param cdref The column dependent reference, that needs to be checked
+   * @returns 
+   */
   private hasFkRelations(cdref: ColumnDependentReference): boolean {
     const fkRelations &#x3D; cdref.column.GetMetadata().GetFkRelations();
     if (fkRelations &#x3D;&#x3D; null) {

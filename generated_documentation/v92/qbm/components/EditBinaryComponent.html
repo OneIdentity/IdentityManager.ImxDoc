@@ -78,7 +78,9 @@
         <h3>Description</h3>
     </p>
     <p class="comment">
-        <p>A component for viewing / editing binary columns</p>
+        <p>Provides a <a href="CdrEditor "> CDR editor</a> for editing / viewing binary value columns</p>
+<p>It renders an input field for adding data
+When set to read only, it uses a <a href="ViewPropertyComponent "> view property component</a> to display the content.</p>
 
     </p>
 
@@ -202,7 +204,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/lib/cdr/edit-binary/edit-binary.component.ts:49</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">src/lib/cdr/edit-binary/edit-binary.component.ts:58</a></div>
                             </td>
                         </tr>
 
@@ -271,8 +273,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="59"
-                            class="link-to-prism">src/lib/cdr/edit-binary/edit-binary.component.ts:59</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="68"
+                            class="link-to-prism">src/lib/cdr/edit-binary/edit-binary.component.ts:68</a></div>
                 </td>
             </tr>
 
@@ -353,10 +355,16 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">src/lib/cdr/edit-binary/edit-binary.component.ts:47</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">src/lib/cdr/edit-binary/edit-binary.component.ts:56</a></div>
                         </td>
                     </tr>
 
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The container that wraps the column functionality.</p>
+</div>
+                </td>
+            </tr>
 
         </tbody>
     </table>
@@ -380,10 +388,16 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/lib/cdr/edit-binary/edit-binary.component.ts:44</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/lib/cdr/edit-binary/edit-binary.component.ts:50</a></div>
                         </td>
                     </tr>
 
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The form control associated with the editor.</p>
+</div>
+                </td>
+            </tr>
 
         </tbody>
     </table>
@@ -407,7 +421,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/lib/cdr/edit-binary/edit-binary.component.ts:49</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">src/lib/cdr/edit-binary/edit-binary.component.ts:58</a></div>
                         </td>
                     </tr>
 
@@ -429,23 +443,32 @@ import { CdrEditor } from &#x27;../cdr-editor.interface&#x27;;
 import { EntityColumnContainer } from &#x27;../entity-column-container&#x27;;
 
 /**
- * A component for viewing / editing binary columns
+ * Provides a {@link CdrEditor | CDR editor} for editing / viewing binary value columns
+ * 
+ * It renders an input field for adding data
+ * When set to read only, it uses a {@link ViewPropertyComponent | view property component} to display the content.
  */
 @Component({
   selector: &#x27;imx-edit-binary&#x27;,
   templateUrl: &#x27;./edit-binary.component.html&#x27;,
-  styleUrls: [&#x27;./edit-binary.component.scss&#x27;]
+  styleUrls: [&#x27;./edit-binary.component.scss&#x27;],
 })
 export class EditBinaryComponent implements CdrEditor {
+  /**
+   * The form control associated with the editor.
+   */
   public readonly control &#x3D; new UntypedFormControl({ value: undefined, disabled: true });
   // TODO: TFS 806165 &quot;imx-web: Editor für Binärdaten verbessern&quot; umsetzen
 
+  /**
+   * The container that wraps the column functionality.
+   */
   public readonly columnContainer &#x3D; new EntityColumnContainer&lt;string&gt;();
 
   private message: string;
 
   constructor(translationProvider: TranslateService) {
-    translationProvider.get(&#x27;#LDS#This property cannot be displayed.&#x27;).subscribe(value &#x3D;&gt; this.message &#x3D; value);
+    translationProvider.get(&#x27;#LDS#This property cannot be displayed.&#x27;).subscribe((value) &#x3D;&gt; (this.message &#x3D; value));
   }
 
   /**

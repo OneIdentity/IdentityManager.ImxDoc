@@ -24,13 +24,13 @@
 <title>cluster_InfoModalDialogModule</title>
 <polygon fill="none" stroke="black" stroke-dasharray="1,5" points="8,-70 8,-268 502,-268 502,-70 8,-70"/>
 </g>
-<g id="clust2" class="cluster">
-<title>cluster_InfoModalDialogModule_declarations</title>
-<polygon fill="none" stroke="black" points="16,-78 16,-130 494,-130 494,-78 16,-78"/>
-</g>
 <g id="clust7" class="cluster">
 <title>cluster_InfoModalDialogModule_exports</title>
 <polygon fill="none" stroke="black" points="93,-208 93,-260 417,-260 417,-208 93,-208"/>
+</g>
+<g id="clust2" class="cluster">
+<title>cluster_InfoModalDialogModule_declarations</title>
+<polygon fill="none" stroke="black" points="16,-78 16,-130 494,-130 494,-78 16,-78"/>
 </g>
 <!-- InfoBadgeComponent -->
 <g id="node1" class="node">

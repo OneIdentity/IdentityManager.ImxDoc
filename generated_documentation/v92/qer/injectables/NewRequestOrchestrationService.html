@@ -500,8 +500,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="309"
-                            class="link-to-prism">src/lib/new-request/new-request-orchestration.service.ts:309</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="312"
+                            class="link-to-prism">src/lib/new-request/new-request-orchestration.service.ts:312</a></div>
                 </td>
             </tr>
 
@@ -922,7 +922,7 @@
             </tr>
                 <tr>
                     <td class="col-md-4">
-                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                        <i>Type : </i>    <code>ValueStruct&lt;string&gt;</code>
 
                     </td>
                 </tr>
@@ -2473,7 +2473,7 @@ export class NewRequestOrchestrationService implements OnDestroy {
 
   //#region Private properties
   private userUid: string;
-  private defaultUser: string;
+  private defaultUser: ValueStruct&lt;string&gt;;
   //#endregion
 
   //#region Public properties
@@ -2680,7 +2680,7 @@ export class NewRequestOrchestrationService implements OnDestroy {
   }
 
   public async setDefaultUser(): Promise&lt;void&gt; {
-    await this.recipients.Column.PutValue(this.defaultUser);
+    await this.recipients.Column.PutValueStruct(this.defaultUser);
     this.recipients$.next(this.recipients);
   }
 
@@ -2729,7 +2729,10 @@ export class NewRequestOrchestrationService implements OnDestroy {
 
       // TODO in this case, CanRequestForSomebodyElse is false
     }
-    this.defaultUser &#x3D; this.recipients.Column.GetValue();
+    this.defaultUser &#x3D; {
+      DataValue: this.recipients.Column.GetValue(),
+      DisplayValue: this.recipients.Column.GetDisplayValue(),
+    };
   }
 
   private async getPersonDisplay(uid: string): Promise&lt;string&gt; {

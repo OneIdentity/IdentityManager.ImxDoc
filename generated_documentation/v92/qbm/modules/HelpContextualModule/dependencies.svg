@@ -24,13 +24,13 @@
 <title>cluster_HelpContextualModule</title>
 <polygon fill="none" stroke="black" stroke-dasharray="1,5" points="34,-70 34,-268 462,-268 462,-70 34,-70"/>
 </g>
-<g id="clust2" class="cluster">
-<title>cluster_HelpContextualModule_declarations</title>
-<polygon fill="none" stroke="black" points="42,-78 42,-130 454,-130 454,-78 42,-78"/>
-</g>
 <g id="clust6" class="cluster">
 <title>cluster_HelpContextualModule_exports</title>
 <polygon fill="none" stroke="black" points="161,-208 161,-260 351,-260 351,-208 161,-208"/>
+</g>
+<g id="clust2" class="cluster">
+<title>cluster_HelpContextualModule_declarations</title>
+<polygon fill="none" stroke="black" points="42,-78 42,-130 454,-130 454,-78 42,-78"/>
 </g>
 <!-- HelpContextualComponent -->
 <g id="node1" class="node">
