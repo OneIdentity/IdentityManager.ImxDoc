@@ -24,6 +24,10 @@
 <title>cluster_UserMessageModule</title>
 <polygon fill="none" stroke="black" stroke-dasharray="1,5" points="50,-70 50,-268 446,-268 446,-70 50,-70"/>
 </g>
+<g id="clust5" class="cluster">
+<title>cluster_UserMessageModule_exports</title>
+<polygon fill="none" stroke="black" points="154,-208 154,-260 330,-260 330,-208 154,-208"/>
+</g>
 <g id="clust7" class="cluster">
 <title>cluster_UserMessageModule_providers</title>
 <polygon fill="none" stroke="black" points="238,-78 238,-130 438,-130 438,-78 238,-78"/>
@@ -31,10 +35,6 @@
 <g id="clust2" class="cluster">
 <title>cluster_UserMessageModule_declarations</title>
 <polygon fill="none" stroke="black" points="58,-78 58,-130 230,-130 230,-78 58,-78"/>
-</g>
-<g id="clust5" class="cluster">
-<title>cluster_UserMessageModule_exports</title>
-<polygon fill="none" stroke="black" points="154,-208 154,-260 330,-260 330,-208 154,-208"/>
 </g>
 <!-- UserMessageComponent -->
 <g id="node1" class="node">

@@ -24,13 +24,13 @@
 <title>cluster_StatisticsModule</title>
 <polygon fill="none" stroke="black" stroke-dasharray="1,5" points="8,-70 8,-268 3772,-268 3772,-70 8,-70"/>
 </g>
-<g id="clust23" class="cluster">
-<title>cluster_StatisticsModule_exports</title>
-<polygon fill="none" stroke="black" points="1922,-208 1922,-260 2136,-260 2136,-208 1922,-208"/>
-</g>
 <g id="clust2" class="cluster">
 <title>cluster_StatisticsModule_declarations</title>
 <polygon fill="none" stroke="black" points="16,-78 16,-130 3764,-130 3764,-78 16,-78"/>
+</g>
+<g id="clust23" class="cluster">
+<title>cluster_StatisticsModule_exports</title>
+<polygon fill="none" stroke="black" points="1922,-208 1922,-260 2136,-260 2136,-208 1922,-208"/>
 </g>
 <!-- BlockDetailSidesheetComponent -->
 <g id="node1" class="node">

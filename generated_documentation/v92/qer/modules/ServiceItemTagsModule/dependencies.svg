@@ -24,59 +24,59 @@
 <title>cluster_ServiceItemTagsModule</title>
 <polygon fill="none" stroke="black" stroke-dasharray="1,5" points="27,-70 27,-268 469,-268 469,-70 27,-70"/>
 </g>
-<g id="clust7" class="cluster">
-<title>cluster_ServiceItemTagsModule_providers</title>
-<polygon fill="none" stroke="black" points="235,-78 235,-130 461,-130 461,-78 235,-78"/>
-</g>
 <g id="clust5" class="cluster">
 <title>cluster_ServiceItemTagsModule_exports</title>
-<polygon fill="none" stroke="black" points="142,-208 142,-260 338,-260 338,-208 142,-208"/>
+<polygon fill="none" stroke="black" points="157,-208 157,-260 353,-260 353,-208 157,-208"/>
 </g>
 <g id="clust2" class="cluster">
 <title>cluster_ServiceItemTagsModule_declarations</title>
-<polygon fill="none" stroke="black" points="35,-78 35,-130 227,-130 227,-78 35,-78"/>
+<polygon fill="none" stroke="black" points="269,-78 269,-130 461,-130 461,-78 269,-78"/>
+</g>
+<g id="clust7" class="cluster">
+<title>cluster_ServiceItemTagsModule_providers</title>
+<polygon fill="none" stroke="black" points="35,-78 35,-130 261,-130 261,-78 35,-78"/>
 </g>
 <!-- ServiceItemTagsComponent -->
 <g id="node1" class="node">
 <title>ServiceItemTagsComponent</title>
-<polygon fill="#ffffb3" stroke="black" points="219.18,-122 42.82,-122 42.82,-86 219.18,-86 219.18,-122"/>
-<text text-anchor="middle" x="131" y="-99.8" font-family="Times,serif" font-size="14.00">ServiceItemTagsComponent</text>
+<polygon fill="#ffffb3" stroke="black" points="453.18,-122 276.82,-122 276.82,-86 453.18,-86 453.18,-122"/>
+<text text-anchor="middle" x="365" y="-99.8" font-family="Times,serif" font-size="14.00">ServiceItemTagsComponent</text>
 </g>
 <!-- ServiceItemTagsModule -->
 <g id="node2" class="node">
 <title>ServiceItemTagsModule</title>
-<polygon fill="#8dd3c7" stroke="black" points="317.4,-187 314.4,-191 293.4,-191 290.4,-187 162.6,-187 162.6,-151 317.4,-151 317.4,-187"/>
-<text text-anchor="middle" x="240" y="-164.8" font-family="Times,serif" font-size="14.00">ServiceItemTagsModule</text>
+<polygon fill="#8dd3c7" stroke="black" points="332.4,-187 329.4,-191 308.4,-191 305.4,-187 177.6,-187 177.6,-151 332.4,-151 332.4,-187"/>
+<text text-anchor="middle" x="255" y="-164.8" font-family="Times,serif" font-size="14.00">ServiceItemTagsModule</text>
 </g>
 <!-- ServiceItemTagsComponent&#45;&gt;ServiceItemTagsModule -->
 <g id="edge1" class="edge">
 <title>ServiceItemTagsComponent&#45;&gt;ServiceItemTagsModule</title>
-<path fill="none" stroke="black" d="M190.95,-122.11C190.95,-122.11 190.95,-140.99 190.95,-140.99"/>
-<polygon fill="black" stroke="black" points="187.45,-140.99 190.95,-150.99 194.45,-140.99 187.45,-140.99"/>
+<path fill="none" stroke="black" d="M304.55,-122.11C304.55,-122.11 304.55,-140.99 304.55,-140.99"/>
+<polygon fill="black" stroke="black" points="301.05,-140.99 304.55,-150.99 308.05,-140.99 301.05,-140.99"/>
 </g>
 <!-- ServiceItemTagsComponent  -->
 <g id="node3" class="node">
 <title>ServiceItemTagsComponent </title>
-<polygon fill="#fb8072" stroke="black" points="329.68,-252 150.32,-252 150.32,-216 329.68,-216 329.68,-252"/>
-<text text-anchor="middle" x="240" y="-229.8" font-family="Times,serif" font-size="14.00">ServiceItemTagsComponent </text>
+<polygon fill="#fb8072" stroke="black" points="344.68,-252 165.32,-252 165.32,-216 344.68,-216 344.68,-252"/>
+<text text-anchor="middle" x="255" y="-229.8" font-family="Times,serif" font-size="14.00">ServiceItemTagsComponent </text>
 </g>
 <!-- ServiceItemTagsModule&#45;&gt;ServiceItemTagsComponent  -->
 <g id="edge2" class="edge">
 <title>ServiceItemTagsModule&#45;&gt;ServiceItemTagsComponent </title>
-<path fill="none" stroke="black" stroke-dasharray="5,2" d="M240,-187.11C240,-187.11 240,-205.99 240,-205.99"/>
-<polygon fill="black" stroke="black" points="236.5,-205.99 240,-215.99 243.5,-205.99 236.5,-205.99"/>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M255,-187.11C255,-187.11 255,-205.99 255,-205.99"/>
+<polygon fill="black" stroke="black" points="251.5,-205.99 255,-215.99 258.5,-205.99 251.5,-205.99"/>
 </g>
 <!-- ServiceItemTagsService -->
 <g id="node4" class="node">
 <title>ServiceItemTagsService</title>
-<ellipse fill="#fdb462" stroke="black" cx="348" cy="-104" rx="105.33" ry="18"/>
-<text text-anchor="middle" x="348" y="-99.8" font-family="Times,serif" font-size="14.00">ServiceItemTagsService</text>
+<ellipse fill="#fdb462" stroke="black" cx="148" cy="-104" rx="105.33" ry="18"/>
+<text text-anchor="middle" x="148" y="-99.8" font-family="Times,serif" font-size="14.00">ServiceItemTagsService</text>
 </g>
 <!-- ServiceItemTagsService&#45;&gt;ServiceItemTagsModule -->
 <g id="edge3" class="edge">
 <title>ServiceItemTagsService&#45;&gt;ServiceItemTagsModule</title>
-<path fill="none" stroke="black" d="M279.89,-117.78C279.89,-117.78 279.89,-140.55 279.89,-140.55"/>
-<polygon fill="black" stroke="black" points="276.39,-140.55 279.89,-150.55 283.39,-140.55 276.39,-140.55"/>
+<path fill="none" stroke="black" d="M215.61,-118.1C215.61,-118.1 215.61,-140.72 215.61,-140.72"/>
+<polygon fill="black" stroke="black" points="212.11,-140.72 215.61,-150.72 219.11,-140.72 212.11,-140.72"/>
 </g>
 </g>
 </svg>

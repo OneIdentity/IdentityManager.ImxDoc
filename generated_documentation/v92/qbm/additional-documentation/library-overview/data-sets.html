@@ -1,0 +1,158 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>IMX Web - QBM Library</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+	   <link rel="stylesheet" href="../../styles/style.css">
+        <link rel="stylesheet" href="../../styles/dark.css">
+        <link rel="stylesheet" href="../../styles/material.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../../" class="navbar-brand">IMX Web - QBM Library</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content additional-page">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h1>Data Sets</h1>
+<p>In this section you can find components that are designed to display data sets. These cover both flat lists and hierarchical data structures.</p>
+<h2>1. Data Source Toolbar</h2>
+<p>The <a href="../../components/DataSourceToolbarComponent.html"><code>DataSourceToolbarComponent</code></a> is used to handle the interaction between the data source and the actual view. <br>It is defined in the <a href="....%5Cmodules/DataSourceToolbarModule.html"><code>DataSourceToolbarModule</code></a>, together with the other sub components, that are used inside the toolbar.</p>
+<p>The following features are available:</p>
+<ul>
+<li>Filtering</li>
+<li>Searching</li>
+<li>Grouping</li>
+<li>Sorting</li>
+<li>Export and configuration of the view</li>
+</ul>
+<p>The definition of values and functions for these features should be defined using the <a href="../../interfaces/DataSourceToolbarSettings.html"><code>DataSourceToolbarSettings</code></a> interface.</p>
+<hr>
+<h2>2. Paginator</h2>
+<p>The <a href="../../components/DataSourcePaginatorComponent.html"><code>DataSourcePaginatorComponent</code></a> is used to handle the pagination of the data. This is done by updating the navigation state of its linked <a href="../../components/DataSourceToolbarComponent.html"><code>DataSourceToolbarComponent</code></a>. The usage of a paginator is optional and not needed in all scenarios.</p>
+<hr>
+<h2>3. View Components</h2>
+<p>There are several components, that are capable of viewing a large amount of data. They are defined in separate Angular modules and are as follows:</p>
+<h3>3.1. Data Table</h3>
+<p>The <a href="../../components/DataTableComponent.html"><code>DataTableComponent</code></a> is the most used view component for our portals. </p>
+<p>It renders an Angular Material Table with columns, that can be customized by using other sub components. These are defined in the <a href="../../modules/DataTableModule.html"><code>DateTableModule</code></a>, as well as the date table itself. </p>
+<p>It is possible to display a auto generated view as well, which renders all columns that are defined in the data source as normal text columns.</p>
+<h3>3.2. Data Tiles</h3>
+<p>The <a href="../../components/DataTilesComponent.html"><code>DataTilesComponent</code></a> can be used to render a tile view, which displays a <a href="../../components/DataTileComponent.html"><code>DataTileComponent</code></a> for each entry in the data source. Both components are part of the <a href="../../modules/DataTilesModule.html"><code>DataTileModule</code></a>, but only the <a href="../../components/DataTilesComponent.html"><code>DataTilesComponent</code></a> is exported. <br>All configurations has to be defined as inputs for the data tiles components.</p>
+<h3>3.3. Data Tree</h3>
+<p>The <a href="../../components/DataTreeComponent.html"><code>DataTreeComponent</code></a> can be used to display hierarchical data. Other than the table, it uses a special data source, that can be defined by extending the abstract <a href="../../classes/TreeDatabase.html"><code>TreeDatabase</code></a> class. The data tree is part of the <a href="../../modules/DataTreeModule.html"><code>DataTreeModule</code></a>, together with other components and sub components, that can be used with the data tree like the <a href="../../components/DataTreeSearchResultsComponent.html"><code>DataTreeSearchResultsComponent</code></a>. This component shows a non hierarchical view of an entry subset, because some parameter like a filter or a search string will flatten the result.</p>
+<p>If you prefer to use a data tree with a data source toolbar functionality, there is a <a href="../../components/DataTreeWrapperComponent.html"><code>DataTreeWrapperComponent</code></a> defined in the <a href="../../modules/DataTreeWrapperModule.html"><code>DataTreeWrapperModule</code></a>. This component combines a data tree with a data source toolbar so that the user can search and filter the tree.</p>
+<h3>3.5. Other</h3>
+<p>There are some other components that can be used to display a list of elements. However, these components are not compatible with the data source toolbar.</p>
+<p><strong>Select Component</strong></p>
+<p>The <a href="../../components/SelectComponent.html"><code>SelectComponent</code></a> can be used to show a list of entries using an auto complete control. It is defined in the <a href="../../modules/SelectModule.html"><code>SelectModule</code></a>.</p>
+<p><strong>Ordered List Component</strong></p>
+<p>The <a href="../../components/OrderedListComponent.html"><code>OrderedListComponent</code></a> can be used to display a simple list of <code>&lt;Name, Value&gt;</code> entries. It is defined in the <a href="../../modules/OrderedListModule.html"><code>OrderedListModule</code></a></p>
+<h2>4. Other Components</h2>
+<p>Here are some components that are connected to listings, but do not really fit into the other categories.</p>
+<h3>4.1 Selected Elements</h3>
+<p>Because all view component can contain a multi-select feature, it is possible to select some items. If you like to check, which elements are selected across pages, you can use a <a href="../../"><code>SelectedElementsComponent</code></a> that shows, how many elements are selected. This component is clickable, which opens a side sheet with all elements inside a table.</p>
+<h3>4.2 Foreign Key Picker</h3>
+<p>There are two foreign key picker dialogs available.</p>
+<p><strong>4.2.1 Normal Picker</strong></p>
+<p>The classic data picker is defined inside the <a href="../../components/FkAdvancedPickerComponent.html"><code>FkAdvancedPickerComponent</code></a>. It contains a <a href="../../components/FkSelectorComponent.html"><code>FkSelectorComponent</code></a>, that could be used on other components as well.</p>
+<p><strong>4.2.2 Hierarchical Picker</strong></p>
+<p>The hierarchical picker is defined in the <a href="../../components/FkHierarchicalDialogComponent.html"><code>FkHierarchicalDialogComponent</code></a> and displays the data inside a searchable tree.</p>
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 2;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'additional-page';
+            var COMPODOC_CURRENT_PAGE_URL = 'data-sets.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../../js/libs/custom-elements.min.js"></script>
+       <script src="../../js/libs/lit-html.js"></script>
+
+       <script src="../../js/menu-wc.js" defer></script>
+       <script nomodule src="../../js/menu-wc_es5.js" defer></script>
+
+       <script src="../../js/libs/bootstrap-native.js"></script>
+
+       <script src="../../js/libs/es6-shim.min.js"></script>
+       <script src="../../js/libs/EventDispatcher.js"></script>
+       <script src="../../js/libs/promise.min.js"></script>
+       <script src="../../js/libs/zepto.min.js"></script>
+
+       <script src="../../js/compodoc.js"></script>
+
+       <script src="../../js/tabs.js"></script>
+       <script src="../../js/menu.js"></script>
+       <script src="../../js/libs/clipboard.min.js"></script>
+       <script src="../../js/libs/prism.js"></script>
+       <script src="../../js/sourceCode.js"></script>
+          <script src="../../js/search/search.js"></script>
+          <script src="../../js/search/lunr.min.js"></script>
+          <script src="../../js/search/search-lunr.js"></script>
+          <script src="../../js/search/search_index.js"></script>
+       <script src="../../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

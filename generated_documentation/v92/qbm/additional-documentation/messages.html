@@ -53,7 +53,7 @@
 
 
 <h1>Messages and Translation</h1>
-<p>This section describes components, that are used to display messages in different languages to the user. There are the following components and services available.</p>
+<p>This section describes components that are used to display messages in different languages to the user. There are the following components and services available.</p>
 <h2>1. Messages</h2>
 <h3>1.1. User Messages</h3>
 <p>User messages are displayed using the <a href="../components/UserMessageComponent.html"><code>UserMessageComponent</code></a>, which contains an Elemental UI alert component.</p>
@@ -73,9 +73,9 @@ It is part of the <a href="../modules/QbmModule.html"><code>QbmModule</code></a>
 <p>It is defined in the <a href="../injectables/GlobalErrorHandler.html"><code>GlobalErrorHandler</code></a></p>
 <hr>
 <h2>2.Translation</h2>
-<p>Our libraries are using translatable keys, that are recognizable by the prefix <code>#LDS#</code>. For translating these keys, we are using some services, that are described below.</p>
+<p>Our libraries are using translatable keys, identifiable by the prefix <code>#LDS#</code>. The services need to translate these keys into localized text at runtime are described below.</p>
 <h3>2.1. Translation</h3>
-<p>This uses the <a href="../injectables/ImxTranslationProviderService.html"><code>ImxTranslationProviderService</code></a>, to initialize the translation information. You can use this service for translation purposes as well, but it is recommended, to use the <code>TranslateService</code> from <code>@ngx-translate</code>, which is used in thi service anyway.</p>
+<p>This uses the <a href="../injectables/ImxTranslationProviderService.html"><code>ImxTranslationProviderService</code></a>, to initialize the translation information. You can use this service for translation purposes as well, but it is recommended to use the <code>TranslateService</code> from <code>@ngx-translate</code>, which is used in this service anyway.</p>
 <h3>2.2. LDS Replace</h3>
 <p>The <a href="../modules/LdsReplaceModule.html"><code>LdsReplaceModule</code></a> contains a pipe, which can be used to replace placeholder inside LDS key translations. It is defined in the <a href="../injectables/LdsReplacePipe.html"><code>LdsReplacePipe</code></a> class.</p>
 <h3>2.3. Parameterized Text</h3>

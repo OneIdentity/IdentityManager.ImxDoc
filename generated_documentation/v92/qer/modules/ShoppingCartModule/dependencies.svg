@@ -24,215 +24,215 @@
 <title>cluster_ShoppingCartModule</title>
 <polygon fill="none" stroke="black" stroke-dasharray="1,5" points="8,-70 8,-195 3230,-195 3230,-70 8,-70"/>
 </g>
-<g id="clust2" class="cluster">
-<title>cluster_ShoppingCartModule_declarations</title>
-<polygon fill="none" stroke="black" points="918,-78 918,-130 3222,-130 3222,-78 918,-78"/>
+<g id="clust17" class="cluster">
+<title>cluster_ShoppingCartModule_providers</title>
+<polygon fill="none" stroke="black" points="2838,-78 2838,-130 3222,-130 3222,-78 2838,-78"/>
 </g>
 <g id="clust14" class="cluster">
 <title>cluster_ShoppingCartModule_imports</title>
-<polygon fill="none" stroke="black" points="408,-78 408,-130 910,-130 910,-78 408,-78"/>
+<polygon fill="none" stroke="black" points="2328,-78 2328,-130 2830,-130 2830,-78 2328,-78"/>
 </g>
-<g id="clust17" class="cluster">
-<title>cluster_ShoppingCartModule_providers</title>
-<polygon fill="none" stroke="black" points="16,-78 16,-130 400,-130 400,-78 16,-78"/>
+<g id="clust2" class="cluster">
+<title>cluster_ShoppingCartModule_declarations</title>
+<polygon fill="none" stroke="black" points="16,-78 16,-130 2320,-130 2320,-78 16,-78"/>
 </g>
 <!-- CartItemDisplayComponent -->
 <g id="node1" class="node">
 <title>CartItemDisplayComponent</title>
-<polygon fill="#ffffb3" stroke="black" points="3214.14,-122 3039.86,-122 3039.86,-86 3214.14,-86 3214.14,-122"/>
-<text text-anchor="middle" x="3127" y="-99.8" font-family="Times,serif" font-size="14.00">CartItemDisplayComponent</text>
+<polygon fill="#ffffb3" stroke="black" points="2312.14,-122 2137.86,-122 2137.86,-86 2312.14,-86 2312.14,-122"/>
+<text text-anchor="middle" x="2225" y="-99.8" font-family="Times,serif" font-size="14.00">CartItemDisplayComponent</text>
 </g>
 <!-- ShoppingCartModule -->
 <g id="node12" class="node">
 <title>ShoppingCartModule</title>
-<polygon fill="#8dd3c7" stroke="black" points="1660.83,-187 1657.83,-191 1636.83,-191 1633.83,-187 1523.17,-187 1523.17,-151 1660.83,-151 1660.83,-187"/>
-<text text-anchor="middle" x="1592" y="-164.8" font-family="Times,serif" font-size="14.00">ShoppingCartModule</text>
+<polygon fill="#8dd3c7" stroke="black" points="1787.83,-187 1784.83,-191 1763.83,-191 1760.83,-187 1650.17,-187 1650.17,-151 1787.83,-151 1787.83,-187"/>
+<text text-anchor="middle" x="1719" y="-164.8" font-family="Times,serif" font-size="14.00">ShoppingCartModule</text>
 </g>
 <!-- CartItemDisplayComponent&#45;&gt;ShoppingCartModule -->
 <g id="edge1" class="edge">
 <title>CartItemDisplayComponent&#45;&gt;ShoppingCartModule</title>
-<path fill="none" stroke="black" d="M3127,-122.32C3127,-145.66 3127,-183 3127,-183 3127,-183 1670.69,-183 1670.69,-183"/>
-<polygon fill="black" stroke="black" points="1670.69,-179.5 1660.69,-183 1670.69,-186.5 1670.69,-179.5"/>
+<path fill="none" stroke="black" d="M2225,-122.03C2225,-138.4 2225,-160 2225,-160 2225,-160 1797.77,-160 1797.77,-160"/>
+<polygon fill="black" stroke="black" points="1797.77,-156.5 1787.77,-160 1797.77,-163.5 1797.77,-156.5"/>
 </g>
 <!-- CartItemEditComponent -->
 <g id="node2" class="node">
 <title>CartItemEditComponent</title>
-<polygon fill="#ffffb3" stroke="black" points="3021.43,-122 2866.57,-122 2866.57,-86 3021.43,-86 3021.43,-122"/>
-<text text-anchor="middle" x="2944" y="-99.8" font-family="Times,serif" font-size="14.00">CartItemEditComponent</text>
+<polygon fill="#ffffb3" stroke="black" points="2119.43,-122 1964.57,-122 1964.57,-86 2119.43,-86 2119.43,-122"/>
+<text text-anchor="middle" x="2042" y="-99.8" font-family="Times,serif" font-size="14.00">CartItemEditComponent</text>
 </g>
 <!-- CartItemEditComponent&#45;&gt;ShoppingCartModule -->
 <g id="edge2" class="edge">
 <title>CartItemEditComponent&#45;&gt;ShoppingCartModule</title>
-<path fill="none" stroke="black" d="M2944,-122.29C2944,-144.21 2944,-178 2944,-178 2944,-178 1670.9,-178 1670.9,-178"/>
-<polygon fill="black" stroke="black" points="1670.9,-174.5 1660.9,-178 1670.9,-181.5 1670.9,-174.5"/>
+<path fill="none" stroke="black" d="M2042,-122.19C2042,-137.18 2042,-156 2042,-156 2042,-156 1797.9,-156 1797.9,-156"/>
+<polygon fill="black" stroke="black" points="1797.9,-152.5 1787.9,-156 1797.9,-159.5 1797.9,-152.5"/>
 </g>
 <!-- CartItemValidationOverviewComponent -->
 <g id="node3" class="node">
 <title>CartItemValidationOverviewComponent</title>
-<polygon fill="#ffffb3" stroke="black" points="2848.88,-122 2603.12,-122 2603.12,-86 2848.88,-86 2848.88,-122"/>
-<text text-anchor="middle" x="2726" y="-99.8" font-family="Times,serif" font-size="14.00">CartItemValidationOverviewComponent</text>
+<polygon fill="#ffffb3" stroke="black" points="1946.88,-122 1701.12,-122 1701.12,-86 1946.88,-86 1946.88,-122"/>
+<text text-anchor="middle" x="1824" y="-99.8" font-family="Times,serif" font-size="14.00">CartItemValidationOverviewComponent</text>
 </g>
 <!-- CartItemValidationOverviewComponent&#45;&gt;ShoppingCartModule -->
 <g id="edge3" class="edge">
 <title>CartItemValidationOverviewComponent&#45;&gt;ShoppingCartModule</title>
-<path fill="none" stroke="black" d="M2726,-122.03C2726,-142.77 2726,-174 2726,-174 2726,-174 1670.81,-174 1670.81,-174"/>
-<polygon fill="black" stroke="black" points="1670.81,-170.5 1660.81,-174 1670.81,-177.5 1670.81,-170.5"/>
+<path fill="none" stroke="black" d="M1744.49,-122.11C1744.49,-122.11 1744.49,-140.99 1744.49,-140.99"/>
+<polygon fill="black" stroke="black" points="1740.99,-140.99 1744.49,-150.99 1747.99,-140.99 1740.99,-140.99"/>
 </g>
 <!-- CartItemsComponent -->
 <g id="node4" class="node">
 <title>CartItemsComponent</title>
-<polygon fill="#ffffb3" stroke="black" points="2585.04,-122 2448.96,-122 2448.96,-86 2585.04,-86 2585.04,-122"/>
-<text text-anchor="middle" x="2517" y="-99.8" font-family="Times,serif" font-size="14.00">CartItemsComponent</text>
+<polygon fill="#ffffb3" stroke="black" points="1683.04,-122 1546.96,-122 1546.96,-86 1683.04,-86 1683.04,-122"/>
+<text text-anchor="middle" x="1615" y="-99.8" font-family="Times,serif" font-size="14.00">CartItemsComponent</text>
 </g>
 <!-- CartItemsComponent&#45;&gt;ShoppingCartModule -->
 <g id="edge4" class="edge">
 <title>CartItemsComponent&#45;&gt;ShoppingCartModule</title>
-<path fill="none" stroke="black" d="M2517,-122.11C2517,-141.34 2517,-169 2517,-169 2517,-169 1670.77,-169 1670.77,-169"/>
-<polygon fill="black" stroke="black" points="1670.77,-165.5 1660.77,-169 1670.77,-172.5 1670.77,-165.5"/>
+<path fill="none" stroke="black" d="M1666.8,-122.11C1666.8,-122.11 1666.8,-140.99 1666.8,-140.99"/>
+<polygon fill="black" stroke="black" points="1663.3,-140.99 1666.8,-150.99 1670.3,-140.99 1663.3,-140.99"/>
 </g>
 <!-- ConfirmCartSubmitDialog -->
 <g id="node5" class="node">
 <title>ConfirmCartSubmitDialog</title>
-<polygon fill="#ffffb3" stroke="black" points="2431.1,-122 2264.9,-122 2264.9,-86 2431.1,-86 2431.1,-122"/>
-<text text-anchor="middle" x="2348" y="-99.8" font-family="Times,serif" font-size="14.00">ConfirmCartSubmitDialog</text>
+<polygon fill="#ffffb3" stroke="black" points="1529.1,-122 1362.9,-122 1362.9,-86 1529.1,-86 1529.1,-122"/>
+<text text-anchor="middle" x="1446" y="-99.8" font-family="Times,serif" font-size="14.00">ConfirmCartSubmitDialog</text>
 </g>
 <!-- ConfirmCartSubmitDialog&#45;&gt;ShoppingCartModule -->
 <g id="edge5" class="edge">
 <title>ConfirmCartSubmitDialog&#45;&gt;ShoppingCartModule</title>
-<path fill="none" stroke="black" d="M2348,-122.3C2348,-140.27 2348,-165 2348,-165 2348,-165 1670.76,-165 1670.76,-165"/>
-<polygon fill="black" stroke="black" points="1670.76,-161.5 1660.76,-165 1670.76,-168.5 1670.76,-161.5"/>
+<path fill="none" stroke="black" d="M1446,-122.19C1446,-137.18 1446,-156 1446,-156 1446,-156 1640.11,-156 1640.11,-156"/>
+<polygon fill="black" stroke="black" points="1640.11,-159.5 1650.11,-156 1640.11,-152.5 1640.11,-159.5"/>
 </g>
 <!-- DefaultCartItemDisplayComponent -->
 <g id="node6" class="node">
 <title>DefaultCartItemDisplayComponent</title>
-<polygon fill="#ffffb3" stroke="black" points="2247.12,-122 2030.88,-122 2030.88,-86 2247.12,-86 2247.12,-122"/>
-<text text-anchor="middle" x="2139" y="-99.8" font-family="Times,serif" font-size="14.00">DefaultCartItemDisplayComponent</text>
+<polygon fill="#ffffb3" stroke="black" points="1345.12,-122 1128.88,-122 1128.88,-86 1345.12,-86 1345.12,-122"/>
+<text text-anchor="middle" x="1237" y="-99.8" font-family="Times,serif" font-size="14.00">DefaultCartItemDisplayComponent</text>
 </g>
 <!-- DefaultCartItemDisplayComponent&#45;&gt;ShoppingCartModule -->
 <g id="edge6" class="edge">
 <title>DefaultCartItemDisplayComponent&#45;&gt;ShoppingCartModule</title>
-<path fill="none" stroke="black" d="M2139,-122.03C2139,-138.4 2139,-160 2139,-160 2139,-160 1670.72,-160 1670.72,-160"/>
-<polygon fill="black" stroke="black" points="1670.72,-156.5 1660.72,-160 1670.72,-163.5 1670.72,-156.5"/>
+<path fill="none" stroke="black" d="M1237,-122.03C1237,-138.4 1237,-160 1237,-160 1237,-160 1640.2,-160 1640.2,-160"/>
+<polygon fill="black" stroke="black" points="1640.2,-163.5 1650.2,-160 1640.2,-156.5 1640.2,-163.5"/>
 </g>
 <!-- OrderForAdditionalUsersComponent -->
 <g id="node7" class="node">
 <title>OrderForAdditionalUsersComponent</title>
-<polygon fill="#ffffb3" stroke="black" points="2012.67,-122 1787.33,-122 1787.33,-86 2012.67,-86 2012.67,-122"/>
-<text text-anchor="middle" x="1900" y="-99.8" font-family="Times,serif" font-size="14.00">OrderForAdditionalUsersComponent</text>
+<polygon fill="#ffffb3" stroke="black" points="1110.67,-122 885.33,-122 885.33,-86 1110.67,-86 1110.67,-122"/>
+<text text-anchor="middle" x="998" y="-99.8" font-family="Times,serif" font-size="14.00">OrderForAdditionalUsersComponent</text>
 </g>
 <!-- OrderForAdditionalUsersComponent&#45;&gt;ShoppingCartModule -->
 <g id="edge7" class="edge">
 <title>OrderForAdditionalUsersComponent&#45;&gt;ShoppingCartModule</title>
-<path fill="none" stroke="black" d="M1900,-122.19C1900,-137.18 1900,-156 1900,-156 1900,-156 1670.74,-156 1670.74,-156"/>
-<polygon fill="black" stroke="black" points="1670.74,-152.5 1660.74,-156 1670.74,-159.5 1670.74,-152.5"/>
+<path fill="none" stroke="black" d="M998,-122.3C998,-140.27 998,-165 998,-165 998,-165 1640.19,-165 1640.19,-165"/>
+<polygon fill="black" stroke="black" points="1640.19,-168.5 1650.19,-165 1640.19,-161.5 1640.19,-168.5"/>
 </g>
 <!-- ShoppingCartComponent -->
 <g id="node8" class="node">
 <title>ShoppingCartComponent</title>
-<polygon fill="#ffffb3" stroke="black" points="1769.61,-122 1610.39,-122 1610.39,-86 1769.61,-86 1769.61,-122"/>
-<text text-anchor="middle" x="1690" y="-99.8" font-family="Times,serif" font-size="14.00">ShoppingCartComponent</text>
+<polygon fill="#ffffb3" stroke="black" points="867.61,-122 708.39,-122 708.39,-86 867.61,-86 867.61,-122"/>
+<text text-anchor="middle" x="788" y="-99.8" font-family="Times,serif" font-size="14.00">ShoppingCartComponent</text>
 </g>
 <!-- ShoppingCartComponent&#45;&gt;ShoppingCartModule -->
 <g id="edge8" class="edge">
 <title>ShoppingCartComponent&#45;&gt;ShoppingCartModule</title>
-<path fill="none" stroke="black" d="M1635.55,-122.11C1635.55,-122.11 1635.55,-140.99 1635.55,-140.99"/>
-<polygon fill="black" stroke="black" points="1632.05,-140.99 1635.55,-150.99 1639.05,-140.99 1632.05,-140.99"/>
+<path fill="none" stroke="black" d="M788,-122.11C788,-141.34 788,-169 788,-169 788,-169 1640.16,-169 1640.16,-169"/>
+<polygon fill="black" stroke="black" points="1640.16,-172.5 1650.16,-169 1640.16,-165.5 1640.16,-172.5"/>
 </g>
 <!-- ShoppingCartEmptyComponent -->
 <g id="node9" class="node">
 <title>ShoppingCartEmptyComponent</title>
-<polygon fill="#ffffb3" stroke="black" points="1592.44,-122 1395.56,-122 1395.56,-86 1592.44,-86 1592.44,-122"/>
-<text text-anchor="middle" x="1494" y="-99.8" font-family="Times,serif" font-size="14.00">ShoppingCartEmptyComponent</text>
+<polygon fill="#ffffb3" stroke="black" points="690.44,-122 493.56,-122 493.56,-86 690.44,-86 690.44,-122"/>
+<text text-anchor="middle" x="592" y="-99.8" font-family="Times,serif" font-size="14.00">ShoppingCartEmptyComponent</text>
 </g>
 <!-- ShoppingCartEmptyComponent&#45;&gt;ShoppingCartModule -->
 <g id="edge9" class="edge">
 <title>ShoppingCartEmptyComponent&#45;&gt;ShoppingCartModule</title>
-<path fill="none" stroke="black" d="M1557.78,-122.11C1557.78,-122.11 1557.78,-140.99 1557.78,-140.99"/>
-<polygon fill="black" stroke="black" points="1554.28,-140.99 1557.78,-150.99 1561.28,-140.99 1554.28,-140.99"/>
+<path fill="none" stroke="black" d="M592,-122.03C592,-142.77 592,-174 592,-174 592,-174 1640.2,-174 1640.2,-174"/>
+<polygon fill="black" stroke="black" points="1640.2,-177.5 1650.2,-174 1640.2,-170.5 1640.2,-177.5"/>
 </g>
 <!-- ShoppingCartForLaterComponent -->
 <g id="node10" class="node">
 <title>ShoppingCartForLaterComponent</title>
-<polygon fill="#ffffb3" stroke="black" points="1378.08,-122 1169.92,-122 1169.92,-86 1378.08,-86 1378.08,-122"/>
-<text text-anchor="middle" x="1274" y="-99.8" font-family="Times,serif" font-size="14.00">ShoppingCartForLaterComponent</text>
+<polygon fill="#ffffb3" stroke="black" points="476.08,-122 267.92,-122 267.92,-86 476.08,-86 476.08,-122"/>
+<text text-anchor="middle" x="372" y="-99.8" font-family="Times,serif" font-size="14.00">ShoppingCartForLaterComponent</text>
 </g>
 <!-- ShoppingCartForLaterComponent&#45;&gt;ShoppingCartModule -->
 <g id="edge10" class="edge">
 <title>ShoppingCartForLaterComponent&#45;&gt;ShoppingCartModule</title>
-<path fill="none" stroke="black" d="M1274,-122.19C1274,-137.18 1274,-156 1274,-156 1274,-156 1513,-156 1513,-156"/>
-<polygon fill="black" stroke="black" points="1513,-159.5 1523,-156 1513,-152.5 1513,-159.5"/>
+<path fill="none" stroke="black" d="M372,-122.29C372,-144.21 372,-178 372,-178 372,-178 1639.88,-178 1639.88,-178"/>
+<polygon fill="black" stroke="black" points="1639.88,-181.5 1649.88,-178 1639.88,-174.5 1639.88,-181.5"/>
 </g>
 <!-- ShoppingCartSubmitWarningsDialog -->
 <g id="node11" class="node">
 <title>ShoppingCartSubmitWarningsDialog</title>
-<polygon fill="#ffffb3" stroke="black" points="1152.26,-122 925.74,-122 925.74,-86 1152.26,-86 1152.26,-122"/>
-<text text-anchor="middle" x="1039" y="-99.8" font-family="Times,serif" font-size="14.00">ShoppingCartSubmitWarningsDialog</text>
+<polygon fill="#ffffb3" stroke="black" points="250.26,-122 23.74,-122 23.74,-86 250.26,-86 250.26,-122"/>
+<text text-anchor="middle" x="137" y="-99.8" font-family="Times,serif" font-size="14.00">ShoppingCartSubmitWarningsDialog</text>
 </g>
 <!-- ShoppingCartSubmitWarningsDialog&#45;&gt;ShoppingCartModule -->
 <g id="edge11" class="edge">
 <title>ShoppingCartSubmitWarningsDialog&#45;&gt;ShoppingCartModule</title>
-<path fill="none" stroke="black" d="M1039,-122.03C1039,-138.4 1039,-160 1039,-160 1039,-160 1513.08,-160 1513.08,-160"/>
-<polygon fill="black" stroke="black" points="1513.08,-163.5 1523.08,-160 1513.08,-156.5 1513.08,-163.5"/>
+<path fill="none" stroke="black" d="M137,-122.32C137,-145.66 137,-183 137,-183 137,-183 1640.26,-183 1640.26,-183"/>
+<polygon fill="black" stroke="black" points="1640.26,-186.5 1650.26,-183 1640.26,-179.5 1640.26,-186.5"/>
 </g>
 <!-- ItshopPatternModule -->
 <g id="node13" class="node">
 <title>ItshopPatternModule</title>
-<polygon fill="#8dd3c7" stroke="black" points="902.2,-122 899.2,-126 878.2,-126 875.2,-122 767.8,-122 767.8,-86 902.2,-86 902.2,-122"/>
-<text text-anchor="middle" x="835" y="-99.8" font-family="Times,serif" font-size="14.00">ItshopPatternModule</text>
+<polygon fill="#8dd3c7" stroke="black" points="2822.2,-122 2819.2,-126 2798.2,-126 2795.2,-122 2687.8,-122 2687.8,-86 2822.2,-86 2822.2,-122"/>
+<text text-anchor="middle" x="2755" y="-99.8" font-family="Times,serif" font-size="14.00">ItshopPatternModule</text>
 </g>
 <!-- ItshopPatternModule&#45;&gt;ShoppingCartModule -->
 <g id="edge12" class="edge">
 <title>ItshopPatternModule&#45;&gt;ShoppingCartModule</title>
-<path fill="none" stroke="black" d="M835,-122.3C835,-140.27 835,-165 835,-165 835,-165 1513.15,-165 1513.15,-165"/>
-<polygon fill="black" stroke="black" points="1513.15,-168.5 1523.15,-165 1513.15,-161.5 1513.15,-168.5"/>
+<path fill="none" stroke="black" d="M2755,-122.03C2755,-142.77 2755,-174 2755,-174 2755,-174 1797.78,-174 1797.78,-174"/>
+<polygon fill="black" stroke="black" points="1797.78,-170.5 1787.78,-174 1797.78,-177.5 1797.78,-170.5"/>
 </g>
 <!-- ShoppingCartValidationDetailModule -->
 <g id="node14" class="node">
 <title>ShoppingCartValidationDetailModule</title>
-<polygon fill="#8dd3c7" stroke="black" points="750.13,-122 747.13,-126 726.13,-126 723.13,-122 519.87,-122 519.87,-86 750.13,-86 750.13,-122"/>
-<text text-anchor="middle" x="635" y="-99.8" font-family="Times,serif" font-size="14.00">ShoppingCartValidationDetailModule</text>
+<polygon fill="#8dd3c7" stroke="black" points="2670.13,-122 2667.13,-126 2646.13,-126 2643.13,-122 2439.87,-122 2439.87,-86 2670.13,-86 2670.13,-122"/>
+<text text-anchor="middle" x="2555" y="-99.8" font-family="Times,serif" font-size="14.00">ShoppingCartValidationDetailModule</text>
 </g>
 <!-- ShoppingCartValidationDetailModule&#45;&gt;ShoppingCartModule -->
 <g id="edge13" class="edge">
 <title>ShoppingCartValidationDetailModule&#45;&gt;ShoppingCartModule</title>
-<path fill="none" stroke="black" d="M635,-122.11C635,-141.34 635,-169 635,-169 635,-169 1513.17,-169 1513.17,-169"/>
-<polygon fill="black" stroke="black" points="1513.17,-172.5 1523.17,-169 1513.17,-165.5 1513.17,-172.5"/>
+<path fill="none" stroke="black" d="M2555,-122.11C2555,-141.34 2555,-169 2555,-169 2555,-169 1797.77,-169 1797.77,-169"/>
+<polygon fill="black" stroke="black" points="1797.77,-165.5 1787.77,-169 1797.77,-172.5 1797.77,-165.5"/>
 </g>
 <!-- UserModule -->
 <g id="node15" class="node">
 <title>UserModule</title>
-<polygon fill="#8dd3c7" stroke="black" points="501.98,-122 498.98,-126 477.98,-126 474.98,-122 416.02,-122 416.02,-86 501.98,-86 501.98,-122"/>
-<text text-anchor="middle" x="459" y="-99.8" font-family="Times,serif" font-size="14.00">UserModule</text>
+<polygon fill="#8dd3c7" stroke="black" points="2421.98,-122 2418.98,-126 2397.98,-126 2394.98,-122 2336.02,-122 2336.02,-86 2421.98,-86 2421.98,-122"/>
+<text text-anchor="middle" x="2379" y="-99.8" font-family="Times,serif" font-size="14.00">UserModule</text>
 </g>
 <!-- UserModule&#45;&gt;ShoppingCartModule -->
 <g id="edge14" class="edge">
 <title>UserModule&#45;&gt;ShoppingCartModule</title>
-<path fill="none" stroke="black" d="M459,-122.03C459,-142.77 459,-174 459,-174 459,-174 1513.25,-174 1513.25,-174"/>
-<polygon fill="black" stroke="black" points="1513.25,-177.5 1523.25,-174 1513.25,-170.5 1513.25,-177.5"/>
+<path fill="none" stroke="black" d="M2379,-122.3C2379,-140.27 2379,-165 2379,-165 2379,-165 1797.76,-165 1797.76,-165"/>
+<polygon fill="black" stroke="black" points="1797.76,-161.5 1787.76,-165 1797.76,-168.5 1797.76,-161.5"/>
 </g>
 <!-- CartItemLogicService -->
 <g id="node16" class="node">
 <title>CartItemLogicService</title>
-<ellipse fill="#fdb462" stroke="black" cx="295" cy="-104" rx="96.68" ry="18"/>
-<text text-anchor="middle" x="295" y="-99.8" font-family="Times,serif" font-size="14.00">CartItemLogicService</text>
+<ellipse fill="#fdb462" stroke="black" cx="3117" cy="-104" rx="96.68" ry="18"/>
+<text text-anchor="middle" x="3117" y="-99.8" font-family="Times,serif" font-size="14.00">CartItemLogicService</text>
 </g>
 <!-- CartItemLogicService&#45;&gt;ShoppingCartModule -->
 <g id="edge15" class="edge">
 <title>CartItemLogicService&#45;&gt;ShoppingCartModule</title>
-<path fill="none" stroke="black" d="M295,-122.29C295,-144.21 295,-178 295,-178 295,-178 1513.18,-178 1513.18,-178"/>
-<polygon fill="black" stroke="black" points="1513.18,-181.5 1523.18,-178 1513.18,-174.5 1513.18,-181.5"/>
+<path fill="none" stroke="black" d="M3117,-122.32C3117,-145.66 3117,-183 3117,-183 3117,-183 1797.85,-183 1797.85,-183"/>
+<polygon fill="black" stroke="black" points="1797.85,-179.5 1787.85,-183 1797.85,-186.5 1797.85,-179.5"/>
 </g>
 <!-- CartItemsService -->
 <g id="node17" class="node">
 <title>CartItemsService</title>
-<ellipse fill="#fdb462" stroke="black" cx="102" cy="-104" rx="78.14" ry="18"/>
-<text text-anchor="middle" x="102" y="-99.8" font-family="Times,serif" font-size="14.00">CartItemsService</text>
+<ellipse fill="#fdb462" stroke="black" cx="2924" cy="-104" rx="78.14" ry="18"/>
+<text text-anchor="middle" x="2924" y="-99.8" font-family="Times,serif" font-size="14.00">CartItemsService</text>
 </g>
 <!-- CartItemsService&#45;&gt;ShoppingCartModule -->
 <g id="edge16" class="edge">
 <title>CartItemsService&#45;&gt;ShoppingCartModule</title>
-<path fill="none" stroke="black" d="M102,-122.32C102,-145.66 102,-183 102,-183 102,-183 1513.12,-183 1513.12,-183"/>
-<polygon fill="black" stroke="black" points="1513.12,-186.5 1523.12,-183 1513.12,-179.5 1513.12,-186.5"/>
+<path fill="none" stroke="black" d="M2924,-122.29C2924,-144.21 2924,-178 2924,-178 2924,-178 1797.68,-178 1797.68,-178"/>
+<polygon fill="black" stroke="black" points="1797.68,-174.5 1787.68,-178 1797.68,-181.5 1797.68,-174.5"/>
 </g>
 </g>
 </svg>

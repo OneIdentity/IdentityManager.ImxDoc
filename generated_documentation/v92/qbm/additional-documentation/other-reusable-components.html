@@ -53,8 +53,7 @@
 
 
 <h1>Other Reusable Components and Services</h1>
-<p>In this section you can find components, that can be reused in other libraries and applications. These components do not fit into the other sections, but might be important as well. They are sorted in alphabetical order and not on importance.</p>
-<p>PS: This list is not complete, but it contains the most important ones. </p>
+<p>In this section you can find components that are intended to be reused in other libraries and applications, and not covered by the other sections</p>
 <h2>1. Bulk Editor</h2>
 <p>The <a href="../components/BulkPropertyEditorComponent.html"><code>BulkPropertyEditorComponent</code></a> is used to edit the same list properties for multiple objects. Each <a href="../components/BulkItemComponent.html"><code>BulkItemComponent</code></a> has it&#39;s own list of <a href="../components/CdrEditorComponent.html"><code>CdrEditorComponents</code></a></p>
 <h2>2. Busy Indicator</h2>
@@ -70,24 +69,24 @@
 <h2>4. Custom Theme</h2>
 <p>The <a href="../injectables/CustomThemeService.html"><code>CustomThemeService</code></a> can be used to load all defined themes. It is also used to add the themes to the <code>&lt;head&gt;</code> part of the page.</p>
 <h2>5. Dynamic Tabs</h2>
-<p>Some tabs in side sheets have to be added dynamically, because they are part of a dynamic module. The item is defined by a new <a href="../interfaces/TabItem.html"><code>TabItem</code></a> and can be added to a tab control using a <a href="../directives/DynamicTabDataProviderDirective.html"><code>DynamicTabDataProviderDirective</code></a>.</p>
+<p>Some tabs in side sheets have to be added dynamically because they are part of a dynamic module. The item is defined by a new <a href="../interfaces/TabItem.html"><code>TabItem</code></a> and can be added to a tab control using a <a href="../directives/DynamicTabDataProviderDirective.html"><code>DynamicTabDataProviderDirective</code></a>.</p>
 <h2>6. Extensions</h2>
-<p>Sometimes it is necessary, to add a component, that is not defined as part of a static module, but is part of a dynamic one. To display this component, a <a href="../components/ExtComponent.html"><code>ExtComponent</code></a> can be used. It is part of the <a href="../modules/ExtModule.html"><code>ExtModule</code></a>, together with the needed service and a directive.</p>
+<p>Sometimes it is necessary to add a component, that is not defined as part of a static module, but is part of a dynamic one. To display this component, a <a href="../components/ExtComponent.html"><code>ExtComponent</code></a> can be used. It is part of the <a href="../modules/ExtModule.html"><code>ExtModule</code></a>, together with the needed service and a directive.</p>
 <h2>7. File Selector</h2>
 <p>If the user should be able to upload files, there is a <a href="../injectables/FileSelectorService.html">FileSelectorService</a> for that.</p>
 <h2>8. Hyper View</h2>
-<p>A hyper view is a linked graph, that represents the structure of an object. The <a href="../components/HyperviewComponent.html"><code>HyperviewComponent</code></a> and its parts are all part of the <a href="../modules/HyperViewModule.html"><code>HyperviewModule</code></a>. There you can update the shapes and connectors of this graph.</p>
-<h2>9. Mast Head</h2>
+<p>A hyper view is a linked graph that visualizes the relationships of an object to other objects. The <a href="../components/HyperviewComponent.html"><code>HyperviewComponent</code></a> and its parts are all part of the <a href="../modules/HyperViewModule.html"><code>HyperviewModule</code></a>.</p>
+<h2>9. Masthead</h2>
 <p>In the masthead, information like the company logo, a help icon or the user menu can be displayed. It is defined inside the <a href="../components/MastHeadComponent.html"><code>MastHeadComponent</code></a>, that is part of the <a href="../modules/MastHeadModule.html">&#39;MastHeadModule&#39;</a>.</p>
 <p>The <a href="../components/MastHeadComponent.html"><code>MastHeadComponent</code></a> is also responsible for the menu line underneath it. The menu is rendered using an <code>ElementalUiTopNavigationComponent</code>. The menu items can be defined by using the <a href="../injectables/MenuService.html"><code>MenuService</code></a>.</p>
 <h2>10. Object History</h2>
 <p>The <a href="../components/ObjectHistoryComponent.html"><code>ObjectHistoryComponent</code></a> can be used to show the course of an object. It can be display as a table or by using a <a href="../components/TimelineComponent.html"><code>TimelineComponent</code></a>.</p>
 <h2>11. Side Navigation</h2>
 <p>The <a href="../components/SideNavigationViewComponent.html"><code>SideNavigationViewComponent</code></a> is used to display a vertical menu, that can be part of a page or an other component. It is collapsible for smaller screens.</p>
-<p>An other representation of a side navigation ist the <a href="../components/SidenavTreeComponent.html"><code>SidenavTreeComponent</code></a> which uses a tree view inside a collapsible panel.</p>
+<p>Another representation of a side navigation is the <a href="../components/SidenavTreeComponent.html"><code>SidenavTreeComponent</code></a> which uses a tree view inside a collapsible panel.</p>
 <p> The <a href="../components/SideNavigationViewComponent.html"><code>SideNavigationViewComponent</code></a> is part of the  <a href="../modules/SideNavigationViewModule.html"><code>SideNavigationViewModule</code></a> while the <a href="../components/SidenavTreeComponent.html"><code>SidenavTreeComponent</code></a> is part of the <a href="../modules/SidenavTreeModule.html"><code>SidenavTreeModule</code></a>.</p>
 <h2>12. SQL Wizard</h2>
-<p>The <a href="../components/SqlWizardComponent.html"><code>SqlWizardComponent</code></a> can be used to narrowing down the result of a larger amount of entries. It generates a filter expression, that can be used as part of a normal API call. The SQL wizard is defined in the <a href="../modules/SqlWizardModule.html"><code>SqlWizardModule</code></a> together this the sub components, that are used to build the filter.</p>
+<p>The <a href="../components/SqlWizardComponent.html"><code>SqlWizardComponent</code></a> can be used to filter the result of a larger amount of entries. It generates a filter expression, that can be used as part of a normal API call. The SQL wizard is defined in the <a href="../modules/SqlWizardModule.html"><code>SqlWizardModule</code></a> together this the sub components, that are used to build the filter.</p>
 <p>To use a <a href="../components/SqlWizardComponent.html"><code>SqlWizardComponent</code></a> as part of the table filter in a custom project, the abstract class <a href="../classes/SqlWizardApiService.html"><code>SqlWizardApiService</code></a> has to be extended and added as a provider.</p>
 
                    </div><div class="search-results">

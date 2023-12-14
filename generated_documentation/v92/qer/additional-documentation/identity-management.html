@@ -53,7 +53,7 @@
 
 
 <h1>Identity Management</h1>
-<p>In this section, there will be short description of the main components, that are important for the identity management process.</p>
+<p>This section lists components that support identity management use-cases.</p>
 <h2>1. Data Explorer &#39;Identities&#39; section</h2>
 <p>The identities section of the data explorer is defined in the <a href="../components/DataExplorerIdentitiesComponent.html"><code>DataExplorerIdentitiesComponent</code></a> and can be used in two different contexts:</p>
 <ol>
@@ -61,7 +61,7 @@
 <li>as a manager</li>
 </ol>
 <p>The manager view is filtered by identities, that are reporting to the user, while the admin view shows all identities in the system.</p>
-<p>Each identity opens a side sheet, that displays more information about the identity.</p>
+<p>Clicking on an identity opens a side sheet that displays more information about the identity.</p>
 <p>This library defines the following sub components, that are part of this side sheet:</p>
 <ul>
 <li><p>a tab control with the following sub components:</p>
@@ -77,13 +77,13 @@
 </li>
 </ul>
 <h2>2. Address Book</h2>
-<p>The <a href="../components/AddressbookComponent.html"><code>AddressbookComponent</code></a> lists all identities, that are part of the company aka all identities, that are part of the <code>Person</code> database table. It is an read only view, that opens a read only side sheet as well.</p>
+<p>The <a href="../components/AddressbookComponent.html"><code>AddressbookComponent</code></a> lists all identities from the <code>Person</code> database table. It is a read-only view that opens a read-only sidesheet as well.</p>
 <h2>3. Profile</h2>
-<p>The <a href="../components/ProfileComponent.html"><code>ProfileComponent</code></a> contains the page, that is displaying different user information. The user is able to edit his main data, maintain his mail subscriptions (<a href="../components/MailSubscriptionsComponent.html"><code>MailSubscriptionsComponent</code></a>) and manage their password information like their
-security keys (<a href="../components/SecurityKeysComponent.html"><code>SecurityKeysComponent</code></a>) and personal password questions (<a href="../components/PasswordQueryComponent.html"><code>PasswordQueryComponent</code></a>).</p>
+<p>The <a href="../components/ProfileComponent.html"><code>ProfileComponent</code></a> contains the page, that is displaying different user information. The user is able to edit their main data, maintain e-mail subscriptions (<a href="../components/MailSubscriptionsComponent.html"><code>MailSubscriptionsComponent</code></a>), manage their
+security keys (<a href="../components/SecurityKeysComponent.html"><code>SecurityKeysComponent</code></a>) and personal Q&amp;A profile (<a href="../components/PasswordQueryComponent.html"><code>PasswordQueryComponent</code></a>).</p>
 <p>Other tabs can be linked to this pages as well, by register them to the <a href="../../qbm/injectables/ExtService.html"><code>ExtService</code></a>, which is part of the QBM library.</p>
 <h2>4. User Model</h2>
-<p>The user model is defined inside the <a href="../injectables/UserModelService.html"><code>UserModelService</code></a>. It contains functions, that get user configurations, like activated features, pending items or direct reports.</p>
+<p>The user model is defined inside the <a href="../injectables/UserModelService.html"><code>UserModelService</code></a>. It contains functions to fetch the current session&#39;s configuration, including information on available program features, pending items and direct reports.</p>
 
                    </div><div class="search-results">
     <div class="has-results">

@@ -1,0 +1,318 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>IMX Web - QBM Library</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+	   <link rel="stylesheet" href="../../styles/style.css">
+        <link rel="stylesheet" href="../../styles/dark.css">
+        <link rel="stylesheet" href="../../styles/material.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../../" class="navbar-brand">IMX Web - QBM Library</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content additional-page">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h1>Working with data tables</h1>
+<p>A frequently recurring task is the representation of data in tables. The IMX QBM library offers components that facilitate the visualization of data and take the special IMX data structure into account.</p>
+<p>Data tables offer a lot of configuration possibilities. We will present the most important ones in this sample.</p>
+<p>The two most important modules in this context are &quot;data-source-toolbar&quot; (projects\qbm\src\lib\data-source-toolbar) and &quot;data-table&quot; (projects\qbm\src\lib\data-table).</p>
+<p>The basic structure consists of 3 elements, the data source toolbar, the actual table and a paginator.</p>
+<p><img src="../../assets/images/data_table/1.png" alt="overall Structure" class="img-responsive"></p>
+<p>In addition to the ability to search, filter, etc, the Data Source Toolbar contains a Data Source component that is used by the Data Table and the Paginator to display data and move within the data set. Think of the DST (Data Source Tool Bar) as a link between the Data Table and the Paginator.</p>
+<p>The &quot;Hello World&quot; version of the Data Table component looks like as follow.</p>
+<blockquote>
+<p>Code</p>
+</blockquote>
+<div><pre class="line-numbers"><code class="language-html">&lt;h1 class=&quot;mat-headline&quot;&gt;{{ &#39;#LDS#Identities&#39; | translate }}&lt;/h1&gt;
+
+&lt;imx-data-source-toolbar
+  #dst
+  [settings]=&quot;dstSettings&quot;
+  (navigationStateChanged)=&quot;onNavigationStateChanged($event)&quot;
+&gt;&lt;/imx-data-source-toolbar&gt;
+
+&lt;imx-data-table
+  [dst]=&quot;dst&quot;
+  mode=&quot;auto&quot;
+&gt;
+&lt;/imx-data-table&gt;
+
+&lt;imx-data-source-paginator [dst]=&quot;dst&quot;&gt;&lt;/imx-data-source-paginator&gt;</code></pre></div><blockquote>
+<p>Code </p>
+</blockquote>
+<div><pre class="line-numbers"><code class="language-ts">
+&#64;Component({
+  selector: &#39;imx-select-identity&#39;,
+  templateUrl: &#39;./select-identity.component.html&#39;,
+  styleUrls: [&#39;./select-identity.component.scss&#39;],
+})
+export class SelectIdentityComponent implements OnInit {
+  public dstSettings: DataSourceToolbarSettings;
+  public readonly schema: EntitySchema;
+  public readonly DisplayColumns = DisplayColumns;
+  public navigationState: CollectionLoadParameters = { PageSize: 20 };
+
+  private displayedColumns: IClientProperty[] = [];
+
+  constructor(private readonly qerApiClient: QerApiService) {
+    this.schema = this.qerApiClient.typedClient.PortalPersonAll.GetSchema();
+    this.displayedColumns = [
+      this.schema.Columns[DisplayColumns.DISPLAY_PROPERTYNAME],
+      this.schema.Columns.DefaultEmailAddress
+    ];
+  }
+
+  public async ngOnInit(): Promise&lt;void&gt; {
+    await this.navigate();
+  }
+
+  public async onNavigationStateChanged(newState?: CollectionLoadParameters): Promise&lt;void&gt; {
+    if (newState) {
+      this.navigationState = newState;
+    }
+    await this.navigate();
+  }
+
+  private async navigate(): Promise&lt;void&gt; {
+    const data = await this.qerApiClient.typedClient.PortalPersonAll.Get(this.navigationState);
+
+    this.dstSettings = {
+      displayedColumns: this.displayedColumns,
+      dataSource: data,
+      entitySchema: this.schema,
+      navigationState: this.navigationState,
+    };
+  }
+}
+</code></pre></div><p>The minimum set of properties that must be set are &quot;EntitySchema&quot;, &quot;DisplayColumns&quot; and &quot;CollectionLoadParameters&quot;. </p>
+<p>Three places in the .ts Datei are worth to be highlighted.</p>
+<blockquote>
+<p>Code</p>
+</blockquote>
+<div><pre class="line-numbers"><code class="language-ts"> this.displayedColumns = [
+      this.schema.Columns[DisplayColumns.DISPLAY_PROPERTYNAME],
+      this.schema.Columns.DefaultEmailAddress
+    ];</code></pre></div><p>&quot;displayedColumns&quot; defines which columns the table should display.</p>
+<blockquote>
+<p>Code</p>
+</blockquote>
+<div><pre class="line-numbers"><code class="language-ts">  public async onNavigationStateChanged(newState?: CollectionLoadParameters): Promise&lt;void&gt; {
+    if (newState) {
+      this.navigationState = newState;
+    }
+    await this.navigate();
+  }</code></pre></div><p>This event handler is called every time the state of the data changes, e.g. when the user navigates to the next page.</p>
+<blockquote>
+<p>Code</p>
+</blockquote>
+<div><pre class="line-numbers"><code class="language-ts"> private async navigate(): Promise&lt;void&gt; {
+    const data = await this.qerApiClient.typedClient.PortalPersonAll.Get(this.navigationState);
+
+    this.dstSettings = {
+      displayedColumns: this.displayedColumns,
+      dataSource: data,
+      entitySchema: this.schema,
+      navigationState: this.navigationState,
+    };
+  }</code></pre></div><p>The &quot;navigate()&quot; method retrievs data from the API server. The actual request is made by calling the API client (&quot;this.qerApiClient.typedClient.PortalPersonAll.Get(this.navigationState)&quot;). The concept of API clients is described in a separate sample.</p>
+<p>The first version of the Component looks like this.</p>
+<p><img src="../../assets/images/data_table/2.png" alt="First Version" class="img-responsive"></p>
+<h2>Designing the table</h2>
+<p>The table above shows two fields that are rendered automatically. It is also possible to design columns manually. Whether the table is rendered automatically or manually is controlled by the &quot;mode&quot; input field.</p>
+<blockquote>
+<p>Code</p>
+</blockquote>
+<div><pre class="line-numbers"><code class="language-html">&lt;imx-data-table
+  [dst]=&quot;dst&quot;
+  mode=&quot;auto&quot;
+&gt;
+&lt;/imx-data-table&gt;</code></pre></div><p>&quot;mode&quot; can take two values: &quot;auto&quot; and &quot;manual&quot;. </p>
+<p>To display the previous table in manual mode, we need to add the two columns to the html template.</p>
+<blockquote>
+<p>Code</p>
+</blockquote>
+<div><pre class="line-numbers"><code class="language-html">&lt;imx-data-table [dst]=&quot;dst&quot; mode=&quot;manual&quot;&gt;
+  &lt;imx-data-table-column [entityColumn]=&quot;schema?.Columns[DisplayColumns.DISPLAY_PROPERTYNAME]&quot;&gt;
+    &lt;ng-template let-item&gt;
+      &lt;div&gt;{{ item.GetEntity().GetDisplay() }}&lt;/div&gt;
+    &lt;/ng-template&gt;
+  &lt;/imx-data-table-column&gt;
+  &lt;imx-data-table-column [entityColumn]=&quot;schema?.Columns.DefaultEmailAddress&quot;&gt;
+    &lt;ng-template let-item&gt;
+      &lt;div&gt;{{ item.DefaultEmailAddress.Column.GetDisplayValue() }}&lt;/div&gt;
+    &lt;/ng-template&gt;
+  &lt;/imx-data-table-column&gt;
+&lt;/imx-data-table&gt;</code></pre></div><p>In the next step we will add a new column to the table containing a button and slightly modify the first column.</p>
+<p>The first column currently shows the default display of the object. We want to add a second row that indicates whether the person is a primary identity or not.</p>
+<blockquote>
+<p>Code</p>
+</blockquote>
+<div><pre class="line-numbers"><code class="language-html">&lt;imx-data-table [dst]=&quot;dst&quot; mode=&quot;manual&quot;&gt;
+  &lt;imx-data-table-column [entityColumn]=&quot;schema?.Columns[DisplayColumns.DISPLAY_PROPERTYNAME]&quot;&gt;
+    &lt;ng-template let-item&gt;
+      &lt;div&gt;{{ item.GetEntity().GetDisplay() }}&lt;/div&gt;
+      &lt;div&gt;{{ item.IdentityType.Column.GetDisplayValue() }}&lt;/div&gt;
+    &lt;/ng-template&gt;
+  &lt;/imx-data-table-column&gt;
+  &lt;imx-data-table-column [entityColumn]=&quot;schema?.Columns.DefaultEmailAddress&quot;&gt;
+    &lt;ng-template let-item&gt;
+      &lt;div&gt;{{ item.DefaultEmailAddress.Column.GetDisplayValue() }}&lt;/div&gt;
+    &lt;/ng-template&gt;
+  &lt;/imx-data-table-column&gt;
+&lt;/imx-data-table&gt;</code></pre></div><p>Next we will add a third column that will contain a button. To display data of an object the table uses the &quot;<imx-data-table-column>&quot; tag. To display other types of elements, such as buttons, we use the &quot;<imx-data-table-generic-column>&quot; tag.
+Before we can display the button, we need to add the new synthetic column to the columns to be displayed. This is done in the *.ts file.</p>
+<blockquote>
+<p>Code</p>
+</blockquote>
+<div><pre class="line-numbers"><code class="language-ts"> this.displayedColumns = [
+      this.schema.Columns[DisplayColumns.DISPLAY_PROPERTYNAME],
+      this.schema.Columns.DefaultEmailAddress,
+      {
+        ColumnName: &#39;viewDetailsButton&#39;,
+        Type: ValType.String
+      }
+    ];</code></pre></div><blockquote>
+<p>Code</p>
+</blockquote>
+<div><pre class="line-numbers"><code class="language-html">&lt;imx-data-table [dst]=&quot;dst&quot; mode=&quot;manual&quot;&gt;
+  &lt;imx-data-table-column [entityColumn]=&quot;schema?.Columns[DisplayColumns.DISPLAY_PROPERTYNAME]&quot;&gt;
+    &lt;ng-template let-item&gt;
+      &lt;div&gt;{{ item.GetEntity().GetDisplay() }}&lt;/div&gt;
+      &lt;div&gt;{{ item.IdentityType.Column.GetDisplayValue() }}&lt;/div&gt;
+    &lt;/ng-template&gt;
+  &lt;/imx-data-table-column&gt;
+  &lt;imx-data-table-column [entityColumn]=&quot;schema?.Columns.DefaultEmailAddress&quot;&gt;
+    &lt;ng-template let-item&gt;
+      &lt;div&gt;{{ item.DefaultEmailAddress.Column.GetDisplayValue() }}&lt;/div&gt;
+    &lt;/ng-template&gt;
+  &lt;/imx-data-table-column&gt;
+  &lt;imx-data-table-generic-column columnName=&quot;viewDetailsButton&quot;&gt;
+    &lt;ng-template&gt;
+      &lt;button mat-button color=&quot;primary&quot;&gt;
+        {{ &#39;#LDS#Details&#39; | translate }}
+      &lt;/button&gt;
+    &lt;/ng-template&gt;
+  &lt;/imx-data-table-generic-column&gt;
+&lt;/imx-data-table&gt;</code></pre></div><p>The extended component now looks like this.</p>
+<p><img src="../../assets/images/data_table/4.png" alt="Version with search enabled" class="img-responsive"></p>
+<h2>Adding search</h2>
+<p>Enabling search is pretty straightforward. 
+To do this, you must first enable the &quot;search&quot; option and secondly implement a method that processes the output of the &quot;search&quot; output parameter. </p>
+<p>The following code snippets shows these changes.</p>
+<blockquote>
+<p>Code</p>
+</blockquote>
+<div><pre class="line-numbers"><code class="language-html">&lt;imx-data-source-toolbar
+  #dst
+  [settings]=&quot;dstSettings&quot;
+  (navigationStateChanged)=&quot;onNavigationStateChanged($event)&quot;
+  [options]=&quot;[&#39;search&#39;]&quot;
+  (search)=&quot;onSearch($event)&quot;
+&gt;&lt;/imx-data-source-toolbar&gt;</code></pre></div><blockquote>
+<p>Code</p>
+</blockquote>
+<div><pre class="line-numbers"><code class="language-ts">  public async onSearch(keywords: string): Promise&lt;void&gt; {
+    this.navigationState.StartIndex = 0;
+    this.navigationState.search = keywords;
+    await this.navigate();
+  }</code></pre></div><p><img src="../../assets/images/data_table/3.png" alt="Version with search enabled" class="img-responsive"></p>
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 2;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'additional-page';
+            var COMPODOC_CURRENT_PAGE_URL = 'working-with-data-tables.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../../js/libs/custom-elements.min.js"></script>
+       <script src="../../js/libs/lit-html.js"></script>
+
+       <script src="../../js/menu-wc.js" defer></script>
+       <script nomodule src="../../js/menu-wc_es5.js" defer></script>
+
+       <script src="../../js/libs/bootstrap-native.js"></script>
+
+       <script src="../../js/libs/es6-shim.min.js"></script>
+       <script src="../../js/libs/EventDispatcher.js"></script>
+       <script src="../../js/libs/promise.min.js"></script>
+       <script src="../../js/libs/zepto.min.js"></script>
+
+       <script src="../../js/compodoc.js"></script>
+
+       <script src="../../js/tabs.js"></script>
+       <script src="../../js/menu.js"></script>
+       <script src="../../js/libs/clipboard.min.js"></script>
+       <script src="../../js/libs/prism.js"></script>
+       <script src="../../js/sourceCode.js"></script>
+          <script src="../../js/search/search.js"></script>
+          <script src="../../js/search/lunr.min.js"></script>
+          <script src="../../js/search/search-lunr.js"></script>
+          <script src="../../js/search/search_index.js"></script>
+       <script src="../../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

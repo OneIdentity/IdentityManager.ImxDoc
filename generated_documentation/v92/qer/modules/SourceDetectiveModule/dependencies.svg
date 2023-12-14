@@ -24,13 +24,13 @@
 <title>cluster_SourceDetectiveModule</title>
 <polygon fill="none" stroke="black" stroke-dasharray="1,5" points="8,-70 8,-268 630,-268 630,-70 8,-70"/>
 </g>
-<g id="clust6" class="cluster">
-<title>cluster_SourceDetectiveModule_exports</title>
-<polygon fill="none" stroke="black" points="260,-208 260,-260 454,-260 454,-208 260,-208"/>
-</g>
 <g id="clust5" class="cluster">
 <title>cluster_SourceDetectiveModule_imports</title>
 <polygon fill="none" stroke="black" points="460,-78 460,-130 622,-130 622,-78 460,-78"/>
+</g>
+<g id="clust6" class="cluster">
+<title>cluster_SourceDetectiveModule_exports</title>
+<polygon fill="none" stroke="black" points="260,-208 260,-260 454,-260 454,-208 260,-208"/>
 </g>
 <g id="clust2" class="cluster">
 <title>cluster_SourceDetectiveModule_declarations</title>

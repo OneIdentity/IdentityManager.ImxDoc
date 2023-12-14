@@ -46,24 +46,58 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                         <div class="simple menu-toggler" data-bs-toggle="collapse" ${ isNormalMode ? 'data-bs-target="#additional-pages"'
                             : 'data-bs-target="#xs-additional-pages"' }>
                             <span class="icon ion-ios-book"></span>
-                            <span>Library overview</span>
+                            <span>Additional documentation</span>
                             <span class="icon ion-ios-arrow-down"></span>
                         </div>
                         <ul class="links collapse " ${ isNormalMode ? 'id="additional-pages"' : 'id="xs-additional-pages"' }>
-                                    <li class="link ">
-                                        <a href="additional-documentation/administration.html" data-type="entity-link" data-context-id="additional">Administration</a>
+                                    <li class="chapter inner">
+                                        <a data-type="chapter-link" href="additional-documentation/library-overview.html" data-context-id="additional">
+                                            <div class="menu-toggler linked" data-bs-toggle="collapse" ${ isNormalMode ?
+                                            'data-bs-target="#additional-page-59a741f34534fc462558e878f2099ad2a2cabb0eb7b0dbd2cea7e6ddb566f5bad1eca690e6ea337bcd1d4af8932e6af3b4850819d8b55694ece699bf2afe9321"' : 'data-bs-target="#xs-additional-page-59a741f34534fc462558e878f2099ad2a2cabb0eb7b0dbd2cea7e6ddb566f5bad1eca690e6ea337bcd1d4af8932e6af3b4850819d8b55694ece699bf2afe9321"' }>
+                                                <span class="link-name">Library Overview</span>
+                                                <span class="icon ion-ios-arrow-down"></span>
+                                            </div>
+                                        </a>
+                                        <ul class="links collapse" ${ isNormalMode ? 'id="additional-page-59a741f34534fc462558e878f2099ad2a2cabb0eb7b0dbd2cea7e6ddb566f5bad1eca690e6ea337bcd1d4af8932e6af3b4850819d8b55694ece699bf2afe9321"' : 'id="xs-additional-page-59a741f34534fc462558e878f2099ad2a2cabb0eb7b0dbd2cea7e6ddb566f5bad1eca690e6ea337bcd1d4af8932e6af3b4850819d8b55694ece699bf2afe9321"' }>
+                                            <li class="link for-chapter2">
+                                                <a href="additional-documentation/library-overview/administration.html" data-type="entity-link" data-context="sub-entity" data-context-id="additional">Administration</a>
+                                            </li>
+                                            <li class="link for-chapter2">
+                                                <a href="additional-documentation/library-overview/property-handling.html" data-type="entity-link" data-context="sub-entity" data-context-id="additional">Property Handling</a>
+                                            </li>
+                                            <li class="link for-chapter2">
+                                                <a href="additional-documentation/library-overview/data-sets.html" data-type="entity-link" data-context="sub-entity" data-context-id="additional">Data Sets</a>
+                                            </li>
+                                            <li class="link for-chapter2">
+                                                <a href="additional-documentation/library-overview/messages.html" data-type="entity-link" data-context="sub-entity" data-context-id="additional">Messages</a>
+                                            </li>
+                                            <li class="link for-chapter2">
+                                                <a href="additional-documentation/library-overview/other-reusable-components.html" data-type="entity-link" data-context="sub-entity" data-context-id="additional">Other reusable components</a>
+                                            </li>
+                                        </ul>
                                     </li>
                                     <li class="link ">
-                                        <a href="additional-documentation/property-handling.html" data-type="entity-link" data-context-id="additional">Property Handling</a>
+                                        <a href="additional-documentation/theming-the-application.html" data-type="entity-link" data-context-id="additional">Theming the application</a>
                                     </li>
-                                    <li class="link ">
-                                        <a href="additional-documentation/listing.html" data-type="entity-link" data-context-id="additional">Listing</a>
-                                    </li>
-                                    <li class="link ">
-                                        <a href="additional-documentation/messages.html" data-type="entity-link" data-context-id="additional">Messages</a>
-                                    </li>
-                                    <li class="link ">
-                                        <a href="additional-documentation/other-reusable-components.html" data-type="entity-link" data-context-id="additional">Other reusable components</a>
+                                    <li class="chapter inner">
+                                        <a data-type="chapter-link" href="additional-documentation/sdk-samples.html" data-context-id="additional">
+                                            <div class="menu-toggler linked" data-bs-toggle="collapse" ${ isNormalMode ?
+                                            'data-bs-target="#additional-page-103b6a199a66a30638994da939f4f98c54fb70d4e737155560f928cefbf77d3bf1d873b2da3e48b10fe1575dcb97b9a1b781aa1c4ee700b9ca8ea30e568c0e92"' : 'data-bs-target="#xs-additional-page-103b6a199a66a30638994da939f4f98c54fb70d4e737155560f928cefbf77d3bf1d873b2da3e48b10fe1575dcb97b9a1b781aa1c4ee700b9ca8ea30e568c0e92"' }>
+                                                <span class="link-name">SDK samples</span>
+                                                <span class="icon ion-ios-arrow-down"></span>
+                                            </div>
+                                        </a>
+                                        <ul class="links collapse" ${ isNormalMode ? 'id="additional-page-103b6a199a66a30638994da939f4f98c54fb70d4e737155560f928cefbf77d3bf1d873b2da3e48b10fe1575dcb97b9a1b781aa1c4ee700b9ca8ea30e568c0e92"' : 'id="xs-additional-page-103b6a199a66a30638994da939f4f98c54fb70d4e737155560f928cefbf77d3bf1d873b2da3e48b10fe1575dcb97b9a1b781aa1c4ee700b9ca8ea30e568c0e92"' }>
+                                            <li class="link for-chapter2">
+                                                <a href="additional-documentation/sdk-samples/adding-a-tile-component-to-the-dashboard.html" data-type="entity-link" data-context="sub-entity" data-context-id="additional">Adding a tile component to the dashboard</a>
+                                            </li>
+                                            <li class="link for-chapter2">
+                                                <a href="additional-documentation/sdk-samples/adding-a-menu-to-the-portal.html" data-type="entity-link" data-context="sub-entity" data-context-id="additional">Adding a menu to the Portal</a>
+                                            </li>
+                                            <li class="link for-chapter2">
+                                                <a href="additional-documentation/sdk-samples/working-with-data-tables.html" data-type="entity-link" data-context="sub-entity" data-context-id="additional">Working with data tables</a>
+                                            </li>
+                                        </ul>
                                     </li>
                         </ul>
                     </li>
